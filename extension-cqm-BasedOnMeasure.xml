@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ExtensionDefinition xmlns="http://hl7.org/fhir">
+  <id value="cqm-BasedOnMeasure"/>
+  <url value="http://hl7.org/fhir/ExtensionDefinition/cqm-BasedOnMeasure"/>
+  <name value="Based On Measure"/>
+  <publisher value="Health Level Seven, Inc. - Clinical Quality Information WG"/>
+  <telecom>
+    <system value="url"/>
+    <value value="http://wiki.hl7.org/index.php?title=MeasureReportProfile"/>
+  </telecom>
+  <description value="Based On Measure."/>
+  <status value="draft"/>
+  <date value="2014-01-31"/>
+  <contextType value="resource"/>
+  <context value="Composition.section"/>
+  <element>
+    <path value="Extension"/>
+    <short value="Based On Measure"/>
+    <formal value="Based On Measure."/>
+    <min value="1"/>
+    <max value="1"/>
+    <type>
+      <code value="Reference"/>
+      <profile value="http://hl7.org/fhir/Profile/DocumentReference"/>
+    </type>
+    <type>
+      <code value="Reference"/>
+      <profile value="http://hl7.org/fhir/Profile/Measure"/>
+    </type>
+    <isSummary value="false"/>
+  </element>
+</ExtensionDefinition>

@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="valueset-daf-problem-type"/>
+  <meta>
+    <lastUpdated value="2014-12-30T10:55:31"/>
+  </meta>
+  <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      <p>This value set contains 7 concepts</p>
+      <h2>Problem Type Value Set</h2>
+      <p>The SNOMED CT® has been limited by HITSP to the value set reproduced below in Table 2-60 Problem Type Value Set Definition. This indicates the level of medical judgment used to determine the existence of a problem</p>
+      <p>
+        <b>Copyright Statement:</b> This value set includes content from SNOMED CT, which is copyright © 2002+ International Health Terminology Standards Development Organisation (IHTSDO), and distributed by agreement between IHTSDO and HL7. Implementer use of SNOMED CT is not covered by this agreement
+      </p>
+      <p>This value set includes codes defined in other code systems, using the following rules:</p>
+      <ul>
+        <li>Include these codes as defined in http://snomed.info/sct
+          <table>
+            <tr>
+              <td>
+                <b>Code</b>
+              </td>
+              <td>
+                <b>Display</b>
+              </td>
+            </tr>
+            <tr>
+              <td>404684003</td>
+              <td>Finding</td>
+              <td/>
+            </tr>
+            <tr>
+              <td>409586006</td>
+              <td>Complaint</td>
+              <td/>
+            </tr>
+            <tr>
+              <td>282291009</td>
+              <td>Diagnosis</td>
+              <td/>
+            </tr>
+            <tr>
+              <td>64572001</td>
+              <td>Condition</td>
+              <td/>
+            </tr>
+            <tr>
+              <td>248536006</td>
+              <td>Functional limitation</td>
+              <td/>
+            </tr>
+            <tr>
+              <td>418799008</td>
+              <td>Symptom</td>
+              <td/>
+            </tr>
+            <tr>
+              <td>55607006</td>
+              <td>Problem</td>
+              <td/>
+            </tr>
+          </table>
+        </li>
+      </ul>
+    </div>
+  </text>
+  <extension url="http://hl7.org/fhir/ExtensionDefinition/valueset-oid">
+    <valueUri value="urn:oid:2.16.840.1.113883.3.88.12.3221.7.2"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/ExtensionDefinition/valueset-oid">
+    <valueUri value="urn:oid:2.16.840.1.113883.4.642.2.568"/>
+  </extension>
+  <identifier value="http://hl7.org/fhir/vs/daf-problem-type"/>
+  <name value="Problem Type Value Set"/>
+  <publisher value="PHIN VADS"/>
+  <telecom>
+    <system value="url"/>
+    <value value="https://phinvads.cdc.gov/vads/ViewValueSet.action?id=71FDBFB5-A277-DE11-9B52-0015173D1785"/>
+  </telecom>
+  <description value="The SNOMED CT® has been limited by HITSP to the value set reproduced below in Table 2-60 Problem Type Value Set Definition. This indicates the level of medical judgment used to determine the existence of a problem"/>
+  <copyright value="This value set includes content from SNOMED CT, which is copyright © 2002+ International Health Terminology Standards Development Organisation (IHTSDO), and distributed by agreement between IHTSDO and HL7. Implementer use of SNOMED CT is not covered by this agreement"/>
+  <status value="active"/>
+  <compose>
+    <include>
+      <system value="http://snomed.info/sct"/>
+      <concept>
+        <code value="404684003"/>
+        <display value="Finding"/>
+      </concept>
+      <concept>
+        <code value="409586006"/>
+        <display value="Complaint"/>
+      </concept>
+      <concept>
+        <code value="282291009"/>
+        <display value="Diagnosis"/>
+      </concept>
+      <concept>
+        <code value="64572001"/>
+        <display value="Condition"/>
+      </concept>
+      <concept>
+        <code value="248536006"/>
+        <display value="Functional limitation"/>
+      </concept>
+      <concept>
+        <code value="418799008"/>
+        <display value="Symptom"/>
+      </concept>
+      <concept>
+        <code value="55607006"/>
+        <display value="Problem"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="valueset-daf-race"/>
+  <meta>
+    <lastUpdated value="2014-12-30T10:55:31"/>
+  </meta>
+  <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      <p>This value set contains 5 concepts</p>
+      <h2>MU Race Value Set</h2>
+      <p>Meaningful use race code. The 5 base codes (see http://forum.sitenv.org/viewtopic.php?f=16&amp;t=23&amp;sid=8fb101254557843fa05ac94d8d83a095) from PHIN VADS https://phinvads.cdc.gov/vads/ViewValueSet.action?id=94E75E17-176B-DE11-9B52-0015173D1785 (oid: 2.16.840.1.113883.1.11.14914)</p>
+      <p>This value set includes codes defined in other code systems, using the following rules:</p>
+      <ul>
+        <li>Include these codes as defined in 
+          <a href="v3/Race/index.html">http://hl7.org/fhir/v3/Race</a>
+          <table>
+            <tr>
+              <td>
+                <b>Code</b>
+              </td>
+              <td>
+                <b>Display</b>
+              </td>
+            </tr>
+            <tr>
+              <td>1002-5</td>
+              <td>American Indian or Alaska Native</td>
+              <td/>
+            </tr>
+            <tr>
+              <td>2028-9</td>
+              <td>Asian</td>
+              <td/>
+            </tr>
+            <tr>
+              <td>2054-5</td>
+              <td>Black or African American</td>
+              <td/>
+            </tr>
+            <tr>
+              <td>2076-8</td>
+              <td>Native Hawaiian or Other Pacific Islander</td>
+              <td/>
+            </tr>
+            <tr>
+              <td>2106-3</td>
+              <td>White</td>
+              <td/>
+            </tr>
+          </table>
+        </li>
+      </ul>
+    </div>
+  </text>
+  <extension url="http://hl7.org/fhir/ExtensionDefinition/valueset-oid">
+    <valueUri value="urn:oid:2.16.840.1.113883.1.11.14914"/>
+  </extension>
+  <identifier value="http://hl7.org/fhir/vs/daf-race"/>
+  <name value="MU Race Value Set"/>
+  <publisher value="DAF Project"/>
+  <telecom>
+    <system value="url"/>
+    <value value="http://hl7.org/fhir"/>
+  </telecom>
+  <telecom>
+    <system value="url"/>
+    <value value="http://wiki.siframework.org/Data+Access+Framework+Homepage"/>
+  </telecom>
+  <description value="Meaningful use race code. The 5 base codes (see http://forum.sitenv.org/viewtopic.php?f=16&amp;t=23&amp;sid=8fb101254557843fa05ac94d8d83a095) from PHIN VADS https://phinvads.cdc.gov/vads/ViewValueSet.action?id=94E75E17-176B-DE11-9B52-0015173D1785 (oid: 2.16.840.1.113883.1.11.14914)"/>
+  <status value="active"/>
+  <compose>
+    <include>
+      <system value="http://hl7.org/fhir/v3/Race"/>
+      <concept>
+        <code value="1002-5"/>
+        <display value="American Indian or Alaska Native"/>
+      </concept>
+      <concept>
+        <code value="2028-9"/>
+        <display value="Asian"/>
+      </concept>
+      <concept>
+        <code value="2054-5"/>
+        <display value="Black or African American"/>
+      </concept>
+      <concept>
+        <code value="2076-8"/>
+        <display value="Native Hawaiian or Other Pacific Islander"/>
+      </concept>
+      <concept>
+        <code value="2106-3"/>
+        <display value="White"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

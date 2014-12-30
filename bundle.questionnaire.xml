@@ -1,0 +1,452 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Questionnaire xmlns="http://hl7.org/fhir">
+  <id value="qs1"/>
+  <identifier>
+    <system value="urn:ietf:rfc:3986"/>
+  </identifier>
+  <status value="draft"/>
+  <date value="2014-12-30T10:55:31"/>
+  <publisher value="HL7 FHIR Project (FHIR Management Group)"/>
+  <group>
+    <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+      <valueString value="A container for a group of resources."/>
+    </extension>
+    <linkId value="Bundle"/>
+    <title value="Contains a group of resources"/>
+    <required value="true"/>
+    <group>
+      <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+        <valueString value="The logical id of the resource, as used in the url for the resoure. Once assigned, this value never changes. The only time that a resource does not have an id is when it is being submitted to the server using a create operation. Bundles always have an id, though it is usually a generated UUID."/>
+      </extension>
+      <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+        <valueString value="string"/>
+      </extension>
+      <linkId value="Bundle.id"/>
+      <repeats value="true"/>
+      <question>
+        <linkId value="Bundle.id.value"/>
+        <text value="Logical id of this artefact"/>
+        <type value="string"/>
+      </question>
+    </group>
+    <group>
+      <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+        <valueString value="The metadata about the resource. This is content that is maintained by the infrastructure. Changes to the content may not always be associated with version changes to the resource."/>
+      </extension>
+      <linkId value="Bundle.meta"/>
+      <title value="Metadata about the resource"/>
+      <group>
+        <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+          <valueString value="unique id for the element within a resource (for internal references)."/>
+        </extension>
+        <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+          <valueString value="string"/>
+        </extension>
+        <linkId value="Bundle.meta.id"/>
+        <repeats value="true"/>
+        <question>
+          <linkId value="Bundle.meta.id.value"/>
+          <text value="xml:id (or equivalent in JSON)"/>
+          <type value="string"/>
+        </question>
+      </group>
+      <group>
+        <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+          <valueString value="The version specific identifier, as it appears in the version portion of the url. This values changes when the resource is created, updated, or deleted. The server assigns this value, and ignores what the client specifies, except in the case that the server is imposing version integrity on updates/deletes."/>
+        </extension>
+        <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+          <valueString value="string"/>
+        </extension>
+        <linkId value="Bundle.meta.versionId"/>
+        <repeats value="true"/>
+        <question>
+          <linkId value="Bundle.meta.versionId.value"/>
+          <text value="Version specific identifier"/>
+          <type value="string"/>
+        </question>
+      </group>
+      <group>
+        <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+          <valueString value="When the resource last changed - e.g. when the version changed. This value is always populated except when the resource is first being created. The server / resource manager sets this value; what a client provides is irrelevant."/>
+        </extension>
+        <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+          <valueString value="instant"/>
+        </extension>
+        <linkId value="Bundle.meta.lastUpdated"/>
+        <repeats value="true"/>
+        <question>
+          <linkId value="Bundle.meta.lastUpdated.value"/>
+          <text value="When the resource version last changed"/>
+          <type value="instant"/>
+        </question>
+      </group>
+      <group>
+        <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+          <valueString value="A list of profiles that this resource claims to conform to. The URL is a reference to Profile.url. It is up to the server and/or other infrastruture of policy to determine whether/how these claims are verified and/or updated over tiem."/>
+        </extension>
+        <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+          <valueString value="uri"/>
+        </extension>
+        <linkId value="Bundle.meta.profile"/>
+        <repeats value="true"/>
+        <question>
+          <linkId value="Bundle.meta.profile.value"/>
+          <text value="Profiles this resource claims to conform to"/>
+          <type value="string"/>
+        </question>
+      </group>
+      <group>
+        <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+          <valueString value="Security labels applied to this resource. These tags connect specific resources to the overall security policy and infrastructure. The security labels can be updated without changing the stated version of the resource."/>
+        </extension>
+        <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+          <valueString value="Coding"/>
+        </extension>
+        <linkId value="Bundle.meta.security"/>
+        <repeats value="true"/>
+        <question>
+          <linkId value="Bundle.meta.security.value"/>
+          <text value="Security Labels applied to this resource"/>
+          <type value="open-choice"/>
+        </question>
+      </group>
+      <group>
+        <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+          <valueString value="Tags applied to this resource. Tags are intended to to be used to identify and relate resources to process and workflow, and applications are not required to consider the tags when interpreting the meaning of a resource. The tags can be updated without changing the stated version of the resource."/>
+        </extension>
+        <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+          <valueString value="Coding"/>
+        </extension>
+        <linkId value="Bundle.meta.tag"/>
+        <repeats value="true"/>
+        <question>
+          <linkId value="Bundle.meta.tag.value"/>
+          <text value="Tags applied"/>
+          <type value="open-choice"/>
+        </question>
+      </group>
+    </group>
+    <group>
+      <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+        <valueString value="A reference to a set of rules that were followed when the resource was constructed, and which must be understood when processing the content. Asserting this rule set restricts the content to be only understood by a limited set of trading partners. This inherently limits the usefulness of the data in the long term. However the existing health eco-system is highly fractured, and not yet ready to define, collect, and exchange data in a generally computable sense. Wherever possible, implementers and/or specification writers should avoid using this element as much as possible."/>
+      </extension>
+      <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+        <valueString value="uri"/>
+      </extension>
+      <linkId value="Bundle.implicitRules"/>
+      <repeats value="true"/>
+      <question>
+        <linkId value="Bundle.implicitRules.value"/>
+        <text value="A set of rules under which this content was created"/>
+        <type value="string"/>
+      </question>
+    </group>
+    <group>
+      <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+        <valueString value="The base language in which the resource is written. Language is provided to support indexing and accessibility (typically, services such as text to speech use the language tag). The html language tag in the narrative applies  to the narrative. The language tag on the resource may be used to specify the language of other presentations generated from the data in the resource
+
+Not all the content has to be in the base language. The Resource.language should not be assumed to apply to the narrative automatically. If a language is specified, it should it also be specified on the div element in the html (see rules in HTML5 for information about the relationship between xml:lang and the html lang attribute)."/>
+      </extension>
+      <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+        <valueString value="code"/>
+      </extension>
+      <linkId value="Bundle.language"/>
+      <repeats value="true"/>
+      <question>
+        <linkId value="Bundle.language.value"/>
+        <text value="language"/>
+        <type value="choice"/>
+      </question>
+    </group>
+    <group>
+      <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+        <valueString value="Indicates the purpose of this bundle- how it was intended to be used. It&#39;s possible to use a bundle for other purposes (e.g. a document can be accepted as a transaction). This is primarily defined so that there can be specific rules for some of the bundle types."/>
+      </extension>
+      <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+        <valueString value="code"/>
+      </extension>
+      <linkId value="Bundle.type"/>
+      <required value="true"/>
+      <repeats value="true"/>
+      <question>
+        <linkId value="Bundle.type.value"/>
+        <text value="type"/>
+        <type value="choice"/>
+      </question>
+    </group>
+    <group>
+      <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+        <valueString value="The base URL for the service that provided these resources. All relative URLs are relative to this one (equivalent to xml:base)."/>
+      </extension>
+      <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+        <valueString value="uri"/>
+      </extension>
+      <linkId value="Bundle.base"/>
+      <repeats value="true"/>
+      <question>
+        <linkId value="Bundle.base.value"/>
+        <text value="Stated Base URL"/>
+        <type value="string"/>
+      </question>
+    </group>
+    <group>
+      <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+        <valueString value="If a set of search matches, this is the total number of matches for the search (as opposed to the number of results in this bundle). Only used if the bundle is a search result set."/>
+      </extension>
+      <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+        <valueString value="integer"/>
+      </extension>
+      <linkId value="Bundle.total"/>
+      <repeats value="true"/>
+      <question>
+        <linkId value="Bundle.total.value"/>
+        <text value="If search, the total number of matches"/>
+        <type value="integer"/>
+      </question>
+    </group>
+    <group>
+      <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+        <valueString value="A series of links that provide context to this bundle."/>
+      </extension>
+      <linkId value="Bundle.link"/>
+      <title value="Links related to this Bundle"/>
+      <repeats value="true"/>
+      <group>
+        <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+          <valueString value="unique id for the element within a resource (for internal references)."/>
+        </extension>
+        <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+          <valueString value="string"/>
+        </extension>
+        <linkId value="Bundle.link.id"/>
+        <repeats value="true"/>
+        <question>
+          <linkId value="Bundle.link.id.value"/>
+          <text value="xml:id (or equivalent in JSON)"/>
+          <type value="string"/>
+        </question>
+      </group>
+      <group>
+        <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+          <valueString value="A name which details the functional use for this link - see [[http://www.iana.org/assignments/link-relations/link-relations.xhtml]]."/>
+        </extension>
+        <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+          <valueString value="string"/>
+        </extension>
+        <linkId value="Bundle.link.relation"/>
+        <required value="true"/>
+        <repeats value="true"/>
+        <question>
+          <linkId value="Bundle.link.relation.value"/>
+          <text value="http://www.iana.org/assignments/link-relations/link-relations.xhtml"/>
+          <type value="string"/>
+        </question>
+      </group>
+      <group>
+        <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+          <valueString value="The reference details for the link."/>
+        </extension>
+        <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+          <valueString value="uri"/>
+        </extension>
+        <linkId value="Bundle.link.url"/>
+        <required value="true"/>
+        <repeats value="true"/>
+        <question>
+          <linkId value="Bundle.link.url.value"/>
+          <text value="Reference details for the link"/>
+          <type value="string"/>
+        </question>
+      </group>
+    </group>
+    <group>
+      <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+        <valueString value="An entry in a bundle resource - will either contain a resource, or a deleted entry (transaction and history bundles only)."/>
+      </extension>
+      <linkId value="Bundle.entry"/>
+      <title value="Entry in the bundle - will have deleted or resource"/>
+      <repeats value="true"/>
+      <group>
+        <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+          <valueString value="unique id for the element within a resource (for internal references)."/>
+        </extension>
+        <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+          <valueString value="string"/>
+        </extension>
+        <linkId value="Bundle.entry.id"/>
+        <repeats value="true"/>
+        <question>
+          <linkId value="Bundle.entry.id.value"/>
+          <text value="xml:id (or equivalent in JSON)"/>
+          <type value="string"/>
+        </question>
+      </group>
+      <group>
+        <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+          <valueString value="The Base URL for the resource, if different to the base URL specified for the bundle as a whole. This allows bundles to be composed of resources from multiple servers (collated search, documents etc)."/>
+        </extension>
+        <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+          <valueString value="uri"/>
+        </extension>
+        <linkId value="Bundle.entry.base"/>
+        <repeats value="true"/>
+        <question>
+          <linkId value="Bundle.entry.base.value"/>
+          <text value="Base URL, if different to bundle base"/>
+          <type value="string"/>
+        </question>
+      </group>
+      <group>
+        <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+          <valueString value="The status of a resource in the bundle. Used for search (to differentiate between resources included as a match, and resources included as an _include), for history (deleted resources), and for transactions (create/update/delete)."/>
+        </extension>
+        <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+          <valueString value="code"/>
+        </extension>
+        <linkId value="Bundle.entry.status"/>
+        <repeats value="true"/>
+        <question>
+          <linkId value="Bundle.entry.status.value"/>
+          <text value="status"/>
+          <type value="choice"/>
+        </question>
+      </group>
+      <group>
+        <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+          <valueString value="Search URL for this resource when processing a transaction (see transaction documentation)."/>
+        </extension>
+        <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+          <valueString value="uri"/>
+        </extension>
+        <linkId value="Bundle.entry.search"/>
+        <repeats value="true"/>
+        <question>
+          <linkId value="Bundle.entry.search.value"/>
+          <text value="Search URL (see transaction)"/>
+          <type value="string"/>
+        </question>
+      </group>
+      <group>
+        <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+          <valueString value="When searching, the server&#39;s search ranking score for the entry. Servers are not required to return a ranking score."/>
+        </extension>
+        <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+          <valueString value="decimal"/>
+        </extension>
+        <linkId value="Bundle.entry.score"/>
+        <repeats value="true"/>
+        <question>
+          <linkId value="Bundle.entry.score.value"/>
+          <text value="Search ranking (between 0 and 1)"/>
+          <type value="decimal"/>
+        </question>
+      </group>
+      <group>
+        <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+          <valueString value="If this is an entry that represents a deleted resource. Only used when the bundle is a transaction or a history type. See RESTful API documentation for further information."/>
+        </extension>
+        <linkId value="Bundle.entry.deleted"/>
+        <title value="If this is a deleted resource (transaction/history)"/>
+        <group>
+          <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+            <valueString value="unique id for the element within a resource (for internal references)."/>
+          </extension>
+          <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+            <valueString value="string"/>
+          </extension>
+          <linkId value="Bundle.entry.deleted.id"/>
+          <repeats value="true"/>
+          <question>
+            <linkId value="Bundle.entry.deleted.id.value"/>
+            <text value="xml:id (or equivalent in JSON)"/>
+            <type value="string"/>
+          </question>
+        </group>
+        <group>
+          <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+            <valueString value="The type of resource that was deleted (required to construct the identity)."/>
+          </extension>
+          <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+            <valueString value="code"/>
+          </extension>
+          <linkId value="Bundle.entry.deleted.type"/>
+          <required value="true"/>
+          <repeats value="true"/>
+          <question>
+            <linkId value="Bundle.entry.deleted.type.value"/>
+            <text value="type"/>
+            <type value="choice"/>
+          </question>
+        </group>
+        <group>
+          <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+            <valueString value="The id of the resource that was deleted. This would naturally be called &quot;id&quot; but this is not allowed (would clash with @id on all elements0."/>
+          </extension>
+          <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+            <valueString value="string"/>
+          </extension>
+          <linkId value="Bundle.entry.deleted.resourceId"/>
+          <required value="true"/>
+          <repeats value="true"/>
+          <question>
+            <linkId value="Bundle.entry.deleted.resourceId.value"/>
+            <text value="Id of resource that was deleted"/>
+            <type value="string"/>
+          </question>
+        </group>
+        <group>
+          <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+            <valueString value="Version id for releted resource."/>
+          </extension>
+          <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+            <valueString value="string"/>
+          </extension>
+          <linkId value="Bundle.entry.deleted.versionId"/>
+          <required value="true"/>
+          <repeats value="true"/>
+          <question>
+            <linkId value="Bundle.entry.deleted.versionId.value"/>
+            <text value="Version id for releted resource"/>
+            <type value="string"/>
+          </question>
+        </group>
+        <group>
+          <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+            <valueString value="The date/time that the resource was deleted."/>
+          </extension>
+          <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+            <valueString value="instant"/>
+          </extension>
+          <linkId value="Bundle.entry.deleted.instant"/>
+          <required value="true"/>
+          <repeats value="true"/>
+          <question>
+            <linkId value="Bundle.entry.deleted.instant.value"/>
+            <text value="When the resource was deleted"/>
+            <type value="instant"/>
+          </question>
+        </group>
+      </group>
+      <group>
+        <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+          <valueString value="The Resources for the entry."/>
+        </extension>
+        <linkId value="Bundle.entry.resource"/>
+        <text value="Resources in this bundle"/>
+        <repeats value="true"/>
+      </group>
+    </group>
+    <group>
+      <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+        <valueString value="XML Digital Signature - base64 encoded. This is base 64 encoded to address issues with json/xml."/>
+      </extension>
+      <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+        <valueString value="binary"/>
+      </extension>
+      <linkId value="Bundle.signature"/>
+      <text value="XML Digital Signature (base64 encoded)"/>
+      <repeats value="true"/>
+    </group>
+  </group>
+</Questionnaire>

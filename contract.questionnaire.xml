@@ -1,0 +1,1458 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Questionnaire xmlns="http://hl7.org/fhir">
+  <id value="qs1"/>
+  <contained>
+    <ValueSet>
+      <id value="vs2"/>
+      <identifier value="urn:uuid:b2b4be37-db8e-47b8-b5b3-5964c023f193"/>
+      <name value="Type options for Contract.author"/>
+      <description value="Type options for Contract.author"/>
+      <status value="active"/>
+      <expansion>
+        <timestamp value="2014-12-30T10:59:40+00:00"/>
+        <contains>
+          <system value="http://hl7.org/fhir/resource-types"/>
+          <code value="Practitioner"/>
+          <display value="Practitioner"/>
+        </contains>
+        <contains>
+          <system value="http://hl7.org/fhir/resource-types"/>
+          <code value="RelatedPerson"/>
+          <display value="RelatedPerson"/>
+        </contains>
+        <contains>
+          <system value="http://hl7.org/fhir/resource-types"/>
+          <code value="Organization"/>
+          <display value="Organization"/>
+        </contains>
+      </expansion>
+    </ValueSet>
+  </contained>
+  <contained>
+    <ValueSet>
+      <id value="vs3"/>
+      <identifier value="urn:uuid:f312b373-4946-4ca2-9e7e-cc28d3b2a5e5"/>
+      <name value="Type options for Contract.grantor"/>
+      <description value="Type options for Contract.grantor"/>
+      <status value="active"/>
+      <expansion>
+        <timestamp value="2014-12-30T10:59:40+00:00"/>
+        <contains>
+          <system value="http://hl7.org/fhir/resource-types"/>
+          <code value="Practitioner"/>
+          <display value="Practitioner"/>
+        </contains>
+        <contains>
+          <system value="http://hl7.org/fhir/resource-types"/>
+          <code value="RelatedPerson"/>
+          <display value="RelatedPerson"/>
+        </contains>
+        <contains>
+          <system value="http://hl7.org/fhir/resource-types"/>
+          <code value="Organization"/>
+          <display value="Organization"/>
+        </contains>
+        <contains>
+          <system value="http://hl7.org/fhir/resource-types"/>
+          <code value="Patient"/>
+          <display value="Patient"/>
+        </contains>
+      </expansion>
+    </ValueSet>
+  </contained>
+  <contained>
+    <ValueSet>
+      <id value="vs4"/>
+      <identifier value="urn:uuid:69b582b3-ba10-4407-9295-494e148366aa"/>
+      <name value="Type options for Contract.grantee"/>
+      <description value="Type options for Contract.grantee"/>
+      <status value="active"/>
+      <expansion>
+        <timestamp value="2014-12-30T10:59:40+00:00"/>
+        <contains>
+          <system value="http://hl7.org/fhir/resource-types"/>
+          <code value="Practitioner"/>
+          <display value="Practitioner"/>
+        </contains>
+        <contains>
+          <system value="http://hl7.org/fhir/resource-types"/>
+          <code value="RelatedPerson"/>
+          <display value="RelatedPerson"/>
+        </contains>
+        <contains>
+          <system value="http://hl7.org/fhir/resource-types"/>
+          <code value="Organization"/>
+          <display value="Organization"/>
+        </contains>
+        <contains>
+          <system value="http://hl7.org/fhir/resource-types"/>
+          <code value="Patient"/>
+          <display value="Patient"/>
+        </contains>
+      </expansion>
+    </ValueSet>
+  </contained>
+  <contained>
+    <ValueSet>
+      <id value="vs5"/>
+      <identifier value="urn:uuid:ddb16f40-0b09-462f-acba-62232b705970"/>
+      <name value="Type options for Contract.witness"/>
+      <description value="Type options for Contract.witness"/>
+      <status value="active"/>
+      <expansion>
+        <timestamp value="2014-12-30T10:59:40+00:00"/>
+        <contains>
+          <system value="http://hl7.org/fhir/resource-types"/>
+          <code value="Practitioner"/>
+          <display value="Practitioner"/>
+        </contains>
+        <contains>
+          <system value="http://hl7.org/fhir/resource-types"/>
+          <code value="RelatedPerson"/>
+          <display value="RelatedPerson"/>
+        </contains>
+        <contains>
+          <system value="http://hl7.org/fhir/resource-types"/>
+          <code value="Patient"/>
+          <display value="Patient"/>
+        </contains>
+      </expansion>
+    </ValueSet>
+  </contained>
+  <contained>
+    <ValueSet>
+      <id value="vs6"/>
+      <identifier value="urn:uuid:ae37fbba-7359-42a8-b161-be5f454997d1"/>
+      <name value="Type options for Contract.executor"/>
+      <description value="Type options for Contract.executor"/>
+      <status value="active"/>
+      <expansion>
+        <timestamp value="2014-12-30T10:59:40+00:00"/>
+        <contains>
+          <system value="http://hl7.org/fhir/resource-types"/>
+          <code value="Practitioner"/>
+          <display value="Practitioner"/>
+        </contains>
+        <contains>
+          <system value="http://hl7.org/fhir/resource-types"/>
+          <code value="RelatedPerson"/>
+          <display value="RelatedPerson"/>
+        </contains>
+        <contains>
+          <system value="http://hl7.org/fhir/resource-types"/>
+          <code value="Organization"/>
+          <display value="Organization"/>
+        </contains>
+        <contains>
+          <system value="http://hl7.org/fhir/resource-types"/>
+          <code value="Patient"/>
+          <display value="Patient"/>
+        </contains>
+      </expansion>
+    </ValueSet>
+  </contained>
+  <contained>
+    <ValueSet>
+      <id value="vs7"/>
+      <identifier value="urn:uuid:c2a40805-d0d9-4ec5-a1c4-05184cc3836d"/>
+      <name value="Type options for Contract.notary"/>
+      <description value="Type options for Contract.notary"/>
+      <status value="active"/>
+      <expansion>
+        <timestamp value="2014-12-30T10:59:40+00:00"/>
+        <contains>
+          <system value="http://hl7.org/fhir/resource-types"/>
+          <code value="Practitioner"/>
+          <display value="Practitioner"/>
+        </contains>
+        <contains>
+          <system value="http://hl7.org/fhir/resource-types"/>
+          <code value="RelatedPerson"/>
+          <display value="RelatedPerson"/>
+        </contains>
+        <contains>
+          <system value="http://hl7.org/fhir/resource-types"/>
+          <code value="Organization"/>
+          <display value="Organization"/>
+        </contains>
+        <contains>
+          <system value="http://hl7.org/fhir/resource-types"/>
+          <code value="Patient"/>
+          <display value="Patient"/>
+        </contains>
+      </expansion>
+    </ValueSet>
+  </contained>
+  <identifier>
+    <system value="urn:ietf:rfc:3986"/>
+  </identifier>
+  <status value="draft"/>
+  <date value="2014-12-30T10:55:31"/>
+  <publisher value="HL7 FHIR Project (Financial Management)"/>
+  <group>
+    <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+      <valueString value="A formal agreement between parties regarding the conduct of business, exchange of information or other matters."/>
+    </extension>
+    <linkId value="Contract"/>
+    <title value="A formal agreement between parties regarding the conduct of business, exchange of information or other matters."/>
+    <required value="true"/>
+    <group>
+      <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+        <valueString value="The logical id of the resource, as used in the url for the resoure. Once assigned, this value never changes. The only time that a resource does not have an id is when it is being submitted to the server using a create operation. Bundles always have an id, though it is usually a generated UUID."/>
+      </extension>
+      <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+        <valueString value="string"/>
+      </extension>
+      <linkId value="Contract.id"/>
+      <repeats value="true"/>
+      <question>
+        <linkId value="Contract.id.value"/>
+        <text value="Logical id of this artefact"/>
+        <type value="string"/>
+      </question>
+    </group>
+    <group>
+      <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+        <valueString value="The metadata about the resource. This is content that is maintained by the infrastructure. Changes to the content may not always be associated with version changes to the resource."/>
+      </extension>
+      <linkId value="Contract.meta"/>
+      <title value="Metadata about the resource"/>
+      <group>
+        <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+          <valueString value="unique id for the element within a resource (for internal references)."/>
+        </extension>
+        <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+          <valueString value="string"/>
+        </extension>
+        <linkId value="Contract.meta.id"/>
+        <repeats value="true"/>
+        <question>
+          <linkId value="Contract.meta.id.value"/>
+          <text value="xml:id (or equivalent in JSON)"/>
+          <type value="string"/>
+        </question>
+      </group>
+      <group>
+        <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+          <valueString value="The version specific identifier, as it appears in the version portion of the url. This values changes when the resource is created, updated, or deleted. The server assigns this value, and ignores what the client specifies, except in the case that the server is imposing version integrity on updates/deletes."/>
+        </extension>
+        <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+          <valueString value="string"/>
+        </extension>
+        <linkId value="Contract.meta.versionId"/>
+        <repeats value="true"/>
+        <question>
+          <linkId value="Contract.meta.versionId.value"/>
+          <text value="Version specific identifier"/>
+          <type value="string"/>
+        </question>
+      </group>
+      <group>
+        <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+          <valueString value="When the resource last changed - e.g. when the version changed. This value is always populated except when the resource is first being created. The server / resource manager sets this value; what a client provides is irrelevant."/>
+        </extension>
+        <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+          <valueString value="instant"/>
+        </extension>
+        <linkId value="Contract.meta.lastUpdated"/>
+        <repeats value="true"/>
+        <question>
+          <linkId value="Contract.meta.lastUpdated.value"/>
+          <text value="When the resource version last changed"/>
+          <type value="instant"/>
+        </question>
+      </group>
+      <group>
+        <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+          <valueString value="A list of profiles that this resource claims to conform to. The URL is a reference to Profile.url. It is up to the server and/or other infrastruture of policy to determine whether/how these claims are verified and/or updated over tiem."/>
+        </extension>
+        <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+          <valueString value="uri"/>
+        </extension>
+        <linkId value="Contract.meta.profile"/>
+        <repeats value="true"/>
+        <question>
+          <linkId value="Contract.meta.profile.value"/>
+          <text value="Profiles this resource claims to conform to"/>
+          <type value="string"/>
+        </question>
+      </group>
+      <group>
+        <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+          <valueString value="Security labels applied to this resource. These tags connect specific resources to the overall security policy and infrastructure. The security labels can be updated without changing the stated version of the resource."/>
+        </extension>
+        <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+          <valueString value="Coding"/>
+        </extension>
+        <linkId value="Contract.meta.security"/>
+        <repeats value="true"/>
+        <question>
+          <linkId value="Contract.meta.security.value"/>
+          <text value="Security Labels applied to this resource"/>
+          <type value="open-choice"/>
+        </question>
+      </group>
+      <group>
+        <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+          <valueString value="Tags applied to this resource. Tags are intended to to be used to identify and relate resources to process and workflow, and applications are not required to consider the tags when interpreting the meaning of a resource. The tags can be updated without changing the stated version of the resource."/>
+        </extension>
+        <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+          <valueString value="Coding"/>
+        </extension>
+        <linkId value="Contract.meta.tag"/>
+        <repeats value="true"/>
+        <question>
+          <linkId value="Contract.meta.tag.value"/>
+          <text value="Tags applied"/>
+          <type value="open-choice"/>
+        </question>
+      </group>
+    </group>
+    <group>
+      <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+        <valueString value="A reference to a set of rules that were followed when the resource was constructed, and which must be understood when processing the content. Asserting this rule set restricts the content to be only understood by a limited set of trading partners. This inherently limits the usefulness of the data in the long term. However the existing health eco-system is highly fractured, and not yet ready to define, collect, and exchange data in a generally computable sense. Wherever possible, implementers and/or specification writers should avoid using this element as much as possible."/>
+      </extension>
+      <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+        <valueString value="uri"/>
+      </extension>
+      <linkId value="Contract.implicitRules"/>
+      <repeats value="true"/>
+      <question>
+        <linkId value="Contract.implicitRules.value"/>
+        <text value="A set of rules under which this content was created"/>
+        <type value="string"/>
+      </question>
+    </group>
+    <group>
+      <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+        <valueString value="The base language in which the resource is written. Language is provided to support indexing and accessibility (typically, services such as text to speech use the language tag). The html language tag in the narrative applies  to the narrative. The language tag on the resource may be used to specify the language of other presentations generated from the data in the resource
+
+Not all the content has to be in the base language. The Resource.language should not be assumed to apply to the narrative automatically. If a language is specified, it should it also be specified on the div element in the html (see rules in HTML5 for information about the relationship between xml:lang and the html lang attribute)."/>
+      </extension>
+      <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+        <valueString value="code"/>
+      </extension>
+      <linkId value="Contract.language"/>
+      <repeats value="true"/>
+      <question>
+        <linkId value="Contract.language.value"/>
+        <text value="language"/>
+        <type value="choice"/>
+      </question>
+    </group>
+    <group>
+      <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+        <valueString value="A human-readable narrative that contains a summary of the resource, and may be used to represent the content of the resource to a human. The narrative need not encode all the structured data, but is required to contain sufficient detail to make it &quot;clinically safe&quot; for a human to just read the narrative. Resource definitions may define what content should be represented in the narrative to ensure clinical safety. Contained resources do not have narrative. Resources that are not contained SHOULD have a narrative."/>
+      </extension>
+      <linkId value="Contract.text"/>
+      <text value="Text summary of the resource, for human interpretation"/>
+      <repeats value="true"/>
+    </group>
+    <group>
+      <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+        <valueString value="These resources do not have an independent existence apart from the resource that contains them - they cannot be identified independently, and nor can they have their own independent transaction scope. This should never be done when the content can be identified properly, as once identification is lost, it is extremely difficult (and context dependent) to restore it again."/>
+      </extension>
+      <linkId value="Contract.contained"/>
+      <text value="Contained, inline Resources"/>
+      <repeats value="true"/>
+    </group>
+    <group>
+      <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+        <valueString value="Unique Id for this contract."/>
+      </extension>
+      <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+        <valueString value="Identifier"/>
+      </extension>
+      <linkId value="Contract.identifier"/>
+      <text value="Contract identifier"/>
+      <repeats value="true"/>
+      <question>
+        <linkId value="Contract.identifier.label"/>
+        <text value="label:"/>
+        <type value="string"/>
+      </question>
+      <question>
+        <linkId value="Contract.identifier.system"/>
+        <text value="system:"/>
+        <type value="string"/>
+      </question>
+      <question>
+        <linkId value="Contract.identifier.value"/>
+        <text value="value:"/>
+        <type value="string"/>
+      </question>
+    </group>
+    <group>
+      <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+        <valueString value="Who and/or what this is about: typically Patient, Organization, property."/>
+      </extension>
+      <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+        <valueString value="Reference"/>
+      </extension>
+      <linkId value="Contract.subject"/>
+      <repeats value="true"/>
+      <question>
+        <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#reference">
+          <valueString value="/_search?subject=$subj&amp;patient=$subj&amp;encounter=$encounter"/>
+        </extension>
+        <linkId value="Contract.subject.value"/>
+        <text value="Subject"/>
+        <type value="reference"/>
+      </question>
+    </group>
+    <group>
+      <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+        <valueString value="A formally or informally recognized grouping of people or organizations formed for the purpose of achieving some form of collective action. Includes companies, institutions, corporations, departments, community groups, healthcare practice groups, etc."/>
+      </extension>
+      <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+        <valueString value="Reference"/>
+      </extension>
+      <linkId value="Contract.authority"/>
+      <repeats value="true"/>
+      <question>
+        <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#reference">
+          <valueString value="/Organization?subject=$subj&amp;patient=$subj&amp;encounter=$encounter"/>
+        </extension>
+        <linkId value="Contract.authority.value"/>
+        <text value="Authority"/>
+        <type value="reference"/>
+      </question>
+    </group>
+    <group>
+      <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+        <valueString value="A Location includes both incidental locations (a place which is used for healthcare without prior designation or authorization) and dedicated, formally appointed locations."/>
+      </extension>
+      <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+        <valueString value="Reference"/>
+      </extension>
+      <linkId value="Contract.domain"/>
+      <repeats value="true"/>
+      <question>
+        <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#reference">
+          <valueString value="/Location?subject=$subj&amp;patient=$subj&amp;encounter=$encounter"/>
+        </extension>
+        <linkId value="Contract.domain.value"/>
+        <text value="Domain"/>
+        <type value="reference"/>
+      </question>
+    </group>
+    <group>
+      <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+        <valueString value="Type of contract (Privacy-Security, Agreement, Insurance)."/>
+      </extension>
+      <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+        <valueString value="CodeableConcept"/>
+      </extension>
+      <linkId value="Contract.type"/>
+      <text value="Type of contract"/>
+      <repeats value="true"/>
+      <question>
+        <linkId value="Contract.type.coding"/>
+        <text value="code:"/>
+        <type value="open-choice"/>
+      </question>
+      <question>
+        <linkId value="Contract.type.text"/>
+        <text value="text:"/>
+        <type value="string"/>
+      </question>
+    </group>
+    <group>
+      <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+        <valueString value="More specific type of contract (Privacy, Disclosure-Authorization, Advanced-Directive, DNR, Authorization-to-Treat)."/>
+      </extension>
+      <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+        <valueString value="CodeableConcept"/>
+      </extension>
+      <linkId value="Contract.subtype"/>
+      <text value="Subtype of contract"/>
+      <repeats value="true"/>
+      <question>
+        <linkId value="Contract.subtype.coding"/>
+        <text value="code:"/>
+        <type value="open-choice"/>
+      </question>
+      <question>
+        <linkId value="Contract.subtype.text"/>
+        <text value="text:"/>
+        <type value="string"/>
+      </question>
+    </group>
+    <group>
+      <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+        <valueString value="When this was issued."/>
+      </extension>
+      <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+        <valueString value="datetime"/>
+      </extension>
+      <linkId value="Contract.issued"/>
+      <repeats value="true"/>
+      <question>
+        <linkId value="Contract.issued.value"/>
+        <text value="When this was issued"/>
+        <type value="dateTime"/>
+      </question>
+    </group>
+    <group>
+      <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+        <valueString value="Relevant time/time-period when applicable."/>
+      </extension>
+      <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+        <valueString value="Period"/>
+      </extension>
+      <linkId value="Contract.applies"/>
+      <text value="Effective time"/>
+      <repeats value="true"/>
+      <question>
+        <linkId value="Contract.applies.low"/>
+        <text value="start:"/>
+        <type value="dateTime"/>
+      </question>
+      <question>
+        <linkId value="Contract.applies.end"/>
+        <text value="end:"/>
+        <type value="dateTime"/>
+      </question>
+    </group>
+    <group>
+      <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+        <valueString value="The number of repetitions of a service or product."/>
+      </extension>
+      <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+        <valueString value="Quantity"/>
+      </extension>
+      <linkId value="Contract.quantity"/>
+      <text value="Count of Products or Services"/>
+      <repeats value="true"/>
+      <question>
+        <linkId value="Contract.quantity.comparator"/>
+        <text value="comp:"/>
+        <type value="choice"/>
+      </question>
+      <question>
+        <linkId value="Contract.quantity.value"/>
+        <text value="value:"/>
+        <type value="decimal"/>
+      </question>
+      <question>
+        <linkId value="Contract.quantity.units"/>
+        <text value="units:"/>
+        <type value="string"/>
+      </question>
+      <question>
+        <linkId value="Contract.quantity.code"/>
+        <text value="coded units:"/>
+        <type value="string"/>
+      </question>
+      <question>
+        <linkId value="Contract.quantity.system"/>
+        <text value="units system:"/>
+        <type value="string"/>
+      </question>
+    </group>
+    <group>
+      <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+        <valueString value="The unit price product."/>
+      </extension>
+      <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+        <valueString value="Money"/>
+      </extension>
+      <linkId value="Contract.unitPrice"/>
+      <text value="Fee, charge or cost per point"/>
+      <repeats value="true"/>
+      <question>
+        <linkId value="Contract.unitPrice.value"/>
+        <text value="value:"/>
+        <type value="decimal"/>
+      </question>
+      <question>
+        <linkId value="Contract.unitPrice.currency"/>
+        <text value="currency:"/>
+        <type value="string"/>
+      </question>
+    </group>
+    <group>
+      <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+        <valueString value="A real number that represents a multiplier used in determining the overall value of services delivered and/or goods received. The concept of a Factor allows for a discount or surcharge multiplier to be applied to a monetary amount."/>
+      </extension>
+      <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+        <valueString value="decimal"/>
+      </extension>
+      <linkId value="Contract.factor"/>
+      <repeats value="true"/>
+      <question>
+        <linkId value="Contract.factor.value"/>
+        <text value="Price scaling factor"/>
+        <type value="decimal"/>
+      </question>
+    </group>
+    <group>
+      <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+        <valueString value="An amount that expresses the weighting (based on difficulty, cost and/or resource intensiveness) associated with the good or service delivered. The concept of Points allows for assignment of point values for services and/or goods, such that a monetary amount can be assigned to each point."/>
+      </extension>
+      <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+        <valueString value="decimal"/>
+      </extension>
+      <linkId value="Contract.points"/>
+      <repeats value="true"/>
+      <question>
+        <linkId value="Contract.points.value"/>
+        <text value="Difficulty scaling factor"/>
+        <type value="decimal"/>
+      </question>
+    </group>
+    <group>
+      <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+        <valueString value="The quantity times the unit price for an additional service or product or charge. For example, the formula: unit Quantity * unit Price (Cost per Point) * factor Number  * points = net Amount. Quantity, factor and points are assumed to be 1 if not supplied."/>
+      </extension>
+      <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+        <valueString value="Money"/>
+      </extension>
+      <linkId value="Contract.net"/>
+      <text value="Total item cost"/>
+      <repeats value="true"/>
+      <question>
+        <linkId value="Contract.net.value"/>
+        <text value="value:"/>
+        <type value="decimal"/>
+      </question>
+      <question>
+        <linkId value="Contract.net.currency"/>
+        <text value="currency:"/>
+        <type value="string"/>
+      </question>
+    </group>
+    <group>
+      <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+        <valueString value="Contract author or responsible party."/>
+      </extension>
+      <linkId value="Contract.author"/>
+      <text value="Contract author or responsible party"/>
+      <repeats value="true"/>
+      <question>
+        <linkId value="Contract.author._type"/>
+        <text value="type"/>
+        <type value="choice"/>
+        <options>
+          <reference value="#vs2"/>
+        </options>
+        <group>
+          <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+            <valueString value="Reference"/>
+          </extension>
+          <linkId value="Contract.author._Practitioner"/>
+          <question>
+            <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#reference">
+              <valueString value="/Practitioner?subject=$subj&amp;patient=$subj&amp;encounter=$encounter"/>
+            </extension>
+            <linkId value="Contract.author._Practitioner.value"/>
+            <text value="Practitioner"/>
+            <type value="reference"/>
+          </question>
+        </group>
+        <group>
+          <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+            <valueString value="Reference"/>
+          </extension>
+          <linkId value="Contract.author._RelatedPerson"/>
+          <question>
+            <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#reference">
+              <valueString value="/RelatedPerson?subject=$subj&amp;patient=$subj&amp;encounter=$encounter"/>
+            </extension>
+            <linkId value="Contract.author._RelatedPerson.value"/>
+            <text value="RelatedPerson"/>
+            <type value="reference"/>
+          </question>
+        </group>
+        <group>
+          <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+            <valueString value="Reference"/>
+          </extension>
+          <linkId value="Contract.author._Organization"/>
+          <question>
+            <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#reference">
+              <valueString value="/Organization?subject=$subj&amp;patient=$subj&amp;encounter=$encounter"/>
+            </extension>
+            <linkId value="Contract.author._Organization.value"/>
+            <text value="Organization"/>
+            <type value="reference"/>
+          </question>
+        </group>
+      </question>
+    </group>
+    <group>
+      <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+        <valueString value="First Party to the contract, may be the party who confers or delegates the rights defined in the contract."/>
+      </extension>
+      <linkId value="Contract.grantor"/>
+      <text value="First Party or delegator"/>
+      <repeats value="true"/>
+      <question>
+        <linkId value="Contract.grantor._type"/>
+        <text value="type"/>
+        <type value="choice"/>
+        <options>
+          <reference value="#vs3"/>
+        </options>
+        <group>
+          <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+            <valueString value="Reference"/>
+          </extension>
+          <linkId value="Contract.grantor._Practitioner"/>
+          <question>
+            <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#reference">
+              <valueString value="/Practitioner?subject=$subj&amp;patient=$subj&amp;encounter=$encounter"/>
+            </extension>
+            <linkId value="Contract.grantor._Practitioner.value"/>
+            <text value="Practitioner"/>
+            <type value="reference"/>
+          </question>
+        </group>
+        <group>
+          <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+            <valueString value="Reference"/>
+          </extension>
+          <linkId value="Contract.grantor._RelatedPerson"/>
+          <question>
+            <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#reference">
+              <valueString value="/RelatedPerson?subject=$subj&amp;patient=$subj&amp;encounter=$encounter"/>
+            </extension>
+            <linkId value="Contract.grantor._RelatedPerson.value"/>
+            <text value="RelatedPerson"/>
+            <type value="reference"/>
+          </question>
+        </group>
+        <group>
+          <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+            <valueString value="Reference"/>
+          </extension>
+          <linkId value="Contract.grantor._Organization"/>
+          <question>
+            <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#reference">
+              <valueString value="/Organization?subject=$subj&amp;patient=$subj&amp;encounter=$encounter"/>
+            </extension>
+            <linkId value="Contract.grantor._Organization.value"/>
+            <text value="Organization"/>
+            <type value="reference"/>
+          </question>
+        </group>
+        <group>
+          <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+            <valueString value="Reference"/>
+          </extension>
+          <linkId value="Contract.grantor._Patient"/>
+          <question>
+            <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#reference">
+              <valueString value="/Patient?subject=$subj&amp;patient=$subj&amp;encounter=$encounter"/>
+            </extension>
+            <linkId value="Contract.grantor._Patient.value"/>
+            <text value="Patient"/>
+            <type value="reference"/>
+          </question>
+        </group>
+      </question>
+    </group>
+    <group>
+      <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+        <valueString value="The Second party to the contract, may be the party who accepts obligations or be that to which rights are delegated."/>
+      </extension>
+      <linkId value="Contract.grantee"/>
+      <text value="Second Party or delegatee"/>
+      <repeats value="true"/>
+      <question>
+        <linkId value="Contract.grantee._type"/>
+        <text value="type"/>
+        <type value="choice"/>
+        <options>
+          <reference value="#vs4"/>
+        </options>
+        <group>
+          <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+            <valueString value="Reference"/>
+          </extension>
+          <linkId value="Contract.grantee._Practitioner"/>
+          <question>
+            <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#reference">
+              <valueString value="/Practitioner?subject=$subj&amp;patient=$subj&amp;encounter=$encounter"/>
+            </extension>
+            <linkId value="Contract.grantee._Practitioner.value"/>
+            <text value="Practitioner"/>
+            <type value="reference"/>
+          </question>
+        </group>
+        <group>
+          <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+            <valueString value="Reference"/>
+          </extension>
+          <linkId value="Contract.grantee._RelatedPerson"/>
+          <question>
+            <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#reference">
+              <valueString value="/RelatedPerson?subject=$subj&amp;patient=$subj&amp;encounter=$encounter"/>
+            </extension>
+            <linkId value="Contract.grantee._RelatedPerson.value"/>
+            <text value="RelatedPerson"/>
+            <type value="reference"/>
+          </question>
+        </group>
+        <group>
+          <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+            <valueString value="Reference"/>
+          </extension>
+          <linkId value="Contract.grantee._Organization"/>
+          <question>
+            <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#reference">
+              <valueString value="/Organization?subject=$subj&amp;patient=$subj&amp;encounter=$encounter"/>
+            </extension>
+            <linkId value="Contract.grantee._Organization.value"/>
+            <text value="Organization"/>
+            <type value="reference"/>
+          </question>
+        </group>
+        <group>
+          <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+            <valueString value="Reference"/>
+          </extension>
+          <linkId value="Contract.grantee._Patient"/>
+          <question>
+            <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#reference">
+              <valueString value="/Patient?subject=$subj&amp;patient=$subj&amp;encounter=$encounter"/>
+            </extension>
+            <linkId value="Contract.grantee._Patient.value"/>
+            <text value="Patient"/>
+            <type value="reference"/>
+          </question>
+        </group>
+      </question>
+    </group>
+    <group>
+      <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+        <valueString value="Who witnesses the contract."/>
+      </extension>
+      <linkId value="Contract.witness"/>
+      <text value="Witness to the contract"/>
+      <repeats value="true"/>
+      <question>
+        <linkId value="Contract.witness._type"/>
+        <text value="type"/>
+        <type value="choice"/>
+        <options>
+          <reference value="#vs5"/>
+        </options>
+        <group>
+          <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+            <valueString value="Reference"/>
+          </extension>
+          <linkId value="Contract.witness._Practitioner"/>
+          <question>
+            <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#reference">
+              <valueString value="/Practitioner?subject=$subj&amp;patient=$subj&amp;encounter=$encounter"/>
+            </extension>
+            <linkId value="Contract.witness._Practitioner.value"/>
+            <text value="Practitioner"/>
+            <type value="reference"/>
+          </question>
+        </group>
+        <group>
+          <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+            <valueString value="Reference"/>
+          </extension>
+          <linkId value="Contract.witness._RelatedPerson"/>
+          <question>
+            <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#reference">
+              <valueString value="/RelatedPerson?subject=$subj&amp;patient=$subj&amp;encounter=$encounter"/>
+            </extension>
+            <linkId value="Contract.witness._RelatedPerson.value"/>
+            <text value="RelatedPerson"/>
+            <type value="reference"/>
+          </question>
+        </group>
+        <group>
+          <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+            <valueString value="Reference"/>
+          </extension>
+          <linkId value="Contract.witness._Patient"/>
+          <question>
+            <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#reference">
+              <valueString value="/Patient?subject=$subj&amp;patient=$subj&amp;encounter=$encounter"/>
+            </extension>
+            <linkId value="Contract.witness._Patient.value"/>
+            <text value="Patient"/>
+            <type value="reference"/>
+          </question>
+        </group>
+      </question>
+    </group>
+    <group>
+      <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+        <valueString value="First Party to the contract, may be the party who confers or delegates the rights defined in the contract."/>
+      </extension>
+      <linkId value="Contract.executor"/>
+      <text value="Trustee"/>
+      <repeats value="true"/>
+      <question>
+        <linkId value="Contract.executor._type"/>
+        <text value="type"/>
+        <type value="choice"/>
+        <options>
+          <reference value="#vs6"/>
+        </options>
+        <group>
+          <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+            <valueString value="Reference"/>
+          </extension>
+          <linkId value="Contract.executor._Practitioner"/>
+          <question>
+            <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#reference">
+              <valueString value="/Practitioner?subject=$subj&amp;patient=$subj&amp;encounter=$encounter"/>
+            </extension>
+            <linkId value="Contract.executor._Practitioner.value"/>
+            <text value="Practitioner"/>
+            <type value="reference"/>
+          </question>
+        </group>
+        <group>
+          <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+            <valueString value="Reference"/>
+          </extension>
+          <linkId value="Contract.executor._RelatedPerson"/>
+          <question>
+            <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#reference">
+              <valueString value="/RelatedPerson?subject=$subj&amp;patient=$subj&amp;encounter=$encounter"/>
+            </extension>
+            <linkId value="Contract.executor._RelatedPerson.value"/>
+            <text value="RelatedPerson"/>
+            <type value="reference"/>
+          </question>
+        </group>
+        <group>
+          <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+            <valueString value="Reference"/>
+          </extension>
+          <linkId value="Contract.executor._Organization"/>
+          <question>
+            <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#reference">
+              <valueString value="/Organization?subject=$subj&amp;patient=$subj&amp;encounter=$encounter"/>
+            </extension>
+            <linkId value="Contract.executor._Organization.value"/>
+            <text value="Organization"/>
+            <type value="reference"/>
+          </question>
+        </group>
+        <group>
+          <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+            <valueString value="Reference"/>
+          </extension>
+          <linkId value="Contract.executor._Patient"/>
+          <question>
+            <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#reference">
+              <valueString value="/Patient?subject=$subj&amp;patient=$subj&amp;encounter=$encounter"/>
+            </extension>
+            <linkId value="Contract.executor._Patient.value"/>
+            <text value="Patient"/>
+            <type value="reference"/>
+          </question>
+        </group>
+      </question>
+    </group>
+    <group>
+      <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+        <valueString value="First Party to the contract, may be the party who confers or delegates the rights defined in the contract."/>
+      </extension>
+      <linkId value="Contract.notary"/>
+      <text value="Notary Public"/>
+      <repeats value="true"/>
+      <question>
+        <linkId value="Contract.notary._type"/>
+        <text value="type"/>
+        <type value="choice"/>
+        <options>
+          <reference value="#vs7"/>
+        </options>
+        <group>
+          <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+            <valueString value="Reference"/>
+          </extension>
+          <linkId value="Contract.notary._Practitioner"/>
+          <question>
+            <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#reference">
+              <valueString value="/Practitioner?subject=$subj&amp;patient=$subj&amp;encounter=$encounter"/>
+            </extension>
+            <linkId value="Contract.notary._Practitioner.value"/>
+            <text value="Practitioner"/>
+            <type value="reference"/>
+          </question>
+        </group>
+        <group>
+          <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+            <valueString value="Reference"/>
+          </extension>
+          <linkId value="Contract.notary._RelatedPerson"/>
+          <question>
+            <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#reference">
+              <valueString value="/RelatedPerson?subject=$subj&amp;patient=$subj&amp;encounter=$encounter"/>
+            </extension>
+            <linkId value="Contract.notary._RelatedPerson.value"/>
+            <text value="RelatedPerson"/>
+            <type value="reference"/>
+          </question>
+        </group>
+        <group>
+          <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+            <valueString value="Reference"/>
+          </extension>
+          <linkId value="Contract.notary._Organization"/>
+          <question>
+            <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#reference">
+              <valueString value="/Organization?subject=$subj&amp;patient=$subj&amp;encounter=$encounter"/>
+            </extension>
+            <linkId value="Contract.notary._Organization.value"/>
+            <text value="Organization"/>
+            <type value="reference"/>
+          </question>
+        </group>
+        <group>
+          <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+            <valueString value="Reference"/>
+          </extension>
+          <linkId value="Contract.notary._Patient"/>
+          <question>
+            <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#reference">
+              <valueString value="/Patient?subject=$subj&amp;patient=$subj&amp;encounter=$encounter"/>
+            </extension>
+            <linkId value="Contract.notary._Patient.value"/>
+            <text value="Patient"/>
+            <type value="reference"/>
+          </question>
+        </group>
+      </question>
+    </group>
+    <group>
+      <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+        <valueString value="List or contract signatures."/>
+      </extension>
+      <linkId value="Contract.signer"/>
+      <title value="Signer"/>
+      <repeats value="true"/>
+      <group>
+        <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+          <valueString value="unique id for the element within a resource (for internal references)."/>
+        </extension>
+        <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+          <valueString value="string"/>
+        </extension>
+        <linkId value="Contract.signer.id"/>
+        <repeats value="true"/>
+        <question>
+          <linkId value="Contract.signer.id.value"/>
+          <text value="xml:id (or equivalent in JSON)"/>
+          <type value="string"/>
+        </question>
+      </group>
+      <group>
+        <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+          <valueString value="Party or role who is signing."/>
+        </extension>
+        <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+          <valueString value="Coding"/>
+        </extension>
+        <linkId value="Contract.signer.type"/>
+        <required value="true"/>
+        <repeats value="true"/>
+        <question>
+          <linkId value="Contract.signer.type.value"/>
+          <text value="Signer Type"/>
+          <type value="open-choice"/>
+        </question>
+      </group>
+      <group>
+        <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+          <valueString value="The DSIG signature contents in Base64."/>
+        </extension>
+        <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+          <valueString value="string"/>
+        </extension>
+        <linkId value="Contract.signer.signature"/>
+        <required value="true"/>
+        <repeats value="true"/>
+        <question>
+          <linkId value="Contract.signer.signature.value"/>
+          <text value="Documentation Signature"/>
+          <type value="string"/>
+        </question>
+      </group>
+    </group>
+    <group>
+      <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+        <valueString value="The itemized terms of the contract. The legal clause or conditions of the Contract that requires or prevents either one or both parties to perform a particular requirement by some specified time."/>
+      </extension>
+      <linkId value="Contract.term"/>
+      <title value="The terms of the Contract"/>
+      <repeats value="true"/>
+      <group>
+        <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+          <valueString value="unique id for the element within a resource (for internal references)."/>
+        </extension>
+        <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+          <valueString value="string"/>
+        </extension>
+        <linkId value="Contract.term.id"/>
+        <repeats value="true"/>
+        <question>
+          <linkId value="Contract.term.id.value"/>
+          <text value="xml:id (or equivalent in JSON)"/>
+          <type value="string"/>
+        </question>
+      </group>
+      <group>
+        <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+          <valueString value="Unique Id for this particular term."/>
+        </extension>
+        <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+          <valueString value="Identifier"/>
+        </extension>
+        <linkId value="Contract.term.identifier"/>
+        <text value="Term identifier"/>
+        <repeats value="true"/>
+        <question>
+          <linkId value="Contract.term.identifier.label"/>
+          <text value="label:"/>
+          <type value="string"/>
+        </question>
+        <question>
+          <linkId value="Contract.term.identifier.system"/>
+          <text value="system:"/>
+          <type value="string"/>
+        </question>
+        <question>
+          <linkId value="Contract.term.identifier.value"/>
+          <text value="value:"/>
+          <type value="string"/>
+        </question>
+      </group>
+      <group>
+        <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+          <valueString value="The type of the term."/>
+        </extension>
+        <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+          <valueString value="CodeableConcept"/>
+        </extension>
+        <linkId value="Contract.term.type"/>
+        <text value="Term type"/>
+        <repeats value="true"/>
+        <question>
+          <linkId value="Contract.term.type.coding"/>
+          <text value="code:"/>
+          <type value="open-choice"/>
+        </question>
+        <question>
+          <linkId value="Contract.term.type.text"/>
+          <text value="text:"/>
+          <type value="string"/>
+        </question>
+      </group>
+      <group>
+        <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+          <valueString value="The subtype of the term which is appropriate to the term type."/>
+        </extension>
+        <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+          <valueString value="CodeableConcept"/>
+        </extension>
+        <linkId value="Contract.term.subtype"/>
+        <text value="Term subtype"/>
+        <repeats value="true"/>
+        <question>
+          <linkId value="Contract.term.subtype.coding"/>
+          <text value="code:"/>
+          <type value="open-choice"/>
+        </question>
+        <question>
+          <linkId value="Contract.term.subtype.text"/>
+          <text value="text:"/>
+          <type value="string"/>
+        </question>
+      </group>
+      <group>
+        <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+          <valueString value="Who or what the contract term is about."/>
+        </extension>
+        <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+          <valueString value="Reference"/>
+        </extension>
+        <linkId value="Contract.term.subject"/>
+        <repeats value="true"/>
+        <question>
+          <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#reference">
+            <valueString value="/_search?subject=$subj&amp;patient=$subj&amp;encounter=$encounter"/>
+          </extension>
+          <linkId value="Contract.term.subject.value"/>
+          <text value="Subject for the Term"/>
+          <type value="reference"/>
+        </question>
+      </group>
+      <group>
+        <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+          <valueString value="Human readable form of the term of the contract."/>
+        </extension>
+        <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+          <valueString value="string"/>
+        </extension>
+        <linkId value="Contract.term.text"/>
+        <repeats value="true"/>
+        <question>
+          <linkId value="Contract.term.text.value"/>
+          <text value="Human readable Term text"/>
+          <type value="string"/>
+        </question>
+      </group>
+      <group>
+        <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+          <valueString value="When this term was issued."/>
+        </extension>
+        <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+          <valueString value="datetime"/>
+        </extension>
+        <linkId value="Contract.term.issued"/>
+        <repeats value="true"/>
+        <question>
+          <linkId value="Contract.term.issued.value"/>
+          <text value="When issued"/>
+          <type value="dateTime"/>
+        </question>
+      </group>
+      <group>
+        <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+          <valueString value="Relevant time/time-period when the term is applicable."/>
+        </extension>
+        <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+          <valueString value="Period"/>
+        </extension>
+        <linkId value="Contract.term.applies"/>
+        <text value="When effective"/>
+        <repeats value="true"/>
+        <question>
+          <linkId value="Contract.term.applies.low"/>
+          <text value="start:"/>
+          <type value="dateTime"/>
+        </question>
+        <question>
+          <linkId value="Contract.term.applies.end"/>
+          <text value="end:"/>
+          <type value="dateTime"/>
+        </question>
+      </group>
+      <group>
+        <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+          <valueString value="The number of repetitions of a service or product."/>
+        </extension>
+        <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+          <valueString value="Quantity"/>
+        </extension>
+        <linkId value="Contract.term.quantity"/>
+        <text value="Count of Products or Services"/>
+        <repeats value="true"/>
+        <question>
+          <linkId value="Contract.term.quantity.comparator"/>
+          <text value="comp:"/>
+          <type value="choice"/>
+        </question>
+        <question>
+          <linkId value="Contract.term.quantity.value"/>
+          <text value="value:"/>
+          <type value="decimal"/>
+        </question>
+        <question>
+          <linkId value="Contract.term.quantity.units"/>
+          <text value="units:"/>
+          <type value="string"/>
+        </question>
+        <question>
+          <linkId value="Contract.term.quantity.code"/>
+          <text value="coded units:"/>
+          <type value="string"/>
+        </question>
+        <question>
+          <linkId value="Contract.term.quantity.system"/>
+          <text value="units system:"/>
+          <type value="string"/>
+        </question>
+      </group>
+      <group>
+        <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+          <valueString value="The unit price product."/>
+        </extension>
+        <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+          <valueString value="Money"/>
+        </extension>
+        <linkId value="Contract.term.unitPrice"/>
+        <text value="Fee, charge or cost per point"/>
+        <repeats value="true"/>
+        <question>
+          <linkId value="Contract.term.unitPrice.value"/>
+          <text value="value:"/>
+          <type value="decimal"/>
+        </question>
+        <question>
+          <linkId value="Contract.term.unitPrice.currency"/>
+          <text value="currency:"/>
+          <type value="string"/>
+        </question>
+      </group>
+      <group>
+        <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+          <valueString value="A real number that represents a multiplier used in determining the overall value of services delivered and/or goods received. The concept of a Factor allows for a discount or surcharge multiplier to be applied to a monetary amount."/>
+        </extension>
+        <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+          <valueString value="decimal"/>
+        </extension>
+        <linkId value="Contract.term.factor"/>
+        <repeats value="true"/>
+        <question>
+          <linkId value="Contract.term.factor.value"/>
+          <text value="Price scaling factor"/>
+          <type value="decimal"/>
+        </question>
+      </group>
+      <group>
+        <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+          <valueString value="An amount that expresses the weighting (based on difficulty, cost and/or resource intensiveness) associated with the good or service delivered. The concept of Points allows for assignment of point values for services and/or goods, such that a monetary amount can be assigned to each point."/>
+        </extension>
+        <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+          <valueString value="decimal"/>
+        </extension>
+        <linkId value="Contract.term.points"/>
+        <repeats value="true"/>
+        <question>
+          <linkId value="Contract.term.points.value"/>
+          <text value="Difficulty scaling factor"/>
+          <type value="decimal"/>
+        </question>
+      </group>
+      <group>
+        <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+          <valueString value="The quantity times the unit price for an additional service or product or charge. For example, the formula: unit Quantity * unit Price (Cost per Point) * factor Number  * points = net Amount. Quantity, factor and points are assumed to be 1 if not supplied."/>
+        </extension>
+        <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+          <valueString value="Money"/>
+        </extension>
+        <linkId value="Contract.term.net"/>
+        <text value="Total item cost"/>
+        <repeats value="true"/>
+        <question>
+          <linkId value="Contract.term.net.value"/>
+          <text value="value:"/>
+          <type value="decimal"/>
+        </question>
+        <question>
+          <linkId value="Contract.term.net.currency"/>
+          <text value="currency:"/>
+          <type value="string"/>
+        </question>
+      </group>
+    </group>
+    <group>
+      <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+        <valueString value="Legally binding contract."/>
+      </extension>
+      <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+        <valueString value="Attachment"/>
+      </extension>
+      <linkId value="Contract.binding"/>
+      <text value="Binding Contract"/>
+      <repeats value="true"/>
+    </group>
+    <group>
+      <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+        <valueString value="Relevant time/time-period when applicable."/>
+      </extension>
+      <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+        <valueString value="datetime"/>
+      </extension>
+      <linkId value="Contract.bindingDateTime"/>
+      <repeats value="true"/>
+      <question>
+        <linkId value="Contract.bindingDateTime.value"/>
+        <text value="Binding Contract effective time"/>
+        <type value="dateTime"/>
+      </question>
+    </group>
+    <group>
+      <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+        <valueString value="Friendly Human readable form (might be a reference to the UI used to capture the contract)."/>
+      </extension>
+      <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+        <valueString value="Attachment"/>
+      </extension>
+      <linkId value="Contract.friendly"/>
+      <text value="Human readable contract text"/>
+      <repeats value="true"/>
+    </group>
+    <group>
+      <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+        <valueString value="Relevant time/time-period when applicable."/>
+      </extension>
+      <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+        <valueString value="datetime"/>
+      </extension>
+      <linkId value="Contract.friendlyDateTime"/>
+      <repeats value="true"/>
+      <question>
+        <linkId value="Contract.friendlyDateTime.value"/>
+        <text value="Human readable contract text effective time"/>
+        <type value="dateTime"/>
+      </question>
+    </group>
+    <group>
+      <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+        <valueString value="Legal text in Human readable form."/>
+      </extension>
+      <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+        <valueString value="Attachment"/>
+      </extension>
+      <linkId value="Contract.legal"/>
+      <text value="Legal contract text"/>
+      <repeats value="true"/>
+    </group>
+    <group>
+      <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+        <valueString value="Relevant time/time-period when applicable."/>
+      </extension>
+      <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+        <valueString value="datetime"/>
+      </extension>
+      <linkId value="Contract.legalDateTime"/>
+      <repeats value="true"/>
+      <question>
+        <linkId value="Contract.legalDateTime.value"/>
+        <text value="Legal contract text date time"/>
+        <type value="dateTime"/>
+      </question>
+    </group>
+    <group>
+      <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+        <valueString value="Computable Policy rules (e.g. XACML, DKAL, SecPal)."/>
+      </extension>
+      <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+        <valueString value="Attachment"/>
+      </extension>
+      <linkId value="Contract.rule"/>
+      <text value="Computable contract text"/>
+      <repeats value="true"/>
+    </group>
+    <group>
+      <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+        <valueString value="Relevant time/time-period when applicable."/>
+      </extension>
+      <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+        <valueString value="datetime"/>
+      </extension>
+      <linkId value="Contract.ruleDateTime"/>
+      <repeats value="true"/>
+      <question>
+        <linkId value="Contract.ruleDateTime.value"/>
+        <text value="Computable contract text effect time"/>
+        <type value="dateTime"/>
+      </question>
+    </group>
+  </group>
+</Questionnaire>

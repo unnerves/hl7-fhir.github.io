@@ -1,0 +1,347 @@
+﻿<!DOCTYPE HTML>
+
+
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <title>Patient-daf - FHIR v0.4.0</title>
+
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="author" content="http://hl7.org/fhir"/>
+
+  <link href="fhir.css" rel="stylesheet"/>
+  <link rel="Prev" href="http://hl7.org/implement/standards/fhir/patient-daf"/>
+
+  <!-- Bootstrap core CSS -->
+  <link href="./dist/css/bootstrap.css" rel="stylesheet"/>
+  <link href="./assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+  <!-- Project extras -->
+  <link href="./assets/css/project.css" rel="stylesheet"/>
+  <link href="./assets/css/pygments-manni.css" rel="stylesheet"/>
+	<link href="jquery-ui.css" rel="stylesheet"/>
+
+  <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!--[if lt IE 9]>
+  <script src="./assets/js/html5shiv.js"></script>
+  <script src="./assets/js/respond.min.js"></script>
+  <![endif]-->
+
+  <!-- Favicons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="./assets/ico/apple-touch-icon-144-precomposed.png"/>
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="./assets/ico/apple-touch-icon-114-precomposed.png"/>
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="./assets/ico/apple-touch-icon-72-precomposed.png"/>
+  <link rel="apple-touch-icon-precomposed" href="./assets/ico/apple-touch-icon-57-precomposed.png"/>
+  <link rel="shortcut icon" href="./assets/ico/favicon.png"/>
+
+</head>
+<body>
+	<div id="segment-header" class="segment"><!-- segment-header -->	
+		<div class="container"><!-- container -->
+			<a id="logo" href="http://hl7.org/fhir"><img src="./assets/images/fhir-logo-www.png" alt="logo fhir"/> </a>
+			<div id="hl7-status">
+				<b>Continuous Integration Build</b>
+			</div>       	
+			
+			<div id="hl7-nav">
+				 <a id="hl7-logo" href="http://www.hl7.org">
+					<img src="./assets/images/hl7-logo.png" width="42" height="50" alt="visit the hl7 website"/>
+				</a> 
+			</div>       	
+			<!--hl7-search-->
+		</div>
+		<div class="container"><!-- container -->
+	</div></div><!-- /segment-header -->	
+
+
+	<div id="segment-navbar" class="segment"><!-- segment-navbar -->
+		<div id="stripe"> </div>
+		<div class="container"><!-- container -->
+ <!-- HEADER CONTENT -->
+ 	      		
+ 	      		      		
+			<nav class="navbar navbar-inverse">
+				<div class="container">
+					<button data-target=".navbar-inverse-collapse" data-toggle="collapse" class="navbar-toggle" type="button">
+						<span class="icon-bar"> </span>
+						<span class="icon-bar"> </span>
+						<span class="icon-bar"> </span>
+					</button>
+					<a href="index.html" class="navbar-brand hidden">FHIR</a>
+					<div class="nav-collapse collapse navbar-inverse-collapse">
+						<ul class="nav navbar-nav">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="documentation.html">Documentation</a></li>
+              <li><a href="implementation.html">Implementation</a></li>
+              <li><a href="resourcelist.html">Resources</a></li>
+              <li><a href="clinical.html">Clinical</a></li>
+              <li><a href="administration.html">Administrative</a></li>
+              <li><a href="infrastructure.html">Infrastructure</a></li>
+              <li><a href="financial.html">Financial</a></li>
+
+						</ul>
+					</div><!-- /.nav-collapse -->
+				</div><!-- /.container -->
+			</nav><!-- /.navbar -->
+      		
+				
+<!-- /HEADER CONTENT -->				
+		</div><!-- /container -->
+	</div><!-- /segment-navbar -->
+	
+
+	<div id="segment-breadcrumb" class="segment"><!-- segment-breadcrumb -->
+		<div class="container"><!-- container -->	
+			<ul class="breadcrumb">
+        <li><a href="index.html">Home</a></li>
+        <!-- patient-daf.html / package -->
+
+			</ul>	
+		</div><!-- /container -->
+	</div><!-- /segment-breadcrumb -->
+	
+
+	<div id="segment-content" class="segment"><!-- segment-content -->
+	<div class="container"><!-- container -->
+            <div class="row">
+            	<div class="inner-wrapper">
+<!-- CONTENT CONTENT -->
+
+
+<div class="col-9">
+
+<h1>U.S. Data Access Framework (DAF) Patient Profile (Conformance Package)</h1>
+
+
+<div>
+<h2>Scope and Usage</h2>
+<p>
+This profile sets expectations for use of the <a href="patient.html">Patient</a> resource within the 
+<a href="daf.html">Data Access Framework (DAF)</a> Implementation Guide. This profile identifies which core elements,extensions,vocabularies and value sets must be supported by DAF actors.
+</p>
+<p>
+For the purposes of this profile, <i>Supported</i> means the following:
+<ul>
+  <p><b>SearchParameters:</b></p>
+  <li>DAF Query Requestor (client) SHALL be capable of querying the Patient resource using one or more of the search parameters for data elements tagged as MUST SUPPORT in this profile.</li>
+  <li>DAF Query Responder (server) SHALL be capable of receiving the queries submitted by the DAF Query Requestor and provide Query Results or error responses per the FHIR specifications.</li>
+  <li>DAF Query Responder MAY provide valid or error responses when the query parameters submitted contain data elements which are not tagged as MUST SUPPORT by this profile.</li>
+  <p/>
+  <p><b>Query Results:</b></p>
+  <li>Query Results returned by DAF Query Responder SHOULD contain the data elements identified as MUST SUPPORT in the profile.</li>
+  <li>Query Results returned MAY contain data elements not tagged as MUST SUPPORT by the this profile.</li>
+  <li>Query Requestor SHALL process the Query Results containing additional data elements without indicating that the response is an erroneous response.</li>
+  <p/>
+  <p><b>Missing Information:</b></p>
+  <li>When Query Results do not contain a particular data element identified as MUST SUPPORT, Query Requestors SHALL interpret the results to mean that the Query Responder did not have information and there is no further qualifying information as to why the information is missing.</li>
+  <li>In cases, where the Query Responder knows precisely the reason why the data is missing (e.g notasked in the data-absent-reason value set), then Query Responders MAY provide this additional information using the extension element as part of the data element. Query Requestors SHALL correctly process the data-absent-reason extension without rejecting the response as an erroneous response.</li>
+</ul>
+</p>
+</div>
+
+<div>
+<h2>Relationship to Meaningful Use</h2>
+<p>
+The DAF Patient profile provides a mapping for the following Meaningful Use data elements to FHIR data elements.
+</p>
+<br/>
+	<table class="grid">
+        <thead>
+          <tr>
+            <th>Meaningful Use Data Element Name</th>
+            <th>FHIR Resource Mapping</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+			<td>Name</td>
+			<td>Patient.name</td>
+		  </tr>
+		  <tr>
+			<td>Patient Identifiers</td>
+			<td>Patient.identifier</td>
+		  </tr>
+		  <tr>
+			<td>Gender</td>
+			<td>Patient.gender</td>
+		  </tr>
+		  <tr>
+			<td>Date of Birth</td>
+			<td>Patient.birthDate</td>
+		  </tr>
+		  <tr>
+			<td>Race</td>
+			<td>Patient.extension(us-core-race)</td>
+		  </tr>
+		  <tr>
+			<td>Ethnicity</td>
+			<td>Patient.extension(us-core-ethnicity)</td>
+		  </tr>
+		  <tr>
+			<td>Preferred Language</td>
+			<td>Patient.communication</td>
+		  </tr>
+		  <tr>
+			<td>Multiple Birth Indicator</td>
+			<td>Patient.multipleBirthBoolean</td>
+		  </tr>
+		  <tr>
+			<td>Birth Order</td>
+			<td>Patient.multipleBirthInteger</td>
+		  </tr>
+		  <tr>
+			<td>Mother's Maiden Name</td>
+			<td>Patient.extension(patient-mothers-maiden-name)</td>
+		  </tr>
+		  <tr>
+			<td>Address</td>
+			<td>Patient.address</td>
+		  </tr>
+		  <tr>
+			<td>Telephone</td>
+			<td>Patient.telecom</td>
+		  </tr>
+		  <tr>
+			<td>Marital Status</td>
+			<td>Patient.maritalStatus</td>
+		  </tr>
+		  <tr>
+			<td>Birth Place</td>
+			<td>Patient.extension(birthplace)</td>
+		  </tr>
+		  <tr>
+			<td>Religious Affiliation</td>
+			<td>Patient.extension(religion)</td>
+		  </tr>
+		  <tr>
+			<td>Guardian</td>
+			<td>Patient.contact</td>
+		  </tr>
+		</tbody>
+	</table>
+
+</div>
+
+
+<div>
+<h2>Boundaries and Relationships</h2>
+<p>
+This profile relies on the use of other profiles, some required, others available for use "when necessary":
+</p>
+<ul>
+  <li><a href="us-core.html">US Core</a> which defines common properties related to Patient such as race and ethnicity.</li>
+  <li><a href="extensiondefinition-examples.html">Extensions</a> defines other extensions such as birthPlace, patient-mothers-maiden-name which are used by the profile</li>
+  <li><a href="extensibility.html">FHIR Extensibility</a> defines how extensions can be applied to FHIR resources and data types. Specifically the <a href="extension-data-absent-reason.html">data-absent-reason</a> extension is used to code data elements with missing information when appropriate.</li>
+</ul>
+</div>
+
+<h2><u>Profile Details</u></h2>
+
+
+
+<table class="lines"><tr><td colspan="2"><b>Profiles</b>: </td></tr><tr><td><a href="patient-daf-dafpatient.html">DAFPatient</a></td><td>Defines constraints and extensions on the patient resource for use in querying and retrieving patient demographic information. : U.S. Data Access Framework (DAF) Patient Profile</td></tr></table><h3>Search Parameters</h3>
+<p>Search parameters defined by this package. See <a href="search.html">Searching</a> for more information about searching in REST, messaging, and services.</p>
+<table class="list">
+<tr><td><b>Name</b></td><td><b>Type</b></td><td><b>Description</b></td><td><b>Paths</b></td><td><b>Source</b></td></tr>
+<tr><td>age</td><td><a href="search.html#number">number</a></td><td>Computation based search where the query requestor intends to search based on age rather than the actual birth date.</td><td>null</td><td><a href="patient-daf-sp-patient-age.xml.html">XML</a> / <a href="patient-daf-sp-patient-age.json.html">JSON</a></td></tr>
+<tr><td>birthOrderBoolean</td><td><a href="search.html#token">token</a></td><td>Search based on whether a patient was part of multiple births or not.</td><td>null</td><td><a href="patient-daf-sp-patient-birthOrderBoolean.xml.html">XML</a> / <a href="patient-daf-sp-patient-birthOrderBoolean.json.html">JSON</a></td></tr>
+<tr><td>birthOrderInteger</td><td><a href="search.html#number">number</a></td><td>Search based on birth order if the patient was part of multiple births.</td><td>null</td><td><a href="patient-daf-sp-patient-birthOrderInteger.xml.html">XML</a> / <a href="patient-daf-sp-patient-birthOrderInteger.json.html">JSON</a></td></tr>
+<tr><td>city</td><td><a href="search.html#string">string</a></td><td>Search based on city</td><td>null</td><td><a href="patient-daf-sp-patient-city.xml.html">XML</a> / <a href="patient-daf-sp-patient-city.json.html">JSON</a></td></tr>
+<tr><td>ethnicity</td><td><a href="search.html#token">token</a></td><td>The ethnicity of the patient</td><td>null</td><td><a href="patient-daf-sp-patient-ethnicity.xml.html">XML</a> / <a href="patient-daf-sp-patient-ethnicity.json.html">JSON</a></td></tr>
+<tr><td>mothersMaidenName</td><td><a href="search.html#string">string</a></td><td>Patient's mother's maiden name</td><td>null</td><td><a href="patient-daf-sp-patient-mothersMaidenName.xml.html">XML</a> / <a href="patient-daf-sp-patient-mothersMaidenName.json.html">JSON</a></td></tr>
+<tr><td>name</td><td><a href="search.html#token">token</a></td><td>The name of a patient that matches a given name or a family name or the name represented by the text element. (Note: This overrides the base Patient resource name search parameter behavior.)</td><td>null</td><td><a href="patient-daf-sp-patient-name.xml.html">XML</a> / <a href="patient-daf-sp-patient-name.json.html">JSON</a></td></tr>
+<tr><td>race</td><td><a href="search.html#token">token</a></td><td>The race of the patient</td><td>null</td><td><a href="patient-daf-sp-patient-race.xml.html">XML</a> / <a href="patient-daf-sp-patient-race.json.html">JSON</a></td></tr>
+<tr><td>streetAddress</td><td><a href="search.html#string">string</a></td><td>Search based on street address</td><td>null</td><td><a href="patient-daf-sp-patient-streetAddress.xml.html">XML</a> / <a href="patient-daf-sp-patient-streetAddress.json.html">JSON</a></td></tr>
+<tr><td>telecom</td><td><a href="search.html#string">string</a></td><td>Search based on telecom value</td><td>null</td><td><a href="patient-daf-sp-patient-telecom.xml.html">XML</a> / <a href="patient-daf-sp-patient-telecom.json.html">JSON</a></td></tr>
+<tr><td>zipcode</td><td><a href="search.html#string">string</a></td><td>Search based on zipcode</td><td>null</td><td><a href="patient-daf-sp-patient-zipcode.xml.html">XML</a> / <a href="patient-daf-sp-patient-zipcode.json.html">JSON</a></td></tr>
+</table>
+
+
+
+<h2>Example Usage Scenarios</h2>
+
+<p>
+The following are example usage scenarios for the DAF Patient profile:
+</p>
+<ul>
+	<li>Query for a Patient demographic information using identifiers such as MRN</li>
+	<li>Query for a Patient demographic information using first name, last name etc.</li>
+	<li>Query for Patients based on race, ethnicity, gender etc.</li>
+	<li>Query for Patients based on geographical area such as city, state, zipcode information</li>
+	<li>Query for Patients less than 5 years</li>
+	<li>Query for Patients between ages of 25 and 50</li>
+</ul>
+
+<h2>Additional Implementation Guidance</h2>
+
+<p>
+Implementers need to be mindful of the following during their implementation
+</p>
+<ul>
+	<p><b>Patient Identifiers:</b> Patient Identifiers are represented as part of the Patient.identifier data element. Identifiers have to be scoped using a URI data type represented within the Patient.identifier.system element. If systems are using OID's to scope their patient identifiers, then OID's can be converted to URI's per RFC-3001. Since DAF profiles deal with queries of Patient data, identifiers play a critical role to identify the right resources to be returned. So all DAF Responders MUST return the Patient.identifier element as part of the Patient resource and further Patient.identifier.system and Patient.identifier.value MUST be populated.</p>
+	
+	<p><b>Patient Matching:</b> Patient Matching rules and criteria have to be evaluated by the implementing organization and have to comply with local policies and regulations. Query Requestors will have to deal with result sets that can return zero,one or more Patient Resources in response to a query.</p>
+	
+	<p><b>Representing Patient Names:</b> Patient Names are represented using the <a href="datatypes-definitions.html#HumanName">HumanName</a> datatype. Per the FHIR specification, the first name is represented using the first occurrence of the element HumanName.given element. Middle names and other parts of the name can be represented using subsequent occurrences of the HumanName.given element. </p>
+	
+	<p><b>Coding Race Extension:</b> Instances SHALL return the codes corresponding to one of "American Indian or Alaska Native", "Asian", "Black or African American", "Native Hawaiian or Other Pacific Islander", "White" in the first race element within the Patient resource. Instances can contain detailed race categories that can be rolled up to the above five categories as part of the subsequent race data elements. </p>
+	
+	<p><b>Coding Ethnicity:</b> Instances SHALL only use the code "2135-2" representing "Hispanic or Latino" or the code "2186-5" representing "Not Hispanic or Latino" from the <a href="http://hl7.org/fhir/v3/vs/Ethnicity">Ethnicity Codesystem</a>. </p>
+	
+</ul>
+
+
+
+</div>
+
+
+				</div><!-- /inner-wrapper -->
+            </div><!-- /row -->
+        </div><!-- /container -->
+        
+    </div><!-- /segment-content -->
+
+
+	<div id="segment-footer" class="segment"><!-- segment-footer -->
+		<div class="container"><!-- container -->
+			<div class="inner-wrapper">
+				<p>
+        © HL7.org 2011+. FHIR DSTU (v0.4.0-3920) generated on Tue, Dec 30, 2014 11:03+0000. <!-- <a href="qa.html">QA Report</a> --> <!-- achive note -->
+        <br/>
+        <span style="color: #FFFF77">
+        Links: <a style="color: #81BEF7" href="timelines.html">What's a DSTU?</a> | 
+               <a style="color: #81BEF7" href="history.html">Version History</a> | 
+               <a style="color: #81BEF7" href="http://services.w3.org/htmldiff?doc1=http%3A%2F%2Fhl7.org%2Fimplement%2Fstandards%2Ffhir%2Fpatient-daf&amp;doc2=http%3A%2F%2Fhl7-fhir.github.io%2F%2Fpatient-daf">Compare to DSTU</a> | 
+               <a style="color: #81BEF7" rel="license" href="license.html"><img src="cc0.png" style="border-style: none;" alt="CC0"/></a> | 
+               <a style="color: #81BEF7" target="_blank" href="http://gforge.hl7.org/gf/project/fhir/tracker/?action=TrackerItemAdd&amp;tracker_id=677">Propose a change</a>   
+        </span>
+        </p>
+			</div><!-- /inner-wrapper -->
+		</div><!-- /container -->
+	</div><!-- /segment-footer -->
+<!-- disqus thread -->
+<!--disqus-->
+<!-- end disqus -->        
+	
+	<div id="segment-post-footer" class="segment hidden"><!-- segment-post-footer -->
+		<div class="container"><!-- container -->
+		</div><!-- /container -->
+	</div><!-- /segment-post-footer -->
+    
+    <!-- JS and analytics only. -->
+    <!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="./assets/js/jquery.js"> </script>   <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+<script src="./dist/js/bootstrap.min.js"> </script>
+<script src="./assets/js/respond.min.js"> </script>
+
+<script src="./assets/js/fhir.js"> </script>
+
+<!-- Analytics Below
+================================================== -->
+
+    
+</body>
+</html>

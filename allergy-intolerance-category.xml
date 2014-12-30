@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="allergy-intolerance-category"/>
+  <meta>
+    <lastUpdated value="2014-12-30T10:55:31"/>
+  </meta>
+  <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      <p>This value set contains 3 concepts</p>
+      <h2>AllergyIntoleranceCategory</h2>
+      <p>Category of an identified Substance</p>
+      <p>This value set defines its own terms in the system http://hl7.org/fhir/allergy-intolerance-category</p>
+      <table class="codes">
+        <tr>
+          <td>
+            <b>Code</b>
+          </td>
+          <td>
+            <b>Display</b>
+          </td>
+          <td>
+            <b>Definition</b>
+          </td>
+        </tr>
+        <tr>
+          <td>food
+            <a name="food"> </a>
+          </td>
+          <td>Food</td>
+          <td>Any substance consumed to provide nutritional support for the body.</td>
+        </tr>
+        <tr>
+          <td>medication
+            <a name="medication"> </a>
+          </td>
+          <td>Medication</td>
+          <td>Substances administered to achieve a physiological effect.</td>
+        </tr>
+        <tr>
+          <td>environment
+            <a name="environment"> </a>
+          </td>
+          <td>Environment</td>
+          <td>Substances that are encountered in the environment.</td>
+        </tr>
+      </table>
+    </div>
+  </text>
+  <extension url="http://hl7.org/fhir/ExtensionDefinition/valueset-oid">
+    <valueUri value="urn:oid:2.16.840.1.113883.4.642.2.481"/>
+  </extension>
+  <identifier value="http://hl7.org/fhir/vs/allergy-intolerance-category"/>
+  <name value="AllergyIntoleranceCategory"/>
+  <publisher value="HL7 (FHIR Project)"/>
+  <telecom>
+    <system value="url"/>
+    <value value="http://hl7.org/fhir"/>
+  </telecom>
+  <telecom>
+    <system value="email"/>
+    <value value="fhir@lists.hl7.org"/>
+  </telecom>
+  <description value="Category of an identified Substance"/>
+  <status value="draft"/>
+  <date value="2014-12-30T10:55:31"/>
+  <define>
+    <extension url="http://hl7.org/fhir/ExtensionDefinition/valueset-oid">
+      <valueUri value="urn:oid:2.16.840.1.113883.4.642.1.481"/>
+    </extension>
+    <system value="http://hl7.org/fhir/allergy-intolerance-category"/>
+    <caseSensitive value="true"/>
+    <concept>
+      <code value="food"/>
+      <display value="Food"/>
+      <definition value="Any substance consumed to provide nutritional support for the body."/>
+    </concept>
+    <concept>
+      <code value="medication"/>
+      <display value="Medication"/>
+      <definition value="Substances administered to achieve a physiological effect."/>
+    </concept>
+    <concept>
+      <code value="environment"/>
+      <display value="Environment"/>
+      <definition value="Substances that are encountered in the environment."/>
+    </concept>
+  </define>
+</ValueSet>

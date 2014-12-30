@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ExtensionDefinition xmlns="http://hl7.org/fhir">
+  <id value="additionaltimevalue"/>
+  <url value="http://hl7.org/fhir/ExtensionDefinition/additionaltimevalue"/>
+  <name value="Additional time results"/>
+  <publisher value="HL7 International - Orders and Observations WG"/>
+  <telecom>
+    <system value="url"/>
+    <value value="http://hl7.org"/>
+  </telecom>
+  <description value="This extension is used when there are multiple result values for a single Observation Resource.  The first result for this observation is the value[x] element and any additional time results for this observation will go here."/>
+  <status value="draft"/>
+  <date value="2014-09-20"/>
+  <contextType value="resource"/>
+  <context value="Observation"/>
+  <element>
+    <path value="Extension"/>
+    <short value="Additional time results"/>
+    <formal value="This extension is used when there are multiple result values for a single Observation Resource.  The first result for this observation is the value[x] element and any additional time results for this observation will go here."/>
+    <comments value="Having a single value for each Observation Resource is preferred."/>
+    <min value="0"/>
+    <max value="*"/>
+    <type>
+      <code value="time"/>
+    </type>
+    <isSummary value="false"/>
+  </element>
+</ExtensionDefinition>

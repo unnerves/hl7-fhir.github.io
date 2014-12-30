@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ExtensionDefinition xmlns="http://hl7.org/fhir">
+  <id value="iso21090-ST-language"/>
+  <url value="http://hl7.org/fhir/ExtensionDefinition/iso21090-ST-language"/>
+  <name value="language"/>
+  <publisher value="HL7"/>
+  <telecom>
+    <system value="url"/>
+    <value value="http://www.hl7.org"/>
+  </telecom>
+  <description value="The language in which the string is expressed."/>
+  <status value="draft"/>
+  <date value="2012-06-24"/>
+  <mapping>
+    <identity value="rim"/>
+    <uri value="http://hl7.org/v3"/>
+    <name value="RIM"/>
+  </mapping>
+  <contextType value="datatype"/>
+  <context value="string"/>
+  <element>
+    <path value="Extension"/>
+    <short value="language"/>
+    <formal value="The language in which the string is expressed."/>
+    <min value="0"/>
+    <max value="1"/>
+    <type>
+      <code value="code"/>
+    </type>
+    <isSummary value="false"/>
+    <binding>
+      <name value="Language"/>
+      <isExtensible value="true"/>
+      <description value="A human language"/>
+      <referenceUri value="http://tools.ietf.org/html/bcp47"/>
+    </binding>
+    <mapping>
+      <identity value="rim"/>
+      <map value="ED.language"/>
+    </mapping>
+  </element>
+</ExtensionDefinition>

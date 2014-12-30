@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ExtensionDefinition xmlns="http://hl7.org/fhir">
+  <id value="cda-birthplace"/>
+  <meta>
+    <lastUpdated value="2014-11-05T20:31:00Z"/>
+  </meta>
+  <url value="http://hl7.org/fhir/ExtensionDefinition/cda-birthplace"/>
+  <name value="CDA Birthplace"/>
+  <publisher value="HL7 FHIR Project"/>
+  <telecom>
+    <system value="url"/>
+    <value value="http://hl7.org/fhir"/>
+  </telecom>
+  <description value="Standard Profile for CDA R2 on FHIR"/>
+  <status value="draft"/>
+  <date value="2014-11-05"/>
+  <mapping>
+    <identity value="rim"/>
+    <uri value="http://hl7.org/v3"/>
+    <name value="RIM"/>
+  </mapping>
+  <contextType value="resource"/>
+  <context value="Patient"/>
+  <element>
+    <path value="Extension"/>
+    <short value="The patient&#39;s birthplace"/>
+    <min value="0"/>
+    <max value="1"/>
+    <type>
+      <code value="Reference"/>
+      <profile value="#birthplace"/>
+    </type>
+    <mapping>
+      <identity value="rim"/>
+      <map value="Role.playingEntity"/>
+    </mapping>
+  </element>
+</ExtensionDefinition>

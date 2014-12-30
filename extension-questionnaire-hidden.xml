@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ExtensionDefinition xmlns="http://hl7.org/fhir">
+  <id value="questionnaire-hidden"/>
+  <url value="http://hl7.org/fhir/ExtensionDefinition/questionnaire-hidden"/>
+  <name value="Don&#39;t display to user"/>
+  <publisher value="HL7"/>
+  <telecom>
+    <system value="url"/>
+    <value value="http://www.hl7.org"/>
+  </telecom>
+  <description value="If true, indicates that the containing group or question should not be displayed to the user for data entry."/>
+  <status value="draft"/>
+  <date value="2013-07-04"/>
+  <contextType value="resource"/>
+  <context value="Questionnaire.group"/>
+  <context value="Questionnaire.group.group"/>
+  <context value="Questionnaire.group.question"/>
+  <element>
+    <path value="Extension"/>
+    <short value="Don&#39;t display to user"/>
+    <formal value="If true, indicates that the containing group or question should not be displayed to the user for data entry."/>
+    <comments value="Some questionnaires may have questions that represent calculated values or internal &quot;fixed&quot; metadata.  These elements need to be included with the answers, but should not be displayed to the user."/>
+    <min value="0"/>
+    <max value="1"/>
+    <type>
+      <code value="boolean"/>
+    </type>
+    <isSummary value="false"/>
+  </element>
+</ExtensionDefinition>

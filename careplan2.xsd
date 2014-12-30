@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 
+  Copyright (c) 2011+, HL7, Inc.
+  All rights reserved.
+  
+  Redistribution and use in source and binary forms, with or without modification, 
+  are permitted provided that the following conditions are met:
+  
+   * Redistributions of source code must retain the above copyright notice, this 
+     list of conditions and the following disclaimer.
+   * Redistributions in binary form must reproduce the above copyright notice, 
+     this list of conditions and the following disclaimer in the documentation 
+     and/or other materials provided with the distribution.
+   * Neither the name of HL7 nor the names of its contributors may be used to 
+     endorse or promote products derived from this software without specific 
+     prior written permission.
+  
+  THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND 
+  ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED 
+  WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. 
+  IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, 
+  INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT 
+  NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR 
+  PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, 
+  WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) 
+  ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE 
+  POSSIBILITY OF SUCH DAMAGE.
+  
+
+  Generated on Tue, Dec 30, 2014 10:55+0000 for FHIR v0.4.0 
+-->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns="http://hl7.org/fhir" xmlns:xhtml="http://www.w3.org/1999/xhtml" targetNamespace="http://hl7.org/fhir" elementFormDefault="qualified" version="0.4.0">
+  <xs:include schemaLocation="fhir-base.xsd"/>
+  <xs:element name="CarePlan2" type="CarePlan2">
+    <xs:annotation>
+      <xs:documentation>Describes the intention of how one or more practitioners intend to deliver care for a particular patient for a period of time, possibly limited to care for a specific condition or set of conditions.</xs:documentation>
+    </xs:annotation>
+  </xs:element>
+  <xs:complexType name="CarePlan2">
+    <xs:annotation>
+      <xs:documentation>Describes the intention of how one or more practitioners intend to deliver care for a particular patient for a period of time, possibly limited to care for a specific condition or set of conditions.</xs:documentation>
+      <xs:documentation>If the element is present, it must have either a @value, an @id, or extensions</xs:documentation>
+    </xs:annotation>
+    <xs:complexContent>
+      <xs:extension base="DomainResource">
+        <xs:sequence>
+          <xs:element name="identifier" minOccurs="0" maxOccurs="unbounded" type="Identifier">
+            <xs:annotation>
+              <xs:documentation>This records identifiers associated with this care plan that are defined by business processed and/ or used to refer to it when a direct URL reference to the resource itself is not appropriate (e.g. in CDA documents, or in written / printed documentation).</xs:documentation>
+           </xs:annotation>
+          </xs:element>
+          <xs:element name="patient" minOccurs="0" maxOccurs="1" type="Reference">
+            <xs:annotation>
+              <xs:documentation>Identifies the patient/subject whose intended care is described by the plan.</xs:documentation>
+           </xs:annotation>
+          </xs:element>
+          <xs:element name="status" minOccurs="1" maxOccurs="1" type="CarePlan2Status">
+            <xs:annotation>
+              <xs:documentation>Indicates whether the plan is currently being acted upon, represents future intentions or is now just historical record.</xs:documentation>
+           </xs:annotation>
+          </xs:element>
+          <xs:element name="period" minOccurs="0" maxOccurs="1" type="Period">
+            <xs:annotation>
+              <xs:documentation>Indicates when the plan did (or is intended to) come into effect and end.</xs:documentation>
+           </xs:annotation>
+          </xs:element>
+          <xs:element name="modified" minOccurs="0" maxOccurs="1" type="dateTime">
+            <xs:annotation>
+              <xs:documentation>Identifies the most recent date on which the plan has been revised.</xs:documentation>
+           </xs:annotation>
+          </xs:element>
+          <xs:element name="concern" minOccurs="0" maxOccurs="unbounded" type="Reference">
+            <xs:annotation>
+              <xs:documentation>Identifies the conditions/problems/concerns/diagnoses/etc. whose management and/or mitigation are handled by this plan.</xs:documentation>
+           </xs:annotation>
+          </xs:element>
+          <xs:element name="participant" type="CarePlan2.Participant" minOccurs="0" maxOccurs="unbounded">
+            <xs:annotation>
+              <xs:documentation>Identifies all people and organizations who are expected to be involved in the care envisioned by this plan.</xs:documentation>
+           </xs:annotation>
+          </xs:element>
+          <xs:element name="notes" minOccurs="0" maxOccurs="1" type="string">
+            <xs:annotation>
+              <xs:documentation>General notes about the care plan not covered elsewhere.</xs:documentation>
+           </xs:annotation>
+          </xs:element>
+          <xs:element name="goal" minOccurs="0" maxOccurs="unbounded" type="Reference">
+            <xs:annotation>
+              <xs:documentation>Describes the intended objective(s) of carrying out the Care Plan.</xs:documentation>
+           </xs:annotation>
+          </xs:element>
+          <xs:element name="activity" minOccurs="0" maxOccurs="unbounded" type="Reference">
+            <xs:annotation>
+              <xs:documentation>Identifies an action that is planned to happen as part of the careplan. For example, a medication to be used, lab tests to perform, self-monitoring, education, etc.</xs:documentation>
+           </xs:annotation>
+          </xs:element>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="CarePlan2.Participant">
+    <xs:annotation>
+      <xs:documentation>Describes the intention of how one or more practitioners intend to deliver care for a particular patient for a period of time, possibly limited to care for a specific condition or set of conditions.</xs:documentation>
+    </xs:annotation>
+    <xs:complexContent>
+      <xs:extension base="BackboneElement">
+        <xs:sequence>
+          <xs:element name="role" minOccurs="0" maxOccurs="1" type="CodeableConcept">
+            <xs:annotation>
+              <xs:documentation>Indicates specific responsibility of an individual within the care plan.  E.g. &quot;Primary physician&quot;, &quot;Team coordinator&quot;, &quot;Caregiver&quot;, etc.</xs:documentation>
+           </xs:annotation>
+          </xs:element>
+          <xs:element name="member" minOccurs="1" maxOccurs="1" type="Reference">
+            <xs:annotation>
+              <xs:documentation>The specific person or organization who is participating/expected to participate in the care plan.</xs:documentation>
+           </xs:annotation>
+          </xs:element>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:simpleType name="CarePlan2Status-list">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="planned">
+        <xs:annotation>
+          <xs:documentation>The plan is in development or awaiting use but is not yet intended to be acted upon.</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="active">
+        <xs:annotation>
+          <xs:documentation>The plan is intended to be followed and used as part of patient care.</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="completed">
+        <xs:annotation>
+          <xs:documentation>The plan is no longer in use and is not expected to be followed or used in patient care.</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:complexType name="CarePlan2Status">
+    <xs:annotation>
+      <xs:documentation>Indicates whether the plan is currently being acted upon, represents future intentions or is now just historical record.</xs:documentation>
+      <xs:documentation>If the element is present, it must have either a @value, an @id, or extensions</xs:documentation>
+    </xs:annotation>
+    <xs:complexContent>
+      <xs:extension base="Element">
+        <xs:attribute name="value" type="CarePlan2Status-list" use="optional"/>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+</xs:schema>

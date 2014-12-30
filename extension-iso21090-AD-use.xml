@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ExtensionDefinition xmlns="http://hl7.org/fhir">
+  <id value="iso21090-AD-use"/>
+  <url value="http://hl7.org/fhir/ExtensionDefinition/iso21090-AD-use"/>
+  <name value="BAD | CONF | HP | HV | DIR | PUB | PHYS | PST"/>
+  <publisher value="HL7"/>
+  <telecom>
+    <system value="url"/>
+    <value value="http://www.hl7.org"/>
+  </telecom>
+  <description value="Uses of Addresses - codes not defined as part of Address.use."/>
+  <status value="draft"/>
+  <date value="2012-06-24"/>
+  <mapping>
+    <identity value="rim"/>
+    <uri value="http://hl7.org/v3"/>
+    <name value="RIM"/>
+  </mapping>
+  <contextType value="datatype"/>
+  <context value="Address"/>
+  <element>
+    <path value="Extension"/>
+    <short value="BAD | CONF | HP | HV | DIR | PUB | PHYS | PST"/>
+    <formal value="Uses of Addresses - codes not defined as part of Address.use."/>
+    <min value="0"/>
+    <max value="1"/>
+    <type>
+      <code value="code"/>
+    </type>
+    <isSummary value="false"/>
+    <binding>
+      <name value="PostalAddressUse"/>
+      <isExtensible value="false"/>
+      <conformance value="required"/>
+      <description value="Uses of an address not included in Address.use"/>
+      <referenceReference>
+        <reference value="http://hl7.org/fhir/vs/postal-address-use"/>
+      </referenceReference>
+    </binding>
+    <mapping>
+      <identity value="rim"/>
+      <map value="AD.use"/>
+    </mapping>
+  </element>
+</ExtensionDefinition>

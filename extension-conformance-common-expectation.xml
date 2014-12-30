@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ExtensionDefinition xmlns="http://hl7.org/fhir">
+  <id value="conformance-common-expectation"/>
+  <url value="http://hl7.org/fhir/ExtensionDefinition/conformance-common-expectation"/>
+  <name value="SHALL | SHOULD | MAY |SHOULD NOT"/>
+  <display value="Conformance expectation"/>
+  <publisher value="Health Level Seven, Inc. - [WG Name] WG"/>
+  <telecom>
+    <system value="url"/>
+    <value value="http://hl7.org/special/committees/fhir.htm"/>
+  </telecom>
+  <description value="Defines the level of expectation associated with a given system capability."/>
+  <status value="draft"/>
+  <date value="2014-04-12"/>
+  <mapping>
+    <identity value="v2"/>
+    <uri value="http://hl7.org/v2"/>
+    <name value="HL7 v2"/>
+  </mapping>
+  <mapping>
+    <identity value="rim"/>
+    <uri value="http://hl7.org/v3"/>
+    <name value="RIM"/>
+  </mapping>
+  <contextType value="resource"/>
+  <context value="Conformance.rest.resource.interaction"/>
+  <context value="Conformance.rest.resource.searchParam"/>
+  <context value="Conformance.rest.operation"/>
+  <context value="Conformance.messaging.event"/>
+  <context value="Conformance.document"/>
+  <context value="Conformance.rest.interaction"/>
+  <element>
+    <path value="Extension"/>
+    <short value="SHALL | SHOULD | MAY |SHOULD NOT"/>
+    <formal value="Defines the level of expectation associated with a given system capability."/>
+    <comments value="If &quot;SHALL NOT&quot; is desired, use the &quot;prohibited&quot; modifier extension.
+
+This extension should only be used with conformance profiles documenting requirements, not those documenting actual system capabilities."/>
+    <min value="1"/>
+    <max value="1"/>
+    <type>
+      <code value="code"/>
+    </type>
+    <isSummary value="false"/>
+    <binding>
+      <name value="ConformanceExpectation"/>
+      <isExtensible value="false"/>
+      <conformance value="required"/>
+      <description value="Indicates the degree of adherence to a specified behavior or capability expected in order for a system to be deemed conformant with a specification"/>
+      <referenceReference>
+        <reference value="http://hl7.org/fhir/vs/conformance-expectation"/>
+      </referenceReference>
+    </binding>
+    <mapping>
+      <identity value="v2"/>
+      <map value="N/A"/>
+    </mapping>
+    <mapping>
+      <identity value="rim"/>
+      <map value="N/A"/>
+    </mapping>
+  </element>
+</ExtensionDefinition>

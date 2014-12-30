@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ExtensionDefinition xmlns="http://hl7.org/fhir">
+  <id value="securityevent-ehrs-rle-policy"/>
+  <url value="http://hl7.org/fhir/ExtensionDefinition/securityevent-ehrs-rle-policy"/>
+  <name value="Policy or plan th eactivity was defined by"/>
+  <publisher value="Health Level Seven, Inc. - EHR WG"/>
+  <telecom>
+    <system value="url"/>
+    <value value="http://hl7.org/special/committees/ehr.html"/>
+  </telecom>
+  <description value="Policy or plan the event was defined by. Typically, a single event may have multiple applicable policy documents, such as patient consent, guarantor funding, etc."/>
+  <status value="draft"/>
+  <date value="2014-12-04"/>
+  <mapping>
+    <identity value="v2"/>
+    <uri value="http://hl7.org/v2"/>
+    <name value="HL7 v2"/>
+  </mapping>
+  <mapping>
+    <identity value="rim"/>
+    <uri value="http://hl7.org/v3"/>
+    <name value="RIM"/>
+  </mapping>
+  <contextType value="resource"/>
+  <context value="SecurityEvent.event"/>
+  <element>
+    <path value="Extension"/>
+    <short value="Policy or plan th eactivity was defined by"/>
+    <formal value="Policy or plan the event was defined by. Typically, a single event may have multiple applicable policy documents, such as patient consent, guarantor funding, etc."/>
+    <min value="0"/>
+    <max value="1"/>
+    <type>
+      <code value="uri"/>
+    </type>
+    <isSummary value="false"/>
+    <mapping>
+      <identity value="v2"/>
+      <map value="N/A"/>
+    </mapping>
+    <mapping>
+      <identity value="rim"/>
+      <map value=".targetOf[typeCode=SUBJ].source[classCode=POLICY, moodCode=EVN]"/>
+    </mapping>
+  </element>
+</ExtensionDefinition>

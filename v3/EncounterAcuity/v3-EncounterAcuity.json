@@ -1,0 +1,32 @@
+{
+  "resourceType": "ValueSet",
+  "id": "v3-EncounterAcuity",
+  "meta": {
+    "lastUpdated": "2014-12-11T00:00:00.000+00:00"
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div><p>Release Date: 2014-12-11</p>\r\n<p>OID for code system: 2.16.840.1.113883.5.1084</p>\r\n<h2>Description</h2>\r\n<p>\n                  The level of resource intensiveness of patient care.<br/>\r\n\n                  \n                     Deprecation Comment: Deprecated as per 11/2008 Harmonization cleanup; internal and obsolete HL7 usage, no longer used.  No content.<br/>\r\n\n               </p>\r\n<hr/>\r\n<table class=\"grid\">\r\n <tr><td><b>Level</b></td><td><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr>\r\n</table>\r\n</div>"
+  },
+  "identifier": "http://hl7.org/fhir/v3/vs/EncounterAcuity",
+  "name": "v3 Code System EncounterAcuity",
+  "publisher": "HL7, Inc",
+  "telecom": [
+    {
+      "system": "url",
+      "value": "http://hl7.org"
+    }
+  ],
+  "description": " The level of resource intensiveness of patient care.  Deprecation Comment:\r\nDeprecated as per 11/2008 Harmonization cleanup; internal and obsolete HL7 usage, no longer used.  No content.",
+  "status": "active",
+  "date": "2014-12-11",
+  "define": {
+    "http://hl7.org/fhir/ExtensionDefinition/valueset-oid": [
+      {
+        "valueUri": "urn:oid:2.16.840.1.113883.5.1084"
+      }
+    ],
+    "system": "http://hl7.org/fhir/v3/EncounterAcuity",
+    "caseSensitive": true
+  }
+}

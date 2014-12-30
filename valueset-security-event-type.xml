@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="valueset-security-event-type"/>
+  <meta>
+    <lastUpdated value="2014-12-30T10:55:31"/>
+  </meta>
+  <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      <p>This value set contains 13 concepts</p>
+      <h2>Audit Event ID</h2>
+      <p>Event Types for Security Events - defined by DICOM with some FHIR specific additions</p>
+      <p>
+        <b>Copyright Statement:</b> These codes are excerpted from Digital Imaging and Communications in Medicine (DICOM) Standard, Part 16: Content Mapping Resource, Copyright 2011 by the National Electrical Manufacturers Association
+      </p>
+      <p>This value set defines its own terms in the system http://hl7.org/fhir/security-event-type</p>
+      <table class="codes">
+        <tr>
+          <td>
+            <b>Code</b>
+          </td>
+          <td>
+            <b>Display</b>
+          </td>
+          <td>
+            <b>Definition</b>
+          </td>
+        </tr>
+        <tr>
+          <td>rest
+            <a name="rest"> </a>
+          </td>
+          <td>RESTful Operation</td>
+          <td>Security Event: Execution of a RESTful operation as defined by FHIR</td>
+        </tr>
+      </table>
+      <p>In addition, this value set includes codes defined in other code systems, using the following rules:</p>
+      <ul>
+        <li>Include these codes as defined in http://nema.org/dicom/dcid
+          <table>
+            <tr>
+              <td>
+                <b>Code</b>
+              </td>
+              <td>
+                <b>Display</b>
+              </td>
+            </tr>
+            <tr>
+              <td>110100</td>
+              <td>Application Activity</td>
+              <td>Audit event: Application Activity has taken place</td>
+            </tr>
+            <tr>
+              <td>110101</td>
+              <td>Audit Log Used</td>
+              <td>Audit event: Audit Log has been used</td>
+            </tr>
+            <tr>
+              <td>110102</td>
+              <td>Begin Transferring DICOM Instances</td>
+              <td>Audit event: Storage of DICOM Instances has begun</td>
+            </tr>
+            <tr>
+              <td>110103</td>
+              <td>DICOM Instances Accessed</td>
+              <td>Audit event: DICOM Instances have been created, read, updated, or deleted -audit event</td>
+            </tr>
+            <tr>
+              <td>110104</td>
+              <td>DICOM Instances Transferred</td>
+              <td>Audit event: Storage of DICOM Instances has been completed</td>
+            </tr>
+            <tr>
+              <td>110105</td>
+              <td>DICOM Study Deleted</td>
+              <td>Audit event: Entire Study has been deleted</td>
+            </tr>
+            <tr>
+              <td>110106</td>
+              <td>Export</td>
+              <td>Audit event: Data has been exported out of the system</td>
+            </tr>
+            <tr>
+              <td>110107</td>
+              <td>Import</td>
+              <td>Audit event: Data has been imported into the system</td>
+            </tr>
+            <tr>
+              <td>110108</td>
+              <td>Network Entry</td>
+              <td>Audit event: System has joined or left network</td>
+            </tr>
+            <tr>
+              <td>110112</td>
+              <td>Query</td>
+              <td>Audit event: Query has been made</td>
+            </tr>
+            <tr>
+              <td>110113</td>
+              <td>Security Alert</td>
+              <td>Audit event: Security Alert has been raised</td>
+            </tr>
+            <tr>
+              <td>110114</td>
+              <td>User Authentication</td>
+              <td>Audit event: User Authentication has been attempted</td>
+            </tr>
+          </table>
+        </li>
+      </ul>
+    </div>
+  </text>
+  <extension url="http://hl7.org/fhir/ExtensionDefinition/valueset-oid">
+    <valueUri value="urn:oid:2.16.840.1.113883.4.642.2.220"/>
+  </extension>
+  <identifier value="http://hl7.org/fhir/vs/security-event-type"/>
+  <version value="20100826"/>
+  <name value="Audit Event ID"/>
+  <publisher value="NEMA/DICOM"/>
+  <description value="Event Types for Security Events - defined by DICOM with some FHIR specific additions"/>
+  <copyright value="These codes are excerpted from Digital Imaging and Communications in Medicine (DICOM) Standard, Part 16: Content Mapping Resource, Copyright 2011 by the National Electrical Manufacturers Association"/>
+  <status value="active"/>
+  <date value="2010-08-26"/>
+  <define>
+    <extension url="http://hl7.org/fhir/ExtensionDefinition/valueset-oid">
+      <valueUri value="urn:oid:null"/>
+    </extension>
+    <system value="http://hl7.org/fhir/security-event-type"/>
+    <caseSensitive value="true"/>
+    <concept>
+      <code value="rest"/>
+      <display value="RESTful Operation"/>
+      <definition value="Security Event: Execution of a RESTful operation as defined by FHIR"/>
+    </concept>
+  </define>
+  <compose>
+    <include>
+      <system value="http://nema.org/dicom/dcid"/>
+      <concept>
+        <code value="110100"/>
+      </concept>
+      <concept>
+        <code value="110101"/>
+      </concept>
+      <concept>
+        <code value="110102"/>
+      </concept>
+      <concept>
+        <code value="110103"/>
+      </concept>
+      <concept>
+        <code value="110104"/>
+      </concept>
+      <concept>
+        <code value="110105"/>
+      </concept>
+      <concept>
+        <code value="110106"/>
+      </concept>
+      <concept>
+        <code value="110107"/>
+      </concept>
+      <concept>
+        <code value="110108"/>
+      </concept>
+      <concept>
+        <code value="110112"/>
+      </concept>
+      <concept>
+        <code value="110113"/>
+      </concept>
+      <concept>
+        <code value="110114"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

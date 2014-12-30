@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="conformance-expectation"/>
+  <meta>
+    <lastUpdated value="2014-12-30T10:55:31"/>
+  </meta>
+  <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      <p>This value set contains 4 concepts</p>
+      <h2>ConformanceExpectation</h2>
+      <p>Indicates the degree of adherence to a specified behavior or capability expected in order for a system to be deemed conformant with a specification</p>
+      <p>This value set defines its own terms in the system http://hl7.org/fhir/conformance-expectation</p>
+      <table class="codes">
+        <tr>
+          <td>
+            <b>Code</b>
+          </td>
+          <td>
+            <b>Definition</b>
+          </td>
+        </tr>
+        <tr>
+          <td>SHALL
+            <a name="SHALL"> </a>
+          </td>
+          <td>Support for the specified capability is required to be considered conformant.</td>
+        </tr>
+        <tr>
+          <td>SHOULD
+            <a name="SHOULD"> </a>
+          </td>
+          <td>Support for the specified capability is strongly encouraged and failure to support it should only occur after careful consideration.</td>
+        </tr>
+        <tr>
+          <td>MAY
+            <a name="MAY"> </a>
+          </td>
+          <td>Support for the specified capability is not necessary to be considered conformant and the requirement should be considered strictly optional.</td>
+        </tr>
+        <tr>
+          <td>SHOULD NOT
+            <a name="SHOULDNOT"> </a>
+          </td>
+          <td>Support for the specified capability is strongly discouraged and should occur only after careful consideration.</td>
+        </tr>
+      </table>
+    </div>
+  </text>
+  <extension url="http://hl7.org/fhir/ExtensionDefinition/valueset-oid">
+    <valueUri value="urn:oid:2.16.840.1.113883.4.642.2.550"/>
+  </extension>
+  <identifier value="http://hl7.org/fhir/vs/conformance-expectation"/>
+  <name value="ConformanceExpectation"/>
+  <publisher value="HL7 (FHIR Project)"/>
+  <telecom>
+    <system value="url"/>
+    <value value="http://hl7.org/fhir"/>
+  </telecom>
+  <telecom>
+    <system value="email"/>
+    <value value="fhir@lists.hl7.org"/>
+  </telecom>
+  <description value="Indicates the degree of adherence to a specified behavior or capability expected in order for a system to be deemed conformant with a specification"/>
+  <status value="draft"/>
+  <date value="2014-12-30T10:55:31"/>
+  <define>
+    <extension url="http://hl7.org/fhir/ExtensionDefinition/valueset-oid">
+      <valueUri value="urn:oid:2.16.840.1.113883.4.642.1.550"/>
+    </extension>
+    <system value="http://hl7.org/fhir/conformance-expectation"/>
+    <caseSensitive value="true"/>
+    <concept>
+      <code value="SHALL"/>
+      <definition value="Support for the specified capability is required to be considered conformant."/>
+    </concept>
+    <concept>
+      <code value="SHOULD"/>
+      <definition value="Support for the specified capability is strongly encouraged and failure to support it should only occur after careful consideration."/>
+    </concept>
+    <concept>
+      <code value="MAY"/>
+      <definition value="Support for the specified capability is not necessary to be considered conformant and the requirement should be considered strictly optional."/>
+    </concept>
+    <concept>
+      <code value="SHOULD NOT"/>
+      <definition value="Support for the specified capability is strongly discouraged and should occur only after careful consideration."/>
+    </concept>
+  </define>
+</ValueSet>

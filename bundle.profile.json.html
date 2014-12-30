@@ -1,0 +1,1327 @@
+﻿<!DOCTYPE HTML>
+
+
+
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <title>Bundle.profile.json - FHIR v0.4.0</title>
+
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="author" content="http://hl7.org/fhir"/>
+
+  <link href="fhir.css" rel="stylesheet"/>
+  <link rel="Prev" href="http://hl7.org/implement/standards/fhir/bundle.profile.json.html"/>
+
+  <!-- Bootstrap core CSS -->
+  <link href="./dist/css/bootstrap.css" rel="stylesheet"/>
+  <link href="./assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+  <!-- Project extras -->
+  <link href="./assets/css/project.css" rel="stylesheet"/>
+  <link href="./assets/css/pygments-manni.css" rel="stylesheet"/>
+	<link href="jquery-ui.css" rel="stylesheet"/>
+
+  <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!--[if lt IE 9]>
+  <script src="./assets/js/html5shiv.js"></script>
+  <script src="./assets/js/respond.min.js"></script>
+  <![endif]-->
+
+  <!-- Favicons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="./assets/ico/apple-touch-icon-144-precomposed.png"/>
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="./assets/ico/apple-touch-icon-114-precomposed.png"/>
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="./assets/ico/apple-touch-icon-72-precomposed.png"/>
+  <link rel="apple-touch-icon-precomposed" href="./assets/ico/apple-touch-icon-57-precomposed.png"/>
+  <link rel="shortcut icon" href="./assets/ico/favicon.png"/>
+
+</head>
+<body>
+	<div id="segment-header" class="segment"><!-- segment-header -->	
+		<div class="container"><!-- container -->
+			<a id="logo" href="http://hl7.org/fhir"><img src="./assets/images/fhir-logo-www.png" alt="logo fhir"/> </a>
+			<div id="hl7-status">
+				<b>Continuous Integration Build</b>
+			</div>       	
+			
+			<div id="hl7-nav">
+				 <a id="hl7-logo" href="http://www.hl7.org">
+					<img src="./assets/images/hl7-logo.png" width="42" height="50" alt="visit the hl7 website"/>
+				</a> 
+			</div>       	
+			<!--hl7-search-->
+		</div>
+		<div class="container"><!-- container -->
+	</div></div><!-- /segment-header -->	
+
+
+	<div id="segment-navbar" class="segment"><!-- segment-navbar -->
+		<div id="stripe"> </div>
+		<div class="container"><!-- container -->
+ <!-- HEADER CONTENT -->
+ 	      		
+ 	      		      		
+			<nav class="navbar navbar-inverse">
+				<div class="container">
+					<button data-target=".navbar-inverse-collapse" data-toggle="collapse" class="navbar-toggle" type="button">
+						<span class="icon-bar"> </span>
+						<span class="icon-bar"> </span>
+						<span class="icon-bar"> </span>
+					</button>
+					<a href="index.html" class="navbar-brand hidden">FHIR</a>
+					<div class="nav-collapse collapse navbar-inverse-collapse">
+						<ul class="nav navbar-nav">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="documentation.html">Documentation</a></li>
+              <li><a href="implementation.html">Implementation</a></li>
+              <li><a href="resourcelist.html">Resources</a></li>
+              <li><a href="clinical.html">Clinical</a></li>
+              <li><a href="administration.html">Administrative</a></li>
+              <li><a href="infrastructure.html">Infrastructure</a></li>
+              <li><a href="financial.html">Financial</a></li>
+
+						</ul>
+					</div><!-- /.nav-collapse -->
+				</div><!-- /.container -->
+			</nav><!-- /.navbar -->
+      		
+				
+<!-- /HEADER CONTENT -->				
+		</div><!-- /container -->
+	</div><!-- /segment-navbar -->
+	
+
+	<div id="segment-breadcrumb" class="segment"><!-- segment-breadcrumb -->
+		<div class="container"><!-- container -->	
+			<ul class="breadcrumb">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="infrastructure.html">Infrastructure</a></li>          <li><a href="bundle.html">Bundle</a></li>        <li><b>Profile Instance</b></li>        <!-- bundle.profile.json.html / profile-instance:resource:Bundle -->
+
+			</ul>	
+		</div><!-- /container -->
+	</div><!-- /segment-breadcrumb -->
+	
+
+	<div id="segment-content" class="segment"><!-- segment-content -->
+	<div class="container"><!-- container -->
+            <div class="row">
+            	<div class="inner-wrapper">
+<!-- CONTENT CONTENT -->
+
+
+<div class="col-9">
+
+<h1>Bundle.profile.json</h1>
+
+<p>
+<a href="bundle.profile.json">Raw JSON</a> (<a href="bundle.profile.canonical.json">canonical form</a>)
+</p>
+
+<div class="example">
+<p>Profile for bundle</p>
+<pre class="json">
+{
+  &quot;resourceType&quot;: &quot;Profile&quot;,
+  &quot;id&quot;: &quot;Bundle&quot;,
+  &quot;meta&quot;: {
+    &quot;lastUpdated&quot;: &quot;2014-12-30T10:55:31&quot;
+  },
+  &quot;text&quot;: {
+    &quot;status&quot;: &quot;generated&quot;,
+    &quot;div&quot;: &quot;&lt;div&gt;!-- Snipped for Brevity --&gt;&lt;/div&gt;&quot;
+  },
+  &quot;url&quot;: &quot;http://hl7.org/fhir/Profile/Bundle&quot;,
+  &quot;name&quot;: &quot;Bundle&quot;,
+  &quot;publisher&quot;: &quot;HL7 FHIR Project (FHIR Management Group)&quot;,
+  &quot;telecom&quot;: [
+    {
+      &quot;system&quot;: &quot;url&quot;,
+      &quot;value&quot;: &quot;http://hl7.org/fhir&quot;
+    },
+    {
+      &quot;system&quot;: &quot;url&quot;,
+      &quot;value&quot;: &quot;http://www.hl7.org/Special/committees/fhirmg/index.cfm&quot;
+    }
+  ],
+  &quot;description&quot;: &quot;Base Profile for Bundle Resource&quot;,
+  &quot;status&quot;: &quot;draft&quot;,
+  &quot;date&quot;: &quot;2014-12-30T10:55:31&quot;,
+  &quot;mapping&quot;: [
+    {
+      &quot;identity&quot;: &quot;v2&quot;,
+      &quot;uri&quot;: &quot;http://hl7.org/v2&quot;,
+      &quot;name&quot;: &quot;HL7 v2&quot;
+    },
+    {
+      &quot;identity&quot;: &quot;rim&quot;,
+      &quot;uri&quot;: &quot;http://hl7.org/v3&quot;,
+      &quot;name&quot;: &quot;RIM&quot;
+    }
+  ],
+  &quot;type&quot;: &quot;Bundle&quot;,
+  &quot;snapshot&quot;: {
+    &quot;element&quot;: [
+      {
+        &quot;path&quot;: &quot;Bundle&quot;,
+        &quot;short&quot;: &quot;Contains a group of resources&quot;,
+        &quot;formal&quot;: &quot;A container for a group of resources.&quot;,
+        &quot;min&quot;: 1,
+        &quot;max&quot;: &quot;1&quot;,
+        &quot;constraint&quot;: [
+          {
+            &quot;key&quot;: &quot;2&quot;,
+            &quot;name&quot;: &quot;Search Rule&quot;,
+            &quot;severity&quot;: &quot;error&quot;,
+            &quot;human&quot;: &quot;Search only when transaction&quot;,
+            &quot;xpath&quot;: &quot;not(f:entry/f:search) or (f:type/@value = 'transaction')&quot;
+          },
+          {
+            &quot;key&quot;: &quot;1&quot;,
+            &quot;name&quot;: &quot;Status Rule&quot;,
+            &quot;severity&quot;: &quot;error&quot;,
+            &quot;human&quot;: &quot;Status only when transaction or search&quot;,
+            &quot;xpath&quot;: &quot;not(f:entry/f:status) or (f:type/@value = 'transaction') or (f:type/@value = 'search')&quot;
+          },
+          {
+            &quot;key&quot;: &quot;5&quot;,
+            &quot;name&quot;: &quot;Deleted rule&quot;,
+            &quot;severity&quot;: &quot;error&quot;,
+            &quot;human&quot;: &quot;Status only when transaction or history&quot;,
+            &quot;xpath&quot;: &quot;not(f:entry/f:status) or (f:type/@value = 'transaction') or (f:type/@value = 'history')&quot;
+          }
+        ],
+        &quot;isSummary&quot;: false,
+        &quot;mapping&quot;: [
+          {
+            &quot;identity&quot;: &quot;v2&quot;,
+            &quot;map&quot;: &quot;N/A&quot;
+          },
+          {
+            &quot;identity&quot;: &quot;rim&quot;,
+            &quot;map&quot;: &quot;N/A&quot;
+          },
+          {
+            &quot;identity&quot;: &quot;v2&quot;,
+            &quot;map&quot;: &quot;N/A&quot;
+          },
+          {
+            &quot;identity&quot;: &quot;rim&quot;,
+            &quot;map&quot;: &quot;N/A&quot;
+          }
+        ]
+      },
+      {
+        &quot;path&quot;: &quot;Bundle.id&quot;,
+        &quot;short&quot;: &quot;Logical id of this artefact&quot;,
+        &quot;formal&quot;: &quot;The logical id of the resource, as used in the url for the resoure. Once assigned, this value never changes.&quot;,
+        &quot;comments&quot;: &quot;The only time that a resource does not have an id is when it is being submitted to the server using a create operation. Bundles always have an id, though it is usually a generated UUID.&quot;,
+        &quot;min&quot;: 0,
+        &quot;max&quot;: &quot;1&quot;,
+        &quot;type&quot;: [
+          {
+            &quot;code&quot;: &quot;id&quot;
+          }
+        ],
+        &quot;isSummary&quot;: false
+      },
+      {
+        &quot;path&quot;: &quot;Bundle.meta&quot;,
+        &quot;short&quot;: &quot;Metadata about the resource&quot;,
+        &quot;formal&quot;: &quot;The metadata about the resource. This is content that is maintained by the infrastructure. Changes to the content may not always be associated with version changes to the resource.&quot;,
+        &quot;min&quot;: 0,
+        &quot;max&quot;: &quot;1&quot;,
+        &quot;isSummary&quot;: false
+      },
+      {
+        &quot;path&quot;: &quot;Bundle.meta.id&quot;,
+        &quot;representation&quot;: [
+          &quot;xmlAttr&quot;
+        ],
+        &quot;short&quot;: &quot;xml:id (or equivalent in JSON)&quot;,
+        &quot;formal&quot;: &quot;unique id for the element within a resource (for internal references).&quot;,
+        &quot;min&quot;: 0,
+        &quot;max&quot;: &quot;1&quot;,
+        &quot;type&quot;: [
+          {
+            &quot;code&quot;: &quot;id&quot;
+          }
+        ],
+        &quot;isSummary&quot;: false,
+        &quot;mapping&quot;: [
+          {
+            &quot;identity&quot;: &quot;rim&quot;,
+            &quot;map&quot;: &quot;n/a&quot;
+          },
+          {
+            &quot;identity&quot;: &quot;rim&quot;,
+            &quot;map&quot;: &quot;n/a&quot;
+          }
+        ]
+      },
+      {
+        &quot;path&quot;: &quot;Bundle.meta.extension&quot;,
+        &quot;short&quot;: &quot;Additional Content defined by implementations&quot;,
+        &quot;formal&quot;: &quot;May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.&quot;,
+        &quot;comments&quot;: &quot;There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.&quot;,
+        &quot;synonym&quot;: [
+          &quot;extensions&quot;,
+          &quot;user content&quot;
+        ],
+        &quot;min&quot;: 0,
+        &quot;max&quot;: &quot;*&quot;,
+        &quot;type&quot;: [
+          {
+            &quot;code&quot;: &quot;Extension&quot;
+          }
+        ],
+        &quot;isSummary&quot;: false,
+        &quot;mapping&quot;: [
+          {
+            &quot;identity&quot;: &quot;rim&quot;,
+            &quot;map&quot;: &quot;n/a&quot;
+          },
+          {
+            &quot;identity&quot;: &quot;rim&quot;,
+            &quot;map&quot;: &quot;n/a&quot;
+          }
+        ]
+      },
+      {
+        &quot;path&quot;: &quot;Bundle.meta.modifierExtension&quot;,
+        &quot;short&quot;: &quot;Extensions that cannot be ignored&quot;,
+        &quot;formal&quot;: &quot;May be used to represent additional information that is not part of the basic definition of the element, and that modifies the understanding of the element that contains it. Usually modifier elements provide negation or qualification. In order to make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions.&quot;,
+        &quot;comments&quot;: &quot;There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.&quot;,
+        &quot;synonym&quot;: [
+          &quot;extensions&quot;,
+          &quot;user content&quot;,
+          &quot;modifiers&quot;
+        ],
+        &quot;min&quot;: 0,
+        &quot;max&quot;: &quot;*&quot;,
+        &quot;type&quot;: [
+          {
+            &quot;code&quot;: &quot;Extension&quot;
+          }
+        ],
+        &quot;isSummary&quot;: false,
+        &quot;mapping&quot;: [
+          {
+            &quot;identity&quot;: &quot;rim&quot;,
+            &quot;map&quot;: &quot;N/A&quot;
+          },
+          {
+            &quot;identity&quot;: &quot;rim&quot;,
+            &quot;map&quot;: &quot;N/A&quot;
+          }
+        ]
+      },
+      {
+        &quot;path&quot;: &quot;Bundle.meta.versionId&quot;,
+        &quot;short&quot;: &quot;Version specific identifier&quot;,
+        &quot;formal&quot;: &quot;The version specific identifier, as it appears in the version portion of the url. This values changes when the resource is created, updated, or deleted.&quot;,
+        &quot;comments&quot;: &quot;The server assigns this value, and ignores what the client specifies, except in the case that the server is imposing version integrity on updates/deletes.&quot;,
+        &quot;min&quot;: 0,
+        &quot;max&quot;: &quot;1&quot;,
+        &quot;type&quot;: [
+          {
+            &quot;code&quot;: &quot;id&quot;
+          }
+        ],
+        &quot;isSummary&quot;: false
+      },
+      {
+        &quot;path&quot;: &quot;Bundle.meta.lastUpdated&quot;,
+        &quot;short&quot;: &quot;When the resource version last changed&quot;,
+        &quot;formal&quot;: &quot;When the resource last changed - e.g. when the version changed.&quot;,
+        &quot;comments&quot;: &quot;This value is always populated except when the resource is first being created. The server / resource manager sets this value; what a client provides is irrelevant.&quot;,
+        &quot;min&quot;: 0,
+        &quot;max&quot;: &quot;1&quot;,
+        &quot;type&quot;: [
+          {
+            &quot;code&quot;: &quot;instant&quot;
+          }
+        ],
+        &quot;isSummary&quot;: false
+      },
+      {
+        &quot;path&quot;: &quot;Bundle.meta.profile&quot;,
+        &quot;short&quot;: &quot;Profiles this resource claims to conform to&quot;,
+        &quot;formal&quot;: &quot;A list of profiles that this resource claims to conform to. The URL is a reference to Profile.url.&quot;,
+        &quot;comments&quot;: &quot;It is up to the server and/or other infrastruture of policy to determine whether/how these claims are verified and/or updated over tiem.&quot;,
+        &quot;min&quot;: 0,
+        &quot;max&quot;: &quot;*&quot;,
+        &quot;type&quot;: [
+          {
+            &quot;code&quot;: &quot;uri&quot;
+          }
+        ],
+        &quot;isSummary&quot;: false
+      },
+      {
+        &quot;path&quot;: &quot;Bundle.meta.security&quot;,
+        &quot;short&quot;: &quot;Security Labels applied to this resource&quot;,
+        &quot;formal&quot;: &quot;Security labels applied to this resource. These tags connect specific resources to the overall security policy and infrastructure.&quot;,
+        &quot;comments&quot;: &quot;The security labels can be updated without changing the stated version of the resource.&quot;,
+        &quot;min&quot;: 0,
+        &quot;max&quot;: &quot;*&quot;,
+        &quot;type&quot;: [
+          {
+            &quot;code&quot;: &quot;Coding&quot;
+          }
+        ],
+        &quot;isSummary&quot;: false
+      },
+      {
+        &quot;path&quot;: &quot;Bundle.meta.tag&quot;,
+        &quot;short&quot;: &quot;Tags applied&quot;,
+        &quot;formal&quot;: &quot;Tags applied to this resource. Tags are intended to to be used to identify and relate resources to process and workflow, and applications are not required to consider the tags when interpreting the meaning of a resource.&quot;,
+        &quot;comments&quot;: &quot;The tags can be updated without changing the stated version of the resource.&quot;,
+        &quot;min&quot;: 0,
+        &quot;max&quot;: &quot;*&quot;,
+        &quot;type&quot;: [
+          {
+            &quot;code&quot;: &quot;Coding&quot;
+          }
+        ],
+        &quot;isSummary&quot;: false
+      },
+      {
+        &quot;path&quot;: &quot;Bundle.implicitRules&quot;,
+        &quot;short&quot;: &quot;A set of rules under which this content was created&quot;,
+        &quot;formal&quot;: &quot;A reference to a set of rules that were followed when the resource was constructed, and which must be understood when processing the content.&quot;,
+        &quot;comments&quot;: &quot;Asserting this rule set restricts the content to be only understood by a limited set of trading partners. This inherently limits the usefulness of the data in the long term. However the existing health eco-system is highly fractured, and not yet ready to define, collect, and exchange data in a generally computable sense. Wherever possible, implementers and/or specification writers should avoid using this element as much as possible.&quot;,
+        &quot;min&quot;: 0,
+        &quot;max&quot;: &quot;1&quot;,
+        &quot;type&quot;: [
+          {
+            &quot;code&quot;: &quot;uri&quot;
+          }
+        ],
+        &quot;isModifier&quot;: true,
+        &quot;isSummary&quot;: false
+      },
+      {
+        &quot;path&quot;: &quot;Bundle.language&quot;,
+        &quot;short&quot;: &quot;Language of the resource content&quot;,
+        &quot;formal&quot;: &quot;The base language in which the resource is written.&quot;,
+        &quot;comments&quot;: &quot;Language is provided to support indexing and accessibility (typically, services such as text to speech use the language tag). The html language tag in the narrative applies  to the narrative. The language tag on the resource may be used to specify the language of other presentations generated from the data in the resource\n\nNot all the content has to be in the base language. The Resource.language should not be assumed to apply to the narrative automatically. If a language is specified, it should it also be specified on the div element in the html (see rules in HTML5 for information about the relationship between xml:lang and the html lang attribute).&quot;,
+        &quot;min&quot;: 0,
+        &quot;max&quot;: &quot;1&quot;,
+        &quot;type&quot;: [
+          {
+            &quot;code&quot;: &quot;code&quot;
+          }
+        ],
+        &quot;isSummary&quot;: false,
+        &quot;binding&quot;: {
+          &quot;name&quot;: &quot;Language&quot;,
+          &quot;isExtensible&quot;: false,
+          &quot;conformance&quot;: &quot;required&quot;,
+          &quot;description&quot;: &quot;A human language&quot;,
+          &quot;referenceUri&quot;: &quot;http://tools.ietf.org/html/bcp47&quot;
+        }
+      },
+      {
+        &quot;path&quot;: &quot;Bundle.type&quot;,
+        &quot;short&quot;: &quot;document | message | transaction | transaction-response | history | searchset | collection&quot;,
+        &quot;formal&quot;: &quot;Indicates the purpose of this bundle- how it was intended to be used.&quot;,
+        &quot;comments&quot;: &quot;It's possible to use a bundle for other purposes (e.g. a document can be accepted as a transaction). This is primarily defined so that there can be specific rules for some of the bundle types.&quot;,
+        &quot;min&quot;: 1,
+        &quot;max&quot;: &quot;1&quot;,
+        &quot;type&quot;: [
+          {
+            &quot;code&quot;: &quot;code&quot;
+          }
+        ],
+        &quot;isSummary&quot;: false,
+        &quot;binding&quot;: {
+          &quot;name&quot;: &quot;BundleType&quot;,
+          &quot;isExtensible&quot;: false,
+          &quot;conformance&quot;: &quot;required&quot;,
+          &quot;description&quot;: &quot;Indicates the purpose of a bundle- how it was intended to be used&quot;,
+          &quot;referenceReference&quot;: {
+            &quot;reference&quot;: &quot;http://hl7.org/fhir/vs/bundle-type&quot;
+          }
+        }
+      },
+      {
+        &quot;path&quot;: &quot;Bundle.base&quot;,
+        &quot;short&quot;: &quot;Stated Base URL&quot;,
+        &quot;formal&quot;: &quot;The base URL for the service that provided these resources. All relative URLs are relative to this one (equivalent to xml:base).&quot;,
+        &quot;min&quot;: 0,
+        &quot;max&quot;: &quot;1&quot;,
+        &quot;type&quot;: [
+          {
+            &quot;code&quot;: &quot;uri&quot;
+          }
+        ],
+        &quot;isSummary&quot;: false
+      },
+      {
+        &quot;path&quot;: &quot;Bundle.total&quot;,
+        &quot;short&quot;: &quot;If search, the total number of matches&quot;,
+        &quot;formal&quot;: &quot;If a set of search matches, this is the total number of matches for the search (as opposed to the number of results in this bundle).&quot;,
+        &quot;comments&quot;: &quot;Only used if the bundle is a search result set.&quot;,
+        &quot;min&quot;: 0,
+        &quot;max&quot;: &quot;1&quot;,
+        &quot;type&quot;: [
+          {
+            &quot;code&quot;: &quot;integer&quot;
+          }
+        ],
+        &quot;isSummary&quot;: false
+      },
+      {
+        &quot;path&quot;: &quot;Bundle.link&quot;,
+        &quot;short&quot;: &quot;Links related to this Bundle&quot;,
+        &quot;formal&quot;: &quot;A series of links that provide context to this bundle.&quot;,
+        &quot;min&quot;: 0,
+        &quot;max&quot;: &quot;*&quot;,
+        &quot;isSummary&quot;: false
+      },
+      {
+        &quot;path&quot;: &quot;Bundle.link.id&quot;,
+        &quot;representation&quot;: [
+          &quot;xmlAttr&quot;
+        ],
+        &quot;short&quot;: &quot;xml:id (or equivalent in JSON)&quot;,
+        &quot;formal&quot;: &quot;unique id for the element within a resource (for internal references).&quot;,
+        &quot;min&quot;: 0,
+        &quot;max&quot;: &quot;1&quot;,
+        &quot;type&quot;: [
+          {
+            &quot;code&quot;: &quot;id&quot;
+          }
+        ],
+        &quot;isSummary&quot;: false,
+        &quot;mapping&quot;: [
+          {
+            &quot;identity&quot;: &quot;rim&quot;,
+            &quot;map&quot;: &quot;n/a&quot;
+          },
+          {
+            &quot;identity&quot;: &quot;rim&quot;,
+            &quot;map&quot;: &quot;n/a&quot;
+          }
+        ]
+      },
+      {
+        &quot;path&quot;: &quot;Bundle.link.extension&quot;,
+        &quot;short&quot;: &quot;Additional Content defined by implementations&quot;,
+        &quot;formal&quot;: &quot;May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.&quot;,
+        &quot;comments&quot;: &quot;There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.&quot;,
+        &quot;synonym&quot;: [
+          &quot;extensions&quot;,
+          &quot;user content&quot;
+        ],
+        &quot;min&quot;: 0,
+        &quot;max&quot;: &quot;*&quot;,
+        &quot;type&quot;: [
+          {
+            &quot;code&quot;: &quot;Extension&quot;
+          }
+        ],
+        &quot;isSummary&quot;: false,
+        &quot;mapping&quot;: [
+          {
+            &quot;identity&quot;: &quot;rim&quot;,
+            &quot;map&quot;: &quot;n/a&quot;
+          },
+          {
+            &quot;identity&quot;: &quot;rim&quot;,
+            &quot;map&quot;: &quot;n/a&quot;
+          }
+        ]
+      },
+      {
+        &quot;path&quot;: &quot;Bundle.link.modifierExtension&quot;,
+        &quot;short&quot;: &quot;Extensions that cannot be ignored&quot;,
+        &quot;formal&quot;: &quot;May be used to represent additional information that is not part of the basic definition of the element, and that modifies the understanding of the element that contains it. Usually modifier elements provide negation or qualification. In order to make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions.&quot;,
+        &quot;comments&quot;: &quot;There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.&quot;,
+        &quot;synonym&quot;: [
+          &quot;extensions&quot;,
+          &quot;user content&quot;,
+          &quot;modifiers&quot;
+        ],
+        &quot;min&quot;: 0,
+        &quot;max&quot;: &quot;*&quot;,
+        &quot;type&quot;: [
+          {
+            &quot;code&quot;: &quot;Extension&quot;
+          }
+        ],
+        &quot;isSummary&quot;: false,
+        &quot;mapping&quot;: [
+          {
+            &quot;identity&quot;: &quot;rim&quot;,
+            &quot;map&quot;: &quot;N/A&quot;
+          },
+          {
+            &quot;identity&quot;: &quot;rim&quot;,
+            &quot;map&quot;: &quot;N/A&quot;
+          }
+        ]
+      },
+      {
+        &quot;path&quot;: &quot;Bundle.link.relation&quot;,
+        &quot;short&quot;: &quot;http://www.iana.org/assignments/link-relations/link-relations.xhtml&quot;,
+        &quot;formal&quot;: &quot;A name which details the functional use for this link - see [[http://www.iana.org/assignments/link-relations/link-relations.xhtml]].&quot;,
+        &quot;min&quot;: 1,
+        &quot;max&quot;: &quot;1&quot;,
+        &quot;type&quot;: [
+          {
+            &quot;code&quot;: &quot;string&quot;
+          }
+        ],
+        &quot;isSummary&quot;: false
+      },
+      {
+        &quot;path&quot;: &quot;Bundle.link.url&quot;,
+        &quot;short&quot;: &quot;Reference details for the link&quot;,
+        &quot;formal&quot;: &quot;The reference details for the link.&quot;,
+        &quot;min&quot;: 1,
+        &quot;max&quot;: &quot;1&quot;,
+        &quot;type&quot;: [
+          {
+            &quot;code&quot;: &quot;uri&quot;
+          }
+        ],
+        &quot;isSummary&quot;: false
+      },
+      {
+        &quot;path&quot;: &quot;Bundle.entry&quot;,
+        &quot;short&quot;: &quot;Entry in the bundle - will have deleted or resource&quot;,
+        &quot;formal&quot;: &quot;An entry in a bundle resource - will either contain a resource, or a deleted entry (transaction and history bundles only).&quot;,
+        &quot;min&quot;: 0,
+        &quot;max&quot;: &quot;*&quot;,
+        &quot;constraint&quot;: [
+          {
+            &quot;key&quot;: &quot;3&quot;,
+            &quot;name&quot;: &quot;Status Resource Rule&quot;,
+            &quot;severity&quot;: &quot;error&quot;,
+            &quot;human&quot;: &quot;status only when resource&quot;,
+            &quot;xpath&quot;: &quot;not(f:status) or f:resource&quot;
+          },
+          {
+            &quot;key&quot;: &quot;4&quot;,
+            &quot;name&quot;: &quot;Resource or deleted rule&quot;,
+            &quot;severity&quot;: &quot;error&quot;,
+            &quot;human&quot;: &quot;deleted or resource (but not both)&quot;,
+            &quot;xpath&quot;: &quot;not(f:deleted) or not(f:resource)&quot;
+          }
+        ],
+        &quot;isSummary&quot;: false
+      },
+      {
+        &quot;path&quot;: &quot;Bundle.entry.id&quot;,
+        &quot;representation&quot;: [
+          &quot;xmlAttr&quot;
+        ],
+        &quot;short&quot;: &quot;xml:id (or equivalent in JSON)&quot;,
+        &quot;formal&quot;: &quot;unique id for the element within a resource (for internal references).&quot;,
+        &quot;min&quot;: 0,
+        &quot;max&quot;: &quot;1&quot;,
+        &quot;type&quot;: [
+          {
+            &quot;code&quot;: &quot;id&quot;
+          }
+        ],
+        &quot;isSummary&quot;: false,
+        &quot;mapping&quot;: [
+          {
+            &quot;identity&quot;: &quot;rim&quot;,
+            &quot;map&quot;: &quot;n/a&quot;
+          },
+          {
+            &quot;identity&quot;: &quot;rim&quot;,
+            &quot;map&quot;: &quot;n/a&quot;
+          }
+        ]
+      },
+      {
+        &quot;path&quot;: &quot;Bundle.entry.extension&quot;,
+        &quot;short&quot;: &quot;Additional Content defined by implementations&quot;,
+        &quot;formal&quot;: &quot;May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.&quot;,
+        &quot;comments&quot;: &quot;There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.&quot;,
+        &quot;synonym&quot;: [
+          &quot;extensions&quot;,
+          &quot;user content&quot;
+        ],
+        &quot;min&quot;: 0,
+        &quot;max&quot;: &quot;*&quot;,
+        &quot;type&quot;: [
+          {
+            &quot;code&quot;: &quot;Extension&quot;
+          }
+        ],
+        &quot;isSummary&quot;: false,
+        &quot;mapping&quot;: [
+          {
+            &quot;identity&quot;: &quot;rim&quot;,
+            &quot;map&quot;: &quot;n/a&quot;
+          },
+          {
+            &quot;identity&quot;: &quot;rim&quot;,
+            &quot;map&quot;: &quot;n/a&quot;
+          }
+        ]
+      },
+      {
+        &quot;path&quot;: &quot;Bundle.entry.modifierExtension&quot;,
+        &quot;short&quot;: &quot;Extensions that cannot be ignored&quot;,
+        &quot;formal&quot;: &quot;May be used to represent additional information that is not part of the basic definition of the element, and that modifies the understanding of the element that contains it. Usually modifier elements provide negation or qualification. In order to make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions.&quot;,
+        &quot;comments&quot;: &quot;There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.&quot;,
+        &quot;synonym&quot;: [
+          &quot;extensions&quot;,
+          &quot;user content&quot;,
+          &quot;modifiers&quot;
+        ],
+        &quot;min&quot;: 0,
+        &quot;max&quot;: &quot;*&quot;,
+        &quot;type&quot;: [
+          {
+            &quot;code&quot;: &quot;Extension&quot;
+          }
+        ],
+        &quot;isSummary&quot;: false,
+        &quot;mapping&quot;: [
+          {
+            &quot;identity&quot;: &quot;rim&quot;,
+            &quot;map&quot;: &quot;N/A&quot;
+          },
+          {
+            &quot;identity&quot;: &quot;rim&quot;,
+            &quot;map&quot;: &quot;N/A&quot;
+          }
+        ]
+      },
+      {
+        &quot;path&quot;: &quot;Bundle.entry.base&quot;,
+        &quot;short&quot;: &quot;Base URL, if different to bundle base&quot;,
+        &quot;formal&quot;: &quot;The Base URL for the resource, if different to the base URL specified for the bundle as a whole.&quot;,
+        &quot;comments&quot;: &quot;This allows bundles to be composed of resources from multiple servers (collated search, documents etc).&quot;,
+        &quot;min&quot;: 0,
+        &quot;max&quot;: &quot;1&quot;,
+        &quot;type&quot;: [
+          {
+            &quot;code&quot;: &quot;uri&quot;
+          }
+        ],
+        &quot;isSummary&quot;: false
+      },
+      {
+        &quot;path&quot;: &quot;Bundle.entry.status&quot;,
+        &quot;short&quot;: &quot;create | update | match | include - for search &amp; transaction&quot;,
+        &quot;formal&quot;: &quot;The status of a resource in the bundle. Used for search (to differentiate between resources included as a match, and resources included as an _include), for history (deleted resources), and for transactions (create/update/delete).&quot;,
+        &quot;min&quot;: 0,
+        &quot;max&quot;: &quot;1&quot;,
+        &quot;type&quot;: [
+          {
+            &quot;code&quot;: &quot;code&quot;
+          }
+        ],
+        &quot;isSummary&quot;: false,
+        &quot;binding&quot;: {
+          &quot;name&quot;: &quot;BundleEntryStatus&quot;,
+          &quot;isExtensible&quot;: false,
+          &quot;conformance&quot;: &quot;required&quot;,
+          &quot;description&quot;: &quot;The status of a resource in the bundle. Used for search (to differentiate between resources included as a match, and resources included as an _include), and for transactions (create/update/delete)&quot;,
+          &quot;referenceReference&quot;: {
+            &quot;reference&quot;: &quot;http://hl7.org/fhir/vs/bundle-entry-status&quot;
+          }
+        }
+      },
+      {
+        &quot;path&quot;: &quot;Bundle.entry.search&quot;,
+        &quot;short&quot;: &quot;Search URL (see transaction)&quot;,
+        &quot;formal&quot;: &quot;Search URL for this resource when processing a transaction (see transaction documentation).&quot;,
+        &quot;min&quot;: 0,
+        &quot;max&quot;: &quot;1&quot;,
+        &quot;type&quot;: [
+          {
+            &quot;code&quot;: &quot;uri&quot;
+          }
+        ],
+        &quot;isSummary&quot;: false
+      },
+      {
+        &quot;path&quot;: &quot;Bundle.entry.score&quot;,
+        &quot;short&quot;: &quot;Search ranking (between 0 and 1)&quot;,
+        &quot;formal&quot;: &quot;When searching, the server's search ranking score for the entry.&quot;,
+        &quot;comments&quot;: &quot;Servers are not required to return a ranking score.&quot;,
+        &quot;min&quot;: 0,
+        &quot;max&quot;: &quot;1&quot;,
+        &quot;type&quot;: [
+          {
+            &quot;code&quot;: &quot;decimal&quot;
+          }
+        ],
+        &quot;isSummary&quot;: false
+      },
+      {
+        &quot;path&quot;: &quot;Bundle.entry.deleted&quot;,
+        &quot;short&quot;: &quot;If this is a deleted resource (transaction/history)&quot;,
+        &quot;formal&quot;: &quot;If this is an entry that represents a deleted resource. Only used when the bundle is a transaction or a history type. See RESTful API documentation for further information.&quot;,
+        &quot;min&quot;: 0,
+        &quot;max&quot;: &quot;1&quot;,
+        &quot;isSummary&quot;: false
+      },
+      {
+        &quot;path&quot;: &quot;Bundle.entry.deleted.id&quot;,
+        &quot;representation&quot;: [
+          &quot;xmlAttr&quot;
+        ],
+        &quot;short&quot;: &quot;xml:id (or equivalent in JSON)&quot;,
+        &quot;formal&quot;: &quot;unique id for the element within a resource (for internal references).&quot;,
+        &quot;min&quot;: 0,
+        &quot;max&quot;: &quot;1&quot;,
+        &quot;type&quot;: [
+          {
+            &quot;code&quot;: &quot;id&quot;
+          }
+        ],
+        &quot;isSummary&quot;: false,
+        &quot;mapping&quot;: [
+          {
+            &quot;identity&quot;: &quot;rim&quot;,
+            &quot;map&quot;: &quot;n/a&quot;
+          },
+          {
+            &quot;identity&quot;: &quot;rim&quot;,
+            &quot;map&quot;: &quot;n/a&quot;
+          }
+        ]
+      },
+      {
+        &quot;path&quot;: &quot;Bundle.entry.deleted.extension&quot;,
+        &quot;short&quot;: &quot;Additional Content defined by implementations&quot;,
+        &quot;formal&quot;: &quot;May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.&quot;,
+        &quot;comments&quot;: &quot;There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.&quot;,
+        &quot;synonym&quot;: [
+          &quot;extensions&quot;,
+          &quot;user content&quot;
+        ],
+        &quot;min&quot;: 0,
+        &quot;max&quot;: &quot;*&quot;,
+        &quot;type&quot;: [
+          {
+            &quot;code&quot;: &quot;Extension&quot;
+          }
+        ],
+        &quot;isSummary&quot;: false,
+        &quot;mapping&quot;: [
+          {
+            &quot;identity&quot;: &quot;rim&quot;,
+            &quot;map&quot;: &quot;n/a&quot;
+          },
+          {
+            &quot;identity&quot;: &quot;rim&quot;,
+            &quot;map&quot;: &quot;n/a&quot;
+          }
+        ]
+      },
+      {
+        &quot;path&quot;: &quot;Bundle.entry.deleted.modifierExtension&quot;,
+        &quot;short&quot;: &quot;Extensions that cannot be ignored&quot;,
+        &quot;formal&quot;: &quot;May be used to represent additional information that is not part of the basic definition of the element, and that modifies the understanding of the element that contains it. Usually modifier elements provide negation or qualification. In order to make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions.&quot;,
+        &quot;comments&quot;: &quot;There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.&quot;,
+        &quot;synonym&quot;: [
+          &quot;extensions&quot;,
+          &quot;user content&quot;,
+          &quot;modifiers&quot;
+        ],
+        &quot;min&quot;: 0,
+        &quot;max&quot;: &quot;*&quot;,
+        &quot;type&quot;: [
+          {
+            &quot;code&quot;: &quot;Extension&quot;
+          }
+        ],
+        &quot;isSummary&quot;: false,
+        &quot;mapping&quot;: [
+          {
+            &quot;identity&quot;: &quot;rim&quot;,
+            &quot;map&quot;: &quot;N/A&quot;
+          },
+          {
+            &quot;identity&quot;: &quot;rim&quot;,
+            &quot;map&quot;: &quot;N/A&quot;
+          }
+        ]
+      },
+      {
+        &quot;path&quot;: &quot;Bundle.entry.deleted.type&quot;,
+        &quot;short&quot;: &quot;Type of resource that was deleted&quot;,
+        &quot;formal&quot;: &quot;The type of resource that was deleted (required to construct the identity).&quot;,
+        &quot;min&quot;: 1,
+        &quot;max&quot;: &quot;1&quot;,
+        &quot;type&quot;: [
+          {
+            &quot;code&quot;: &quot;code&quot;
+          }
+        ],
+        &quot;isSummary&quot;: false,
+        &quot;binding&quot;: {
+          &quot;name&quot;: &quot;ResourceType&quot;,
+          &quot;isExtensible&quot;: false,
+          &quot;conformance&quot;: &quot;required&quot;,
+          &quot;description&quot;: &quot;One of the resource types defined as part of FHIR&quot;,
+          &quot;referenceReference&quot;: {
+            &quot;reference&quot;: &quot;http://hl7.org/fhir/vs/resource-types&quot;
+          }
+        }
+      },
+      {
+        &quot;path&quot;: &quot;Bundle.entry.deleted.resourceId&quot;,
+        &quot;short&quot;: &quot;Id of resource that was deleted&quot;,
+        &quot;formal&quot;: &quot;The id of the resource that was deleted.&quot;,
+        &quot;comments&quot;: &quot;This would naturally be called \&quot;id\&quot; but this is not allowed (would clash with @id on all elements0.&quot;,
+        &quot;min&quot;: 1,
+        &quot;max&quot;: &quot;1&quot;,
+        &quot;type&quot;: [
+          {
+            &quot;code&quot;: &quot;id&quot;
+          }
+        ],
+        &quot;isSummary&quot;: false
+      },
+      {
+        &quot;path&quot;: &quot;Bundle.entry.deleted.versionId&quot;,
+        &quot;short&quot;: &quot;Version id for releted resource&quot;,
+        &quot;formal&quot;: &quot;Version id for releted resource.&quot;,
+        &quot;min&quot;: 1,
+        &quot;max&quot;: &quot;1&quot;,
+        &quot;type&quot;: [
+          {
+            &quot;code&quot;: &quot;id&quot;
+          }
+        ],
+        &quot;isSummary&quot;: false
+      },
+      {
+        &quot;path&quot;: &quot;Bundle.entry.deleted.instant&quot;,
+        &quot;short&quot;: &quot;When the resource was deleted&quot;,
+        &quot;formal&quot;: &quot;The date/time that the resource was deleted.&quot;,
+        &quot;min&quot;: 1,
+        &quot;max&quot;: &quot;1&quot;,
+        &quot;type&quot;: [
+          {
+            &quot;code&quot;: &quot;instant&quot;
+          }
+        ],
+        &quot;isSummary&quot;: false
+      },
+      {
+        &quot;path&quot;: &quot;Bundle.entry.resource&quot;,
+        &quot;short&quot;: &quot;Resources in this bundle&quot;,
+        &quot;formal&quot;: &quot;The Resources for the entry.&quot;,
+        &quot;min&quot;: 0,
+        &quot;max&quot;: &quot;1&quot;,
+        &quot;type&quot;: [
+          {
+            &quot;code&quot;: &quot;Resource&quot;
+          }
+        ],
+        &quot;isSummary&quot;: false
+      },
+      {
+        &quot;path&quot;: &quot;Bundle.signature&quot;,
+        &quot;short&quot;: &quot;XML Digital Signature (base64 encoded)&quot;,
+        &quot;formal&quot;: &quot;XML Digital Signature - base64 encoded.&quot;,
+        &quot;comments&quot;: &quot;This is base 64 encoded to address issues with json/xml.&quot;,
+        &quot;min&quot;: 0,
+        &quot;max&quot;: &quot;1&quot;,
+        &quot;type&quot;: [
+          {
+            &quot;code&quot;: &quot;base64Binary&quot;
+          }
+        ],
+        &quot;isSummary&quot;: false
+      }
+    ]
+  },
+  &quot;differential&quot;: {
+    &quot;element&quot;: [
+      {
+        &quot;path&quot;: &quot;Bundle&quot;,
+        &quot;short&quot;: &quot;Contains a group of resources&quot;,
+        &quot;formal&quot;: &quot;A container for a group of resources.&quot;,
+        &quot;min&quot;: 1,
+        &quot;max&quot;: &quot;1&quot;,
+        &quot;constraint&quot;: [
+          {
+            &quot;key&quot;: &quot;2&quot;,
+            &quot;name&quot;: &quot;Search Rule&quot;,
+            &quot;severity&quot;: &quot;error&quot;,
+            &quot;human&quot;: &quot;Search only when transaction&quot;,
+            &quot;xpath&quot;: &quot;not(f:entry/f:search) or (f:type/@value = 'transaction')&quot;
+          },
+          {
+            &quot;key&quot;: &quot;1&quot;,
+            &quot;name&quot;: &quot;Status Rule&quot;,
+            &quot;severity&quot;: &quot;error&quot;,
+            &quot;human&quot;: &quot;Status only when transaction or search&quot;,
+            &quot;xpath&quot;: &quot;not(f:entry/f:status) or (f:type/@value = 'transaction') or (f:type/@value = 'search')&quot;
+          },
+          {
+            &quot;key&quot;: &quot;5&quot;,
+            &quot;name&quot;: &quot;Deleted rule&quot;,
+            &quot;severity&quot;: &quot;error&quot;,
+            &quot;human&quot;: &quot;Status only when transaction or history&quot;,
+            &quot;xpath&quot;: &quot;not(f:entry/f:status) or (f:type/@value = 'transaction') or (f:type/@value = 'history')&quot;
+          }
+        ],
+        &quot;isSummary&quot;: false,
+        &quot;mapping&quot;: [
+          {
+            &quot;identity&quot;: &quot;v2&quot;,
+            &quot;map&quot;: &quot;N/A&quot;
+          },
+          {
+            &quot;identity&quot;: &quot;rim&quot;,
+            &quot;map&quot;: &quot;N/A&quot;
+          },
+          {
+            &quot;identity&quot;: &quot;v2&quot;,
+            &quot;map&quot;: &quot;N/A&quot;
+          },
+          {
+            &quot;identity&quot;: &quot;rim&quot;,
+            &quot;map&quot;: &quot;N/A&quot;
+          }
+        ]
+      },
+      {
+        &quot;path&quot;: &quot;Bundle.type&quot;,
+        &quot;short&quot;: &quot;document | message | transaction | transaction-response | history | searchset | collection&quot;,
+        &quot;formal&quot;: &quot;Indicates the purpose of this bundle- how it was intended to be used.&quot;,
+        &quot;comments&quot;: &quot;It's possible to use a bundle for other purposes (e.g. a document can be accepted as a transaction). This is primarily defined so that there can be specific rules for some of the bundle types.&quot;,
+        &quot;min&quot;: 1,
+        &quot;max&quot;: &quot;1&quot;,
+        &quot;type&quot;: [
+          {
+            &quot;code&quot;: &quot;code&quot;
+          }
+        ],
+        &quot;isSummary&quot;: false,
+        &quot;binding&quot;: {
+          &quot;name&quot;: &quot;BundleType&quot;,
+          &quot;isExtensible&quot;: false,
+          &quot;conformance&quot;: &quot;required&quot;,
+          &quot;description&quot;: &quot;Indicates the purpose of a bundle- how it was intended to be used&quot;,
+          &quot;referenceReference&quot;: {
+            &quot;reference&quot;: &quot;http://hl7.org/fhir/vs/bundle-type&quot;
+          }
+        }
+      },
+      {
+        &quot;path&quot;: &quot;Bundle.base&quot;,
+        &quot;short&quot;: &quot;Stated Base URL&quot;,
+        &quot;formal&quot;: &quot;The base URL for the service that provided these resources. All relative URLs are relative to this one (equivalent to xml:base).&quot;,
+        &quot;min&quot;: 0,
+        &quot;max&quot;: &quot;1&quot;,
+        &quot;type&quot;: [
+          {
+            &quot;code&quot;: &quot;uri&quot;
+          }
+        ],
+        &quot;isSummary&quot;: false
+      },
+      {
+        &quot;path&quot;: &quot;Bundle.total&quot;,
+        &quot;short&quot;: &quot;If search, the total number of matches&quot;,
+        &quot;formal&quot;: &quot;If a set of search matches, this is the total number of matches for the search (as opposed to the number of results in this bundle).&quot;,
+        &quot;comments&quot;: &quot;Only used if the bundle is a search result set.&quot;,
+        &quot;min&quot;: 0,
+        &quot;max&quot;: &quot;1&quot;,
+        &quot;type&quot;: [
+          {
+            &quot;code&quot;: &quot;integer&quot;
+          }
+        ],
+        &quot;isSummary&quot;: false
+      },
+      {
+        &quot;path&quot;: &quot;Bundle.link&quot;,
+        &quot;short&quot;: &quot;Links related to this Bundle&quot;,
+        &quot;formal&quot;: &quot;A series of links that provide context to this bundle.&quot;,
+        &quot;min&quot;: 0,
+        &quot;max&quot;: &quot;*&quot;,
+        &quot;isSummary&quot;: false
+      },
+      {
+        &quot;path&quot;: &quot;Bundle.link.relation&quot;,
+        &quot;short&quot;: &quot;http://www.iana.org/assignments/link-relations/link-relations.xhtml&quot;,
+        &quot;formal&quot;: &quot;A name which details the functional use for this link - see [[http://www.iana.org/assignments/link-relations/link-relations.xhtml]].&quot;,
+        &quot;min&quot;: 1,
+        &quot;max&quot;: &quot;1&quot;,
+        &quot;type&quot;: [
+          {
+            &quot;code&quot;: &quot;string&quot;
+          }
+        ],
+        &quot;isSummary&quot;: false
+      },
+      {
+        &quot;path&quot;: &quot;Bundle.link.url&quot;,
+        &quot;short&quot;: &quot;Reference details for the link&quot;,
+        &quot;formal&quot;: &quot;The reference details for the link.&quot;,
+        &quot;min&quot;: 1,
+        &quot;max&quot;: &quot;1&quot;,
+        &quot;type&quot;: [
+          {
+            &quot;code&quot;: &quot;uri&quot;
+          }
+        ],
+        &quot;isSummary&quot;: false
+      },
+      {
+        &quot;path&quot;: &quot;Bundle.entry&quot;,
+        &quot;short&quot;: &quot;Entry in the bundle - will have deleted or resource&quot;,
+        &quot;formal&quot;: &quot;An entry in a bundle resource - will either contain a resource, or a deleted entry (transaction and history bundles only).&quot;,
+        &quot;min&quot;: 0,
+        &quot;max&quot;: &quot;*&quot;,
+        &quot;constraint&quot;: [
+          {
+            &quot;key&quot;: &quot;3&quot;,
+            &quot;name&quot;: &quot;Status Resource Rule&quot;,
+            &quot;severity&quot;: &quot;error&quot;,
+            &quot;human&quot;: &quot;status only when resource&quot;,
+            &quot;xpath&quot;: &quot;not(f:status) or f:resource&quot;
+          },
+          {
+            &quot;key&quot;: &quot;4&quot;,
+            &quot;name&quot;: &quot;Resource or deleted rule&quot;,
+            &quot;severity&quot;: &quot;error&quot;,
+            &quot;human&quot;: &quot;deleted or resource (but not both)&quot;,
+            &quot;xpath&quot;: &quot;not(f:deleted) or not(f:resource)&quot;
+          }
+        ],
+        &quot;isSummary&quot;: false
+      },
+      {
+        &quot;path&quot;: &quot;Bundle.entry.base&quot;,
+        &quot;short&quot;: &quot;Base URL, if different to bundle base&quot;,
+        &quot;formal&quot;: &quot;The Base URL for the resource, if different to the base URL specified for the bundle as a whole.&quot;,
+        &quot;comments&quot;: &quot;This allows bundles to be composed of resources from multiple servers (collated search, documents etc).&quot;,
+        &quot;min&quot;: 0,
+        &quot;max&quot;: &quot;1&quot;,
+        &quot;type&quot;: [
+          {
+            &quot;code&quot;: &quot;uri&quot;
+          }
+        ],
+        &quot;isSummary&quot;: false
+      },
+      {
+        &quot;path&quot;: &quot;Bundle.entry.status&quot;,
+        &quot;short&quot;: &quot;create | update | match | include - for search &amp; transaction&quot;,
+        &quot;formal&quot;: &quot;The status of a resource in the bundle. Used for search (to differentiate between resources included as a match, and resources included as an _include), for history (deleted resources), and for transactions (create/update/delete).&quot;,
+        &quot;min&quot;: 0,
+        &quot;max&quot;: &quot;1&quot;,
+        &quot;type&quot;: [
+          {
+            &quot;code&quot;: &quot;code&quot;
+          }
+        ],
+        &quot;isSummary&quot;: false,
+        &quot;binding&quot;: {
+          &quot;name&quot;: &quot;BundleEntryStatus&quot;,
+          &quot;isExtensible&quot;: false,
+          &quot;conformance&quot;: &quot;required&quot;,
+          &quot;description&quot;: &quot;The status of a resource in the bundle. Used for search (to differentiate between resources included as a match, and resources included as an _include), and for transactions (create/update/delete)&quot;,
+          &quot;referenceReference&quot;: {
+            &quot;reference&quot;: &quot;http://hl7.org/fhir/vs/bundle-entry-status&quot;
+          }
+        }
+      },
+      {
+        &quot;path&quot;: &quot;Bundle.entry.search&quot;,
+        &quot;short&quot;: &quot;Search URL (see transaction)&quot;,
+        &quot;formal&quot;: &quot;Search URL for this resource when processing a transaction (see transaction documentation).&quot;,
+        &quot;min&quot;: 0,
+        &quot;max&quot;: &quot;1&quot;,
+        &quot;type&quot;: [
+          {
+            &quot;code&quot;: &quot;uri&quot;
+          }
+        ],
+        &quot;isSummary&quot;: false
+      },
+      {
+        &quot;path&quot;: &quot;Bundle.entry.score&quot;,
+        &quot;short&quot;: &quot;Search ranking (between 0 and 1)&quot;,
+        &quot;formal&quot;: &quot;When searching, the server's search ranking score for the entry.&quot;,
+        &quot;comments&quot;: &quot;Servers are not required to return a ranking score.&quot;,
+        &quot;min&quot;: 0,
+        &quot;max&quot;: &quot;1&quot;,
+        &quot;type&quot;: [
+          {
+            &quot;code&quot;: &quot;decimal&quot;
+          }
+        ],
+        &quot;isSummary&quot;: false
+      },
+      {
+        &quot;path&quot;: &quot;Bundle.entry.deleted&quot;,
+        &quot;short&quot;: &quot;If this is a deleted resource (transaction/history)&quot;,
+        &quot;formal&quot;: &quot;If this is an entry that represents a deleted resource. Only used when the bundle is a transaction or a history type. See RESTful API documentation for further information.&quot;,
+        &quot;min&quot;: 0,
+        &quot;max&quot;: &quot;1&quot;,
+        &quot;isSummary&quot;: false
+      },
+      {
+        &quot;path&quot;: &quot;Bundle.entry.deleted.type&quot;,
+        &quot;short&quot;: &quot;Type of resource that was deleted&quot;,
+        &quot;formal&quot;: &quot;The type of resource that was deleted (required to construct the identity).&quot;,
+        &quot;min&quot;: 1,
+        &quot;max&quot;: &quot;1&quot;,
+        &quot;type&quot;: [
+          {
+            &quot;code&quot;: &quot;code&quot;
+          }
+        ],
+        &quot;isSummary&quot;: false,
+        &quot;binding&quot;: {
+          &quot;name&quot;: &quot;ResourceType&quot;,
+          &quot;isExtensible&quot;: false,
+          &quot;conformance&quot;: &quot;required&quot;,
+          &quot;description&quot;: &quot;One of the resource types defined as part of FHIR&quot;,
+          &quot;referenceReference&quot;: {
+            &quot;reference&quot;: &quot;http://hl7.org/fhir/vs/resource-types&quot;
+          }
+        }
+      },
+      {
+        &quot;path&quot;: &quot;Bundle.entry.deleted.resourceId&quot;,
+        &quot;short&quot;: &quot;Id of resource that was deleted&quot;,
+        &quot;formal&quot;: &quot;The id of the resource that was deleted.&quot;,
+        &quot;comments&quot;: &quot;This would naturally be called \&quot;id\&quot; but this is not allowed (would clash with @id on all elements0.&quot;,
+        &quot;min&quot;: 1,
+        &quot;max&quot;: &quot;1&quot;,
+        &quot;type&quot;: [
+          {
+            &quot;code&quot;: &quot;id&quot;
+          }
+        ],
+        &quot;isSummary&quot;: false
+      },
+      {
+        &quot;path&quot;: &quot;Bundle.entry.deleted.versionId&quot;,
+        &quot;short&quot;: &quot;Version id for releted resource&quot;,
+        &quot;formal&quot;: &quot;Version id for releted resource.&quot;,
+        &quot;min&quot;: 1,
+        &quot;max&quot;: &quot;1&quot;,
+        &quot;type&quot;: [
+          {
+            &quot;code&quot;: &quot;id&quot;
+          }
+        ],
+        &quot;isSummary&quot;: false
+      },
+      {
+        &quot;path&quot;: &quot;Bundle.entry.deleted.instant&quot;,
+        &quot;short&quot;: &quot;When the resource was deleted&quot;,
+        &quot;formal&quot;: &quot;The date/time that the resource was deleted.&quot;,
+        &quot;min&quot;: 1,
+        &quot;max&quot;: &quot;1&quot;,
+        &quot;type&quot;: [
+          {
+            &quot;code&quot;: &quot;instant&quot;
+          }
+        ],
+        &quot;isSummary&quot;: false
+      },
+      {
+        &quot;path&quot;: &quot;Bundle.entry.resource&quot;,
+        &quot;short&quot;: &quot;Resources in this bundle&quot;,
+        &quot;formal&quot;: &quot;The Resources for the entry.&quot;,
+        &quot;min&quot;: 0,
+        &quot;max&quot;: &quot;1&quot;,
+        &quot;type&quot;: [
+          {
+            &quot;code&quot;: &quot;Resource&quot;
+          }
+        ],
+        &quot;isSummary&quot;: false
+      },
+      {
+        &quot;path&quot;: &quot;Bundle.signature&quot;,
+        &quot;short&quot;: &quot;XML Digital Signature (base64 encoded)&quot;,
+        &quot;formal&quot;: &quot;XML Digital Signature - base64 encoded.&quot;,
+        &quot;comments&quot;: &quot;This is base 64 encoded to address issues with json/xml.&quot;,
+        &quot;min&quot;: 0,
+        &quot;max&quot;: &quot;1&quot;,
+        &quot;type&quot;: [
+          {
+            &quot;code&quot;: &quot;base64Binary&quot;
+          }
+        ],
+        &quot;isSummary&quot;: false
+      }
+    ]
+  }
+}
+</pre>
+</div>
+
+
+<p>
+Usage note: every effort has been made to ensure that the
+examples are correct and useful, but they are not a normative part 
+of the specification. 
+</p>
+
+</div>
+
+
+				</div><!-- /inner-wrapper -->
+            </div><!-- /row -->
+        </div><!-- /container -->
+        
+    </div><!-- /segment-content -->
+
+
+	<div id="segment-footer" class="segment"><!-- segment-footer -->
+		<div class="container"><!-- container -->
+			<div class="inner-wrapper">
+				<p>
+        © HL7.org 2011+. FHIR DSTU (v0.4.0-3920) generated on Tue, Dec 30, 2014 10:57+0000. <!-- <a href="qa.html">QA Report</a> --> <!-- achive note -->
+        <br/>
+        <span style="color: #FFFF77">
+        Links: <a style="color: #81BEF7" href="timelines.html">What's a DSTU?</a> | 
+               <a style="color: #81BEF7" href="history.html">Version History</a> | 
+               <a style="color: #81BEF7" href="http://services.w3.org/htmldiff?doc1=http%3A%2F%2Fhl7.org%2Fimplement%2Fstandards%2Ffhir%2Fbundle.profile.json.html&amp;doc2=http%3A%2F%2Fhl7-fhir.github.io%2F%2Fbundle.profile.json.html">Compare to DSTU</a> | 
+               <a style="color: #81BEF7" rel="license" href="license.html"><img src="cc0.png" style="border-style: none;" alt="CC0"/></a> | 
+               <a style="color: #81BEF7" target="_blank" href="http://gforge.hl7.org/gf/project/fhir/tracker/?action=TrackerItemAdd&amp;tracker_id=677">Propose a change</a>   
+        </span>
+        </p>
+			</div><!-- /inner-wrapper -->
+		</div><!-- /container -->
+	</div><!-- /segment-footer -->
+<!-- disqus thread -->
+<!--disqus-->
+<!-- end disqus -->        
+	
+	<div id="segment-post-footer" class="segment hidden"><!-- segment-post-footer -->
+		<div class="container"><!-- container -->
+		</div><!-- /container -->
+	</div><!-- /segment-post-footer -->
+    
+    <!-- JS and analytics only. -->
+    <!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="./assets/js/jquery.js"> </script>   <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+<script src="./dist/js/bootstrap.min.js"> </script>
+<script src="./assets/js/respond.min.js"> </script>
+
+<script src="./assets/js/fhir.js"> </script>
+
+<!-- Analytics Below
+================================================== -->
+
+    
+</body>
+</html>

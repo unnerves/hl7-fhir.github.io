@@ -1,0 +1,304 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+  <title>Extras-examples - FHIR v0.4.0</title>
+
+  
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <meta content="http://hl7.org/fhir" name="author"/>
+
+  <link rel="stylesheet" href="fhir.css"/>
+  <link rel="Prev" href="http://hl7.org/implement/standards/fhir/extras-examples.html"/>
+
+    <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" href="./dist/css/bootstrap.css"/>
+  <link rel="stylesheet" href="./assets/css/bootstrap-fhir.css"/>
+
+    <!-- Project extras -->
+  <link rel="stylesheet" href="./assets/css/project.css"/>
+  <link rel="stylesheet" href="./assets/css/pygments-manni.css"/>
+	<link rel="stylesheet" href="jquery-ui.css"/>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- [if lt IE 9]>
+  <script src="./assets/js/html5shiv.js"></script>
+  <script src="./assets/js/respond.min.js"></script>
+  <![endif] -->
+
+    <!-- Favicons -->
+  <link sizes="144x144" rel="apple-touch-icon-precomposed" href="./assets/ico/apple-touch-icon-144-precomposed.png"/>
+  <link sizes="114x114" rel="apple-touch-icon-precomposed" href="./assets/ico/apple-touch-icon-114-precomposed.png"/>
+  <link sizes="72x72" rel="apple-touch-icon-precomposed" href="./assets/ico/apple-touch-icon-72-precomposed.png"/>
+  <link rel="apple-touch-icon-precomposed" href="./assets/ico/apple-touch-icon-57-precomposed.png"/>
+  <link rel="shortcut icon" href="./assets/ico/favicon.png"/>
+
+</head>
+<body>
+	<div id="segment-header" class="segment">  <!-- segment-header -->	
+		<div class="container">  <!-- container -->
+			<a id="logo" href="http://hl7.org/fhir"><img alt="logo fhir" src="./assets/images/fhir-logo-www.png"/> </a>
+			<div id="hl7-status">
+				<b>Continuous Integration Build</b>
+			</div>       	
+			
+			<div id="hl7-nav">
+				 <a id="hl7-logo" href="http://www.hl7.org">
+					<img height="50" alt="visit the hl7 website" width="42" src="./assets/images/hl7-logo.png"/>
+				</a> 
+			</div>       	
+			  <!-- hl7-search -->
+		</div>
+		<div class="container">  <!-- container -->
+	</div></div>  <!-- /segment-header -->	
+
+
+	<div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+		<div id="stripe"> </div>
+		<div class="container">  <!-- container -->
+   <!-- HEADER CONTENT -->
+ 	      		
+ 	      		      		
+			<nav class="navbar navbar-inverse">
+				<div class="container">
+					<button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+						<span class="icon-bar"> </span>
+						<span class="icon-bar"> </span>
+						<span class="icon-bar"> </span>
+					</button>
+					<a class="navbar-brand hidden" href="index.html">FHIR</a>
+					<div class="nav-collapse collapse navbar-inverse-collapse">
+						<ul class="nav navbar-nav">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="documentation.html">Documentation</a></li>
+              <li><a href="implementation.html">Implementation</a></li>
+              <li><a href="resourcelist.html">Resources</a></li>
+              <li><a href="clinical.html">Clinical</a></li>
+              <li><a href="administration.html">Administrative</a></li>
+              <li><a href="infrastructure.html">Infrastructure</a></li>
+              <li><a href="financial.html">Financial</a></li>
+
+						</ul>
+					</div>  <!-- /.nav-collapse -->
+				</div>  <!-- /.container -->
+			</nav>  <!-- /.navbar -->
+      		
+				
+  <!-- /HEADER CONTENT -->				
+		</div>  <!-- /container -->
+	</div>  <!-- /segment-navbar -->
+	
+
+	<div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+		<div class="container">  <!-- container -->	
+			<ul class="breadcrumb">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="documentation.html">Documentation</a></li>
+        <li><a href="extras.html">Tags, Bundles, Compartments</a></li>
+        <li><b>Examples</b></li>          <!-- extras-examples.html / page -->
+
+			</ul>	
+		</div>  <!-- /container -->
+	</div>  <!-- /segment-breadcrumb -->
+	
+
+	<div id="segment-content" class="segment">  <!-- segment-content -->
+	<div class="container">  <!-- container -->
+            <div class="row">
+            	<div class="inner-wrapper">
+  <!-- CONTENT CONTENT -->
+
+
+<div class="col-9">
+
+<ul class="nav nav-tabs"><li><a href="extras.html">Tags, Bundles, Compartments</a></li><li class="active"><a href="#">Examples</a></li><li><a href="extras-definitions.html">Detailed Descriptions</a></li></ul>
+
+
+<h2><span class="sectioncount">1.13.4.1<a name="1.13.4.1"> </a></span> Examples of Tags, Bundles, Compartments and Binary Resources</h2>
+
+<a name="root"> </a>
+<a name="tags"> </a>
+<a name="tag"> </a>
+<h3><span class="sectioncount">1.13.4.1.1<a name="1.13.4.1.1"> </a></span> Tags</h3>
+
+
+<p>
+An example of a tag in an HTTP header:
+</p>
+<pre>
+HTTP/1.1 200 OK
+Content-Type: text/xml
+Access-Control-Allow-Origin: *
+Last-Modified: Thu, 19 Nov 2013 07:07:32 +1100
+Content-Location: http://[server]/[path]/Patient/234124/_history/24
+ETag: 24
+Category: http://hl7.org/fhir/v3/ActCode#CEL; scheme=&quot;http://hl7.org/fhir/tag/security&quot;; label=&quot;Celebrity&quot;
+
+&lt;Patient xmlns=&quot;http://hl7.org/fhir&quot;&gt;
+...  [snip] ...
+&lt;/Patient&gt;
+</pre>
+<p>
+Rather than repeating the Category header (this has unpredictable results on different servers), tags are repeated like this:
+</p>
+<pre>
+HTTP/1.1 200 OK
+Content-Type: text/xml
+Access-Control-Allow-Origin: *
+Last-Modified: Thu, 19 Nov 2013 07:07:32 +1100
+Content-Location: http://[server]/[path]/Patient/234124/_history/24
+ETag: 24
+Category: http://hl7.org/fhir/v3/ActCode#CEL; scheme=&quot;http://hl7
+   .org/fhir/tag/security&quot;; label=&quot;Celebrity&quot;, http://acme.
+   org/fhir/tags/waiting; scheme=&quot;http://hl7
+   .org/fhir/tag&quot;; label=&quot;Waiting for processing&quot;
+
+&lt;Patient xmlns=&quot;http://hl7.org/fhir&quot;&gt;
+...  [snip] ...
+&lt;/Patient&gt;
+</pre>
+<p>
+Note: this example introduces line breaks in the Category header for formatting purposes.
+</p>
+
+<p>
+Several <a href="http.htm#tags">API operations</a> take a list of tags. Here is an example:
+</p>
+<pre class="spec">
+&lt;taglist xmlns=&quot;http://hl7.org/fhir&quot;&gt; 
+  &lt;category term=&quot;http://hl7.org/fhir/v3/ActCode#CEL&quot; label=&quot;Celebrity&quot;
+     scheme=&quot;http://hl7.org/fhir/tag/security&quot;&gt; 
+  &lt;category term=&quot;http://acme.org/fhir/tags/waiting&quot; label=&quot;Waiting for processing&quot;
+     scheme=&quot;http://hl7.org/fhir/tag&quot;&gt; 
+&lt;/taglist&gt;
+</pre>
+
+<pre class="json">
+{
+  &quot;resourceType&quot; : &quot;TagList&quot;,
+  &quot;category&quot; : [{
+      &quot;term&quot; : &quot;http://hl7.org/fhir/v3/ActCode#CEL&quot;,
+      &quot;label&quot; : &quot;Celebrity&quot;,
+      &quot;scheme&quot; : &quot;http://hl7.org/fhir/tag/security&quot;
+    },
+    {
+      &quot;term&quot; : &quot;http://acme.org/fhir/tags/waiting&quot;,
+      &quot;label&quot; : &quot;Waiting for processing&quot;,
+      &quot;scheme&quot; : &quot;http://hl7.org/fhir/tag&quot;
+    }]
+}
+</pre>
+
+
+<hr/>
+<hr/>
+<a name="bundles"/> 
+<a name="bundle"/> 
+<h3><span class="sectioncount">1.13.4.1.2<a name="1.13.4.1.2"> </a></span> Bundles</h3>
+
+<p>
+There are examples of bundles throughout the specification:
+</p>
+<ul>
+ <li>General Collections of Resources:
+   <ul>
+     <li>Example Patients: <a href="patient-examples-cypress-template.xml.html">XML</a>, <a href="patient-examples-cypress-template.json.html">JSON</a></li>
+     <li>Example Blood Pressure: <a href="observation-example-bloodpressure.xml.html">XML</a>, <a href="observation-example-bloodpressure.json.html">JSON</a></li>
+     <li>Diagnostic Reports: <a href="diagnosticreport-examples-lab-text.xml.html">XML</a>, <a href="diagnosticreport-examples-lab-text.json.html">JSON</a></li>
+     <li>Example Questionnaire: <a href="questionnaire-sdc-profile-example.xml.html">XML</a>, <a href="questionnaire-sdc-profile-example.json.html">JSON</a></li>
+   </ul>
+ </li>
+ <li>Example Documents:
+   <ul>
+     <li>Discharge Summary: <a href="document-example-dischargesummary.xml.html">XML</a>, <a href="document-example-dischargesummary.json.html">JSON</a></li>
+   </ul>
+ </li>
+ <li>Example Messages:
+   <ul>
+     <li>Query Request: <a href="query-example-request.xml.html">XML</a>, <a href="query-example-request.json.html">JSON</a></li>
+     <li>Query Response: <a href="query-example-response.xml.html">XML</a>, <a href="query-example-response.json.html">JSON</a></li>
+   </ul>
+ </li>
+ <li>Example Transactions:
+   <ul>
+     <li>XDS Example: <a href="xds-example.xml.html">XML</a>, <a href="xds-example.json.html">JSON</a></li>
+   </ul>
+ </li>
+ <li>Conformance Resource Collections
+   <ul>
+     <li>Profiles (Resources): <a href="profiles-resources.xml.html">XML</a>, <a href="profiles-resources.json.html">JSON</a></li>
+     <li>Profiles (Supporting Types): <a href="profiles-types.xml.html">XML</a>, <a href="profiles-types.json.html">JSON</a></li>
+     <li>Value Sets: <a href="valuesets.xml.html">XML</a>, <a href="valuesets.json.html">JSON</a></li>
+     <li>v2 Value Sets: <a href="v2-tables.xml.html">XML</a>, <a href="v2-tables.json.html">JSON</a></li>
+     <li>v3 Value Sets: <a href="v3-codesystems.xml.html">XML</a>, <a href="v3-codesystems.json.html">JSON</a></li>
+     <li>Concept Maps: <a href=".xml.html">XML</a>, <a href=".json.html">JSON</a></li>
+   </ul>
+ </li>
+</ul>
+
+<hr/>
+<a name="binary"/> 
+<a name="Binary"/> 
+<h3><span class="sectioncount">1.13.4.1.3<a name="1.13.4.1.3"> </a></span> Binary Resources</h3>
+<p>
+Examples of Binary resources can be found in several places:
+</p>
+<ul>
+ <li><a href="http.html#binary">Representation in an HTTP request</a></li>
+ <li><a href="xml.html#binary">XML Representation in a bundle</a></li>
+ <li><a href="json.html#binary">JSON Representation in a bundle</a></li>
+ <li><a href="null"/></li>
+</ul>
+
+
+
+</div>
+
+
+				</div>  <!-- /inner-wrapper -->
+            </div>  <!-- /row -->
+        </div>  <!-- /container -->
+        
+    </div>  <!-- /segment-content -->
+
+
+	<div id="segment-footer" class="segment">  <!-- segment-footer -->
+		<div class="container">  <!-- container -->
+			<div class="inner-wrapper">
+				<p>
+        © HL7.org 2011+. FHIR DSTU (v0.4.0-3920) generated on Tue, Dec 30, 2014 11:07+0000.   <!-- <a href="qa.html">QA Report</a> -->   <!-- achive note -->
+        <br/>
+        <span style="color: #FFFF77">
+        Links: <a style="color: #81BEF7" href="timelines.html">What's a DSTU?</a> | 
+               <a style="color: #81BEF7" href="history.html">Version History</a> | 
+               <a style="color: #81BEF7" href="http://services.w3.org/htmldiff?doc1=http%3A%2F%2Fhl7.org%2Fimplement%2Fstandards%2Ffhir%2Fextras-examples.html&amp;doc2=http%3A%2F%2Fhl7-fhir.github.io%2F%2Fextras-examples.html">Compare to DSTU</a> | 
+               <a style="color: #81BEF7" rel="license" href="license.html"><img style="border-style: none;" alt="CC0" src="cc0.png"/></a> | 
+               <a style="color: #81BEF7" target="_blank" href="http://gforge.hl7.org/gf/project/fhir/tracker/?action=TrackerItemAdd&amp;tracker_id=677">Propose a change</a>   
+        </span>
+        </p>
+			</div>  <!-- /inner-wrapper -->
+		</div>  <!-- /container -->
+	</div>  <!-- /segment-footer -->
+  <!-- disqus thread -->
+  <!-- disqus -->
+  <!-- end disqus -->        
+	
+	<div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+		<div class="container">  <!-- container -->
+		</div>  <!-- /container -->
+	</div>  <!-- /segment-post-footer -->
+    
+      <!-- JS and analytics only. -->
+      <!-- Bootstrap core JavaScript
+================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+<script src="./assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+<script src="./dist/js/bootstrap.min.js"> </script>
+<script src="./assets/js/respond.min.js"> </script>
+
+<script src="./assets/js/fhir.js"> </script>
+
+  <!-- Analytics Below
+================================================== -->
+
+</body>
+</html>

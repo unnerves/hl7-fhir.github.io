@@ -1,0 +1,273 @@
+﻿<!DOCTYPE HTML>
+
+
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <title>Observation-daf-smokingstatus - FHIR v0.4.0</title>
+
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="author" content="http://hl7.org/fhir"/>
+
+  <link href="fhir.css" rel="stylesheet"/>
+  <link rel="Prev" href="http://hl7.org/implement/standards/fhir/observation-daf-smokingstatus"/>
+
+  <!-- Bootstrap core CSS -->
+  <link href="./dist/css/bootstrap.css" rel="stylesheet"/>
+  <link href="./assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+  <!-- Project extras -->
+  <link href="./assets/css/project.css" rel="stylesheet"/>
+  <link href="./assets/css/pygments-manni.css" rel="stylesheet"/>
+	<link href="jquery-ui.css" rel="stylesheet"/>
+
+  <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!--[if lt IE 9]>
+  <script src="./assets/js/html5shiv.js"></script>
+  <script src="./assets/js/respond.min.js"></script>
+  <![endif]-->
+
+  <!-- Favicons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="./assets/ico/apple-touch-icon-144-precomposed.png"/>
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="./assets/ico/apple-touch-icon-114-precomposed.png"/>
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="./assets/ico/apple-touch-icon-72-precomposed.png"/>
+  <link rel="apple-touch-icon-precomposed" href="./assets/ico/apple-touch-icon-57-precomposed.png"/>
+  <link rel="shortcut icon" href="./assets/ico/favicon.png"/>
+
+</head>
+<body>
+	<div id="segment-header" class="segment"><!-- segment-header -->	
+		<div class="container"><!-- container -->
+			<a id="logo" href="http://hl7.org/fhir"><img src="./assets/images/fhir-logo-www.png" alt="logo fhir"/> </a>
+			<div id="hl7-status">
+				<b>Continuous Integration Build</b>
+			</div>       	
+			
+			<div id="hl7-nav">
+				 <a id="hl7-logo" href="http://www.hl7.org">
+					<img src="./assets/images/hl7-logo.png" width="42" height="50" alt="visit the hl7 website"/>
+				</a> 
+			</div>       	
+			<!--hl7-search-->
+		</div>
+		<div class="container"><!-- container -->
+	</div></div><!-- /segment-header -->	
+
+
+	<div id="segment-navbar" class="segment"><!-- segment-navbar -->
+		<div id="stripe"> </div>
+		<div class="container"><!-- container -->
+ <!-- HEADER CONTENT -->
+ 	      		
+ 	      		      		
+			<nav class="navbar navbar-inverse">
+				<div class="container">
+					<button data-target=".navbar-inverse-collapse" data-toggle="collapse" class="navbar-toggle" type="button">
+						<span class="icon-bar"> </span>
+						<span class="icon-bar"> </span>
+						<span class="icon-bar"> </span>
+					</button>
+					<a href="index.html" class="navbar-brand hidden">FHIR</a>
+					<div class="nav-collapse collapse navbar-inverse-collapse">
+						<ul class="nav navbar-nav">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="documentation.html">Documentation</a></li>
+              <li><a href="implementation.html">Implementation</a></li>
+              <li><a href="resourcelist.html">Resources</a></li>
+              <li><a href="clinical.html">Clinical</a></li>
+              <li><a href="administration.html">Administrative</a></li>
+              <li><a href="infrastructure.html">Infrastructure</a></li>
+              <li><a href="financial.html">Financial</a></li>
+
+						</ul>
+					</div><!-- /.nav-collapse -->
+				</div><!-- /.container -->
+			</nav><!-- /.navbar -->
+      		
+				
+<!-- /HEADER CONTENT -->				
+		</div><!-- /container -->
+	</div><!-- /segment-navbar -->
+	
+
+	<div id="segment-breadcrumb" class="segment"><!-- segment-breadcrumb -->
+		<div class="container"><!-- container -->	
+			<ul class="breadcrumb">
+        <li><a href="index.html">Home</a></li>
+        <!-- observation-daf-smokingstatus.html / package -->
+
+			</ul>	
+		</div><!-- /container -->
+	</div><!-- /segment-breadcrumb -->
+	
+
+	<div id="segment-content" class="segment"><!-- segment-content -->
+	<div class="container"><!-- container -->
+            <div class="row">
+            	<div class="inner-wrapper">
+<!-- CONTENT CONTENT -->
+
+
+<div class="col-9">
+
+<h1>U.S. Data Access Framework (DAF) Smoking Status Profile (Conformance Package)</h1>
+
+
+<div>
+<h2>Scope and Usage</h2>
+<p>
+This profile sets expectations for use of the <a href="observation.html">Observation</a> resource to record Smoking Status of a patient within the <a href="daf.html">Data Access Framework (DAF)</a> Implementation Guide. This profile identifies which core elements,extensions,vocabularies and value sets must be supported by DAF actors.
+</p>
+<p>
+For the purposes of this profile, <i>Supported</i> means the following:
+<ul>
+  <p><b>SearchParameters:</b></p>
+  <li>DAF Query Requestor (client) SHALL be capable of querying the Observation resource using one or more of the search parameters for data elements tagged as MUST SUPPORT in this profile.</li>
+  <li>DAF Query Responder (server) SHALL be capable of receiving the queries submitted by the DAF Query Requestor and provide Query Results or error responses per the FHIR specifications.</li>
+  <li>DAF Query Responder MAY provide valid or error responses when the query parameters submitted contain data elements which are not tagged as MUST SUPPORT by this profile.</li>
+  <p/>
+  <p><b>Query Results:</b></p>
+  <li>Query Results returned by DAF Query Responder SHOULD contain the data elements identified as MUST SUPPORT in the profile.</li>
+  <li>Query Results returned MAY contain data elements not tagged as MUST SUPPORT by the this profile.</li>
+  <li>Query Requestor SHALL process the Query Results containing additional data elements without indicating that the response is an erroneous response.</li>
+  <p/>
+  <p><b>Missing Information:</b></p>
+  <li>When Query Results do not contain a particular data element identified as MUST SUPPORT, Query Requestors SHALL interpret the results to mean that the Query Responder did not have information and there is no further qualifying information as to why the information is missing.</li>
+  <li>In cases, where the Query Responder knows precisely the reason why the data is missing (e.g notasked in the data-absent-reason value set), then Query Responders MAY provide this additional information using the extension element as part of the data element. Query Requestors SHALL correctly process the data-absent-reason extension without rejecting the response as an erroneous response.</li>
+  <li>DAF Query Responders SHALL use Observation.dataAbsentReason with the appropriate code to represent the absence of Smoking Status information. <u>NOTE:</u> Only one of either Observation.valueCodeableConcept or Observation.dataAbsentReason can be present in an DAFSmokingStatus instance.</li>
+</ul>
+</p>
+</div>
+
+<div>
+<h2>Relationship to Meaningful Use</h2>
+<p>
+The DAF Smoking Status profile provides a mapping for the following Meaningful Use data elements to FHIR data elements.
+</p>
+<br/>
+	<table class="grid">
+        <thead>
+          <tr>
+            <th>Meaningful Use Data Element Name</th>
+            <th>FHIR Resource Mapping</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+			<td>Patient for whom smoking status is being captured</td>
+			<td>Observation.subject</td>
+		  </tr>
+		  <tr>
+			<td>Smoking Status Value</td>
+			<td>Observation.valueCodeableConcept</td>
+		  </tr>
+		  <tr>
+			<td>Smoking Status Value Applicability (Time Period when the Smoking Status value is/was applicable) </td>
+			<td>Observation.appliesPeriod</td>
+		  </tr>
+		</tbody>
+	</table>
+
+</div>
+
+
+<div>
+<h2>Boundaries and Relationships</h2>
+<p>
+This profile relies on the use of other profiles, some required, others available for use "when necessary":
+</p>
+<ul>
+  <li><a href="patient-daf.html">DAFPatient</a> which defines DAF Patient profile used by Encounter.subject.</li>
+  <li><a href="us-core.html">US Core</a> which defines common properties related to Patient such as race and ethnicity.</li>
+  <li><a href="extensibility.html">FHIR Extensibility</a> defines how extensions can be applied to FHIR resources and data types. Specifically the <a href="extension-data-absent-reason.html">data-absent-reason</a> extension is used to code data elements with missing information when appropriate.</li>
+</ul>
+</div>
+
+<h2><u>Profile Details</u></h2>
+
+
+
+<table class="lines"><tr><td colspan="2"><b>Profiles</b>: </td></tr><tr><td><a href="observation-daf-smokingstatus-dafsmokingstatus.html">DAFSmokingStatus</a></td><td>Smoking Status Observation</td></tr></table>
+
+
+<h2>Example Usage Scenarios</h2>
+
+<p>
+The following are example usage scenarios for the DAF Smoking Status profile:
+</p>
+<ul>
+	<li>Query for Smoking Status of a particular patient</li>
+	<li>Query for all patients who have had a history of smoking</li>
+	<li>Query for all patients who have never had tobacco</li>
+	<li>Query for all patients who have smoked during a time period of interest</li>
+	<li>Query for all patients who have a smoking history and are in an age group</li>
+</ul>
+
+<h2>Additional Implementation Guidance</h2>
+
+<p>
+Implementers need to be mindful of the following during their implementation
+</p>
+<ul>
+	<p><b>Specifying Patients as part of the Smoking Status Queries:</b> DAF Smoking Status profile supports the querying the Smoking Status for a particular patient. In order to achieve this in implementation, it is recommended to use Patient.identifier field to precisely identify the observations relevant to the patient. While other parameters such as  Patient.name, Patient.given could be used this could lead to incorrect Patient matching and/or inefficient queries when systems are not tuned. </p>
+	
+	<p><b>Smoking Status Applicability:</b> The Smoking Status values describe point-in-time smoking status, and implementers have to be mindful of the semantic meaning while using these codes to describe smoking behavior. For example, if I want to say that a patient used to smoke heavily between 2000 and 2010, it <u>does not</u> make sense to use the code for Former smoker', along with an appliesPeriod representing 2000-2010. This is because 'Former smoker' <u>did not</u> apply during that time range. Instead implementers should use a 'current smoker' along with a time range representing 2000-2010. </p>
+	
+	<p><b>Patient Matching:</b> Patient Matching rules and criteria have to be evaluated by the implementing organization and have to comply with local policies and regulations. Query Requestors will have to deal with result sets that can return zero,one or more Observation Resources in response to a query.</p>
+</ul>
+
+
+
+</div>
+
+
+				</div><!-- /inner-wrapper -->
+            </div><!-- /row -->
+        </div><!-- /container -->
+        
+    </div><!-- /segment-content -->
+
+
+	<div id="segment-footer" class="segment"><!-- segment-footer -->
+		<div class="container"><!-- container -->
+			<div class="inner-wrapper">
+				<p>
+        © HL7.org 2011+. FHIR DSTU (v0.4.0-3920) generated on Tue, Dec 30, 2014 11:02+0000. <!-- <a href="qa.html">QA Report</a> --> <!-- achive note -->
+        <br/>
+        <span style="color: #FFFF77">
+        Links: <a style="color: #81BEF7" href="timelines.html">What's a DSTU?</a> | 
+               <a style="color: #81BEF7" href="history.html">Version History</a> | 
+               <a style="color: #81BEF7" href="http://services.w3.org/htmldiff?doc1=http%3A%2F%2Fhl7.org%2Fimplement%2Fstandards%2Ffhir%2Fobservation-daf-smokingstatus&amp;doc2=http%3A%2F%2Fhl7-fhir.github.io%2F%2Fobservation-daf-smokingstatus">Compare to DSTU</a> | 
+               <a style="color: #81BEF7" rel="license" href="license.html"><img src="cc0.png" style="border-style: none;" alt="CC0"/></a> | 
+               <a style="color: #81BEF7" target="_blank" href="http://gforge.hl7.org/gf/project/fhir/tracker/?action=TrackerItemAdd&amp;tracker_id=677">Propose a change</a>   
+        </span>
+        </p>
+			</div><!-- /inner-wrapper -->
+		</div><!-- /container -->
+	</div><!-- /segment-footer -->
+<!-- disqus thread -->
+<!--disqus-->
+<!-- end disqus -->        
+	
+	<div id="segment-post-footer" class="segment hidden"><!-- segment-post-footer -->
+		<div class="container"><!-- container -->
+		</div><!-- /container -->
+	</div><!-- /segment-post-footer -->
+    
+    <!-- JS and analytics only. -->
+    <!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="./assets/js/jquery.js"> </script>   <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+<script src="./dist/js/bootstrap.min.js"> </script>
+<script src="./assets/js/respond.min.js"> </script>
+
+<script src="./assets/js/fhir.js"> </script>
+
+<!-- Analytics Below
+================================================== -->
+
+    
+</body>
+</html>

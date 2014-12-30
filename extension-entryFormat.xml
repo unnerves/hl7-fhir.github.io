@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ExtensionDefinition xmlns="http://hl7.org/fhir">
+  <id value="entryFormat"/>
+  <url value="http://hl7.org/fhir/ExtensionDefinition/entryFormat"/>
+  <name value="User prompt for format"/>
+  <publisher value="HL7 FHIR project"/>
+  <telecom>
+    <system value="url"/>
+    <value value="http://hl7.org/fhir"/>
+  </telecom>
+  <description value="A syntax intended for display to the user to guide their input (i.e. a human readable version of a regular expression).  For example &quot;nnn-nnn-nnn&quot;."/>
+  <status value="draft"/>
+  <date value="2014-04-27"/>
+  <mapping>
+    <identity value="v2"/>
+    <uri value="http://hl7.org/v2"/>
+    <name value="HL7 v2"/>
+  </mapping>
+  <mapping>
+    <identity value="rim"/>
+    <uri value="http://hl7.org/v3"/>
+    <name value="RIM"/>
+  </mapping>
+  <contextType value="resource"/>
+  <context value="DataElement"/>
+  <context value="Questionnaire.group.question"/>
+  <context value="Profile.structure.element.definition"/>
+  <element>
+    <path value="Extension"/>
+    <short value="User prompt for format"/>
+    <formal value="A syntax intended for display to the user to guide their input (i.e. a human readable version of a regular expression).  For example &quot;nnn-nnn-nnn&quot;."/>
+    <min value="0"/>
+    <max value="1"/>
+    <type>
+      <code value="string"/>
+    </type>
+    <isSummary value="false"/>
+    <mapping>
+      <identity value="v2"/>
+      <map value="N/A"/>
+    </mapping>
+    <mapping>
+      <identity value="rim"/>
+      <map value="N/A (MIF-level)"/>
+    </mapping>
+  </element>
+</ExtensionDefinition>

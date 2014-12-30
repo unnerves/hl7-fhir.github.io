@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ExtensionDefinition xmlns="http://hl7.org/fhir">
+  <id value="uslabcc-practitioner"/>
+  <url value="http://hl7.org/fhir/ExtensionDefinition/uslabcc-practitioner"/>
+  <name value="Copy to practitioner"/>
+  <display value="CC"/>
+  <publisher value="HL7 International - Orders and Observations WG"/>
+  <telecom>
+    <system value="url"/>
+    <value value="http://hl7.org"/>
+  </telecom>
+  <description value="Non-ordering practitioner, to whom the orderer instructs the recipient to send the results of the request."/>
+  <status value="draft"/>
+  <date value="2014-11-17"/>
+  <contextType value="resource"/>
+  <context value="DiagnosticOrder"/>
+  <element>
+    <path value="Extension"/>
+    <short value="Copy to practitioner"/>
+    <formal value="Non-ordering practitioner, to whom the orderer instructs the recipient to send the results of the request."/>
+    <comments value="create type for each resource."/>
+    <min value="0"/>
+    <max value="*"/>
+    <type>
+      <code value="Reference"/>
+      <profile value="http://hl7.org/fhir/Profile/Practitioner"/>
+    </type>
+    <isSummary value="false"/>
+  </element>
+</ExtensionDefinition>

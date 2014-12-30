@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ExtensionDefinition xmlns="http://hl7.org/fhir">
+  <id value="11179-effective-period"/>
+  <url value="http://hl7.org/fhir/ExtensionDefinition/11179-effective-period"/>
+  <name value="When data element is &quot;valid&quot;"/>
+  <display value="Effective time"/>
+  <publisher value="Health Level Seven"/>
+  <telecom>
+    <system value="url"/>
+    <value value="http://hl7.org"/>
+  </telecom>
+  <description value="Identifies the date on which the element became (or is expected to become) active and the date on which the element became (or is expected to become) retired."/>
+  <status value="draft"/>
+  <date value="2014-04-21"/>
+  <mapping>
+    <identity value="v2"/>
+    <uri value="http://hl7.org/v2"/>
+    <name value="HL7 v2"/>
+  </mapping>
+  <mapping>
+    <identity value="rim"/>
+    <uri value="http://hl7.org/v3"/>
+    <name value="RIM"/>
+  </mapping>
+  <mapping>
+    <identity value="iso11179"/>
+    <uri value="http://metadata-standards.org/11179/"/>
+    <name value="ISO 11179"/>
+  </mapping>
+  <contextType value="resource"/>
+  <context value="DataElement"/>
+  <element>
+    <path value="Extension"/>
+    <short value="When data element is &quot;valid&quot;"/>
+    <formal value="Identifies the date on which the element became (or is expected to become) active and the date on which the element became (or is expected to become) retired."/>
+    <min value="0"/>
+    <max value="1"/>
+    <type>
+      <code value="Period"/>
+    </type>
+    <isSummary value="false"/>
+    <mapping>
+      <identity value="v2"/>
+      <map value="N/A"/>
+    </mapping>
+    <mapping>
+      <identity value="rim"/>
+      <map value="N/A"/>
+    </mapping>
+    <mapping>
+      <identity value="iso11179"/>
+      <map value="start = Registration_State.effective_date
+end = Registration_State.until_date"/>
+    </mapping>
+  </element>
+</ExtensionDefinition>

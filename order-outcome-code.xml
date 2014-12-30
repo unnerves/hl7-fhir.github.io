@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="order-outcome-code"/>
+  <meta>
+    <lastUpdated value="2014-12-30T10:55:31"/>
+  </meta>
+  <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      <p>This value set contains 9 concepts</p>
+      <h2>OrderOutcomeStatus</h2>
+      <p>The status of the response to an order</p>
+      <p>This value set defines its own terms in the system http://hl7.org/fhir/order-outcome-code</p>
+      <table class="codes">
+        <tr>
+          <td>
+            <b>Lvl</b>
+          </td>
+          <td>
+            <b>Code</b>
+          </td>
+          <td>
+            <b>Definition</b>
+          </td>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td>pending
+            <a name="pending"> </a>
+          </td>
+          <td>The order is known, but no processing has occurred at this time.</td>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td>review
+            <a name="review"> </a>
+          </td>
+          <td>The order is undergoing initial processing to determine whether it will be accepted (usually this involves human review).</td>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td>rejected
+            <a name="rejected"> </a>
+          </td>
+          <td>The order was rejected because of a workflow/business logic reason.</td>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td>error
+            <a name="error"> </a>
+          </td>
+          <td>The order was unable to be processed because of a technical error (i.e. unexpected error).</td>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td>accepted
+            <a name="accepted"> </a>
+          </td>
+          <td>The order has been accepted, and work is in progress.</td>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td>cancelled
+            <a name="cancelled"> </a>
+          </td>
+          <td>Processing the order was halted at the initiators request.</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>  replaced
+            <a name="replaced"> </a>
+          </td>
+          <td>The order has been cancelled and replaced by another.</td>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td>aborted
+            <a name="aborted"> </a>
+          </td>
+          <td>Processing the order was stopped because of some workflow/business logic reason.</td>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td>complete
+            <a name="complete"> </a>
+          </td>
+          <td>The order has been completed.</td>
+        </tr>
+      </table>
+    </div>
+  </text>
+  <extension url="http://hl7.org/fhir/ExtensionDefinition/valueset-oid">
+    <valueUri value="urn:oid:2.16.840.1.113883.4.642.2.323"/>
+  </extension>
+  <identifier value="http://hl7.org/fhir/vs/order-outcome-code"/>
+  <name value="OrderOutcomeStatus"/>
+  <publisher value="HL7 (FHIR Project)"/>
+  <telecom>
+    <system value="url"/>
+    <value value="http://hl7.org/fhir"/>
+  </telecom>
+  <telecom>
+    <system value="email"/>
+    <value value="fhir@lists.hl7.org"/>
+  </telecom>
+  <description value="The status of the response to an order"/>
+  <status value="draft"/>
+  <date value="2014-12-30T10:55:31"/>
+  <define>
+    <extension url="http://hl7.org/fhir/ExtensionDefinition/valueset-oid">
+      <valueUri value="urn:oid:2.16.840.1.113883.4.642.1.323"/>
+    </extension>
+    <system value="http://hl7.org/fhir/order-outcome-code"/>
+    <caseSensitive value="true"/>
+    <concept>
+      <code value="pending"/>
+      <definition value="The order is known, but no processing has occurred at this time."/>
+    </concept>
+    <concept>
+      <code value="review"/>
+      <definition value="The order is undergoing initial processing to determine whether it will be accepted (usually this involves human review)."/>
+    </concept>
+    <concept>
+      <code value="rejected"/>
+      <definition value="The order was rejected because of a workflow/business logic reason."/>
+    </concept>
+    <concept>
+      <code value="error"/>
+      <definition value="The order was unable to be processed because of a technical error (i.e. unexpected error)."/>
+    </concept>
+    <concept>
+      <code value="accepted"/>
+      <definition value="The order has been accepted, and work is in progress."/>
+    </concept>
+    <concept>
+      <code value="cancelled"/>
+      <definition value="Processing the order was halted at the initiators request."/>
+      <concept>
+        <code value="replaced"/>
+        <definition value="The order has been cancelled and replaced by another."/>
+      </concept>
+    </concept>
+    <concept>
+      <code value="aborted"/>
+      <definition value="Processing the order was stopped because of some workflow/business logic reason."/>
+    </concept>
+    <concept>
+      <code value="complete"/>
+      <definition value="The order has been completed."/>
+    </concept>
+  </define>
+</ValueSet>

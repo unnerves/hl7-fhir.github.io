@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ExtensionDefinition xmlns="http://hl7.org/fhir">
+  <id value="ListStatus"/>
+  <url value="http://hl7.org/fhir/ExtensionDefinition/ListStatus"/>
+  <name value="registered | preliminary | final"/>
+  <publisher value="HL7 International - Orders and Observations WG"/>
+  <telecom>
+    <system value="url"/>
+    <value value="http://hl7.org"/>
+  </telecom>
+  <description value="The status of the list."/>
+  <status value="draft"/>
+  <date value="2014-09-21"/>
+  <contextType value="resource"/>
+  <context value="List"/>
+  <element>
+    <path value="Extension"/>
+    <short value="registered | preliminary | final"/>
+    <formal value="The status of the list."/>
+    <min value="1"/>
+    <max value="1"/>
+    <type>
+      <code value="code"/>
+    </type>
+    <isSummary value="false"/>
+    <binding>
+      <name value="ListStatusCodes"/>
+      <isExtensible value="true"/>
+      <description value="Codes providing the status of a list"/>
+      <referenceReference>
+        <reference value="http://hl7.org/fhir/vs/list-status"/>
+      </referenceReference>
+    </binding>
+  </element>
+</ExtensionDefinition>

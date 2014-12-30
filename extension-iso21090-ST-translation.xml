@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ExtensionDefinition xmlns="http://hl7.org/fhir">
+  <id value="iso21090-ST-translation"/>
+  <url value="http://hl7.org/fhir/ExtensionDefinition/iso21090-ST-translation"/>
+  <name value="translation"/>
+  <publisher value="HL7"/>
+  <telecom>
+    <system value="url"/>
+    <value value="http://www.hl7.org"/>
+  </telecom>
+  <description value="An expression of the original string in an alternate language."/>
+  <status value="draft"/>
+  <date value="2012-06-24"/>
+  <mapping>
+    <identity value="rim"/>
+    <uri value="http://hl7.org/v3"/>
+    <name value="RIM"/>
+  </mapping>
+  <contextType value="datatype"/>
+  <context value="string"/>
+  <element>
+    <path value="Extension"/>
+    <short value="translation"/>
+    <formal value="An expression of the original string in an alternate language."/>
+    <comments value="string-translation elements should not have string-translation extensions (i.e. all translations should be expressed as siblings, not as a translation hierarchy) to simplify processing."/>
+    <min value="0"/>
+    <max value="*"/>
+    <type>
+      <code value="string"/>
+    </type>
+    <isSummary value="false"/>
+    <mapping>
+      <identity value="rim"/>
+      <map value="ED.translation"/>
+    </mapping>
+  </element>
+</ExtensionDefinition>

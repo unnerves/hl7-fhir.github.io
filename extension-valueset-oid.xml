@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ExtensionDefinition xmlns="http://hl7.org/fhir">
+  <id value="valueset-oid"/>
+  <url value="http://hl7.org/fhir/ExtensionDefinition/valueset-oid"/>
+  <name value="OID assigned to the value set or code system"/>
+  <publisher value="HL7"/>
+  <description value="The OID assigned to the value set or code system by the author."/>
+  <status value="draft"/>
+  <date value="2014-12-30T10:55:31"/>
+  <contextType value="resource"/>
+  <context value="ValueSet"/>
+  <context value="ValueSet.define"/>
+  <element>
+    <path value="Extension"/>
+    <short value="OID assigned to the value set or code system"/>
+    <formal value="The OID assigned to the value set or code system by the author."/>
+    <min value="0"/>
+    <max value="1"/>
+    <type>
+      <code value="uri"/>
+    </type>
+    <isSummary value="false"/>
+  </element>
+</ExtensionDefinition>

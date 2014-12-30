@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="valueset-ruleset"/>
+  <meta>
+    <lastUpdated value="2014-12-30T10:55:31"/>
+  </meta>
+  <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      This value set includes sample ruleset codes.
+    
+      <hr/>
+      <p>This value set contains 6 concepts</p>
+      <h2>Ruleset Codes</h2>
+      <p>This value set includes sample ruleset codes.</p>
+      <p>
+        <b>Copyright Statement:</b> This is an example set
+      </p>
+      <p>This value set defines its own terms in the system http://hl7.org/fhir/ruleset</p>
+      <table class="codes">
+        <tr>
+          <td>
+            <b>Code</b>
+          </td>
+          <td>
+            <b>Definition</b>
+          </td>
+        </tr>
+        <tr>
+          <td>x12-4010
+            <a name="x12-4010"> </a>
+          </td>
+          <td/>
+        </tr>
+        <tr>
+          <td>x12-5010
+            <a name="x12-5010"> </a>
+          </td>
+          <td/>
+        </tr>
+        <tr>
+          <td>x12-7010
+            <a name="x12-7010"> </a>
+          </td>
+          <td/>
+        </tr>
+        <tr>
+          <td>cdanet-v2
+            <a name="cdanet-v2"> </a>
+          </td>
+          <td/>
+        </tr>
+        <tr>
+          <td>cdanet-v4
+            <a name="cdanet-v4"> </a>
+          </td>
+          <td/>
+        </tr>
+        <tr>
+          <td>cpha-3
+            <a name="cpha-3"> </a>
+          </td>
+          <td/>
+        </tr>
+      </table>
+    </div>
+  </text>
+  <extension url="http://hl7.org/fhir/ExtensionDefinition/valueset-oid">
+    <valueUri value="urn:oid:2.16.840.1.113883.4.642.2.458"/>
+  </extension>
+  <identifier value="http://hl7.org/fhir/vs/ruleset"/>
+  <name value="Ruleset Codes"/>
+  <publisher value="Financial Management"/>
+  <telecom>
+    <system value="url"/>
+    <value value="http://hl7.org/fhir"/>
+  </telecom>
+  <description value="This value set includes sample ruleset codes."/>
+  <copyright value="This is an example set"/>
+  <status value="draft"/>
+  <define>
+    <extension url="http://hl7.org/fhir/ExtensionDefinition/valueset-oid">
+      <valueUri value="urn:oid:null"/>
+    </extension>
+    <system value="http://hl7.org/fhir/ruleset"/>
+    <concept>
+      <code value="x12-4010"/>
+    </concept>
+    <concept>
+      <code value="x12-5010"/>
+    </concept>
+    <concept>
+      <code value="x12-7010"/>
+    </concept>
+    <concept>
+      <code value="cdanet-v2"/>
+    </concept>
+    <concept>
+      <code value="cdanet-v4"/>
+    </concept>
+    <concept>
+      <code value="cpha-3"/>
+    </concept>
+  </define>
+</ValueSet>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="RS-link"/>
+  <meta>
+    <lastUpdated value="2014-12-30T10:55:31"/>
+  </meta>
+  <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      <p>This value set contains 2 concepts</p>
+      <h2>RemittanceOutcome</h2>
+      <p>The outcome of the processing.</p>
+      <p>This value set defines its own terms in the system http://hl7.org/fhir/RS-link</p>
+      <table class="codes">
+        <tr>
+          <td>
+            <b>Code</b>
+          </td>
+          <td>
+            <b>Definition</b>
+          </td>
+        </tr>
+        <tr>
+          <td>complete
+            <a name="complete"> </a>
+          </td>
+          <td>The processing completed without errors.</td>
+        </tr>
+        <tr>
+          <td>error
+            <a name="error"> </a>
+          </td>
+          <td>The processing identified with errors.</td>
+        </tr>
+      </table>
+    </div>
+  </text>
+  <extension url="http://hl7.org/fhir/ExtensionDefinition/valueset-oid">
+    <valueUri value="urn:oid:2.16.840.1.113883.4.642.2.467"/>
+  </extension>
+  <identifier value="http://hl7.org/fhir/vs/RS-link"/>
+  <name value="RemittanceOutcome"/>
+  <publisher value="HL7 (FHIR Project)"/>
+  <telecom>
+    <system value="url"/>
+    <value value="http://hl7.org/fhir"/>
+  </telecom>
+  <telecom>
+    <system value="email"/>
+    <value value="fhir@lists.hl7.org"/>
+  </telecom>
+  <description value="The outcome of the processing."/>
+  <status value="draft"/>
+  <date value="2014-12-30T10:55:31"/>
+  <define>
+    <extension url="http://hl7.org/fhir/ExtensionDefinition/valueset-oid">
+      <valueUri value="urn:oid:2.16.840.1.113883.4.642.1.467"/>
+    </extension>
+    <system value="http://hl7.org/fhir/RS-link"/>
+    <caseSensitive value="true"/>
+    <concept>
+      <code value="complete"/>
+      <definition value="The processing completed without errors."/>
+    </concept>
+    <concept>
+      <code value="error"/>
+      <definition value="The processing identified with errors."/>
+    </concept>
+  </define>
+</ValueSet>

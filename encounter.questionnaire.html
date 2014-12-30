@@ -1,0 +1,4113 @@
+﻿<!DOCTYPE HTML>
+
+
+
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <title>Encounter.questionnaire - FHIR v0.4.0</title>
+
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="author" content="http://hl7.org/fhir"/>
+
+  <link href="fhir.css" rel="stylesheet"/>
+  <link rel="Prev" href="http://hl7.org/implement/standards/fhir/encounter.questionnaire.html"/>
+
+  <!-- Bootstrap core CSS -->
+  <link href="./dist/css/bootstrap.css" rel="stylesheet"/>
+  <link href="./assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+  <!-- Project extras -->
+  <link href="./assets/css/project.css" rel="stylesheet"/>
+  <link href="./assets/css/pygments-manni.css" rel="stylesheet"/>
+	<link href="jquery-ui.css" rel="stylesheet"/>
+
+  <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!--[if lt IE 9]>
+  <script src="./assets/js/html5shiv.js"></script>
+  <script src="./assets/js/respond.min.js"></script>
+  <![endif]-->
+
+  <!-- Favicons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="./assets/ico/apple-touch-icon-144-precomposed.png"/>
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="./assets/ico/apple-touch-icon-114-precomposed.png"/>
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="./assets/ico/apple-touch-icon-72-precomposed.png"/>
+  <link rel="apple-touch-icon-precomposed" href="./assets/ico/apple-touch-icon-57-precomposed.png"/>
+  <link rel="shortcut icon" href="./assets/ico/favicon.png"/>
+
+</head>
+<body>
+	<div id="segment-header" class="segment"><!-- segment-header -->	
+		<div class="container"><!-- container -->
+			<a id="logo" href="http://hl7.org/fhir"><img src="./assets/images/fhir-logo-www.png" alt="logo fhir"/> </a>
+			<div id="hl7-status">
+				<b>Continuous Integration Build</b>
+			</div>       	
+			
+			<div id="hl7-nav">
+				 <a id="hl7-logo" href="http://www.hl7.org">
+					<img src="./assets/images/hl7-logo.png" width="42" height="50" alt="visit the hl7 website"/>
+				</a> 
+			</div>       	
+			<!--hl7-search-->
+		</div>
+		<div class="container"><!-- container -->
+	</div></div><!-- /segment-header -->	
+
+
+	<div id="segment-navbar" class="segment"><!-- segment-navbar -->
+		<div id="stripe"> </div>
+		<div class="container"><!-- container -->
+ <!-- HEADER CONTENT -->
+ 	      		
+ 	      		      		
+			<nav class="navbar navbar-inverse">
+				<div class="container">
+					<button data-target=".navbar-inverse-collapse" data-toggle="collapse" class="navbar-toggle" type="button">
+						<span class="icon-bar"> </span>
+						<span class="icon-bar"> </span>
+						<span class="icon-bar"> </span>
+					</button>
+					<a href="index.html" class="navbar-brand hidden">FHIR</a>
+					<div class="nav-collapse collapse navbar-inverse-collapse">
+						<ul class="nav navbar-nav">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="documentation.html">Documentation</a></li>
+              <li><a href="implementation.html">Implementation</a></li>
+              <li><a href="resourcelist.html">Resources</a></li>
+              <li><a href="clinical.html">Clinical</a></li>
+              <li><a href="administration.html">Administrative</a></li>
+              <li><a href="infrastructure.html">Infrastructure</a></li>
+              <li><a href="financial.html">Financial</a></li>
+
+						</ul>
+					</div><!-- /.nav-collapse -->
+				</div><!-- /.container -->
+			</nav><!-- /.navbar -->
+      		
+				
+<!-- /HEADER CONTENT -->				
+		</div><!-- /container -->
+	</div><!-- /segment-navbar -->
+	
+
+	<div id="segment-breadcrumb" class="segment"><!-- segment-breadcrumb -->
+		<div class="container"><!-- container -->	
+			<ul class="breadcrumb">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="administration.html">Administrative</a></li>        <li><a href="encounter.html">Encounter</a></li>        <li><b>Generated Questionnaire</b></li>        <!-- encounter.questionnaire.html / resource-questionnaire:Encounter -->
+
+			</ul>	
+		</div><!-- /container -->
+	</div><!-- /segment-breadcrumb -->
+	
+
+	<div id="segment-content" class="segment"><!-- segment-content -->
+	<div class="container"><!-- container -->
+            <div class="row">
+            	<div class="inner-wrapper">
+<!-- CONTENT CONTENT -->
+
+
+<div class="col-9">
+
+<h1>Encounter.questionnaire</h1>
+
+<p>
+
+This is an example form generated from the questionnaire. See also the <a href="encounter.questionnaire.xml.html">XML</a> or <a href="encounter.questionnaire.json.html">JSON</a> format.
+</p>
+
+<!DOCTYPE html><html xmlns="http://www.w3.org/1999/xhtml">
+   <head>
+  <title>Encounter.questionnaire - FHIR v0.4.0</title>
+
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="author" content="http://hl7.org/fhir"/>
+
+  <link href="fhir.css" rel="stylesheet"/>
+  <link rel="Prev" href="http://hl7.org/implement/standards/fhir/encounter.questionnaire.html"/>
+
+  <!-- Bootstrap core CSS -->
+  <link href="./dist/css/bootstrap.css" rel="stylesheet"/>
+  <link href="./assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+  <!-- Project extras -->
+  <link href="./assets/css/project.css" rel="stylesheet"/>
+  <link href="./assets/css/pygments-manni.css" rel="stylesheet"/>
+	<link href="jquery-ui.css" rel="stylesheet"/>
+
+  <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!--[if lt IE 9]>
+  <script src="./assets/js/html5shiv.js"></script>
+  <script src="./assets/js/respond.min.js"></script>
+  <![endif]-->
+
+  <!-- Favicons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="./assets/ico/apple-touch-icon-144-precomposed.png"/>
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="./assets/ico/apple-touch-icon-114-precomposed.png"/>
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="./assets/ico/apple-touch-icon-72-precomposed.png"/>
+  <link rel="apple-touch-icon-precomposed" href="./assets/ico/apple-touch-icon-57-precomposed.png"/>
+  <link rel="shortcut icon" href="./assets/ico/favicon.png"/>
+
+<script type="text/javascript"><!--
+var questionnaireAnswers = null;
+var questionnaireAnswersId = null;
+var questionnaireAnswersVersion = null;
+var questionnaireAnswersEndpoint = null;
+
+function validateEncounter(node) {
+  var groupNodes = findDiv(node, "Encounter");
+  if (groupNodes.length < 1) {
+showError();
+    node.focus()
+    alert('Must have at least 1 occurrences of: An interaction during which services are provided to the patient');
+    return false
+  } else {
+    var valid = true;
+    for (var i=0; i<groupNodes.length && valid; i++) {
+      var divNode = groupNodes[i];
+      valid = validateEncounter_id(divNode, "Encounter.id")
+         && validateEncounter_meta(divNode, "Encounter.meta")
+         && validateEncounter_implicitRules(divNode, "Encounter.implicitRules")
+         && validateEncounter_language(divNode, "Encounter.language")
+         && validateEncounter_text(divNode, "Encounter.text")
+         && validateEncounter_contained(divNode, "Encounter.contained")
+         && validateEncounter_identifier(divNode, "Encounter.identifier")
+         && validateEncounter_status(divNode, "Encounter.status")
+         && validateEncounter_statusHistory(divNode, "Encounter.statusHistory")
+         && validateEncounter_class(divNode, "Encounter.class")
+         && validateEncounter_type(divNode, "Encounter.type")
+         && validateEncounter_patient(divNode, "Encounter.patient")
+         && validateEncounter_episodeOfCare(divNode, "Encounter.episodeOfCare")
+         && validateEncounter_participant(divNode, "Encounter.participant")
+         && validateEncounter_fulfills(divNode, "Encounter.fulfills")
+         && validateEncounter_period(divNode, "Encounter.period")
+         && validateEncounter_length(divNode, "Encounter.length")
+         && validateEncounter_reason(divNode, "Encounter.reason")
+         && validateEncounter_indication(divNode, "Encounter.indication")
+         && validateEncounter_priority(divNode, "Encounter.priority")
+         && validateEncounter_hospitalization(divNode, "Encounter.hospitalization")
+         && validateEncounter_location(divNode, "Encounter.location")
+         && validateEncounter_serviceProvider(divNode, "Encounter.serviceProvider")
+         && validateEncounter_partOf(divNode, "Encounter.partOf");
+    }
+    return valid;
+  }
+}
+
+
+function validateEncounter_id(node) {
+  var groupNodes = findDiv(node, "Encounter.id");
+  if (groupNodes != null) {
+    var valid = true;
+    for (var i=0; i<groupNodes.length && valid; i++) {
+      var divNode = groupNodes[i];
+      valid = validateEncounter_id_value(divNode, "Encounter.id.value");
+    }
+    return valid;
+  }
+}
+
+
+function validateEncounter_id_value(node) {
+  var answerNodes = findAnswers(node, "Encounter.id.value");
+  if (answerNodes != null) {
+    return true;
+  }
+}
+
+function validateEncounter_meta(node) {
+  var groupNodes = findDiv(node, "Encounter.meta");
+  if (groupNodes != null) {
+    var valid = true;
+    for (var i=0; i<groupNodes.length && valid; i++) {
+      var divNode = groupNodes[i];
+      valid = validateEncounter_meta_id(divNode, "Encounter.meta.id")
+         && validateEncounter_meta_versionId(divNode, "Encounter.meta.versionId")
+         && validateEncounter_meta_lastUpdated(divNode, "Encounter.meta.lastUpdated")
+         && validateEncounter_meta_profile(divNode, "Encounter.meta.profile")
+         && validateEncounter_meta_security(divNode, "Encounter.meta.security")
+         && validateEncounter_meta_tag(divNode, "Encounter.meta.tag");
+    }
+    return valid;
+  }
+}
+
+
+function validateEncounter_meta_id(node) {
+  var groupNodes = findDiv(node, "Encounter.meta.id");
+  if (groupNodes != null) {
+    var valid = true;
+    for (var i=0; i<groupNodes.length && valid; i++) {
+      var divNode = groupNodes[i];
+      valid = validateEncounter_meta_id_value(divNode, "Encounter.meta.id.value");
+    }
+    return valid;
+  }
+}
+
+
+function validateEncounter_meta_id_value(node) {
+  var answerNodes = findAnswers(node, "Encounter.meta.id.value");
+  if (answerNodes != null) {
+    return true;
+  }
+}
+
+function validateEncounter_meta_versionId(node) {
+  var groupNodes = findDiv(node, "Encounter.meta.versionId");
+  if (groupNodes != null) {
+    var valid = true;
+    for (var i=0; i<groupNodes.length && valid; i++) {
+      var divNode = groupNodes[i];
+      valid = validateEncounter_meta_versionId_value(divNode, "Encounter.meta.versionId.value");
+    }
+    return valid;
+  }
+}
+
+
+function validateEncounter_meta_versionId_value(node) {
+  var answerNodes = findAnswers(node, "Encounter.meta.versionId.value");
+  if (answerNodes != null) {
+    return true;
+  }
+}
+
+function validateEncounter_meta_lastUpdated(node) {
+  var groupNodes = findDiv(node, "Encounter.meta.lastUpdated");
+  if (groupNodes != null) {
+    var valid = true;
+    for (var i=0; i<groupNodes.length && valid; i++) {
+      var divNode = groupNodes[i];
+      valid = validateEncounter_meta_lastUpdated_value(divNode, "Encounter.meta.lastUpdated.value");
+    }
+    return valid;
+  }
+}
+
+
+function validateEncounter_meta_lastUpdated_value(node) {
+  var answerNodes = findAnswers(node, "Encounter.meta.lastUpdated.value");
+  if (answerNodes != null) {
+    return true;
+  }
+}
+
+function validateEncounter_meta_profile(node) {
+  var groupNodes = findDiv(node, "Encounter.meta.profile");
+  if (groupNodes != null) {
+    var valid = true;
+    for (var i=0; i<groupNodes.length && valid; i++) {
+      var divNode = groupNodes[i];
+      valid = validateEncounter_meta_profile_value(divNode, "Encounter.meta.profile.value");
+    }
+    return valid;
+  }
+}
+
+
+function validateEncounter_meta_profile_value(node) {
+  var answerNodes = findAnswers(node, "Encounter.meta.profile.value");
+  if (answerNodes != null) {
+    return true;
+  }
+}
+
+function validateEncounter_meta_security(node) {
+  var groupNodes = findDiv(node, "Encounter.meta.security");
+  if (groupNodes != null) {
+    var valid = true;
+    for (var i=0; i<groupNodes.length && valid; i++) {
+      var divNode = groupNodes[i];
+      valid = validateEncounter_meta_security_value(divNode, "Encounter.meta.security.value");
+    }
+    return valid;
+  }
+}
+
+
+function validateEncounter_meta_security_value(node) {
+  var answerNodes = findAnswers(node, "Encounter.meta.security.value");
+  if (answerNodes != null) {
+    return true;
+  }
+}
+
+function validateEncounter_meta_tag(node) {
+  var groupNodes = findDiv(node, "Encounter.meta.tag");
+  if (groupNodes != null) {
+    var valid = true;
+    for (var i=0; i<groupNodes.length && valid; i++) {
+      var divNode = groupNodes[i];
+      valid = validateEncounter_meta_tag_value(divNode, "Encounter.meta.tag.value");
+    }
+    return valid;
+  }
+}
+
+
+function validateEncounter_meta_tag_value(node) {
+  var answerNodes = findAnswers(node, "Encounter.meta.tag.value");
+  if (answerNodes != null) {
+    return true;
+  }
+}
+
+function validateEncounter_implicitRules(node) {
+  var groupNodes = findDiv(node, "Encounter.implicitRules");
+  if (groupNodes != null) {
+    var valid = true;
+    for (var i=0; i<groupNodes.length && valid; i++) {
+      var divNode = groupNodes[i];
+      valid = validateEncounter_implicitRules_value(divNode, "Encounter.implicitRules.value");
+    }
+    return valid;
+  }
+}
+
+
+function validateEncounter_implicitRules_value(node) {
+  var answerNodes = findAnswers(node, "Encounter.implicitRules.value");
+  if (answerNodes != null) {
+    return true;
+  }
+}
+
+function validateEncounter_language(node) {
+  var groupNodes = findDiv(node, "Encounter.language");
+  if (groupNodes != null) {
+    var valid = true;
+    for (var i=0; i<groupNodes.length && valid; i++) {
+      var divNode = groupNodes[i];
+      valid = validateEncounter_language_value(divNode, "Encounter.language.value");
+    }
+    return valid;
+  }
+}
+
+
+function validateEncounter_language_value(node) {
+  var answerNodes = findAnswers(node, "Encounter.language.value");
+  if (answerNodes != null) {
+    return true;
+  }
+}
+
+function validateEncounter_text(node) {
+  var groupNodes = findDiv(node, "Encounter.text");
+  if (groupNodes != null) {
+    var valid = true;
+    for (var i=0; i<groupNodes.length && valid; i++) {
+      var divNode = groupNodes[i];
+      valid =;
+    }
+    return valid;
+  }
+}
+
+
+function validateEncounter_contained(node) {
+  var groupNodes = findDiv(node, "Encounter.contained");
+  if (groupNodes != null) {
+    var valid = true;
+    for (var i=0; i<groupNodes.length && valid; i++) {
+      var divNode = groupNodes[i];
+      valid =;
+    }
+    return valid;
+  }
+}
+
+
+function validateEncounter_identifier(node) {
+  var groupNodes = findDiv(node, "Encounter.identifier");
+  if (groupNodes != null) {
+    var valid = true;
+    for (var i=0; i<groupNodes.length && valid; i++) {
+      var divNode = groupNodes[i];
+      valid = validateEncounter_identifier_label(divNode, "Encounter.identifier.label")
+         && validateEncounter_identifier_system(divNode, "Encounter.identifier.system")
+         && validateEncounter_identifier_value(divNode, "Encounter.identifier.value");
+    }
+    return valid;
+  }
+}
+
+
+function validateEncounter_identifier_label(node) {
+  var answerNodes = findAnswers(node, "Encounter.identifier.label");
+  if (answerNodes != null) {
+    return true;
+  }
+}
+
+function validateEncounter_identifier_system(node) {
+  var answerNodes = findAnswers(node, "Encounter.identifier.system");
+  if (answerNodes != null) {
+    return true;
+  }
+}
+
+function validateEncounter_identifier_value(node) {
+  var answerNodes = findAnswers(node, "Encounter.identifier.value");
+  if (answerNodes != null) {
+    return true;
+  }
+}
+
+function validateEncounter_status(node) {
+  var groupNodes = findDiv(node, "Encounter.status");
+  if (groupNodes.length < 1) {
+showError();
+    node.focus()
+    alert('Must have at least 1 occurrences of: group');
+    return false
+  } else {
+    var valid = true;
+    for (var i=0; i<groupNodes.length && valid; i++) {
+      var divNode = groupNodes[i];
+      valid = validateEncounter_status_value(divNode, "Encounter.status.value");
+    }
+    return valid;
+  }
+}
+
+
+function validateEncounter_status_value(node) {
+  var answerNodes = findAnswers(node, "Encounter.status.value");
+  if (answerNodes != null) {
+    return true;
+  }
+}
+
+function validateEncounter_statusHistory(node) {
+  var groupNodes = findDiv(node, "Encounter.statusHistory");
+  if (groupNodes != null) {
+    var valid = true;
+    for (var i=0; i<groupNodes.length && valid; i++) {
+      var divNode = groupNodes[i];
+      valid = validateEncounter_statusHistory_id(divNode, "Encounter.statusHistory.id")
+         && validateEncounter_statusHistory_status(divNode, "Encounter.statusHistory.status")
+         && validateEncounter_statusHistory_period(divNode, "Encounter.statusHistory.period");
+    }
+    return valid;
+  }
+}
+
+
+function validateEncounter_statusHistory_id(node) {
+  var groupNodes = findDiv(node, "Encounter.statusHistory.id");
+  if (groupNodes != null) {
+    var valid = true;
+    for (var i=0; i<groupNodes.length && valid; i++) {
+      var divNode = groupNodes[i];
+      valid = validateEncounter_statusHistory_id_value(divNode, "Encounter.statusHistory.id.value");
+    }
+    return valid;
+  }
+}
+
+
+function validateEncounter_statusHistory_id_value(node) {
+  var answerNodes = findAnswers(node, "Encounter.statusHistory.id.value");
+  if (answerNodes != null) {
+    return true;
+  }
+}
+
+function validateEncounter_statusHistory_status(node) {
+  var groupNodes = findDiv(node, "Encounter.statusHistory.status");
+  if (groupNodes.length < 1) {
+showError();
+    node.focus()
+    alert('Must have at least 1 occurrences of: group');
+    return false
+  } else {
+    var valid = true;
+    for (var i=0; i<groupNodes.length && valid; i++) {
+      var divNode = groupNodes[i];
+      valid = validateEncounter_statusHistory_status_value(divNode, "Encounter.statusHistory.status.value");
+    }
+    return valid;
+  }
+}
+
+
+function validateEncounter_statusHistory_status_value(node) {
+  var answerNodes = findAnswers(node, "Encounter.statusHistory.status.value");
+  if (answerNodes != null) {
+    return true;
+  }
+}
+
+function validateEncounter_statusHistory_period(node) {
+  var groupNodes = findDiv(node, "Encounter.statusHistory.period");
+  if (groupNodes.length < 1) {
+showError();
+    node.focus()
+    alert('Must have at least 1 occurrences of: The time that the episode was in the specified status');
+    return false
+  } else {
+    var valid = true;
+    for (var i=0; i<groupNodes.length && valid; i++) {
+      var divNode = groupNodes[i];
+      valid = validateEncounter_statusHistory_period_low(divNode, "Encounter.statusHistory.period.low")
+         && validateEncounter_statusHistory_period_end(divNode, "Encounter.statusHistory.period.end");
+    }
+    return valid;
+  }
+}
+
+
+function validateEncounter_statusHistory_period_low(node) {
+  var answerNodes = findAnswers(node, "Encounter.statusHistory.period.low");
+  if (answerNodes != null) {
+    return true;
+  }
+}
+
+function validateEncounter_statusHistory_period_end(node) {
+  var answerNodes = findAnswers(node, "Encounter.statusHistory.period.end");
+  if (answerNodes != null) {
+    return true;
+  }
+}
+
+function validateEncounter_class(node) {
+  var groupNodes = findDiv(node, "Encounter.class");
+  if (groupNodes.length < 1) {
+showError();
+    node.focus()
+    alert('Must have at least 1 occurrences of: group');
+    return false
+  } else {
+    var valid = true;
+    for (var i=0; i<groupNodes.length && valid; i++) {
+      var divNode = groupNodes[i];
+      valid = validateEncounter_class_value(divNode, "Encounter.class.value");
+    }
+    return valid;
+  }
+}
+
+
+function validateEncounter_class_value(node) {
+  var answerNodes = findAnswers(node, "Encounter.class.value");
+  if (answerNodes != null) {
+    return true;
+  }
+}
+
+function validateEncounter_type(node) {
+  var groupNodes = findDiv(node, "Encounter.type");
+  if (groupNodes != null) {
+    var valid = true;
+    for (var i=0; i<groupNodes.length && valid; i++) {
+      var divNode = groupNodes[i];
+      valid = validateEncounter_type_coding(divNode, "Encounter.type.coding")
+         && validateEncounter_type_text(divNode, "Encounter.type.text");
+    }
+    return valid;
+  }
+}
+
+
+function validateEncounter_type_coding(node) {
+  var answerNodes = findAnswers(node, "Encounter.type.coding");
+  if (answerNodes != null) {
+    return true;
+  }
+}
+
+function validateEncounter_type_text(node) {
+  var answerNodes = findAnswers(node, "Encounter.type.text");
+  if (answerNodes != null) {
+    return true;
+  }
+}
+
+function validateEncounter_patient(node) {
+  var groupNodes = findDiv(node, "Encounter.patient");
+  if (groupNodes != null) {
+    var valid = true;
+    for (var i=0; i<groupNodes.length && valid; i++) {
+      var divNode = groupNodes[i];
+      valid = validateEncounter_patient_value(divNode, "Encounter.patient.value");
+    }
+    return valid;
+  }
+}
+
+
+function validateEncounter_patient_value(node) {
+  var answerNodes = findAnswers(node, "Encounter.patient.value");
+  if (answerNodes != null) {
+    return true;
+  }
+}
+
+function validateEncounter_episodeOfCare(node) {
+  var groupNodes = findDiv(node, "Encounter.episodeOfCare");
+  if (groupNodes != null) {
+    var valid = true;
+    for (var i=0; i<groupNodes.length && valid; i++) {
+      var divNode = groupNodes[i];
+      valid = validateEncounter_episodeOfCare_value(divNode, "Encounter.episodeOfCare.value");
+    }
+    return valid;
+  }
+}
+
+
+function validateEncounter_episodeOfCare_value(node) {
+  var answerNodes = findAnswers(node, "Encounter.episodeOfCare.value");
+  if (answerNodes != null) {
+    return true;
+  }
+}
+
+function validateEncounter_participant(node) {
+  var groupNodes = findDiv(node, "Encounter.participant");
+  if (groupNodes != null) {
+    var valid = true;
+    for (var i=0; i<groupNodes.length && valid; i++) {
+      var divNode = groupNodes[i];
+      valid = validateEncounter_participant_id(divNode, "Encounter.participant.id")
+         && validateEncounter_participant_type(divNode, "Encounter.participant.type")
+         && validateEncounter_participant_period(divNode, "Encounter.participant.period")
+         && validateEncounter_participant_individual(divNode, "Encounter.participant.individual");
+    }
+    return valid;
+  }
+}
+
+
+function validateEncounter_participant_id(node) {
+  var groupNodes = findDiv(node, "Encounter.participant.id");
+  if (groupNodes != null) {
+    var valid = true;
+    for (var i=0; i<groupNodes.length && valid; i++) {
+      var divNode = groupNodes[i];
+      valid = validateEncounter_participant_id_value(divNode, "Encounter.participant.id.value");
+    }
+    return valid;
+  }
+}
+
+
+function validateEncounter_participant_id_value(node) {
+  var answerNodes = findAnswers(node, "Encounter.participant.id.value");
+  if (answerNodes != null) {
+    return true;
+  }
+}
+
+function validateEncounter_participant_type(node) {
+  var groupNodes = findDiv(node, "Encounter.participant.type");
+  if (groupNodes != null) {
+    var valid = true;
+    for (var i=0; i<groupNodes.length && valid; i++) {
+      var divNode = groupNodes[i];
+      valid = validateEncounter_participant_type_coding(divNode, "Encounter.participant.type.coding")
+         && validateEncounter_participant_type_text(divNode, "Encounter.participant.type.text");
+    }
+    return valid;
+  }
+}
+
+
+function validateEncounter_participant_type_coding(node) {
+  var answerNodes = findAnswers(node, "Encounter.participant.type.coding");
+  if (answerNodes != null) {
+    return true;
+  }
+}
+
+function validateEncounter_participant_type_text(node) {
+  var answerNodes = findAnswers(node, "Encounter.participant.type.text");
+  if (answerNodes != null) {
+    return true;
+  }
+}
+
+function validateEncounter_participant_period(node) {
+  var groupNodes = findDiv(node, "Encounter.participant.period");
+  if (groupNodes != null) {
+    var valid = true;
+    for (var i=0; i<groupNodes.length && valid; i++) {
+      var divNode = groupNodes[i];
+      valid = validateEncounter_participant_period_low(divNode, "Encounter.participant.period.low")
+         && validateEncounter_participant_period_end(divNode, "Encounter.participant.period.end");
+    }
+    return valid;
+  }
+}
+
+
+function validateEncounter_participant_period_low(node) {
+  var answerNodes = findAnswers(node, "Encounter.participant.period.low");
+  if (answerNodes != null) {
+    return true;
+  }
+}
+
+function validateEncounter_participant_period_end(node) {
+  var answerNodes = findAnswers(node, "Encounter.participant.period.end");
+  if (answerNodes != null) {
+    return true;
+  }
+}
+
+function validateEncounter_participant_individual(node) {
+  var groupNodes = findDiv(node, "Encounter.participant.individual");
+  if (groupNodes != null) {
+    var valid = true;
+    for (var i=0; i<groupNodes.length && valid; i++) {
+      var divNode = groupNodes[i];
+      valid = validateEncounter_participant_individual__type(divNode, "Encounter.participant.individual._type");
+    }
+    return valid;
+  }
+}
+
+
+function validateEncounter_participant_individual__type(node) {
+  var answerNodes = findAnswers(node, "Encounter.participant.individual._type");
+  if (answerNodes != null) {
+    var groupNodes = findDiv(node, "Encounter.participant.individual._type");
+    return validateEncounter_participant_individual__Practitioner(node, "Encounter.participant.individual._Practitioner")
+         && validateEncounter_participant_individual__RelatedPerson(node, "Encounter.participant.individual._RelatedPerson");
+  }
+}
+
+
+function validateEncounter_participant_individual__Practitioner(node) {
+  var groupNodes = findDiv(node, "Encounter.participant.individual._Practitioner");
+  if (groupNodes != null) {
+    var valid = true;
+    for (var i=0; i<groupNodes.length && valid; i++) {
+      var divNode = groupNodes[i];
+      valid = validateEncounter_participant_individual__Practitioner_value(divNode, "Encounter.participant.individual._Practitioner.value");
+    }
+    return valid;
+  }
+}
+
+
+function validateEncounter_participant_individual__Practitioner_value(node) {
+  var answerNodes = findAnswers(node, "Encounter.participant.individual._Practitioner.value");
+  if (answerNodes != null) {
+    return true;
+  }
+}
+
+function validateEncounter_participant_individual__RelatedPerson(node) {
+  var groupNodes = findDiv(node, "Encounter.participant.individual._RelatedPerson");
+  if (groupNodes != null) {
+    var valid = true;
+    for (var i=0; i<groupNodes.length && valid; i++) {
+      var divNode = groupNodes[i];
+      valid = validateEncounter_participant_individual__RelatedPerson_value(divNode, "Encounter.participant.individual._RelatedPerson.value");
+    }
+    return valid;
+  }
+}
+
+
+function validateEncounter_participant_individual__RelatedPerson_value(node) {
+  var answerNodes = findAnswers(node, "Encounter.participant.individual._RelatedPerson.value");
+  if (answerNodes != null) {
+    return true;
+  }
+}
+
+function validateEncounter_fulfills(node) {
+  var groupNodes = findDiv(node, "Encounter.fulfills");
+  if (groupNodes != null) {
+    var valid = true;
+    for (var i=0; i<groupNodes.length && valid; i++) {
+      var divNode = groupNodes[i];
+      valid = validateEncounter_fulfills_value(divNode, "Encounter.fulfills.value");
+    }
+    return valid;
+  }
+}
+
+
+function validateEncounter_fulfills_value(node) {
+  var answerNodes = findAnswers(node, "Encounter.fulfills.value");
+  if (answerNodes != null) {
+    return true;
+  }
+}
+
+function validateEncounter_period(node) {
+  var groupNodes = findDiv(node, "Encounter.period");
+  if (groupNodes != null) {
+    var valid = true;
+    for (var i=0; i<groupNodes.length && valid; i++) {
+      var divNode = groupNodes[i];
+      valid = validateEncounter_period_low(divNode, "Encounter.period.low")
+         && validateEncounter_period_end(divNode, "Encounter.period.end");
+    }
+    return valid;
+  }
+}
+
+
+function validateEncounter_period_low(node) {
+  var answerNodes = findAnswers(node, "Encounter.period.low");
+  if (answerNodes != null) {
+    return true;
+  }
+}
+
+function validateEncounter_period_end(node) {
+  var answerNodes = findAnswers(node, "Encounter.period.end");
+  if (answerNodes != null) {
+    return true;
+  }
+}
+
+function validateEncounter_length(node) {
+  var groupNodes = findDiv(node, "Encounter.length");
+  if (groupNodes != null) {
+    var valid = true;
+    for (var i=0; i<groupNodes.length && valid; i++) {
+      var divNode = groupNodes[i];
+      valid = validateEncounter_length_value(divNode, "Encounter.length.value")
+         && validateEncounter_length_units(divNode, "Encounter.length.units");
+    }
+    return valid;
+  }
+}
+
+
+function validateEncounter_length_value(node) {
+  var answerNodes = findAnswers(node, "Encounter.length.value");
+  if (answerNodes != null) {
+    return true;
+  }
+}
+
+function validateEncounter_length_units(node) {
+  var answerNodes = findAnswers(node, "Encounter.length.units");
+  if (answerNodes != null) {
+    return true;
+  }
+}
+
+function validateEncounter_reason(node) {
+  var groupNodes = findDiv(node, "Encounter.reason");
+  if (groupNodes != null) {
+    var valid = true;
+    for (var i=0; i<groupNodes.length && valid; i++) {
+      var divNode = groupNodes[i];
+      valid = validateEncounter_reason_coding(divNode, "Encounter.reason.coding")
+         && validateEncounter_reason_text(divNode, "Encounter.reason.text");
+    }
+    return valid;
+  }
+}
+
+
+function validateEncounter_reason_coding(node) {
+  var answerNodes = findAnswers(node, "Encounter.reason.coding");
+  if (answerNodes != null) {
+    return true;
+  }
+}
+
+function validateEncounter_reason_text(node) {
+  var answerNodes = findAnswers(node, "Encounter.reason.text");
+  if (answerNodes != null) {
+    return true;
+  }
+}
+
+function validateEncounter_indication(node) {
+  var groupNodes = findDiv(node, "Encounter.indication");
+  if (groupNodes != null) {
+    var valid = true;
+    for (var i=0; i<groupNodes.length && valid; i++) {
+      var divNode = groupNodes[i];
+      valid = validateEncounter_indication_value(divNode, "Encounter.indication.value");
+    }
+    return valid;
+  }
+}
+
+
+function validateEncounter_indication_value(node) {
+  var answerNodes = findAnswers(node, "Encounter.indication.value");
+  if (answerNodes != null) {
+    return true;
+  }
+}
+
+function validateEncounter_priority(node) {
+  var groupNodes = findDiv(node, "Encounter.priority");
+  if (groupNodes != null) {
+    var valid = true;
+    for (var i=0; i<groupNodes.length && valid; i++) {
+      var divNode = groupNodes[i];
+      valid = validateEncounter_priority_coding(divNode, "Encounter.priority.coding")
+         && validateEncounter_priority_text(divNode, "Encounter.priority.text");
+    }
+    return valid;
+  }
+}
+
+
+function validateEncounter_priority_coding(node) {
+  var answerNodes = findAnswers(node, "Encounter.priority.coding");
+  if (answerNodes != null) {
+    return true;
+  }
+}
+
+function validateEncounter_priority_text(node) {
+  var answerNodes = findAnswers(node, "Encounter.priority.text");
+  if (answerNodes != null) {
+    return true;
+  }
+}
+
+function validateEncounter_hospitalization(node) {
+  var groupNodes = findDiv(node, "Encounter.hospitalization");
+  if (groupNodes != null) {
+    var valid = true;
+    for (var i=0; i<groupNodes.length && valid; i++) {
+      var divNode = groupNodes[i];
+      valid = validateEncounter_hospitalization_id(divNode, "Encounter.hospitalization.id")
+         && validateEncounter_hospitalization_preAdmissionIdentifier(divNode, "Encounter.hospitalization.preAdmissionIdentifier")
+         && validateEncounter_hospitalization_origin(divNode, "Encounter.hospitalization.origin")
+         && validateEncounter_hospitalization_admitSource(divNode, "Encounter.hospitalization.admitSource")
+         && validateEncounter_hospitalization_diet(divNode, "Encounter.hospitalization.diet")
+         && validateEncounter_hospitalization_specialCourtesy(divNode, "Encounter.hospitalization.specialCourtesy")
+         && validateEncounter_hospitalization_specialArrangement(divNode, "Encounter.hospitalization.specialArrangement")
+         && validateEncounter_hospitalization_destination(divNode, "Encounter.hospitalization.destination")
+         && validateEncounter_hospitalization_dischargeDisposition(divNode, "Encounter.hospitalization.dischargeDisposition")
+         && validateEncounter_hospitalization_dischargeDiagnosis(divNode, "Encounter.hospitalization.dischargeDiagnosis")
+         && validateEncounter_hospitalization_reAdmission(divNode, "Encounter.hospitalization.reAdmission");
+    }
+    return valid;
+  }
+}
+
+
+function validateEncounter_hospitalization_id(node) {
+  var groupNodes = findDiv(node, "Encounter.hospitalization.id");
+  if (groupNodes != null) {
+    var valid = true;
+    for (var i=0; i<groupNodes.length && valid; i++) {
+      var divNode = groupNodes[i];
+      valid = validateEncounter_hospitalization_id_value(divNode, "Encounter.hospitalization.id.value");
+    }
+    return valid;
+  }
+}
+
+
+function validateEncounter_hospitalization_id_value(node) {
+  var answerNodes = findAnswers(node, "Encounter.hospitalization.id.value");
+  if (answerNodes != null) {
+    return true;
+  }
+}
+
+function validateEncounter_hospitalization_preAdmissionIdentifier(node) {
+  var groupNodes = findDiv(node, "Encounter.hospitalization.preAdmissionIdentifier");
+  if (groupNodes != null) {
+    var valid = true;
+    for (var i=0; i<groupNodes.length && valid; i++) {
+      var divNode = groupNodes[i];
+      valid = validateEncounter_hospitalization_preAdmissionIdentifier_label(divNode, "Encounter.hospitalization.preAdmissionIdentifier.label")
+         && validateEncounter_hospitalization_preAdmissionIdentifier_system(divNode, "Encounter.hospitalization.preAdmissionIdentifier.system")
+         && validateEncounter_hospitalization_preAdmissionIdentifier_value(divNode, "Encounter.hospitalization.preAdmissionIdentifier.value");
+    }
+    return valid;
+  }
+}
+
+
+function validateEncounter_hospitalization_preAdmissionIdentifier_label(node) {
+  var answerNodes = findAnswers(node, "Encounter.hospitalization.preAdmissionIdentifier.label");
+  if (answerNodes != null) {
+    return true;
+  }
+}
+
+function validateEncounter_hospitalization_preAdmissionIdentifier_system(node) {
+  var answerNodes = findAnswers(node, "Encounter.hospitalization.preAdmissionIdentifier.system");
+  if (answerNodes != null) {
+    return true;
+  }
+}
+
+function validateEncounter_hospitalization_preAdmissionIdentifier_value(node) {
+  var answerNodes = findAnswers(node, "Encounter.hospitalization.preAdmissionIdentifier.value");
+  if (answerNodes != null) {
+    return true;
+  }
+}
+
+function validateEncounter_hospitalization_origin(node) {
+  var groupNodes = findDiv(node, "Encounter.hospitalization.origin");
+  if (groupNodes != null) {
+    var valid = true;
+    for (var i=0; i<groupNodes.length && valid; i++) {
+      var divNode = groupNodes[i];
+      valid = validateEncounter_hospitalization_origin_value(divNode, "Encounter.hospitalization.origin.value");
+    }
+    return valid;
+  }
+}
+
+
+function validateEncounter_hospitalization_origin_value(node) {
+  var answerNodes = findAnswers(node, "Encounter.hospitalization.origin.value");
+  if (answerNodes != null) {
+    return true;
+  }
+}
+
+function validateEncounter_hospitalization_admitSource(node) {
+  var groupNodes = findDiv(node, "Encounter.hospitalization.admitSource");
+  if (groupNodes != null) {
+    var valid = true;
+    for (var i=0; i<groupNodes.length && valid; i++) {
+      var divNode = groupNodes[i];
+      valid = validateEncounter_hospitalization_admitSource_coding(divNode, "Encounter.hospitalization.admitSource.coding")
+         && validateEncounter_hospitalization_admitSource_text(divNode, "Encounter.hospitalization.admitSource.text");
+    }
+    return valid;
+  }
+}
+
+
+function validateEncounter_hospitalization_admitSource_coding(node) {
+  var answerNodes = findAnswers(node, "Encounter.hospitalization.admitSource.coding");
+  if (answerNodes != null) {
+    return true;
+  }
+}
+
+function validateEncounter_hospitalization_admitSource_text(node) {
+  var answerNodes = findAnswers(node, "Encounter.hospitalization.admitSource.text");
+  if (answerNodes != null) {
+    return true;
+  }
+}
+
+function validateEncounter_hospitalization_diet(node) {
+  var groupNodes = findDiv(node, "Encounter.hospitalization.diet");
+  if (groupNodes != null) {
+    var valid = true;
+    for (var i=0; i<groupNodes.length && valid; i++) {
+      var divNode = groupNodes[i];
+      valid = validateEncounter_hospitalization_diet_coding(divNode, "Encounter.hospitalization.diet.coding")
+         && validateEncounter_hospitalization_diet_text(divNode, "Encounter.hospitalization.diet.text");
+    }
+    return valid;
+  }
+}
+
+
+function validateEncounter_hospitalization_diet_coding(node) {
+  var answerNodes = findAnswers(node, "Encounter.hospitalization.diet.coding");
+  if (answerNodes != null) {
+    return true;
+  }
+}
+
+function validateEncounter_hospitalization_diet_text(node) {
+  var answerNodes = findAnswers(node, "Encounter.hospitalization.diet.text");
+  if (answerNodes != null) {
+    return true;
+  }
+}
+
+function validateEncounter_hospitalization_specialCourtesy(node) {
+  var groupNodes = findDiv(node, "Encounter.hospitalization.specialCourtesy");
+  if (groupNodes != null) {
+    var valid = true;
+    for (var i=0; i<groupNodes.length && valid; i++) {
+      var divNode = groupNodes[i];
+      valid = validateEncounter_hospitalization_specialCourtesy_coding(divNode, "Encounter.hospitalization.specialCourtesy.coding")
+         && validateEncounter_hospitalization_specialCourtesy_text(divNode, "Encounter.hospitalization.specialCourtesy.text");
+    }
+    return valid;
+  }
+}
+
+
+function validateEncounter_hospitalization_specialCourtesy_coding(node) {
+  var answerNodes = findAnswers(node, "Encounter.hospitalization.specialCourtesy.coding");
+  if (answerNodes != null) {
+    return true;
+  }
+}
+
+function validateEncounter_hospitalization_specialCourtesy_text(node) {
+  var answerNodes = findAnswers(node, "Encounter.hospitalization.specialCourtesy.text");
+  if (answerNodes != null) {
+    return true;
+  }
+}
+
+function validateEncounter_hospitalization_specialArrangement(node) {
+  var groupNodes = findDiv(node, "Encounter.hospitalization.specialArrangement");
+  if (groupNodes != null) {
+    var valid = true;
+    for (var i=0; i<groupNodes.length && valid; i++) {
+      var divNode = groupNodes[i];
+      valid = validateEncounter_hospitalization_specialArrangement_coding(divNode, "Encounter.hospitalization.specialArrangement.coding")
+         && validateEncounter_hospitalization_specialArrangement_text(divNode, "Encounter.hospitalization.specialArrangement.text");
+    }
+    return valid;
+  }
+}
+
+
+function validateEncounter_hospitalization_specialArrangement_coding(node) {
+  var answerNodes = findAnswers(node, "Encounter.hospitalization.specialArrangement.coding");
+  if (answerNodes != null) {
+    return true;
+  }
+}
+
+function validateEncounter_hospitalization_specialArrangement_text(node) {
+  var answerNodes = findAnswers(node, "Encounter.hospitalization.specialArrangement.text");
+  if (answerNodes != null) {
+    return true;
+  }
+}
+
+function validateEncounter_hospitalization_destination(node) {
+  var groupNodes = findDiv(node, "Encounter.hospitalization.destination");
+  if (groupNodes != null) {
+    var valid = true;
+    for (var i=0; i<groupNodes.length && valid; i++) {
+      var divNode = groupNodes[i];
+      valid = validateEncounter_hospitalization_destination_value(divNode, "Encounter.hospitalization.destination.value");
+    }
+    return valid;
+  }
+}
+
+
+function validateEncounter_hospitalization_destination_value(node) {
+  var answerNodes = findAnswers(node, "Encounter.hospitalization.destination.value");
+  if (answerNodes != null) {
+    return true;
+  }
+}
+
+function validateEncounter_hospitalization_dischargeDisposition(node) {
+  var groupNodes = findDiv(node, "Encounter.hospitalization.dischargeDisposition");
+  if (groupNodes != null) {
+    var valid = true;
+    for (var i=0; i<groupNodes.length && valid; i++) {
+      var divNode = groupNodes[i];
+      valid = validateEncounter_hospitalization_dischargeDisposition_coding(divNode, "Encounter.hospitalization.dischargeDisposition.coding")
+         && validateEncounter_hospitalization_dischargeDisposition_text(divNode, "Encounter.hospitalization.dischargeDisposition.text");
+    }
+    return valid;
+  }
+}
+
+
+function validateEncounter_hospitalization_dischargeDisposition_coding(node) {
+  var answerNodes = findAnswers(node, "Encounter.hospitalization.dischargeDisposition.coding");
+  if (answerNodes != null) {
+    return true;
+  }
+}
+
+function validateEncounter_hospitalization_dischargeDisposition_text(node) {
+  var answerNodes = findAnswers(node, "Encounter.hospitalization.dischargeDisposition.text");
+  if (answerNodes != null) {
+    return true;
+  }
+}
+
+function validateEncounter_hospitalization_dischargeDiagnosis(node) {
+  var groupNodes = findDiv(node, "Encounter.hospitalization.dischargeDiagnosis");
+  if (groupNodes != null) {
+    var valid = true;
+    for (var i=0; i<groupNodes.length && valid; i++) {
+      var divNode = groupNodes[i];
+      valid = validateEncounter_hospitalization_dischargeDiagnosis_value(divNode, "Encounter.hospitalization.dischargeDiagnosis.value");
+    }
+    return valid;
+  }
+}
+
+
+function validateEncounter_hospitalization_dischargeDiagnosis_value(node) {
+  var answerNodes = findAnswers(node, "Encounter.hospitalization.dischargeDiagnosis.value");
+  if (answerNodes != null) {
+    return true;
+  }
+}
+
+function validateEncounter_hospitalization_reAdmission(node) {
+  var groupNodes = findDiv(node, "Encounter.hospitalization.reAdmission");
+  if (groupNodes != null) {
+    var valid = true;
+    for (var i=0; i<groupNodes.length && valid; i++) {
+      var divNode = groupNodes[i];
+      valid = validateEncounter_hospitalization_reAdmission_value(divNode, "Encounter.hospitalization.reAdmission.value");
+    }
+    return valid;
+  }
+}
+
+
+function validateEncounter_hospitalization_reAdmission_value(node) {
+  var answerNodes = findAnswers(node, "Encounter.hospitalization.reAdmission.value");
+  if (answerNodes != null) {
+    return true;
+  }
+}
+
+function validateEncounter_location(node) {
+  var groupNodes = findDiv(node, "Encounter.location");
+  if (groupNodes != null) {
+    var valid = true;
+    for (var i=0; i<groupNodes.length && valid; i++) {
+      var divNode = groupNodes[i];
+      valid = validateEncounter_location_id(divNode, "Encounter.location.id")
+         && validateEncounter_location_location(divNode, "Encounter.location.location")
+         && validateEncounter_location_status(divNode, "Encounter.location.status")
+         && validateEncounter_location_period(divNode, "Encounter.location.period");
+    }
+    return valid;
+  }
+}
+
+
+function validateEncounter_location_id(node) {
+  var groupNodes = findDiv(node, "Encounter.location.id");
+  if (groupNodes != null) {
+    var valid = true;
+    for (var i=0; i<groupNodes.length && valid; i++) {
+      var divNode = groupNodes[i];
+      valid = validateEncounter_location_id_value(divNode, "Encounter.location.id.value");
+    }
+    return valid;
+  }
+}
+
+
+function validateEncounter_location_id_value(node) {
+  var answerNodes = findAnswers(node, "Encounter.location.id.value");
+  if (answerNodes != null) {
+    return true;
+  }
+}
+
+function validateEncounter_location_location(node) {
+  var groupNodes = findDiv(node, "Encounter.location.location");
+  if (groupNodes.length < 1) {
+showError();
+    node.focus()
+    alert('Must have at least 1 occurrences of: group');
+    return false
+  } else {
+    var valid = true;
+    for (var i=0; i<groupNodes.length && valid; i++) {
+      var divNode = groupNodes[i];
+      valid = validateEncounter_location_location_value(divNode, "Encounter.location.location.value");
+    }
+    return valid;
+  }
+}
+
+
+function validateEncounter_location_location_value(node) {
+  var answerNodes = findAnswers(node, "Encounter.location.location.value");
+  if (answerNodes != null) {
+    return true;
+  }
+}
+
+function validateEncounter_location_status(node) {
+  var groupNodes = findDiv(node, "Encounter.location.status");
+  if (groupNodes != null) {
+    var valid = true;
+    for (var i=0; i<groupNodes.length && valid; i++) {
+      var divNode = groupNodes[i];
+      valid = validateEncounter_location_status_value(divNode, "Encounter.location.status.value");
+    }
+    return valid;
+  }
+}
+
+
+function validateEncounter_location_status_value(node) {
+  var answerNodes = findAnswers(node, "Encounter.location.status.value");
+  if (answerNodes != null) {
+    return true;
+  }
+}
+
+function validateEncounter_location_period(node) {
+  var groupNodes = findDiv(node, "Encounter.location.period");
+  if (groupNodes != null) {
+    var valid = true;
+    for (var i=0; i<groupNodes.length && valid; i++) {
+      var divNode = groupNodes[i];
+      valid = validateEncounter_location_period_low(divNode, "Encounter.location.period.low")
+         && validateEncounter_location_period_end(divNode, "Encounter.location.period.end");
+    }
+    return valid;
+  }
+}
+
+
+function validateEncounter_location_period_low(node) {
+  var answerNodes = findAnswers(node, "Encounter.location.period.low");
+  if (answerNodes != null) {
+    return true;
+  }
+}
+
+function validateEncounter_location_period_end(node) {
+  var answerNodes = findAnswers(node, "Encounter.location.period.end");
+  if (answerNodes != null) {
+    return true;
+  }
+}
+
+function validateEncounter_serviceProvider(node) {
+  var groupNodes = findDiv(node, "Encounter.serviceProvider");
+  if (groupNodes != null) {
+    var valid = true;
+    for (var i=0; i<groupNodes.length && valid; i++) {
+      var divNode = groupNodes[i];
+      valid = validateEncounter_serviceProvider_value(divNode, "Encounter.serviceProvider.value");
+    }
+    return valid;
+  }
+}
+
+
+function validateEncounter_serviceProvider_value(node) {
+  var answerNodes = findAnswers(node, "Encounter.serviceProvider.value");
+  if (answerNodes != null) {
+    return true;
+  }
+}
+
+function validateEncounter_partOf(node) {
+  var groupNodes = findDiv(node, "Encounter.partOf");
+  if (groupNodes != null) {
+    var valid = true;
+    for (var i=0; i<groupNodes.length && valid; i++) {
+      var divNode = groupNodes[i];
+      valid = validateEncounter_partOf_value(divNode, "Encounter.partOf.value");
+    }
+    return valid;
+  }
+}
+
+
+function validateEncounter_partOf_value(node) {
+  var answerNodes = findAnswers(node, "Encounter.partOf.value");
+  if (answerNodes != null) {
+    return true;
+  }
+}
+function validateQuestionnaire() {
+  return validateEncounter(document.getElementById("div-cnt"));
+}
+
+function populateQuestionnaire() {
+  return null;
+}
+
+function parseQuestionnaire() {
+}
+
+--></script>
+      <script type="text/javascript"
+              src="http://fhir-dev.healthintersections.com.au/js/json2.js"> </script>
+      <script type="text/javascript"
+              src="http://fhir-dev.healthintersections.com.au/js/statuspage.js"> </script>
+      <script type="text/javascript"
+              src="http://fhir-dev.healthintersections.com.au/js/jquery-1.6.2.min.js"> </script>
+      <script type="text/javascript"
+              src="http://fhir-dev.healthintersections.com.au/js/jquery-ui-1.8.16.custom.min.js"> </script>
+      <script type="text/javascript"
+              src="http://fhir-dev.healthintersections.com.au/js/jquery-1.6.2.js"> </script>
+      <script type="text/javascript"
+              src="http://fhir-dev.healthintersections.com.au/js/jquery.ui.core.js"> </script>
+      <script type="text/javascript"
+              src="http://fhir-dev.healthintersections.com.au/js/jquery.ui.widget.js"> </script>
+      <script type="text/javascript"
+              src="http://fhir-dev.healthintersections.com.au/js/jquery.ui.mouse.js"> </script>
+      <script type="text/javascript"
+              src="http://fhir-dev.healthintersections.com.au/js/jquery.ui.resizable.js"> </script>
+      <script type="text/javascript"
+              src="http://fhir-dev.healthintersections.com.au/js/jquery.ui.draggable.js"> </script>
+      <script type="text/javascript"
+              src="http://fhir-dev.healthintersections.com.au/js/jtip.js"> </script>
+      <script type="text/javascript"
+              src="http://fhir-dev.healthintersections.com.au/js/jcookie.js"> </script>
+      <script type="text/javascript"
+              src="http://fhir-dev.healthintersections.com.au/js/hl7connect.js"> </script>
+      <script type="text/javascript"><!--
+var expansionUri = "http://fhir-dev.healthintersections.com.au/open"
+var removeGroupButton = "<input type=\"image\" alt=\"Remove\" onclick=\"deleteRow(this)\" style=\"width:10px;height:10px\" src=\"http://fhir-dev.healthintersections.com.au/html-form-delete.png\"/>";var removeInputButton = "<input type=\"image\" alt=\"Remove\" onclick=\"deleteInput(this)\" style=\"width:10px;height:10px\" src=\"http://fhir-dev.healthintersections.com.au/html-form-delete.png\"/>";
+--></script>
+      <script type="text/javascript"><!--
+var removeButton = '<input type="image" onclick="deleteRow(this)" src="http://fhir-dev.healthintersections.com.au/html-form-delete.png" alt="Remove" style="width:10px;height:10px;"/>'
+
+function findDiv(node, linkId) {
+  return $(node).children("div").filter(function() {
+    return $(this).children("span:first-child").text() == linkId;
+  });
+}
+
+function answerCell(node, linkId) {
+  var answerRows = $(node).children("table").children("tbody").children("tr").filter(function() {
+    return $(this).children("td:first-child").children("span:first-child").text() === linkId;
+  });
+  if (answerRows.length == 0) {
+    alert("Unable to find question row: " + linkId);
+    return null;
+  }
+  if (answerRows.length != 1) {
+    alert("Multiple question rows for: " + linkId);
+    return null;
+  }
+  
+  return inputCell = answerRows[0].cells[1];
+}
+
+function answerType(inputCell) {
+  if ($(inputCell).children("input:radio").length > 0)
+    return "radio"
+    
+  else if ($(inputCell).children("input:checkbox").length > 0)
+    return "checkbox"
+    
+  else if ($(inputCell).children("select").length > 0) {
+    var options = $(inputCell).children("select").children("option");
+    if (options.count!=3
+     || $(options[0]).val() != ''
+     || $(options[1]).val() != 'true'
+     || $(options[2]).val() != 'false'
+     || $(options[0]).text() != ''
+     || $(options[1]).text() != 'Yes'
+     || $(options[2]).text() != 'No')
+      return "select"
+    else
+      return "boolean"
+  
+  } else if ($(inputCell).children("table").length > 0)
+    if ($(inputCell).children("table").children("colgroup").children("col:last-child",[span='2']).length > 0)
+      return "coding"
+ 
+    else if ($(inputCell).children("table").children("colgroup").children("col").length == 3)
+      return "reference"
+    
+    else if ($(inputCell).children("input:text").length > 0)
+      return "repeating-text"
+  
+    else if ($(inputCell).children("textarea").length > 0)
+      return "repeating-textarea"
+    
+    else alert("Unknown repeating type")
+  
+  else if ($(inputCell).children("input:text").length > 0)
+    return "text"
+
+  else if ($(inputCell).children("textarea").length > 0)
+    return "textarea"
+    
+  else if ($(inputCell).children("*:input").length == 0)
+    return "none"
+    
+  else alert("Unknown type");
+}
+
+function findAnswers(node, linkId, lookupArray, isNumber) {
+  var inputCell = answerCell(node, linkId);
+
+  if (inputCell == null) return null;
+  
+  var inputType = answerType(inputCell);
+  
+  var answerCount = 0;
+  var answers = [];
+  
+  switch (inputType) {
+    case "radio":
+    case "checkbox":
+      $(inputCell).children(":checked").each(function() {
+        var value = $(this).val();
+        if (lookupArray) {
+          var coding = $.grep(lookupArray, function(aCoding){ return aCoding.code == value; });
+          if (coding)
+            answers.push(coding);
+          
+        } else
+          answers.push(value);
+      });
+      break;
+      
+    case "boolean":
+      if ($(inputCell).children("input:checkbox", ":checked").length!=0)
+        answers.push('true')
+      else
+        answers.push('false');
+      break;
+    
+    case "select":
+      $(inputCell).children("select").children("option:selected").each(function() {
+        var value = $(this).val();
+        if (value != "") {
+          if (lookupArray) {
+            var coding = $.grep(lookupArray, function(aCoding){ return aCoding.display == value; });
+            if (coding)
+              answers.push(coding);
+            
+          } else
+            answers.push(value);
+        }
+      });
+      break;
+
+    case "coding":
+      $(inputCell).children("table").children("tbody").children("tr").each(function() {
+        var coding = {
+          "system": this.cells[2].textContent,
+          "code": this.cells[3].textContent,
+          "display": this.cells[1].textContent
+        }
+        answers.push(coding);
+      });
+      break;
+      
+    case "reference":
+      $(inputCell).children("table").children("tbody").children("tr").each(function() {
+        var reference = {
+          "reference": this.cells[2].textContent,
+          "display": this.cells[1].textContent
+        }
+        answers.push(reference);
+      });
+      break;
+      
+    case "repeating-text":
+    case "repeating-textarea":
+      $(inputCell).children("table").children("tbody").children("tr").each(function() {
+        var value = $(this).children("td:last-child").children("input:visible").val();
+        if (value != "") {
+          if (isNumber)
+            answers.push(value.toNumber())
+          else
+            answers.push(value);
+        }
+      });
+      break;
+      
+    case "text":
+    case "textarea":
+      $(inputCell).children("input:visible").each(function() {
+        var value = $(this).val();
+        if (value != "") {
+          if (isNumber)
+            answers.push(value.toNumber())
+          else
+            answers.push(value);
+        }
+      });
+      break;
+      
+    case "none":
+  }
+  
+  return answers;
+}
+
+function loadAnswers() {
+  if (questionnaireAnswers == null) {
+    questionnaireAnswers =
+    {
+      "resourceType": "QuestionnaireAnswers",
+      "text": {
+        "status": "generated",
+        "div": null
+      },
+      // "questionnaire": TODO,
+      "status": "draft",
+      // "subject": TODO,
+      // "author": TODO,
+      "authored": "2001-01-01T00:00:00",
+      // "encounter": TODO,
+      "group": null
+    }
+  } else {
+    populateQuestionnaire();
+  }
+}
+
+function currentTime() {
+  var now = new Date();
+  return now.getYear + "-" + padTime(now.getMonth) + "-" + padTime(now.getDay) + "T" + padTime(now.getHours) + ':' + padTime(now.getMinutes) + ':' + padTime(now.getSeconds);
+}
+
+function padTime(num) {
+  if (num < 10)
+    return "0" + num
+  else
+    return num;
+}
+
+function saveDraft() {
+  parseQuestionnaire();
+  questionnaireAnswers.status = "draft"
+  questionnaireAnswers.authored = currentTime();
+  saveQuestionnaire(questionnaireAnswers);
+}
+
+function saveFinal() {
+  if (validateQuestionnaire()) {
+    parseQuestionnaire();
+    if (questionnaireAnswers.status == "completed")
+      questionnaireAnswers.status = "amended"
+     else
+      questionnaireAnswers.status = "completed";
+    questionnaireAnswers.authored = currentTime();
+    saveQuestionnaire();
+  }
+}
+
+function saveQuestionnaire() {
+  // Todo: save stuff
+}
+
+function showError() {
+  alert('Error');
+}
+--></script>
+      <script type="text/javascript"><!--
+var fhirValuesetUrl = null;
+var fhirCodeMax = null;
+var fhirCodeExtensible = null;
+var fhirCodeSourceTable = null;
+
+var selectedSystem = "";
+var selectedCode = "";
+var selectedDisplay = "";
+var selectedDefinition = "";
+
+var selectionTable;
+var codes;
+var addButton;
+var doneButton;
+var codeSelection;
+
+
+function combo(id,h,l) 
+{
+  var self = this; 
+  self.h = h; 
+  self.l = l; 
+  self.inp = document.getElementById(id); 
+  self.hasfocus = false; 
+  self.sel = -1; 
+  self.ul = self.inp.nextSibling; 
+  while (self.ul.nodeType == 3) 
+    self.ul = self.ul.nextSibling; 
+  self.ul.onmouseover = function() {
+    self.ul.className = '';
+  }; 
+  self.ul.onmouseout = function() {
+    self.ul.className = 'focused'; 
+    if (!self.hasfocus) 
+      self.ul.style.display = 'none';
+  }; 
+  self.list = self.ul.getElementsByTagName('li'); 
+  selectedSystem = ""
+  selectedCode = ""
+  selectedDisplay = ""
+  selectedDefinition = ""
+  for (var i=self.list.length - 1; i >= 0; i=i-1) {
+    self.list[i].onclick = function() {
+      if (this.id != null) {
+        self.inp.value = this.firstChild.data;  
+        for (var i = 0; i < codes.length; i++) {
+          if (codes[i].system+"||"+codes[i].code == this.id) {
+            selectedSystem = codes[i].system;
+            selectedCode = codes[i].code;
+            selectedDisplay = codes[i].display;
+            currentCodeDefinition = ""
+            if (codes[i].extension != null) {
+              for (var j = 0; j < codes[i].extension.length; j++) {
+                if (codes[i].extension[j].url == "http:\/\/hl7.org\/fhir\/Profile\/tools-extensions#definition")
+                  selectedDefinition = codes[i].extension[j].valueString;
+              }
+            }
+            checkMaxCodeRows()
+          }
+        }        
+        self.rset(self);
+      }
+    }
+  } 
+  self.inp.onfocus = function() {
+    self.ul.style.display = 'block'; 
+    self.ul.className = 'focused'; 
+    self.hasfocus = true; 
+    self.sel = -1;
+  }; 
+  self.inp.onblur = function() {
+    if (self.ul.className=='focused') {
+      self.rset(self);
+    } 
+    self.ul.className = ''; 
+    self.hasfocus = false;
+  }; 
+  self.inp.onkeyup = function(e) {
+    var k = (e)? e.keyCode : event.keyCode; 
+    if (k == 40 || k == 13) {
+      if (self.sel == self.list.length-1) {
+        self.list[self.sel].style.backgroundColor = self.l; 
+        self.sel = -1;
+      } 
+      if (self.sel > -1)
+        self.list[self.sel].style.backgroundColor = self.l; 
+      self.inp.value = self.list[++self.sel].firstChild.data; 
+      self.list[self.sel].style.backgroundColor = self.h;
+    } 
+    else if (k == 38 && self.sel > 0) {
+      self.list[self.sel].style.backgroundColor = self.l;
+      self.sel = self.sel -1
+      self.inp.value = self.list[self.sel].firstChild.data; 
+      self.list[self.sel].style.backgroundColor = self.h;
+    }
+    return false;
+  };
+} 
+  
+combo.prototype.rset = function(self) {
+  self.ul.style.display = 'none'; 
+  self.sel = -1; 
+  for (var i=self.list.length - 1; i >= 0; i=i-1) {
+    self.list[i].style.backgroundColor = self.l;
+  }  
+  return false;
+};
+
+function codeBuildForm()
+{
+  var d = document.getElementById("fhir-code-form");
+  if (d == null)
+  {
+    d = document.createElement("div");
+    d.id = "fhir-code-form";
+  }
+
+  d.innerHTML = "<span id=\"fhir-code-label\">Code:</span><table><tbody><tr><td class=\"combo\"><input id=\"fhir-code-input\" type=\"text\" name=\"codeChoice\" title=\"Type text to filter list\" size=\"100%\" onInput=\"reload(this)\"/>"+
+                "<ul id=\"fhir-code-ul\" style=\"display:none;\" class=\"\"></ul></td><td><button id=\"fhir-code-select\" onClick='addRow()' style=\"display:none;\">Add</button></td></tr><tr><td>"+
+                "<button id=\"fhir-code-commit\" onClick='commitCodes()' style=\"display:none;\">Apply</button></td><td>"+
+                "<button onClick='closeCodeSelect()'>Cancel</button></td></tr></tbody></table><div id=\"fhir-code-selections\"/>";
+  d.className = "fhir-code-form";
+	document.getElementById("div-cnt").appendChild(d);
+  $('.fhir-code-form').css('left', fhirCodeSourceTable.offsetLeft+fhirCodeSourceTable.offsetWidth);
+  $('.fhir-code-form').css('top', fhirCodeSourceTable.offsetTop+fhirCodeSourceTable.offsetHeight);
+}
+
+function initCodeLookup(valueset, sourceTable, extensible, max) {
+  fhirValuesetUrl = valueset;
+  fhirCodeMax = max;
+  fhirCodeExtensible = extensible;
+  fhirCodeSourceTable = sourceTable
+
+  codeBuildForm();
+
+  var inputLabel = document.getElementById("fhir-code-label");
+  var targetDiv = document.getElementById("fhir-code-selections");
+  codeSelection = document.getElementById("fhir-code-input");
+  addButton = document.getElementById("fhir-code-select");
+  doneButton = document.getElementById("fhir-code-commit");
+
+  if (max==1) {
+    targetDiv.style.display="none";
+    addButton.style.display = "none";
+    if (extensible)
+      inputLabel.innerHTML="Select code/Enter value:"
+    else
+      inputLabel.innerHTML="Select code:";
+
+  } else {
+    targetDiv.style.display="inherit";
+    addButton.style.display = "inherit";
+    if (extensible)
+      inputLabel.innerHTML="Select code(s)/Enter value(s):"
+    else
+      inputLabel.innerHTML="Select code(s):";
+  }
+  if (targetDiv.table)
+    targetDiv.removeChild(targetDiv.table);
+
+  selectionTable = sourceTable.cloneNode(true);
+  targetDiv.appendChild(selectionTable);
+
+  for (var i = 0; i < selectionTable.rows.length; i++) {
+    setRowId(selectionTable.rows[i])
+  }
+
+  checkMaxCodeRows()
+
+  load();
+}
+
+function reload(edit) {
+  getCodes(fhirValuesetUrl, edit.value);
+  checkMaxCodeRows()
+}
+
+function load() {
+  new combo('fhir-code-input','#9c9','#fff');
+  getCodes(fhirValuesetUrl, "");
+}
+
+function processExpansion(data)
+{
+  var source = "";
+//  codes = data.entry[0].content.expansion.contains;
+  codes = data.expansion.contains;
+  if (codes != null) {
+    for (var i = 0; i < codes.length; i++) {
+      var definition = ""
+      if (codes[i].extension != null) {
+        for (var j = 0; j < codes[i].extension.length; j++) {
+          if (codes[i].extension[j].url == "http:\/\/hl7.org\/fhir\/Profile\/tools-extensions#definition")
+            definition = codes[i].extension[j].valueString;
+        }
+      }
+      source = source + "<li id=\""+codes[i].system+"||"+codes[i].code+"\" title=\""+definition+"\">"+codes[i].display+"</li>";
+    }
+  }
+  document.getElementById("fhir-code-ul").innerHTML = source;  
+  new combo('fhir-code-input','#9c9','#fff'); 
+}
+
+function processNarrative(narr) {
+  var s = narr.indexOf(">");
+  var e = narr.lastIndexOf("<");
+  return narr.substring(s+1, e-1);
+}
+
+function getCodes(id, text)
+{
+    try
+    {
+      var uri = expansionUri+"/ValueSet/$expand?_format=json&identifier="+id+"&filter="+text;
+      $.ajax({
+        url: uri,
+        cache: false,
+        dataType: "json",
+        success: function(data){
+          processExpansion(data);
+        },
+        error: function(jqXHR, textStatus, errorThrown){
+          try {
+            var oo = jQuery.parseJSON(jqXHR.responseText);
+            document.getElementById("fhir-code-ul").innerHTML = "<li>"+processNarrative(oo.text.div)+"</li>";  
+          } catch (err) {
+            alert("System Error: "+textStatus+" (:"+err+")");
+          }
+        }
+      });
+    }
+    catch (err)
+    {
+      alert("System Error: "+err);
+    }
+}
+
+function deleteRow(control) {
+  var row = control.parentNode.parentNode;
+  if (confirm("Remove this entry?")) {
+    row.parentNode.deleteRow(row.rowIndex);
+    checkMaxCodeRows()
+  }
+}
+
+function setRowId(row) {
+  row.id = getRowId(row.cells[2].textContent, row.cells[3].textContent, row.cells[1].textContent);
+}
+
+function getRowId(system, code, display) {
+  return system.trim()+"||"+code.trim()+"||"+display.trim().toUpperCase();
+}
+
+function addRow() {
+  var selectionText = codeSelection.value;
+  var addCode = (selectionText == selectedDisplay);
+  if (addCode)
+    var newRowId = getRowId(selectedSystem, selectedCode, selectedDisplay)
+  else if (fhirCodeExtensible)
+    var newRowId = getRowId("", "", selectionText)
+  else
+    return; // No code selected an not extensible binding
+    
+  var currentRow = document.getElementById(newRowId);
+
+  if (currentRow != null) {
+    alert("Already exists");
+    return;
+  }
+
+  currentRow = selectionTable.insertRow(-1);
+  currentRow.insertCell(0).innerHTML = removeGroupButton;
+  // Todo: make the URL a variable
+  var aCell = currentRow.insertCell(1);
+  aCell.innerHTML = addCode ? selectedDisplay : selectionText;
+  aCell.title = addCode ? selectedDefinition : "";
+  if (addCode) {
+    aCell = currentRow.insertCell(2);
+    aCell.innerHTML = selectedSystem;
+    aCell.style.fontSize="0px";
+    aCell = currentRow.insertCell(3);
+    aCell.innerHTML = selectedCode;
+    aCell.style.fontSize="0px";
+  } else {
+    currentRow.insertCell(2).style.fontSize = "0px"
+    currentRow.insertCell(3).style.fontSize = "0px"
+  }
+  setRowId(currentRow);
+  checkMaxCodeRows();
+}
+
+function checkMaxCodeRows() {
+  if ((fhirCodeMax == null || selectionTable.rows.length < fhirCodeMax)
+  && fhirCodeMax != 1
+  && codeSelection.value != "" 
+  && (codeSelection.value == selectedDisplay || fhirCodeExtensible))
+    addButton.style.display = "inherit"
+  else
+    addButton.style.display = "none";
+
+  if (fhirCodeMax == 1) {
+    if (codeSelection.value != ""
+    && (codeSelection.value == selectedDisplay || fhirCodeExtensible))
+      doneButton.style.display = "inherit"
+    else
+      doneButton.style.display = "none";
+  } else
+      doneButton.style.display = "inherit";
+}
+
+function commitCodes() {
+  if (fhirCodeMax == 1) {
+    for (var i=selectionTable.rows.length - 1; i >= 0; i=i-1) {
+      selectionTable.deleteRow(i);
+    }
+    addRow();
+  }
+
+  var dataTable = selectionTable.cloneNode(true);
+  for (var i = 0; i < dataTable.rows.length; i++) {
+    dataTable.rows[i].removeAttribute("id");
+  }
+  var parent = fhirCodeSourceTable.parentNode;
+  parent.removeChild(fhirCodeSourceTable);
+  parent.insertBefore(dataTable, parent.children[0]);
+  closeCodeSelect();
+}
+
+function closeCodeSelect() {
+	document.getElementById("div-cnt").removeChild(document.getElementById("fhir-code-form"));
+}
+        --></script>
+      <script type="text/javascript"><!--
+var fhirReferenceMax = null;
+var fhirReferenceSourceTable = null;
+var fhirReferenceCount = 0;
+
+var referenceTable;
+var doneButton1;
+var doneButton2;
+
+function referenceBuildForm()
+{
+  var d = document.getElementById("fhir-reference-form");
+  if (d == null)
+  {
+    d = document.createElement("div");
+    d.id = "fhir-reference-form";
+  }
+
+  d.innerHTML = "<div id=\"fhir-reference-div\" style=\"overflow:hidden\"><span id=\"fhir-reference-label\">Resources:</span><div style=\"overflow:auto\">" +
+    "<table id=\"fhir-reference-table\" style=\"border-style:solid;border-width:thin;\"><col span=\"2\"/>" +
+    "<col style=\"width:0px;visibility:collapse;\"/><tbody> </tbody></table></div><table><tbody>" +
+    "<tr><td><button onClick='cancelReference()'>Cancel</button></td><td>" +
+    "<button id=\"fhir-reference-commit\" onClick='commitReferences()'>Apply</button></td></tr></tbody></table></div>";
+  d.className = "fhir-code-form";
+	document.getElementById("div-cnt").appendChild(d);
+  $('.fhir-code-form').css('left', fhirReferenceSourceTable.offsetLeft+fhirReferenceSourceTable.offsetWidth);
+  $('.fhir-code-form').css('top', fhirReferenceSourceTable.offsetTop+fhirReferenceSourceTable.offsetHeight);
+}
+
+function initReferenceLookup(query, label, sourceTable, max) {
+  fhirReferenceQuery = query;
+  fhirReferenceMax = max;
+  fhirReferenceSourceTable = sourceTable
+
+  referenceBuildForm();
+
+  var inputLabel = document.getElementById("fhir-reference-label");
+  referenceTable = document.getElementById("fhir-reference-table");
+  doneButton = document.getElementById("fhir-reference-commit");
+
+  if (max==1) {
+    inputLabel.innerHTML=label + " (select one):"
+    doneButton.style.display = "none";
+    referenceControl = "<button title=\"Choose this resource\" onclick=\"chooseReference(this.parentNode.parentNode)\">Select</button>"
+  } else {
+    inputLabel.innerHTML=label + " (select one or more): "
+    doneButton.style.display = "inherit";
+    referenceControl = "<input type=\"checkbox\" title=\"Include this resource\" onchange=\"toggleReference(this)\"/>";
+  }
+
+  getReferences(query, referenceControl);
+}
+
+function toggleReference(control) {
+  var row = control.parentNode.parentNode;
+  if (control.checked) {
+    if (fhirReferenceCount >= fhirReferenceMax) {
+      control.checked = false;
+      alert("Only " + fhirReferenceMax + " entries may be selected");
+    } else {
+      fhirReferenceCount++;
+    }
+  } else {
+    fhirReferenceCount = fhirReferenceCount - 1;
+  }
+}
+
+function displaySummaries(data, referenceControl)
+{
+  var source = "";
+  var entries = data.entry;
+
+  for (var i=referenceTable.rows.length - 1; i >= 0; i=i-1) {
+    referenceTable.deleteRow(i);
+  }
+
+  var div = document.createElement("t");
+  if (entries != null) {
+    for (var i = 0; i < entries.length; i++) {
+      row = referenceTable.insertRow(-1)
+      var aCell = row.insertCell(0);
+      aCell.innerHTML = referenceControl
+      if (fhirReferenceMax != 1) {
+        $.grep(fhirReferenceSourceTable.rows, function(aRow){
+          if (aRow.cells[2].textContent == entries[i].id) {
+            $(aCell).children("input:checkbox")[0].checked = true;
+            fhirReferenceCount++;
+          }
+        });
+      }
+      aCell = row.insertCell(1);
+      div.innerHTML = entries[i].summary;
+      aCell.innerHTML = $(div).text();
+      aCell = row.insertCell(2);
+      aCell.innerHTML = entries[i].id;
+      aCell.style.fontSize="0px";
+    }
+  }
+  // Do I need to remove the created element somehow?
+}
+
+function getReferences(query, referenceControl)
+{
+    try
+    {
+      var uri = expansionUri+query;
+      $.ajax({
+        url: uri,
+        cache: false,
+        dataType: "json",
+        success: function(data){
+          displaySummaries(data, referenceControl);
+        },
+        error: function(jqXHR, textStatus, errorThrown){
+          try {
+            var oo = jQuery.parseJSON(jqXHR.responseText);
+            referenceTable.insertRow(-1).insertCell(0).innerHTML = processNarrative(oo.text.div);  
+          } catch (err) {
+            alert("System Error: "+textStatus);
+          }
+        }
+      });
+    }
+    catch (err)
+    {
+      alert("System Error: "+err);
+    }
+}
+
+function clearSourceTable() {
+  for (var i=fhirReferenceSourceTable.rows.length - 1; i >= 0; i=i-1) {
+    fhirReferenceSourceTable.deleteRow(i);
+  }  
+}
+
+function cancelReference() {
+  closeReferenceSelect();
+}
+
+function chooseReference(row) {
+  clearSourceTable()
+  var sourceRow = fhirReferenceSourceTable.insertRow(0);
+  var aCell = sourceRow.insertCell(0);
+  aCell.innerHTML = removeInputButton;
+  var aCell = sourceRow.insertCell(1);
+  aCell.innerHTML = row.cells[1].innerHTML;
+  var aCell = sourceRow.insertCell(2);
+  aCell.innerHTML = row.cells[2].innerHTML;
+  aCell.style.fontSize="0px";
+
+  closeReferenceSelect();
+}
+
+function commitReferences() {
+  clearSourceTable()
+
+  var rowNum = 0;
+  for (var i = 0; i < referenceTable.rows.length; i++) {
+    if ($(referenceTable.rows[i].cells[0]).children("input:checkbox")[0].checked) {
+      var sourceRow = fhirReferenceSourceTable.insertRow(rowNum);
+      var aCell = sourceRow.insertCell(0);
+      aCell.innerHTML = removeInputButton;
+      var aCell = sourceRow.insertCell(1);
+      aCell.innerHTML = referenceTable.rows[i].cells[1].innerHTML;
+      var aCell = sourceRow.insertCell(2);
+      aCell.innerHTML = referenceTable.rows[i].cells[2].innerHTML;
+      aCell.style.fontSize="0px";
+      rowNum++;
+    }
+  }
+
+  closeReferenceSelect();
+}
+
+function closeReferenceSelect() {
+	document.getElementById("div-cnt").removeChild(document.getElementById("fhir-reference-form"));
+}
+        --></script>
+      <style type="">
+      div.fhir-code-form {
+       background-color: Lemonchiffon; 
+       border-bottom: 1px solid #778899;
+       border-right: 1px solid #778899;
+       padding: 10px 10px 0px 10px;
+       margin: 0px 0px 0px 0px;
+       position: fixed;
+       width: 520px;
+       top: 0;
+       left: 0;
+       opacity: 1.0;
+       z-order: 50;
+      }
+      div.fhir-code-form,div.fhir-reference-form {
+       background-color: Lemonchiffon; 
+       border-bottom: 1px solid #778899;
+       border-right: 1px solid #778899;
+       padding: 10px 10px 0px 10px;
+       margin: 0px 0px 0px 0px;
+       position: fixed;
+       width: 520px;
+       top: 0;
+       left: 0;
+       opacity: 1.0;
+       z-order: 50;
+      }
+      .combo {position:relative;width:310px;text-align:left;padding:0;margin:0;}
+      .combo * {padding:0;margin:0;}
+      .combo label {display:block;float:left;width:92px;text-align:right;}
+      .combo input {width:300px; height:1.5em;z-index:50;}
+      .combo ul {padding:1px;border:2px solid #ccc;width: 600px;background-color:#fff;position:absolute;left:3px;top:1.8em;display:none;z-index:51;}
+      .combo li {display:block; width: 100%;}
+      </style>
+      <script type="text/javascript"><!--
+      //
+      // Scripts for managing groups
+      //
+      function addGroup(groupId, button){
+        group = document.getElementById(groupId)
+        if (group.style.display=="none") {
+          group.style.display="block"
+        } else {
+          newGroup = group.cloneNode(true)
+          button.parentNode.insertBefore(newGroup, button)
+          resetGroup(newGroup)
+          //newGroup.getElementsByTagName("button")[2].style.display="inline"
+        }
+      }
+      function deleteGroup(button){
+        group = button.parentNode;
+        if (group.id!="undefined") {
+          group.style.display="none"
+        } else {
+          group.parentNode.removeChild(group)
+        }
+      }
+      function addInput(button){
+        var baseInput = button.nextElementSibling
+        var rootPath = baseInput.nextElementSibling
+        var occurrence = rootPath.nextElementSibling
+        var max = occurrence.nextElementSibling
+        var table = button.previousElementSibling
+        // Todo: Check maximum (need to do this on deleteInput too)
+        
+        occurrence.innerHTML = parseInt(occurrence.innerHTML) + 1;
+        var newInput = baseInput.cloneNode();
+        newInput.setAttribute('name', rootPath.innerHTML + "[" + occurrence.innerHTML + "]");
+        newInput.style.display = "inline";
+        var row = table.insertRow(table.rows.length);
+        row.insertCell(0).innerHTML = removeInputButton;
+        row.insertCell(1).appendChild(newInput);
+      }
+      function deleteInput(button){
+        var row = button.parentNode.parentNode;
+        if (confirm("Remove this entry?")) {
+          row.parentNode.deleteRow(row.rowIndex);
+        }
+      }
+      function resetGroup(button){
+        resetDiv(button.parentNode)
+      }
+      function resetDiv(div) {
+        inputs = div.getElementsByTagName("input")
+        for(i=0; i < inputs.length; i++) {
+          if (inputs[i].default == "undefined") {
+            inputs[i].value = ""
+          } else {
+            inputs[i].value = inputs[i].default
+          }
+        }
+        textAreas = div.getElementsByTagName("textArea")
+        for(i=0; i < textAreas.length; i++) {
+          textAreas[i].value = ""
+        }
+        divs = div.getElementsByTagName("div")
+        for(i=0; i < divs.length; i++) {
+          resetDiv(divs[i])
+        }
+      }
+      function checkDecimal(input) {
+        if (input.value != '') {
+          format = new RegExp("^([+-]?([1-9]\d*)|0)(\.\d+)?$")
+          if (!format.test(input.value)) {
+            input.focus()
+            alert("Invalid decimal value")
+          }
+        }
+      }
+      function checkInteger(input) {
+        if (input.value != '') {
+          format = new RegExp("^[+-]?([1-9]\d*)|0$")
+          if (!format.test(input.value)) {
+            input.focus()
+            alert("Invalid integer value")
+          }
+        }
+      }
+      function checkDate(input) {
+        if (input.value != '') {
+          checkDateValue(input.value, "^([1-9][0-9]{3}|0[0-9]{3})(-(0[1-9]|1[0-2])(-(0[1-9]|[12][0-9]|3[01]))?)?$", "Invalid date value - must be yyyy-mm-dd")
+        }
+      }
+      function checkDateTime(input) {
+        if (input.value != '') {
+          checkDateValue(input.value, "^([1-9][0-9]{3}|0[0-9]{3})([-/](0[1-9]|1[0-2])([-/](0[1-9]|[12][0-9]|3[01])(\s+(([01][0-9]|2[0-3]):[0-5][0-9]:[0-5][0-9](\.[0-9]+)?)(\s+(\+|-)((0[0-9]|1[0-3]):[0-5][0-9]|14:00))?)?)?)?$", "Invalid date-time value - must be yyyy-mm-dd hh:mm:ss.sss +/-zz:zz")
+        }
+      }
+      function checkTime(input) {
+        if (input.value != '') {
+          checkDateValue(input.value, "^([01][0-9]|2[0-3]):[0-5][0-9]:[0-5][0-9](\.[0-9]+)$", "Invalid time value - must be hh:mm:ss.sss")
+        }
+      }
+      function checkInstant(input) {
+        if (input.value != '') {
+          checkDateValue(input.value, "^([1-9][0-9]{3}|0[0-9]{3})[/-](0[1-9]|1[0-2])[-/](0[1-9]|[12][0-9]|3[01])\s+(([01][0-9]|2[0-3]):[0-5][0-9]:[0-5][0-9](\.[0-9]+)?)\s+(\+|-)((0[0-9]|1[0-3]):[0-5][0-9]|14:00)$", "Invalid date-time value - must be yyyy-mm-dd hh:mm:ss.sss +/-zz:zz")
+        }
+      }
+      function checkDateValue(input, formatStr, message) {
+        format = new RegExp(formatStr)
+        if (input.value=='') {
+          // do nothing
+
+        } else if (!format.test(input.value)) {
+          input.focus()
+          alert(message)
+          
+        } else if (input.value.length > 7) {
+          datePortion = input.value.substring(1,8)
+          year = datePortion.split(/[/-]/)[0]
+          month = datePortion.split(/[/-]/)[1]
+          day = datePortion.split(/[/-]/)[2]
+          date = new Date(year, month-1, day)
+          if ((date.getMonth()+1!=month) || (date.getDate()!=day) || (date.getFullYear()!=year)) {
+            input.focus()
+            alert("Invalid date.")
+          }
+        }
+      }
+      --></script>
+      <title>Form</title>
+      <meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/>
+   </head>
+   <body onload="loadAnswers()">
+	<div id="segment-header" class="segment"><!-- segment-header -->	
+		<div class="container"><!-- container -->
+			<a id="logo" href="http://hl7.org/fhir"><img src="./assets/images/fhir-logo-www.png" alt="logo fhir"/> </a>
+			<div id="hl7-status">
+				<b>Continuous Integration Build</b>
+			</div>       	
+			
+			<div id="hl7-nav">
+				 <a id="hl7-logo" href="http://www.hl7.org">
+					<img src="./assets/images/hl7-logo.png" width="42" height="50" alt="visit the hl7 website"/>
+				</a> 
+			</div>       	
+			<!--hl7-search-->
+		</div>
+		<div class="container"><!-- container -->
+	</div></div><!-- /segment-header -->	
+
+
+	<div id="segment-navbar" class="segment"><!-- segment-navbar -->
+		<div id="stripe"> </div>
+		<div class="container"><!-- container -->
+ <!-- HEADER CONTENT -->
+ 	      		
+ 	      		      		
+			<nav class="navbar navbar-inverse">
+				<div class="container">
+					<button data-target=".navbar-inverse-collapse" data-toggle="collapse" class="navbar-toggle" type="button">
+						<span class="icon-bar"> </span>
+						<span class="icon-bar"> </span>
+						<span class="icon-bar"> </span>
+					</button>
+					<a href="index.html" class="navbar-brand hidden">FHIR</a>
+					<div class="nav-collapse collapse navbar-inverse-collapse">
+						<ul class="nav navbar-nav">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="documentation.html">Documentation</a></li>
+              <li><a href="implementation.html">Implementation</a></li>
+              <li><a href="resourcelist.html">Resources</a></li>
+              <li><a href="clinical.html">Clinical</a></li>
+              <li><a href="administration.html">Administrative</a></li>
+              <li><a href="infrastructure.html">Infrastructure</a></li>
+              <li><a href="financial.html">Financial</a></li>
+
+						</ul>
+					</div><!-- /.nav-collapse -->
+				</div><!-- /.container -->
+			</nav><!-- /.navbar -->
+      		
+				
+<!-- /HEADER CONTENT -->				
+		</div><!-- /container -->
+	</div><!-- /segment-navbar -->
+	
+
+	<div id="segment-breadcrumb" class="segment"><!-- segment-breadcrumb -->
+		<div class="container"><!-- container -->	
+			<ul class="breadcrumb">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="administration.html">Administrative</a></li>        <li><a href="encounter.html">Encounter</a></li>        <li><b>Generated Questionnaire</b></li>        <!-- encounter.questionnaire.html / resource-questionnaire:Encounter -->
+
+			</ul>	
+		</div><!-- /container -->
+	</div><!-- /segment-breadcrumb -->
+	
+
+	<div id="segment-content" class="segment"><!-- segment-content -->
+	<div class="container"><!-- container -->
+            <div class="row">
+            	<div class="inner-wrapper">
+<!-- CONTENT CONTENT -->
+<p>
+This is an example form generated from the questionnaire. See also the <a href="encounter.questionnaire.xml.html">XML</a> or <a href="encounter.questionnaire.json.html">JSON</a> format
+</p>
+<div id="div-cnt">
+         <h1> An interaction during which services are provided to the patient</h1>
+         <div style="display:block;margin:0.5em 2em;border-style:solid;border-width:1px;border-color:#A0A0A0;"
+              id="d2e57">
+            <span style="display:none">Encounter</span>
+            <input type="image" onclick="deleteGroup(this)"
+                   src="http://fhir-dev.healthintersections.com.au/html-form-delete.png"
+                   alt="Remove"
+                   style="width:10px;height:10px;"/>
+            <div style="display:block;margin:0.5em 2em;border-style:solid;border-width:1px;border-color:#A0A0A0;"
+                 id="d2e73.1">
+               <span style="display:none">Encounter.id</span>
+               <input type="image" onclick="deleteGroup(this)"
+                      src="http://fhir-dev.healthintersections.com.au/html-form-delete.png"
+                      alt="Remove"
+                      style="width:10px;height:10px;"/>
+               <table>
+                  <tbody>
+                     <tr>
+                        <td style="vertical-align:top;">
+                           <span style="display:none;">Encounter.id.value</span> Logical id of this artefact</td>
+                        <td>
+                           <input name="Path:Encounter[1]Encounter.id[1]Encounter.id.value[1]" type="text"/>
+                        </td>
+                     </tr>
+                  </tbody>
+               </table>
+            </div>
+            <input style="margin:0em 2em;width:10px;height:10px;" type="image"
+                   onclick="addGroup('d2e73.1', this)"
+                   src="http://fhir-dev.healthintersections.com.au/html-form-add.png"
+                   alt="Add section"/>
+            <span style="display:none">Encounter.id</span>
+            <span style="display:none">1</span>
+            <h2> Metadata about the resource</h2>
+            <div style="display:block;margin:0.5em 2em;border-style:solid;border-width:1px;border-color:#A0A0A0;"
+                 id="d2e104.1">
+               <span style="display:none">Encounter.meta</span>
+               <input type="image" onclick="deleteGroup(this)"
+                      src="http://fhir-dev.healthintersections.com.au/html-form-delete.png"
+                      alt="Remove"
+                      style="width:10px;height:10px;"/>
+               <div style="display:block;margin:0.5em 2em;border-style:solid;border-width:1px;border-color:#A0A0A0;"
+                    id="d2e117.1.1">
+                  <span style="display:none">Encounter.meta.id</span>
+                  <input type="image" onclick="deleteGroup(this)"
+                         src="http://fhir-dev.healthintersections.com.au/html-form-delete.png"
+                         alt="Remove"
+                         style="width:10px;height:10px;"/>
+                  <table>
+                     <tbody>
+                        <tr>
+                           <td style="vertical-align:top;">
+                              <span style="display:none;">Encounter.meta.id.value</span> xml:id (or equivalent in JSON)</td>
+                           <td>
+                              <input name="Path:Encounter[1]Encounter.meta[1]Encounter.meta.id[1]Encounter.meta.id.value[1]"
+                                     type="text"/>
+                           </td>
+                        </tr>
+                     </tbody>
+                  </table>
+               </div>
+               <input style="margin:0em 2em;width:10px;height:10px;" type="image"
+                      onclick="addGroup('d2e117.1.1', this)"
+                      src="http://fhir-dev.healthintersections.com.au/html-form-add.png"
+                      alt="Add section"/>
+               <span style="display:none">Encounter.meta.id</span>
+               <span style="display:none">1</span>
+               <div style="display:block;margin:0.5em 2em;border-style:solid;border-width:1px;border-color:#A0A0A0;"
+                    id="d2e149.1.1">
+                  <span style="display:none">Encounter.meta.versionId</span>
+                  <input type="image" onclick="deleteGroup(this)"
+                         src="http://fhir-dev.healthintersections.com.au/html-form-delete.png"
+                         alt="Remove"
+                         style="width:10px;height:10px;"/>
+                  <table>
+                     <tbody>
+                        <tr>
+                           <td style="vertical-align:top;">
+                              <span style="display:none;">Encounter.meta.versionId.value</span> Version specific identifier</td>
+                           <td>
+                              <input name="Path:Encounter[1]Encounter.meta[1]Encounter.meta.versionId[1]Encounter.meta.versionId.value[1]"
+                                     type="text"/>
+                           </td>
+                        </tr>
+                     </tbody>
+                  </table>
+               </div>
+               <input style="margin:0em 2em;width:10px;height:10px;" type="image"
+                      onclick="addGroup('d2e149.1.1', this)"
+                      src="http://fhir-dev.healthintersections.com.au/html-form-add.png"
+                      alt="Add section"/>
+               <span style="display:none">Encounter.meta.versionId</span>
+               <span style="display:none">1</span>
+               <div style="display:block;margin:0.5em 2em;border-style:solid;border-width:1px;border-color:#A0A0A0;"
+                    id="d2e180.1.1">
+                  <span style="display:none">Encounter.meta.lastUpdated</span>
+                  <input type="image" onclick="deleteGroup(this)"
+                         src="http://fhir-dev.healthintersections.com.au/html-form-delete.png"
+                         alt="Remove"
+                         style="width:10px;height:10px;"/>
+                  <table>
+                     <tbody>
+                        <tr>
+                           <td style="vertical-align:top;">
+                              <span style="display:none;">Encounter.meta.lastUpdated.value</span> When the resource version last changed</td>
+                           <td>
+                              <input name="Path:Encounter[1]Encounter.meta[1]Encounter.meta.lastUpdated[1]Encounter.meta.lastUpdated.value[1]"
+                                     type="text"
+                                     onblur="checkInstant(this)"
+                                     maxlength="30"/>
+                           </td>
+                        </tr>
+                     </tbody>
+                  </table>
+               </div>
+               <input style="margin:0em 2em;width:10px;height:10px;" type="image"
+                      onclick="addGroup('d2e180.1.1', this)"
+                      src="http://fhir-dev.healthintersections.com.au/html-form-add.png"
+                      alt="Add section"/>
+               <span style="display:none">Encounter.meta.lastUpdated</span>
+               <span style="display:none">1</span>
+               <div style="display:block;margin:0.5em 2em;border-style:solid;border-width:1px;border-color:#A0A0A0;"
+                    id="d2e211.1.1">
+                  <span style="display:none">Encounter.meta.profile</span>
+                  <input type="image" onclick="deleteGroup(this)"
+                         src="http://fhir-dev.healthintersections.com.au/html-form-delete.png"
+                         alt="Remove"
+                         style="width:10px;height:10px;"/>
+                  <table>
+                     <tbody>
+                        <tr>
+                           <td style="vertical-align:top;">
+                              <span style="display:none;">Encounter.meta.profile.value</span> Profiles this resource claims to conform to</td>
+                           <td>
+                              <input name="Path:Encounter[1]Encounter.meta[1]Encounter.meta.profile[1]Encounter.meta.profile.value[1]"
+                                     type="text"/>
+                           </td>
+                        </tr>
+                     </tbody>
+                  </table>
+               </div>
+               <input style="margin:0em 2em;width:10px;height:10px;" type="image"
+                      onclick="addGroup('d2e211.1.1', this)"
+                      src="http://fhir-dev.healthintersections.com.au/html-form-add.png"
+                      alt="Add section"/>
+               <span style="display:none">Encounter.meta.profile</span>
+               <span style="display:none">1</span>
+               <div style="display:block;margin:0.5em 2em;border-style:solid;border-width:1px;border-color:#A0A0A0;"
+                    id="d2e242.1.1">
+                  <span style="display:none">Encounter.meta.security</span>
+                  <input type="image" onclick="deleteGroup(this)"
+                         src="http://fhir-dev.healthintersections.com.au/html-form-delete.png"
+                         alt="Remove"
+                         style="width:10px;height:10px;"/>
+                  <table>
+                     <tbody>
+                        <tr>
+                           <td style="vertical-align:top;">
+                              <span style="display:none;">Encounter.meta.security.value</span> Security Labels applied to this resource</td>
+                           <td/>
+                        </tr>
+                     </tbody>
+                  </table>
+               </div>
+               <input style="margin:0em 2em;width:10px;height:10px;" type="image"
+                      onclick="addGroup('d2e242.1.1', this)"
+                      src="http://fhir-dev.healthintersections.com.au/html-form-add.png"
+                      alt="Add section"/>
+               <span style="display:none">Encounter.meta.security</span>
+               <span style="display:none">1</span>
+               <div style="display:block;margin:0.5em 2em;border-style:solid;border-width:1px;border-color:#A0A0A0;"
+                    id="d2e273.1.1">
+                  <span style="display:none">Encounter.meta.tag</span>
+                  <input type="image" onclick="deleteGroup(this)"
+                         src="http://fhir-dev.healthintersections.com.au/html-form-delete.png"
+                         alt="Remove"
+                         style="width:10px;height:10px;"/>
+                  <table>
+                     <tbody>
+                        <tr>
+                           <td style="vertical-align:top;">
+                              <span style="display:none;">Encounter.meta.tag.value</span> Tags applied</td>
+                           <td/>
+                        </tr>
+                     </tbody>
+                  </table>
+               </div>
+               <input style="margin:0em 2em;width:10px;height:10px;" type="image"
+                      onclick="addGroup('d2e273.1.1', this)"
+                      src="http://fhir-dev.healthintersections.com.au/html-form-add.png"
+                      alt="Add section"/>
+               <span style="display:none">Encounter.meta.tag</span>
+               <span style="display:none">1</span>
+            </div>
+            <input style="margin:0em 2em;width:10px;height:10px;" type="image"
+                   onclick="addGroup('d2e104.1', this)"
+                   src="http://fhir-dev.healthintersections.com.au/html-form-add.png"
+                   alt="Add section"/>
+            <span style="display:none">Encounter.meta</span>
+            <span style="display:none">1</span>
+            <div style="display:block;margin:0.5em 2em;border-style:solid;border-width:1px;border-color:#A0A0A0;"
+                 id="d2e305.1">
+               <span style="display:none">Encounter.implicitRules</span>
+               <input type="image" onclick="deleteGroup(this)"
+                      src="http://fhir-dev.healthintersections.com.au/html-form-delete.png"
+                      alt="Remove"
+                      style="width:10px;height:10px;"/>
+               <table>
+                  <tbody>
+                     <tr>
+                        <td style="vertical-align:top;">
+                           <span style="display:none;">Encounter.implicitRules.value</span> A set of rules under which this content was created</td>
+                        <td>
+                           <input name="Path:Encounter[1]Encounter.implicitRules[1]Encounter.implicitRules.value[1]"
+                                  type="text"/>
+                        </td>
+                     </tr>
+                  </tbody>
+               </table>
+            </div>
+            <input style="margin:0em 2em;width:10px;height:10px;" type="image"
+                   onclick="addGroup('d2e305.1', this)"
+                   src="http://fhir-dev.healthintersections.com.au/html-form-add.png"
+                   alt="Add section"/>
+            <span style="display:none">Encounter.implicitRules</span>
+            <span style="display:none">1</span>
+            <div style="display:block;margin:0.5em 2em;border-style:solid;border-width:1px;border-color:#A0A0A0;"
+                 id="d2e336.1">
+               <span style="display:none">Encounter.language</span>
+               <input type="image" onclick="deleteGroup(this)"
+                      src="http://fhir-dev.healthintersections.com.au/html-form-delete.png"
+                      alt="Remove"
+                      style="width:10px;height:10px;"/>
+               <table>
+                  <tbody>
+                     <tr>
+                        <td style="vertical-align:top;">
+                           <span style="display:none;">Encounter.language.value</span> language</td>
+                        <td/>
+                     </tr>
+                  </tbody>
+               </table>
+            </div>
+            <input style="margin:0em 2em;width:10px;height:10px;" type="image"
+                   onclick="addGroup('d2e336.1', this)"
+                   src="http://fhir-dev.healthintersections.com.au/html-form-add.png"
+                   alt="Add section"/>
+            <span style="display:none">Encounter.language</span>
+            <span style="display:none">1</span>
+            <p>Text summary of the resource, for human interpretation</p>
+            <div style="display:block;margin:0.5em 2em;border-style:solid;border-width:1px;border-color:#A0A0A0;"
+                 id="d2e367.1">
+               <span style="display:none">Encounter.text</span>
+               <input type="image" onclick="deleteGroup(this)"
+                      src="http://fhir-dev.healthintersections.com.au/html-form-delete.png"
+                      alt="Remove"
+                      style="width:10px;height:10px;"/>
+            </div>
+            <input style="margin:0em 2em;width:10px;height:10px;" type="image"
+                   onclick="addGroup('d2e367.1', this)"
+                   src="http://fhir-dev.healthintersections.com.au/html-form-add.png"
+                   alt="Add section"/>
+            <span style="display:none">Encounter.text</span>
+            <span style="display:none">1</span>
+            <p>Contained, inline Resources</p>
+            <div style="display:block;margin:0.5em 2em;border-style:solid;border-width:1px;border-color:#A0A0A0;"
+                 id="d2e383.1">
+               <span style="display:none">Encounter.contained</span>
+               <input type="image" onclick="deleteGroup(this)"
+                      src="http://fhir-dev.healthintersections.com.au/html-form-delete.png"
+                      alt="Remove"
+                      style="width:10px;height:10px;"/>
+            </div>
+            <input style="margin:0em 2em;width:10px;height:10px;" type="image"
+                   onclick="addGroup('d2e383.1', this)"
+                   src="http://fhir-dev.healthintersections.com.au/html-form-add.png"
+                   alt="Add section"/>
+            <span style="display:none">Encounter.contained</span>
+            <span style="display:none">1</span>
+            <p>Identifier(s) by which this encounter is known</p>
+            <div style="display:block;margin:0.5em 2em;border-style:solid;border-width:1px;border-color:#A0A0A0;"
+                 id="d2e400.1">
+               <span style="display:none">Encounter.identifier</span>
+               <input type="image" onclick="deleteGroup(this)"
+                      src="http://fhir-dev.healthintersections.com.au/html-form-delete.png"
+                      alt="Remove"
+                      style="width:10px;height:10px;"/>
+               <table>
+                  <tbody>
+                     <tr>
+                        <td style="vertical-align:top;">
+                           <span style="display:none;">Encounter.identifier.label</span> label:</td>
+                        <td>
+                           <input name="Path:Encounter[1]Encounter.identifier[1]Encounter.identifier.label[1]"
+                                  type="text"/>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td style="vertical-align:top;">
+                           <span style="display:none;">Encounter.identifier.system</span> system:</td>
+                        <td>
+                           <input name="Path:Encounter[1]Encounter.identifier[1]Encounter.identifier.system[1]"
+                                  type="text"/>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td style="vertical-align:top;">
+                           <span style="display:none;">Encounter.identifier.value</span> value:</td>
+                        <td>
+                           <input name="Path:Encounter[1]Encounter.identifier[1]Encounter.identifier.value[1]"
+                                  type="text"/>
+                        </td>
+                     </tr>
+                  </tbody>
+               </table>
+            </div>
+            <input style="margin:0em 2em;width:10px;height:10px;" type="image"
+                   onclick="addGroup('d2e400.1', this)"
+                   src="http://fhir-dev.healthintersections.com.au/html-form-add.png"
+                   alt="Add section"/>
+            <span style="display:none">Encounter.identifier</span>
+            <span style="display:none">1</span>
+            <div style="display:block;margin:0.5em 2em;border-style:solid;border-width:1px;border-color:#A0A0A0;"
+                 id="d2e455.1">
+               <span style="display:none">Encounter.status</span>
+               <input type="image" onclick="deleteGroup(this)"
+                      src="http://fhir-dev.healthintersections.com.au/html-form-delete.png"
+                      alt="Remove"
+                      style="width:10px;height:10px;"/>
+               <table>
+                  <tbody>
+                     <tr>
+                        <td style="vertical-align:top;">
+                           <span style="display:none;">Encounter.status.value</span> status</td>
+                        <td/>
+                     </tr>
+                  </tbody>
+               </table>
+            </div>
+            <input style="margin:0em 2em;width:10px;height:10px;" type="image"
+                   onclick="addGroup('d2e455.1', this)"
+                   src="http://fhir-dev.healthintersections.com.au/html-form-add.png"
+                   alt="Add section"/>
+            <span style="display:none">Encounter.status</span>
+            <span style="display:none">1</span>
+            <h2> List of Encounter statuses</h2>
+            <div style="display:block;margin:0.5em 2em;border-style:solid;border-width:1px;border-color:#A0A0A0;"
+                 id="d2e488.1">
+               <span style="display:none">Encounter.statusHistory</span>
+               <input type="image" onclick="deleteGroup(this)"
+                      src="http://fhir-dev.healthintersections.com.au/html-form-delete.png"
+                      alt="Remove"
+                      style="width:10px;height:10px;"/>
+               <div style="display:block;margin:0.5em 2em;border-style:solid;border-width:1px;border-color:#A0A0A0;"
+                    id="d2e504.1.1">
+                  <span style="display:none">Encounter.statusHistory.id</span>
+                  <input type="image" onclick="deleteGroup(this)"
+                         src="http://fhir-dev.healthintersections.com.au/html-form-delete.png"
+                         alt="Remove"
+                         style="width:10px;height:10px;"/>
+                  <table>
+                     <tbody>
+                        <tr>
+                           <td style="vertical-align:top;">
+                              <span style="display:none;">Encounter.statusHistory.id.value</span> xml:id (or equivalent in JSON)</td>
+                           <td>
+                              <input name="Path:Encounter[1]Encounter.statusHistory[1]Encounter.statusHistory.id[1]Encounter.statusHistory.id.value[1]"
+                                     type="text"/>
+                           </td>
+                        </tr>
+                     </tbody>
+                  </table>
+               </div>
+               <input style="margin:0em 2em;width:10px;height:10px;" type="image"
+                      onclick="addGroup('d2e504.1.1', this)"
+                      src="http://fhir-dev.healthintersections.com.au/html-form-add.png"
+                      alt="Add section"/>
+               <span style="display:none">Encounter.statusHistory.id</span>
+               <span style="display:none">1</span>
+               <div style="display:block;margin:0.5em 2em;border-style:solid;border-width:1px;border-color:#A0A0A0;"
+                    id="d2e535.1.1">
+                  <span style="display:none">Encounter.statusHistory.status</span>
+                  <input type="image" onclick="deleteGroup(this)"
+                         src="http://fhir-dev.healthintersections.com.au/html-form-delete.png"
+                         alt="Remove"
+                         style="width:10px;height:10px;"/>
+                  <table>
+                     <tbody>
+                        <tr>
+                           <td style="vertical-align:top;">
+                              <span style="display:none;">Encounter.statusHistory.status.value</span> status</td>
+                           <td/>
+                        </tr>
+                     </tbody>
+                  </table>
+               </div>
+               <input style="margin:0em 2em;width:10px;height:10px;" type="image"
+                      onclick="addGroup('d2e535.1.1', this)"
+                      src="http://fhir-dev.healthintersections.com.au/html-form-add.png"
+                      alt="Add section"/>
+               <span style="display:none">Encounter.statusHistory.status</span>
+               <span style="display:none">1</span>
+               <p>The time that the episode was in the specified status</p>
+               <div style="display:block;margin:0.5em 2em;border-style:solid;border-width:1px;border-color:#A0A0A0;"
+                    id="d2e568.1.1">
+                  <span style="display:none">Encounter.statusHistory.period</span>
+                  <input type="image" onclick="deleteGroup(this)"
+                         src="http://fhir-dev.healthintersections.com.au/html-form-delete.png"
+                         alt="Remove"
+                         style="width:10px;height:10px;"/>
+                  <table>
+                     <tbody>
+                        <tr>
+                           <td style="vertical-align:top;">
+                              <span style="display:none;">Encounter.statusHistory.period.low</span> start:</td>
+                           <td>
+                              <input name="Path:Encounter[1]Encounter.statusHistory[1]Encounter.statusHistory.period[1]Encounter.statusHistory.period.low[1]"
+                                     type="text"
+                                     onblur="checkDateTime(this)"
+                                     maxlength="26"/>
+                           </td>
+                        </tr>
+                        <tr>
+                           <td style="vertical-align:top;">
+                              <span style="display:none;">Encounter.statusHistory.period.end</span> end:</td>
+                           <td>
+                              <input name="Path:Encounter[1]Encounter.statusHistory[1]Encounter.statusHistory.period[1]Encounter.statusHistory.period.end[1]"
+                                     type="text"
+                                     onblur="checkDateTime(this)"
+                                     maxlength="26"/>
+                           </td>
+                        </tr>
+                     </tbody>
+                  </table>
+               </div>
+               <input style="margin:0em 2em;width:10px;height:10px;" type="image"
+                      onclick="addGroup('d2e568.1.1', this)"
+                      src="http://fhir-dev.healthintersections.com.au/html-form-add.png"
+                      alt="Add section"/>
+               <span style="display:none">Encounter.statusHistory.period</span>
+               <span style="display:none">1</span>
+            </div>
+            <input style="margin:0em 2em;width:10px;height:10px;" type="image"
+                   onclick="addGroup('d2e488.1', this)"
+                   src="http://fhir-dev.healthintersections.com.au/html-form-add.png"
+                   alt="Add section"/>
+            <span style="display:none">Encounter.statusHistory</span>
+            <span style="display:none">1</span>
+            <div style="display:block;margin:0.5em 2em;border-style:solid;border-width:1px;border-color:#A0A0A0;"
+                 id="d2e615.1">
+               <span style="display:none">Encounter.class</span>
+               <input type="image" onclick="deleteGroup(this)"
+                      src="http://fhir-dev.healthintersections.com.au/html-form-delete.png"
+                      alt="Remove"
+                      style="width:10px;height:10px;"/>
+               <table>
+                  <tbody>
+                     <tr>
+                        <td style="vertical-align:top;">
+                           <span style="display:none;">Encounter.class.value</span> class</td>
+                        <td/>
+                     </tr>
+                  </tbody>
+               </table>
+            </div>
+            <input style="margin:0em 2em;width:10px;height:10px;" type="image"
+                   onclick="addGroup('d2e615.1', this)"
+                   src="http://fhir-dev.healthintersections.com.au/html-form-add.png"
+                   alt="Add section"/>
+            <span style="display:none">Encounter.class</span>
+            <span style="display:none">1</span>
+            <p>Specific type of encounter</p>
+            <div style="display:block;margin:0.5em 2em;border-style:solid;border-width:1px;border-color:#A0A0A0;"
+                 id="d2e648.1">
+               <span style="display:none">Encounter.type</span>
+               <input type="image" onclick="deleteGroup(this)"
+                      src="http://fhir-dev.healthintersections.com.au/html-form-delete.png"
+                      alt="Remove"
+                      style="width:10px;height:10px;"/>
+               <table>
+                  <tbody>
+                     <tr>
+                        <td style="vertical-align:top;">
+                           <span style="display:none;">Encounter.type.coding</span> code:</td>
+                        <td/>
+                     </tr>
+                     <tr>
+                        <td style="vertical-align:top;">
+                           <span style="display:none;">Encounter.type.text</span> text:</td>
+                        <td>
+                           <input name="Path:Encounter[1]Encounter.type[1]Encounter.type.text[1]" type="text"/>
+                        </td>
+                     </tr>
+                  </tbody>
+               </table>
+            </div>
+            <input style="margin:0em 2em;width:10px;height:10px;" type="image"
+                   onclick="addGroup('d2e648.1', this)"
+                   src="http://fhir-dev.healthintersections.com.au/html-form-add.png"
+                   alt="Add section"/>
+            <span style="display:none">Encounter.type</span>
+            <span style="display:none">1</span>
+            <div style="display:block;margin:0.5em 2em;border-style:solid;border-width:1px;border-color:#A0A0A0;"
+                 id="d2e692.1">
+               <span style="display:none">Encounter.patient</span>
+               <input type="image" onclick="deleteGroup(this)"
+                      src="http://fhir-dev.healthintersections.com.au/html-form-delete.png"
+                      alt="Remove"
+                      style="width:10px;height:10px;"/>
+               <table>
+                  <tbody>
+                     <tr>
+                        <td style="vertical-align:top;">
+                           <span style="display:none;">Encounter.patient.value</span> The patient present at the encounter</td>
+                        <td>
+                           <table style="table-layout:fixed;width=100%">
+                              <col style="width:20px"/>
+                              <col style="width:auto"/>
+                              <col style="width:0px;visibility:collapse;"/>
+                              <tbody/>
+                           </table>
+                           <button onclick="javascript:initReferenceLookup('/Patient?subject=$subj&amp;patient=$subj&amp;encounter=$encounter', 'The patient present at the encounter', this.previousElementSibling, 1)">Edit</button>
+                           <input name="Path:Encounter.patient.value" tabindex="text"/>
+                        </td>
+                     </tr>
+                  </tbody>
+               </table>
+            </div>
+            <input style="margin:0em 2em;width:10px;height:10px;" type="image"
+                   onclick="addGroup('d2e692.1', this)"
+                   src="http://fhir-dev.healthintersections.com.au/html-form-add.png"
+                   alt="Add section"/>
+            <span style="display:none">Encounter.patient</span>
+            <span style="display:none">1</span>
+            <div style="display:block;margin:0.5em 2em;border-style:solid;border-width:1px;border-color:#A0A0A0;"
+                 id="d2e729.1">
+               <span style="display:none">Encounter.episodeOfCare</span>
+               <input type="image" onclick="deleteGroup(this)"
+                      src="http://fhir-dev.healthintersections.com.au/html-form-delete.png"
+                      alt="Remove"
+                      style="width:10px;height:10px;"/>
+               <table>
+                  <tbody>
+                     <tr>
+                        <td style="vertical-align:top;">
+                           <span style="display:none;">Encounter.episodeOfCare.value</span> An episode of care that this encounter should be recorded against</td>
+                        <td>
+                           <table style="table-layout:fixed;width=100%">
+                              <col style="width:20px"/>
+                              <col style="width:auto"/>
+                              <col style="width:0px;visibility:collapse;"/>
+                              <tbody/>
+                           </table>
+                           <button onclick="javascript:initReferenceLookup('/EpisodeOfCare?subject=$subj&amp;patient=$subj&amp;encounter=$encounter', 'An episode of care that this encounter should be recorded against', this.previousElementSibling, 1)">Edit</button>
+                           <input name="Path:Encounter.episodeOfCare.value" tabindex="text"/>
+                        </td>
+                     </tr>
+                  </tbody>
+               </table>
+            </div>
+            <input style="margin:0em 2em;width:10px;height:10px;" type="image"
+                   onclick="addGroup('d2e729.1', this)"
+                   src="http://fhir-dev.healthintersections.com.au/html-form-add.png"
+                   alt="Add section"/>
+            <span style="display:none">Encounter.episodeOfCare</span>
+            <span style="display:none">1</span>
+            <h2> List of participants involved in the encounter</h2>
+            <div style="display:block;margin:0.5em 2em;border-style:solid;border-width:1px;border-color:#A0A0A0;"
+                 id="d2e765.1">
+               <span style="display:none">Encounter.participant</span>
+               <input type="image" onclick="deleteGroup(this)"
+                      src="http://fhir-dev.healthintersections.com.au/html-form-delete.png"
+                      alt="Remove"
+                      style="width:10px;height:10px;"/>
+               <div style="display:block;margin:0.5em 2em;border-style:solid;border-width:1px;border-color:#A0A0A0;"
+                    id="d2e781.1.1">
+                  <span style="display:none">Encounter.participant.id</span>
+                  <input type="image" onclick="deleteGroup(this)"
+                         src="http://fhir-dev.healthintersections.com.au/html-form-delete.png"
+                         alt="Remove"
+                         style="width:10px;height:10px;"/>
+                  <table>
+                     <tbody>
+                        <tr>
+                           <td style="vertical-align:top;">
+                              <span style="display:none;">Encounter.participant.id.value</span> xml:id (or equivalent in JSON)</td>
+                           <td>
+                              <input name="Path:Encounter[1]Encounter.participant[1]Encounter.participant.id[1]Encounter.participant.id.value[1]"
+                                     type="text"/>
+                           </td>
+                        </tr>
+                     </tbody>
+                  </table>
+               </div>
+               <input style="margin:0em 2em;width:10px;height:10px;" type="image"
+                      onclick="addGroup('d2e781.1.1', this)"
+                      src="http://fhir-dev.healthintersections.com.au/html-form-add.png"
+                      alt="Add section"/>
+               <span style="display:none">Encounter.participant.id</span>
+               <span style="display:none">1</span>
+               <p>Role of participant in encounter</p>
+               <div style="display:block;margin:0.5em 2em;border-style:solid;border-width:1px;border-color:#A0A0A0;"
+                    id="d2e812.1.1">
+                  <span style="display:none">Encounter.participant.type</span>
+                  <input type="image" onclick="deleteGroup(this)"
+                         src="http://fhir-dev.healthintersections.com.au/html-form-delete.png"
+                         alt="Remove"
+                         style="width:10px;height:10px;"/>
+                  <table>
+                     <tbody>
+                        <tr>
+                           <td style="vertical-align:top;">
+                              <span style="display:none;">Encounter.participant.type.coding</span> code:</td>
+                           <td/>
+                        </tr>
+                        <tr>
+                           <td style="vertical-align:top;">
+                              <span style="display:none;">Encounter.participant.type.text</span> text:</td>
+                           <td>
+                              <input name="Path:Encounter[1]Encounter.participant[1]Encounter.participant.type[1]Encounter.participant.type.text[1]"
+                                     type="text"/>
+                           </td>
+                        </tr>
+                     </tbody>
+                  </table>
+               </div>
+               <input style="margin:0em 2em;width:10px;height:10px;" type="image"
+                      onclick="addGroup('d2e812.1.1', this)"
+                      src="http://fhir-dev.healthintersections.com.au/html-form-add.png"
+                      alt="Add section"/>
+               <span style="display:none">Encounter.participant.type</span>
+               <span style="display:none">1</span>
+               <p>Period of time during the encounter participant was present</p>
+               <div style="display:block;margin:0.5em 2em;border-style:solid;border-width:1px;border-color:#A0A0A0;"
+                    id="d2e856.1.1">
+                  <span style="display:none">Encounter.participant.period</span>
+                  <input type="image" onclick="deleteGroup(this)"
+                         src="http://fhir-dev.healthintersections.com.au/html-form-delete.png"
+                         alt="Remove"
+                         style="width:10px;height:10px;"/>
+                  <table>
+                     <tbody>
+                        <tr>
+                           <td style="vertical-align:top;">
+                              <span style="display:none;">Encounter.participant.period.low</span> start:</td>
+                           <td>
+                              <input name="Path:Encounter[1]Encounter.participant[1]Encounter.participant.period[1]Encounter.participant.period.low[1]"
+                                     type="text"
+                                     onblur="checkDateTime(this)"
+                                     maxlength="26"/>
+                           </td>
+                        </tr>
+                        <tr>
+                           <td style="vertical-align:top;">
+                              <span style="display:none;">Encounter.participant.period.end</span> end:</td>
+                           <td>
+                              <input name="Path:Encounter[1]Encounter.participant[1]Encounter.participant.period[1]Encounter.participant.period.end[1]"
+                                     type="text"
+                                     onblur="checkDateTime(this)"
+                                     maxlength="26"/>
+                           </td>
+                        </tr>
+                     </tbody>
+                  </table>
+               </div>
+               <input style="margin:0em 2em;width:10px;height:10px;" type="image"
+                      onclick="addGroup('d2e856.1.1', this)"
+                      src="http://fhir-dev.healthintersections.com.au/html-form-add.png"
+                      alt="Add section"/>
+               <span style="display:none">Encounter.participant.period</span>
+               <span style="display:none">1</span>
+               <p>Persons involved in the encounter other than the patient</p>
+               <div style="display:block;margin:0.5em 2em;border-style:solid;border-width:1px;border-color:#A0A0A0;"
+                    id="d2e900.1.1">
+                  <span style="display:none">Encounter.participant.individual</span>
+                  <input type="image" onclick="deleteGroup(this)"
+                         src="http://fhir-dev.healthintersections.com.au/html-form-delete.png"
+                         alt="Remove"
+                         style="width:10px;height:10px;"/>
+                  <table>
+                     <tbody>
+                        <tr>
+                           <td style="vertical-align:top;">
+                              <span style="display:none;">Encounter.participant.individual._type</span> type</td>
+                           <td/>
+                        </tr>
+                     </tbody>
+                  </table>
+                  <div style="display:block;margin:0.5em 2em;border-style:solid;border-width:1px;border-color:#A0A0A0;"
+                       id="d2e932.1.1.1">
+                     <span style="display:none">Encounter.participant.individual._Practitioner</span>
+                     <input type="image" onclick="deleteGroup(this)"
+                            src="http://fhir-dev.healthintersections.com.au/html-form-delete.png"
+                            alt="Remove"
+                            style="width:10px;height:10px;"/>
+                     <table>
+                        <tbody>
+                           <tr>
+                              <td style="vertical-align:top;">
+                                 <span style="display:none;">Encounter.participant.individual._Practitioner.value</span> Practitioner</td>
+                              <td>
+                                 <table style="table-layout:fixed;width=100%">
+                                    <col style="width:20px"/>
+                                    <col style="width:auto"/>
+                                    <col style="width:0px;visibility:collapse;"/>
+                                    <tbody/>
+                                 </table>
+                                 <button onclick="javascript:initReferenceLookup('/Practitioner?subject=$subj&amp;patient=$subj&amp;encounter=$encounter', 'Practitioner', this.previousElementSibling, 1)">Edit</button>
+                                 <input name="Path:Encounter.participant.individual._Practitioner.value"
+                                        tabindex="text"/>
+                              </td>
+                           </tr>
+                        </tbody>
+                     </table>
+                  </div>
+                  <input style="margin:0em 2em;width:10px;height:10px;" type="image"
+                         onclick="addGroup('d2e932.1.1.1', this)"
+                         src="http://fhir-dev.healthintersections.com.au/html-form-add.png"
+                         alt="Add section"/>
+                  <span style="display:none">Encounter.participant.individual._Practitioner</span>
+                  <span style="display:none">1</span>
+                  <div style="display:block;margin:0.5em 2em;border-style:solid;border-width:1px;border-color:#A0A0A0;"
+                       id="d2e960.1.1.1">
+                     <span style="display:none">Encounter.participant.individual._RelatedPerson</span>
+                     <input type="image" onclick="deleteGroup(this)"
+                            src="http://fhir-dev.healthintersections.com.au/html-form-delete.png"
+                            alt="Remove"
+                            style="width:10px;height:10px;"/>
+                     <table>
+                        <tbody>
+                           <tr>
+                              <td style="vertical-align:top;">
+                                 <span style="display:none;">Encounter.participant.individual._RelatedPerson.value</span> RelatedPerson</td>
+                              <td>
+                                 <table style="table-layout:fixed;width=100%">
+                                    <col style="width:20px"/>
+                                    <col style="width:auto"/>
+                                    <col style="width:0px;visibility:collapse;"/>
+                                    <tbody/>
+                                 </table>
+                                 <button onclick="javascript:initReferenceLookup('/RelatedPerson?subject=$subj&amp;patient=$subj&amp;encounter=$encounter', 'RelatedPerson', this.previousElementSibling, 1)">Edit</button>
+                                 <input name="Path:Encounter.participant.individual._RelatedPerson.value"
+                                        tabindex="text"/>
+                              </td>
+                           </tr>
+                        </tbody>
+                     </table>
+                  </div>
+                  <input style="margin:0em 2em;width:10px;height:10px;" type="image"
+                         onclick="addGroup('d2e960.1.1.1', this)"
+                         src="http://fhir-dev.healthintersections.com.au/html-form-add.png"
+                         alt="Add section"/>
+                  <span style="display:none">Encounter.participant.individual._RelatedPerson</span>
+                  <span style="display:none">1</span>
+               </div>
+               <input style="margin:0em 2em;width:10px;height:10px;" type="image"
+                      onclick="addGroup('d2e900.1.1', this)"
+                      src="http://fhir-dev.healthintersections.com.au/html-form-add.png"
+                      alt="Add section"/>
+               <span style="display:none">Encounter.participant.individual</span>
+               <span style="display:none">1</span>
+            </div>
+            <input style="margin:0em 2em;width:10px;height:10px;" type="image"
+                   onclick="addGroup('d2e765.1', this)"
+                   src="http://fhir-dev.healthintersections.com.au/html-form-add.png"
+                   alt="Add section"/>
+            <span style="display:none">Encounter.participant</span>
+            <span style="display:none">1</span>
+            <div style="display:block;margin:0.5em 2em;border-style:solid;border-width:1px;border-color:#A0A0A0;"
+                 id="d2e991.1">
+               <span style="display:none">Encounter.fulfills</span>
+               <input type="image" onclick="deleteGroup(this)"
+                      src="http://fhir-dev.healthintersections.com.au/html-form-delete.png"
+                      alt="Remove"
+                      style="width:10px;height:10px;"/>
+               <table>
+                  <tbody>
+                     <tr>
+                        <td style="vertical-align:top;">
+                           <span style="display:none;">Encounter.fulfills.value</span> The appointment that scheduled this encounter</td>
+                        <td>
+                           <table style="table-layout:fixed;width=100%">
+                              <col style="width:20px"/>
+                              <col style="width:auto"/>
+                              <col style="width:0px;visibility:collapse;"/>
+                              <tbody/>
+                           </table>
+                           <button onclick="javascript:initReferenceLookup('/Appointment?subject=$subj&amp;patient=$subj&amp;encounter=$encounter', 'The appointment that scheduled this encounter', this.previousElementSibling, 1)">Edit</button>
+                           <input name="Path:Encounter.fulfills.value" tabindex="text"/>
+                        </td>
+                     </tr>
+                  </tbody>
+               </table>
+            </div>
+            <input style="margin:0em 2em;width:10px;height:10px;" type="image"
+                   onclick="addGroup('d2e991.1', this)"
+                   src="http://fhir-dev.healthintersections.com.au/html-form-add.png"
+                   alt="Add section"/>
+            <span style="display:none">Encounter.fulfills</span>
+            <span style="display:none">1</span>
+            <p>The start and end time of the encounter</p>
+            <div style="display:block;margin:0.5em 2em;border-style:solid;border-width:1px;border-color:#A0A0A0;"
+                 id="d2e1027.1">
+               <span style="display:none">Encounter.period</span>
+               <input type="image" onclick="deleteGroup(this)"
+                      src="http://fhir-dev.healthintersections.com.au/html-form-delete.png"
+                      alt="Remove"
+                      style="width:10px;height:10px;"/>
+               <table>
+                  <tbody>
+                     <tr>
+                        <td style="vertical-align:top;">
+                           <span style="display:none;">Encounter.period.low</span> start:</td>
+                        <td>
+                           <input name="Path:Encounter[1]Encounter.period[1]Encounter.period.low[1]" type="text"
+                                  onblur="checkDateTime(this)"
+                                  maxlength="26"/>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td style="vertical-align:top;">
+                           <span style="display:none;">Encounter.period.end</span> end:</td>
+                        <td>
+                           <input name="Path:Encounter[1]Encounter.period[1]Encounter.period.end[1]" type="text"
+                                  onblur="checkDateTime(this)"
+                                  maxlength="26"/>
+                        </td>
+                     </tr>
+                  </tbody>
+               </table>
+            </div>
+            <input style="margin:0em 2em;width:10px;height:10px;" type="image"
+                   onclick="addGroup('d2e1027.1', this)"
+                   src="http://fhir-dev.healthintersections.com.au/html-form-add.png"
+                   alt="Add section"/>
+            <span style="display:none">Encounter.period</span>
+            <span style="display:none">1</span>
+            <p>Quantity of time the encounter lasted</p>
+            <div style="display:block;margin:0.5em 2em;border-style:solid;border-width:1px;border-color:#A0A0A0;"
+                 id="d2e1071.1">
+               <span style="display:none">Encounter.length</span>
+               <input type="image" onclick="deleteGroup(this)"
+                      src="http://fhir-dev.healthintersections.com.au/html-form-delete.png"
+                      alt="Remove"
+                      style="width:10px;height:10px;"/>
+               <table>
+                  <tbody>
+                     <tr>
+                        <td style="vertical-align:top;">
+                           <span style="display:none;">Encounter.length.value</span> value:</td>
+                        <td>
+                           <input name="Path:Encounter[1]Encounter.length[1]Encounter.length.value[1]"
+                                  type="text"
+                                  onblur="checkDecimal(this)"/>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td style="vertical-align:top;">
+                           <span style="display:none;">Encounter.length.units</span> units:</td>
+                        <td>
+                           <input name="Path:Encounter[1]Encounter.length[1]Encounter.length.units[1]"
+                                  type="text"/>
+                        </td>
+                     </tr>
+                  </tbody>
+               </table>
+            </div>
+            <input style="margin:0em 2em;width:10px;height:10px;" type="image"
+                   onclick="addGroup('d2e1071.1', this)"
+                   src="http://fhir-dev.healthintersections.com.au/html-form-add.png"
+                   alt="Add section"/>
+            <span style="display:none">Encounter.length</span>
+            <span style="display:none">1</span>
+            <p>Reason the encounter takes place (code)</p>
+            <div style="display:block;margin:0.5em 2em;border-style:solid;border-width:1px;border-color:#A0A0A0;"
+                 id="d2e1115.1">
+               <span style="display:none">Encounter.reason</span>
+               <input type="image" onclick="deleteGroup(this)"
+                      src="http://fhir-dev.healthintersections.com.au/html-form-delete.png"
+                      alt="Remove"
+                      style="width:10px;height:10px;"/>
+               <table>
+                  <tbody>
+                     <tr>
+                        <td style="vertical-align:top;">
+                           <span style="display:none;">Encounter.reason.coding</span> code:</td>
+                        <td/>
+                     </tr>
+                     <tr>
+                        <td style="vertical-align:top;">
+                           <span style="display:none;">Encounter.reason.text</span> text:</td>
+                        <td>
+                           <input name="Path:Encounter[1]Encounter.reason[1]Encounter.reason.text[1]" type="text"/>
+                        </td>
+                     </tr>
+                  </tbody>
+               </table>
+            </div>
+            <input style="margin:0em 2em;width:10px;height:10px;" type="image"
+                   onclick="addGroup('d2e1115.1', this)"
+                   src="http://fhir-dev.healthintersections.com.au/html-form-add.png"
+                   alt="Add section"/>
+            <span style="display:none">Encounter.reason</span>
+            <span style="display:none">1</span>
+            <div style="display:block;margin:0.5em 2em;border-style:solid;border-width:1px;border-color:#A0A0A0;"
+                 id="d2e1160.1">
+               <span style="display:none">Encounter.indication</span>
+               <input type="image" onclick="deleteGroup(this)"
+                      src="http://fhir-dev.healthintersections.com.au/html-form-delete.png"
+                      alt="Remove"
+                      style="width:10px;height:10px;"/>
+               <table>
+                  <tbody>
+                     <tr>
+                        <td style="vertical-align:top;">
+                           <span style="display:none;">Encounter.indication.value</span> Reason the encounter takes place (resource)</td>
+                        <td>
+                           <table style="table-layout:fixed;width=100%">
+                              <col style="width:20px"/>
+                              <col style="width:auto"/>
+                              <col style="width:0px;visibility:collapse;"/>
+                              <tbody/>
+                           </table>
+                           <button onclick="javascript:initReferenceLookup('/_search?subject=$subj&amp;patient=$subj&amp;encounter=$encounter', 'Reason the encounter takes place (resource)', this.previousElementSibling, 1)">Edit</button>
+                           <input name="Path:Encounter.indication.value" tabindex="text"/>
+                        </td>
+                     </tr>
+                  </tbody>
+               </table>
+            </div>
+            <input style="margin:0em 2em;width:10px;height:10px;" type="image"
+                   onclick="addGroup('d2e1160.1', this)"
+                   src="http://fhir-dev.healthintersections.com.au/html-form-add.png"
+                   alt="Add section"/>
+            <span style="display:none">Encounter.indication</span>
+            <span style="display:none">1</span>
+            <p>Indicates the urgency of the encounter</p>
+            <div style="display:block;margin:0.5em 2em;border-style:solid;border-width:1px;border-color:#A0A0A0;"
+                 id="d2e1196.1">
+               <span style="display:none">Encounter.priority</span>
+               <input type="image" onclick="deleteGroup(this)"
+                      src="http://fhir-dev.healthintersections.com.au/html-form-delete.png"
+                      alt="Remove"
+                      style="width:10px;height:10px;"/>
+               <table>
+                  <tbody>
+                     <tr>
+                        <td style="vertical-align:top;">
+                           <span style="display:none;">Encounter.priority.coding</span> code:</td>
+                        <td/>
+                     </tr>
+                     <tr>
+                        <td style="vertical-align:top;">
+                           <span style="display:none;">Encounter.priority.text</span> text:</td>
+                        <td>
+                           <input name="Path:Encounter[1]Encounter.priority[1]Encounter.priority.text[1]"
+                                  type="text"/>
+                        </td>
+                     </tr>
+                  </tbody>
+               </table>
+            </div>
+            <input style="margin:0em 2em;width:10px;height:10px;" type="image"
+                   onclick="addGroup('d2e1196.1', this)"
+                   src="http://fhir-dev.healthintersections.com.au/html-form-add.png"
+                   alt="Add section"/>
+            <span style="display:none">Encounter.priority</span>
+            <span style="display:none">1</span>
+            <h2> Details about an admission to a clinic</h2>
+            <div style="display:block;margin:0.5em 2em;border-style:solid;border-width:1px;border-color:#A0A0A0;"
+                 id="d2e1240.1">
+               <span style="display:none">Encounter.hospitalization</span>
+               <input type="image" onclick="deleteGroup(this)"
+                      src="http://fhir-dev.healthintersections.com.au/html-form-delete.png"
+                      alt="Remove"
+                      style="width:10px;height:10px;"/>
+               <div style="display:block;margin:0.5em 2em;border-style:solid;border-width:1px;border-color:#A0A0A0;"
+                    id="d2e1253.1.1">
+                  <span style="display:none">Encounter.hospitalization.id</span>
+                  <input type="image" onclick="deleteGroup(this)"
+                         src="http://fhir-dev.healthintersections.com.au/html-form-delete.png"
+                         alt="Remove"
+                         style="width:10px;height:10px;"/>
+                  <table>
+                     <tbody>
+                        <tr>
+                           <td style="vertical-align:top;">
+                              <span style="display:none;">Encounter.hospitalization.id.value</span> xml:id (or equivalent in JSON)</td>
+                           <td>
+                              <input name="Path:Encounter[1]Encounter.hospitalization[1]Encounter.hospitalization.id[1]Encounter.hospitalization.id.value[1]"
+                                     type="text"/>
+                           </td>
+                        </tr>
+                     </tbody>
+                  </table>
+               </div>
+               <input style="margin:0em 2em;width:10px;height:10px;" type="image"
+                      onclick="addGroup('d2e1253.1.1', this)"
+                      src="http://fhir-dev.healthintersections.com.au/html-form-add.png"
+                      alt="Add section"/>
+               <span style="display:none">Encounter.hospitalization.id</span>
+               <span style="display:none">1</span>
+               <p>Pre-admission identifier</p>
+               <div style="display:block;margin:0.5em 2em;border-style:solid;border-width:1px;border-color:#A0A0A0;"
+                    id="d2e1285.1.1">
+                  <span style="display:none">Encounter.hospitalization.preAdmissionIdentifier</span>
+                  <input type="image" onclick="deleteGroup(this)"
+                         src="http://fhir-dev.healthintersections.com.au/html-form-delete.png"
+                         alt="Remove"
+                         style="width:10px;height:10px;"/>
+                  <table>
+                     <tbody>
+                        <tr>
+                           <td style="vertical-align:top;">
+                              <span style="display:none;">Encounter.hospitalization.preAdmissionIdentifier.label</span> label:</td>
+                           <td>
+                              <input name="Path:Encounter[1]Encounter.hospitalization[1]Encounter.hospitalization.preAdmissionIdentifier[1]Encounter.hospitalization.preAdmissionIdentifier.label[1]"
+                                     type="text"/>
+                           </td>
+                        </tr>
+                        <tr>
+                           <td style="vertical-align:top;">
+                              <span style="display:none;">Encounter.hospitalization.preAdmissionIdentifier.system</span> system:</td>
+                           <td>
+                              <input name="Path:Encounter[1]Encounter.hospitalization[1]Encounter.hospitalization.preAdmissionIdentifier[1]Encounter.hospitalization.preAdmissionIdentifier.system[1]"
+                                     type="text"/>
+                           </td>
+                        </tr>
+                        <tr>
+                           <td style="vertical-align:top;">
+                              <span style="display:none;">Encounter.hospitalization.preAdmissionIdentifier.value</span> value:</td>
+                           <td>
+                              <input name="Path:Encounter[1]Encounter.hospitalization[1]Encounter.hospitalization.preAdmissionIdentifier[1]Encounter.hospitalization.preAdmissionIdentifier.value[1]"
+                                     type="text"/>
+                           </td>
+                        </tr>
+                     </tbody>
+                  </table>
+               </div>
+               <input style="margin:0em 2em;width:10px;height:10px;" type="image"
+                      onclick="addGroup('d2e1285.1.1', this)"
+                      src="http://fhir-dev.healthintersections.com.au/html-form-add.png"
+                      alt="Add section"/>
+               <span style="display:none">Encounter.hospitalization.preAdmissionIdentifier</span>
+               <span style="display:none">1</span>
+               <div style="display:block;margin:0.5em 2em;border-style:solid;border-width:1px;border-color:#A0A0A0;"
+                    id="d2e1340.1.1">
+                  <span style="display:none">Encounter.hospitalization.origin</span>
+                  <input type="image" onclick="deleteGroup(this)"
+                         src="http://fhir-dev.healthintersections.com.au/html-form-delete.png"
+                         alt="Remove"
+                         style="width:10px;height:10px;"/>
+                  <table>
+                     <tbody>
+                        <tr>
+                           <td style="vertical-align:top;">
+                              <span style="display:none;">Encounter.hospitalization.origin.value</span> The location from which the patient came before admission</td>
+                           <td>
+                              <table style="table-layout:fixed;width=100%">
+                                 <col style="width:20px"/>
+                                 <col style="width:auto"/>
+                                 <col style="width:0px;visibility:collapse;"/>
+                                 <tbody/>
+                              </table>
+                              <button onclick="javascript:initReferenceLookup('/Location?subject=$subj&amp;patient=$subj&amp;encounter=$encounter', 'The location from which the patient came before admission', this.previousElementSibling, 1)">Edit</button>
+                              <input name="Path:Encounter.hospitalization.origin.value" tabindex="text"/>
+                           </td>
+                        </tr>
+                     </tbody>
+                  </table>
+               </div>
+               <input style="margin:0em 2em;width:10px;height:10px;" type="image"
+                      onclick="addGroup('d2e1340.1.1', this)"
+                      src="http://fhir-dev.healthintersections.com.au/html-form-add.png"
+                      alt="Add section"/>
+               <span style="display:none">Encounter.hospitalization.origin</span>
+               <span style="display:none">1</span>
+               <p>From where patient was admitted (physician referral, transfer)</p>
+               <div style="display:block;margin:0.5em 2em;border-style:solid;border-width:1px;border-color:#A0A0A0;"
+                    id="d2e1376.1.1">
+                  <span style="display:none">Encounter.hospitalization.admitSource</span>
+                  <input type="image" onclick="deleteGroup(this)"
+                         src="http://fhir-dev.healthintersections.com.au/html-form-delete.png"
+                         alt="Remove"
+                         style="width:10px;height:10px;"/>
+                  <table>
+                     <tbody>
+                        <tr>
+                           <td style="vertical-align:top;">
+                              <span style="display:none;">Encounter.hospitalization.admitSource.coding</span> code:</td>
+                           <td/>
+                        </tr>
+                        <tr>
+                           <td style="vertical-align:top;">
+                              <span style="display:none;">Encounter.hospitalization.admitSource.text</span> text:</td>
+                           <td>
+                              <input name="Path:Encounter[1]Encounter.hospitalization[1]Encounter.hospitalization.admitSource[1]Encounter.hospitalization.admitSource.text[1]"
+                                     type="text"/>
+                           </td>
+                        </tr>
+                     </tbody>
+                  </table>
+               </div>
+               <input style="margin:0em 2em;width:10px;height:10px;" type="image"
+                      onclick="addGroup('d2e1376.1.1', this)"
+                      src="http://fhir-dev.healthintersections.com.au/html-form-add.png"
+                      alt="Add section"/>
+               <span style="display:none">Encounter.hospitalization.admitSource</span>
+               <span style="display:none">1</span>
+               <p>Dietary restrictions for the patient</p>
+               <div style="display:block;margin:0.5em 2em;border-style:solid;border-width:1px;border-color:#A0A0A0;"
+                    id="d2e1420.1.1">
+                  <span style="display:none">Encounter.hospitalization.diet</span>
+                  <input type="image" onclick="deleteGroup(this)"
+                         src="http://fhir-dev.healthintersections.com.au/html-form-delete.png"
+                         alt="Remove"
+                         style="width:10px;height:10px;"/>
+                  <table>
+                     <tbody>
+                        <tr>
+                           <td style="vertical-align:top;">
+                              <span style="display:none;">Encounter.hospitalization.diet.coding</span> code:</td>
+                           <td/>
+                        </tr>
+                        <tr>
+                           <td style="vertical-align:top;">
+                              <span style="display:none;">Encounter.hospitalization.diet.text</span> text:</td>
+                           <td>
+                              <input name="Path:Encounter[1]Encounter.hospitalization[1]Encounter.hospitalization.diet[1]Encounter.hospitalization.diet.text[1]"
+                                     type="text"/>
+                           </td>
+                        </tr>
+                     </tbody>
+                  </table>
+               </div>
+               <input style="margin:0em 2em;width:10px;height:10px;" type="image"
+                      onclick="addGroup('d2e1420.1.1', this)"
+                      src="http://fhir-dev.healthintersections.com.au/html-form-add.png"
+                      alt="Add section"/>
+               <span style="display:none">Encounter.hospitalization.diet</span>
+               <span style="display:none">1</span>
+               <p>Special courtesies (VIP, board member)</p>
+               <div style="display:block;margin:0.5em 2em;border-style:solid;border-width:1px;border-color:#A0A0A0;"
+                    id="d2e1464.1.1">
+                  <span style="display:none">Encounter.hospitalization.specialCourtesy</span>
+                  <input type="image" onclick="deleteGroup(this)"
+                         src="http://fhir-dev.healthintersections.com.au/html-form-delete.png"
+                         alt="Remove"
+                         style="width:10px;height:10px;"/>
+                  <table>
+                     <tbody>
+                        <tr>
+                           <td style="vertical-align:top;">
+                              <span style="display:none;">Encounter.hospitalization.specialCourtesy.coding</span> code:</td>
+                           <td/>
+                        </tr>
+                        <tr>
+                           <td style="vertical-align:top;">
+                              <span style="display:none;">Encounter.hospitalization.specialCourtesy.text</span> text:</td>
+                           <td>
+                              <input name="Path:Encounter[1]Encounter.hospitalization[1]Encounter.hospitalization.specialCourtesy[1]Encounter.hospitalization.specialCourtesy.text[1]"
+                                     type="text"/>
+                           </td>
+                        </tr>
+                     </tbody>
+                  </table>
+               </div>
+               <input style="margin:0em 2em;width:10px;height:10px;" type="image"
+                      onclick="addGroup('d2e1464.1.1', this)"
+                      src="http://fhir-dev.healthintersections.com.au/html-form-add.png"
+                      alt="Add section"/>
+               <span style="display:none">Encounter.hospitalization.specialCourtesy</span>
+               <span style="display:none">1</span>
+               <p>Wheelchair, translator, stretcher, etc</p>
+               <div style="display:block;margin:0.5em 2em;border-style:solid;border-width:1px;border-color:#A0A0A0;"
+                    id="d2e1508.1.1">
+                  <span style="display:none">Encounter.hospitalization.specialArrangement</span>
+                  <input type="image" onclick="deleteGroup(this)"
+                         src="http://fhir-dev.healthintersections.com.au/html-form-delete.png"
+                         alt="Remove"
+                         style="width:10px;height:10px;"/>
+                  <table>
+                     <tbody>
+                        <tr>
+                           <td style="vertical-align:top;">
+                              <span style="display:none;">Encounter.hospitalization.specialArrangement.coding</span> code:</td>
+                           <td/>
+                        </tr>
+                        <tr>
+                           <td style="vertical-align:top;">
+                              <span style="display:none;">Encounter.hospitalization.specialArrangement.text</span> text:</td>
+                           <td>
+                              <input name="Path:Encounter[1]Encounter.hospitalization[1]Encounter.hospitalization.specialArrangement[1]Encounter.hospitalization.specialArrangement.text[1]"
+                                     type="text"/>
+                           </td>
+                        </tr>
+                     </tbody>
+                  </table>
+               </div>
+               <input style="margin:0em 2em;width:10px;height:10px;" type="image"
+                      onclick="addGroup('d2e1508.1.1', this)"
+                      src="http://fhir-dev.healthintersections.com.au/html-form-add.png"
+                      alt="Add section"/>
+               <span style="display:none">Encounter.hospitalization.specialArrangement</span>
+               <span style="display:none">1</span>
+               <div style="display:block;margin:0.5em 2em;border-style:solid;border-width:1px;border-color:#A0A0A0;"
+                    id="d2e1553.1.1">
+                  <span style="display:none">Encounter.hospitalization.destination</span>
+                  <input type="image" onclick="deleteGroup(this)"
+                         src="http://fhir-dev.healthintersections.com.au/html-form-delete.png"
+                         alt="Remove"
+                         style="width:10px;height:10px;"/>
+                  <table>
+                     <tbody>
+                        <tr>
+                           <td style="vertical-align:top;">
+                              <span style="display:none;">Encounter.hospitalization.destination.value</span> Location to which the patient is discharged</td>
+                           <td>
+                              <table style="table-layout:fixed;width=100%">
+                                 <col style="width:20px"/>
+                                 <col style="width:auto"/>
+                                 <col style="width:0px;visibility:collapse;"/>
+                                 <tbody/>
+                              </table>
+                              <button onclick="javascript:initReferenceLookup('/Location?subject=$subj&amp;patient=$subj&amp;encounter=$encounter', 'Location to which the patient is discharged', this.previousElementSibling, 1)">Edit</button>
+                              <input name="Path:Encounter.hospitalization.destination.value" tabindex="text"/>
+                           </td>
+                        </tr>
+                     </tbody>
+                  </table>
+               </div>
+               <input style="margin:0em 2em;width:10px;height:10px;" type="image"
+                      onclick="addGroup('d2e1553.1.1', this)"
+                      src="http://fhir-dev.healthintersections.com.au/html-form-add.png"
+                      alt="Add section"/>
+               <span style="display:none">Encounter.hospitalization.destination</span>
+               <span style="display:none">1</span>
+               <p>Category or kind of location after discharge</p>
+               <div style="display:block;margin:0.5em 2em;border-style:solid;border-width:1px;border-color:#A0A0A0;"
+                    id="d2e1589.1.1">
+                  <span style="display:none">Encounter.hospitalization.dischargeDisposition</span>
+                  <input type="image" onclick="deleteGroup(this)"
+                         src="http://fhir-dev.healthintersections.com.au/html-form-delete.png"
+                         alt="Remove"
+                         style="width:10px;height:10px;"/>
+                  <table>
+                     <tbody>
+                        <tr>
+                           <td style="vertical-align:top;">
+                              <span style="display:none;">Encounter.hospitalization.dischargeDisposition.coding</span> code:</td>
+                           <td/>
+                        </tr>
+                        <tr>
+                           <td style="vertical-align:top;">
+                              <span style="display:none;">Encounter.hospitalization.dischargeDisposition.text</span> text:</td>
+                           <td>
+                              <input name="Path:Encounter[1]Encounter.hospitalization[1]Encounter.hospitalization.dischargeDisposition[1]Encounter.hospitalization.dischargeDisposition.text[1]"
+                                     type="text"/>
+                           </td>
+                        </tr>
+                     </tbody>
+                  </table>
+               </div>
+               <input style="margin:0em 2em;width:10px;height:10px;" type="image"
+                      onclick="addGroup('d2e1589.1.1', this)"
+                      src="http://fhir-dev.healthintersections.com.au/html-form-add.png"
+                      alt="Add section"/>
+               <span style="display:none">Encounter.hospitalization.dischargeDisposition</span>
+               <span style="display:none">1</span>
+               <div style="display:block;margin:0.5em 2em;border-style:solid;border-width:1px;border-color:#A0A0A0;"
+                    id="d2e1633.1.1">
+                  <span style="display:none">Encounter.hospitalization.dischargeDiagnosis</span>
+                  <input type="image" onclick="deleteGroup(this)"
+                         src="http://fhir-dev.healthintersections.com.au/html-form-delete.png"
+                         alt="Remove"
+                         style="width:10px;height:10px;"/>
+                  <table>
+                     <tbody>
+                        <tr>
+                           <td style="vertical-align:top;">
+                              <span style="display:none;">Encounter.hospitalization.dischargeDiagnosis.value</span> The final diagnosis given a patient before release from the hospital after all testing, surgery, and workup are complete</td>
+                           <td>
+                              <table style="table-layout:fixed;width=100%">
+                                 <col style="width:20px"/>
+                                 <col style="width:auto"/>
+                                 <col style="width:0px;visibility:collapse;"/>
+                                 <tbody/>
+                              </table>
+                              <button onclick="javascript:initReferenceLookup('/_search?subject=$subj&amp;patient=$subj&amp;encounter=$encounter', 'The final diagnosis given a patient before release from the hospital after all testing, surgery, and workup are complete', this.previousElementSibling, 1)">Edit</button>
+                              <input name="Path:Encounter.hospitalization.dischargeDiagnosis.value" tabindex="text"/>
+                           </td>
+                        </tr>
+                     </tbody>
+                  </table>
+               </div>
+               <input style="margin:0em 2em;width:10px;height:10px;" type="image"
+                      onclick="addGroup('d2e1633.1.1', this)"
+                      src="http://fhir-dev.healthintersections.com.au/html-form-add.png"
+                      alt="Add section"/>
+               <span style="display:none">Encounter.hospitalization.dischargeDiagnosis</span>
+               <span style="display:none">1</span>
+               <div style="display:block;margin:0.5em 2em;border-style:solid;border-width:1px;border-color:#A0A0A0;"
+                    id="d2e1669.1.1">
+                  <span style="display:none">Encounter.hospitalization.reAdmission</span>
+                  <input type="image" onclick="deleteGroup(this)"
+                         src="http://fhir-dev.healthintersections.com.au/html-form-delete.png"
+                         alt="Remove"
+                         style="width:10px;height:10px;"/>
+                  <table>
+                     <tbody>
+                        <tr>
+                           <td style="vertical-align:top;">
+                              <span style="display:none;">Encounter.hospitalization.reAdmission.value</span> Is this hospitalization a readmission?</td>
+                           <td>
+                              <select name="Path:Encounter[1]Encounter.hospitalization[1]Encounter.hospitalization.reAdmission[1]">
+                                 <option value="true">Yes</option>
+                                 <option value="false">No</option>
+                              </select>
+                           </td>
+                        </tr>
+                     </tbody>
+                  </table>
+               </div>
+               <input style="margin:0em 2em;width:10px;height:10px;" type="image"
+                      onclick="addGroup('d2e1669.1.1', this)"
+                      src="http://fhir-dev.healthintersections.com.au/html-form-add.png"
+                      alt="Add section"/>
+               <span style="display:none">Encounter.hospitalization.reAdmission</span>
+               <span style="display:none">1</span>
+            </div>
+            <input style="margin:0em 2em;width:10px;height:10px;" type="image"
+                   onclick="addGroup('d2e1240.1', this)"
+                   src="http://fhir-dev.healthintersections.com.au/html-form-add.png"
+                   alt="Add section"/>
+            <span style="display:none">Encounter.hospitalization</span>
+            <span style="display:none">1</span>
+            <h2> List of locations the patient has been at</h2>
+            <div style="display:block;margin:0.5em 2em;border-style:solid;border-width:1px;border-color:#A0A0A0;"
+                 id="d2e1701.1">
+               <span style="display:none">Encounter.location</span>
+               <input type="image" onclick="deleteGroup(this)"
+                      src="http://fhir-dev.healthintersections.com.au/html-form-delete.png"
+                      alt="Remove"
+                      style="width:10px;height:10px;"/>
+               <div style="display:block;margin:0.5em 2em;border-style:solid;border-width:1px;border-color:#A0A0A0;"
+                    id="d2e1717.1.1">
+                  <span style="display:none">Encounter.location.id</span>
+                  <input type="image" onclick="deleteGroup(this)"
+                         src="http://fhir-dev.healthintersections.com.au/html-form-delete.png"
+                         alt="Remove"
+                         style="width:10px;height:10px;"/>
+                  <table>
+                     <tbody>
+                        <tr>
+                           <td style="vertical-align:top;">
+                              <span style="display:none;">Encounter.location.id.value</span> xml:id (or equivalent in JSON)</td>
+                           <td>
+                              <input name="Path:Encounter[1]Encounter.location[1]Encounter.location.id[1]Encounter.location.id.value[1]"
+                                     type="text"/>
+                           </td>
+                        </tr>
+                     </tbody>
+                  </table>
+               </div>
+               <input style="margin:0em 2em;width:10px;height:10px;" type="image"
+                      onclick="addGroup('d2e1717.1.1', this)"
+                      src="http://fhir-dev.healthintersections.com.au/html-form-add.png"
+                      alt="Add section"/>
+               <span style="display:none">Encounter.location.id</span>
+               <span style="display:none">1</span>
+               <div style="display:block;margin:0.5em 2em;border-style:solid;border-width:1px;border-color:#A0A0A0;"
+                    id="d2e1748.1.1">
+                  <span style="display:none">Encounter.location.location</span>
+                  <input type="image" onclick="deleteGroup(this)"
+                         src="http://fhir-dev.healthintersections.com.au/html-form-delete.png"
+                         alt="Remove"
+                         style="width:10px;height:10px;"/>
+                  <table>
+                     <tbody>
+                        <tr>
+                           <td style="vertical-align:top;">
+                              <span style="display:none;">Encounter.location.location.value</span> Location the encounter takes place</td>
+                           <td>
+                              <table style="table-layout:fixed;width=100%">
+                                 <col style="width:20px"/>
+                                 <col style="width:auto"/>
+                                 <col style="width:0px;visibility:collapse;"/>
+                                 <tbody/>
+                              </table>
+                              <button onclick="javascript:initReferenceLookup('/Location?subject=$subj&amp;patient=$subj&amp;encounter=$encounter', 'Location the encounter takes place', this.previousElementSibling, 1)">Edit</button>
+                              <input name="Path:Encounter.location.location.value" tabindex="text"/>
+                           </td>
+                        </tr>
+                     </tbody>
+                  </table>
+               </div>
+               <input style="margin:0em 2em;width:10px;height:10px;" type="image"
+                      onclick="addGroup('d2e1748.1.1', this)"
+                      src="http://fhir-dev.healthintersections.com.au/html-form-add.png"
+                      alt="Add section"/>
+               <span style="display:none">Encounter.location.location</span>
+               <span style="display:none">1</span>
+               <div style="display:block;margin:0.5em 2em;border-style:solid;border-width:1px;border-color:#A0A0A0;"
+                    id="d2e1786.1.1">
+                  <span style="display:none">Encounter.location.status</span>
+                  <input type="image" onclick="deleteGroup(this)"
+                         src="http://fhir-dev.healthintersections.com.au/html-form-delete.png"
+                         alt="Remove"
+                         style="width:10px;height:10px;"/>
+                  <table>
+                     <tbody>
+                        <tr>
+                           <td style="vertical-align:top;">
+                              <span style="display:none;">Encounter.location.status.value</span> status</td>
+                           <td/>
+                        </tr>
+                     </tbody>
+                  </table>
+               </div>
+               <input style="margin:0em 2em;width:10px;height:10px;" type="image"
+                      onclick="addGroup('d2e1786.1.1', this)"
+                      src="http://fhir-dev.healthintersections.com.au/html-form-add.png"
+                      alt="Add section"/>
+               <span style="display:none">Encounter.location.status</span>
+               <span style="display:none">1</span>
+               <p>Time period during which the patient was present at the location</p>
+               <div style="display:block;margin:0.5em 2em;border-style:solid;border-width:1px;border-color:#A0A0A0;"
+                    id="d2e1817.1.1">
+                  <span style="display:none">Encounter.location.period</span>
+                  <input type="image" onclick="deleteGroup(this)"
+                         src="http://fhir-dev.healthintersections.com.au/html-form-delete.png"
+                         alt="Remove"
+                         style="width:10px;height:10px;"/>
+                  <table>
+                     <tbody>
+                        <tr>
+                           <td style="vertical-align:top;">
+                              <span style="display:none;">Encounter.location.period.low</span> start:</td>
+                           <td>
+                              <input name="Path:Encounter[1]Encounter.location[1]Encounter.location.period[1]Encounter.location.period.low[1]"
+                                     type="text"
+                                     onblur="checkDateTime(this)"
+                                     maxlength="26"/>
+                           </td>
+                        </tr>
+                        <tr>
+                           <td style="vertical-align:top;">
+                              <span style="display:none;">Encounter.location.period.end</span> end:</td>
+                           <td>
+                              <input name="Path:Encounter[1]Encounter.location[1]Encounter.location.period[1]Encounter.location.period.end[1]"
+                                     type="text"
+                                     onblur="checkDateTime(this)"
+                                     maxlength="26"/>
+                           </td>
+                        </tr>
+                     </tbody>
+                  </table>
+               </div>
+               <input style="margin:0em 2em;width:10px;height:10px;" type="image"
+                      onclick="addGroup('d2e1817.1.1', this)"
+                      src="http://fhir-dev.healthintersections.com.au/html-form-add.png"
+                      alt="Add section"/>
+               <span style="display:none">Encounter.location.period</span>
+               <span style="display:none">1</span>
+            </div>
+            <input style="margin:0em 2em;width:10px;height:10px;" type="image"
+                   onclick="addGroup('d2e1701.1', this)"
+                   src="http://fhir-dev.healthintersections.com.au/html-form-add.png"
+                   alt="Add section"/>
+            <span style="display:none">Encounter.location</span>
+            <span style="display:none">1</span>
+            <div style="display:block;margin:0.5em 2em;border-style:solid;border-width:1px;border-color:#A0A0A0;"
+                 id="d2e1862.1">
+               <span style="display:none">Encounter.serviceProvider</span>
+               <input type="image" onclick="deleteGroup(this)"
+                      src="http://fhir-dev.healthintersections.com.au/html-form-delete.png"
+                      alt="Remove"
+                      style="width:10px;height:10px;"/>
+               <table>
+                  <tbody>
+                     <tr>
+                        <td style="vertical-align:top;">
+                           <span style="display:none;">Encounter.serviceProvider.value</span> Department or team providing care</td>
+                        <td>
+                           <table style="table-layout:fixed;width=100%">
+                              <col style="width:20px"/>
+                              <col style="width:auto"/>
+                              <col style="width:0px;visibility:collapse;"/>
+                              <tbody/>
+                           </table>
+                           <button onclick="javascript:initReferenceLookup('/Organization?subject=$subj&amp;patient=$subj&amp;encounter=$encounter', 'Department or team providing care', this.previousElementSibling, 1)">Edit</button>
+                           <input name="Path:Encounter.serviceProvider.value" tabindex="text"/>
+                        </td>
+                     </tr>
+                  </tbody>
+               </table>
+            </div>
+            <input style="margin:0em 2em;width:10px;height:10px;" type="image"
+                   onclick="addGroup('d2e1862.1', this)"
+                   src="http://fhir-dev.healthintersections.com.au/html-form-add.png"
+                   alt="Add section"/>
+            <span style="display:none">Encounter.serviceProvider</span>
+            <span style="display:none">1</span>
+            <div style="display:block;margin:0.5em 2em;border-style:solid;border-width:1px;border-color:#A0A0A0;"
+                 id="d2e1898.1">
+               <span style="display:none">Encounter.partOf</span>
+               <input type="image" onclick="deleteGroup(this)"
+                      src="http://fhir-dev.healthintersections.com.au/html-form-delete.png"
+                      alt="Remove"
+                      style="width:10px;height:10px;"/>
+               <table>
+                  <tbody>
+                     <tr>
+                        <td style="vertical-align:top;">
+                           <span style="display:none;">Encounter.partOf.value</span> Another Encounter this encounter is part of</td>
+                        <td>
+                           <table style="table-layout:fixed;width=100%">
+                              <col style="width:20px"/>
+                              <col style="width:auto"/>
+                              <col style="width:0px;visibility:collapse;"/>
+                              <tbody/>
+                           </table>
+                           <button onclick="javascript:initReferenceLookup('/Encounter?subject=$subj&amp;patient=$subj&amp;encounter=$encounter', 'Another Encounter this encounter is part of', this.previousElementSibling, 1)">Edit</button>
+                           <input name="Path:Encounter.partOf.value" tabindex="text"/>
+                        </td>
+                     </tr>
+                  </tbody>
+               </table>
+            </div>
+            <input style="margin:0em 2em;width:10px;height:10px;" type="image"
+                   onclick="addGroup('d2e1898.1', this)"
+                   src="http://fhir-dev.healthintersections.com.au/html-form-add.png"
+                   alt="Add section"/>
+            <span style="display:none">Encounter.partOf</span>
+            <span style="display:none">1</span>
+         </div>
+         <input style="margin:0em 2em;width:10px;height:10px;" type="image"
+                onclick="addGroup('d2e57', this)"
+                src="http://fhir-dev.healthintersections.com.au/html-form-add.png"
+                alt="Add section"/>
+         <span style="display:none">Encounter</span>
+         <span style="display:none">1</span>
+      </div>
+      <table>
+         <tbody>
+            <tr>
+               <td>
+                  <button onclick="saveDraft()">Save as Draft</button>
+               </td>
+               <td>
+                  <button onclick="saveFinal()">Save as Complete</button>
+               </td>
+            </tr>
+         </tbody>
+      </table>
+      
+
+				</div><!-- /inner-wrapper -->
+            </div><!-- /row -->
+        </div><!-- /container -->
+        
+    </div><!-- /segment-content -->
+
+
+	<div id="segment-footer" class="segment"><!-- segment-footer -->
+		<div class="container"><!-- container -->
+			<div class="inner-wrapper">
+				<p>
+        © HL7.org 2011+. FHIR DSTU (v0.4.0-3920) generated on Tue, Dec 30, 2014 11:01+0000. <!-- <a href="qa.html">QA Report</a> --> <!-- achive note -->
+        <br/>
+        <span style="color: #FFFF77">
+        Links: <a style="color: #81BEF7" href="timelines.html">What's a DSTU?</a> | 
+               <a style="color: #81BEF7" href="history.html">Version History</a> | 
+               <a style="color: #81BEF7" href="http://services.w3.org/htmldiff?doc1=http%3A%2F%2Fhl7.org%2Fimplement%2Fstandards%2Ffhir%2Fencounter.questionnaire.html&amp;doc2=http%3A%2F%2Fhl7-fhir.github.io%2F%2Fencounter.questionnaire.html">Compare to DSTU</a> | 
+               <a style="color: #81BEF7" rel="license" href="license.html"><img src="cc0.png" style="border-style: none;" alt="CC0"/></a> | 
+               <a style="color: #81BEF7" target="_blank" href="http://gforge.hl7.org/gf/project/fhir/tracker/?action=TrackerItemAdd&amp;tracker_id=677">Propose a change</a>   
+        </span>
+        </p>
+			</div><!-- /inner-wrapper -->
+		</div><!-- /container -->
+	</div><!-- /segment-footer -->
+<!-- disqus thread -->
+<!--disqus-->
+<!-- end disqus -->        
+	
+	<div id="segment-post-footer" class="segment hidden"><!-- segment-post-footer -->
+		<div class="container"><!-- container -->
+		</div><!-- /container -->
+	</div><!-- /segment-post-footer -->
+    
+    <!-- JS and analytics only. -->
+    <!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="./assets/js/jquery.js"> </script>   <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+<script src="./dist/js/bootstrap.min.js"> </script>
+<script src="./assets/js/respond.min.js"> </script>
+
+<script src="./assets/js/fhir.js"> </script>
+
+<!-- Analytics Below
+================================================== -->
+
+</body>
+</html>
+
+<p>
+<!-- spacer -->
+&nbsp;
+</p>
+
+</div>
+
+
+				</div><!-- /inner-wrapper -->
+            </div><!-- /row -->
+        </div><!-- /container -->
+        
+    </div><!-- /segment-content -->
+
+
+	<div id="segment-footer" class="segment"><!-- segment-footer -->
+		<div class="container"><!-- container -->
+			<div class="inner-wrapper">
+				<p>
+        © HL7.org 2011+. FHIR DSTU (v0.4.0-3920) generated on Tue, Dec 30, 2014 11:01+0000. <!-- <a href="qa.html">QA Report</a> --> <!-- achive note -->
+        <br/>
+        <span style="color: #FFFF77">
+        Links: <a style="color: #81BEF7" href="timelines.html">What's a DSTU?</a> | 
+               <a style="color: #81BEF7" href="history.html">Version History</a> | 
+               <a style="color: #81BEF7" href="http://services.w3.org/htmldiff?doc1=http%3A%2F%2Fhl7.org%2Fimplement%2Fstandards%2Ffhir%2Fencounter.questionnaire.html&amp;doc2=http%3A%2F%2Fhl7-fhir.github.io%2F%2Fencounter.questionnaire.html">Compare to DSTU</a> | 
+               <a style="color: #81BEF7" rel="license" href="license.html"><img src="cc0.png" style="border-style: none;" alt="CC0"/></a> | 
+               <a style="color: #81BEF7" target="_blank" href="http://gforge.hl7.org/gf/project/fhir/tracker/?action=TrackerItemAdd&amp;tracker_id=677">Propose a change</a>   
+        </span>
+        </p>
+			</div><!-- /inner-wrapper -->
+		</div><!-- /container -->
+	</div><!-- /segment-footer -->
+<!-- disqus thread -->
+<!--disqus-->
+<!-- end disqus -->        
+	
+	<div id="segment-post-footer" class="segment hidden"><!-- segment-post-footer -->
+		<div class="container"><!-- container -->
+		</div><!-- /container -->
+	</div><!-- /segment-post-footer -->
+    
+    <!-- JS and analytics only. -->
+    <!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="./assets/js/jquery.js"> </script>   <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+<script src="./dist/js/bootstrap.min.js"> </script>
+<script src="./assets/js/respond.min.js"> </script>
+
+<script src="./assets/js/fhir.js"> </script>
+
+<!-- Analytics Below
+================================================== -->
+
+    
+</body>
+</html>

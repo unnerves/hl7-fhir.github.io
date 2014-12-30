@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ExtensionDefinition xmlns="http://hl7.org/fhir">
+  <id value="valueset-caseSensitive"/>
+  <url value="http://hl7.org/fhir/ExtensionDefinition/valueset-caseSensitive"/>
+  <name value="If code is case sensitive"/>
+  <publisher value="HL7"/>
+  <description value="If this a case sensitive code."/>
+  <status value="draft"/>
+  <date value="2014-12-30T10:55:31"/>
+  <contextType value="resource"/>
+  <context value="ValueSet.expansion.contains"/>
+  <element>
+    <path value="Extension"/>
+    <short value="If code is case sensitive"/>
+    <formal value="If this a case sensitive code."/>
+    <comments value="See comments on ValueSet.define.caseSensitive. Systems should generally assume case sensitivity when dealing with expansions, and only consider case sensitivity when matching existing codes."/>
+    <min value="0"/>
+    <max value="1"/>
+    <type>
+      <code value="boolean"/>
+    </type>
+    <isSummary value="false"/>
+  </element>
+</ExtensionDefinition>

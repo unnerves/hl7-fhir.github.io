@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="operation-definition-parameter-type"/>
+  <meta>
+    <lastUpdated value="2014-12-30T10:55:31"/>
+  </meta>
+  <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      <p>This value set contains 0 concepts</p>
+      <h2>Parameter Types used in Operation Definitions</h2>
+      <p>Parameter Types used in Operation Definitions</p>
+      <p>
+        <b>Copyright Statement:</b> Copyright HL7 Inc
+      </p>
+      <p>This value set includes codes defined in other code systems, using the following rules:</p>
+      <ul>
+        <li>Import all the codes that are part of 
+          <a href="search-param-type.html">http://hl7.org/fhir/vs/search-param-type</a>
+        </li>
+        <li>Import all the codes that are part of 
+          <a href="defined-types.html">http://hl7.org/fhir/vs/defined-types</a>
+        </li>
+      </ul>
+    </div>
+  </text>
+  <extension url="http://hl7.org/fhir/ExtensionDefinition/valueset-oid">
+    <valueUri value="urn:oid:2.16.840.1.113883.4.642.2.410"/>
+  </extension>
+  <identifier value="http://hl7.org/fhir/vs/operation-definition-parameter-type"/>
+  <name value="Parameter Types used in Operation Definitions"/>
+  <publisher value="HL7, Inc. FHIR project"/>
+  <description value="Parameter Types used in Operation Definitions"/>
+  <copyright value="Copyright HL7 Inc"/>
+  <status value="draft"/>
+  <experimental value="false"/>
+  <extensible value="false"/>
+  <date value="2014-07-22"/>
+  <compose><!--  search parameters  -->
+    <import value="http://hl7.org/fhir/vs/search-param-type"/><!--  FHIR data types & Resources  -->
+    <import value="http://hl7.org/fhir/vs/defined-types"/>
+  </compose>
+</ValueSet>

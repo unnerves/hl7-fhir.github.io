@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ExtensionDefinition xmlns="http://hl7.org/fhir">
+  <id value="AdditionalInterpretationCodes"/>
+  <url value="http://hl7.org/fhir/ExtensionDefinition/AdditionalInterpretationCodes"/>
+  <name value="Additional Interpretation Codes"/>
+  <display value="Additional Interpretation Codes"/>
+  <publisher value="HL7 International - Orders and Observations WG"/>
+  <telecom>
+    <system value="url"/>
+    <value value="http://hl7.org"/>
+  </telecom>
+  <description value="This extension is used when there are multiple interpretation values for a single Observation Resource.  The first interpretation for this observation is the interpretation element and any additional interpretations for this observation will go here."/>
+  <status value="draft"/>
+  <date value="2014-09-21"/>
+  <contextType value="resource"/>
+  <context value="Observation"/>
+  <element>
+    <path value="Extension"/>
+    <short value="Additional Interpretation Codes"/>
+    <formal value="This extension is used when there are multiple interpretation values for a single Observation Resource.  The first interpretation for this observation is the interpretation element and any additional interpretations for this observation will go here."/>
+    <min value="0"/>
+    <max value="*"/>
+    <type>
+      <code value="CodeableConcept"/>
+    </type>
+    <isSummary value="false"/>
+    <binding>
+      <name value="ObservationInterpretation"/>
+      <isExtensible value="true"/>
+      <description value="Codes identifying interpretations of observations"/>
+      <referenceReference>
+        <reference value="http://hl7.org/fhir/vs/observation-interpretation"/>
+      </referenceReference>
+    </binding>
+  </element>
+</ExtensionDefinition>

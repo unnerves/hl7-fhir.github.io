@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="valueset-process-priority"/>
+  <meta>
+    <lastUpdated value="2014-12-30T10:55:31"/>
+  </meta>
+  <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      This value set includes the financial priority codes.
+    
+      <hr/>
+      <p>This value set contains 3 concepts</p>
+      <h2>Priority Codes</h2>
+      <p>This value set includes the financial processing priority codes</p>
+      <p>
+        <b>Copyright Statement:</b> This is an example set
+      </p>
+      <p>This value set defines its own terms in the system http://hl7.org/fhir/processpriority</p>
+      <table class="codes">
+        <tr>
+          <td>
+            <b>Code</b>
+          </td>
+          <td>
+            <b>Definition</b>
+          </td>
+        </tr>
+        <tr>
+          <td>stat
+            <a name="stat"> </a>
+          </td>
+          <td/>
+        </tr>
+        <tr>
+          <td>normal
+            <a name="normal"> </a>
+          </td>
+          <td/>
+        </tr>
+        <tr>
+          <td>deferred
+            <a name="deferred"> </a>
+          </td>
+          <td/>
+        </tr>
+      </table>
+    </div>
+  </text>
+  <extension url="http://hl7.org/fhir/ExtensionDefinition/valueset-oid">
+    <valueUri value="urn:oid:2.16.840.1.113883.4.642.2.464"/>
+  </extension>
+  <identifier value="http://hl7.org/fhir/vs/process-priority"/>
+  <name value="Priority Codes"/>
+  <publisher value="Financial Management"/>
+  <telecom>
+    <system value="url"/>
+    <value value="http://hl7.org/fhir"/>
+  </telecom>
+  <description value="This value set includes the financial processing priority codes"/>
+  <copyright value="This is an example set"/>
+  <status value="draft"/>
+  <define>
+    <extension url="http://hl7.org/fhir/ExtensionDefinition/valueset-oid">
+      <valueUri value="urn:oid:null"/>
+    </extension>
+    <system value="http://hl7.org/fhir/processpriority"/>
+    <concept>
+      <code value="stat"/>
+    </concept>
+    <concept>
+      <code value="normal"/>
+    </concept>
+    <concept>
+      <code value="deferred"/>
+    </concept>
+  </define>
+</ValueSet>

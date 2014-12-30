@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="allergy-intolerance-type"/>
+  <meta>
+    <lastUpdated value="2014-12-30T10:55:31"/>
+  </meta>
+  <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      <p>This value set contains 2 concepts</p>
+      <h2>AllergyIntoleranceType</h2>
+      <p>Identification of the underlying physiological mechanism for a Reaction Risk</p>
+      <p>This value set defines its own terms in the system http://hl7.org/fhir/allergy-intolerance-type</p>
+      <table class="codes">
+        <tr>
+          <td>
+            <b>Code</b>
+          </td>
+          <td>
+            <b>Display</b>
+          </td>
+          <td>
+            <b>Definition</b>
+          </td>
+        </tr>
+        <tr>
+          <td>immune
+            <a name="immune"> </a>
+          </td>
+          <td>Immune Mediated</td>
+          <td>Immune mediated reaction, including allergic reactions and hypersensitivities.</td>
+        </tr>
+        <tr>
+          <td>non-immune
+            <a name="non-immune"> </a>
+          </td>
+          <td>Non-immune mediated</td>
+          <td>A non-immune mediated reaction, which can include pseudoallergic reactions, side effects, intolerances, drug toxicities (eg to Gentamicin), drug-drug interactions, food-drug interactions, and drug-disease interactions.</td>
+        </tr>
+      </table>
+    </div>
+  </text>
+  <extension url="http://hl7.org/fhir/ExtensionDefinition/valueset-oid">
+    <valueUri value="urn:oid:2.16.840.1.113883.4.642.2.480"/>
+  </extension>
+  <identifier value="http://hl7.org/fhir/vs/allergy-intolerance-type"/>
+  <name value="AllergyIntoleranceType"/>
+  <publisher value="HL7 (FHIR Project)"/>
+  <telecom>
+    <system value="url"/>
+    <value value="http://hl7.org/fhir"/>
+  </telecom>
+  <telecom>
+    <system value="email"/>
+    <value value="fhir@lists.hl7.org"/>
+  </telecom>
+  <description value="Identification of the underlying physiological mechanism for a Reaction Risk"/>
+  <status value="draft"/>
+  <date value="2014-12-30T10:55:31"/>
+  <define>
+    <extension url="http://hl7.org/fhir/ExtensionDefinition/valueset-oid">
+      <valueUri value="urn:oid:2.16.840.1.113883.4.642.1.480"/>
+    </extension>
+    <system value="http://hl7.org/fhir/allergy-intolerance-type"/>
+    <caseSensitive value="true"/>
+    <concept>
+      <code value="immune"/>
+      <display value="Immune Mediated"/>
+      <definition value="Immune mediated reaction, including allergic reactions and hypersensitivities."/>
+    </concept>
+    <concept>
+      <code value="non-immune"/>
+      <display value="Non-immune mediated"/>
+      <definition value="A non-immune mediated reaction, which can include pseudoallergic reactions, side effects, intolerances, drug toxicities (eg to Gentamicin), drug-drug interactions, food-drug interactions, and drug-disease interactions."/>
+    </concept>
+  </define>
+</ValueSet>

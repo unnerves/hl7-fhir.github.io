@@ -1,0 +1,718 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Questionnaire xmlns="http://hl7.org/fhir">
+  <id value="qs1"/>
+  <contained>
+    <ValueSet>
+      <id value="vs2"/>
+      <identifier value="urn:uuid:f0c34b58-cf50-44c2-89fd-8c2c960f1d02"/>
+      <name value="Type options for ProcedureRequest.timing[x]"/>
+      <description value="Type options for ProcedureRequest.timing[x]"/>
+      <status value="active"/>
+      <expansion>
+        <timestamp value="2014-12-30T11:05:37+00:00"/>
+        <contains>
+          <system value="http://hl7.org/fhir/data-types"/>
+          <code value="dateTime"/>
+          <display value="dateTime"/>
+        </contains>
+        <contains>
+          <system value="http://hl7.org/fhir/data-types"/>
+          <code value="Period"/>
+          <display value="Period"/>
+        </contains>
+        <contains>
+          <system value="http://hl7.org/fhir/data-types"/>
+          <code value="Timing"/>
+          <display value="Timing"/>
+        </contains>
+      </expansion>
+    </ValueSet>
+  </contained>
+  <contained>
+    <ValueSet>
+      <id value="vs3"/>
+      <identifier value="urn:uuid:8b173b1d-81bc-4d13-a3fd-d91108760c90"/>
+      <name value="Type options for ProcedureRequest.performer"/>
+      <description value="Type options for ProcedureRequest.performer"/>
+      <status value="active"/>
+      <expansion>
+        <timestamp value="2014-12-30T11:05:37+00:00"/>
+        <contains>
+          <system value="http://hl7.org/fhir/resource-types"/>
+          <code value="Practitioner"/>
+          <display value="Practitioner"/>
+        </contains>
+        <contains>
+          <system value="http://hl7.org/fhir/resource-types"/>
+          <code value="Organization"/>
+          <display value="Organization"/>
+        </contains>
+        <contains>
+          <system value="http://hl7.org/fhir/resource-types"/>
+          <code value="Patient"/>
+          <display value="Patient"/>
+        </contains>
+        <contains>
+          <system value="http://hl7.org/fhir/resource-types"/>
+          <code value="RelatedPerson"/>
+          <display value="RelatedPerson"/>
+        </contains>
+      </expansion>
+    </ValueSet>
+  </contained>
+  <contained>
+    <ValueSet>
+      <id value="vs4"/>
+      <identifier value="urn:uuid:9d30a044-2eb3-491b-945a-e7c947254cfc"/>
+      <name value="Type options for ProcedureRequest.asNeeded[x]"/>
+      <description value="Type options for ProcedureRequest.asNeeded[x]"/>
+      <status value="active"/>
+      <expansion>
+        <timestamp value="2014-12-30T11:05:37+00:00"/>
+        <contains>
+          <system value="http://hl7.org/fhir/data-types"/>
+          <code value="boolean"/>
+          <display value="boolean"/>
+        </contains>
+        <contains>
+          <system value="http://hl7.org/fhir/data-types"/>
+          <code value="CodeableConcept"/>
+          <display value="CodeableConcept"/>
+        </contains>
+      </expansion>
+    </ValueSet>
+  </contained>
+  <contained>
+    <ValueSet>
+      <id value="vs5"/>
+      <identifier value="urn:uuid:9bafc87d-572b-47a8-b76d-24679600e61f"/>
+      <name value="Type options for ProcedureRequest.orderer"/>
+      <description value="Type options for ProcedureRequest.orderer"/>
+      <status value="active"/>
+      <expansion>
+        <timestamp value="2014-12-30T11:05:37+00:00"/>
+        <contains>
+          <system value="http://hl7.org/fhir/resource-types"/>
+          <code value="Practitioner"/>
+          <display value="Practitioner"/>
+        </contains>
+        <contains>
+          <system value="http://hl7.org/fhir/resource-types"/>
+          <code value="Patient"/>
+          <display value="Patient"/>
+        </contains>
+        <contains>
+          <system value="http://hl7.org/fhir/resource-types"/>
+          <code value="RelatedPerson"/>
+          <display value="RelatedPerson"/>
+        </contains>
+        <contains>
+          <system value="http://hl7.org/fhir/resource-types"/>
+          <code value="Device"/>
+          <display value="Device"/>
+        </contains>
+      </expansion>
+    </ValueSet>
+  </contained>
+  <identifier>
+    <system value="urn:ietf:rfc:3986"/>
+  </identifier>
+  <status value="draft"/>
+  <date value="2014-12-30T10:55:31"/>
+  <publisher value="HL7 FHIR Project (Patient Care)"/>
+  <group>
+    <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+      <valueString value="A request for a procedure to be performed. May be a proposal or an order."/>
+    </extension>
+    <linkId value="ProcedureRequest"/>
+    <title value="Procedure Request"/>
+    <required value="true"/>
+    <group>
+      <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+        <valueString value="The logical id of the resource, as used in the url for the resoure. Once assigned, this value never changes. The only time that a resource does not have an id is when it is being submitted to the server using a create operation. Bundles always have an id, though it is usually a generated UUID."/>
+      </extension>
+      <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+        <valueString value="string"/>
+      </extension>
+      <linkId value="ProcedureRequest.id"/>
+      <repeats value="true"/>
+      <question>
+        <linkId value="ProcedureRequest.id.value"/>
+        <text value="Logical id of this artefact"/>
+        <type value="string"/>
+      </question>
+    </group>
+    <group>
+      <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+        <valueString value="The metadata about the resource. This is content that is maintained by the infrastructure. Changes to the content may not always be associated with version changes to the resource."/>
+      </extension>
+      <linkId value="ProcedureRequest.meta"/>
+      <title value="Metadata about the resource"/>
+      <group>
+        <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+          <valueString value="unique id for the element within a resource (for internal references)."/>
+        </extension>
+        <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+          <valueString value="string"/>
+        </extension>
+        <linkId value="ProcedureRequest.meta.id"/>
+        <repeats value="true"/>
+        <question>
+          <linkId value="ProcedureRequest.meta.id.value"/>
+          <text value="xml:id (or equivalent in JSON)"/>
+          <type value="string"/>
+        </question>
+      </group>
+      <group>
+        <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+          <valueString value="The version specific identifier, as it appears in the version portion of the url. This values changes when the resource is created, updated, or deleted. The server assigns this value, and ignores what the client specifies, except in the case that the server is imposing version integrity on updates/deletes."/>
+        </extension>
+        <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+          <valueString value="string"/>
+        </extension>
+        <linkId value="ProcedureRequest.meta.versionId"/>
+        <repeats value="true"/>
+        <question>
+          <linkId value="ProcedureRequest.meta.versionId.value"/>
+          <text value="Version specific identifier"/>
+          <type value="string"/>
+        </question>
+      </group>
+      <group>
+        <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+          <valueString value="When the resource last changed - e.g. when the version changed. This value is always populated except when the resource is first being created. The server / resource manager sets this value; what a client provides is irrelevant."/>
+        </extension>
+        <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+          <valueString value="instant"/>
+        </extension>
+        <linkId value="ProcedureRequest.meta.lastUpdated"/>
+        <repeats value="true"/>
+        <question>
+          <linkId value="ProcedureRequest.meta.lastUpdated.value"/>
+          <text value="When the resource version last changed"/>
+          <type value="instant"/>
+        </question>
+      </group>
+      <group>
+        <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+          <valueString value="A list of profiles that this resource claims to conform to. The URL is a reference to Profile.url. It is up to the server and/or other infrastruture of policy to determine whether/how these claims are verified and/or updated over tiem."/>
+        </extension>
+        <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+          <valueString value="uri"/>
+        </extension>
+        <linkId value="ProcedureRequest.meta.profile"/>
+        <repeats value="true"/>
+        <question>
+          <linkId value="ProcedureRequest.meta.profile.value"/>
+          <text value="Profiles this resource claims to conform to"/>
+          <type value="string"/>
+        </question>
+      </group>
+      <group>
+        <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+          <valueString value="Security labels applied to this resource. These tags connect specific resources to the overall security policy and infrastructure. The security labels can be updated without changing the stated version of the resource."/>
+        </extension>
+        <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+          <valueString value="Coding"/>
+        </extension>
+        <linkId value="ProcedureRequest.meta.security"/>
+        <repeats value="true"/>
+        <question>
+          <linkId value="ProcedureRequest.meta.security.value"/>
+          <text value="Security Labels applied to this resource"/>
+          <type value="open-choice"/>
+        </question>
+      </group>
+      <group>
+        <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+          <valueString value="Tags applied to this resource. Tags are intended to to be used to identify and relate resources to process and workflow, and applications are not required to consider the tags when interpreting the meaning of a resource. The tags can be updated without changing the stated version of the resource."/>
+        </extension>
+        <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+          <valueString value="Coding"/>
+        </extension>
+        <linkId value="ProcedureRequest.meta.tag"/>
+        <repeats value="true"/>
+        <question>
+          <linkId value="ProcedureRequest.meta.tag.value"/>
+          <text value="Tags applied"/>
+          <type value="open-choice"/>
+        </question>
+      </group>
+    </group>
+    <group>
+      <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+        <valueString value="A reference to a set of rules that were followed when the resource was constructed, and which must be understood when processing the content. Asserting this rule set restricts the content to be only understood by a limited set of trading partners. This inherently limits the usefulness of the data in the long term. However the existing health eco-system is highly fractured, and not yet ready to define, collect, and exchange data in a generally computable sense. Wherever possible, implementers and/or specification writers should avoid using this element as much as possible."/>
+      </extension>
+      <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+        <valueString value="uri"/>
+      </extension>
+      <linkId value="ProcedureRequest.implicitRules"/>
+      <repeats value="true"/>
+      <question>
+        <linkId value="ProcedureRequest.implicitRules.value"/>
+        <text value="A set of rules under which this content was created"/>
+        <type value="string"/>
+      </question>
+    </group>
+    <group>
+      <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+        <valueString value="The base language in which the resource is written. Language is provided to support indexing and accessibility (typically, services such as text to speech use the language tag). The html language tag in the narrative applies  to the narrative. The language tag on the resource may be used to specify the language of other presentations generated from the data in the resource
+
+Not all the content has to be in the base language. The Resource.language should not be assumed to apply to the narrative automatically. If a language is specified, it should it also be specified on the div element in the html (see rules in HTML5 for information about the relationship between xml:lang and the html lang attribute)."/>
+      </extension>
+      <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+        <valueString value="code"/>
+      </extension>
+      <linkId value="ProcedureRequest.language"/>
+      <repeats value="true"/>
+      <question>
+        <linkId value="ProcedureRequest.language.value"/>
+        <text value="language"/>
+        <type value="choice"/>
+      </question>
+    </group>
+    <group>
+      <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+        <valueString value="A human-readable narrative that contains a summary of the resource, and may be used to represent the content of the resource to a human. The narrative need not encode all the structured data, but is required to contain sufficient detail to make it &quot;clinically safe&quot; for a human to just read the narrative. Resource definitions may define what content should be represented in the narrative to ensure clinical safety. Contained resources do not have narrative. Resources that are not contained SHOULD have a narrative."/>
+      </extension>
+      <linkId value="ProcedureRequest.text"/>
+      <text value="Text summary of the resource, for human interpretation"/>
+      <repeats value="true"/>
+    </group>
+    <group>
+      <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+        <valueString value="These resources do not have an independent existence apart from the resource that contains them - they cannot be identified independently, and nor can they have their own independent transaction scope. This should never be done when the content can be identified properly, as once identification is lost, it is extremely difficult (and context dependent) to restore it again."/>
+      </extension>
+      <linkId value="ProcedureRequest.contained"/>
+      <text value="Contained, inline Resources"/>
+      <repeats value="true"/>
+    </group>
+    <group>
+      <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+        <valueString value="Identifiers assigned to this order by the order or by the receiver."/>
+      </extension>
+      <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+        <valueString value="Identifier"/>
+      </extension>
+      <linkId value="ProcedureRequest.identifier"/>
+      <text value="Identifier"/>
+      <repeats value="true"/>
+      <question>
+        <linkId value="ProcedureRequest.identifier.label"/>
+        <text value="label:"/>
+        <type value="string"/>
+      </question>
+      <question>
+        <linkId value="ProcedureRequest.identifier.system"/>
+        <text value="system:"/>
+        <type value="string"/>
+      </question>
+      <question>
+        <linkId value="ProcedureRequest.identifier.value"/>
+        <text value="value:"/>
+        <type value="string"/>
+      </question>
+    </group>
+    <group>
+      <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+        <valueString value="The patient who will receive the procedure."/>
+      </extension>
+      <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+        <valueString value="Reference"/>
+      </extension>
+      <linkId value="ProcedureRequest.subject"/>
+      <required value="true"/>
+      <repeats value="true"/>
+      <question>
+        <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#reference">
+          <valueString value="/Patient?subject=$subj&amp;patient=$subj&amp;encounter=$encounter"/>
+        </extension>
+        <linkId value="ProcedureRequest.subject.value"/>
+        <text value="Subject"/>
+        <type value="reference"/>
+      </question>
+    </group>
+    <group>
+      <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+        <valueString value="The specific procedure that is ordered. Use text if the exact nature of the procedure can&#39;t be coded."/>
+      </extension>
+      <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+        <valueString value="CodeableConcept"/>
+      </extension>
+      <linkId value="ProcedureRequest.type"/>
+      <text value="Procedure Type"/>
+      <required value="true"/>
+      <repeats value="true"/>
+      <question>
+        <linkId value="ProcedureRequest.type.coding"/>
+        <text value="code:"/>
+        <type value="open-choice"/>
+      </question>
+      <question>
+        <linkId value="ProcedureRequest.type.text"/>
+        <text value="text:"/>
+        <type value="string"/>
+      </question>
+    </group>
+    <group>
+      <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+        <valueString value="The site where the procedure is to be performed."/>
+      </extension>
+      <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+        <valueString value="CodeableConcept"/>
+      </extension>
+      <linkId value="ProcedureRequest.bodySite"/>
+      <text value="Target Body Site"/>
+      <repeats value="true"/>
+      <question>
+        <linkId value="ProcedureRequest.bodySite.coding"/>
+        <text value="code:"/>
+        <type value="open-choice"/>
+      </question>
+      <question>
+        <linkId value="ProcedureRequest.bodySite.text"/>
+        <text value="text:"/>
+        <type value="string"/>
+      </question>
+    </group>
+    <group>
+      <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+        <valueString value="The reason why the procedure is proposed or ordered. This procedure request may be motivated by a Condition for instance."/>
+      </extension>
+      <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+        <valueString value="CodeableConcept"/>
+      </extension>
+      <linkId value="ProcedureRequest.indication"/>
+      <text value="Indication"/>
+      <repeats value="true"/>
+      <question>
+        <linkId value="ProcedureRequest.indication.coding"/>
+        <text value="code:"/>
+        <type value="open-choice"/>
+      </question>
+      <question>
+        <linkId value="ProcedureRequest.indication.text"/>
+        <text value="text:"/>
+        <type value="string"/>
+      </question>
+    </group>
+    <group>
+      <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+        <valueString value="The timing schedule for the proposed or ordered procedure. The Schedule data type allows many different expressions, for example. &quot;Every 8 hours&quot;; &quot;Three times a day&quot;; &quot;1/2 an hour before breakfast for 10 days from 23-Dec 2011:&quot;; &quot;15 Oct 2013, 17 Oct 2013 and 1 Nov 2013&quot;."/>
+      </extension>
+      <linkId value="ProcedureRequest.timing[x]"/>
+      <text value="Timing"/>
+      <repeats value="true"/>
+      <question>
+        <linkId value="ProcedureRequest.timing[x]._type"/>
+        <text value="type"/>
+        <type value="choice"/>
+        <options>
+          <reference value="#vs2"/>
+        </options>
+        <group>
+          <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+            <valueString value="datetime"/>
+          </extension>
+          <linkId value="ProcedureRequest.timing[x]._dateTime"/>
+          <question>
+            <linkId value="ProcedureRequest.timing[x]._dateTime.value"/>
+            <text value="dateTime"/>
+            <type value="dateTime"/>
+          </question>
+        </group>
+        <group>
+          <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+            <valueString value="Period"/>
+          </extension>
+          <linkId value="ProcedureRequest.timing[x]._Period"/>
+          <text value="Period"/>
+          <question>
+            <linkId value="ProcedureRequest.timing[x]._Period.low"/>
+            <text value="start:"/>
+            <type value="dateTime"/>
+          </question>
+          <question>
+            <linkId value="ProcedureRequest.timing[x]._Period.end"/>
+            <text value="end:"/>
+            <type value="dateTime"/>
+          </question>
+        </group>
+        <group>
+          <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+            <valueString value="Schedule"/>
+          </extension>
+          <linkId value="ProcedureRequest.timing[x]._Timing"/>
+          <text value="Timing"/>
+        </group>
+      </question>
+    </group>
+    <group>
+      <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+        <valueString value="The encounter within which the procedure proposal or request was created."/>
+      </extension>
+      <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+        <valueString value="Reference"/>
+      </extension>
+      <linkId value="ProcedureRequest.encounter"/>
+      <repeats value="true"/>
+      <question>
+        <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#reference">
+          <valueString value="/Encounter?subject=$subj&amp;patient=$subj&amp;encounter=$encounter"/>
+        </extension>
+        <linkId value="ProcedureRequest.encounter.value"/>
+        <text value="Encounter"/>
+        <type value="reference"/>
+      </question>
+    </group>
+    <group>
+      <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+        <valueString value="E.g. surgeon, anaethetist, endoscopist."/>
+      </extension>
+      <linkId value="ProcedureRequest.performer"/>
+      <text value="Performer"/>
+      <repeats value="true"/>
+      <question>
+        <linkId value="ProcedureRequest.performer._type"/>
+        <text value="type"/>
+        <type value="choice"/>
+        <options>
+          <reference value="#vs3"/>
+        </options>
+        <group>
+          <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+            <valueString value="Reference"/>
+          </extension>
+          <linkId value="ProcedureRequest.performer._Practitioner"/>
+          <question>
+            <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#reference">
+              <valueString value="/Practitioner?subject=$subj&amp;patient=$subj&amp;encounter=$encounter"/>
+            </extension>
+            <linkId value="ProcedureRequest.performer._Practitioner.value"/>
+            <text value="Practitioner"/>
+            <type value="reference"/>
+          </question>
+        </group>
+        <group>
+          <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+            <valueString value="Reference"/>
+          </extension>
+          <linkId value="ProcedureRequest.performer._Organization"/>
+          <question>
+            <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#reference">
+              <valueString value="/Organization?subject=$subj&amp;patient=$subj&amp;encounter=$encounter"/>
+            </extension>
+            <linkId value="ProcedureRequest.performer._Organization.value"/>
+            <text value="Organization"/>
+            <type value="reference"/>
+          </question>
+        </group>
+        <group>
+          <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+            <valueString value="Reference"/>
+          </extension>
+          <linkId value="ProcedureRequest.performer._Patient"/>
+          <question>
+            <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#reference">
+              <valueString value="/Patient?subject=$subj&amp;patient=$subj&amp;encounter=$encounter"/>
+            </extension>
+            <linkId value="ProcedureRequest.performer._Patient.value"/>
+            <text value="Patient"/>
+            <type value="reference"/>
+          </question>
+        </group>
+        <group>
+          <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+            <valueString value="Reference"/>
+          </extension>
+          <linkId value="ProcedureRequest.performer._RelatedPerson"/>
+          <question>
+            <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#reference">
+              <valueString value="/RelatedPerson?subject=$subj&amp;patient=$subj&amp;encounter=$encounter"/>
+            </extension>
+            <linkId value="ProcedureRequest.performer._RelatedPerson.value"/>
+            <text value="RelatedPerson"/>
+            <type value="reference"/>
+          </question>
+        </group>
+      </question>
+    </group>
+    <group>
+      <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+        <valueString value="The status of the order."/>
+      </extension>
+      <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+        <valueString value="code"/>
+      </extension>
+      <linkId value="ProcedureRequest.status"/>
+      <repeats value="true"/>
+      <question>
+        <linkId value="ProcedureRequest.status.value"/>
+        <text value="status"/>
+        <type value="choice"/>
+      </question>
+    </group>
+    <group>
+      <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+        <valueString value="Any other notes associated with this proposal or order - e.g., provider instructions."/>
+      </extension>
+      <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+        <valueString value="string"/>
+      </extension>
+      <linkId value="ProcedureRequest.notes"/>
+      <repeats value="true"/>
+      <question>
+        <linkId value="ProcedureRequest.notes.value"/>
+        <text value="Notes"/>
+        <type value="string"/>
+      </question>
+    </group>
+    <group>
+      <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+        <valueString value="If a CodeableConcept is present, it indicates the pre-condition for performing the procedure."/>
+      </extension>
+      <linkId value="ProcedureRequest.asNeeded[x]"/>
+      <text value="PRN"/>
+      <repeats value="true"/>
+      <question>
+        <linkId value="ProcedureRequest.asNeeded[x]._type"/>
+        <text value="type"/>
+        <type value="choice"/>
+        <options>
+          <reference value="#vs4"/>
+        </options>
+        <group>
+          <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+            <valueString value="boolean"/>
+          </extension>
+          <linkId value="ProcedureRequest.asNeeded[x]._boolean"/>
+          <question>
+            <linkId value="ProcedureRequest.asNeeded[x]._boolean.value"/>
+            <text value="boolean"/>
+            <type value="boolean"/>
+          </question>
+        </group>
+        <group>
+          <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+            <valueString value="CodeableConcept"/>
+          </extension>
+          <linkId value="ProcedureRequest.asNeeded[x]._CodeableConcept"/>
+          <text value="CodeableConcept"/>
+          <question>
+            <linkId value="ProcedureRequest.asNeeded[x]._CodeableConcept.coding"/>
+            <text value="code:"/>
+            <type value="open-choice"/>
+          </question>
+          <question>
+            <linkId value="ProcedureRequest.asNeeded[x]._CodeableConcept.text"/>
+            <text value="text:"/>
+            <type value="string"/>
+          </question>
+        </group>
+      </question>
+    </group>
+    <group>
+      <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+        <valueString value="The time when the request was made."/>
+      </extension>
+      <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+        <valueString value="datetime"/>
+      </extension>
+      <linkId value="ProcedureRequest.orderedOn"/>
+      <repeats value="true"/>
+      <question>
+        <linkId value="ProcedureRequest.orderedOn.value"/>
+        <text value="When Requested"/>
+        <type value="dateTime"/>
+      </question>
+    </group>
+    <group>
+      <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+        <valueString value="The healthcare professional responsible for proposing or ordering the procedure."/>
+      </extension>
+      <linkId value="ProcedureRequest.orderer"/>
+      <text value="Ordering Party"/>
+      <repeats value="true"/>
+      <question>
+        <linkId value="ProcedureRequest.orderer._type"/>
+        <text value="type"/>
+        <type value="choice"/>
+        <options>
+          <reference value="#vs5"/>
+        </options>
+        <group>
+          <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+            <valueString value="Reference"/>
+          </extension>
+          <linkId value="ProcedureRequest.orderer._Practitioner"/>
+          <question>
+            <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#reference">
+              <valueString value="/Practitioner?subject=$subj&amp;patient=$subj&amp;encounter=$encounter"/>
+            </extension>
+            <linkId value="ProcedureRequest.orderer._Practitioner.value"/>
+            <text value="Practitioner"/>
+            <type value="reference"/>
+          </question>
+        </group>
+        <group>
+          <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+            <valueString value="Reference"/>
+          </extension>
+          <linkId value="ProcedureRequest.orderer._Patient"/>
+          <question>
+            <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#reference">
+              <valueString value="/Patient?subject=$subj&amp;patient=$subj&amp;encounter=$encounter"/>
+            </extension>
+            <linkId value="ProcedureRequest.orderer._Patient.value"/>
+            <text value="Patient"/>
+            <type value="reference"/>
+          </question>
+        </group>
+        <group>
+          <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+            <valueString value="Reference"/>
+          </extension>
+          <linkId value="ProcedureRequest.orderer._RelatedPerson"/>
+          <question>
+            <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#reference">
+              <valueString value="/RelatedPerson?subject=$subj&amp;patient=$subj&amp;encounter=$encounter"/>
+            </extension>
+            <linkId value="ProcedureRequest.orderer._RelatedPerson.value"/>
+            <text value="RelatedPerson"/>
+            <type value="reference"/>
+          </question>
+        </group>
+        <group>
+          <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+            <valueString value="Reference"/>
+          </extension>
+          <linkId value="ProcedureRequest.orderer._Device"/>
+          <question>
+            <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#reference">
+              <valueString value="/Device?subject=$subj&amp;patient=$subj&amp;encounter=$encounter"/>
+            </extension>
+            <linkId value="ProcedureRequest.orderer._Device.value"/>
+            <text value="Device"/>
+            <type value="reference"/>
+          </question>
+        </group>
+      </question>
+    </group>
+    <group>
+      <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+        <valueString value="The clinical priority associated with this order."/>
+      </extension>
+      <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+        <valueString value="code"/>
+      </extension>
+      <linkId value="ProcedureRequest.priority"/>
+      <repeats value="true"/>
+      <question>
+        <linkId value="ProcedureRequest.priority.value"/>
+        <text value="priority"/>
+        <type value="choice"/>
+      </question>
+    </group>
+  </group>
+</Questionnaire>

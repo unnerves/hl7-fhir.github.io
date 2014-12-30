@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="valueset-icd-10"/>
+  <meta>
+    <lastUpdated value="2014-12-30T10:55:31"/>
+  </meta>
+  <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      This value set includes sample ICD 10 codes.
+    
+      <hr/>
+      <p>This value set contains 6 concepts</p>
+      <h2>ICD-10 Codes</h2>
+      <p>This value set includes sample ICD-10 codes.</p>
+      <p>
+        <b>Copyright Statement:</b> This is an example set
+      </p>
+      <p>This value set defines its own terms in the system http://hl7.org/fhir/icd-10</p>
+      <table class="codes">
+        <tr>
+          <td>
+            <b>Code</b>
+          </td>
+          <td>
+            <b>Definition</b>
+          </td>
+        </tr>
+        <tr>
+          <td>123456
+            <a name="123456"> </a>
+          </td>
+          <td/>
+        </tr>
+        <tr>
+          <td>987654
+            <a name="987654"> </a>
+          </td>
+          <td/>
+        </tr>
+        <tr>
+          <td>123987
+            <a name="123987"> </a>
+          </td>
+          <td/>
+        </tr>
+        <tr>
+          <td>112233
+            <a name="112233"> </a>
+          </td>
+          <td/>
+        </tr>
+        <tr>
+          <td>997755
+            <a name="997755"> </a>
+          </td>
+          <td/>
+        </tr>
+        <tr>
+          <td>321789
+            <a name="321789"> </a>
+          </td>
+          <td/>
+        </tr>
+      </table>
+    </div>
+  </text>
+  <extension url="http://hl7.org/fhir/ExtensionDefinition/valueset-oid">
+    <valueUri value="urn:oid:2.16.840.1.113883.4.642.2.450"/>
+  </extension>
+  <identifier value="http://hl7.org/fhir/vs/icd-10"/>
+  <name value="ICD-10 Codes"/>
+  <publisher value="Financial Management"/>
+  <telecom>
+    <system value="url"/>
+    <value value="http://hl7.org/fhir"/>
+  </telecom>
+  <description value="This value set includes sample ICD-10 codes."/>
+  <copyright value="This is an example set"/>
+  <status value="draft"/>
+  <define>
+    <extension url="http://hl7.org/fhir/ExtensionDefinition/valueset-oid">
+      <valueUri value="urn:oid:null"/>
+    </extension>
+    <system value="http://hl7.org/fhir/icd-10"/>
+    <concept>
+      <code value="123456"/>
+    </concept>
+    <concept>
+      <code value="987654"/>
+    </concept>
+    <concept>
+      <code value="123987"/>
+    </concept>
+    <concept>
+      <code value="112233"/>
+    </concept>
+    <concept>
+      <code value="997755"/>
+    </concept>
+    <concept>
+      <code value="321789"/>
+    </concept>
+  </define>
+</ValueSet>

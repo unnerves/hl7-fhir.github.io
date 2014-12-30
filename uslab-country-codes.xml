@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="uslab-country-codes"/>
+  <meta>
+    <lastUpdated value="2014-12-30T10:55:31"/>
+  </meta>
+  <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      <p>This value set contains 6 concepts</p>
+      <h2>USLabCountry</h2>
+      <p>ISO 3 letter codes</p>
+      <p>This value set includes codes defined in other code systems, using the following rules:</p>
+      <ul>
+        <li>Include these codes as defined in http://www.iso.org/iso/country_codes.htm
+          <table>
+            <tr>
+              <td>
+                <b>Code</b>
+              </td>
+              <td>
+                <b>Display</b>
+              </td>
+            </tr>
+            <tr>
+              <td>USA</td>
+              <td>United States</td>
+              <td/>
+            </tr>
+            <tr>
+              <td>MEX</td>
+              <td>Mexico</td>
+              <td/>
+            </tr>
+            <tr>
+              <td>CAN</td>
+              <td>Canada</td>
+              <td/>
+            </tr>
+            <tr>
+              <td>BMU</td>
+              <td>Bermuda</td>
+              <td/>
+            </tr>
+            <tr>
+              <td>PRI</td>
+              <td>Puerto Rico</td>
+              <td/>
+            </tr>
+            <tr>
+              <td>GUM</td>
+              <td>Guam</td>
+              <td/>
+            </tr>
+          </table>
+        </li>
+      </ul>
+    </div>
+  </text>
+  <extension url="http://hl7.org/fhir/ExtensionDefinition/valueset-oid">
+    <valueUri value="urn:oid:2.16.840.1.113883.4.642.2.516"/>
+  </extension>
+  <identifier value="http://hl7.org/fhir/vs/uslab-country-codes"/>
+  <name value="USLabCountry"/>
+  <publisher value="HL7 (FHIR Project)"/>
+  <telecom>
+    <system value="url"/>
+    <value value="http://hl7.org/fhir"/>
+  </telecom>
+  <telecom>
+    <system value="email"/>
+    <value value="fhir@lists.hl7.org"/>
+  </telecom>
+  <description value="ISO 3 letter codes"/>
+  <status value="draft"/>
+  <date value="2014-12-30T10:55:31"/>
+  <compose>
+    <include>
+      <system value="http://www.iso.org/iso/country_codes.htm"/>
+      <concept>
+        <code value="USA"/>
+        <display value="United States"/>
+      </concept>
+      <concept>
+        <code value="MEX"/>
+        <display value="Mexico"/>
+      </concept>
+      <concept>
+        <code value="CAN"/>
+        <display value="Canada"/>
+      </concept>
+      <concept>
+        <code value="BMU"/>
+        <display value="Bermuda"/>
+      </concept>
+      <concept>
+        <code value="PRI"/>
+        <display value="Puerto Rico"/>
+      </concept>
+      <concept>
+        <code value="GUM"/>
+        <display value="Guam"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

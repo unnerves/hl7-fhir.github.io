@@ -1,0 +1,387 @@
+﻿<!DOCTYPE HTML>
+
+
+
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <title>Conformance-sdc-form-filler.xml - FHIR v0.4.0</title>
+
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="author" content="http://hl7.org/fhir"/>
+
+  <link href="fhir.css" rel="stylesheet"/>
+  <link rel="Prev" href="http://hl7.org/implement/standards/fhir/conformance-sdc-form-filler.xml.html"/>
+
+  <!-- Bootstrap core CSS -->
+  <link href="./dist/css/bootstrap.css" rel="stylesheet"/>
+  <link href="./assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+  <!-- Project extras -->
+  <link href="./assets/css/project.css" rel="stylesheet"/>
+  <link href="./assets/css/pygments-manni.css" rel="stylesheet"/>
+	<link href="jquery-ui.css" rel="stylesheet"/>
+
+  <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!--[if lt IE 9]>
+  <script src="./assets/js/html5shiv.js"></script>
+  <script src="./assets/js/respond.min.js"></script>
+  <![endif]-->
+
+  <!-- Favicons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="./assets/ico/apple-touch-icon-144-precomposed.png"/>
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="./assets/ico/apple-touch-icon-114-precomposed.png"/>
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="./assets/ico/apple-touch-icon-72-precomposed.png"/>
+  <link rel="apple-touch-icon-precomposed" href="./assets/ico/apple-touch-icon-57-precomposed.png"/>
+  <link rel="shortcut icon" href="./assets/ico/favicon.png"/>
+
+</head>
+<body>
+	<div id="segment-header" class="segment"><!-- segment-header -->	
+		<div class="container"><!-- container -->
+			<a id="logo" href="http://hl7.org/fhir"><img src="./assets/images/fhir-logo-www.png" alt="logo fhir"/> </a>
+			<div id="hl7-status">
+				<b>Continuous Integration Build</b>
+			</div>       	
+			
+			<div id="hl7-nav">
+				 <a id="hl7-logo" href="http://www.hl7.org">
+					<img src="./assets/images/hl7-logo.png" width="42" height="50" alt="visit the hl7 website"/>
+				</a> 
+			</div>       	
+			<!--hl7-search-->
+		</div>
+		<div class="container"><!-- container -->
+	</div></div><!-- /segment-header -->	
+
+
+	<div id="segment-navbar" class="segment"><!-- segment-navbar -->
+		<div id="stripe"> </div>
+		<div class="container"><!-- container -->
+ <!-- HEADER CONTENT -->
+ 	      		
+ 	      		      		
+			<nav class="navbar navbar-inverse">
+				<div class="container">
+					<button data-target=".navbar-inverse-collapse" data-toggle="collapse" class="navbar-toggle" type="button">
+						<span class="icon-bar"> </span>
+						<span class="icon-bar"> </span>
+						<span class="icon-bar"> </span>
+					</button>
+					<a href="index.html" class="navbar-brand hidden">FHIR</a>
+					<div class="nav-collapse collapse navbar-inverse-collapse">
+						<ul class="nav navbar-nav">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="documentation.html">Documentation</a></li>
+              <li><a href="implementation.html">Implementation</a></li>
+              <li><a href="resourcelist.html">Resources</a></li>
+              <li><a href="clinical.html">Clinical</a></li>
+              <li><a href="administration.html">Administrative</a></li>
+              <li><a href="infrastructure.html">Infrastructure</a></li>
+              <li><a href="financial.html">Financial</a></li>
+
+						</ul>
+					</div><!-- /.nav-collapse -->
+				</div><!-- /.container -->
+			</nav><!-- /.navbar -->
+      		
+				
+<!-- /HEADER CONTENT -->				
+		</div><!-- /container -->
+	</div><!-- /segment-navbar -->
+	
+
+	<div id="segment-breadcrumb" class="segment"><!-- segment-breadcrumb -->
+		<div class="container"><!-- container -->	
+			<ul class="breadcrumb">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="infrastructure.html">Infrastructure</a></li>        <li><a href="conformance.html">Conformance</a></li>        <li><b>Example Instance</b></li>        <!-- conformance-sdc-form-filler.xml.html / resource-instance:Conformance -->
+
+			</ul>	
+		</div><!-- /container -->
+	</div><!-- /segment-breadcrumb -->
+	
+
+	<div id="segment-content" class="segment"><!-- segment-content -->
+	<div class="container"><!-- container -->
+            <div class="row">
+            	<div class="inner-wrapper">
+<!-- CONTENT CONTENT -->
+
+
+<div class="col-9">
+
+<h1>Conformance-sdc-form-filler.xml</h1>
+
+<p>
+<a href="conformance-sdc-form-filler.xml">Raw XML</a> (<a href="conformance-sdc-form-filler.canonical.xml">canonical form</a>)
+</p>
+
+
+<div class="example">
+<p>SDC System for completing forms (id = &quot;sdc-formfiller&quot;)</p>
+<p><a href="conformance-sdc-form-filler.xml">Raw XML</a></p>
+<pre class="xml">
+<span class="xmltag">&lt;Conformance</span><span class="xmlattr"> xmlns="<span class="xmlattrvalue">http://hl7.org/fhir</span>"</span><span class="xmltag">&gt;</span><b>
+  </b><span class="xmltag">&lt;id</span><span class="xmlattr"> value="<span class="xmlattrvalue">sdc-formfiller</span>"</span><span class="xmltag">/&gt;</span><b>
+  </b><span class="xmltag">&lt;text</span><span class="xmltag">&gt;</span><b>
+    </b><span class="xmltag">&lt;status</span><span class="xmlattr"> value="<span class="xmlattrvalue">generated</span>"</span><span class="xmltag">/&gt;</span><b>
+    </b><span class="xmltag">&lt;div</span><span class="xmlattr"> xmlns="<span class="xmlattrvalue">http://www.w3.org/1999/xhtml</span>"</span><span class="xmltag">&gt;</span><span class="xmlcomment">&lt;!-- Snipped for brevity --&gt;</span><span class="xmltag">&lt;/div&gt;</span><b>
+  </b><span class="xmltag">&lt;/text&gt;</span><b>
+  </b><span class="xmltag">&lt;name</span><span class="xmlattr"> value="<span class="xmlattrvalue">SDC Form Filler</span>"</span><span class="xmltag">/&gt;</span><b>
+  </b><span class="xmltag">&lt;publisher</span><span class="xmlattr"> value="<span class="xmlattrvalue">U.S. Office of the National Coordinator (ONC)</span>"</span><span class="xmltag">/&gt;</span><b>
+  </b><span class="xmltag">&lt;telecom</span><span class="xmltag">&gt;</span><b>
+    </b><span class="xmltag">&lt;system</span><span class="xmlattr"> value="<span class="xmlattrvalue">url</span>"</span><span class="xmltag">/&gt;</span><b>
+    </b><span class="xmltag">&lt;value</span><span class="xmlattr"> value="<span class="xmlattrvalue">http://wiki.siframework.org/Structured+Data+Capture+Initiative</span>"</span><span class="xmltag">/&gt;</span><b>
+  </b><span class="xmltag">&lt;/telecom&gt;</span><b>
+  </b><span class="xmltag">&lt;description</span><span class="xmlattr"> value="<span class="xmlattrvalue">This profile defines the expected capabilities of the &apos;&apos;SDC Form Filler&apos;&apos; role when conforming
+   to the S&amp;amp;I Framework&apos;s [[sdc|Structured Data Capture FHIR implementation guide]].
+    This role is responsible for retrieving pre-defined forms, requesting pre-population
+   of forms and/or auto-populating forms, guiding the user through verifying populated data
+   and submitting completed or partially-completed forms.</span>"</span><span class="xmltag">/&gt;</span><b>
+  </b><span class="xmltag">&lt;status</span><span class="xmlattr"> value="<span class="xmlattrvalue">draft</span>"</span><span class="xmltag">/&gt;</span><b>
+  </b><span class="xmltag">&lt;date</span><span class="xmlattr"> value="<span class="xmlattrvalue">2014-07-06</span>"</span><span class="xmltag">/&gt;</span><b>
+  </b><span class="xmltag">&lt;fhirVersion</span><span class="xmlattr"> value="<span class="xmlattrvalue">0.2</span>"</span><span class="xmltag">/&gt;</span><b>
+  </b><span class="xmltag">&lt;acceptUnknown</span><span class="xmlattr"> value="<span class="xmlattrvalue">false</span>"</span><span class="xmltag">/&gt;</span><b>
+  </b><span class="xmltag">&lt;format</span><span class="xmlattr"> value="<span class="xmlattrvalue">xml</span>"</span><span class="xmltag">/&gt;</span><b>
+  </b><span class="xmltag">&lt;format</span><span class="xmlattr"> value="<span class="xmlattrvalue">json</span>"</span><span class="xmltag">/&gt;</span><b>
+  </b><span class="xmltag">&lt;rest</span><span class="xmltag">&gt;</span><b>
+    </b><span class="xmltag">&lt;mode</span><span class="xmlattr"> value="<span class="xmlattrvalue">client</span>"</span><span class="xmltag">/&gt;</span><b>
+    </b><span class="xmltag">&lt;documentation</span><span class="xmlattr"> value="<span class="xmlattrvalue">The [[Questionnaire]] and [[ValueSet]] resources are retrieved to allow the system to
+     guide the user through the entry process.  The [[Binary]] and [[DocumentReference]] resources
+     allow the system to find existing clinical documents that can be within the pre-population
+     process.  (Support for retrieval operations on these resources is optional as the relevant
+     CDA or FHIR structures may also be directly generated by the &apos;&apos;Form Filler&apos;&apos; itself.)
+      Finally, the [[QuestionnaireAnswer]] resource is used to record the populated form.</span>"</span><span class="xmltag">/&gt;</span><b>
+    </b><span class="xmltag">&lt;security</span><span class="xmltag">&gt;</span><b>
+      </b><span class="xmltag">&lt;description</span><span class="xmlattr"> value="<span class="xmlattrvalue">Implementations must meet the general security requirements documented in the [[sdc-security|SDC
+       implementation guide]].</span>"</span><span class="xmltag">/&gt;</span><b>
+    </b><span class="xmltag">&lt;/security&gt;</span><b>
+    </b><span class="xmltag">&lt;resource</span><span class="xmltag">&gt;</span><b>
+      </b><span class="xmltag">&lt;type</span><span class="xmlattr"> value="<span class="xmlattrvalue">Questionnaire</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;profile</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;reference</span><span class="xmlattr"> value="<span class="xmlattrvalue"><font color="red">Profile/questionnaire-sdc.xml-StructuredDataCaptureForm</font></span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/profile&gt;</span><b>
+      </b><span class="xmltag">&lt;interaction</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;extension</span><span class="xmlattr"> url="<span class="xmlattrvalue">http://hl7.org/fhir/ExtensionDefinition/conformance-common-expectation</span>"</span><span class="xmltag">&gt;</span><b>
+          </b><span class="xmltag">&lt;valueCode</span><span class="xmlattr"> value="<span class="xmlattrvalue">SHALL</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;/extension&gt;</span><b>
+        </b><span class="xmltag">&lt;code</span><span class="xmlattr"> value="<span class="xmlattrvalue">search-type</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;documentation</span><span class="xmlattr"> value="<span class="xmlattrvalue">Allows discovery of existing questionnaires to be completed</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/interaction&gt;</span><b>
+      </b><span class="xmltag">&lt;interaction</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;extension</span><span class="xmlattr"> url="<span class="xmlattrvalue">http://hl7.org/fhir/ExtensionDefinition/conformance-common-expectation</span>"</span><span class="xmltag">&gt;</span><b>
+          </b><span class="xmltag">&lt;valueCode</span><span class="xmlattr"> value="<span class="xmlattrvalue">SHOULD</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;/extension&gt;</span><b>
+        </b><span class="xmltag">&lt;code</span><span class="xmlattr"> value="<span class="xmlattrvalue">read</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;documentation</span><span class="xmlattr"> value="<span class="xmlattrvalue">Allows retrieval of a specific questionnaire by id.  Allows systems to maintain a &apos;favorites&apos;
+         list of forms and retrieve them by id.</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/interaction&gt;</span><b>
+      </b><span class="xmltag">&lt;interaction</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;extension</span><span class="xmlattr"> url="<span class="xmlattrvalue">http://hl7.org/fhir/ExtensionDefinition/conformance-common-expectation</span>"</span><span class="xmltag">&gt;</span><b>
+          </b><span class="xmltag">&lt;valueCode</span><span class="xmlattr"> value="<span class="xmlattrvalue">MAY</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;/extension&gt;</span><b>
+        </b><span class="xmltag">&lt;code</span><span class="xmlattr"> value="<span class="xmlattrvalue">history-instance</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;documentation</span><span class="xmlattr"> value="<span class="xmlattrvalue">Allows review of changes made to a questionnaire over time.  Of interest to some systems,
+         but probably not most.</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/interaction&gt;</span><b>
+      </b><span class="xmltag">&lt;interaction</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;extension</span><span class="xmlattr"> url="<span class="xmlattrvalue">http://hl7.org/fhir/ExtensionDefinition/conformance-common-expectation</span>"</span><span class="xmltag">&gt;</span><b>
+          </b><span class="xmltag">&lt;valueCode</span><span class="xmlattr"> value="<span class="xmlattrvalue">MAY</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;/extension&gt;</span><b>
+        </b><span class="xmltag">&lt;code</span><span class="xmlattr"> value="<span class="xmlattrvalue">vread</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;documentation</span><span class="xmlattr"> value="<span class="xmlattrvalue">Allows retrieval of a historical version of a questionnaire.  Most systems will make use
+         of the current version only.</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/interaction&gt;</span><b>
+    </b><span class="xmltag">&lt;/resource&gt;</span><span class="xmlcomment">&lt;!--    Do we want to define what search criteria must be supported?    --&gt;</span><b>
+    </b><span class="xmltag">&lt;resource</span><span class="xmltag">&gt;</span><b>
+      </b><span class="xmltag">&lt;type</span><span class="xmlattr"> value="<span class="xmlattrvalue">ValueSet</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;profile</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;reference</span><span class="xmlattr"> value="<span class="xmlattrvalue">http://hl7.org/fhir/Profile/valueset-sdc</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/profile&gt;</span><b>
+      </b><span class="xmltag">&lt;interaction</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;extension</span><span class="xmlattr"> url="<span class="xmlattrvalue">http://hl7.org/fhir/ExtensionDefinition/conformance-common-expectation</span>"</span><span class="xmltag">&gt;</span><b>
+          </b><span class="xmltag">&lt;valueCode</span><span class="xmlattr"> value="<span class="xmlattrvalue">SHALL</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;/extension&gt;</span><b>
+        </b><span class="xmltag">&lt;code</span><span class="xmlattr"> value="<span class="xmlattrvalue">read</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;documentation</span><span class="xmlattr"> value="<span class="xmlattrvalue">Allows retrieval of a specific value set by id (as referenced in a Questionnaire)</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/interaction&gt;</span><b>
+      </b><span class="xmltag">&lt;interaction</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;extension</span><span class="xmlattr"> url="<span class="xmlattrvalue">http://hl7.org/fhir/ExtensionDefinition/conformance-common-expectation</span>"</span><span class="xmltag">&gt;</span><b>
+          </b><span class="xmltag">&lt;valueCode</span><span class="xmlattr"> value="<span class="xmlattrvalue">SHOULD</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;/extension&gt;</span><b>
+        </b><span class="xmltag">&lt;code</span><span class="xmlattr"> value="<span class="xmlattrvalue">vread</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;documentation</span><span class="xmlattr"> value="<span class="xmlattrvalue">Allows retrieval of a specific version of a value set (as referenced in a Questionnaire)</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/interaction&gt;</span><b>
+      </b><span class="xmltag">&lt;interaction</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;extension</span><span class="xmlattr"> url="<span class="xmlattrvalue">http://hl7.org/fhir/ExtensionDefinition/conformance-common-expectation</span>"</span><span class="xmltag">&gt;</span><b>
+          </b><span class="xmltag">&lt;valueCode</span><span class="xmlattr"> value="<span class="xmlattrvalue">MAY</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;/extension&gt;</span><b>
+        </b><span class="xmltag">&lt;code</span><span class="xmlattr"> value="<span class="xmlattrvalue">history-instance</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;documentation</span><span class="xmlattr"> value="<span class="xmlattrvalue">Allows review of changes to a value set over time.  Of interest to some systems, but probably
+         not most.</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/interaction&gt;</span><b>
+    </b><span class="xmltag">&lt;/resource&gt;</span><b>
+    </b><span class="xmltag">&lt;resource</span><span class="xmltag">&gt;</span><b>
+      </b><span class="xmltag">&lt;type</span><span class="xmlattr"> value="<span class="xmlattrvalue">QuestionnaireAnswers</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;profile</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;reference</span><span class="xmlattr"> value="<span class="xmlattrvalue">http://hl7.org/fhir/Profile/dataelement-sdc</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/profile&gt;</span><b>
+      </b><span class="xmltag">&lt;interaction</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;extension</span><span class="xmlattr"> url="<span class="xmlattrvalue">http://hl7.org/fhir/ExtensionDefinition/conformance-common-expectation</span>"</span><span class="xmltag">&gt;</span><b>
+          </b><span class="xmltag">&lt;valueCode</span><span class="xmlattr"> value="<span class="xmlattrvalue">SHALL</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;/extension&gt;</span><b>
+        </b><span class="xmltag">&lt;code</span><span class="xmlattr"> value="<span class="xmlattrvalue">search-type</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;documentation</span><span class="xmlattr"> value="<span class="xmlattrvalue">Allows a user to search for existing completed or partially-completed forms.  Generally
+         used to find partially-completed forms for update.</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/interaction&gt;</span><b>
+      </b><span class="xmltag">&lt;interaction</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;extension</span><span class="xmlattr"> url="<span class="xmlattrvalue">http://hl7.org/fhir/ExtensionDefinition/conformance-common-expectation</span>"</span><span class="xmltag">&gt;</span><b>
+          </b><span class="xmltag">&lt;valueCode</span><span class="xmlattr"> value="<span class="xmlattrvalue">SHALL</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;/extension&gt;</span><b>
+        </b><span class="xmltag">&lt;code</span><span class="xmlattr"> value="<span class="xmlattrvalue">create</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;documentation</span><span class="xmlattr"> value="<span class="xmlattrvalue">Allows recording a completed or partially-completed form</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/interaction&gt;</span><b>
+      </b><span class="xmltag">&lt;interaction</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;extension</span><span class="xmlattr"> url="<span class="xmlattrvalue">http://hl7.org/fhir/ExtensionDefinition/conformance-common-expectation</span>"</span><span class="xmltag">&gt;</span><b>
+          </b><span class="xmltag">&lt;valueCode</span><span class="xmlattr"> value="<span class="xmlattrvalue">SHALL</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;/extension&gt;</span><b>
+        </b><span class="xmltag">&lt;code</span><span class="xmlattr"> value="<span class="xmlattrvalue">update</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;documentation</span><span class="xmlattr"> value="<span class="xmlattrvalue">Allows updating an existing completed or partially-completed form.  (Systems may place
+         rules on who can update forms and under what circumstances.)</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/interaction&gt;</span><b>
+      </b><span class="xmltag">&lt;interaction</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;extension</span><span class="xmlattr"> url="<span class="xmlattrvalue">http://hl7.org/fhir/ExtensionDefinition/conformance-common-expectation</span>"</span><span class="xmltag">&gt;</span><b>
+          </b><span class="xmltag">&lt;valueCode</span><span class="xmlattr"> value="<span class="xmlattrvalue">SHALL</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;/extension&gt;</span><b>
+        </b><span class="xmltag">&lt;code</span><span class="xmlattr"> value="<span class="xmlattrvalue">delete</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;documentation</span><span class="xmlattr"> value="<span class="xmlattrvalue">Allows removal of a completed form from a repository.  Note that the removal may be logical
+         rather than physical.  Some systems may have rules for who can remove a completed form
+         and under what circumstances.</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/interaction&gt;</span><b>
+      </b><span class="xmltag">&lt;interaction</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;extension</span><span class="xmlattr"> url="<span class="xmlattrvalue">http://hl7.org/fhir/ExtensionDefinition/conformance-common-expectation</span>"</span><span class="xmltag">&gt;</span><b>
+          </b><span class="xmltag">&lt;valueCode</span><span class="xmlattr"> value="<span class="xmlattrvalue">SHOULD</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;/extension&gt;</span><b>
+        </b><span class="xmltag">&lt;code</span><span class="xmlattr"> value="<span class="xmlattrvalue">history-instance</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;documentation</span><span class="xmlattr"> value="<span class="xmlattrvalue">Allows review of prior versions of an answer set - allows reversion to previously recorded
+         versions</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/interaction&gt;</span><b>
+      </b><span class="xmltag">&lt;interaction</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;extension</span><span class="xmlattr"> url="<span class="xmlattrvalue">http://hl7.org/fhir/ExtensionDefinition/conformance-common-expectation</span>"</span><span class="xmltag">&gt;</span><b>
+          </b><span class="xmltag">&lt;valueCode</span><span class="xmlattr"> value="<span class="xmlattrvalue">SHOULD</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;/extension&gt;</span><b>
+        </b><span class="xmltag">&lt;code</span><span class="xmlattr"> value="<span class="xmlattrvalue">validate</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;documentation</span><span class="xmlattr"> value="<span class="xmlattrvalue">Allows checking an answer set for validity against submission rules without persisting
+         any data</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/interaction&gt;</span><b>
+    </b><span class="xmltag">&lt;/resource&gt;</span><span class="xmlcomment">&lt;!--    Do we want to define what search criteria must be supported?    --&gt;</span><b>
+    </b><span class="xmltag">&lt;resource</span><span class="xmltag">&gt;</span><b>
+      </b><span class="xmltag">&lt;type</span><span class="xmlattr"> value="<span class="xmlattrvalue">DocumentReference</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;profile</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;reference</span><span class="xmlattr"> value="<span class="xmlattrvalue">http://hl7.org/fhir/Profile/documentreference-sdc</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/profile&gt;</span><b>
+      </b><span class="xmltag">&lt;interaction</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;extension</span><span class="xmlattr"> url="<span class="xmlattrvalue">http://hl7.org/fhir/ExtensionDefinition/conformance-common-expectation</span>"</span><span class="xmltag">&gt;</span><b>
+          </b><span class="xmltag">&lt;valueCode</span><span class="xmlattr"> value="<span class="xmlattrvalue">SHOULD</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;/extension&gt;</span><b>
+        </b><span class="xmltag">&lt;code</span><span class="xmlattr"> value="<span class="xmlattrvalue">search-type</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;documentation</span><span class="xmlattr"> value="<span class="xmlattrvalue">Allows discovery of existing documents that may be included in a form pre-population request</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/interaction&gt;</span><b>
+    </b><span class="xmltag">&lt;/resource&gt;</span><span class="xmlcomment">&lt;!--    Do we want to define what search criteria must be supported?    --&gt;</span><b>
+    </b><span class="xmltag">&lt;resource</span><span class="xmltag">&gt;</span><b>
+      </b><span class="xmltag">&lt;type</span><span class="xmlattr"> value="<span class="xmlattrvalue">Binary</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;profile</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;reference</span><span class="xmlattr"> value="<span class="xmlattrvalue">http://hl7.org/fhir/Profile/binary-sdc</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/profile&gt;</span><b>
+      </b><span class="xmltag">&lt;interaction</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;extension</span><span class="xmlattr"> url="<span class="xmlattrvalue">http://hl7.org/fhir/ExtensionDefinition/conformance-common-expectation</span>"</span><span class="xmltag">&gt;</span><b>
+          </b><span class="xmltag">&lt;valueCode</span><span class="xmlattr"> value="<span class="xmlattrvalue">SHOULD</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;/extension&gt;</span><b>
+        </b><span class="xmltag">&lt;code</span><span class="xmlattr"> value="<span class="xmlattrvalue">read</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;documentation</span><span class="xmlattr"> value="<span class="xmlattrvalue">Allows retrieval of a specific binary (as pointed to by a DocumentReference)</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/interaction&gt;</span><b>
+      </b><span class="xmltag">&lt;interaction</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;extension</span><span class="xmlattr"> url="<span class="xmlattrvalue">http://hl7.org/fhir/ExtensionDefinition/conformance-common-expectation</span>"</span><span class="xmltag">&gt;</span><b>
+          </b><span class="xmltag">&lt;valueCode</span><span class="xmlattr"> value="<span class="xmlattrvalue">MAY</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;/extension&gt;</span><b>
+        </b><span class="xmltag">&lt;code</span><span class="xmlattr"> value="<span class="xmlattrvalue">vread</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;documentation</span><span class="xmlattr"> value="<span class="xmlattrvalue">Allows retrieval of a historical version of a binary.  In general, the most recent version
+         would be appropriate, but some may prefer to use the specific version referenced by a
+         DocumentReference.</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/interaction&gt;</span><b>
+    </b><span class="xmltag">&lt;/resource&gt;</span><b>
+    </b><span class="xmltag">&lt;operation</span><span class="xmltag">&gt;</span><b>
+      </b><span class="xmltag">&lt;extension</span><span class="xmlattr"> url="<span class="xmlattrvalue">http://hl7.org/fhir/ExtensionDefinition/conformance-common-expectation</span>"</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;valueCode</span><span class="xmlattr"> value="<span class="xmlattrvalue">MAY</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/extension&gt;</span><b>
+      </b><span class="xmltag">&lt;name</span><span class="xmlattr"> value="<span class="xmlattrvalue">populate</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;definition</span><span class="xmltag">&gt;</span><span class="xmlcomment">&lt;!--    Todo: Confirm the id for the operation    --&gt;</span><b>
+        </b><span class="xmltag">&lt;reference</span><span class="xmlattr"> value="<span class="xmlattrvalue">http://hl7.org/fhir/OperationDefinition#questionnaire-populate</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;display</span><span class="xmlattr"> value="<span class="xmlattrvalue">Populate Questionnaire</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/definition&gt;</span><b>
+    </b><span class="xmltag">&lt;/operation&gt;</span><b>
+  </b><span class="xmltag">&lt;/rest&gt;</span><b>
+</b><span class="xmltag">&lt;/Conformance&gt;</span></pre>
+</div>
+
+
+<p>
+Usage note: every effort has been made to ensure that the 
+examples are correct and useful, but they are not a normative part 
+of the specification. 
+</p>
+
+</div>
+
+
+				</div><!-- /inner-wrapper -->
+            </div><!-- /row -->
+        </div><!-- /container -->
+        
+    </div><!-- /segment-content -->
+
+
+	<div id="segment-footer" class="segment"><!-- segment-footer -->
+		<div class="container"><!-- container -->
+			<div class="inner-wrapper">
+				<p>
+        © HL7.org 2011+. FHIR DSTU (v0.4.0-3920) generated on Tue, Dec 30, 2014 10:59+0000. <!-- <a href="qa.html">QA Report</a> --> <!-- achive note -->
+        <br/>
+        <span style="color: #FFFF77">
+        Links: <a style="color: #81BEF7" href="timelines.html">What's a DSTU?</a> | 
+               <a style="color: #81BEF7" href="history.html">Version History</a> | 
+               <a style="color: #81BEF7" href="http://services.w3.org/htmldiff?doc1=http%3A%2F%2Fhl7.org%2Fimplement%2Fstandards%2Ffhir%2Fconformance-sdc-form-filler.xml.html&amp;doc2=http%3A%2F%2Fhl7-fhir.github.io%2F%2Fconformance-sdc-form-filler.xml.html">Compare to DSTU</a> | 
+               <a style="color: #81BEF7" rel="license" href="license.html"><img src="cc0.png" style="border-style: none;" alt="CC0"/></a> | 
+               <a style="color: #81BEF7" target="_blank" href="http://gforge.hl7.org/gf/project/fhir/tracker/?action=TrackerItemAdd&amp;tracker_id=677">Propose a change</a>   
+        </span>
+        </p>
+			</div><!-- /inner-wrapper -->
+		</div><!-- /container -->
+	</div><!-- /segment-footer -->
+<!-- disqus thread -->
+<!--disqus-->
+<!-- end disqus -->        
+	
+	<div id="segment-post-footer" class="segment hidden"><!-- segment-post-footer -->
+		<div class="container"><!-- container -->
+		</div><!-- /container -->
+	</div><!-- /segment-post-footer -->
+    
+    <!-- JS and analytics only. -->
+    <!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="./assets/js/jquery.js"> </script>   <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+<script src="./dist/js/bootstrap.min.js"> </script>
+<script src="./assets/js/respond.min.js"> </script>
+
+<script src="./assets/js/fhir.js"> </script>
+
+<!-- Analytics Below
+================================================== -->
+
+    
+</body>
+</html>

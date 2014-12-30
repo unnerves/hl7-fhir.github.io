@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ExtensionDefinition xmlns="http://hl7.org/fhir">
+  <id value="genetics-relationParent"/>
+  <url value="http://hl7.org/fhir/ExtensionDefinition/genetics-relationParent"/>
+  <name value="Mother(s) &amp; Father(s) - genetic &amp; other"/>
+  <publisher value="HL7 International - Clinical Genomics WG"/>
+  <telecom>
+    <system value="url"/>
+    <value value="http://www.hl7.org/Special/committees/clingenomics"/>
+  </telecom>
+  <description value="Identifies a parent of the relative."/>
+  <status value="draft"/>
+  <date value="2013-10-02"/>
+  <mapping>
+    <identity value="rim"/>
+    <uri value="http://hl7.org/v3"/>
+    <name value="RIM"/>
+  </mapping>
+  <contextType value="resource"/>
+  <context value="FamilyHistory.relation"/>
+  <element>
+    <path value="Extension"/>
+    <short value="Mother(s) &amp; Father(s) - genetic &amp; other"/>
+    <formal value="Identifies a parent of the relative."/>
+    <comments value="Some individuals may have more than two parents (e.g. genetic vs. adoptive parents).  Even non-genetic relationships can be relevant in terms of genetic exposure."/>
+    <min value="0"/>
+    <max value="*"/>
+    <isSummary value="false"/>
+    <mapping>
+      <identity value="rim"/>
+      <map value="player[classCode&lt;LIV, determinerCode=INSTANCE].scopesRole"/>
+    </mapping>
+  </element>
+  <element>
+    <path value="Extension.type"/>
+    <short value="mother | father | adoptive mother | etc."/>
+    <formal value="Distinguishes between different types of parental relationships with varying granularity to support capturing the relationship &quot;to the degree known&quot;."/>
+    <min value="1"/>
+    <max value="1"/>
+    <type>
+      <code value="CodeableConcept"/>
+    </type>
+    <isSummary value="false"/>
+    <binding>
+      <name value="ParentRelationshipType"/>
+      <isExtensible value="true"/>
+      <conformance value="required"/>
+      <description value="Parental relationship types"/>
+      <referenceReference>
+        <reference value="http://hl7.org/fhir/vs/parent-relationship-codes"/>
+      </referenceReference>
+    </binding>
+    <mapping>
+      <identity value="rim"/>
+      <map value="code"/>
+    </mapping>
+  </element>
+  <element>
+    <path value="Extension.identifier"/>
+    <short value="Link to parent relative(s)"/>
+    <formal value="Points to the &#39;id&#39; attribute on the relation who is the parent of this relation."/>
+    <min value="1"/>
+    <max value="1"/>
+    <type>
+      <code value="uri"/>
+    </type>
+    <isSummary value="false"/>
+    <mapping>
+      <identity value="rim"/>
+      <map value="player.id"/>
+    </mapping>
+  </element>
+</ExtensionDefinition>

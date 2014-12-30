@@ -1,0 +1,1655 @@
+﻿<!DOCTYPE HTML>
+
+
+
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <title>Nutritionorder.questionnaire.json - FHIR v0.4.0</title>
+
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="author" content="http://hl7.org/fhir"/>
+
+  <link href="fhir.css" rel="stylesheet"/>
+  <link rel="Prev" href="http://hl7.org/implement/standards/fhir/nutritionorder.questionnaire.json.html"/>
+
+  <!-- Bootstrap core CSS -->
+  <link href="./dist/css/bootstrap.css" rel="stylesheet"/>
+  <link href="./assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+  <!-- Project extras -->
+  <link href="./assets/css/project.css" rel="stylesheet"/>
+  <link href="./assets/css/pygments-manni.css" rel="stylesheet"/>
+	<link href="jquery-ui.css" rel="stylesheet"/>
+
+  <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!--[if lt IE 9]>
+  <script src="./assets/js/html5shiv.js"></script>
+  <script src="./assets/js/respond.min.js"></script>
+  <![endif]-->
+
+  <!-- Favicons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="./assets/ico/apple-touch-icon-144-precomposed.png"/>
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="./assets/ico/apple-touch-icon-114-precomposed.png"/>
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="./assets/ico/apple-touch-icon-72-precomposed.png"/>
+  <link rel="apple-touch-icon-precomposed" href="./assets/ico/apple-touch-icon-57-precomposed.png"/>
+  <link rel="shortcut icon" href="./assets/ico/favicon.png"/>
+
+</head>
+<body>
+	<div id="segment-header" class="segment"><!-- segment-header -->	
+		<div class="container"><!-- container -->
+			<a id="logo" href="http://hl7.org/fhir"><img src="./assets/images/fhir-logo-www.png" alt="logo fhir"/> </a>
+			<div id="hl7-status">
+				<b>Continuous Integration Build</b>
+			</div>       	
+			
+			<div id="hl7-nav">
+				 <a id="hl7-logo" href="http://www.hl7.org">
+					<img src="./assets/images/hl7-logo.png" width="42" height="50" alt="visit the hl7 website"/>
+				</a> 
+			</div>       	
+			<!--hl7-search-->
+		</div>
+		<div class="container"><!-- container -->
+	</div></div><!-- /segment-header -->	
+
+
+	<div id="segment-navbar" class="segment"><!-- segment-navbar -->
+		<div id="stripe"> </div>
+		<div class="container"><!-- container -->
+ <!-- HEADER CONTENT -->
+ 	      		
+ 	      		      		
+			<nav class="navbar navbar-inverse">
+				<div class="container">
+					<button data-target=".navbar-inverse-collapse" data-toggle="collapse" class="navbar-toggle" type="button">
+						<span class="icon-bar"> </span>
+						<span class="icon-bar"> </span>
+						<span class="icon-bar"> </span>
+					</button>
+					<a href="index.html" class="navbar-brand hidden">FHIR</a>
+					<div class="nav-collapse collapse navbar-inverse-collapse">
+						<ul class="nav navbar-nav">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="documentation.html">Documentation</a></li>
+              <li><a href="implementation.html">Implementation</a></li>
+              <li><a href="resourcelist.html">Resources</a></li>
+              <li><a href="clinical.html">Clinical</a></li>
+              <li><a href="administration.html">Administrative</a></li>
+              <li><a href="infrastructure.html">Infrastructure</a></li>
+              <li><a href="financial.html">Financial</a></li>
+
+						</ul>
+					</div><!-- /.nav-collapse -->
+				</div><!-- /.container -->
+			</nav><!-- /.navbar -->
+      		
+				
+<!-- /HEADER CONTENT -->				
+		</div><!-- /container -->
+	</div><!-- /segment-navbar -->
+	
+
+	<div id="segment-breadcrumb" class="segment"><!-- segment-breadcrumb -->
+		<div class="container"><!-- container -->	
+			<ul class="breadcrumb">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="clinical.html">Clinical</a></li>        <li><a href="nutritionorder.html">NutritionOrder</a></li>        <li><b>Generated Questionnaire</b></li>        <!-- nutritionorder.questionnaire.json.html / resource-questionnaire:NutritionOrder -->
+
+			</ul>	
+		</div><!-- /container -->
+	</div><!-- /segment-breadcrumb -->
+	
+
+	<div id="segment-content" class="segment"><!-- segment-content -->
+	<div class="container"><!-- container -->
+            <div class="row">
+            	<div class="inner-wrapper">
+<!-- CONTENT CONTENT -->
+
+
+<div class="col-9">
+
+<h1>Nutritionorder.questionnaire.json</h1>
+
+<p>
+<a href="nutritionorder.questionnaire.json">Raw JSON</a> (<a href="nutritionorder.questionnaire.canonical.json">canonical form</a>)
+</p>
+
+<div class="example">
+<p>Generated Questionnaire for NutritionOrder</p>
+<pre class="json">
+{
+  &quot;resourceType&quot;: &quot;Questionnaire&quot;,
+  &quot;id&quot;: &quot;qs1&quot;,
+  &quot;contained&quot;: [
+    {
+      &quot;resourceType&quot;: &quot;ValueSet&quot;,
+      &quot;id&quot;: &quot;vs2&quot;,
+      &quot;identifier&quot;: &quot;urn:uuid:0a11b242-9358-4bda-a489-13684a1104e2&quot;,
+      &quot;name&quot;: &quot;Type options for NutritionOrder.item.scheduled[x]&quot;,
+      &quot;description&quot;: &quot;Type options for NutritionOrder.item.scheduled[x]&quot;,
+      &quot;status&quot;: &quot;active&quot;,
+      &quot;expansion&quot;: {
+        &quot;timestamp&quot;: &quot;2014-12-30T11:02:38+00:00&quot;,
+        &quot;contains&quot;: [
+          {
+            &quot;system&quot;: &quot;http://hl7.org/fhir/data-types&quot;,
+            &quot;code&quot;: &quot;Timing&quot;,
+            &quot;display&quot;: &quot;Timing&quot;
+          },
+          {
+            &quot;system&quot;: &quot;http://hl7.org/fhir/data-types&quot;,
+            &quot;code&quot;: &quot;Period&quot;,
+            &quot;display&quot;: &quot;Period&quot;
+          }
+        ]
+      }
+    },
+    {
+      &quot;resourceType&quot;: &quot;ValueSet&quot;,
+      &quot;id&quot;: &quot;vs3&quot;,
+      &quot;identifier&quot;: &quot;urn:uuid:a4e8ffaa-9202-4675-b5ee-b4b5ed4398c3&quot;,
+      &quot;name&quot;: &quot;Type options for NutritionOrder.item.oralDiet.nutrients.amount[x]&quot;,
+      &quot;description&quot;: &quot;Type options for NutritionOrder.item.oralDiet.nutrients.amount[x]&quot;,
+      &quot;status&quot;: &quot;active&quot;,
+      &quot;expansion&quot;: {
+        &quot;timestamp&quot;: &quot;2014-12-30T11:02:38+00:00&quot;,
+        &quot;contains&quot;: [
+          {
+            &quot;system&quot;: &quot;http://hl7.org/fhir/data-types&quot;,
+            &quot;code&quot;: &quot;Quantity&quot;,
+            &quot;display&quot;: &quot;Quantity&quot;
+          },
+          {
+            &quot;system&quot;: &quot;http://hl7.org/fhir/data-types&quot;,
+            &quot;code&quot;: &quot;Range&quot;,
+            &quot;display&quot;: &quot;Range&quot;
+          }
+        ]
+      }
+    }
+  ],
+  &quot;identifier&quot;: [
+    {
+      &quot;system&quot;: &quot;urn:ietf:rfc:3986&quot;
+    }
+  ],
+  &quot;status&quot;: &quot;draft&quot;,
+  &quot;date&quot;: &quot;2014-12-30T10:55:31&quot;,
+  &quot;publisher&quot;: &quot;HL7 FHIR Project (Orders and Observations)&quot;,
+  &quot;group&quot;: {
+    &quot;http://hl7.org/fhir/Profile/questionnaire-extensions#flyover&quot;: [
+      {
+        &quot;valueString&quot;: &quot;A request to supply a diet, formula feeding (enteral) or oral nutritional supplement to a patient/resident.&quot;
+      }
+    ],
+    &quot;linkId&quot;: &quot;NutritionOrder&quot;,
+    &quot;title&quot;: &quot;A request for a diet, formula or nutritional supplement&quot;,
+    &quot;text&quot;: &quot;Referenced by an Order Request (workflow).&quot;,
+    &quot;required&quot;: true,
+    &quot;group&quot;: [
+      {
+        &quot;http://hl7.org/fhir/Profile/questionnaire-extensions#flyover&quot;: [
+          {
+            &quot;valueString&quot;: &quot;The logical id of the resource, as used in the url for the resoure. Once assigned, this value never changes. The only time that a resource does not have an id is when it is being submitted to the server using a create operation. Bundles always have an id, though it is usually a generated UUID.&quot;
+          }
+        ],
+        &quot;http://www.healthintersections.com.au/fhir/Profile/metadata#type&quot;: [
+          {
+            &quot;valueString&quot;: &quot;string&quot;
+          }
+        ],
+        &quot;linkId&quot;: &quot;NutritionOrder.id&quot;,
+        &quot;repeats&quot;: true,
+        &quot;question&quot;: [
+          {
+            &quot;linkId&quot;: &quot;NutritionOrder.id.value&quot;,
+            &quot;text&quot;: &quot;Logical id of this artefact&quot;,
+            &quot;type&quot;: &quot;string&quot;
+          }
+        ]
+      },
+      {
+        &quot;http://hl7.org/fhir/Profile/questionnaire-extensions#flyover&quot;: [
+          {
+            &quot;valueString&quot;: &quot;The metadata about the resource. This is content that is maintained by the infrastructure. Changes to the content may not always be associated with version changes to the resource.&quot;
+          }
+        ],
+        &quot;linkId&quot;: &quot;NutritionOrder.meta&quot;,
+        &quot;title&quot;: &quot;Metadata about the resource&quot;,
+        &quot;group&quot;: [
+          {
+            &quot;http://hl7.org/fhir/Profile/questionnaire-extensions#flyover&quot;: [
+              {
+                &quot;valueString&quot;: &quot;unique id for the element within a resource (for internal references).&quot;
+              }
+            ],
+            &quot;http://www.healthintersections.com.au/fhir/Profile/metadata#type&quot;: [
+              {
+                &quot;valueString&quot;: &quot;string&quot;
+              }
+            ],
+            &quot;linkId&quot;: &quot;NutritionOrder.meta.id&quot;,
+            &quot;repeats&quot;: true,
+            &quot;question&quot;: [
+              {
+                &quot;linkId&quot;: &quot;NutritionOrder.meta.id.value&quot;,
+                &quot;text&quot;: &quot;xml:id (or equivalent in JSON)&quot;,
+                &quot;type&quot;: &quot;string&quot;
+              }
+            ]
+          },
+          {
+            &quot;http://hl7.org/fhir/Profile/questionnaire-extensions#flyover&quot;: [
+              {
+                &quot;valueString&quot;: &quot;The version specific identifier, as it appears in the version portion of the url. This values changes when the resource is created, updated, or deleted. The server assigns this value, and ignores what the client specifies, except in the case that the server is imposing version integrity on updates/deletes.&quot;
+              }
+            ],
+            &quot;http://www.healthintersections.com.au/fhir/Profile/metadata#type&quot;: [
+              {
+                &quot;valueString&quot;: &quot;string&quot;
+              }
+            ],
+            &quot;linkId&quot;: &quot;NutritionOrder.meta.versionId&quot;,
+            &quot;repeats&quot;: true,
+            &quot;question&quot;: [
+              {
+                &quot;linkId&quot;: &quot;NutritionOrder.meta.versionId.value&quot;,
+                &quot;text&quot;: &quot;Version specific identifier&quot;,
+                &quot;type&quot;: &quot;string&quot;
+              }
+            ]
+          },
+          {
+            &quot;http://hl7.org/fhir/Profile/questionnaire-extensions#flyover&quot;: [
+              {
+                &quot;valueString&quot;: &quot;When the resource last changed - e.g. when the version changed. This value is always populated except when the resource is first being created. The server / resource manager sets this value; what a client provides is irrelevant.&quot;
+              }
+            ],
+            &quot;http://www.healthintersections.com.au/fhir/Profile/metadata#type&quot;: [
+              {
+                &quot;valueString&quot;: &quot;instant&quot;
+              }
+            ],
+            &quot;linkId&quot;: &quot;NutritionOrder.meta.lastUpdated&quot;,
+            &quot;repeats&quot;: true,
+            &quot;question&quot;: [
+              {
+                &quot;linkId&quot;: &quot;NutritionOrder.meta.lastUpdated.value&quot;,
+                &quot;text&quot;: &quot;When the resource version last changed&quot;,
+                &quot;type&quot;: &quot;instant&quot;
+              }
+            ]
+          },
+          {
+            &quot;http://hl7.org/fhir/Profile/questionnaire-extensions#flyover&quot;: [
+              {
+                &quot;valueString&quot;: &quot;A list of profiles that this resource claims to conform to. The URL is a reference to Profile.url. It is up to the server and/or other infrastruture of policy to determine whether/how these claims are verified and/or updated over tiem.&quot;
+              }
+            ],
+            &quot;http://www.healthintersections.com.au/fhir/Profile/metadata#type&quot;: [
+              {
+                &quot;valueString&quot;: &quot;uri&quot;
+              }
+            ],
+            &quot;linkId&quot;: &quot;NutritionOrder.meta.profile&quot;,
+            &quot;repeats&quot;: true,
+            &quot;question&quot;: [
+              {
+                &quot;linkId&quot;: &quot;NutritionOrder.meta.profile.value&quot;,
+                &quot;text&quot;: &quot;Profiles this resource claims to conform to&quot;,
+                &quot;type&quot;: &quot;string&quot;
+              }
+            ]
+          },
+          {
+            &quot;http://hl7.org/fhir/Profile/questionnaire-extensions#flyover&quot;: [
+              {
+                &quot;valueString&quot;: &quot;Security labels applied to this resource. These tags connect specific resources to the overall security policy and infrastructure. The security labels can be updated without changing the stated version of the resource.&quot;
+              }
+            ],
+            &quot;http://www.healthintersections.com.au/fhir/Profile/metadata#type&quot;: [
+              {
+                &quot;valueString&quot;: &quot;Coding&quot;
+              }
+            ],
+            &quot;linkId&quot;: &quot;NutritionOrder.meta.security&quot;,
+            &quot;repeats&quot;: true,
+            &quot;question&quot;: [
+              {
+                &quot;linkId&quot;: &quot;NutritionOrder.meta.security.value&quot;,
+                &quot;text&quot;: &quot;Security Labels applied to this resource&quot;,
+                &quot;type&quot;: &quot;open-choice&quot;
+              }
+            ]
+          },
+          {
+            &quot;http://hl7.org/fhir/Profile/questionnaire-extensions#flyover&quot;: [
+              {
+                &quot;valueString&quot;: &quot;Tags applied to this resource. Tags are intended to to be used to identify and relate resources to process and workflow, and applications are not required to consider the tags when interpreting the meaning of a resource. The tags can be updated without changing the stated version of the resource.&quot;
+              }
+            ],
+            &quot;http://www.healthintersections.com.au/fhir/Profile/metadata#type&quot;: [
+              {
+                &quot;valueString&quot;: &quot;Coding&quot;
+              }
+            ],
+            &quot;linkId&quot;: &quot;NutritionOrder.meta.tag&quot;,
+            &quot;repeats&quot;: true,
+            &quot;question&quot;: [
+              {
+                &quot;linkId&quot;: &quot;NutritionOrder.meta.tag.value&quot;,
+                &quot;text&quot;: &quot;Tags applied&quot;,
+                &quot;type&quot;: &quot;open-choice&quot;
+              }
+            ]
+          }
+        ]
+      },
+      {
+        &quot;http://hl7.org/fhir/Profile/questionnaire-extensions#flyover&quot;: [
+          {
+            &quot;valueString&quot;: &quot;A reference to a set of rules that were followed when the resource was constructed, and which must be understood when processing the content. Asserting this rule set restricts the content to be only understood by a limited set of trading partners. This inherently limits the usefulness of the data in the long term. However the existing health eco-system is highly fractured, and not yet ready to define, collect, and exchange data in a generally computable sense. Wherever possible, implementers and/or specification writers should avoid using this element as much as possible.&quot;
+          }
+        ],
+        &quot;http://www.healthintersections.com.au/fhir/Profile/metadata#type&quot;: [
+          {
+            &quot;valueString&quot;: &quot;uri&quot;
+          }
+        ],
+        &quot;linkId&quot;: &quot;NutritionOrder.implicitRules&quot;,
+        &quot;repeats&quot;: true,
+        &quot;question&quot;: [
+          {
+            &quot;linkId&quot;: &quot;NutritionOrder.implicitRules.value&quot;,
+            &quot;text&quot;: &quot;A set of rules under which this content was created&quot;,
+            &quot;type&quot;: &quot;string&quot;
+          }
+        ]
+      },
+      {
+        &quot;http://hl7.org/fhir/Profile/questionnaire-extensions#flyover&quot;: [
+          {
+            &quot;valueString&quot;: &quot;The base language in which the resource is written. Language is provided to support indexing and accessibility (typically, services such as text to speech use the language tag). The html language tag in the narrative applies  to the narrative. The language tag on the resource may be used to specify the language of other presentations generated from the data in the resource\n\nNot all the content has to be in the base language. The Resource.language should not be assumed to apply to the narrative automatically. If a language is specified, it should it also be specified on the div element in the html (see rules in HTML5 for information about the relationship between xml:lang and the html lang attribute).&quot;
+          }
+        ],
+        &quot;http://www.healthintersections.com.au/fhir/Profile/metadata#type&quot;: [
+          {
+            &quot;valueString&quot;: &quot;code&quot;
+          }
+        ],
+        &quot;linkId&quot;: &quot;NutritionOrder.language&quot;,
+        &quot;repeats&quot;: true,
+        &quot;question&quot;: [
+          {
+            &quot;linkId&quot;: &quot;NutritionOrder.language.value&quot;,
+            &quot;text&quot;: &quot;language&quot;,
+            &quot;type&quot;: &quot;choice&quot;
+          }
+        ]
+      },
+      {
+        &quot;http://hl7.org/fhir/Profile/questionnaire-extensions#flyover&quot;: [
+          {
+            &quot;valueString&quot;: &quot;A human-readable narrative that contains a summary of the resource, and may be used to represent the content of the resource to a human. The narrative need not encode all the structured data, but is required to contain sufficient detail to make it \&quot;clinically safe\&quot; for a human to just read the narrative. Resource definitions may define what content should be represented in the narrative to ensure clinical safety. Contained resources do not have narrative. Resources that are not contained SHOULD have a narrative.&quot;
+          }
+        ],
+        &quot;linkId&quot;: &quot;NutritionOrder.text&quot;,
+        &quot;text&quot;: &quot;Text summary of the resource, for human interpretation&quot;,
+        &quot;repeats&quot;: true
+      },
+      {
+        &quot;http://hl7.org/fhir/Profile/questionnaire-extensions#flyover&quot;: [
+          {
+            &quot;valueString&quot;: &quot;These resources do not have an independent existence apart from the resource that contains them - they cannot be identified independently, and nor can they have their own independent transaction scope. This should never be done when the content can be identified properly, as once identification is lost, it is extremely difficult (and context dependent) to restore it again.&quot;
+          }
+        ],
+        &quot;linkId&quot;: &quot;NutritionOrder.contained&quot;,
+        &quot;text&quot;: &quot;Contained, inline Resources&quot;,
+        &quot;repeats&quot;: true
+      },
+      {
+        &quot;http://hl7.org/fhir/Profile/questionnaire-extensions#flyover&quot;: [
+          {
+            &quot;valueString&quot;: &quot;The person (patient) who needs the nutrition order for an oral diet, nutritional supplement and/or enteral or formula feeding.&quot;
+          }
+        ],
+        &quot;http://www.healthintersections.com.au/fhir/Profile/metadata#type&quot;: [
+          {
+            &quot;valueString&quot;: &quot;Reference&quot;
+          }
+        ],
+        &quot;linkId&quot;: &quot;NutritionOrder.subject&quot;,
+        &quot;required&quot;: true,
+        &quot;repeats&quot;: true,
+        &quot;question&quot;: [
+          {
+            &quot;http://www.healthintersections.com.au/fhir/Profile/metadata#reference&quot;: [
+              {
+                &quot;valueString&quot;: &quot;/Patient?subject=$subj&amp;patient=$subj&amp;encounter=$encounter&quot;
+              }
+            ],
+            &quot;linkId&quot;: &quot;NutritionOrder.subject.value&quot;,
+            &quot;text&quot;: &quot;The person who requires the diet, formula or nutritional supplement&quot;,
+            &quot;type&quot;: &quot;reference&quot;
+          }
+        ]
+      },
+      {
+        &quot;http://hl7.org/fhir/Profile/questionnaire-extensions#flyover&quot;: [
+          {
+            &quot;valueString&quot;: &quot;The practitioner that holds legal responsibility for ordering the diet, nutritional supplement, or formula feedings.&quot;
+          }
+        ],
+        &quot;http://www.healthintersections.com.au/fhir/Profile/metadata#type&quot;: [
+          {
+            &quot;valueString&quot;: &quot;Reference&quot;
+          }
+        ],
+        &quot;linkId&quot;: &quot;NutritionOrder.orderer&quot;,
+        &quot;repeats&quot;: true,
+        &quot;question&quot;: [
+          {
+            &quot;http://www.healthintersections.com.au/fhir/Profile/metadata#reference&quot;: [
+              {
+                &quot;valueString&quot;: &quot;/Practitioner?subject=$subj&amp;patient=$subj&amp;encounter=$encounter&quot;
+              }
+            ],
+            &quot;linkId&quot;: &quot;NutritionOrder.orderer.value&quot;,
+            &quot;text&quot;: &quot;Who ordered the diet, formula or nutritional supplement&quot;,
+            &quot;type&quot;: &quot;reference&quot;
+          }
+        ]
+      },
+      {
+        &quot;http://hl7.org/fhir/Profile/questionnaire-extensions#flyover&quot;: [
+          {
+            &quot;valueString&quot;: &quot;Identifiers assigned to this order by the order sender or by the order receiver.&quot;
+          }
+        ],
+        &quot;http://www.healthintersections.com.au/fhir/Profile/metadata#type&quot;: [
+          {
+            &quot;valueString&quot;: &quot;Identifier&quot;
+          }
+        ],
+        &quot;linkId&quot;: &quot;NutritionOrder.identifier&quot;,
+        &quot;text&quot;: &quot;Identifiers assigned to this order&quot;,
+        &quot;repeats&quot;: true,
+        &quot;question&quot;: [
+          {
+            &quot;linkId&quot;: &quot;NutritionOrder.identifier.label&quot;,
+            &quot;text&quot;: &quot;label:&quot;,
+            &quot;type&quot;: &quot;string&quot;
+          },
+          {
+            &quot;linkId&quot;: &quot;NutritionOrder.identifier.system&quot;,
+            &quot;text&quot;: &quot;system:&quot;,
+            &quot;type&quot;: &quot;string&quot;
+          },
+          {
+            &quot;linkId&quot;: &quot;NutritionOrder.identifier.value&quot;,
+            &quot;text&quot;: &quot;value:&quot;,
+            &quot;type&quot;: &quot;string&quot;
+          }
+        ]
+      },
+      {
+        &quot;http://hl7.org/fhir/Profile/questionnaire-extensions#flyover&quot;: [
+          {
+            &quot;valueString&quot;: &quot;An encounter that provides additional information about the healthcare context in which this request is made.&quot;
+          }
+        ],
+        &quot;http://www.healthintersections.com.au/fhir/Profile/metadata#type&quot;: [
+          {
+            &quot;valueString&quot;: &quot;Reference&quot;
+          }
+        ],
+        &quot;linkId&quot;: &quot;NutritionOrder.encounter&quot;,
+        &quot;repeats&quot;: true,
+        &quot;question&quot;: [
+          {
+            &quot;http://www.healthintersections.com.au/fhir/Profile/metadata#reference&quot;: [
+              {
+                &quot;valueString&quot;: &quot;/Encounter?subject=$subj&amp;patient=$subj&amp;encounter=$encounter&quot;
+              }
+            ],
+            &quot;linkId&quot;: &quot;NutritionOrder.encounter.value&quot;,
+            &quot;text&quot;: &quot;The encounter associated with that this nutrition order&quot;,
+            &quot;type&quot;: &quot;reference&quot;
+          }
+        ]
+      },
+      {
+        &quot;http://hl7.org/fhir/Profile/questionnaire-extensions#flyover&quot;: [
+          {
+            &quot;valueString&quot;: &quot;The date and time that this nutrition order was requested.&quot;
+          }
+        ],
+        &quot;http://www.healthintersections.com.au/fhir/Profile/metadata#type&quot;: [
+          {
+            &quot;valueString&quot;: &quot;datetime&quot;
+          }
+        ],
+        &quot;linkId&quot;: &quot;NutritionOrder.dateTime&quot;,
+        &quot;required&quot;: true,
+        &quot;repeats&quot;: true,
+        &quot;question&quot;: [
+          {
+            &quot;linkId&quot;: &quot;NutritionOrder.dateTime.value&quot;,
+            &quot;text&quot;: &quot;Date and time the nutrition order was requested&quot;,
+            &quot;type&quot;: &quot;dateTime&quot;
+          }
+        ]
+      },
+      {
+        &quot;http://hl7.org/fhir/Profile/questionnaire-extensions#flyover&quot;: [
+          {
+            &quot;valueString&quot;: &quot;The ability to list substances that may cause allergies or intolerances which should be included in the nutrition order.&quot;
+          }
+        ],
+        &quot;http://www.healthintersections.com.au/fhir/Profile/metadata#type&quot;: [
+          {
+            &quot;valueString&quot;: &quot;Reference&quot;
+          }
+        ],
+        &quot;linkId&quot;: &quot;NutritionOrder.allergyIntolerance&quot;,
+        &quot;repeats&quot;: true,
+        &quot;question&quot;: [
+          {
+            &quot;http://www.healthintersections.com.au/fhir/Profile/metadata#reference&quot;: [
+              {
+                &quot;valueString&quot;: &quot;/AllergyIntolerance?subject=$subj&amp;patient=$subj&amp;encounter=$encounter&quot;
+              }
+            ],
+            &quot;linkId&quot;: &quot;NutritionOrder.allergyIntolerance.value&quot;,
+            &quot;text&quot;: &quot;List of the patient's food and nutrition-related allergies and intolerances&quot;,
+            &quot;type&quot;: &quot;reference&quot;
+          }
+        ]
+      },
+      {
+        &quot;http://hl7.org/fhir/Profile/questionnaire-extensions#flyover&quot;: [
+          {
+            &quot;valueString&quot;: &quot;This modifier is used to convey order-specific modifiers about the type of food that should be given. These can be derived from patient allergies, intolerances, or preferences such as Halal, Vegan or Kosher. This modifier applies to the entire nutrition order inclusive of the oral diet, nutritional supplements and enteral formula feedings.&quot;
+          }
+        ],
+        &quot;http://www.healthintersections.com.au/fhir/Profile/metadata#type&quot;: [
+          {
+            &quot;valueString&quot;: &quot;CodeableConcept&quot;
+          }
+        ],
+        &quot;linkId&quot;: &quot;NutritionOrder.foodPreferenceModifier&quot;,
+        &quot;text&quot;: &quot;Order-specific modifier about the type of food that should be given&quot;,
+        &quot;repeats&quot;: true,
+        &quot;question&quot;: [
+          {
+            &quot;linkId&quot;: &quot;NutritionOrder.foodPreferenceModifier.coding&quot;,
+            &quot;text&quot;: &quot;code:&quot;,
+            &quot;type&quot;: &quot;open-choice&quot;
+          },
+          {
+            &quot;linkId&quot;: &quot;NutritionOrder.foodPreferenceModifier.text&quot;,
+            &quot;text&quot;: &quot;text:&quot;,
+            &quot;type&quot;: &quot;string&quot;
+          }
+        ]
+      },
+      {
+        &quot;http://hl7.org/fhir/Profile/questionnaire-extensions#flyover&quot;: [
+          {
+            &quot;valueString&quot;: &quot;This modifier is used to convey order-specific modifiers about the type of food that should NOT be given. These can be derived from patient allergies, intolerances, or preferences such as No Red Meat, No Soy or No Wheat or  Gluten-Free. This modifier applies to the entire nutrition order inclusive of the oral diet, nutritional supplements and enteral formula feedings.&quot;
+          }
+        ],
+        &quot;http://www.healthintersections.com.au/fhir/Profile/metadata#type&quot;: [
+          {
+            &quot;valueString&quot;: &quot;CodeableConcept&quot;
+          }
+        ],
+        &quot;linkId&quot;: &quot;NutritionOrder.excludeFoodModifier&quot;,
+        &quot;text&quot;: &quot;Order-specific modifier about the type of food that should not be given&quot;,
+        &quot;repeats&quot;: true,
+        &quot;question&quot;: [
+          {
+            &quot;linkId&quot;: &quot;NutritionOrder.excludeFoodModifier.coding&quot;,
+            &quot;text&quot;: &quot;code:&quot;,
+            &quot;type&quot;: &quot;open-choice&quot;
+          },
+          {
+            &quot;linkId&quot;: &quot;NutritionOrder.excludeFoodModifier.text&quot;,
+            &quot;text&quot;: &quot;text:&quot;,
+            &quot;type&quot;: &quot;string&quot;
+          }
+        ]
+      },
+      {
+        &quot;http://hl7.org/fhir/Profile/questionnaire-extensions#flyover&quot;: [
+          {
+            &quot;valueString&quot;: &quot;Different items that combine to make a complete description of the nutrition to be provided via oral diet, nutritional supplement and/or formula order.&quot;
+          }
+        ],
+        &quot;linkId&quot;: &quot;NutritionOrder.item&quot;,
+        &quot;title&quot;: &quot;Set of nutrition items or components that comprise the nutrition order&quot;,
+        &quot;repeats&quot;: true,
+        &quot;group&quot;: [
+          {
+            &quot;http://hl7.org/fhir/Profile/questionnaire-extensions#flyover&quot;: [
+              {
+                &quot;valueString&quot;: &quot;unique id for the element within a resource (for internal references).&quot;
+              }
+            ],
+            &quot;http://www.healthintersections.com.au/fhir/Profile/metadata#type&quot;: [
+              {
+                &quot;valueString&quot;: &quot;string&quot;
+              }
+            ],
+            &quot;linkId&quot;: &quot;NutritionOrder.item.id&quot;,
+            &quot;repeats&quot;: true,
+            &quot;question&quot;: [
+              {
+                &quot;linkId&quot;: &quot;NutritionOrder.item.id.value&quot;,
+                &quot;text&quot;: &quot;xml:id (or equivalent in JSON)&quot;,
+                &quot;type&quot;: &quot;string&quot;
+              }
+            ]
+          },
+          {
+            &quot;http://hl7.org/fhir/Profile/questionnaire-extensions#flyover&quot;: [
+              {
+                &quot;valueString&quot;: &quot;The frequency at which the diet, oral supplement or enteral formula should be given.&quot;
+              }
+            ],
+            &quot;linkId&quot;: &quot;NutritionOrder.item.scheduled[x]&quot;,
+            &quot;text&quot;: &quot;Frequency to offer nutrition item&quot;,
+            &quot;repeats&quot;: true,
+            &quot;question&quot;: [
+              {
+                &quot;linkId&quot;: &quot;NutritionOrder.item.scheduled[x]._type&quot;,
+                &quot;text&quot;: &quot;type&quot;,
+                &quot;type&quot;: &quot;choice&quot;,
+                &quot;options&quot;: {
+                  &quot;reference&quot;: &quot;#vs2&quot;
+                },
+                &quot;group&quot;: [
+                  {
+                    &quot;http://www.healthintersections.com.au/fhir/Profile/metadata#type&quot;: [
+                      {
+                        &quot;valueString&quot;: &quot;Schedule&quot;
+                      }
+                    ],
+                    &quot;linkId&quot;: &quot;NutritionOrder.item.scheduled[x]._Timing&quot;,
+                    &quot;text&quot;: &quot;Timing&quot;
+                  },
+                  {
+                    &quot;http://www.healthintersections.com.au/fhir/Profile/metadata#type&quot;: [
+                      {
+                        &quot;valueString&quot;: &quot;Period&quot;
+                      }
+                    ],
+                    &quot;linkId&quot;: &quot;NutritionOrder.item.scheduled[x]._Period&quot;,
+                    &quot;text&quot;: &quot;Period&quot;,
+                    &quot;question&quot;: [
+                      {
+                        &quot;linkId&quot;: &quot;NutritionOrder.item.scheduled[x]._Period.low&quot;,
+                        &quot;text&quot;: &quot;start:&quot;,
+                        &quot;type&quot;: &quot;dateTime&quot;
+                      },
+                      {
+                        &quot;linkId&quot;: &quot;NutritionOrder.item.scheduled[x]._Period.end&quot;,
+                        &quot;text&quot;: &quot;end:&quot;,
+                        &quot;type&quot;: &quot;dateTime&quot;
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            &quot;http://hl7.org/fhir/Profile/questionnaire-extensions#flyover&quot;: [
+              {
+                &quot;valueString&quot;: &quot;Indicates whether the nutrition item is  currently in effect for the patient.&quot;
+              }
+            ],
+            &quot;http://www.healthintersections.com.au/fhir/Profile/metadata#type&quot;: [
+              {
+                &quot;valueString&quot;: &quot;boolean&quot;
+              }
+            ],
+            &quot;linkId&quot;: &quot;NutritionOrder.item.isInEffect&quot;,
+            &quot;required&quot;: true,
+            &quot;repeats&quot;: true,
+            &quot;question&quot;: [
+              {
+                &quot;linkId&quot;: &quot;NutritionOrder.item.isInEffect.value&quot;,
+                &quot;text&quot;: &quot;Indicates whether the nutrition item is  currently in effect&quot;,
+                &quot;type&quot;: &quot;boolean&quot;
+              }
+            ]
+          },
+          {
+            &quot;http://hl7.org/fhir/Profile/questionnaire-extensions#flyover&quot;: [
+              {
+                &quot;valueString&quot;: &quot;Class that defines the components of an oral diet order for the patient.&quot;
+              }
+            ],
+            &quot;linkId&quot;: &quot;NutritionOrder.item.oralDiet&quot;,
+            &quot;title&quot;: &quot;Oral diet components&quot;,
+            &quot;group&quot;: [
+              {
+                &quot;http://hl7.org/fhir/Profile/questionnaire-extensions#flyover&quot;: [
+                  {
+                    &quot;valueString&quot;: &quot;unique id for the element within a resource (for internal references).&quot;
+                  }
+                ],
+                &quot;http://www.healthintersections.com.au/fhir/Profile/metadata#type&quot;: [
+                  {
+                    &quot;valueString&quot;: &quot;string&quot;
+                  }
+                ],
+                &quot;linkId&quot;: &quot;NutritionOrder.item.oralDiet.id&quot;,
+                &quot;repeats&quot;: true,
+                &quot;question&quot;: [
+                  {
+                    &quot;linkId&quot;: &quot;NutritionOrder.item.oralDiet.id.value&quot;,
+                    &quot;text&quot;: &quot;xml:id (or equivalent in JSON)&quot;,
+                    &quot;type&quot;: &quot;string&quot;
+                  }
+                ]
+              },
+              {
+                &quot;http://hl7.org/fhir/Profile/questionnaire-extensions#flyover&quot;: [
+                  {
+                    &quot;valueString&quot;: &quot;Indicates the type of oral diet or diet restrictions that describe what can be consumed orally (i.e., take via the mouth).&quot;
+                  }
+                ],
+                &quot;http://www.healthintersections.com.au/fhir/Profile/metadata#type&quot;: [
+                  {
+                    &quot;valueString&quot;: &quot;CodeableConcept&quot;
+                  }
+                ],
+                &quot;linkId&quot;: &quot;NutritionOrder.item.oralDiet.type&quot;,
+                &quot;text&quot;: &quot;Type of oral diet or diet restrictions that describe what can be consumed orally&quot;,
+                &quot;repeats&quot;: true,
+                &quot;question&quot;: [
+                  {
+                    &quot;linkId&quot;: &quot;NutritionOrder.item.oralDiet.type.coding&quot;,
+                    &quot;text&quot;: &quot;code:&quot;,
+                    &quot;type&quot;: &quot;open-choice&quot;
+                  },
+                  {
+                    &quot;linkId&quot;: &quot;NutritionOrder.item.oralDiet.type.text&quot;,
+                    &quot;text&quot;: &quot;text:&quot;,
+                    &quot;type&quot;: &quot;string&quot;
+                  }
+                ]
+              },
+              {
+                &quot;http://hl7.org/fhir/Profile/questionnaire-extensions#flyover&quot;: [
+                  {
+                    &quot;valueString&quot;: &quot;Class that defines the details of any nutrient modifications required for the oral diet.&quot;
+                  }
+                ],
+                &quot;linkId&quot;: &quot;NutritionOrder.item.oralDiet.nutrients&quot;,
+                &quot;title&quot;: &quot;Required  nutrient modifications&quot;,
+                &quot;repeats&quot;: true,
+                &quot;group&quot;: [
+                  {
+                    &quot;http://hl7.org/fhir/Profile/questionnaire-extensions#flyover&quot;: [
+                      {
+                        &quot;valueString&quot;: &quot;unique id for the element within a resource (for internal references).&quot;
+                      }
+                    ],
+                    &quot;http://www.healthintersections.com.au/fhir/Profile/metadata#type&quot;: [
+                      {
+                        &quot;valueString&quot;: &quot;string&quot;
+                      }
+                    ],
+                    &quot;linkId&quot;: &quot;NutritionOrder.item.oralDiet.nutrients.id&quot;,
+                    &quot;repeats&quot;: true,
+                    &quot;question&quot;: [
+                      {
+                        &quot;linkId&quot;: &quot;NutritionOrder.item.oralDiet.nutrients.id.value&quot;,
+                        &quot;text&quot;: &quot;xml:id (or equivalent in JSON)&quot;,
+                        &quot;type&quot;: &quot;string&quot;
+                      }
+                    ]
+                  },
+                  {
+                    &quot;http://hl7.org/fhir/Profile/questionnaire-extensions#flyover&quot;: [
+                      {
+                        &quot;valueString&quot;: &quot;Identifies the type of nutrient that is being modified such as carbohydrate or sodium.&quot;
+                      }
+                    ],
+                    &quot;http://www.healthintersections.com.au/fhir/Profile/metadata#type&quot;: [
+                      {
+                        &quot;valueString&quot;: &quot;CodeableConcept&quot;
+                      }
+                    ],
+                    &quot;linkId&quot;: &quot;NutritionOrder.item.oralDiet.nutrients.modifier&quot;,
+                    &quot;text&quot;: &quot;Type of nutrient that is being modified&quot;,
+                    &quot;repeats&quot;: true,
+                    &quot;question&quot;: [
+                      {
+                        &quot;linkId&quot;: &quot;NutritionOrder.item.oralDiet.nutrients.modifier.coding&quot;,
+                        &quot;text&quot;: &quot;code:&quot;,
+                        &quot;type&quot;: &quot;open-choice&quot;
+                      },
+                      {
+                        &quot;linkId&quot;: &quot;NutritionOrder.item.oralDiet.nutrients.modifier.text&quot;,
+                        &quot;text&quot;: &quot;text:&quot;,
+                        &quot;type&quot;: &quot;string&quot;
+                      }
+                    ]
+                  },
+                  {
+                    &quot;http://hl7.org/fhir/Profile/questionnaire-extensions#flyover&quot;: [
+                      {
+                        &quot;valueString&quot;: &quot;The quantity or range of the specified nutrient to supply.&quot;
+                      }
+                    ],
+                    &quot;linkId&quot;: &quot;NutritionOrder.item.oralDiet.nutrients.amount[x]&quot;,
+                    &quot;text&quot;: &quot;Quantity of the specified nutrient&quot;,
+                    &quot;repeats&quot;: true,
+                    &quot;question&quot;: [
+                      {
+                        &quot;linkId&quot;: &quot;NutritionOrder.item.oralDiet.nutrients.amount[x]._type&quot;,
+                        &quot;text&quot;: &quot;type&quot;,
+                        &quot;type&quot;: &quot;choice&quot;,
+                        &quot;options&quot;: {
+                          &quot;reference&quot;: &quot;#vs3&quot;
+                        },
+                        &quot;group&quot;: [
+                          {
+                            &quot;http://www.healthintersections.com.au/fhir/Profile/metadata#type&quot;: [
+                              {
+                                &quot;valueString&quot;: &quot;Quantity&quot;
+                              }
+                            ],
+                            &quot;linkId&quot;: &quot;NutritionOrder.item.oralDiet.nutrients.amount[x]._Quantity&quot;,
+                            &quot;text&quot;: &quot;Quantity&quot;,
+                            &quot;question&quot;: [
+                              {
+                                &quot;linkId&quot;: &quot;NutritionOrder.item.oralDiet.nutrients.amount[x]._Quantity.comparator&quot;,
+                                &quot;text&quot;: &quot;comp:&quot;,
+                                &quot;type&quot;: &quot;choice&quot;
+                              },
+                              {
+                                &quot;linkId&quot;: &quot;NutritionOrder.item.oralDiet.nutrients.amount[x]._Quantity.value&quot;,
+                                &quot;text&quot;: &quot;value:&quot;,
+                                &quot;type&quot;: &quot;decimal&quot;
+                              },
+                              {
+                                &quot;linkId&quot;: &quot;NutritionOrder.item.oralDiet.nutrients.amount[x]._Quantity.units&quot;,
+                                &quot;text&quot;: &quot;units:&quot;,
+                                &quot;type&quot;: &quot;string&quot;
+                              },
+                              {
+                                &quot;linkId&quot;: &quot;NutritionOrder.item.oralDiet.nutrients.amount[x]._Quantity.code&quot;,
+                                &quot;text&quot;: &quot;coded units:&quot;,
+                                &quot;type&quot;: &quot;string&quot;
+                              },
+                              {
+                                &quot;linkId&quot;: &quot;NutritionOrder.item.oralDiet.nutrients.amount[x]._Quantity.system&quot;,
+                                &quot;text&quot;: &quot;units system:&quot;,
+                                &quot;type&quot;: &quot;string&quot;
+                              }
+                            ]
+                          },
+                          {
+                            &quot;http://www.healthintersections.com.au/fhir/Profile/metadata#type&quot;: [
+                              {
+                                &quot;valueString&quot;: &quot;Range&quot;
+                              }
+                            ],
+                            &quot;linkId&quot;: &quot;NutritionOrder.item.oralDiet.nutrients.amount[x]._Range&quot;,
+                            &quot;text&quot;: &quot;Range&quot;,
+                            &quot;question&quot;: [
+                              {
+                                &quot;linkId&quot;: &quot;NutritionOrder.item.oralDiet.nutrients.amount[x]._Range.low&quot;,
+                                &quot;text&quot;: &quot;low:&quot;,
+                                &quot;type&quot;: &quot;decimal&quot;
+                              },
+                              {
+                                &quot;linkId&quot;: &quot;NutritionOrder.item.oralDiet.nutrients.amount[x]._Range.high&quot;,
+                                &quot;text&quot;: &quot;high:&quot;,
+                                &quot;type&quot;: &quot;decimal&quot;
+                              },
+                              {
+                                &quot;linkId&quot;: &quot;NutritionOrder.item.oralDiet.nutrients.amount[x]._Range.units&quot;,
+                                &quot;text&quot;: &quot;units:&quot;,
+                                &quot;type&quot;: &quot;string&quot;
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                &quot;http://hl7.org/fhir/Profile/questionnaire-extensions#flyover&quot;: [
+                  {
+                    &quot;valueString&quot;: &quot;Class that describes any texture modifications required for the patient to safely consume various types of solid foods.&quot;
+                  }
+                ],
+                &quot;linkId&quot;: &quot;NutritionOrder.item.oralDiet.texture&quot;,
+                &quot;title&quot;: &quot;Required  texture modifications&quot;,
+                &quot;repeats&quot;: true,
+                &quot;group&quot;: [
+                  {
+                    &quot;http://hl7.org/fhir/Profile/questionnaire-extensions#flyover&quot;: [
+                      {
+                        &quot;valueString&quot;: &quot;unique id for the element within a resource (for internal references).&quot;
+                      }
+                    ],
+                    &quot;http://www.healthintersections.com.au/fhir/Profile/metadata#type&quot;: [
+                      {
+                        &quot;valueString&quot;: &quot;string&quot;
+                      }
+                    ],
+                    &quot;linkId&quot;: &quot;NutritionOrder.item.oralDiet.texture.id&quot;,
+                    &quot;repeats&quot;: true,
+                    &quot;question&quot;: [
+                      {
+                        &quot;linkId&quot;: &quot;NutritionOrder.item.oralDiet.texture.id.value&quot;,
+                        &quot;text&quot;: &quot;xml:id (or equivalent in JSON)&quot;,
+                        &quot;type&quot;: &quot;string&quot;
+                      }
+                    ]
+                  },
+                  {
+                    &quot;http://hl7.org/fhir/Profile/questionnaire-extensions#flyover&quot;: [
+                      {
+                        &quot;valueString&quot;: &quot;Identifies any texture modifications (for solid foods) that should be made, e.g. easy to chew, chopped, ground, and pureed. Coupled with the foodType (Meat).&quot;
+                      }
+                    ],
+                    &quot;http://www.healthintersections.com.au/fhir/Profile/metadata#type&quot;: [
+                      {
+                        &quot;valueString&quot;: &quot;CodeableConcept&quot;
+                      }
+                    ],
+                    &quot;linkId&quot;: &quot;NutritionOrder.item.oralDiet.texture.modifier&quot;,
+                    &quot;text&quot;: &quot;Code to indicate how to alter the texture of the foods, e.g., pureed&quot;,
+                    &quot;repeats&quot;: true,
+                    &quot;question&quot;: [
+                      {
+                        &quot;linkId&quot;: &quot;NutritionOrder.item.oralDiet.texture.modifier.coding&quot;,
+                        &quot;text&quot;: &quot;code:&quot;,
+                        &quot;type&quot;: &quot;open-choice&quot;
+                      },
+                      {
+                        &quot;linkId&quot;: &quot;NutritionOrder.item.oralDiet.texture.modifier.text&quot;,
+                        &quot;text&quot;: &quot;text:&quot;,
+                        &quot;type&quot;: &quot;string&quot;
+                      }
+                    ]
+                  },
+                  {
+                    &quot;http://hl7.org/fhir/Profile/questionnaire-extensions#flyover&quot;: [
+                      {
+                        &quot;valueString&quot;: &quot;Indicates what specific type of food (e.g., meats) the texture modification applies to or may apply to all foods in the diet. Coupled with the textureModifier; could be (All Foods).&quot;
+                      }
+                    ],
+                    &quot;http://www.healthintersections.com.au/fhir/Profile/metadata#type&quot;: [
+                      {
+                        &quot;valueString&quot;: &quot;CodeableConcept&quot;
+                      }
+                    ],
+                    &quot;linkId&quot;: &quot;NutritionOrder.item.oralDiet.texture.foodType&quot;,
+                    &quot;text&quot;: &quot;Concepts that are used to identify an entity that is ingested for nutritional purposes&quot;,
+                    &quot;repeats&quot;: true,
+                    &quot;question&quot;: [
+                      {
+                        &quot;linkId&quot;: &quot;NutritionOrder.item.oralDiet.texture.foodType.coding&quot;,
+                        &quot;text&quot;: &quot;code:&quot;,
+                        &quot;type&quot;: &quot;open-choice&quot;
+                      },
+                      {
+                        &quot;linkId&quot;: &quot;NutritionOrder.item.oralDiet.texture.foodType.text&quot;,
+                        &quot;text&quot;: &quot;text:&quot;,
+                        &quot;type&quot;: &quot;string&quot;
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                &quot;http://hl7.org/fhir/Profile/questionnaire-extensions#flyover&quot;: [
+                  {
+                    &quot;valueString&quot;: &quot;Identifies the required consistency (e.g., honey-thick, nectar-thick, thin, thickened.) of liquids or fluids served to the patient.&quot;
+                  }
+                ],
+                &quot;http://www.healthintersections.com.au/fhir/Profile/metadata#type&quot;: [
+                  {
+                    &quot;valueString&quot;: &quot;CodeableConcept&quot;
+                  }
+                ],
+                &quot;linkId&quot;: &quot;NutritionOrder.item.oralDiet.fluidConsistencyType&quot;,
+                &quot;text&quot;: &quot;The required consistency of fluids and liquids provided to the patient&quot;,
+                &quot;repeats&quot;: true,
+                &quot;question&quot;: [
+                  {
+                    &quot;linkId&quot;: &quot;NutritionOrder.item.oralDiet.fluidConsistencyType.coding&quot;,
+                    &quot;text&quot;: &quot;code:&quot;,
+                    &quot;type&quot;: &quot;open-choice&quot;
+                  },
+                  {
+                    &quot;linkId&quot;: &quot;NutritionOrder.item.oralDiet.fluidConsistencyType.text&quot;,
+                    &quot;text&quot;: &quot;text:&quot;,
+                    &quot;type&quot;: &quot;string&quot;
+                  }
+                ]
+              },
+              {
+                &quot;http://hl7.org/fhir/Profile/questionnaire-extensions#flyover&quot;: [
+                  {
+                    &quot;valueString&quot;: &quot;Additional instructions or information pertaining to the oral diet.&quot;
+                  }
+                ],
+                &quot;http://www.healthintersections.com.au/fhir/Profile/metadata#type&quot;: [
+                  {
+                    &quot;valueString&quot;: &quot;string&quot;
+                  }
+                ],
+                &quot;linkId&quot;: &quot;NutritionOrder.item.oralDiet.instruction&quot;,
+                &quot;repeats&quot;: true,
+                &quot;question&quot;: [
+                  {
+                    &quot;linkId&quot;: &quot;NutritionOrder.item.oralDiet.instruction.value&quot;,
+                    &quot;text&quot;: &quot;Instructions or additional information about the oral diet&quot;,
+                    &quot;type&quot;: &quot;string&quot;
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            &quot;http://hl7.org/fhir/Profile/questionnaire-extensions#flyover&quot;: [
+              {
+                &quot;valueString&quot;: &quot;Class that defines the components of a supplement order for the patient.&quot;
+              }
+            ],
+            &quot;linkId&quot;: &quot;NutritionOrder.item.supplement&quot;,
+            &quot;title&quot;: &quot;Supplement components&quot;,
+            &quot;group&quot;: [
+              {
+                &quot;http://hl7.org/fhir/Profile/questionnaire-extensions#flyover&quot;: [
+                  {
+                    &quot;valueString&quot;: &quot;unique id for the element within a resource (for internal references).&quot;
+                  }
+                ],
+                &quot;http://www.healthintersections.com.au/fhir/Profile/metadata#type&quot;: [
+                  {
+                    &quot;valueString&quot;: &quot;string&quot;
+                  }
+                ],
+                &quot;linkId&quot;: &quot;NutritionOrder.item.supplement.id&quot;,
+                &quot;repeats&quot;: true,
+                &quot;question&quot;: [
+                  {
+                    &quot;linkId&quot;: &quot;NutritionOrder.item.supplement.id.value&quot;,
+                    &quot;text&quot;: &quot;xml:id (or equivalent in JSON)&quot;,
+                    &quot;type&quot;: &quot;string&quot;
+                  }
+                ]
+              },
+              {
+                &quot;http://hl7.org/fhir/Profile/questionnaire-extensions#flyover&quot;: [
+                  {
+                    &quot;valueString&quot;: &quot;Indicates the type of nutritional supplement product required such as high protein or pediatric clear liquid supplement.&quot;
+                  }
+                ],
+                &quot;http://www.healthintersections.com.au/fhir/Profile/metadata#type&quot;: [
+                  {
+                    &quot;valueString&quot;: &quot;CodeableConcept&quot;
+                  }
+                ],
+                &quot;linkId&quot;: &quot;NutritionOrder.item.supplement.type&quot;,
+                &quot;text&quot;: &quot;Type of supplement product requested&quot;,
+                &quot;repeats&quot;: true,
+                &quot;question&quot;: [
+                  {
+                    &quot;linkId&quot;: &quot;NutritionOrder.item.supplement.type.coding&quot;,
+                    &quot;text&quot;: &quot;code:&quot;,
+                    &quot;type&quot;: &quot;open-choice&quot;
+                  },
+                  {
+                    &quot;linkId&quot;: &quot;NutritionOrder.item.supplement.type.text&quot;,
+                    &quot;text&quot;: &quot;text:&quot;,
+                    &quot;type&quot;: &quot;string&quot;
+                  }
+                ]
+              },
+              {
+                &quot;http://hl7.org/fhir/Profile/questionnaire-extensions#flyover&quot;: [
+                  {
+                    &quot;valueString&quot;: &quot;The amount of the nutritional supplement product to provide to the patient.&quot;
+                  }
+                ],
+                &quot;http://www.healthintersections.com.au/fhir/Profile/metadata#type&quot;: [
+                  {
+                    &quot;valueString&quot;: &quot;Quantity&quot;
+                  }
+                ],
+                &quot;linkId&quot;: &quot;NutritionOrder.item.supplement.quantity&quot;,
+                &quot;text&quot;: &quot;Amount of the nutritional supplement&quot;,
+                &quot;repeats&quot;: true,
+                &quot;question&quot;: [
+                  {
+                    &quot;linkId&quot;: &quot;NutritionOrder.item.supplement.quantity.comparator&quot;,
+                    &quot;text&quot;: &quot;comp:&quot;,
+                    &quot;type&quot;: &quot;choice&quot;
+                  },
+                  {
+                    &quot;linkId&quot;: &quot;NutritionOrder.item.supplement.quantity.value&quot;,
+                    &quot;text&quot;: &quot;value:&quot;,
+                    &quot;type&quot;: &quot;decimal&quot;
+                  },
+                  {
+                    &quot;linkId&quot;: &quot;NutritionOrder.item.supplement.quantity.units&quot;,
+                    &quot;text&quot;: &quot;units:&quot;,
+                    &quot;type&quot;: &quot;string&quot;
+                  },
+                  {
+                    &quot;linkId&quot;: &quot;NutritionOrder.item.supplement.quantity.code&quot;,
+                    &quot;text&quot;: &quot;coded units:&quot;,
+                    &quot;type&quot;: &quot;string&quot;
+                  },
+                  {
+                    &quot;linkId&quot;: &quot;NutritionOrder.item.supplement.quantity.system&quot;,
+                    &quot;text&quot;: &quot;units system:&quot;,
+                    &quot;type&quot;: &quot;string&quot;
+                  }
+                ]
+              },
+              {
+                &quot;http://hl7.org/fhir/Profile/questionnaire-extensions#flyover&quot;: [
+                  {
+                    &quot;valueString&quot;: &quot;The product or brand name of the nutritional supplement product to be provided to the patient.&quot;
+                  }
+                ],
+                &quot;http://www.healthintersections.com.au/fhir/Profile/metadata#type&quot;: [
+                  {
+                    &quot;valueString&quot;: &quot;string&quot;
+                  }
+                ],
+                &quot;linkId&quot;: &quot;NutritionOrder.item.supplement.name&quot;,
+                &quot;repeats&quot;: true,
+                &quot;question&quot;: [
+                  {
+                    &quot;linkId&quot;: &quot;NutritionOrder.item.supplement.name.value&quot;,
+                    &quot;text&quot;: &quot;Product or brand name of the nutritional supplement&quot;,
+                    &quot;type&quot;: &quot;string&quot;
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            &quot;http://hl7.org/fhir/Profile/questionnaire-extensions#flyover&quot;: [
+              {
+                &quot;valueString&quot;: &quot;Class that defines the components of an enteral formula order for the patient.&quot;
+              }
+            ],
+            &quot;linkId&quot;: &quot;NutritionOrder.item.enteralFormula&quot;,
+            &quot;title&quot;: &quot;Enteral formula components&quot;,
+            &quot;group&quot;: [
+              {
+                &quot;http://hl7.org/fhir/Profile/questionnaire-extensions#flyover&quot;: [
+                  {
+                    &quot;valueString&quot;: &quot;unique id for the element within a resource (for internal references).&quot;
+                  }
+                ],
+                &quot;http://www.healthintersections.com.au/fhir/Profile/metadata#type&quot;: [
+                  {
+                    &quot;valueString&quot;: &quot;string&quot;
+                  }
+                ],
+                &quot;linkId&quot;: &quot;NutritionOrder.item.enteralFormula.id&quot;,
+                &quot;repeats&quot;: true,
+                &quot;question&quot;: [
+                  {
+                    &quot;linkId&quot;: &quot;NutritionOrder.item.enteralFormula.id.value&quot;,
+                    &quot;text&quot;: &quot;xml:id (or equivalent in JSON)&quot;,
+                    &quot;type&quot;: &quot;string&quot;
+                  }
+                ]
+              },
+              {
+                &quot;http://hl7.org/fhir/Profile/questionnaire-extensions#flyover&quot;: [
+                  {
+                    &quot;valueString&quot;: &quot;Free text formula administration or feeding instructions for cases where the instructions are too complex to code.&quot;
+                  }
+                ],
+                &quot;http://www.healthintersections.com.au/fhir/Profile/metadata#type&quot;: [
+                  {
+                    &quot;valueString&quot;: &quot;string&quot;
+                  }
+                ],
+                &quot;linkId&quot;: &quot;NutritionOrder.item.enteralFormula.administrationInstructions&quot;,
+                &quot;repeats&quot;: true,
+                &quot;question&quot;: [
+                  {
+                    &quot;linkId&quot;: &quot;NutritionOrder.item.enteralFormula.administrationInstructions.value&quot;,
+                    &quot;text&quot;: &quot;Formula feeding instructions expressed as text&quot;,
+                    &quot;type&quot;: &quot;string&quot;
+                  }
+                ]
+              },
+              {
+                &quot;http://hl7.org/fhir/Profile/questionnaire-extensions#flyover&quot;: [
+                  {
+                    &quot;valueString&quot;: &quot;Indicates the type of enteral or infant formula requested such as an adult standard formula with fiber or a soy-based infant formula.&quot;
+                  }
+                ],
+                &quot;http://www.healthintersections.com.au/fhir/Profile/metadata#type&quot;: [
+                  {
+                    &quot;valueString&quot;: &quot;CodeableConcept&quot;
+                  }
+                ],
+                &quot;linkId&quot;: &quot;NutritionOrder.item.enteralFormula.baseFormulaType&quot;,
+                &quot;text&quot;: &quot;Type of enteral or infant formula&quot;,
+                &quot;repeats&quot;: true,
+                &quot;question&quot;: [
+                  {
+                    &quot;linkId&quot;: &quot;NutritionOrder.item.enteralFormula.baseFormulaType.coding&quot;,
+                    &quot;text&quot;: &quot;code:&quot;,
+                    &quot;type&quot;: &quot;open-choice&quot;
+                  },
+                  {
+                    &quot;linkId&quot;: &quot;NutritionOrder.item.enteralFormula.baseFormulaType.text&quot;,
+                    &quot;text&quot;: &quot;text:&quot;,
+                    &quot;type&quot;: &quot;string&quot;
+                  }
+                ]
+              },
+              {
+                &quot;http://hl7.org/fhir/Profile/questionnaire-extensions#flyover&quot;: [
+                  {
+                    &quot;valueString&quot;: &quot;The product or brand name of the enteral or infant formula product to be provided to the patient.&quot;
+                  }
+                ],
+                &quot;http://www.healthintersections.com.au/fhir/Profile/metadata#type&quot;: [
+                  {
+                    &quot;valueString&quot;: &quot;string&quot;
+                  }
+                ],
+                &quot;linkId&quot;: &quot;NutritionOrder.item.enteralFormula.baseFormulaName&quot;,
+                &quot;repeats&quot;: true,
+                &quot;question&quot;: [
+                  {
+                    &quot;linkId&quot;: &quot;NutritionOrder.item.enteralFormula.baseFormulaName.value&quot;,
+                    &quot;text&quot;: &quot;Product or brand name of the enteral or infant formula&quot;,
+                    &quot;type&quot;: &quot;string&quot;
+                  }
+                ]
+              },
+              {
+                &quot;http://hl7.org/fhir/Profile/questionnaire-extensions#flyover&quot;: [
+                  {
+                    &quot;valueString&quot;: &quot;Indicates the type of modular component such as protein, carbohydrate, fat or fiber to be provided in addition to or mixed with the base formula.&quot;
+                  }
+                ],
+                &quot;http://www.healthintersections.com.au/fhir/Profile/metadata#type&quot;: [
+                  {
+                    &quot;valueString&quot;: &quot;CodeableConcept&quot;
+                  }
+                ],
+                &quot;linkId&quot;: &quot;NutritionOrder.item.enteralFormula.additiveType&quot;,
+                &quot;text&quot;: &quot;Type of modular component to add to the feeding&quot;,
+                &quot;repeats&quot;: true,
+                &quot;question&quot;: [
+                  {
+                    &quot;linkId&quot;: &quot;NutritionOrder.item.enteralFormula.additiveType.coding&quot;,
+                    &quot;text&quot;: &quot;code:&quot;,
+                    &quot;type&quot;: &quot;open-choice&quot;
+                  },
+                  {
+                    &quot;linkId&quot;: &quot;NutritionOrder.item.enteralFormula.additiveType.text&quot;,
+                    &quot;text&quot;: &quot;text:&quot;,
+                    &quot;type&quot;: &quot;string&quot;
+                  }
+                ]
+              },
+              {
+                &quot;http://hl7.org/fhir/Profile/questionnaire-extensions#flyover&quot;: [
+                  {
+                    &quot;valueString&quot;: &quot;The product or brand name of the type of modular component to be added to the formula.&quot;
+                  }
+                ],
+                &quot;http://www.healthintersections.com.au/fhir/Profile/metadata#type&quot;: [
+                  {
+                    &quot;valueString&quot;: &quot;string&quot;
+                  }
+                ],
+                &quot;linkId&quot;: &quot;NutritionOrder.item.enteralFormula.additiveName&quot;,
+                &quot;repeats&quot;: true,
+                &quot;question&quot;: [
+                  {
+                    &quot;linkId&quot;: &quot;NutritionOrder.item.enteralFormula.additiveName.value&quot;,
+                    &quot;text&quot;: &quot;Product or brand name of the modular additive&quot;,
+                    &quot;type&quot;: &quot;string&quot;
+                  }
+                ]
+              },
+              {
+                &quot;http://hl7.org/fhir/Profile/questionnaire-extensions#flyover&quot;: [
+                  {
+                    &quot;valueString&quot;: &quot;The amount of energy (Calories) that the formula should provide per specified volume, typically per mL or fluid oz.  For example, an infant may require a formula the provides 24 Calories per fluid ounce or an adult may require an enteral formula that provides 1.5 Calorie/mL.&quot;
+                  }
+                ],
+                &quot;http://www.healthintersections.com.au/fhir/Profile/metadata#type&quot;: [
+                  {
+                    &quot;valueString&quot;: &quot;Quantity&quot;
+                  }
+                ],
+                &quot;linkId&quot;: &quot;NutritionOrder.item.enteralFormula.caloricDensity&quot;,
+                &quot;text&quot;: &quot;Amount of energy per specified volume that is required&quot;,
+                &quot;repeats&quot;: true,
+                &quot;question&quot;: [
+                  {
+                    &quot;linkId&quot;: &quot;NutritionOrder.item.enteralFormula.caloricDensity.comparator&quot;,
+                    &quot;text&quot;: &quot;comp:&quot;,
+                    &quot;type&quot;: &quot;choice&quot;
+                  },
+                  {
+                    &quot;linkId&quot;: &quot;NutritionOrder.item.enteralFormula.caloricDensity.value&quot;,
+                    &quot;text&quot;: &quot;value:&quot;,
+                    &quot;type&quot;: &quot;decimal&quot;
+                  },
+                  {
+                    &quot;linkId&quot;: &quot;NutritionOrder.item.enteralFormula.caloricDensity.units&quot;,
+                    &quot;text&quot;: &quot;units:&quot;,
+                    &quot;type&quot;: &quot;string&quot;
+                  },
+                  {
+                    &quot;linkId&quot;: &quot;NutritionOrder.item.enteralFormula.caloricDensity.code&quot;,
+                    &quot;text&quot;: &quot;coded units:&quot;,
+                    &quot;type&quot;: &quot;string&quot;
+                  },
+                  {
+                    &quot;linkId&quot;: &quot;NutritionOrder.item.enteralFormula.caloricDensity.system&quot;,
+                    &quot;text&quot;: &quot;units system:&quot;,
+                    &quot;type&quot;: &quot;string&quot;
+                  }
+                ]
+              },
+              {
+                &quot;http://hl7.org/fhir/Profile/questionnaire-extensions#flyover&quot;: [
+                  {
+                    &quot;valueString&quot;: &quot;A coded concept specifying the route or physiological path of administration into the patient 's gastrointestinal  tract for purposes of providing the formula feeding, e.g., nasogastric tube.&quot;
+                  }
+                ],
+                &quot;http://www.healthintersections.com.au/fhir/Profile/metadata#type&quot;: [
+                  {
+                    &quot;valueString&quot;: &quot;CodeableConcept&quot;
+                  }
+                ],
+                &quot;linkId&quot;: &quot;NutritionOrder.item.enteralFormula.routeofAdministration&quot;,
+                &quot;text&quot;: &quot;How the formula should enter the patient's gastrointestinal tract&quot;,
+                &quot;repeats&quot;: true,
+                &quot;question&quot;: [
+                  {
+                    &quot;linkId&quot;: &quot;NutritionOrder.item.enteralFormula.routeofAdministration.coding&quot;,
+                    &quot;text&quot;: &quot;code:&quot;,
+                    &quot;type&quot;: &quot;open-choice&quot;
+                  },
+                  {
+                    &quot;linkId&quot;: &quot;NutritionOrder.item.enteralFormula.routeofAdministration.text&quot;,
+                    &quot;text&quot;: &quot;text:&quot;,
+                    &quot;type&quot;: &quot;string&quot;
+                  }
+                ]
+              },
+              {
+                &quot;http://hl7.org/fhir/Profile/questionnaire-extensions#flyover&quot;: [
+                  {
+                    &quot;valueString&quot;: &quot;The volume of formula to provide to the patient per the specified administration schedule.&quot;
+                  }
+                ],
+                &quot;http://www.healthintersections.com.au/fhir/Profile/metadata#type&quot;: [
+                  {
+                    &quot;valueString&quot;: &quot;Quantity&quot;
+                  }
+                ],
+                &quot;linkId&quot;: &quot;NutritionOrder.item.enteralFormula.quantity&quot;,
+                &quot;text&quot;: &quot;The volume of formula to provide&quot;,
+                &quot;repeats&quot;: true,
+                &quot;question&quot;: [
+                  {
+                    &quot;linkId&quot;: &quot;NutritionOrder.item.enteralFormula.quantity.comparator&quot;,
+                    &quot;text&quot;: &quot;comp:&quot;,
+                    &quot;type&quot;: &quot;choice&quot;
+                  },
+                  {
+                    &quot;linkId&quot;: &quot;NutritionOrder.item.enteralFormula.quantity.value&quot;,
+                    &quot;text&quot;: &quot;value:&quot;,
+                    &quot;type&quot;: &quot;decimal&quot;
+                  },
+                  {
+                    &quot;linkId&quot;: &quot;NutritionOrder.item.enteralFormula.quantity.units&quot;,
+                    &quot;text&quot;: &quot;units:&quot;,
+                    &quot;type&quot;: &quot;string&quot;
+                  },
+                  {
+                    &quot;linkId&quot;: &quot;NutritionOrder.item.enteralFormula.quantity.code&quot;,
+                    &quot;text&quot;: &quot;coded units:&quot;,
+                    &quot;type&quot;: &quot;string&quot;
+                  },
+                  {
+                    &quot;linkId&quot;: &quot;NutritionOrder.item.enteralFormula.quantity.system&quot;,
+                    &quot;text&quot;: &quot;units system:&quot;,
+                    &quot;type&quot;: &quot;string&quot;
+                  }
+                ]
+              },
+              {
+                &quot;http://hl7.org/fhir/Profile/questionnaire-extensions#flyover&quot;: [
+                  {
+                    &quot;valueString&quot;: &quot;Identifies the speed with which the formula is introduced into the subject via a feeding pump, e.g., 60 mL per hour, according to the specified schedule.&quot;
+                  }
+                ],
+                &quot;http://www.healthintersections.com.au/fhir/Profile/metadata#type&quot;: [
+                  {
+                    &quot;valueString&quot;: &quot;Ratio&quot;
+                  }
+                ],
+                &quot;linkId&quot;: &quot;NutritionOrder.item.enteralFormula.rate&quot;,
+                &quot;text&quot;: &quot;Speed with which the formula is provided per period of time&quot;,
+                &quot;repeats&quot;: true,
+                &quot;question&quot;: [
+                  {
+                    &quot;linkId&quot;: &quot;NutritionOrder.item.enteralFormula.rate.numerator&quot;,
+                    &quot;text&quot;: &quot;numerator:&quot;,
+                    &quot;type&quot;: &quot;decimal&quot;
+                  },
+                  {
+                    &quot;linkId&quot;: &quot;NutritionOrder.item.enteralFormula.rate.denominator&quot;,
+                    &quot;text&quot;: &quot;denominator:&quot;,
+                    &quot;type&quot;: &quot;decimal&quot;
+                  },
+                  {
+                    &quot;linkId&quot;: &quot;NutritionOrder.item.enteralFormula.rate.units&quot;,
+                    &quot;text&quot;: &quot;units:&quot;,
+                    &quot;type&quot;: &quot;string&quot;
+                  }
+                ]
+              },
+              {
+                &quot;http://hl7.org/fhir/Profile/questionnaire-extensions#flyover&quot;: [
+                  {
+                    &quot;valueString&quot;: &quot;The change in the administration rate over a given time, e.g. increase by 10 mL/hour every 4 hours.&quot;
+                  }
+                ],
+                &quot;http://www.healthintersections.com.au/fhir/Profile/metadata#type&quot;: [
+                  {
+                    &quot;valueString&quot;: &quot;Quantity&quot;
+                  }
+                ],
+                &quot;linkId&quot;: &quot;NutritionOrder.item.enteralFormula.rateAdjustment&quot;,
+                &quot;text&quot;: &quot;Change in the rate of administration over a given time&quot;,
+                &quot;repeats&quot;: true,
+                &quot;question&quot;: [
+                  {
+                    &quot;linkId&quot;: &quot;NutritionOrder.item.enteralFormula.rateAdjustment.comparator&quot;,
+                    &quot;text&quot;: &quot;comp:&quot;,
+                    &quot;type&quot;: &quot;choice&quot;
+                  },
+                  {
+                    &quot;linkId&quot;: &quot;NutritionOrder.item.enteralFormula.rateAdjustment.value&quot;,
+                    &quot;text&quot;: &quot;value:&quot;,
+                    &quot;type&quot;: &quot;decimal&quot;
+                  },
+                  {
+                    &quot;linkId&quot;: &quot;NutritionOrder.item.enteralFormula.rateAdjustment.units&quot;,
+                    &quot;text&quot;: &quot;units:&quot;,
+                    &quot;type&quot;: &quot;string&quot;
+                  },
+                  {
+                    &quot;linkId&quot;: &quot;NutritionOrder.item.enteralFormula.rateAdjustment.code&quot;,
+                    &quot;text&quot;: &quot;coded units:&quot;,
+                    &quot;type&quot;: &quot;string&quot;
+                  },
+                  {
+                    &quot;linkId&quot;: &quot;NutritionOrder.item.enteralFormula.rateAdjustment.system&quot;,
+                    &quot;text&quot;: &quot;units system:&quot;,
+                    &quot;type&quot;: &quot;string&quot;
+                  }
+                ]
+              },
+              {
+                &quot;http://hl7.org/fhir/Profile/questionnaire-extensions#flyover&quot;: [
+                  {
+                    &quot;valueString&quot;: &quot;The maximum total quantity of formula that may be administered to a subject over the period of time, e.g., 1440 mL over 24 hours.&quot;
+                  }
+                ],
+                &quot;http://www.healthintersections.com.au/fhir/Profile/metadata#type&quot;: [
+                  {
+                    &quot;valueString&quot;: &quot;Quantity&quot;
+                  }
+                ],
+                &quot;linkId&quot;: &quot;NutritionOrder.item.enteralFormula.maxVolumeToDeliver&quot;,
+                &quot;text&quot;: &quot;Upper limit on formula volume per unit of time&quot;,
+                &quot;repeats&quot;: true,
+                &quot;question&quot;: [
+                  {
+                    &quot;linkId&quot;: &quot;NutritionOrder.item.enteralFormula.maxVolumeToDeliver.comparator&quot;,
+                    &quot;text&quot;: &quot;comp:&quot;,
+                    &quot;type&quot;: &quot;choice&quot;
+                  },
+                  {
+                    &quot;linkId&quot;: &quot;NutritionOrder.item.enteralFormula.maxVolumeToDeliver.value&quot;,
+                    &quot;text&quot;: &quot;value:&quot;,
+                    &quot;type&quot;: &quot;decimal&quot;
+                  },
+                  {
+                    &quot;linkId&quot;: &quot;NutritionOrder.item.enteralFormula.maxVolumeToDeliver.units&quot;,
+                    &quot;text&quot;: &quot;units:&quot;,
+                    &quot;type&quot;: &quot;string&quot;
+                  },
+                  {
+                    &quot;linkId&quot;: &quot;NutritionOrder.item.enteralFormula.maxVolumeToDeliver.code&quot;,
+                    &quot;text&quot;: &quot;coded units:&quot;,
+                    &quot;type&quot;: &quot;string&quot;
+                  },
+                  {
+                    &quot;linkId&quot;: &quot;NutritionOrder.item.enteralFormula.maxVolumeToDeliver.system&quot;,
+                    &quot;text&quot;: &quot;units system:&quot;,
+                    &quot;type&quot;: &quot;string&quot;
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        &quot;http://hl7.org/fhir/Profile/questionnaire-extensions#flyover&quot;: [
+          {
+            &quot;valueString&quot;: &quot;The workflow status of the nutrition order request, e.g., Active, Inactive, Pending, Held, Canceled, Suspended. Typically the system placing the order sets the status to requested. There after, the order is maintained by the receiver that updates the status as the request is handled.&quot;
+          }
+        ],
+        &quot;http://www.healthintersections.com.au/fhir/Profile/metadata#type&quot;: [
+          {
+            &quot;valueString&quot;: &quot;code&quot;
+          }
+        ],
+        &quot;linkId&quot;: &quot;NutritionOrder.status&quot;,
+        &quot;repeats&quot;: true,
+        &quot;question&quot;: [
+          {
+            &quot;linkId&quot;: &quot;NutritionOrder.status.value&quot;,
+            &quot;text&quot;: &quot;status&quot;,
+            &quot;type&quot;: &quot;choice&quot;
+          }
+        ]
+      }
+    ]
+  }
+}
+</pre>
+</div>
+
+
+<p>
+Usage note: every effort has been made to ensure that the
+examples are correct and useful, but they are not a normative part 
+of the specification. 
+</p>
+
+</div>
+
+
+				</div><!-- /inner-wrapper -->
+            </div><!-- /row -->
+        </div><!-- /container -->
+        
+    </div><!-- /segment-content -->
+
+
+	<div id="segment-footer" class="segment"><!-- segment-footer -->
+		<div class="container"><!-- container -->
+			<div class="inner-wrapper">
+				<p>
+        © HL7.org 2011+. FHIR DSTU (v0.4.0-3920) generated on Tue, Dec 30, 2014 11:02+0000. <!-- <a href="qa.html">QA Report</a> --> <!-- achive note -->
+        <br/>
+        <span style="color: #FFFF77">
+        Links: <a style="color: #81BEF7" href="timelines.html">What's a DSTU?</a> | 
+               <a style="color: #81BEF7" href="history.html">Version History</a> | 
+               <a style="color: #81BEF7" href="http://services.w3.org/htmldiff?doc1=http%3A%2F%2Fhl7.org%2Fimplement%2Fstandards%2Ffhir%2Fnutritionorder.questionnaire.json.html&amp;doc2=http%3A%2F%2Fhl7-fhir.github.io%2F%2Fnutritionorder.questionnaire.json.html">Compare to DSTU</a> | 
+               <a style="color: #81BEF7" rel="license" href="license.html"><img src="cc0.png" style="border-style: none;" alt="CC0"/></a> | 
+               <a style="color: #81BEF7" target="_blank" href="http://gforge.hl7.org/gf/project/fhir/tracker/?action=TrackerItemAdd&amp;tracker_id=677">Propose a change</a>   
+        </span>
+        </p>
+			</div><!-- /inner-wrapper -->
+		</div><!-- /container -->
+	</div><!-- /segment-footer -->
+<!-- disqus thread -->
+<!--disqus-->
+<!-- end disqus -->        
+	
+	<div id="segment-post-footer" class="segment hidden"><!-- segment-post-footer -->
+		<div class="container"><!-- container -->
+		</div><!-- /container -->
+	</div><!-- /segment-post-footer -->
+    
+    <!-- JS and analytics only. -->
+    <!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="./assets/js/jquery.js"> </script>   <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+<script src="./dist/js/bootstrap.min.js"> </script>
+<script src="./assets/js/respond.min.js"> </script>
+
+<script src="./assets/js/fhir.js"> </script>
+
+<!-- Analytics Below
+================================================== -->
+
+    
+</body>
+</html>

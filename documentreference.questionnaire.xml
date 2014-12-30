@@ -1,0 +1,1037 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Questionnaire xmlns="http://hl7.org/fhir">
+  <id value="qs1"/>
+  <contained>
+    <ValueSet>
+      <id value="vs2"/>
+      <identifier value="urn:uuid:f5ca8116-a887-4a65-97d2-04328e060319"/>
+      <name value="Type options for DocumentReference.subject"/>
+      <description value="Type options for DocumentReference.subject"/>
+      <status value="active"/>
+      <expansion>
+        <timestamp value="2014-12-30T11:00:50+00:00"/>
+        <contains>
+          <system value="http://hl7.org/fhir/resource-types"/>
+          <code value="Patient"/>
+          <display value="Patient"/>
+        </contains>
+        <contains>
+          <system value="http://hl7.org/fhir/resource-types"/>
+          <code value="Practitioner"/>
+          <display value="Practitioner"/>
+        </contains>
+        <contains>
+          <system value="http://hl7.org/fhir/resource-types"/>
+          <code value="Group"/>
+          <display value="Group"/>
+        </contains>
+        <contains>
+          <system value="http://hl7.org/fhir/resource-types"/>
+          <code value="Device"/>
+          <display value="Device"/>
+        </contains>
+      </expansion>
+    </ValueSet>
+  </contained>
+  <contained>
+    <ValueSet>
+      <id value="vs3"/>
+      <identifier value="urn:uuid:fa1e04a2-2899-4c52-8ea2-ec366fabfc50"/>
+      <name value="Type options for DocumentReference.author"/>
+      <description value="Type options for DocumentReference.author"/>
+      <status value="active"/>
+      <expansion>
+        <timestamp value="2014-12-30T11:00:50+00:00"/>
+        <contains>
+          <system value="http://hl7.org/fhir/resource-types"/>
+          <code value="Practitioner"/>
+          <display value="Practitioner"/>
+        </contains>
+        <contains>
+          <system value="http://hl7.org/fhir/resource-types"/>
+          <code value="Device"/>
+          <display value="Device"/>
+        </contains>
+        <contains>
+          <system value="http://hl7.org/fhir/resource-types"/>
+          <code value="Patient"/>
+          <display value="Patient"/>
+        </contains>
+        <contains>
+          <system value="http://hl7.org/fhir/resource-types"/>
+          <code value="RelatedPerson"/>
+          <display value="RelatedPerson"/>
+        </contains>
+      </expansion>
+    </ValueSet>
+  </contained>
+  <contained>
+    <ValueSet>
+      <id value="vs4"/>
+      <identifier value="urn:uuid:9a8d2629-b665-4925-91f5-d305dd3e6c92"/>
+      <name value="Type options for DocumentReference.authenticator"/>
+      <description value="Type options for DocumentReference.authenticator"/>
+      <status value="active"/>
+      <expansion>
+        <timestamp value="2014-12-30T11:00:50+00:00"/>
+        <contains>
+          <system value="http://hl7.org/fhir/resource-types"/>
+          <code value="Practitioner"/>
+          <display value="Practitioner"/>
+        </contains>
+        <contains>
+          <system value="http://hl7.org/fhir/resource-types"/>
+          <code value="Organization"/>
+          <display value="Organization"/>
+        </contains>
+      </expansion>
+    </ValueSet>
+  </contained>
+  <identifier>
+    <system value="urn:ietf:rfc:3986"/>
+  </identifier>
+  <status value="draft"/>
+  <date value="2014-12-30T10:55:31"/>
+  <publisher value="HL7 FHIR Project (FHIR Management Group)"/>
+  <group>
+    <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+      <valueString value="A reference to a document."/>
+    </extension>
+    <linkId value="DocumentReference"/>
+    <title value="A reference to a document"/>
+    <text value="Usually, this is used for documents other than those defined by FHIR."/>
+    <required value="true"/>
+    <group>
+      <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+        <valueString value="The logical id of the resource, as used in the url for the resoure. Once assigned, this value never changes. The only time that a resource does not have an id is when it is being submitted to the server using a create operation. Bundles always have an id, though it is usually a generated UUID."/>
+      </extension>
+      <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+        <valueString value="string"/>
+      </extension>
+      <linkId value="DocumentReference.id"/>
+      <repeats value="true"/>
+      <question>
+        <linkId value="DocumentReference.id.value"/>
+        <text value="Logical id of this artefact"/>
+        <type value="string"/>
+      </question>
+    </group>
+    <group>
+      <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+        <valueString value="The metadata about the resource. This is content that is maintained by the infrastructure. Changes to the content may not always be associated with version changes to the resource."/>
+      </extension>
+      <linkId value="DocumentReference.meta"/>
+      <title value="Metadata about the resource"/>
+      <group>
+        <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+          <valueString value="unique id for the element within a resource (for internal references)."/>
+        </extension>
+        <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+          <valueString value="string"/>
+        </extension>
+        <linkId value="DocumentReference.meta.id"/>
+        <repeats value="true"/>
+        <question>
+          <linkId value="DocumentReference.meta.id.value"/>
+          <text value="xml:id (or equivalent in JSON)"/>
+          <type value="string"/>
+        </question>
+      </group>
+      <group>
+        <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+          <valueString value="The version specific identifier, as it appears in the version portion of the url. This values changes when the resource is created, updated, or deleted. The server assigns this value, and ignores what the client specifies, except in the case that the server is imposing version integrity on updates/deletes."/>
+        </extension>
+        <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+          <valueString value="string"/>
+        </extension>
+        <linkId value="DocumentReference.meta.versionId"/>
+        <repeats value="true"/>
+        <question>
+          <linkId value="DocumentReference.meta.versionId.value"/>
+          <text value="Version specific identifier"/>
+          <type value="string"/>
+        </question>
+      </group>
+      <group>
+        <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+          <valueString value="When the resource last changed - e.g. when the version changed. This value is always populated except when the resource is first being created. The server / resource manager sets this value; what a client provides is irrelevant."/>
+        </extension>
+        <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+          <valueString value="instant"/>
+        </extension>
+        <linkId value="DocumentReference.meta.lastUpdated"/>
+        <repeats value="true"/>
+        <question>
+          <linkId value="DocumentReference.meta.lastUpdated.value"/>
+          <text value="When the resource version last changed"/>
+          <type value="instant"/>
+        </question>
+      </group>
+      <group>
+        <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+          <valueString value="A list of profiles that this resource claims to conform to. The URL is a reference to Profile.url. It is up to the server and/or other infrastruture of policy to determine whether/how these claims are verified and/or updated over tiem."/>
+        </extension>
+        <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+          <valueString value="uri"/>
+        </extension>
+        <linkId value="DocumentReference.meta.profile"/>
+        <repeats value="true"/>
+        <question>
+          <linkId value="DocumentReference.meta.profile.value"/>
+          <text value="Profiles this resource claims to conform to"/>
+          <type value="string"/>
+        </question>
+      </group>
+      <group>
+        <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+          <valueString value="Security labels applied to this resource. These tags connect specific resources to the overall security policy and infrastructure. The security labels can be updated without changing the stated version of the resource."/>
+        </extension>
+        <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+          <valueString value="Coding"/>
+        </extension>
+        <linkId value="DocumentReference.meta.security"/>
+        <repeats value="true"/>
+        <question>
+          <linkId value="DocumentReference.meta.security.value"/>
+          <text value="Security Labels applied to this resource"/>
+          <type value="open-choice"/>
+        </question>
+      </group>
+      <group>
+        <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+          <valueString value="Tags applied to this resource. Tags are intended to to be used to identify and relate resources to process and workflow, and applications are not required to consider the tags when interpreting the meaning of a resource. The tags can be updated without changing the stated version of the resource."/>
+        </extension>
+        <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+          <valueString value="Coding"/>
+        </extension>
+        <linkId value="DocumentReference.meta.tag"/>
+        <repeats value="true"/>
+        <question>
+          <linkId value="DocumentReference.meta.tag.value"/>
+          <text value="Tags applied"/>
+          <type value="open-choice"/>
+        </question>
+      </group>
+    </group>
+    <group>
+      <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+        <valueString value="A reference to a set of rules that were followed when the resource was constructed, and which must be understood when processing the content. Asserting this rule set restricts the content to be only understood by a limited set of trading partners. This inherently limits the usefulness of the data in the long term. However the existing health eco-system is highly fractured, and not yet ready to define, collect, and exchange data in a generally computable sense. Wherever possible, implementers and/or specification writers should avoid using this element as much as possible."/>
+      </extension>
+      <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+        <valueString value="uri"/>
+      </extension>
+      <linkId value="DocumentReference.implicitRules"/>
+      <repeats value="true"/>
+      <question>
+        <linkId value="DocumentReference.implicitRules.value"/>
+        <text value="A set of rules under which this content was created"/>
+        <type value="string"/>
+      </question>
+    </group>
+    <group>
+      <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+        <valueString value="The base language in which the resource is written. Language is provided to support indexing and accessibility (typically, services such as text to speech use the language tag). The html language tag in the narrative applies  to the narrative. The language tag on the resource may be used to specify the language of other presentations generated from the data in the resource
+
+Not all the content has to be in the base language. The Resource.language should not be assumed to apply to the narrative automatically. If a language is specified, it should it also be specified on the div element in the html (see rules in HTML5 for information about the relationship between xml:lang and the html lang attribute)."/>
+      </extension>
+      <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+        <valueString value="code"/>
+      </extension>
+      <linkId value="DocumentReference.language"/>
+      <repeats value="true"/>
+      <question>
+        <linkId value="DocumentReference.language.value"/>
+        <text value="language"/>
+        <type value="choice"/>
+      </question>
+    </group>
+    <group>
+      <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+        <valueString value="A human-readable narrative that contains a summary of the resource, and may be used to represent the content of the resource to a human. The narrative need not encode all the structured data, but is required to contain sufficient detail to make it &quot;clinically safe&quot; for a human to just read the narrative. Resource definitions may define what content should be represented in the narrative to ensure clinical safety. Contained resources do not have narrative. Resources that are not contained SHOULD have a narrative."/>
+      </extension>
+      <linkId value="DocumentReference.text"/>
+      <text value="Text summary of the resource, for human interpretation"/>
+      <repeats value="true"/>
+    </group>
+    <group>
+      <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+        <valueString value="These resources do not have an independent existence apart from the resource that contains them - they cannot be identified independently, and nor can they have their own independent transaction scope. This should never be done when the content can be identified properly, as once identification is lost, it is extremely difficult (and context dependent) to restore it again."/>
+      </extension>
+      <linkId value="DocumentReference.contained"/>
+      <text value="Contained, inline Resources"/>
+      <repeats value="true"/>
+    </group>
+    <group>
+      <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+        <valueString value="Document identifier as assigned by the source of the document. This identifier is specific to this version of the document. This unique identifier may be used elsewhere to identify this version of the document."/>
+      </extension>
+      <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+        <valueString value="Identifier"/>
+      </extension>
+      <linkId value="DocumentReference.masterIdentifier"/>
+      <text value="Master Version Specific Identifier"/>
+      <required value="true"/>
+      <repeats value="true"/>
+      <question>
+        <linkId value="DocumentReference.masterIdentifier.label"/>
+        <text value="label:"/>
+        <type value="string"/>
+      </question>
+      <question>
+        <linkId value="DocumentReference.masterIdentifier.system"/>
+        <text value="system:"/>
+        <type value="string"/>
+      </question>
+      <question>
+        <linkId value="DocumentReference.masterIdentifier.value"/>
+        <text value="value:"/>
+        <type value="string"/>
+      </question>
+    </group>
+    <group>
+      <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+        <valueString value="Other identifiers associated with the document, including version independent, source record and workflow related identifiers. Other identifiers can also include Identifiers may be Accession Numbers, Order Numbers, Referral Request 
+Identifiers, XDS Workflow Instance Identifiers."/>
+      </extension>
+      <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+        <valueString value="Identifier"/>
+      </extension>
+      <linkId value="DocumentReference.identifier"/>
+      <text value="Other identifiers for the document"/>
+      <repeats value="true"/>
+      <question>
+        <linkId value="DocumentReference.identifier.label"/>
+        <text value="label:"/>
+        <type value="string"/>
+      </question>
+      <question>
+        <linkId value="DocumentReference.identifier.system"/>
+        <text value="system:"/>
+        <type value="string"/>
+      </question>
+      <question>
+        <linkId value="DocumentReference.identifier.value"/>
+        <text value="value:"/>
+        <type value="string"/>
+      </question>
+    </group>
+    <group>
+      <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+        <valueString value="Who or what the document is about. The document can be about a person, (patient or healthcare practitioner), a device (I.e. machine) or even a group of subjects (such as a document about a herd of farm animals, or a set of patients that share a common exposure)."/>
+      </extension>
+      <linkId value="DocumentReference.subject"/>
+      <text value="Who|what is the subject of the document"/>
+      <required value="true"/>
+      <repeats value="true"/>
+      <question>
+        <linkId value="DocumentReference.subject._type"/>
+        <text value="type"/>
+        <type value="choice"/>
+        <options>
+          <reference value="#vs2"/>
+        </options>
+        <group>
+          <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+            <valueString value="Reference"/>
+          </extension>
+          <linkId value="DocumentReference.subject._Patient"/>
+          <question>
+            <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#reference">
+              <valueString value="/Patient?subject=$subj&amp;patient=$subj&amp;encounter=$encounter"/>
+            </extension>
+            <linkId value="DocumentReference.subject._Patient.value"/>
+            <text value="Patient"/>
+            <type value="reference"/>
+          </question>
+        </group>
+        <group>
+          <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+            <valueString value="Reference"/>
+          </extension>
+          <linkId value="DocumentReference.subject._Practitioner"/>
+          <question>
+            <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#reference">
+              <valueString value="/Practitioner?subject=$subj&amp;patient=$subj&amp;encounter=$encounter"/>
+            </extension>
+            <linkId value="DocumentReference.subject._Practitioner.value"/>
+            <text value="Practitioner"/>
+            <type value="reference"/>
+          </question>
+        </group>
+        <group>
+          <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+            <valueString value="Reference"/>
+          </extension>
+          <linkId value="DocumentReference.subject._Group"/>
+          <question>
+            <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#reference">
+              <valueString value="/Group?subject=$subj&amp;patient=$subj&amp;encounter=$encounter"/>
+            </extension>
+            <linkId value="DocumentReference.subject._Group.value"/>
+            <text value="Group"/>
+            <type value="reference"/>
+          </question>
+        </group>
+        <group>
+          <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+            <valueString value="Reference"/>
+          </extension>
+          <linkId value="DocumentReference.subject._Device"/>
+          <question>
+            <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#reference">
+              <valueString value="/Device?subject=$subj&amp;patient=$subj&amp;encounter=$encounter"/>
+            </extension>
+            <linkId value="DocumentReference.subject._Device.value"/>
+            <text value="Device"/>
+            <type value="reference"/>
+          </question>
+        </group>
+      </question>
+    </group>
+    <group>
+      <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+        <valueString value="Specifies the particular kind of document (e.g. Patient Summary, Discharge Summary, Prescription, etc.). Key metadata element describing the document, used in searching/filtering."/>
+      </extension>
+      <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+        <valueString value="CodeableConcept"/>
+      </extension>
+      <linkId value="DocumentReference.type"/>
+      <text value="What kind of document this is (LOINC if possible)"/>
+      <required value="true"/>
+      <repeats value="true"/>
+      <question>
+        <linkId value="DocumentReference.type.coding"/>
+        <text value="code:"/>
+        <type value="open-choice"/>
+      </question>
+      <question>
+        <linkId value="DocumentReference.type.text"/>
+        <text value="text:"/>
+        <type value="string"/>
+      </question>
+    </group>
+    <group>
+      <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+        <valueString value="A categorization for the type of the document. This may be implied by or derived from the code specified in the Document Type. Helps humans to assess whether the document is of interest when viewing an index of documents."/>
+      </extension>
+      <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+        <valueString value="CodeableConcept"/>
+      </extension>
+      <linkId value="DocumentReference.class"/>
+      <text value="Categorization of Document"/>
+      <repeats value="true"/>
+      <question>
+        <linkId value="DocumentReference.class.coding"/>
+        <text value="code:"/>
+        <type value="open-choice"/>
+      </question>
+      <question>
+        <linkId value="DocumentReference.class.text"/>
+        <text value="text:"/>
+        <type value="string"/>
+      </question>
+    </group>
+    <group>
+      <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+        <valueString value="Identifies who is responsible for adding the information to the document. Not necessarily who did the actual data entry (i.e. typist) it in or who was the source (informant)."/>
+      </extension>
+      <linkId value="DocumentReference.author"/>
+      <text value="Who and/or what authored the document"/>
+      <required value="true"/>
+      <repeats value="true"/>
+      <question>
+        <linkId value="DocumentReference.author._type"/>
+        <text value="type"/>
+        <type value="choice"/>
+        <options>
+          <reference value="#vs3"/>
+        </options>
+        <group>
+          <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+            <valueString value="Reference"/>
+          </extension>
+          <linkId value="DocumentReference.author._Practitioner"/>
+          <question>
+            <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#reference">
+              <valueString value="/Practitioner?subject=$subj&amp;patient=$subj&amp;encounter=$encounter"/>
+            </extension>
+            <linkId value="DocumentReference.author._Practitioner.value"/>
+            <text value="Practitioner"/>
+            <type value="reference"/>
+          </question>
+        </group>
+        <group>
+          <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+            <valueString value="Reference"/>
+          </extension>
+          <linkId value="DocumentReference.author._Device"/>
+          <question>
+            <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#reference">
+              <valueString value="/Device?subject=$subj&amp;patient=$subj&amp;encounter=$encounter"/>
+            </extension>
+            <linkId value="DocumentReference.author._Device.value"/>
+            <text value="Device"/>
+            <type value="reference"/>
+          </question>
+        </group>
+        <group>
+          <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+            <valueString value="Reference"/>
+          </extension>
+          <linkId value="DocumentReference.author._Patient"/>
+          <question>
+            <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#reference">
+              <valueString value="/Patient?subject=$subj&amp;patient=$subj&amp;encounter=$encounter"/>
+            </extension>
+            <linkId value="DocumentReference.author._Patient.value"/>
+            <text value="Patient"/>
+            <type value="reference"/>
+          </question>
+        </group>
+        <group>
+          <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+            <valueString value="Reference"/>
+          </extension>
+          <linkId value="DocumentReference.author._RelatedPerson"/>
+          <question>
+            <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#reference">
+              <valueString value="/RelatedPerson?subject=$subj&amp;patient=$subj&amp;encounter=$encounter"/>
+            </extension>
+            <linkId value="DocumentReference.author._RelatedPerson.value"/>
+            <text value="RelatedPerson"/>
+            <type value="reference"/>
+          </question>
+        </group>
+      </question>
+    </group>
+    <group>
+      <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+        <valueString value="Identifies the organization or group who is responsible for ongoing maintenance of and access to the document. Identifies the logical organization to go to find the current version, where to report issues, etc. This is different from the physical location of the document, which is the technical location of the document, which host may be delegated to the management of some other organization."/>
+      </extension>
+      <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+        <valueString value="Reference"/>
+      </extension>
+      <linkId value="DocumentReference.custodian"/>
+      <repeats value="true"/>
+      <question>
+        <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#reference">
+          <valueString value="/Organization?subject=$subj&amp;patient=$subj&amp;encounter=$encounter"/>
+        </extension>
+        <linkId value="DocumentReference.custodian.value"/>
+        <text value="Org which maintains the document"/>
+        <type value="reference"/>
+      </question>
+    </group>
+    <group>
+      <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+        <valueString value="A reference to a domain or server that manages policies under which the document is accessed and/or made available."/>
+      </extension>
+      <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+        <valueString value="uri"/>
+      </extension>
+      <linkId value="DocumentReference.policyManager"/>
+      <repeats value="true"/>
+      <question>
+        <linkId value="DocumentReference.policyManager.value"/>
+        <text value="Manages access policies for the document"/>
+        <type value="string"/>
+      </question>
+    </group>
+    <group>
+      <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+        <valueString value="Which person or organization authenticates that this document is valid."/>
+      </extension>
+      <linkId value="DocumentReference.authenticator"/>
+      <text value="Who/What authenticated the document"/>
+      <repeats value="true"/>
+      <question>
+        <linkId value="DocumentReference.authenticator._type"/>
+        <text value="type"/>
+        <type value="choice"/>
+        <options>
+          <reference value="#vs4"/>
+        </options>
+        <group>
+          <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+            <valueString value="Reference"/>
+          </extension>
+          <linkId value="DocumentReference.authenticator._Practitioner"/>
+          <question>
+            <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#reference">
+              <valueString value="/Practitioner?subject=$subj&amp;patient=$subj&amp;encounter=$encounter"/>
+            </extension>
+            <linkId value="DocumentReference.authenticator._Practitioner.value"/>
+            <text value="Practitioner"/>
+            <type value="reference"/>
+          </question>
+        </group>
+        <group>
+          <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+            <valueString value="Reference"/>
+          </extension>
+          <linkId value="DocumentReference.authenticator._Organization"/>
+          <question>
+            <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#reference">
+              <valueString value="/Organization?subject=$subj&amp;patient=$subj&amp;encounter=$encounter"/>
+            </extension>
+            <linkId value="DocumentReference.authenticator._Organization.value"/>
+            <text value="Organization"/>
+            <type value="reference"/>
+          </question>
+        </group>
+      </question>
+    </group>
+    <group>
+      <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+        <valueString value="When the document was created. Creation time is used for tracking, organizing versions and searching. This is the creation time of the document, not the source material on which it is based."/>
+      </extension>
+      <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+        <valueString value="datetime"/>
+      </extension>
+      <linkId value="DocumentReference.created"/>
+      <repeats value="true"/>
+      <question>
+        <linkId value="DocumentReference.created.value"/>
+        <text value="Document creation time"/>
+        <type value="dateTime"/>
+      </question>
+    </group>
+    <group>
+      <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+        <valueString value="When the document reference was created. Referencing/indexing time is used for tracking, organizing versions and searching."/>
+      </extension>
+      <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+        <valueString value="instant"/>
+      </extension>
+      <linkId value="DocumentReference.indexed"/>
+      <required value="true"/>
+      <repeats value="true"/>
+      <question>
+        <linkId value="DocumentReference.indexed.value"/>
+        <text value="When this document reference created"/>
+        <type value="instant"/>
+      </question>
+    </group>
+    <group>
+      <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+        <valueString value="The status of this document reference."/>
+      </extension>
+      <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+        <valueString value="code"/>
+      </extension>
+      <linkId value="DocumentReference.status"/>
+      <required value="true"/>
+      <repeats value="true"/>
+      <question>
+        <linkId value="DocumentReference.status.value"/>
+        <text value="status"/>
+        <type value="choice"/>
+      </question>
+    </group>
+    <group>
+      <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+        <valueString value="The status of the underlying document."/>
+      </extension>
+      <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+        <valueString value="CodeableConcept"/>
+      </extension>
+      <linkId value="DocumentReference.docStatus"/>
+      <text value="preliminary | final | appended | amended | entered in error"/>
+      <repeats value="true"/>
+      <question>
+        <linkId value="DocumentReference.docStatus.coding"/>
+        <text value="code:"/>
+        <type value="open-choice"/>
+      </question>
+      <question>
+        <linkId value="DocumentReference.docStatus.text"/>
+        <text value="text:"/>
+        <type value="string"/>
+      </question>
+    </group>
+    <group>
+      <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+        <valueString value="Relationships that this document has with other document references that already exist."/>
+      </extension>
+      <linkId value="DocumentReference.relatesTo"/>
+      <title value="Relationships to other documents"/>
+      <repeats value="true"/>
+      <group>
+        <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+          <valueString value="unique id for the element within a resource (for internal references)."/>
+        </extension>
+        <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+          <valueString value="string"/>
+        </extension>
+        <linkId value="DocumentReference.relatesTo.id"/>
+        <repeats value="true"/>
+        <question>
+          <linkId value="DocumentReference.relatesTo.id.value"/>
+          <text value="xml:id (or equivalent in JSON)"/>
+          <type value="string"/>
+        </question>
+      </group>
+      <group>
+        <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+          <valueString value="The type of relationship that this document has with anther document. If this document appends another document, then the document cannot be fully understood without also accessing the referenced document."/>
+        </extension>
+        <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+          <valueString value="code"/>
+        </extension>
+        <linkId value="DocumentReference.relatesTo.code"/>
+        <required value="true"/>
+        <repeats value="true"/>
+        <question>
+          <linkId value="DocumentReference.relatesTo.code.value"/>
+          <text value="code"/>
+          <type value="choice"/>
+        </question>
+      </group>
+      <group>
+        <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+          <valueString value="The target document of this relationship."/>
+        </extension>
+        <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+          <valueString value="Reference"/>
+        </extension>
+        <linkId value="DocumentReference.relatesTo.target"/>
+        <required value="true"/>
+        <repeats value="true"/>
+        <question>
+          <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#reference">
+            <valueString value="/DocumentReference?subject=$subj&amp;patient=$subj&amp;encounter=$encounter"/>
+          </extension>
+          <linkId value="DocumentReference.relatesTo.target.value"/>
+          <text value="Target of the relationship"/>
+          <type value="reference"/>
+        </question>
+      </group>
+    </group>
+    <group>
+      <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+        <valueString value="Human-readable description of the source document. This is sometimes known as the &quot;title&quot;. What the document is about, rather than a terse summary of the document. It is commonly the case that records do not have a title and are collectively referred to by the display name of Record code (e.g. a &quot;consultation&quot; or &quot;progress note&quot;)."/>
+      </extension>
+      <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+        <valueString value="string"/>
+      </extension>
+      <linkId value="DocumentReference.description"/>
+      <repeats value="true"/>
+      <question>
+        <linkId value="DocumentReference.description.value"/>
+        <text value="Human-readable description (title)"/>
+        <type value="string"/>
+      </question>
+    </group>
+    <group>
+      <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+        <valueString value="A code specifying the level of confidentiality of the XDS Document. The interpretation of this field, and more generally enforcement and issues related to highly sensitive documents are beyond the scope of this resource. confidentialityCode can only be understood in the context of the policies, procedures, and value set specified by the context in which the document reference is being used."/>
+      </extension>
+      <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+        <valueString value="CodeableConcept"/>
+      </extension>
+      <linkId value="DocumentReference.confidentiality"/>
+      <text value="Sensitivity of source document"/>
+      <repeats value="true"/>
+      <question>
+        <linkId value="DocumentReference.confidentiality.coding"/>
+        <text value="code:"/>
+        <type value="open-choice"/>
+      </question>
+      <question>
+        <linkId value="DocumentReference.confidentiality.text"/>
+        <text value="text:"/>
+        <type value="string"/>
+      </question>
+    </group>
+    <group>
+      <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+        <valueString value="The primary language in which the source document is written."/>
+      </extension>
+      <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+        <valueString value="code"/>
+      </extension>
+      <linkId value="DocumentReference.primaryLanguage"/>
+      <repeats value="true"/>
+      <question>
+        <linkId value="DocumentReference.primaryLanguage.value"/>
+        <text value="primary language"/>
+        <type value="choice"/>
+      </question>
+    </group>
+    <group>
+      <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+        <valueString value="The mime type of the source document. Note: application/hl7-v3+xml for CDA. application/binary for proprietary record formats."/>
+      </extension>
+      <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+        <valueString value="code"/>
+      </extension>
+      <linkId value="DocumentReference.mimeType"/>
+      <required value="true"/>
+      <repeats value="true"/>
+      <question>
+        <linkId value="DocumentReference.mimeType.value"/>
+        <text value="mime type"/>
+        <type value="choice"/>
+      </question>
+    </group>
+    <group>
+      <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+        <valueString value="An identifier that identifies that the format and content of the document conforms to additional rules beyond the base format indicated in the mimeType. Most often used when the mime-type is text/xml."/>
+      </extension>
+      <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+        <valueString value="uri"/>
+      </extension>
+      <linkId value="DocumentReference.format"/>
+      <repeats value="true"/>
+      <question>
+        <linkId value="DocumentReference.format.value"/>
+        <text value="Format/content rules for the document"/>
+        <type value="string"/>
+      </question>
+    </group>
+    <group>
+      <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+        <valueString value="The size of the source document this reference refers to in bytes."/>
+      </extension>
+      <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+        <valueString value="integer"/>
+      </extension>
+      <linkId value="DocumentReference.size"/>
+      <repeats value="true"/>
+      <question>
+        <linkId value="DocumentReference.size.value"/>
+        <text value="Size of the document in bytes"/>
+        <type value="integer"/>
+      </question>
+    </group>
+    <group>
+      <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+        <valueString value="A hash of the source document to ensure that changes have not occurred. Whether the hash must be present and/or correct depends on the document handling rules defined in the context of use."/>
+      </extension>
+      <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+        <valueString value="binary"/>
+      </extension>
+      <linkId value="DocumentReference.hash"/>
+      <text value="Base64 representation of SHA1"/>
+      <repeats value="true"/>
+    </group>
+    <group>
+      <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+        <valueString value="A url at which the document can be accessed."/>
+      </extension>
+      <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+        <valueString value="uri"/>
+      </extension>
+      <linkId value="DocumentReference.location"/>
+      <repeats value="true"/>
+      <question>
+        <linkId value="DocumentReference.location.value"/>
+        <text value="Where to access the document"/>
+        <type value="string"/>
+      </question>
+    </group>
+    <group>
+      <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+        <valueString value="A description of a service call that can be used to retrieve the document."/>
+      </extension>
+      <linkId value="DocumentReference.service"/>
+      <title value="If access is not fully described by location"/>
+      <text value="If a document can be accessed by either a service or directly by a URL (i.e. an XDS repository with an MHD access point, or a DICOM network with a WADO portal) just provide the URL."/>
+      <group>
+        <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+          <valueString value="unique id for the element within a resource (for internal references)."/>
+        </extension>
+        <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+          <valueString value="string"/>
+        </extension>
+        <linkId value="DocumentReference.service.id"/>
+        <repeats value="true"/>
+        <question>
+          <linkId value="DocumentReference.service.id.value"/>
+          <text value="xml:id (or equivalent in JSON)"/>
+          <type value="string"/>
+        </question>
+      </group>
+      <group>
+        <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+          <valueString value="The type of the service that can be used to access the documents. The meaning and interpretation of the parameters depends on the service type."/>
+        </extension>
+        <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+          <valueString value="CodeableConcept"/>
+        </extension>
+        <linkId value="DocumentReference.service.type"/>
+        <text value="Type of service (i.e. XDS.b)"/>
+        <required value="true"/>
+        <repeats value="true"/>
+        <question>
+          <linkId value="DocumentReference.service.type.coding"/>
+          <text value="code:"/>
+          <type value="open-choice"/>
+        </question>
+        <question>
+          <linkId value="DocumentReference.service.type.text"/>
+          <text value="text:"/>
+          <type value="string"/>
+        </question>
+      </group>
+      <group>
+        <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+          <valueString value="Where the service end-point is located. Usually this is a URL, but for some services, the end-point is a simple network name or address that is not a valid URL."/>
+        </extension>
+        <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+          <valueString value="string"/>
+        </extension>
+        <linkId value="DocumentReference.service.address"/>
+        <repeats value="true"/>
+        <question>
+          <linkId value="DocumentReference.service.address.value"/>
+          <text value="Where service is located (usually a URL)"/>
+          <type value="string"/>
+        </question>
+      </group>
+      <group>
+        <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+          <valueString value="A list of named parameters that is used in the service call."/>
+        </extension>
+        <linkId value="DocumentReference.service.parameter"/>
+        <title value="Service call parameters"/>
+        <text value="The interpretation of the parameters, and how to convert them into a proper service call, is dependent on the type of the service, and needs to be specified in an implementation guide somewhere."/>
+        <repeats value="true"/>
+        <group>
+          <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+            <valueString value="unique id for the element within a resource (for internal references)."/>
+          </extension>
+          <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+            <valueString value="string"/>
+          </extension>
+          <linkId value="DocumentReference.service.parameter.id"/>
+          <repeats value="true"/>
+          <question>
+            <linkId value="DocumentReference.service.parameter.id.value"/>
+            <text value="xml:id (or equivalent in JSON)"/>
+            <type value="string"/>
+          </question>
+        </group>
+        <group>
+          <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+            <valueString value="The name of a parameter."/>
+          </extension>
+          <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+            <valueString value="string"/>
+          </extension>
+          <linkId value="DocumentReference.service.parameter.name"/>
+          <required value="true"/>
+          <repeats value="true"/>
+          <question>
+            <linkId value="DocumentReference.service.parameter.name.value"/>
+            <text value="Parameter name in service call"/>
+            <type value="string"/>
+          </question>
+        </group>
+        <group>
+          <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+            <valueString value="The value of the named parameter."/>
+          </extension>
+          <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+            <valueString value="string"/>
+          </extension>
+          <linkId value="DocumentReference.service.parameter.value"/>
+          <repeats value="true"/>
+          <question>
+            <linkId value="DocumentReference.service.parameter.value.value"/>
+            <text value="Parameter value for the name"/>
+            <type value="string"/>
+          </question>
+        </group>
+      </group>
+    </group>
+    <group>
+      <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+        <valueString value="The clinical context in which the document was prepared."/>
+      </extension>
+      <linkId value="DocumentReference.context"/>
+      <title value="Clinical context of document"/>
+      <text value="These values are primarily added to help with searching for interesting/relevant documents."/>
+      <group>
+        <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+          <valueString value="unique id for the element within a resource (for internal references)."/>
+        </extension>
+        <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+          <valueString value="string"/>
+        </extension>
+        <linkId value="DocumentReference.context.id"/>
+        <repeats value="true"/>
+        <question>
+          <linkId value="DocumentReference.context.id.value"/>
+          <text value="xml:id (or equivalent in JSON)"/>
+          <type value="string"/>
+        </question>
+      </group>
+      <group>
+        <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+          <valueString value="This list of codes represents the main clinical acts, such as a colonoscopy or an appendectomy, being documented. In some cases, the event is inherent in the typeCode, such as a &quot;History and Physical Report&quot; in which the procedure being documented is necessarily a &quot;History and Physical&quot; act. An event can further specialize the act inherent in the type, such as 
+where it is simply &quot;Procedure Report&quot; and the procedure was a &quot;colonoscopy&quot;. If one or more event codes are included, they shall not conflict with the values inherent in the class or type elements as such a conflict would create an ambiguous situation."/>
+        </extension>
+        <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+          <valueString value="CodeableConcept"/>
+        </extension>
+        <linkId value="DocumentReference.context.event"/>
+        <text value="Main Clinical Acts Documented"/>
+        <repeats value="true"/>
+        <question>
+          <linkId value="DocumentReference.context.event.coding"/>
+          <text value="code:"/>
+          <type value="open-choice"/>
+        </question>
+        <question>
+          <linkId value="DocumentReference.context.event.text"/>
+          <text value="text:"/>
+          <type value="string"/>
+        </question>
+      </group>
+      <group>
+        <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+          <valueString value="The time period over which the service that is described by the document was provided."/>
+        </extension>
+        <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+          <valueString value="Period"/>
+        </extension>
+        <linkId value="DocumentReference.context.period"/>
+        <text value="Time of service that is being documented"/>
+        <repeats value="true"/>
+        <question>
+          <linkId value="DocumentReference.context.period.low"/>
+          <text value="start:"/>
+          <type value="dateTime"/>
+        </question>
+        <question>
+          <linkId value="DocumentReference.context.period.end"/>
+          <text value="end:"/>
+          <type value="dateTime"/>
+        </question>
+      </group>
+      <group>
+        <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+          <valueString value="The kind of facility where the patient was seen."/>
+        </extension>
+        <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+          <valueString value="CodeableConcept"/>
+        </extension>
+        <linkId value="DocumentReference.context.facilityType"/>
+        <text value="Kind of facility where patient was seen"/>
+        <repeats value="true"/>
+        <question>
+          <linkId value="DocumentReference.context.facilityType.coding"/>
+          <text value="code:"/>
+          <type value="open-choice"/>
+        </question>
+        <question>
+          <linkId value="DocumentReference.context.facilityType.text"/>
+          <text value="text:"/>
+          <type value="string"/>
+        </question>
+      </group>
+    </group>
+  </group>
+</Questionnaire>

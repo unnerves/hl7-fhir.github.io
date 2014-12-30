@@ -1,0 +1,799 @@
+﻿<!DOCTYPE HTML>
+
+
+
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <title>Allergyintolerance.questionnaire.xml - FHIR v0.4.0</title>
+
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="author" content="http://hl7.org/fhir"/>
+
+  <link href="fhir.css" rel="stylesheet"/>
+  <link rel="Prev" href="http://hl7.org/implement/standards/fhir/allergyintolerance.questionnaire.xml.html"/>
+
+  <!-- Bootstrap core CSS -->
+  <link href="./dist/css/bootstrap.css" rel="stylesheet"/>
+  <link href="./assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+  <!-- Project extras -->
+  <link href="./assets/css/project.css" rel="stylesheet"/>
+  <link href="./assets/css/pygments-manni.css" rel="stylesheet"/>
+	<link href="jquery-ui.css" rel="stylesheet"/>
+
+  <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!--[if lt IE 9]>
+  <script src="./assets/js/html5shiv.js"></script>
+  <script src="./assets/js/respond.min.js"></script>
+  <![endif]-->
+
+  <!-- Favicons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="./assets/ico/apple-touch-icon-144-precomposed.png"/>
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="./assets/ico/apple-touch-icon-114-precomposed.png"/>
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="./assets/ico/apple-touch-icon-72-precomposed.png"/>
+  <link rel="apple-touch-icon-precomposed" href="./assets/ico/apple-touch-icon-57-precomposed.png"/>
+  <link rel="shortcut icon" href="./assets/ico/favicon.png"/>
+
+</head>
+<body>
+	<div id="segment-header" class="segment"><!-- segment-header -->	
+		<div class="container"><!-- container -->
+			<a id="logo" href="http://hl7.org/fhir"><img src="./assets/images/fhir-logo-www.png" alt="logo fhir"/> </a>
+			<div id="hl7-status">
+				<b>Continuous Integration Build</b>
+			</div>       	
+			
+			<div id="hl7-nav">
+				 <a id="hl7-logo" href="http://www.hl7.org">
+					<img src="./assets/images/hl7-logo.png" width="42" height="50" alt="visit the hl7 website"/>
+				</a> 
+			</div>       	
+			<!--hl7-search-->
+		</div>
+		<div class="container"><!-- container -->
+	</div></div><!-- /segment-header -->	
+
+
+	<div id="segment-navbar" class="segment"><!-- segment-navbar -->
+		<div id="stripe"> </div>
+		<div class="container"><!-- container -->
+ <!-- HEADER CONTENT -->
+ 	      		
+ 	      		      		
+			<nav class="navbar navbar-inverse">
+				<div class="container">
+					<button data-target=".navbar-inverse-collapse" data-toggle="collapse" class="navbar-toggle" type="button">
+						<span class="icon-bar"> </span>
+						<span class="icon-bar"> </span>
+						<span class="icon-bar"> </span>
+					</button>
+					<a href="index.html" class="navbar-brand hidden">FHIR</a>
+					<div class="nav-collapse collapse navbar-inverse-collapse">
+						<ul class="nav navbar-nav">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="documentation.html">Documentation</a></li>
+              <li><a href="implementation.html">Implementation</a></li>
+              <li><a href="resourcelist.html">Resources</a></li>
+              <li><a href="clinical.html">Clinical</a></li>
+              <li><a href="administration.html">Administrative</a></li>
+              <li><a href="infrastructure.html">Infrastructure</a></li>
+              <li><a href="financial.html">Financial</a></li>
+
+						</ul>
+					</div><!-- /.nav-collapse -->
+				</div><!-- /.container -->
+			</nav><!-- /.navbar -->
+      		
+				
+<!-- /HEADER CONTENT -->				
+		</div><!-- /container -->
+	</div><!-- /segment-navbar -->
+	
+
+	<div id="segment-breadcrumb" class="segment"><!-- segment-breadcrumb -->
+		<div class="container"><!-- container -->	
+			<ul class="breadcrumb">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="clinical.html">Clinical</a></li>        <li><a href="allergyintolerance.html">AllergyIntolerance</a></li>        <li><b>Generated Questionnaire</b></li>        <!-- allergyintolerance.questionnaire.xml.html / resource-questionnaire:AllergyIntolerance -->
+
+			</ul>	
+		</div><!-- /container -->
+	</div><!-- /segment-breadcrumb -->
+	
+
+	<div id="segment-content" class="segment"><!-- segment-content -->
+	<div class="container"><!-- container -->
+            <div class="row">
+            	<div class="inner-wrapper">
+<!-- CONTENT CONTENT -->
+
+
+<div class="col-9">
+
+<h1>Allergyintolerance.questionnaire.xml</h1>
+
+<p>
+<a href="allergyintolerance.questionnaire.xml">Raw XML</a> (<a href="allergyintolerance.questionnaire.canonical.xml">canonical form</a>)
+</p>
+
+
+<div class="example">
+<p>Generated Questionnaire for AllergyIntolerance</p>
+<pre class="json">
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+
+&lt;Questionnaire xmlns=&quot;http://hl7.org/fhir&quot;&gt;
+  &lt;id value=&quot;qs1&quot;/&gt;
+  &lt;contained&gt;
+    &lt;ValueSet&gt;
+      &lt;id value=&quot;vs2&quot;/&gt;
+      &lt;identifier value=&quot;urn:uuid:bcc0dfa8-2a65-4e36-a7b1-34bacb100257&quot;/&gt;
+      &lt;name value=&quot;Type options for AllergyIntolerance.recorder&quot;/&gt;
+      &lt;description value=&quot;Type options for AllergyIntolerance.recorder&quot;/&gt;
+      &lt;status value=&quot;active&quot;/&gt;
+      &lt;expansion&gt;
+        &lt;timestamp value=&quot;2014-12-30T10:57:39+00:00&quot;/&gt;
+        &lt;contains&gt;
+          &lt;system value=&quot;http://hl7.org/fhir/resource-types&quot;/&gt;
+          &lt;code value=&quot;Practitioner&quot;/&gt;
+          &lt;display value=&quot;Practitioner&quot;/&gt;
+        &lt;/contains&gt;
+        &lt;contains&gt;
+          &lt;system value=&quot;http://hl7.org/fhir/resource-types&quot;/&gt;
+          &lt;code value=&quot;Patient&quot;/&gt;
+          &lt;display value=&quot;Patient&quot;/&gt;
+        &lt;/contains&gt;
+      &lt;/expansion&gt;
+    &lt;/ValueSet&gt;
+  &lt;/contained&gt;
+  &lt;identifier&gt;
+    &lt;system value=&quot;urn:ietf:rfc:3986&quot;/&gt;
+  &lt;/identifier&gt;
+  &lt;status value=&quot;draft&quot;/&gt;
+  &lt;date value=&quot;2014-12-30T10:55:31&quot;/&gt;
+  &lt;publisher value=&quot;HL7 FHIR Project (Patient Care)&quot;/&gt;
+  &lt;group&gt;
+    &lt;extension url=&quot;http://hl7.org/fhir/Profile/questionnaire-extensions#flyover&quot;&gt;
+      &lt;valueString value=&quot;Risk of harmful or undesirable, physiological response which is unique to an individual and associated with exposure to a substance.&quot;/&gt;
+    &lt;/extension&gt;
+    &lt;linkId value=&quot;AllergyIntolerance&quot;/&gt;
+    &lt;title value=&quot;Allergy or Intolerance (generally: Risk Of Adverse reaction to a substance)&quot;/&gt;
+    &lt;text value=&quot;Substances include, but are not limited to: a therapeutic substance administered correctly at an appropriate dosage for the individual; food; material derived from plants or animals; or venom from insect stings.&quot;/&gt;
+    &lt;required value=&quot;true&quot;/&gt;
+    &lt;group&gt;
+      &lt;extension url=&quot;http://hl7.org/fhir/Profile/questionnaire-extensions#flyover&quot;&gt;
+        &lt;valueString value=&quot;The logical id of the resource, as used in the url for the resoure. Once assigned, this value never changes. The only time that a resource does not have an id is when it is being submitted to the server using a create operation. Bundles always have an id, though it is usually a generated UUID.&quot;/&gt;
+      &lt;/extension&gt;
+      &lt;extension url=&quot;http://www.healthintersections.com.au/fhir/Profile/metadata#type&quot;&gt;
+        &lt;valueString value=&quot;string&quot;/&gt;
+      &lt;/extension&gt;
+      &lt;linkId value=&quot;AllergyIntolerance.id&quot;/&gt;
+      &lt;repeats value=&quot;true&quot;/&gt;
+      &lt;question&gt;
+        &lt;linkId value=&quot;AllergyIntolerance.id.value&quot;/&gt;
+        &lt;text value=&quot;Logical id of this artefact&quot;/&gt;
+        &lt;type value=&quot;string&quot;/&gt;
+      &lt;/question&gt;
+    &lt;/group&gt;
+    &lt;group&gt;
+      &lt;extension url=&quot;http://hl7.org/fhir/Profile/questionnaire-extensions#flyover&quot;&gt;
+        &lt;valueString value=&quot;The metadata about the resource. This is content that is maintained by the infrastructure. Changes to the content may not always be associated with version changes to the resource.&quot;/&gt;
+      &lt;/extension&gt;
+      &lt;linkId value=&quot;AllergyIntolerance.meta&quot;/&gt;
+      &lt;title value=&quot;Metadata about the resource&quot;/&gt;
+      &lt;group&gt;
+        &lt;extension url=&quot;http://hl7.org/fhir/Profile/questionnaire-extensions#flyover&quot;&gt;
+          &lt;valueString value=&quot;unique id for the element within a resource (for internal references).&quot;/&gt;
+        &lt;/extension&gt;
+        &lt;extension url=&quot;http://www.healthintersections.com.au/fhir/Profile/metadata#type&quot;&gt;
+          &lt;valueString value=&quot;string&quot;/&gt;
+        &lt;/extension&gt;
+        &lt;linkId value=&quot;AllergyIntolerance.meta.id&quot;/&gt;
+        &lt;repeats value=&quot;true&quot;/&gt;
+        &lt;question&gt;
+          &lt;linkId value=&quot;AllergyIntolerance.meta.id.value&quot;/&gt;
+          &lt;text value=&quot;xml:id (or equivalent in JSON)&quot;/&gt;
+          &lt;type value=&quot;string&quot;/&gt;
+        &lt;/question&gt;
+      &lt;/group&gt;
+      &lt;group&gt;
+        &lt;extension url=&quot;http://hl7.org/fhir/Profile/questionnaire-extensions#flyover&quot;&gt;
+          &lt;valueString value=&quot;The version specific identifier, as it appears in the version portion of the url. This values changes when the resource is created, updated, or deleted. The server assigns this value, and ignores what the client specifies, except in the case that the server is imposing version integrity on updates/deletes.&quot;/&gt;
+        &lt;/extension&gt;
+        &lt;extension url=&quot;http://www.healthintersections.com.au/fhir/Profile/metadata#type&quot;&gt;
+          &lt;valueString value=&quot;string&quot;/&gt;
+        &lt;/extension&gt;
+        &lt;linkId value=&quot;AllergyIntolerance.meta.versionId&quot;/&gt;
+        &lt;repeats value=&quot;true&quot;/&gt;
+        &lt;question&gt;
+          &lt;linkId value=&quot;AllergyIntolerance.meta.versionId.value&quot;/&gt;
+          &lt;text value=&quot;Version specific identifier&quot;/&gt;
+          &lt;type value=&quot;string&quot;/&gt;
+        &lt;/question&gt;
+      &lt;/group&gt;
+      &lt;group&gt;
+        &lt;extension url=&quot;http://hl7.org/fhir/Profile/questionnaire-extensions#flyover&quot;&gt;
+          &lt;valueString value=&quot;When the resource last changed - e.g. when the version changed. This value is always populated except when the resource is first being created. The server / resource manager sets this value; what a client provides is irrelevant.&quot;/&gt;
+        &lt;/extension&gt;
+        &lt;extension url=&quot;http://www.healthintersections.com.au/fhir/Profile/metadata#type&quot;&gt;
+          &lt;valueString value=&quot;instant&quot;/&gt;
+        &lt;/extension&gt;
+        &lt;linkId value=&quot;AllergyIntolerance.meta.lastUpdated&quot;/&gt;
+        &lt;repeats value=&quot;true&quot;/&gt;
+        &lt;question&gt;
+          &lt;linkId value=&quot;AllergyIntolerance.meta.lastUpdated.value&quot;/&gt;
+          &lt;text value=&quot;When the resource version last changed&quot;/&gt;
+          &lt;type value=&quot;instant&quot;/&gt;
+        &lt;/question&gt;
+      &lt;/group&gt;
+      &lt;group&gt;
+        &lt;extension url=&quot;http://hl7.org/fhir/Profile/questionnaire-extensions#flyover&quot;&gt;
+          &lt;valueString value=&quot;A list of profiles that this resource claims to conform to. The URL is a reference to Profile.url. It is up to the server and/or other infrastruture of policy to determine whether/how these claims are verified and/or updated over tiem.&quot;/&gt;
+        &lt;/extension&gt;
+        &lt;extension url=&quot;http://www.healthintersections.com.au/fhir/Profile/metadata#type&quot;&gt;
+          &lt;valueString value=&quot;uri&quot;/&gt;
+        &lt;/extension&gt;
+        &lt;linkId value=&quot;AllergyIntolerance.meta.profile&quot;/&gt;
+        &lt;repeats value=&quot;true&quot;/&gt;
+        &lt;question&gt;
+          &lt;linkId value=&quot;AllergyIntolerance.meta.profile.value&quot;/&gt;
+          &lt;text value=&quot;Profiles this resource claims to conform to&quot;/&gt;
+          &lt;type value=&quot;string&quot;/&gt;
+        &lt;/question&gt;
+      &lt;/group&gt;
+      &lt;group&gt;
+        &lt;extension url=&quot;http://hl7.org/fhir/Profile/questionnaire-extensions#flyover&quot;&gt;
+          &lt;valueString value=&quot;Security labels applied to this resource. These tags connect specific resources to the overall security policy and infrastructure. The security labels can be updated without changing the stated version of the resource.&quot;/&gt;
+        &lt;/extension&gt;
+        &lt;extension url=&quot;http://www.healthintersections.com.au/fhir/Profile/metadata#type&quot;&gt;
+          &lt;valueString value=&quot;Coding&quot;/&gt;
+        &lt;/extension&gt;
+        &lt;linkId value=&quot;AllergyIntolerance.meta.security&quot;/&gt;
+        &lt;repeats value=&quot;true&quot;/&gt;
+        &lt;question&gt;
+          &lt;linkId value=&quot;AllergyIntolerance.meta.security.value&quot;/&gt;
+          &lt;text value=&quot;Security Labels applied to this resource&quot;/&gt;
+          &lt;type value=&quot;open-choice&quot;/&gt;
+        &lt;/question&gt;
+      &lt;/group&gt;
+      &lt;group&gt;
+        &lt;extension url=&quot;http://hl7.org/fhir/Profile/questionnaire-extensions#flyover&quot;&gt;
+          &lt;valueString value=&quot;Tags applied to this resource. Tags are intended to to be used to identify and relate resources to process and workflow, and applications are not required to consider the tags when interpreting the meaning of a resource. The tags can be updated without changing the stated version of the resource.&quot;/&gt;
+        &lt;/extension&gt;
+        &lt;extension url=&quot;http://www.healthintersections.com.au/fhir/Profile/metadata#type&quot;&gt;
+          &lt;valueString value=&quot;Coding&quot;/&gt;
+        &lt;/extension&gt;
+        &lt;linkId value=&quot;AllergyIntolerance.meta.tag&quot;/&gt;
+        &lt;repeats value=&quot;true&quot;/&gt;
+        &lt;question&gt;
+          &lt;linkId value=&quot;AllergyIntolerance.meta.tag.value&quot;/&gt;
+          &lt;text value=&quot;Tags applied&quot;/&gt;
+          &lt;type value=&quot;open-choice&quot;/&gt;
+        &lt;/question&gt;
+      &lt;/group&gt;
+    &lt;/group&gt;
+    &lt;group&gt;
+      &lt;extension url=&quot;http://hl7.org/fhir/Profile/questionnaire-extensions#flyover&quot;&gt;
+        &lt;valueString value=&quot;A reference to a set of rules that were followed when the resource was constructed, and which must be understood when processing the content. Asserting this rule set restricts the content to be only understood by a limited set of trading partners. This inherently limits the usefulness of the data in the long term. However the existing health eco-system is highly fractured, and not yet ready to define, collect, and exchange data in a generally computable sense. Wherever possible, implementers and/or specification writers should avoid using this element as much as possible.&quot;/&gt;
+      &lt;/extension&gt;
+      &lt;extension url=&quot;http://www.healthintersections.com.au/fhir/Profile/metadata#type&quot;&gt;
+        &lt;valueString value=&quot;uri&quot;/&gt;
+      &lt;/extension&gt;
+      &lt;linkId value=&quot;AllergyIntolerance.implicitRules&quot;/&gt;
+      &lt;repeats value=&quot;true&quot;/&gt;
+      &lt;question&gt;
+        &lt;linkId value=&quot;AllergyIntolerance.implicitRules.value&quot;/&gt;
+        &lt;text value=&quot;A set of rules under which this content was created&quot;/&gt;
+        &lt;type value=&quot;string&quot;/&gt;
+      &lt;/question&gt;
+    &lt;/group&gt;
+    &lt;group&gt;
+      &lt;extension url=&quot;http://hl7.org/fhir/Profile/questionnaire-extensions#flyover&quot;&gt;
+        &lt;valueString value=&quot;The base language in which the resource is written. Language is provided to support indexing and accessibility (typically, services such as text to speech use the language tag). The html language tag in the narrative applies  to the narrative. The language tag on the resource may be used to specify the language of other presentations generated from the data in the resource
+
+Not all the content has to be in the base language. The Resource.language should not be assumed to apply to the narrative automatically. If a language is specified, it should it also be specified on the div element in the html (see rules in HTML5 for information about the relationship between xml:lang and the html lang attribute).&quot;/&gt;
+      &lt;/extension&gt;
+      &lt;extension url=&quot;http://www.healthintersections.com.au/fhir/Profile/metadata#type&quot;&gt;
+        &lt;valueString value=&quot;code&quot;/&gt;
+      &lt;/extension&gt;
+      &lt;linkId value=&quot;AllergyIntolerance.language&quot;/&gt;
+      &lt;repeats value=&quot;true&quot;/&gt;
+      &lt;question&gt;
+        &lt;linkId value=&quot;AllergyIntolerance.language.value&quot;/&gt;
+        &lt;text value=&quot;language&quot;/&gt;
+        &lt;type value=&quot;choice&quot;/&gt;
+      &lt;/question&gt;
+    &lt;/group&gt;
+    &lt;group&gt;
+      &lt;extension url=&quot;http://hl7.org/fhir/Profile/questionnaire-extensions#flyover&quot;&gt;
+        &lt;valueString value=&quot;A human-readable narrative that contains a summary of the resource, and may be used to represent the content of the resource to a human. The narrative need not encode all the structured data, but is required to contain sufficient detail to make it &amp;quot;clinically safe&amp;quot; for a human to just read the narrative. Resource definitions may define what content should be represented in the narrative to ensure clinical safety. Contained resources do not have narrative. Resources that are not contained SHOULD have a narrative.&quot;/&gt;
+      &lt;/extension&gt;
+      &lt;linkId value=&quot;AllergyIntolerance.text&quot;/&gt;
+      &lt;text value=&quot;Text summary of the resource, for human interpretation&quot;/&gt;
+      &lt;repeats value=&quot;true&quot;/&gt;
+    &lt;/group&gt;
+    &lt;group&gt;
+      &lt;extension url=&quot;http://hl7.org/fhir/Profile/questionnaire-extensions#flyover&quot;&gt;
+        &lt;valueString value=&quot;These resources do not have an independent existence apart from the resource that contains them - they cannot be identified independently, and nor can they have their own independent transaction scope. This should never be done when the content can be identified properly, as once identification is lost, it is extremely difficult (and context dependent) to restore it again.&quot;/&gt;
+      &lt;/extension&gt;
+      &lt;linkId value=&quot;AllergyIntolerance.contained&quot;/&gt;
+      &lt;text value=&quot;Contained, inline Resources&quot;/&gt;
+      &lt;repeats value=&quot;true&quot;/&gt;
+    &lt;/group&gt;
+    &lt;group&gt;
+      &lt;extension url=&quot;http://hl7.org/fhir/Profile/questionnaire-extensions#flyover&quot;&gt;
+        &lt;valueString value=&quot;This records identifiers associated with this allergy/intolerance concern that are defined by business processed and/ or used to refer to it when a direct URL reference to the resource itself is not appropriate (e.g. in CDA documents, or in written / printed documentation).&quot;/&gt;
+      &lt;/extension&gt;
+      &lt;extension url=&quot;http://www.healthintersections.com.au/fhir/Profile/metadata#type&quot;&gt;
+        &lt;valueString value=&quot;Identifier&quot;/&gt;
+      &lt;/extension&gt;
+      &lt;linkId value=&quot;AllergyIntolerance.identifier&quot;/&gt;
+      &lt;text value=&quot;External Ids for this item&quot;/&gt;
+      &lt;repeats value=&quot;true&quot;/&gt;
+      &lt;question&gt;
+        &lt;linkId value=&quot;AllergyIntolerance.identifier.label&quot;/&gt;
+        &lt;text value=&quot;label:&quot;/&gt;
+        &lt;type value=&quot;string&quot;/&gt;
+      &lt;/question&gt;
+      &lt;question&gt;
+        &lt;linkId value=&quot;AllergyIntolerance.identifier.system&quot;/&gt;
+        &lt;text value=&quot;system:&quot;/&gt;
+        &lt;type value=&quot;string&quot;/&gt;
+      &lt;/question&gt;
+      &lt;question&gt;
+        &lt;linkId value=&quot;AllergyIntolerance.identifier.value&quot;/&gt;
+        &lt;text value=&quot;value:&quot;/&gt;
+        &lt;type value=&quot;string&quot;/&gt;
+      &lt;/question&gt;
+    &lt;/group&gt;
+    &lt;group&gt;
+      &lt;extension url=&quot;http://hl7.org/fhir/Profile/questionnaire-extensions#flyover&quot;&gt;
+        &lt;valueString value=&quot;Date when the sensitivity was recorded.&quot;/&gt;
+      &lt;/extension&gt;
+      &lt;extension url=&quot;http://www.healthintersections.com.au/fhir/Profile/metadata#type&quot;&gt;
+        &lt;valueString value=&quot;datetime&quot;/&gt;
+      &lt;/extension&gt;
+      &lt;linkId value=&quot;AllergyIntolerance.recordedDate&quot;/&gt;
+      &lt;repeats value=&quot;true&quot;/&gt;
+      &lt;question&gt;
+        &lt;linkId value=&quot;AllergyIntolerance.recordedDate.value&quot;/&gt;
+        &lt;text value=&quot;When recorded&quot;/&gt;
+        &lt;type value=&quot;dateTime&quot;/&gt;
+      &lt;/question&gt;
+    &lt;/group&gt;
+    &lt;group&gt;
+      &lt;extension url=&quot;http://hl7.org/fhir/Profile/questionnaire-extensions#flyover&quot;&gt;
+        &lt;valueString value=&quot;Indicates who has responsibility for the record.&quot;/&gt;
+      &lt;/extension&gt;
+      &lt;linkId value=&quot;AllergyIntolerance.recorder&quot;/&gt;
+      &lt;text value=&quot;Who recorded the sensitivity&quot;/&gt;
+      &lt;repeats value=&quot;true&quot;/&gt;
+      &lt;question&gt;
+        &lt;linkId value=&quot;AllergyIntolerance.recorder._type&quot;/&gt;
+        &lt;text value=&quot;type&quot;/&gt;
+        &lt;type value=&quot;choice&quot;/&gt;
+        &lt;options&gt;
+          &lt;reference value=&quot;#vs2&quot;/&gt;
+        &lt;/options&gt;
+        &lt;group&gt;
+          &lt;extension url=&quot;http://www.healthintersections.com.au/fhir/Profile/metadata#type&quot;&gt;
+            &lt;valueString value=&quot;Reference&quot;/&gt;
+          &lt;/extension&gt;
+          &lt;linkId value=&quot;AllergyIntolerance.recorder._Practitioner&quot;/&gt;
+          &lt;question&gt;
+            &lt;extension url=&quot;http://www.healthintersections.com.au/fhir/Profile/metadata#reference&quot;&gt;
+              &lt;valueString value=&quot;/Practitioner?subject=$subj&amp;amp;patient=$subj&amp;amp;encounter=$encounter&quot;/&gt;
+            &lt;/extension&gt;
+            &lt;linkId value=&quot;AllergyIntolerance.recorder._Practitioner.value&quot;/&gt;
+            &lt;text value=&quot;Practitioner&quot;/&gt;
+            &lt;type value=&quot;reference&quot;/&gt;
+          &lt;/question&gt;
+        &lt;/group&gt;
+        &lt;group&gt;
+          &lt;extension url=&quot;http://www.healthintersections.com.au/fhir/Profile/metadata#type&quot;&gt;
+            &lt;valueString value=&quot;Reference&quot;/&gt;
+          &lt;/extension&gt;
+          &lt;linkId value=&quot;AllergyIntolerance.recorder._Patient&quot;/&gt;
+          &lt;question&gt;
+            &lt;extension url=&quot;http://www.healthintersections.com.au/fhir/Profile/metadata#reference&quot;&gt;
+              &lt;valueString value=&quot;/Patient?subject=$subj&amp;amp;patient=$subj&amp;amp;encounter=$encounter&quot;/&gt;
+            &lt;/extension&gt;
+            &lt;linkId value=&quot;AllergyIntolerance.recorder._Patient.value&quot;/&gt;
+            &lt;text value=&quot;Patient&quot;/&gt;
+            &lt;type value=&quot;reference&quot;/&gt;
+          &lt;/question&gt;
+        &lt;/group&gt;
+      &lt;/question&gt;
+    &lt;/group&gt;
+    &lt;group&gt;
+      &lt;extension url=&quot;http://hl7.org/fhir/Profile/questionnaire-extensions#flyover&quot;&gt;
+        &lt;valueString value=&quot;The patient who has the allergy or intolerance.&quot;/&gt;
+      &lt;/extension&gt;
+      &lt;extension url=&quot;http://www.healthintersections.com.au/fhir/Profile/metadata#type&quot;&gt;
+        &lt;valueString value=&quot;Reference&quot;/&gt;
+      &lt;/extension&gt;
+      &lt;linkId value=&quot;AllergyIntolerance.subject&quot;/&gt;
+      &lt;required value=&quot;true&quot;/&gt;
+      &lt;repeats value=&quot;true&quot;/&gt;
+      &lt;question&gt;
+        &lt;extension url=&quot;http://www.healthintersections.com.au/fhir/Profile/metadata#reference&quot;&gt;
+          &lt;valueString value=&quot;/Patient?subject=$subj&amp;amp;patient=$subj&amp;amp;encounter=$encounter&quot;/&gt;
+        &lt;/extension&gt;
+        &lt;linkId value=&quot;AllergyIntolerance.subject.value&quot;/&gt;
+        &lt;text value=&quot;Who the sensitivity is for&quot;/&gt;
+        &lt;type value=&quot;reference&quot;/&gt;
+      &lt;/question&gt;
+    &lt;/group&gt;
+    &lt;group&gt;
+      &lt;extension url=&quot;http://hl7.org/fhir/Profile/questionnaire-extensions#flyover&quot;&gt;
+        &lt;valueString value=&quot;Identification of a substance, or a class of substances, that is considered to be responsible for the Adverse reaction risk. It is strongly recommended that Substance be coded with a terminology, where possible. For example, some terminologies used include RxNorm, Snomed CT, DM+D, NDFRT, ICD-9, IDC-10, UNI, ATC and CPT. Plain text should only be used if there is no appropriate terminology available.&quot;/&gt;
+      &lt;/extension&gt;
+      &lt;extension url=&quot;http://www.healthintersections.com.au/fhir/Profile/metadata#type&quot;&gt;
+        &lt;valueString value=&quot;CodeableConcept&quot;/&gt;
+      &lt;/extension&gt;
+      &lt;linkId value=&quot;AllergyIntolerance.substance&quot;/&gt;
+      &lt;text value=&quot;Substance, (or class) considered to be responsible for risk&quot;/&gt;
+      &lt;required value=&quot;true&quot;/&gt;
+      &lt;repeats value=&quot;true&quot;/&gt;
+      &lt;question&gt;
+        &lt;linkId value=&quot;AllergyIntolerance.substance.coding&quot;/&gt;
+        &lt;text value=&quot;code:&quot;/&gt;
+        &lt;type value=&quot;open-choice&quot;/&gt;
+      &lt;/question&gt;
+      &lt;question&gt;
+        &lt;linkId value=&quot;AllergyIntolerance.substance.text&quot;/&gt;
+        &lt;text value=&quot;text:&quot;/&gt;
+        &lt;type value=&quot;string&quot;/&gt;
+      &lt;/question&gt;
+    &lt;/group&gt;
+    &lt;group&gt;
+      &lt;extension url=&quot;http://hl7.org/fhir/Profile/questionnaire-extensions#flyover&quot;&gt;
+        &lt;valueString value=&quot;Assertion about certainty associated with the propensity, or potential risk, of a reaction to the identified Substance. Decision support would typically raise alerts for &amp;#39;Unconfirmed&amp;#39;, &amp;#39;Confirmed&amp;#39;, and &amp;#39;Resolved&amp;#39; and ignore a &amp;#39;Refuted&amp;#39; reaction.
+In particular, &amp;#39;Refuted&amp;#39; may be useful for reconciliation of the Adverse Reaction List.
+Some implementations may choose to make this field mandatory.&quot;/&gt;
+      &lt;/extension&gt;
+      &lt;extension url=&quot;http://www.healthintersections.com.au/fhir/Profile/metadata#type&quot;&gt;
+        &lt;valueString value=&quot;code&quot;/&gt;
+      &lt;/extension&gt;
+      &lt;linkId value=&quot;AllergyIntolerance.status&quot;/&gt;
+      &lt;repeats value=&quot;true&quot;/&gt;
+      &lt;question&gt;
+        &lt;linkId value=&quot;AllergyIntolerance.status.value&quot;/&gt;
+        &lt;text value=&quot;status&quot;/&gt;
+        &lt;type value=&quot;choice&quot;/&gt;
+      &lt;/question&gt;
+    &lt;/group&gt;
+    &lt;group&gt;
+      &lt;extension url=&quot;http://hl7.org/fhir/Profile/questionnaire-extensions#flyover&quot;&gt;
+        &lt;valueString value=&quot;Estimate of the potential clinical harm, or seriousness, of the reaction to the identified Substance. The default criticality value for any propensity to an Adverse Reaction should be &amp;#39;Low Risk&amp;#39;, indicating at the very least a relative contraindication to deliberate or voluntary exposure to the Substance. &amp;#39;High Risk&amp;#39; is flagged if the clinician has identified a propensity for a more serious or potentially life-threatening reaction, such as anaphylaxis, and implies an absolute contraindication to deliberate or voluntary exposure to the substance. If this element is missing, the criticality is unknown (though it may be known elsewhere).&quot;/&gt;
+      &lt;/extension&gt;
+      &lt;extension url=&quot;http://www.healthintersections.com.au/fhir/Profile/metadata#type&quot;&gt;
+        &lt;valueString value=&quot;code&quot;/&gt;
+      &lt;/extension&gt;
+      &lt;linkId value=&quot;AllergyIntolerance.criticality&quot;/&gt;
+      &lt;repeats value=&quot;true&quot;/&gt;
+      &lt;question&gt;
+        &lt;linkId value=&quot;AllergyIntolerance.criticality.value&quot;/&gt;
+        &lt;text value=&quot;criticality&quot;/&gt;
+        &lt;type value=&quot;choice&quot;/&gt;
+      &lt;/question&gt;
+    &lt;/group&gt;
+    &lt;group&gt;
+      &lt;extension url=&quot;http://hl7.org/fhir/Profile/questionnaire-extensions#flyover&quot;&gt;
+        &lt;valueString value=&quot;Identification of the underlying physiological mechanism for the Reaction Risk. Immune-mediated responses have been traditionally regarded as an indicator for escalation of significant future risk. Contemporary knowledge suggests that some reactions previously thought to be immune and non-immune and still carry life threatening risk. 
+
+It is acknowledged that many clinicians may not be in a position to distinguish the mechanism of a particular reaction.  This data element is included nevertheless because many legacy systems have captured this attribute.
+
+Immunological testing may provide supporting evidence for the basis and causative substance , but no tests are 100% sensitive or specific for a sensitivity.&quot;/&gt;
+      &lt;/extension&gt;
+      &lt;extension url=&quot;http://www.healthintersections.com.au/fhir/Profile/metadata#type&quot;&gt;
+        &lt;valueString value=&quot;code&quot;/&gt;
+      &lt;/extension&gt;
+      &lt;linkId value=&quot;AllergyIntolerance.type&quot;/&gt;
+      &lt;repeats value=&quot;true&quot;/&gt;
+      &lt;question&gt;
+        &lt;linkId value=&quot;AllergyIntolerance.type.value&quot;/&gt;
+        &lt;text value=&quot;type&quot;/&gt;
+        &lt;type value=&quot;choice&quot;/&gt;
+      &lt;/question&gt;
+    &lt;/group&gt;
+    &lt;group&gt;
+      &lt;extension url=&quot;http://hl7.org/fhir/Profile/questionnaire-extensions#flyover&quot;&gt;
+        &lt;valueString value=&quot;Category of the identified Substance. This data element has been included because it is currently being captured in some clinical systems. This data can be derived from the Substance where coding systems are used, and is effectively redundant in that situation.&quot;/&gt;
+      &lt;/extension&gt;
+      &lt;extension url=&quot;http://www.healthintersections.com.au/fhir/Profile/metadata#type&quot;&gt;
+        &lt;valueString value=&quot;code&quot;/&gt;
+      &lt;/extension&gt;
+      &lt;linkId value=&quot;AllergyIntolerance.category&quot;/&gt;
+      &lt;repeats value=&quot;true&quot;/&gt;
+      &lt;question&gt;
+        &lt;linkId value=&quot;AllergyIntolerance.category.value&quot;/&gt;
+        &lt;text value=&quot;category&quot;/&gt;
+        &lt;type value=&quot;choice&quot;/&gt;
+      &lt;/question&gt;
+    &lt;/group&gt;
+    &lt;group&gt;
+      &lt;extension url=&quot;http://hl7.org/fhir/Profile/questionnaire-extensions#flyover&quot;&gt;
+        &lt;valueString value=&quot;Represents the date and/or time of the last known occurence of a reaction event. This date may be replicated by one of the Onset of Reaction dates.
+Where a textual representation of the date of last occurence is required e.g &amp;#39;In Childhood, &amp;#39;10 years ago&amp;#39; the Comment element should be used.&quot;/&gt;
+      &lt;/extension&gt;
+      &lt;extension url=&quot;http://www.healthintersections.com.au/fhir/Profile/metadata#type&quot;&gt;
+        &lt;valueString value=&quot;datetime&quot;/&gt;
+      &lt;/extension&gt;
+      &lt;linkId value=&quot;AllergyIntolerance.lastOccurence&quot;/&gt;
+      &lt;repeats value=&quot;true&quot;/&gt;
+      &lt;question&gt;
+        &lt;linkId value=&quot;AllergyIntolerance.lastOccurence.value&quot;/&gt;
+        &lt;text value=&quot;Date(/time) of last known occurence of a reaction&quot;/&gt;
+        &lt;type value=&quot;dateTime&quot;/&gt;
+      &lt;/question&gt;
+    &lt;/group&gt;
+    &lt;group&gt;
+      &lt;extension url=&quot;http://hl7.org/fhir/Profile/questionnaire-extensions#flyover&quot;&gt;
+        &lt;valueString value=&quot;Additional narrative about the propensity for the Adverse Reaction, not captured in other fields. For example: including reason for flagging a Seriousness of &amp;#39;High Risk&amp;#39;; and instructions related to future exposure or administration of the Substance, such as administration within an Intensive Care Unit or under corticosteroid cover.&quot;/&gt;
+      &lt;/extension&gt;
+      &lt;extension url=&quot;http://www.healthintersections.com.au/fhir/Profile/metadata#type&quot;&gt;
+        &lt;valueString value=&quot;string&quot;/&gt;
+      &lt;/extension&gt;
+      &lt;linkId value=&quot;AllergyIntolerance.comment&quot;/&gt;
+      &lt;repeats value=&quot;true&quot;/&gt;
+      &lt;question&gt;
+        &lt;linkId value=&quot;AllergyIntolerance.comment.value&quot;/&gt;
+        &lt;text value=&quot;Additional text not captured in other fields&quot;/&gt;
+        &lt;type value=&quot;string&quot;/&gt;
+      &lt;/question&gt;
+    &lt;/group&gt;
+    &lt;group&gt;
+      &lt;extension url=&quot;http://hl7.org/fhir/Profile/questionnaire-extensions#flyover&quot;&gt;
+        &lt;valueString value=&quot;Details about each Adverse Reaction Event linked to exposure to the identified Substance.&quot;/&gt;
+      &lt;/extension&gt;
+      &lt;linkId value=&quot;AllergyIntolerance.event&quot;/&gt;
+      &lt;title value=&quot;Adverse Reaction Events linked to exposure to substance&quot;/&gt;
+      &lt;repeats value=&quot;true&quot;/&gt;
+      &lt;group&gt;
+        &lt;extension url=&quot;http://hl7.org/fhir/Profile/questionnaire-extensions#flyover&quot;&gt;
+          &lt;valueString value=&quot;unique id for the element within a resource (for internal references).&quot;/&gt;
+        &lt;/extension&gt;
+        &lt;extension url=&quot;http://www.healthintersections.com.au/fhir/Profile/metadata#type&quot;&gt;
+          &lt;valueString value=&quot;string&quot;/&gt;
+        &lt;/extension&gt;
+        &lt;linkId value=&quot;AllergyIntolerance.event.id&quot;/&gt;
+        &lt;repeats value=&quot;true&quot;/&gt;
+        &lt;question&gt;
+          &lt;linkId value=&quot;AllergyIntolerance.event.id.value&quot;/&gt;
+          &lt;text value=&quot;xml:id (or equivalent in JSON)&quot;/&gt;
+          &lt;type value=&quot;string&quot;/&gt;
+        &lt;/question&gt;
+      &lt;/group&gt;
+      &lt;group&gt;
+        &lt;extension url=&quot;http://hl7.org/fhir/Profile/questionnaire-extensions#flyover&quot;&gt;
+          &lt;valueString value=&quot;Identification of the specific substance considered to be responsible for the Adverse Reaction event. Note: the substance for a specific reaction may be different to the substance identified as the cause of the risk, but must be consistent with it. For instance, it may be a more specific substance (e.g. a brand medication) or a composite substance that includes the identified substance. It must be clinically safe to only process the AllergyIntolerance.substance and ignore the AllergyIntolerance.event.substance. Coding of the Specific Substance with a terminology capable of triggering decision support should be used wherever possible. 
+The Substance field allows for the use of a specific substance or a group or class of substances, for example &amp;quot;Penicillins&amp;quot;. The specific Substance field could be used for Amoxycillin.
+Duplication is acceptable when a specific substance has been recorded in the &amp;#39;Substance&amp;#39; field.&quot;/&gt;
+        &lt;/extension&gt;
+        &lt;extension url=&quot;http://www.healthintersections.com.au/fhir/Profile/metadata#type&quot;&gt;
+          &lt;valueString value=&quot;CodeableConcept&quot;/&gt;
+        &lt;/extension&gt;
+        &lt;linkId value=&quot;AllergyIntolerance.event.substance&quot;/&gt;
+        &lt;text value=&quot;Specific substance considered to be responsible for event&quot;/&gt;
+        &lt;repeats value=&quot;true&quot;/&gt;
+        &lt;question&gt;
+          &lt;linkId value=&quot;AllergyIntolerance.event.substance.coding&quot;/&gt;
+          &lt;text value=&quot;code:&quot;/&gt;
+          &lt;type value=&quot;open-choice&quot;/&gt;
+        &lt;/question&gt;
+        &lt;question&gt;
+          &lt;linkId value=&quot;AllergyIntolerance.event.substance.text&quot;/&gt;
+          &lt;text value=&quot;text:&quot;/&gt;
+          &lt;type value=&quot;string&quot;/&gt;
+        &lt;/question&gt;
+      &lt;/group&gt;
+      &lt;group&gt;
+        &lt;extension url=&quot;http://hl7.org/fhir/Profile/questionnaire-extensions#flyover&quot;&gt;
+          &lt;valueString value=&quot;Statement about the degree of clinical certainty that the Specific Substance was the cause of the Manifestation in this reaction event.&quot;/&gt;
+        &lt;/extension&gt;
+        &lt;extension url=&quot;http://www.healthintersections.com.au/fhir/Profile/metadata#type&quot;&gt;
+          &lt;valueString value=&quot;code&quot;/&gt;
+        &lt;/extension&gt;
+        &lt;linkId value=&quot;AllergyIntolerance.event.certainty&quot;/&gt;
+        &lt;repeats value=&quot;true&quot;/&gt;
+        &lt;question&gt;
+          &lt;linkId value=&quot;AllergyIntolerance.event.certainty.value&quot;/&gt;
+          &lt;text value=&quot;certainty&quot;/&gt;
+          &lt;type value=&quot;choice&quot;/&gt;
+        &lt;/question&gt;
+      &lt;/group&gt;
+      &lt;group&gt;
+        &lt;extension url=&quot;http://hl7.org/fhir/Profile/questionnaire-extensions#flyover&quot;&gt;
+          &lt;valueString value=&quot;Clinical symptoms and/or signs that are observed or associated with the Adverse Reaction Event. Manifestation can be expressed as a single word, phrase or brief description. For example: nausea, rash or no reaction. It is preferable that Manifestation should be coded with a terminology, where possible. The values entered here may be used to display on an application screen as part of a list of adverse reactions, as recommended in the UK NHS CUI guidelines.
+
+Terminologies commonly used include, but are not limited to, SNOMED-CT or ICD10.&quot;/&gt;
+        &lt;/extension&gt;
+        &lt;extension url=&quot;http://www.healthintersections.com.au/fhir/Profile/metadata#type&quot;&gt;
+          &lt;valueString value=&quot;CodeableConcept&quot;/&gt;
+        &lt;/extension&gt;
+        &lt;linkId value=&quot;AllergyIntolerance.event.manifestation&quot;/&gt;
+        &lt;text value=&quot;Clinical symptoms/signs associated with the Event&quot;/&gt;
+        &lt;required value=&quot;true&quot;/&gt;
+        &lt;repeats value=&quot;true&quot;/&gt;
+        &lt;question&gt;
+          &lt;linkId value=&quot;AllergyIntolerance.event.manifestation.coding&quot;/&gt;
+          &lt;text value=&quot;code:&quot;/&gt;
+          &lt;type value=&quot;open-choice&quot;/&gt;
+        &lt;/question&gt;
+        &lt;question&gt;
+          &lt;linkId value=&quot;AllergyIntolerance.event.manifestation.text&quot;/&gt;
+          &lt;text value=&quot;text:&quot;/&gt;
+          &lt;type value=&quot;string&quot;/&gt;
+        &lt;/question&gt;
+      &lt;/group&gt;
+      &lt;group&gt;
+        &lt;extension url=&quot;http://hl7.org/fhir/Profile/questionnaire-extensions#flyover&quot;&gt;
+          &lt;valueString value=&quot;Text description about the Reaction as a whole, including details of the manifestation if required.&quot;/&gt;
+        &lt;/extension&gt;
+        &lt;extension url=&quot;http://www.healthintersections.com.au/fhir/Profile/metadata#type&quot;&gt;
+          &lt;valueString value=&quot;string&quot;/&gt;
+        &lt;/extension&gt;
+        &lt;linkId value=&quot;AllergyIntolerance.event.description&quot;/&gt;
+        &lt;repeats value=&quot;true&quot;/&gt;
+        &lt;question&gt;
+          &lt;linkId value=&quot;AllergyIntolerance.event.description.value&quot;/&gt;
+          &lt;text value=&quot;Description of the event as a whole&quot;/&gt;
+          &lt;type value=&quot;string&quot;/&gt;
+        &lt;/question&gt;
+      &lt;/group&gt;
+      &lt;group&gt;
+        &lt;extension url=&quot;http://hl7.org/fhir/Profile/questionnaire-extensions#flyover&quot;&gt;
+          &lt;valueString value=&quot;Record of the date and/or time of the onset of the Reaction.&quot;/&gt;
+        &lt;/extension&gt;
+        &lt;extension url=&quot;http://www.healthintersections.com.au/fhir/Profile/metadata#type&quot;&gt;
+          &lt;valueString value=&quot;datetime&quot;/&gt;
+        &lt;/extension&gt;
+        &lt;linkId value=&quot;AllergyIntolerance.event.onset&quot;/&gt;
+        &lt;repeats value=&quot;true&quot;/&gt;
+        &lt;question&gt;
+          &lt;linkId value=&quot;AllergyIntolerance.event.onset.value&quot;/&gt;
+          &lt;text value=&quot;Date(/time) when manifestations showed&quot;/&gt;
+          &lt;type value=&quot;dateTime&quot;/&gt;
+        &lt;/question&gt;
+      &lt;/group&gt;
+      &lt;group&gt;
+        &lt;extension url=&quot;http://hl7.org/fhir/Profile/questionnaire-extensions#flyover&quot;&gt;
+          &lt;valueString value=&quot;The amount of time that the Adverse Reaction persisted.&quot;/&gt;
+        &lt;/extension&gt;
+        &lt;extension url=&quot;http://www.healthintersections.com.au/fhir/Profile/metadata#type&quot;&gt;
+          &lt;valueString value=&quot;Duration&quot;/&gt;
+        &lt;/extension&gt;
+        &lt;linkId value=&quot;AllergyIntolerance.event.duration&quot;/&gt;
+        &lt;text value=&quot;How long Manifestations persisted&quot;/&gt;
+        &lt;repeats value=&quot;true&quot;/&gt;
+        &lt;question&gt;
+          &lt;linkId value=&quot;AllergyIntolerance.event.duration.value&quot;/&gt;
+          &lt;text value=&quot;value:&quot;/&gt;
+          &lt;type value=&quot;decimal&quot;/&gt;
+        &lt;/question&gt;
+        &lt;question&gt;
+          &lt;linkId value=&quot;AllergyIntolerance.event.duration.units&quot;/&gt;
+          &lt;text value=&quot;units:&quot;/&gt;
+          &lt;type value=&quot;string&quot;/&gt;
+        &lt;/question&gt;
+      &lt;/group&gt;
+      &lt;group&gt;
+        &lt;extension url=&quot;http://hl7.org/fhir/Profile/questionnaire-extensions#flyover&quot;&gt;
+          &lt;valueString value=&quot;Clinical assessment of the severity of the reaction event as a whole, potentially considering multiple different manifestations. It is acknowledged that this assessment is very subjective. There may be some some specific practice domains where objective scales have been applied.
+Objective scales can be included in this model as extensions.&quot;/&gt;
+        &lt;/extension&gt;
+        &lt;extension url=&quot;http://www.healthintersections.com.au/fhir/Profile/metadata#type&quot;&gt;
+          &lt;valueString value=&quot;code&quot;/&gt;
+        &lt;/extension&gt;
+        &lt;linkId value=&quot;AllergyIntolerance.event.severity&quot;/&gt;
+        &lt;repeats value=&quot;true&quot;/&gt;
+        &lt;question&gt;
+          &lt;linkId value=&quot;AllergyIntolerance.event.severity.value&quot;/&gt;
+          &lt;text value=&quot;severity&quot;/&gt;
+          &lt;type value=&quot;choice&quot;/&gt;
+        &lt;/question&gt;
+      &lt;/group&gt;
+      &lt;group&gt;
+        &lt;extension url=&quot;http://hl7.org/fhir/Profile/questionnaire-extensions#flyover&quot;&gt;
+          &lt;valueString value=&quot;Identification of the route by which the subject was exposed to the substance. Coding of the Route of Exposure with a terminology should be used wherever possible.&quot;/&gt;
+        &lt;/extension&gt;
+        &lt;extension url=&quot;http://www.healthintersections.com.au/fhir/Profile/metadata#type&quot;&gt;
+          &lt;valueString value=&quot;CodeableConcept&quot;/&gt;
+        &lt;/extension&gt;
+        &lt;linkId value=&quot;AllergyIntolerance.event.exposureRoute&quot;/&gt;
+        &lt;text value=&quot;How the subject was exposed to the substance&quot;/&gt;
+        &lt;repeats value=&quot;true&quot;/&gt;
+        &lt;question&gt;
+          &lt;linkId value=&quot;AllergyIntolerance.event.exposureRoute.coding&quot;/&gt;
+          &lt;text value=&quot;code:&quot;/&gt;
+          &lt;type value=&quot;open-choice&quot;/&gt;
+        &lt;/question&gt;
+        &lt;question&gt;
+          &lt;linkId value=&quot;AllergyIntolerance.event.exposureRoute.text&quot;/&gt;
+          &lt;text value=&quot;text:&quot;/&gt;
+          &lt;type value=&quot;string&quot;/&gt;
+        &lt;/question&gt;
+      &lt;/group&gt;
+      &lt;group&gt;
+        &lt;extension url=&quot;http://hl7.org/fhir/Profile/questionnaire-extensions#flyover&quot;&gt;
+          &lt;valueString value=&quot;Additional text about the Adverse Reaction event not captured in other fields.&quot;/&gt;
+        &lt;/extension&gt;
+        &lt;extension url=&quot;http://www.healthintersections.com.au/fhir/Profile/metadata#type&quot;&gt;
+          &lt;valueString value=&quot;string&quot;/&gt;
+        &lt;/extension&gt;
+        &lt;linkId value=&quot;AllergyIntolerance.event.comment&quot;/&gt;
+        &lt;repeats value=&quot;true&quot;/&gt;
+        &lt;question&gt;
+          &lt;linkId value=&quot;AllergyIntolerance.event.comment.value&quot;/&gt;
+          &lt;text value=&quot;Text about event not captured in other fields&quot;/&gt;
+          &lt;type value=&quot;string&quot;/&gt;
+        &lt;/question&gt;
+      &lt;/group&gt;
+    &lt;/group&gt;
+  &lt;/group&gt;
+&lt;/Questionnaire&gt;
+</pre>
+</div>
+
+
+<p>
+Usage note: every effort has been made to ensure that the 
+examples are correct and useful, but they are not a normative part 
+of the specification. 
+</p>
+
+</div>
+
+
+				</div><!-- /inner-wrapper -->
+            </div><!-- /row -->
+        </div><!-- /container -->
+        
+    </div><!-- /segment-content -->
+
+
+	<div id="segment-footer" class="segment"><!-- segment-footer -->
+		<div class="container"><!-- container -->
+			<div class="inner-wrapper">
+				<p>
+        © HL7.org 2011+. FHIR DSTU (v0.4.0-3920) generated on Tue, Dec 30, 2014 10:57+0000. <!-- <a href="qa.html">QA Report</a> --> <!-- achive note -->
+        <br/>
+        <span style="color: #FFFF77">
+        Links: <a style="color: #81BEF7" href="timelines.html">What's a DSTU?</a> | 
+               <a style="color: #81BEF7" href="history.html">Version History</a> | 
+               <a style="color: #81BEF7" href="http://services.w3.org/htmldiff?doc1=http%3A%2F%2Fhl7.org%2Fimplement%2Fstandards%2Ffhir%2Fallergyintolerance.questionnaire.xml.html&amp;doc2=http%3A%2F%2Fhl7-fhir.github.io%2F%2Fallergyintolerance.questionnaire.xml.html">Compare to DSTU</a> | 
+               <a style="color: #81BEF7" rel="license" href="license.html"><img src="cc0.png" style="border-style: none;" alt="CC0"/></a> | 
+               <a style="color: #81BEF7" target="_blank" href="http://gforge.hl7.org/gf/project/fhir/tracker/?action=TrackerItemAdd&amp;tracker_id=677">Propose a change</a>   
+        </span>
+        </p>
+			</div><!-- /inner-wrapper -->
+		</div><!-- /container -->
+	</div><!-- /segment-footer -->
+<!-- disqus thread -->
+<!--disqus-->
+<!-- end disqus -->        
+	
+	<div id="segment-post-footer" class="segment hidden"><!-- segment-post-footer -->
+		<div class="container"><!-- container -->
+		</div><!-- /container -->
+	</div><!-- /segment-post-footer -->
+    
+    <!-- JS and analytics only. -->
+    <!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="./assets/js/jquery.js"> </script>   <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+<script src="./dist/js/bootstrap.min.js"> </script>
+<script src="./assets/js/respond.min.js"> </script>
+
+<script src="./assets/js/fhir.js"> </script>
+
+<!-- Analytics Below
+================================================== -->
+
+    
+</body>
+</html>

@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="valueset-enteral-route"/>
+  <meta>
+    <lastUpdated value="2014-12-30T10:55:31"/>
+  </meta>
+  <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      <p>This value set contains 9 concepts</p>
+      <h2>enteral-route</h2>
+      <p>The value set to instantiate this attribute should be drawn from a terminologically robust code system that consists of or         contains concepts to support administration of formula feeding via oral or enteral feeding tubes. This value set is provided as a suggestive example</p>
+      <p>This value set includes codes defined in other code systems, using the following rules:</p>
+      <ul>
+        <li>Include these codes as defined in 
+          <a href="v3/RouteOfAdministration/index.html">http://hl7.org/fhir/v3/RouteOfAdministration</a>
+          <table>
+            <tr>
+              <td>
+                <b>Code</b>
+              </td>
+              <td>
+                <b>Display</b>
+              </td>
+            </tr>
+            <tr>
+              <td>PO</td>
+              <td>Swallow, oral</td>
+              <td>Swallow, oral</td>
+            </tr>
+            <tr>
+              <td>EFT</td>
+              <td>Instillation, enteral feeding tube</td>
+              <td>Instillation, enteral feeding tube</td>
+            </tr>
+            <tr>
+              <td>ENTINSTL</td>
+              <td>Instillation, enteral</td>
+              <td>Instillation, enteral</td>
+            </tr>
+            <tr>
+              <td>GT</td>
+              <td>Instillation, gastrostomy tube</td>
+              <td>Instillation, gastrostomy tube</td>
+            </tr>
+            <tr>
+              <td>NGT</td>
+              <td>Instillation, nasogastric tube</td>
+              <td>Instillation, nasogastric tube</td>
+            </tr>
+            <tr>
+              <td>OGT</td>
+              <td>Instillation, orogastric tube</td>
+              <td>Instillation, orogastric tube</td>
+            </tr>
+            <tr>
+              <td>GJT</td>
+              <td>Instillation, gastro-jejunostomy tube</td>
+              <td>Instillation, gastro-jejunostomy tube</td>
+            </tr>
+            <tr>
+              <td>JJTINSTL</td>
+              <td>Instillation, jejunostomy tube</td>
+              <td>Instillation, jejunostomy tube</td>
+            </tr>
+            <tr>
+              <td>OJJ</td>
+              <td>Instillation, orojejunum tube</td>
+              <td>Instillation, orojejunum tube</td>
+            </tr>
+          </table>
+        </li>
+      </ul>
+    </div>
+  </text>
+  <extension url="http://hl7.org/fhir/ExtensionDefinition/valueset-oid">
+    <valueUri value="urn:oid:2.16.840.1.113883.4.642.2.531"/>
+  </extension>
+  <identifier value="http://hl7.org/fhir/vs/enteral-route"/>
+  <name value="enteral-route"/>
+  <publisher value="HL7 Nutrition Workgroup"/>
+  <telecom>
+    <system value="url"/>
+    <value value="http://hl7.org/fhir"/>
+  </telecom>
+  <description value="The value set to instantiate this attribute should be drawn from a terminologically robust code system that consists of or         contains concepts to support administration of formula feeding via oral or enteral feeding tubes. This value set is provided as a suggestive example"/>
+  <status value="draft"/>
+  <compose>
+    <include>
+      <system value="http://hl7.org/fhir/v3/RouteOfAdministration"/>
+      <concept>
+        <code value="PO"/>
+      </concept>
+      <concept>
+        <code value="EFT"/>
+      </concept>
+      <concept>
+        <code value="ENTINSTL"/>
+      </concept>
+      <concept>
+        <code value="GT"/>
+      </concept>
+      <concept>
+        <code value="NGT"/>
+      </concept>
+      <concept>
+        <code value="OGT"/>
+      </concept>
+      <concept>
+        <code value="GJT"/>
+      </concept>
+      <concept>
+        <code value="JJTINSTL"/>
+      </concept>
+      <concept>
+        <code value="OJJ"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

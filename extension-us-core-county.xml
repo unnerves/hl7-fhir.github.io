@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ExtensionDefinition xmlns="http://hl7.org/fhir">
+  <id value="us-core-county"/>
+  <url value="http://hl7.org/fhir/ExtensionDefinition/us-core-county"/>
+  <name value="Name of county"/>
+  <publisher value="Fhir Core Team"/>
+  <description value="Name of county."/>
+  <status value="draft"/>
+  <date value="2013-12-03"/>
+  <contextType value="datatype"/>
+  <context value="Address"/>
+  <element>
+    <path value="Extension"/>
+    <short value="Name of county"/>
+    <formal value="Name of county."/>
+    <min value="0"/>
+    <max value="1"/>
+    <type>
+      <code value="string"/>
+    </type>
+    <isSummary value="false"/>
+  </element>
+</ExtensionDefinition>

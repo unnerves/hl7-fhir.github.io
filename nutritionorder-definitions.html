@@ -1,0 +1,394 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+  <title>NutritionOrder - FHIR v0.4.0</title>
+
+  
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <meta content="http://hl7.org/fhir" name="author"/>
+
+  <link rel="stylesheet" href="fhir.css"/>
+  <link rel="Prev" href="http://hl7.org/implement/standards/fhir/nutritionorder-definitions.html"/>
+
+    <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" href="./dist/css/bootstrap.css"/>
+  <link rel="stylesheet" href="./assets/css/bootstrap-fhir.css"/>
+
+    <!-- Project extras -->
+  <link rel="stylesheet" href="./assets/css/project.css"/>
+  <link rel="stylesheet" href="./assets/css/pygments-manni.css"/>
+	<link rel="stylesheet" href="jquery-ui.css"/>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- [if lt IE 9]>
+  <script src="./assets/js/html5shiv.js"></script>
+  <script src="./assets/js/respond.min.js"></script>
+  <![endif] -->
+
+    <!-- Favicons -->
+  <link sizes="144x144" rel="apple-touch-icon-precomposed" href="./assets/ico/apple-touch-icon-144-precomposed.png"/>
+  <link sizes="114x114" rel="apple-touch-icon-precomposed" href="./assets/ico/apple-touch-icon-114-precomposed.png"/>
+  <link sizes="72x72" rel="apple-touch-icon-precomposed" href="./assets/ico/apple-touch-icon-72-precomposed.png"/>
+  <link rel="apple-touch-icon-precomposed" href="./assets/ico/apple-touch-icon-57-precomposed.png"/>
+  <link rel="shortcut icon" href="./assets/ico/favicon.png"/>
+
+</head>
+<body>
+	<div id="segment-header" class="segment">  <!-- segment-header -->	
+		<div class="container">  <!-- container -->
+			<a id="logo" href="http://hl7.org/fhir"><img alt="logo fhir" src="./assets/images/fhir-logo-www.png"/> </a>
+			<div id="hl7-status">
+				<b>Continuous Integration Build</b>
+			</div>       	
+			
+			<div id="hl7-nav">
+				 <a id="hl7-logo" href="http://www.hl7.org">
+					<img height="50" alt="visit the hl7 website" width="42" src="./assets/images/hl7-logo.png"/>
+				</a> 
+			</div>       	
+			  <!-- hl7-search -->
+		</div>
+		<div class="container">  <!-- container -->
+	</div></div>  <!-- /segment-header -->	
+
+
+	<div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+		<div id="stripe"> </div>
+		<div class="container">  <!-- container -->
+   <!-- HEADER CONTENT -->
+ 	      		
+ 	      		      		
+			<nav class="navbar navbar-inverse">
+				<div class="container">
+					<button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+						<span class="icon-bar"> </span>
+						<span class="icon-bar"> </span>
+						<span class="icon-bar"> </span>
+					</button>
+					<a class="navbar-brand hidden" href="index.html">FHIR</a>
+					<div class="nav-collapse collapse navbar-inverse-collapse">
+						<ul class="nav navbar-nav">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="documentation.html">Documentation</a></li>
+              <li><a href="implementation.html">Implementation</a></li>
+              <li><a href="resourcelist.html">Resources</a></li>
+              <li><a href="clinical.html">Clinical</a></li>
+              <li><a href="administration.html">Administrative</a></li>
+              <li><a href="infrastructure.html">Infrastructure</a></li>
+              <li><a href="financial.html">Financial</a></li>
+
+						</ul>
+					</div>  <!-- /.nav-collapse -->
+				</div>  <!-- /.container -->
+			</nav>  <!-- /.navbar -->
+      		
+				
+  <!-- /HEADER CONTENT -->				
+		</div>  <!-- /container -->
+	</div>  <!-- /segment-navbar -->
+	
+
+	<div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+		<div class="container">  <!-- container -->	
+			<ul class="breadcrumb">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="clinical.html">Clinical</a></li>        <li><a href="nutritionorder.html">NutritionOrder</a></li>        <li><b>Detailed Descriptions</b></li>          <!-- nutritionorder.html / res-Detailed Descriptions -->
+
+			</ul>	
+		</div>  <!-- /container -->
+	</div>  <!-- /segment-breadcrumb -->
+	
+
+	<div id="segment-content" class="segment">  <!-- segment-content -->
+	<div class="container">  <!-- container -->
+            <div class="row">
+            	<div class="inner-wrapper">
+  <!-- CONTENT CONTENT -->
+
+
+<div class="col-9">
+
+<ul class="nav nav-tabs"><li><a href="nutritionorder.html">Content</a></li><li><a href="nutritionorder-examples.html">Examples</a></li><li class="active"><a href="#">Detailed Descriptions</a></li><li><a href="nutritionorder-mappings.html">Mappings</a></li><li><a href="nutritionorder-packages.html">Conformance Packages</a></li></ul>
+
+<h2><span class="sectioncount">4.17.6<a name="4.17.6"> </a></span> Resource NutritionOrder - Detailed Descriptions</h2>
+
+<p>Detailed Descriptions for the elements in the NutritionOrder resource.</p>
+
+<table class="dict">
+  <tr><td colspan="2" class="structure"><a name="NutritionOrder"> </a><b>NutritionOrder</b></td></tr>
+  <tr><td>Definition</td><td><p>A request to supply a diet, formula feeding (enteral) or oral nutritional supplement to a patient/resident.</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>1..1</td></tr>
+  <tr><td>Aliases</td><td>Diet Order; Diet; Nutritional Supplement; Enteral Nutrition</td></tr>
+  <tr><td>Comments</td><td><p>Referenced by an Order Request (workflow).</p>
+</td></tr>
+  <tr><td colspan="2" class="structure"><a name="NutritionOrder.subject"> </a><b>NutritionOrder.subject</b></td></tr>
+  <tr><td>Definition</td><td><p>The person (patient) who needs the nutrition order for an oral diet, nutritional supplement and/or enteral or formula feeding.</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>1..1</td></tr>
+  <tr><td><a href="datatypes.html">Type</a></td><td><a href="references.html#Reference">Reference</a>(<a href="patient.html">Patient</a>)</td></tr>
+  <tr><td colspan="2" class="structure"><a name="NutritionOrder.orderer"> </a><b>NutritionOrder.orderer</b></td></tr>
+  <tr><td>Definition</td><td><p>The practitioner that holds legal responsibility for ordering the diet, nutritional supplement, or formula feedings.</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
+  <tr><td><a href="datatypes.html">Type</a></td><td><a href="references.html#Reference">Reference</a>(<a href="practitioner.html">Practitioner</a>)</td></tr>
+  <tr><td colspan="2" class="structure"><a name="NutritionOrder.identifier"> </a><b>NutritionOrder.identifier</b></td></tr>
+  <tr><td>Definition</td><td><p>Identifiers assigned to this order by the order sender or by the order receiver.</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>0..*</td></tr>
+  <tr><td><a href="datatypes.html">Type</a></td><td><a href="datatypes.html#Identifier">Identifier</a></td></tr>
+  <tr><td colspan="2" class="structure"><a name="NutritionOrder.encounter"> </a><b>NutritionOrder.encounter</b></td></tr>
+  <tr><td>Definition</td><td><p>An encounter that provides additional information about the healthcare context in which this request is made.</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
+  <tr><td><a href="datatypes.html">Type</a></td><td><a href="references.html#Reference">Reference</a>(<a href="encounter.html">Encounter</a>)</td></tr>
+  <tr><td colspan="2" class="structure"><a name="NutritionOrder.dateTime"> </a><b>NutritionOrder.dateTime</b></td></tr>
+  <tr><td>Definition</td><td><p>The date and time that this nutrition order was requested.</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>1..1</td></tr>
+  <tr><td><a href="datatypes.html">Type</a></td><td><a href="datatypes.html#dateTime">dateTime</a></td></tr>
+  <tr><td colspan="2" class="structure"><a name="NutritionOrder.allergyIntolerance"> </a><b>NutritionOrder.allergyIntolerance</b></td></tr>
+  <tr><td>Definition</td><td><p>The ability to list substances that may cause allergies or intolerances which should be included in the nutrition order.</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>0..*</td></tr>
+  <tr><td><a href="datatypes.html">Type</a></td><td><a href="references.html#Reference">Reference</a>(<a href="allergyintolerance.html">AllergyIntolerance</a>)</td></tr>
+  <tr><td colspan="2" class="structure"><a name="NutritionOrder.foodPreferenceModifier"> </a><b>NutritionOrder.foodPreferenceModifier</b></td></tr>
+  <tr><td>Definition</td><td><p>This modifier is used to convey order-specific modifiers about the type of food that should be given. These can be derived from patient allergies, intolerances, or preferences such as Halal, Vegan or Kosher. This modifier applies to the entire nutrition order inclusive of the oral diet, nutritional supplements and enteral formula feedings.</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>0..*</td></tr>
+  <tr><td><a href="terminologies.html">Binding</a></td><td>PatientDiet: Preferred: <a href="valueset-encounter-diet.html">See http://hl7.org/fhir/vs/encounter-diet</a> (Medical, cultural or ethical food preferences to help with catering requirements)</td></tr>
+  <tr><td><a href="datatypes.html">Type</a></td><td><a href="datatypes.html#CodeableConcept">CodeableConcept</a></td></tr>
+  <tr><td colspan="2" class="structure"><a name="NutritionOrder.excludeFoodModifier"> </a><b>NutritionOrder.excludeFoodModifier</b></td></tr>
+  <tr><td>Definition</td><td><p>This modifier is used to convey order-specific modifiers about the type of food that should NOT be given. These can be derived from patient allergies, intolerances, or preferences such as No Red Meat, No Soy or No Wheat or  Gluten-Free. This modifier applies to the entire nutrition order inclusive of the oral diet, nutritional supplements and enteral formula feedings.</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>0..*</td></tr>
+  <tr><td><a href="terminologies.html">Binding</a></td><td>ExcludeFoodModifier: Example: <a href="valueset-exclude-food-type.html">See http://hl7.org/fhir/vs/exclude-food-type</a> (TODO)</td></tr>
+  <tr><td><a href="datatypes.html">Type</a></td><td><a href="datatypes.html#CodeableConcept">CodeableConcept</a></td></tr>
+  <tr><td colspan="2" class="structure"><a name="NutritionOrder.item"> </a><b>NutritionOrder.item</b></td></tr>
+  <tr><td>Definition</td><td><p>Different items that combine to make a complete description of the nutrition to be provided via oral diet, nutritional supplement and/or formula order.</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>0..*</td></tr>
+  <tr><td>Invariants</td><td><b>Defined on this element</b><br/>
+<b title="Formal Invariant Identifier">Inv-1</b>: Nutrition Order SHALL contain either Oral Diet , Supplement, or Enteral Formula class (xpath: exists(f:oralDiet) or exists(f:supplement) or exists(f:enteralFormula))</td></tr>
+  <tr><td colspan="2" class="structure"><a name="NutritionOrder.item.scheduled_x_"> </a><b>NutritionOrder.item.scheduled[x]</b></td></tr>
+  <tr><td>Definition</td><td><p>The frequency at which the diet, oral supplement or enteral formula should be given.</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
+  <tr><td><a href="datatypes.html">Type</a></td><td><a href="datatypes.html#Timing">Timing</a>|<a href="datatypes.html#Period">Period</a></td></tr>
+  <tr><td>Aliases</td><td>frequency</td></tr>
+  <tr><td colspan="2" class="structure"><a name="NutritionOrder.item.isInEffect"> </a><b>NutritionOrder.item.isInEffect</b></td></tr>
+  <tr><td>Definition</td><td><p>Indicates whether the nutrition item is  currently in effect for the patient.</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>1..1</td></tr>
+  <tr><td><a href="datatypes.html">Type</a></td><td><a href="datatypes.html#boolean">boolean</a></td></tr>
+  <tr><td colspan="2" class="structure"><a name="NutritionOrder.item.oralDiet"> </a><b>NutritionOrder.item.oralDiet</b></td></tr>
+  <tr><td>Definition</td><td><p>Class that defines the components of an oral diet order for the patient.</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
+  <tr><td>Invariants</td><td><b>Affect this element</b><br/>
+<b>Inv-1</b>: Nutrition Order SHALL contain either Oral Diet , Supplement, or Enteral Formula class (xpath: exists(f:oralDiet) or exists(f:supplement) or exists(f:enteralFormula))</td></tr>
+  <tr><td colspan="2" class="structure"><a name="NutritionOrder.item.oralDiet.type"> </a><b>NutritionOrder.item.oralDiet.type</b></td></tr>
+  <tr><td>Definition</td><td><p>Indicates the type of oral diet or diet restrictions that describe what can be consumed orally (i.e., take via the mouth).</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>0..*</td></tr>
+  <tr><td><a href="terminologies.html">Binding</a></td><td>OralDiet: Example: <a href="valueset-diet-type.html">See http://hl7.org/fhir/vs/diet-type</a> (TODO)</td></tr>
+  <tr><td><a href="datatypes.html">Type</a></td><td><a href="datatypes.html#CodeableConcept">CodeableConcept</a></td></tr>
+  <tr><td colspan="2" class="structure"><a name="NutritionOrder.item.oralDiet.nutrients"> </a><b>NutritionOrder.item.oralDiet.nutrients</b></td></tr>
+  <tr><td>Definition</td><td><p>Class that defines the details of any nutrient modifications required for the oral diet.</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>0..*</td></tr>
+  <tr><td colspan="2" class="structure"><a name="NutritionOrder.item.oralDiet.nutrients.modifier"> </a><b>NutritionOrder.item.oralDiet.nutrients.modifier</b></td></tr>
+  <tr><td>Definition</td><td><p>Identifies the type of nutrient that is being modified such as carbohydrate or sodium.</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
+  <tr><td><a href="terminologies.html">Binding</a></td><td>NutrientModifier: Example: <a href="valueset-nutrient-code.html">See http://hl7.org/fhir/vs/nutrient-code</a> (TODO)</td></tr>
+  <tr><td><a href="datatypes.html">Type</a></td><td><a href="datatypes.html#CodeableConcept">CodeableConcept</a></td></tr>
+  <tr><td colspan="2" class="structure"><a name="NutritionOrder.item.oralDiet.nutrients.amount_x_"> </a><b>NutritionOrder.item.oralDiet.nutrients.amount[x]</b></td></tr>
+  <tr><td>Definition</td><td><p>The quantity or range of the specified nutrient to supply.</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
+  <tr><td><a href="datatypes.html">Type</a></td><td><a href="datatypes.html#Quantity">Quantity</a>|<a href="datatypes.html#Range">Range</a></td></tr>
+  <tr><td colspan="2" class="structure"><a name="NutritionOrder.item.oralDiet.texture"> </a><b>NutritionOrder.item.oralDiet.texture</b></td></tr>
+  <tr><td>Definition</td><td><p>Class that describes any texture modifications required for the patient to safely consume various types of solid foods.</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>0..*</td></tr>
+  <tr><td colspan="2" class="structure"><a name="NutritionOrder.item.oralDiet.texture.modifier"> </a><b>NutritionOrder.item.oralDiet.texture.modifier</b></td></tr>
+  <tr><td>Definition</td><td><p>Identifies any texture modifications (for solid foods) that should be made, e.g. easy to chew, chopped, ground, and pureed.</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
+  <tr><td><a href="terminologies.html">Binding</a></td><td>TextureModifier: Example: <a href="valueset-texture-code.html">See http://hl7.org/fhir/vs/texture-code</a> (TODO)</td></tr>
+  <tr><td><a href="datatypes.html">Type</a></td><td><a href="datatypes.html#CodeableConcept">CodeableConcept</a></td></tr>
+  <tr><td>Comments</td><td><p>Coupled with the foodType (Meat).</p>
+</td></tr>
+  <tr><td colspan="2" class="structure"><a name="NutritionOrder.item.oralDiet.texture.foodType"> </a><b>NutritionOrder.item.oralDiet.texture.foodType</b></td></tr>
+  <tr><td>Definition</td><td><p>Indicates what specific type of food (e.g., meats) the texture modification applies to or may apply to all foods in the diet.</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
+  <tr><td><a href="terminologies.html">Binding</a></td><td>FoodType: Example: <a href="valueset-food-type.html">See http://hl7.org/fhir/vs/food-type</a> (TODO)</td></tr>
+  <tr><td><a href="datatypes.html">Type</a></td><td><a href="datatypes.html#CodeableConcept">CodeableConcept</a></td></tr>
+  <tr><td>Comments</td><td><p>Coupled with the textureModifier; could be (All Foods).</p>
+</td></tr>
+  <tr><td colspan="2" class="structure"><a name="NutritionOrder.item.oralDiet.fluidConsistencyType"> </a><b>NutritionOrder.item.oralDiet.fluidConsistencyType</b></td></tr>
+  <tr><td>Definition</td><td><p>Identifies the required consistency (e.g., honey-thick, nectar-thick, thin, thickened.) of liquids or fluids served to the patient.</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>0..*</td></tr>
+  <tr><td><a href="terminologies.html">Binding</a></td><td>FluidConsistencyType: Example: <a href="valueset-consistency-type.html">See http://hl7.org/fhir/vs/consistency-type</a> (TODO)</td></tr>
+  <tr><td><a href="datatypes.html">Type</a></td><td><a href="datatypes.html#CodeableConcept">CodeableConcept</a></td></tr>
+  <tr><td colspan="2" class="structure"><a name="NutritionOrder.item.oralDiet.instruction"> </a><b>NutritionOrder.item.oralDiet.instruction</b></td></tr>
+  <tr><td>Definition</td><td><p>Additional instructions or information pertaining to the oral diet.</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
+  <tr><td><a href="datatypes.html">Type</a></td><td><a href="datatypes.html#string">string</a></td></tr>
+  <tr><td colspan="2" class="structure"><a name="NutritionOrder.item.supplement"> </a><b>NutritionOrder.item.supplement</b></td></tr>
+  <tr><td>Definition</td><td><p>Class that defines the components of a supplement order for the patient.</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
+  <tr><td>Aliases</td><td>frequency</td></tr>
+  <tr><td>Invariants</td><td><b>Affect this element</b><br/>
+<b>Inv-1</b>: Nutrition Order SHALL contain either Oral Diet , Supplement, or Enteral Formula class (xpath: exists(f:oralDiet) or exists(f:supplement) or exists(f:enteralFormula))</td></tr>
+  <tr><td colspan="2" class="structure"><a name="NutritionOrder.item.supplement.type"> </a><b>NutritionOrder.item.supplement.type</b></td></tr>
+  <tr><td>Definition</td><td><p>Indicates the type of nutritional supplement product required such as high protein or pediatric clear liquid supplement.</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
+  <tr><td><a href="terminologies.html">Binding</a></td><td>SupplementType: Example: <a href="valueset-supplement-type.html">See http://hl7.org/fhir/vs/supplement-type</a> (TODO)</td></tr>
+  <tr><td><a href="datatypes.html">Type</a></td><td><a href="datatypes.html#CodeableConcept">CodeableConcept</a></td></tr>
+  <tr><td colspan="2" class="structure"><a name="NutritionOrder.item.supplement.quantity"> </a><b>NutritionOrder.item.supplement.quantity</b></td></tr>
+  <tr><td>Definition</td><td><p>The amount of the nutritional supplement product to provide to the patient.</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
+  <tr><td><a href="datatypes.html">Type</a></td><td><a href="datatypes.html#Quantity">Quantity</a></td></tr>
+  <tr><td colspan="2" class="structure"><a name="NutritionOrder.item.supplement.name"> </a><b>NutritionOrder.item.supplement.name</b></td></tr>
+  <tr><td>Definition</td><td><p>The product or brand name of the nutritional supplement product to be provided to the patient.</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
+  <tr><td><a href="datatypes.html">Type</a></td><td><a href="datatypes.html#string">string</a></td></tr>
+  <tr><td colspan="2" class="structure"><a name="NutritionOrder.item.enteralFormula"> </a><b>NutritionOrder.item.enteralFormula</b></td></tr>
+  <tr><td>Definition</td><td><p>Class that defines the components of an enteral formula order for the patient.</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
+  <tr><td>Aliases</td><td>frequency</td></tr>
+  <tr><td>Invariants</td><td><b>Affect this element</b><br/>
+<b>Inv-1</b>: Nutrition Order SHALL contain either Oral Diet , Supplement, or Enteral Formula class (xpath: exists(f:oralDiet) or exists(f:supplement) or exists(f:enteralFormula))</td></tr>
+  <tr><td colspan="2" class="structure"><a name="NutritionOrder.item.enteralFormula.administrationInstructions"> </a><b>NutritionOrder.item.enteralFormula.administrationInstructions</b></td></tr>
+  <tr><td>Definition</td><td><p>Free text formula administration or feeding instructions for cases where the instructions are too complex to code.</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
+  <tr><td><a href="datatypes.html">Type</a></td><td><a href="datatypes.html#string">string</a></td></tr>
+  <tr><td colspan="2" class="structure"><a name="NutritionOrder.item.enteralFormula.baseFormulaType"> </a><b>NutritionOrder.item.enteralFormula.baseFormulaType</b></td></tr>
+  <tr><td>Definition</td><td><p>Indicates the type of enteral or infant formula requested such as an adult standard formula with fiber or a soy-based infant formula.</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
+  <tr><td><a href="terminologies.html">Binding</a></td><td>EnteralFormulaType: Example: <a href="valueset-entformula-type.html">See http://hl7.org/fhir/vs/entformula-type</a> (TODO)</td></tr>
+  <tr><td><a href="datatypes.html">Type</a></td><td><a href="datatypes.html#CodeableConcept">CodeableConcept</a></td></tr>
+  <tr><td colspan="2" class="structure"><a name="NutritionOrder.item.enteralFormula.baseFormulaName"> </a><b>NutritionOrder.item.enteralFormula.baseFormulaName</b></td></tr>
+  <tr><td>Definition</td><td><p>The product or brand name of the enteral or infant formula product to be provided to the patient.</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
+  <tr><td><a href="datatypes.html">Type</a></td><td><a href="datatypes.html#string">string</a></td></tr>
+  <tr><td colspan="2" class="structure"><a name="NutritionOrder.item.enteralFormula.additiveType"> </a><b>NutritionOrder.item.enteralFormula.additiveType</b></td></tr>
+  <tr><td>Definition</td><td><p>Indicates the type of modular component such as protein, carbohydrate, fat or fiber to be provided in addition to or mixed with the base formula.</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
+  <tr><td><a href="terminologies.html">Binding</a></td><td>EnteralFormulaAdditiveType: Example: <a href="valueset-entformula-additive.html">See http://hl7.org/fhir/vs/entformula-additive</a> (TODO)</td></tr>
+  <tr><td><a href="datatypes.html">Type</a></td><td><a href="datatypes.html#CodeableConcept">CodeableConcept</a></td></tr>
+  <tr><td colspan="2" class="structure"><a name="NutritionOrder.item.enteralFormula.additiveName"> </a><b>NutritionOrder.item.enteralFormula.additiveName</b></td></tr>
+  <tr><td>Definition</td><td><p>The product or brand name of the type of modular component to be added to the formula.</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
+  <tr><td><a href="datatypes.html">Type</a></td><td><a href="datatypes.html#string">string</a></td></tr>
+  <tr><td colspan="2" class="structure"><a name="NutritionOrder.item.enteralFormula.caloricDensity"> </a><b>NutritionOrder.item.enteralFormula.caloricDensity</b></td></tr>
+  <tr><td>Definition</td><td><p>The amount of energy (Calories) that the formula should provide per specified volume, typically per mL or fluid oz.  For example, an infant may require a formula the provides 24 Calories per fluid ounce or an adult may require an enteral formula that provides 1.5 Calorie/mL.</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
+  <tr><td><a href="datatypes.html">Type</a></td><td><a href="datatypes.html#Quantity">Quantity</a></td></tr>
+  <tr><td colspan="2" class="structure"><a name="NutritionOrder.item.enteralFormula.routeofAdministration"> </a><b>NutritionOrder.item.enteralFormula.routeofAdministration</b></td></tr>
+  <tr><td>Definition</td><td><p>A coded concept specifying the route or physiological path of administration into the patient 's gastrointestinal  tract for purposes of providing the formula feeding, e.g., nasogastric tube.</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
+  <tr><td><a href="terminologies.html">Binding</a></td><td>EnteralRouteOfAdministration: Preferred: <a href="valueset-enteral-route.html">See http://hl7.org/fhir/vs/enteral-route</a> (This value set contains concepts to support administration of formula feeding via oral or enteral feeding tubes)</td></tr>
+  <tr><td><a href="datatypes.html">Type</a></td><td><a href="datatypes.html#CodeableConcept">CodeableConcept</a></td></tr>
+  <tr><td colspan="2" class="structure"><a name="NutritionOrder.item.enteralFormula.quantity"> </a><b>NutritionOrder.item.enteralFormula.quantity</b></td></tr>
+  <tr><td>Definition</td><td><p>The volume of formula to provide to the patient per the specified administration schedule.</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
+  <tr><td><a href="datatypes.html">Type</a></td><td><a href="datatypes.html#Quantity">Quantity</a></td></tr>
+  <tr><td colspan="2" class="structure"><a name="NutritionOrder.item.enteralFormula.rate"> </a><b>NutritionOrder.item.enteralFormula.rate</b></td></tr>
+  <tr><td>Definition</td><td><p>Identifies the speed with which the formula is introduced into the subject via a feeding pump, e.g., 60 mL per hour, according to the specified schedule.</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
+  <tr><td><a href="datatypes.html">Type</a></td><td><a href="datatypes.html#Ratio">Ratio</a></td></tr>
+  <tr><td colspan="2" class="structure"><a name="NutritionOrder.item.enteralFormula.rateAdjustment"> </a><b>NutritionOrder.item.enteralFormula.rateAdjustment</b></td></tr>
+  <tr><td>Definition</td><td><p>The change in the administration rate over a given time, e.g. increase by 10 mL/hour every 4 hours.</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
+  <tr><td><a href="datatypes.html">Type</a></td><td><a href="datatypes.html#Quantity">Quantity</a></td></tr>
+  <tr><td>To Do</td><td>TODO.</td></tr>
+  <tr><td colspan="2" class="structure"><a name="NutritionOrder.item.enteralFormula.maxVolumeToDeliver"> </a><b>NutritionOrder.item.enteralFormula.maxVolumeToDeliver</b></td></tr>
+  <tr><td>Definition</td><td><p>The maximum total quantity of formula that may be administered to a subject over the period of time, e.g., 1440 mL over 24 hours.</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
+  <tr><td><a href="datatypes.html">Type</a></td><td><a href="datatypes.html#Quantity">Quantity</a></td></tr>
+  <tr><td colspan="2" class="structure"><a name="NutritionOrder.status"> </a><b>NutritionOrder.status</b></td></tr>
+  <tr><td>Definition</td><td><p>The workflow status of the nutrition order request, e.g., Active, Inactive, Pending, Held, Canceled, Suspended.</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
+  <tr><td><a href="terminologies.html">Binding</a></td><td>NutritionOrderStatus: Required: <a href="nutrition-order-status.html">http://hl7.org/fhir/nutrition-order-status</a> (TODO)</td></tr>
+  <tr><td><a href="datatypes.html">Type</a></td><td><a href="datatypes.html#code">code</a></td></tr>
+  <tr><td>Comments</td><td><p>Typically the system placing the order sets the status to requested. There after, the order is maintained by the receiver that updates the status as the request is handled.</p>
+</td></tr>
+</table>
+
+
+
+</div>
+
+
+				</div>  <!-- /inner-wrapper -->
+            </div>  <!-- /row -->
+        </div>  <!-- /container -->
+        
+    </div>  <!-- /segment-content -->
+
+
+	<div id="segment-footer" class="segment">  <!-- segment-footer -->
+		<div class="container">  <!-- container -->
+			<div class="inner-wrapper">
+				<p>
+        © HL7.org 2011+. FHIR DSTU (v0.4.0-3920) generated on Tue, Dec 30, 2014 11:02+0000.   <!-- <a href="qa.html">QA Report</a> -->   <!-- achive note -->
+        <br/>
+        <span style="color: #FFFF77">
+        Links: <a style="color: #81BEF7" href="timelines.html">What's a DSTU?</a> | 
+               <a style="color: #81BEF7" href="history.html">Version History</a> | 
+               <a style="color: #81BEF7" href="http://services.w3.org/htmldiff?doc1=http%3A%2F%2Fhl7.org%2Fimplement%2Fstandards%2Ffhir%2Fnutritionorder-definitions.html&amp;doc2=http%3A%2F%2Fhl7-fhir.github.io%2F%2Fnutritionorder-definitions.html">Compare to DSTU</a> | 
+               <a style="color: #81BEF7" rel="license" href="license.html"><img style="border-style: none;" alt="CC0" src="cc0.png"/></a> | 
+               <a style="color: #81BEF7" target="_blank" href="http://gforge.hl7.org/gf/project/fhir/tracker/?action=TrackerItemAdd&amp;tracker_id=677">Propose a change</a>   
+        </span>
+        </p>
+			</div>  <!-- /inner-wrapper -->
+		</div>  <!-- /container -->
+	</div>  <!-- /segment-footer -->
+  <!-- disqus thread -->
+  <!-- disqus -->
+  <!-- end disqus -->        
+	
+	<div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+		<div class="container">  <!-- container -->
+		</div>  <!-- /container -->
+	</div>  <!-- /segment-post-footer -->
+    
+      <!-- JS and analytics only. -->
+      <!-- Bootstrap core JavaScript
+================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+<script src="./assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+<script src="./dist/js/bootstrap.min.js"> </script>
+<script src="./assets/js/respond.min.js"> </script>
+
+<script src="./assets/js/fhir.js"> </script>
+
+  <!-- Analytics Below
+================================================== -->
+
+    
+</body>
+</html>

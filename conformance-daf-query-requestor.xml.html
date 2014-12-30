@@ -1,0 +1,1418 @@
+﻿<!DOCTYPE HTML>
+
+
+
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <title>Conformance-daf-query-requestor.xml - FHIR v0.4.0</title>
+
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="author" content="http://hl7.org/fhir"/>
+
+  <link href="fhir.css" rel="stylesheet"/>
+  <link rel="Prev" href="http://hl7.org/implement/standards/fhir/conformance-daf-query-requestor.xml.html"/>
+
+  <!-- Bootstrap core CSS -->
+  <link href="./dist/css/bootstrap.css" rel="stylesheet"/>
+  <link href="./assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+  <!-- Project extras -->
+  <link href="./assets/css/project.css" rel="stylesheet"/>
+  <link href="./assets/css/pygments-manni.css" rel="stylesheet"/>
+	<link href="jquery-ui.css" rel="stylesheet"/>
+
+  <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!--[if lt IE 9]>
+  <script src="./assets/js/html5shiv.js"></script>
+  <script src="./assets/js/respond.min.js"></script>
+  <![endif]-->
+
+  <!-- Favicons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="./assets/ico/apple-touch-icon-144-precomposed.png"/>
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="./assets/ico/apple-touch-icon-114-precomposed.png"/>
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="./assets/ico/apple-touch-icon-72-precomposed.png"/>
+  <link rel="apple-touch-icon-precomposed" href="./assets/ico/apple-touch-icon-57-precomposed.png"/>
+  <link rel="shortcut icon" href="./assets/ico/favicon.png"/>
+
+</head>
+<body>
+	<div id="segment-header" class="segment"><!-- segment-header -->	
+		<div class="container"><!-- container -->
+			<a id="logo" href="http://hl7.org/fhir"><img src="./assets/images/fhir-logo-www.png" alt="logo fhir"/> </a>
+			<div id="hl7-status">
+				<b>Continuous Integration Build</b>
+			</div>       	
+			
+			<div id="hl7-nav">
+				 <a id="hl7-logo" href="http://www.hl7.org">
+					<img src="./assets/images/hl7-logo.png" width="42" height="50" alt="visit the hl7 website"/>
+				</a> 
+			</div>       	
+			<!--hl7-search-->
+		</div>
+		<div class="container"><!-- container -->
+	</div></div><!-- /segment-header -->	
+
+
+	<div id="segment-navbar" class="segment"><!-- segment-navbar -->
+		<div id="stripe"> </div>
+		<div class="container"><!-- container -->
+ <!-- HEADER CONTENT -->
+ 	      		
+ 	      		      		
+			<nav class="navbar navbar-inverse">
+				<div class="container">
+					<button data-target=".navbar-inverse-collapse" data-toggle="collapse" class="navbar-toggle" type="button">
+						<span class="icon-bar"> </span>
+						<span class="icon-bar"> </span>
+						<span class="icon-bar"> </span>
+					</button>
+					<a href="index.html" class="navbar-brand hidden">FHIR</a>
+					<div class="nav-collapse collapse navbar-inverse-collapse">
+						<ul class="nav navbar-nav">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="documentation.html">Documentation</a></li>
+              <li><a href="implementation.html">Implementation</a></li>
+              <li><a href="resourcelist.html">Resources</a></li>
+              <li><a href="clinical.html">Clinical</a></li>
+              <li><a href="administration.html">Administrative</a></li>
+              <li><a href="infrastructure.html">Infrastructure</a></li>
+              <li><a href="financial.html">Financial</a></li>
+
+						</ul>
+					</div><!-- /.nav-collapse -->
+				</div><!-- /.container -->
+			</nav><!-- /.navbar -->
+      		
+				
+<!-- /HEADER CONTENT -->				
+		</div><!-- /container -->
+	</div><!-- /segment-navbar -->
+	
+
+	<div id="segment-breadcrumb" class="segment"><!-- segment-breadcrumb -->
+		<div class="container"><!-- container -->	
+			<ul class="breadcrumb">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="infrastructure.html">Infrastructure</a></li>        <li><a href="conformance.html">Conformance</a></li>        <li><b>Example Instance</b></li>        <!-- conformance-daf-query-requestor.xml.html / resource-instance:Conformance -->
+
+			</ul>	
+		</div><!-- /container -->
+	</div><!-- /segment-breadcrumb -->
+	
+
+	<div id="segment-content" class="segment"><!-- segment-content -->
+	<div class="container"><!-- container -->
+            <div class="row">
+            	<div class="inner-wrapper">
+<!-- CONTENT CONTENT -->
+
+
+<div class="col-9">
+
+<h1>Conformance-daf-query-requestor.xml</h1>
+
+<p>
+<a href="conformance-daf-query-requestor.xml">Raw XML</a> (<a href="conformance-daf-query-requestor.canonical.xml">canonical form</a>)
+</p>
+
+
+<div class="example">
+<p>DAF Query Requestor (id = &quot;daf-queryrequestor&quot;)</p>
+<p><a href="conformance-daf-query-requestor.xml">Raw XML</a></p>
+<pre class="xml">
+<span class="xmltag">&lt;Conformance</span><span class="xmlattr"> xmlns="<span class="xmlattrvalue">http://hl7.org/fhir</span>"</span><span class="xmltag">&gt;</span><b>
+  </b><span class="xmltag">&lt;id</span><span class="xmlattr"> value="<span class="xmlattrvalue">daf-queryrequestor</span>"</span><span class="xmltag">/&gt;</span><b>
+  </b><span class="xmltag">&lt;text</span><span class="xmltag">&gt;</span><b>
+    </b><span class="xmltag">&lt;status</span><span class="xmlattr"> value="<span class="xmlattrvalue">generated</span>"</span><span class="xmltag">/&gt;</span><b>
+    </b><span class="xmltag">&lt;div</span><span class="xmlattr"> xmlns="<span class="xmlattrvalue">http://www.w3.org/1999/xhtml</span>"</span><span class="xmltag">&gt;</span><span class="xmlcomment">&lt;!-- Snipped for brevity --&gt;</span><span class="xmltag">&lt;/div&gt;</span><b>
+  </b><span class="xmltag">&lt;/text&gt;</span><b>
+  </b><span class="xmltag">&lt;name</span><span class="xmlattr"> value="<span class="xmlattrvalue">DAF Query Requestor</span>"</span><span class="xmltag">/&gt;</span><b>
+  </b><span class="xmltag">&lt;publisher</span><span class="xmlattr"> value="<span class="xmlattrvalue">U.S. Office of the National Coordinator (ONC)</span>"</span><span class="xmltag">/&gt;</span><b>
+  </b><span class="xmltag">&lt;telecom</span><span class="xmltag">&gt;</span><b>
+    </b><span class="xmltag">&lt;system</span><span class="xmlattr"> value="<span class="xmlattrvalue">url</span>"</span><span class="xmltag">/&gt;</span><b>
+    </b><span class="xmltag">&lt;value</span><span class="xmlattr"> value="<span class="xmlattrvalue">http://wiki.siframework.org/Data+Access+Framework+Homepage</span>"</span><span class="xmltag">/&gt;</span><b>
+  </b><span class="xmltag">&lt;/telecom&gt;</span><b>
+  </b><span class="xmltag">&lt;description</span><span class="xmlattr"> value="<span class="xmlattrvalue">This profile defines the expected capabilities of the &apos;&apos;DAF Query Requestor&apos;&apos; actor when
+   conforming to the ONC&apos;s [[daf|Data Access Framework FHIR implementation guide]].  This
+   actor initiates the queries to the &apos;&apos;DAF Query Responder&apos;&apos; actor. The DAF queries and
+   responses contains one or more FHIR resources conforming to profiles outlined in DAF implementation
+   guide.</span>"</span><span class="xmltag">/&gt;</span><b>
+  </b><span class="xmltag">&lt;status</span><span class="xmlattr"> value="<span class="xmlattrvalue">draft</span>"</span><span class="xmltag">/&gt;</span><b>
+  </b><span class="xmltag">&lt;date</span><span class="xmlattr"> value="<span class="xmlattrvalue">2014-11-19</span>"</span><span class="xmltag">/&gt;</span><b>
+  </b><span class="xmltag">&lt;fhirVersion</span><span class="xmlattr"> value="<span class="xmlattrvalue">0.8</span>"</span><span class="xmltag">/&gt;</span><b>
+  </b><span class="xmltag">&lt;acceptUnknown</span><span class="xmlattr"> value="<span class="xmlattrvalue">false</span>"</span><span class="xmltag">/&gt;</span><b>
+  </b><span class="xmltag">&lt;format</span><span class="xmlattr"> value="<span class="xmlattrvalue">xml</span>"</span><span class="xmltag">/&gt;</span><b>
+  </b><span class="xmltag">&lt;format</span><span class="xmlattr"> value="<span class="xmlattrvalue">json</span>"</span><span class="xmltag">/&gt;</span><b>
+  </b><span class="xmltag">&lt;rest</span><span class="xmltag">&gt;</span><b>
+    </b><span class="xmltag">&lt;mode</span><span class="xmlattr"> value="<span class="xmlattrvalue">client</span>"</span><span class="xmltag">/&gt;</span><b>
+    </b><span class="xmltag">&lt;documentation</span><span class="xmlattr"> value="<span class="xmlattrvalue">The DAF Query Requestor MUST support querying of one or more resources outlined by the
+     DAF implementation guide using the vocabularies and value set constraints defined by the
+     individual resource profiles.The DAF Query Requestor MUST implement REST behavior according
+     to the FHIR specification and MUST be able to handle errors gracefully from Query Responders
+     who may not support the submitted query.</span>"</span><span class="xmltag">/&gt;</span><b>
+    </b><span class="xmltag">&lt;security</span><span class="xmltag">&gt;</span><b>
+      </b><span class="xmltag">&lt;description</span><span class="xmlattr"> value="<span class="xmlattrvalue">Implementations must meet the security requirements documented in the [[daf-security|DAF
+       implementation guide]].</span>"</span><span class="xmltag">/&gt;</span><b>
+    </b><span class="xmltag">&lt;/security&gt;</span><b>
+    </b><span class="xmltag">&lt;resource</span><span class="xmltag">&gt;</span><b>
+      </b><span class="xmltag">&lt;type</span><span class="xmlattr"> value="<span class="xmlattrvalue">DAFPatient</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;profile</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;reference</span><span class="xmlattr"> value="<span class="xmlattrvalue">patient-daf.html</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/profile&gt;</span><b>
+      </b><span class="xmltag">&lt;interaction</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;extension</span><span class="xmlattr"> url="<span class="xmlattrvalue">http://hl7.org/fhir/ExtensionDefinition/conformance-common-expectation</span>"</span><span class="xmltag">&gt;</span><b>
+          </b><span class="xmltag">&lt;valueCode</span><span class="xmlattr"> value="<span class="xmlattrvalue">SHALL</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;/extension&gt;</span><b>
+        </b><span class="xmltag">&lt;code</span><span class="xmlattr"> value="<span class="xmlattrvalue">search-type</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;documentation</span><span class="xmlattr"> value="<span class="xmlattrvalue">Allows discovery of existing DAFPatient resources using different search criteria</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/interaction&gt;</span><b>
+      </b><span class="xmltag">&lt;interaction</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;extension</span><span class="xmlattr"> url="<span class="xmlattrvalue">http://hl7.org/fhir/ExtensionDefinition/conformance-common-expectation</span>"</span><span class="xmltag">&gt;</span><b>
+          </b><span class="xmltag">&lt;valueCode</span><span class="xmlattr"> value="<span class="xmlattrvalue">SHALL</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;/extension&gt;</span><b>
+        </b><span class="xmltag">&lt;code</span><span class="xmlattr"> value="<span class="xmlattrvalue">read</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;documentation</span><span class="xmlattr"> value="<span class="xmlattrvalue">Allows retrieval of a specific DAFPatients by id</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/interaction&gt;</span><b>
+      </b><span class="xmltag">&lt;interaction</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;extension</span><span class="xmlattr"> url="<span class="xmlattrvalue">http://hl7.org/fhir/ExtensionDefinition/conformance-common-expectation</span>"</span><span class="xmltag">&gt;</span><b>
+          </b><span class="xmltag">&lt;valueCode</span><span class="xmlattr"> value="<span class="xmlattrvalue">SHOULD</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;/extension&gt;</span><b>
+        </b><span class="xmltag">&lt;code</span><span class="xmlattr"> value="<span class="xmlattrvalue">history-instance</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;documentation</span><span class="xmlattr"> value="<span class="xmlattrvalue">Allows review of changes to DAFPatient instance over time</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/interaction&gt;</span><b>
+      </b><span class="xmltag">&lt;interaction</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;extension</span><span class="xmlattr"> url="<span class="xmlattrvalue">http://hl7.org/fhir/ExtensionDefinition/conformance-common-expectation</span>"</span><span class="xmltag">&gt;</span><b>
+          </b><span class="xmltag">&lt;valueCode</span><span class="xmlattr"> value="<span class="xmlattrvalue">SHOULD</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;/extension&gt;</span><b>
+        </b><span class="xmltag">&lt;code</span><span class="xmlattr"> value="<span class="xmlattrvalue">vread</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;documentation</span><span class="xmlattr"> value="<span class="xmlattrvalue">Allows retrieval of a historical version of a DAFPatient instance</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/interaction&gt;</span><b>
+      </b><span class="xmltag">&lt;searchParam</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;extension</span><span class="xmlattr"> url="<span class="xmlattrvalue">http://hl7.org/fhir/ExtensionDefinition/conformance-common-expectation</span>"</span><span class="xmltag">&gt;</span><b>
+          </b><span class="xmltag">&lt;valueCode</span><span class="xmlattr"> value="<span class="xmlattrvalue">SHALL</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;/extension&gt;</span><b>
+        </b><span class="xmltag">&lt;name</span><span class="xmlattr"> value="<span class="xmlattrvalue">name</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;type</span><span class="xmlattr"> value="<span class="xmlattrvalue">string</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/searchParam&gt;</span><b>
+      </b><span class="xmltag">&lt;searchParam</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;extension</span><span class="xmlattr"> url="<span class="xmlattrvalue">http://hl7.org/fhir/ExtensionDefinition/conformance-common-expectation</span>"</span><span class="xmltag">&gt;</span><b>
+          </b><span class="xmltag">&lt;valueCode</span><span class="xmlattr"> value="<span class="xmlattrvalue">SHALL</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;/extension&gt;</span><b>
+        </b><span class="xmltag">&lt;name</span><span class="xmlattr"> value="<span class="xmlattrvalue">family</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;type</span><span class="xmlattr"> value="<span class="xmlattrvalue">string</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/searchParam&gt;</span><b>
+      </b><span class="xmltag">&lt;searchParam</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;extension</span><span class="xmlattr"> url="<span class="xmlattrvalue">http://hl7.org/fhir/ExtensionDefinition/conformance-common-expectation</span>"</span><span class="xmltag">&gt;</span><b>
+          </b><span class="xmltag">&lt;valueCode</span><span class="xmlattr"> value="<span class="xmlattrvalue">SHALL</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;/extension&gt;</span><b>
+        </b><span class="xmltag">&lt;name</span><span class="xmlattr"> value="<span class="xmlattrvalue">given</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;type</span><span class="xmlattr"> value="<span class="xmlattrvalue">string</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/searchParam&gt;</span><b>
+      </b><span class="xmltag">&lt;searchParam</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;extension</span><span class="xmlattr"> url="<span class="xmlattrvalue">http://hl7.org/fhir/ExtensionDefinition/conformance-common-expectation</span>"</span><span class="xmltag">&gt;</span><b>
+          </b><span class="xmltag">&lt;valueCode</span><span class="xmlattr"> value="<span class="xmlattrvalue">SHALL</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;/extension&gt;</span><b>
+        </b><span class="xmltag">&lt;name</span><span class="xmlattr"> value="<span class="xmlattrvalue">identifier</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;type</span><span class="xmlattr"> value="<span class="xmlattrvalue">token</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/searchParam&gt;</span><b>
+      </b><span class="xmltag">&lt;searchParam</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;extension</span><span class="xmlattr"> url="<span class="xmlattrvalue">http://hl7.org/fhir/ExtensionDefinition/conformance-common-expectation</span>"</span><span class="xmltag">&gt;</span><b>
+          </b><span class="xmltag">&lt;valueCode</span><span class="xmlattr"> value="<span class="xmlattrvalue">SHALL</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;/extension&gt;</span><b>
+        </b><span class="xmltag">&lt;name</span><span class="xmlattr"> value="<span class="xmlattrvalue">race</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;type</span><span class="xmlattr"> value="<span class="xmlattrvalue">token</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/searchParam&gt;</span><b>
+      </b><span class="xmltag">&lt;searchParam</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;extension</span><span class="xmlattr"> url="<span class="xmlattrvalue">http://hl7.org/fhir/ExtensionDefinition/conformance-common-expectation</span>"</span><span class="xmltag">&gt;</span><b>
+          </b><span class="xmltag">&lt;valueCode</span><span class="xmlattr"> value="<span class="xmlattrvalue">SHALL</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;/extension&gt;</span><b>
+        </b><span class="xmltag">&lt;name</span><span class="xmlattr"> value="<span class="xmlattrvalue">ethnicity</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;type</span><span class="xmlattr"> value="<span class="xmlattrvalue">token</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/searchParam&gt;</span><b>
+      </b><span class="xmltag">&lt;searchParam</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;extension</span><span class="xmlattr"> url="<span class="xmlattrvalue">http://hl7.org/fhir/ExtensionDefinition/conformance-common-expectation</span>"</span><span class="xmltag">&gt;</span><b>
+          </b><span class="xmltag">&lt;valueCode</span><span class="xmlattr"> value="<span class="xmlattrvalue">SHALL</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;/extension&gt;</span><b>
+        </b><span class="xmltag">&lt;name</span><span class="xmlattr"> value="<span class="xmlattrvalue">language</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;type</span><span class="xmlattr"> value="<span class="xmlattrvalue">token</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/searchParam&gt;</span><b>
+      </b><span class="xmltag">&lt;searchParam</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;extension</span><span class="xmlattr"> url="<span class="xmlattrvalue">http://hl7.org/fhir/ExtensionDefinition/conformance-common-expectation</span>"</span><span class="xmltag">&gt;</span><b>
+          </b><span class="xmltag">&lt;valueCode</span><span class="xmlattr"> value="<span class="xmlattrvalue">SHALL</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;/extension&gt;</span><b>
+        </b><span class="xmltag">&lt;name</span><span class="xmlattr"> value="<span class="xmlattrvalue">mothersMaidenName</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;type</span><span class="xmlattr"> value="<span class="xmlattrvalue">string</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/searchParam&gt;</span><b>
+      </b><span class="xmltag">&lt;searchParam</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;extension</span><span class="xmlattr"> url="<span class="xmlattrvalue">http://hl7.org/fhir/ExtensionDefinition/conformance-common-expectation</span>"</span><span class="xmltag">&gt;</span><b>
+          </b><span class="xmltag">&lt;valueCode</span><span class="xmlattr"> value="<span class="xmlattrvalue">SHALL</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;/extension&gt;</span><b>
+        </b><span class="xmltag">&lt;name</span><span class="xmlattr"> value="<span class="xmlattrvalue">birthOrderInteger</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;type</span><span class="xmlattr"> value="<span class="xmlattrvalue">number</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/searchParam&gt;</span><b>
+      </b><span class="xmltag">&lt;searchParam</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;extension</span><span class="xmlattr"> url="<span class="xmlattrvalue">http://hl7.org/fhir/ExtensionDefinition/conformance-common-expectation</span>"</span><span class="xmltag">&gt;</span><b>
+          </b><span class="xmltag">&lt;valueCode</span><span class="xmlattr"> value="<span class="xmlattrvalue">SHALL</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;/extension&gt;</span><b>
+        </b><span class="xmltag">&lt;name</span><span class="xmlattr"> value="<span class="xmlattrvalue">age</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;type</span><span class="xmlattr"> value="<span class="xmlattrvalue">number</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/searchParam&gt;</span><b>
+      </b><span class="xmltag">&lt;searchParam</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;extension</span><span class="xmlattr"> url="<span class="xmlattrvalue">http://hl7.org/fhir/ExtensionDefinition/conformance-common-expectation</span>"</span><span class="xmltag">&gt;</span><b>
+          </b><span class="xmltag">&lt;valueCode</span><span class="xmlattr"> value="<span class="xmlattrvalue">SHALL</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;/extension&gt;</span><b>
+        </b><span class="xmltag">&lt;name</span><span class="xmlattr"> value="<span class="xmlattrvalue">streetAddress</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;type</span><span class="xmlattr"> value="<span class="xmlattrvalue">string</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/searchParam&gt;</span><b>
+      </b><span class="xmltag">&lt;searchParam</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;extension</span><span class="xmlattr"> url="<span class="xmlattrvalue">http://hl7.org/fhir/ExtensionDefinition/conformance-common-expectation</span>"</span><span class="xmltag">&gt;</span><b>
+          </b><span class="xmltag">&lt;valueCode</span><span class="xmlattr"> value="<span class="xmlattrvalue">SHALL</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;/extension&gt;</span><b>
+        </b><span class="xmltag">&lt;name</span><span class="xmlattr"> value="<span class="xmlattrvalue">city</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;type</span><span class="xmlattr"> value="<span class="xmlattrvalue">string</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/searchParam&gt;</span><b>
+      </b><span class="xmltag">&lt;searchParam</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;extension</span><span class="xmlattr"> url="<span class="xmlattrvalue">http://hl7.org/fhir/ExtensionDefinition/conformance-common-expectation</span>"</span><span class="xmltag">&gt;</span><b>
+          </b><span class="xmltag">&lt;valueCode</span><span class="xmlattr"> value="<span class="xmlattrvalue">SHALL</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;/extension&gt;</span><b>
+        </b><span class="xmltag">&lt;name</span><span class="xmlattr"> value="<span class="xmlattrvalue">zipcode</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;type</span><span class="xmlattr"> value="<span class="xmlattrvalue">string</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/searchParam&gt;</span><b>
+      </b><span class="xmltag">&lt;searchParam</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;extension</span><span class="xmlattr"> url="<span class="xmlattrvalue">http://hl7.org/fhir/ExtensionDefinition/conformance-common-expectation</span>"</span><span class="xmltag">&gt;</span><b>
+          </b><span class="xmltag">&lt;valueCode</span><span class="xmlattr"> value="<span class="xmlattrvalue">SHALL</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;/extension&gt;</span><b>
+        </b><span class="xmltag">&lt;name</span><span class="xmlattr"> value="<span class="xmlattrvalue">telecom</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;type</span><span class="xmlattr"> value="<span class="xmlattrvalue">string</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/searchParam&gt;</span><b>
+      </b><span class="xmltag">&lt;searchParam</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;extension</span><span class="xmlattr"> url="<span class="xmlattrvalue">http://hl7.org/fhir/ExtensionDefinition/conformance-common-expectation</span>"</span><span class="xmltag">&gt;</span><b>
+          </b><span class="xmltag">&lt;valueCode</span><span class="xmlattr"> value="<span class="xmlattrvalue">SHALL</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;/extension&gt;</span><b>
+        </b><span class="xmltag">&lt;name</span><span class="xmlattr"> value="<span class="xmlattrvalue">gender</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;type</span><span class="xmlattr"> value="<span class="xmlattrvalue">token</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/searchParam&gt;</span><b>
+      </b><span class="xmltag">&lt;searchParam</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;extension</span><span class="xmlattr"> url="<span class="xmlattrvalue">http://hl7.org/fhir/ExtensionDefinition/conformance-common-expectation</span>"</span><span class="xmltag">&gt;</span><b>
+          </b><span class="xmltag">&lt;valueCode</span><span class="xmlattr"> value="<span class="xmlattrvalue">SHALL</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;/extension&gt;</span><b>
+        </b><span class="xmltag">&lt;name</span><span class="xmlattr"> value="<span class="xmlattrvalue">birthDate</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;type</span><span class="xmlattr"> value="<span class="xmlattrvalue">date</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/searchParam&gt;</span><b>
+    </b><span class="xmltag">&lt;/resource&gt;</span><b>
+    </b><span class="xmltag">&lt;resource</span><span class="xmltag">&gt;</span><b>
+      </b><span class="xmltag">&lt;type</span><span class="xmlattr"> value="<span class="xmlattrvalue">DAFAllergyIntolerance</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;profile</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;reference</span><span class="xmlattr"> value="<span class="xmlattrvalue">allergyintolerance-daf.html</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/profile&gt;</span><b>
+      </b><span class="xmltag">&lt;interaction</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;extension</span><span class="xmlattr"> url="<span class="xmlattrvalue">http://hl7.org/fhir/ExtensionDefinition/conformance-common-expectation</span>"</span><span class="xmltag">&gt;</span><b>
+          </b><span class="xmltag">&lt;valueCode</span><span class="xmlattr"> value="<span class="xmlattrvalue">SHALL</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;/extension&gt;</span><b>
+        </b><span class="xmltag">&lt;code</span><span class="xmlattr"> value="<span class="xmlattrvalue">search-type</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;documentation</span><span class="xmlattr"> value="<span class="xmlattrvalue">Allows discovery of existing DAFAllergyIntolerance resources using different search criteria</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/interaction&gt;</span><b>
+      </b><span class="xmltag">&lt;interaction</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;extension</span><span class="xmlattr"> url="<span class="xmlattrvalue">http://hl7.org/fhir/ExtensionDefinition/conformance-common-expectation</span>"</span><span class="xmltag">&gt;</span><b>
+          </b><span class="xmltag">&lt;valueCode</span><span class="xmlattr"> value="<span class="xmlattrvalue">SHALL</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;/extension&gt;</span><b>
+        </b><span class="xmltag">&lt;code</span><span class="xmlattr"> value="<span class="xmlattrvalue">read</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;documentation</span><span class="xmlattr"> value="<span class="xmlattrvalue">Allows retrieval of a specific DAFAllergyIntolerance by id</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/interaction&gt;</span><b>
+      </b><span class="xmltag">&lt;interaction</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;extension</span><span class="xmlattr"> url="<span class="xmlattrvalue">http://hl7.org/fhir/ExtensionDefinition/conformance-common-expectation</span>"</span><span class="xmltag">&gt;</span><b>
+          </b><span class="xmltag">&lt;valueCode</span><span class="xmlattr"> value="<span class="xmlattrvalue">SHOULD</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;/extension&gt;</span><b>
+        </b><span class="xmltag">&lt;code</span><span class="xmlattr"> value="<span class="xmlattrvalue">history-instance</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;documentation</span><span class="xmlattr"> value="<span class="xmlattrvalue">Allows review of changes to DAFAllergyIntolerance instance over time</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/interaction&gt;</span><b>
+      </b><span class="xmltag">&lt;interaction</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;extension</span><span class="xmlattr"> url="<span class="xmlattrvalue">http://hl7.org/fhir/ExtensionDefinition/conformance-common-expectation</span>"</span><span class="xmltag">&gt;</span><b>
+          </b><span class="xmltag">&lt;valueCode</span><span class="xmlattr"> value="<span class="xmlattrvalue">SHOULD</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;/extension&gt;</span><b>
+        </b><span class="xmltag">&lt;code</span><span class="xmlattr"> value="<span class="xmlattrvalue">vread</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;documentation</span><span class="xmlattr"> value="<span class="xmlattrvalue">Allows retrieval of a historical version of a DAFAllergyIntolerance instance</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/interaction&gt;</span><b>
+      </b><span class="xmltag">&lt;searchParam</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;extension</span><span class="xmlattr"> url="<span class="xmlattrvalue">http://hl7.org/fhir/ExtensionDefinition/conformance-common-expectation</span>"</span><span class="xmltag">&gt;</span><b>
+          </b><span class="xmltag">&lt;valueCode</span><span class="xmlattr"> value="<span class="xmlattrvalue">SHALL</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;/extension&gt;</span><b>
+        </b><span class="xmltag">&lt;name</span><span class="xmlattr"> value="<span class="xmlattrvalue">identifier</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;type</span><span class="xmlattr"> value="<span class="xmlattrvalue">token</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/searchParam&gt;</span><b>
+      </b><span class="xmltag">&lt;searchParam</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;extension</span><span class="xmlattr"> url="<span class="xmlattrvalue">http://hl7.org/fhir/ExtensionDefinition/conformance-common-expectation</span>"</span><span class="xmltag">&gt;</span><b>
+          </b><span class="xmltag">&lt;valueCode</span><span class="xmlattr"> value="<span class="xmlattrvalue">SHALL</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;/extension&gt;</span><b>
+        </b><span class="xmltag">&lt;name</span><span class="xmlattr"> value="<span class="xmlattrvalue">subject</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;type</span><span class="xmlattr"> value="<span class="xmlattrvalue">reference</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/searchParam&gt;</span><b>
+      </b><span class="xmltag">&lt;searchParam</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;extension</span><span class="xmlattr"> url="<span class="xmlattrvalue">http://hl7.org/fhir/ExtensionDefinition/conformance-common-expectation</span>"</span><span class="xmltag">&gt;</span><b>
+          </b><span class="xmltag">&lt;valueCode</span><span class="xmlattr"> value="<span class="xmlattrvalue">SHALL</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;/extension&gt;</span><b>
+        </b><span class="xmltag">&lt;name</span><span class="xmlattr"> value="<span class="xmlattrvalue">category</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;type</span><span class="xmlattr"> value="<span class="xmlattrvalue">token</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/searchParam&gt;</span><b>
+      </b><span class="xmltag">&lt;searchParam</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;extension</span><span class="xmlattr"> url="<span class="xmlattrvalue">http://hl7.org/fhir/ExtensionDefinition/conformance-common-expectation</span>"</span><span class="xmltag">&gt;</span><b>
+          </b><span class="xmltag">&lt;valueCode</span><span class="xmlattr"> value="<span class="xmlattrvalue">SHALL</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;/extension&gt;</span><b>
+        </b><span class="xmltag">&lt;name</span><span class="xmlattr"> value="<span class="xmlattrvalue">status</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;type</span><span class="xmlattr"> value="<span class="xmlattrvalue">token</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/searchParam&gt;</span><b>
+      </b><span class="xmltag">&lt;searchParam</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;extension</span><span class="xmlattr"> url="<span class="xmlattrvalue">http://hl7.org/fhir/ExtensionDefinition/conformance-common-expectation</span>"</span><span class="xmltag">&gt;</span><b>
+          </b><span class="xmltag">&lt;valueCode</span><span class="xmlattr"> value="<span class="xmlattrvalue">SHALL</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;/extension&gt;</span><b>
+        </b><span class="xmltag">&lt;name</span><span class="xmlattr"> value="<span class="xmlattrvalue">substance</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;type</span><span class="xmlattr"> value="<span class="xmlattrvalue">token</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/searchParam&gt;</span><b>
+      </b><span class="xmltag">&lt;searchParam</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;extension</span><span class="xmlattr"> url="<span class="xmlattrvalue">http://hl7.org/fhir/ExtensionDefinition/conformance-common-expectation</span>"</span><span class="xmltag">&gt;</span><b>
+          </b><span class="xmltag">&lt;valueCode</span><span class="xmlattr"> value="<span class="xmlattrvalue">SHALL</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;/extension&gt;</span><b>
+        </b><span class="xmltag">&lt;name</span><span class="xmlattr"> value="<span class="xmlattrvalue">manifestation</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;type</span><span class="xmlattr"> value="<span class="xmlattrvalue">token</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/searchParam&gt;</span><b>
+      </b><span class="xmltag">&lt;searchParam</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;extension</span><span class="xmlattr"> url="<span class="xmlattrvalue">http://hl7.org/fhir/ExtensionDefinition/conformance-common-expectation</span>"</span><span class="xmltag">&gt;</span><b>
+          </b><span class="xmltag">&lt;valueCode</span><span class="xmlattr"> value="<span class="xmlattrvalue">SHALL</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;/extension&gt;</span><b>
+        </b><span class="xmltag">&lt;name</span><span class="xmlattr"> value="<span class="xmlattrvalue">severity</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;type</span><span class="xmlattr"> value="<span class="xmlattrvalue">token</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/searchParam&gt;</span><b>
+      </b><span class="xmltag">&lt;searchParam</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;extension</span><span class="xmlattr"> url="<span class="xmlattrvalue">http://hl7.org/fhir/ExtensionDefinition/conformance-common-expectation</span>"</span><span class="xmltag">&gt;</span><b>
+          </b><span class="xmltag">&lt;valueCode</span><span class="xmlattr"> value="<span class="xmlattrvalue">SHALL</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;/extension&gt;</span><b>
+        </b><span class="xmltag">&lt;name</span><span class="xmlattr"> value="<span class="xmlattrvalue">duration</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;type</span><span class="xmlattr"> value="<span class="xmlattrvalue">quantity</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/searchParam&gt;</span><b>
+      </b><span class="xmltag">&lt;searchParam</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;extension</span><span class="xmlattr"> url="<span class="xmlattrvalue">http://hl7.org/fhir/ExtensionDefinition/conformance-common-expectation</span>"</span><span class="xmltag">&gt;</span><b>
+          </b><span class="xmltag">&lt;valueCode</span><span class="xmlattr"> value="<span class="xmlattrvalue">SHALL</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;/extension&gt;</span><b>
+        </b><span class="xmltag">&lt;name</span><span class="xmlattr"> value="<span class="xmlattrvalue">onset</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;type</span><span class="xmlattr"> value="<span class="xmlattrvalue">date</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/searchParam&gt;</span><b>
+    </b><span class="xmltag">&lt;/resource&gt;</span><b>
+    </b><span class="xmltag">&lt;resource</span><span class="xmltag">&gt;</span><b>
+      </b><span class="xmltag">&lt;type</span><span class="xmlattr"> value="<span class="xmlattrvalue">DAFDiagnosticOrder</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;profile</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;reference</span><span class="xmlattr"> value="<span class="xmlattrvalue">diagnosticorder-daf.html</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/profile&gt;</span><b>
+      </b><span class="xmltag">&lt;interaction</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;extension</span><span class="xmlattr"> url="<span class="xmlattrvalue">http://hl7.org/fhir/ExtensionDefinition/conformance-common-expectation</span>"</span><span class="xmltag">&gt;</span><b>
+          </b><span class="xmltag">&lt;valueCode</span><span class="xmlattr"> value="<span class="xmlattrvalue">SHALL</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;/extension&gt;</span><b>
+        </b><span class="xmltag">&lt;code</span><span class="xmlattr"> value="<span class="xmlattrvalue">search-type</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;documentation</span><span class="xmlattr"> value="<span class="xmlattrvalue">Allows discovery of existing DAFDiagnosticOrder resources using different search criteria</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/interaction&gt;</span><b>
+      </b><span class="xmltag">&lt;interaction</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;extension</span><span class="xmlattr"> url="<span class="xmlattrvalue">http://hl7.org/fhir/ExtensionDefinition/conformance-common-expectation</span>"</span><span class="xmltag">&gt;</span><b>
+          </b><span class="xmltag">&lt;valueCode</span><span class="xmlattr"> value="<span class="xmlattrvalue">SHALL</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;/extension&gt;</span><b>
+        </b><span class="xmltag">&lt;code</span><span class="xmlattr"> value="<span class="xmlattrvalue">read</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;documentation</span><span class="xmlattr"> value="<span class="xmlattrvalue">Allows retrieval of a specific DAFDiagnosticOrder by id</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/interaction&gt;</span><b>
+      </b><span class="xmltag">&lt;interaction</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;extension</span><span class="xmlattr"> url="<span class="xmlattrvalue">http://hl7.org/fhir/ExtensionDefinition/conformance-common-expectation</span>"</span><span class="xmltag">&gt;</span><b>
+          </b><span class="xmltag">&lt;valueCode</span><span class="xmlattr"> value="<span class="xmlattrvalue">SHOULD</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;/extension&gt;</span><b>
+        </b><span class="xmltag">&lt;code</span><span class="xmlattr"> value="<span class="xmlattrvalue">history-instance</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;documentation</span><span class="xmlattr"> value="<span class="xmlattrvalue">Allows review of changes to DAFDiagnosticOrder instance over time</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/interaction&gt;</span><b>
+      </b><span class="xmltag">&lt;interaction</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;extension</span><span class="xmlattr"> url="<span class="xmlattrvalue">http://hl7.org/fhir/ExtensionDefinition/conformance-common-expectation</span>"</span><span class="xmltag">&gt;</span><b>
+          </b><span class="xmltag">&lt;valueCode</span><span class="xmlattr"> value="<span class="xmlattrvalue">SHOULD</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;/extension&gt;</span><b>
+        </b><span class="xmltag">&lt;code</span><span class="xmlattr"> value="<span class="xmlattrvalue">vread</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;documentation</span><span class="xmlattr"> value="<span class="xmlattrvalue">Allows retrieval of a historical version of a DAFDiagnosticOrder instance</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/interaction&gt;</span><b>
+      </b><span class="xmltag">&lt;searchParam</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;extension</span><span class="xmlattr"> url="<span class="xmlattrvalue">http://hl7.org/fhir/ExtensionDefinition/conformance-common-expectation</span>"</span><span class="xmltag">&gt;</span><b>
+          </b><span class="xmltag">&lt;valueCode</span><span class="xmlattr"> value="<span class="xmlattrvalue">SHALL</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;/extension&gt;</span><b>
+        </b><span class="xmltag">&lt;name</span><span class="xmlattr"> value="<span class="xmlattrvalue">identifier</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;type</span><span class="xmlattr"> value="<span class="xmlattrvalue">token</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/searchParam&gt;</span><b>
+      </b><span class="xmltag">&lt;searchParam</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;extension</span><span class="xmlattr"> url="<span class="xmlattrvalue">http://hl7.org/fhir/ExtensionDefinition/conformance-common-expectation</span>"</span><span class="xmltag">&gt;</span><b>
+          </b><span class="xmltag">&lt;valueCode</span><span class="xmlattr"> value="<span class="xmlattrvalue">SHALL</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;/extension&gt;</span><b>
+        </b><span class="xmltag">&lt;name</span><span class="xmlattr"> value="<span class="xmlattrvalue">patient</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;type</span><span class="xmlattr"> value="<span class="xmlattrvalue">reference</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/searchParam&gt;</span><b>
+      </b><span class="xmltag">&lt;searchParam</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;extension</span><span class="xmlattr"> url="<span class="xmlattrvalue">http://hl7.org/fhir/ExtensionDefinition/conformance-common-expectation</span>"</span><span class="xmltag">&gt;</span><b>
+          </b><span class="xmltag">&lt;valueCode</span><span class="xmlattr"> value="<span class="xmlattrvalue">SHALL</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;/extension&gt;</span><b>
+        </b><span class="xmltag">&lt;name</span><span class="xmlattr"> value="<span class="xmlattrvalue">orderer</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;type</span><span class="xmlattr"> value="<span class="xmlattrvalue">token</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/searchParam&gt;</span><b>
+      </b><span class="xmltag">&lt;searchParam</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;extension</span><span class="xmlattr"> url="<span class="xmlattrvalue">http://hl7.org/fhir/ExtensionDefinition/conformance-common-expectation</span>"</span><span class="xmltag">&gt;</span><b>
+          </b><span class="xmltag">&lt;valueCode</span><span class="xmlattr"> value="<span class="xmlattrvalue">SHALL</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;/extension&gt;</span><b>
+        </b><span class="xmltag">&lt;name</span><span class="xmlattr"> value="<span class="xmlattrvalue">code</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;type</span><span class="xmlattr"> value="<span class="xmlattrvalue">token</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/searchParam&gt;</span><b>
+      </b><span class="xmltag">&lt;searchParam</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;extension</span><span class="xmlattr"> url="<span class="xmlattrvalue">http://hl7.org/fhir/ExtensionDefinition/conformance-common-expectation</span>"</span><span class="xmltag">&gt;</span><b>
+          </b><span class="xmltag">&lt;valueCode</span><span class="xmlattr"> value="<span class="xmlattrvalue">SHALL</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;/extension&gt;</span><b>
+        </b><span class="xmltag">&lt;name</span><span class="xmlattr"> value="<span class="xmlattrvalue">encounter</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;type</span><span class="xmlattr"> value="<span class="xmlattrvalue">token</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/searchParam&gt;</span><b>
+      </b><span class="xmltag">&lt;searchParam</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;extension</span><span class="xmlattr"> url="<span class="xmlattrvalue">http://hl7.org/fhir/ExtensionDefinition/conformance-common-expectation</span>"</span><span class="xmltag">&gt;</span><b>
+          </b><span class="xmltag">&lt;valueCode</span><span class="xmlattr"> value="<span class="xmlattrvalue">SHALL</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;/extension&gt;</span><b>
+        </b><span class="xmltag">&lt;name</span><span class="xmlattr"> value="<span class="xmlattrvalue">item-date</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;type</span><span class="xmlattr"> value="<span class="xmlattrvalue">date</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/searchParam&gt;</span><b>
+    </b><span class="xmltag">&lt;/resource&gt;</span><b>
+    </b><span class="xmltag">&lt;resource</span><span class="xmltag">&gt;</span><b>
+      </b><span class="xmltag">&lt;type</span><span class="xmlattr"> value="<span class="xmlattrvalue">DAFDiagnosticReport</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;profile</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;reference</span><span class="xmlattr"> value="<span class="xmlattrvalue">diagnosticreport-daf.html</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/profile&gt;</span><b>
+      </b><span class="xmltag">&lt;interaction</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;extension</span><span class="xmlattr"> url="<span class="xmlattrvalue">http://hl7.org/fhir/ExtensionDefinition/conformance-common-expectation</span>"</span><span class="xmltag">&gt;</span><b>
+          </b><span class="xmltag">&lt;valueCode</span><span class="xmlattr"> value="<span class="xmlattrvalue">SHALL</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;/extension&gt;</span><b>
+        </b><span class="xmltag">&lt;code</span><span class="xmlattr"> value="<span class="xmlattrvalue">search-type</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;documentation</span><span class="xmlattr"> value="<span class="xmlattrvalue">Allows discovery of existing DAFDiagnosticReport resources using different search criteria</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/interaction&gt;</span><b>
+      </b><span class="xmltag">&lt;interaction</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;extension</span><span class="xmlattr"> url="<span class="xmlattrvalue">http://hl7.org/fhir/ExtensionDefinition/conformance-common-expectation</span>"</span><span class="xmltag">&gt;</span><b>
+          </b><span class="xmltag">&lt;valueCode</span><span class="xmlattr"> value="<span class="xmlattrvalue">SHALL</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;/extension&gt;</span><b>
+        </b><span class="xmltag">&lt;code</span><span class="xmlattr"> value="<span class="xmlattrvalue">read</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;documentation</span><span class="xmlattr"> value="<span class="xmlattrvalue">Allows retrieval of a specific DAFDiagnosticReport by id</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/interaction&gt;</span><b>
+      </b><span class="xmltag">&lt;interaction</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;extension</span><span class="xmlattr"> url="<span class="xmlattrvalue">http://hl7.org/fhir/ExtensionDefinition/conformance-common-expectation</span>"</span><span class="xmltag">&gt;</span><b>
+          </b><span class="xmltag">&lt;valueCode</span><span class="xmlattr"> value="<span class="xmlattrvalue">SHOULD</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;/extension&gt;</span><b>
+        </b><span class="xmltag">&lt;code</span><span class="xmlattr"> value="<span class="xmlattrvalue">history-instance</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;documentation</span><span class="xmlattr"> value="<span class="xmlattrvalue">Allows review of changes to DAFDiagnosticReport instance over time</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/interaction&gt;</span><b>
+      </b><span class="xmltag">&lt;interaction</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;extension</span><span class="xmlattr"> url="<span class="xmlattrvalue">http://hl7.org/fhir/ExtensionDefinition/conformance-common-expectation</span>"</span><span class="xmltag">&gt;</span><b>
+          </b><span class="xmltag">&lt;valueCode</span><span class="xmlattr"> value="<span class="xmlattrvalue">SHOULD</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;/extension&gt;</span><b>
+        </b><span class="xmltag">&lt;code</span><span class="xmlattr"> value="<span class="xmlattrvalue">vread</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;documentation</span><span class="xmlattr"> value="<span class="xmlattrvalue">Allows retrieval of a historical version of a DAFDiagnosticReport instance</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/interaction&gt;</span><b>
+      </b><span class="xmltag">&lt;searchParam</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;extension</span><span class="xmlattr"> url="<span class="xmlattrvalue">http://hl7.org/fhir/ExtensionDefinition/conformance-common-expectation</span>"</span><span class="xmltag">&gt;</span><b>
+          </b><span class="xmltag">&lt;valueCode</span><span class="xmlattr"> value="<span class="xmlattrvalue">SHALL</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;/extension&gt;</span><b>
+        </b><span class="xmltag">&lt;name</span><span class="xmlattr"> value="<span class="xmlattrvalue">identifier</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;type</span><span class="xmlattr"> value="<span class="xmlattrvalue">token</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/searchParam&gt;</span><b>
+      </b><span class="xmltag">&lt;searchParam</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;extension</span><span class="xmlattr"> url="<span class="xmlattrvalue">http://hl7.org/fhir/ExtensionDefinition/conformance-common-expectation</span>"</span><span class="xmltag">&gt;</span><b>
+          </b><span class="xmltag">&lt;valueCode</span><span class="xmlattr"> value="<span class="xmlattrvalue">SHALL</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;/extension&gt;</span><b>
+        </b><span class="xmltag">&lt;name</span><span class="xmlattr"> value="<span class="xmlattrvalue">patient</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;type</span><span class="xmlattr"> value="<span class="xmlattrvalue">reference</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/searchParam&gt;</span><b>
+      </b><span class="xmltag">&lt;searchParam</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;extension</span><span class="xmlattr"> url="<span class="xmlattrvalue">http://hl7.org/fhir/ExtensionDefinition/conformance-common-expectation</span>"</span><span class="xmltag">&gt;</span><b>
+          </b><span class="xmltag">&lt;valueCode</span><span class="xmlattr"> value="<span class="xmlattrvalue">SHALL</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;/extension&gt;</span><b>
+        </b><span class="xmltag">&lt;name</span><span class="xmlattr"> value="<span class="xmlattrvalue">name</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;type</span><span class="xmlattr"> value="<span class="xmlattrvalue">token</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/searchParam&gt;</span><b>
+      </b><span class="xmltag">&lt;searchParam</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;extension</span><span class="xmlattr"> url="<span class="xmlattrvalue">http://hl7.org/fhir/ExtensionDefinition/conformance-common-expectation</span>"</span><span class="xmltag">&gt;</span><b>
+          </b><span class="xmltag">&lt;valueCode</span><span class="xmlattr"> value="<span class="xmlattrvalue">SHALL</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;/extension&gt;</span><b>
+        </b><span class="xmltag">&lt;name</span><span class="xmlattr"> value="<span class="xmlattrvalue">date</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;type</span><span class="xmlattr"> value="<span class="xmlattrvalue">date</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/searchParam&gt;</span><b>
+      </b><span class="xmltag">&lt;searchParam</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;extension</span><span class="xmlattr"> url="<span class="xmlattrvalue">http://hl7.org/fhir/ExtensionDefinition/conformance-common-expectation</span>"</span><span class="xmltag">&gt;</span><b>
+          </b><span class="xmltag">&lt;valueCode</span><span class="xmlattr"> value="<span class="xmlattrvalue">SHALL</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;/extension&gt;</span><b>
+        </b><span class="xmltag">&lt;name</span><span class="xmlattr"> value="<span class="xmlattrvalue">service</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;type</span><span class="xmlattr"> value="<span class="xmlattrvalue">token</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/searchParam&gt;</span><b>
+    </b><span class="xmltag">&lt;/resource&gt;</span><b>
+    </b><span class="xmltag">&lt;resource</span><span class="xmltag">&gt;</span><b>
+      </b><span class="xmltag">&lt;type</span><span class="xmlattr"> value="<span class="xmlattrvalue">DAFEncounter</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;profile</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;reference</span><span class="xmlattr"> value="<span class="xmlattrvalue">encounter-daf.html</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/profile&gt;</span><b>
+      </b><span class="xmltag">&lt;interaction</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;extension</span><span class="xmlattr"> url="<span class="xmlattrvalue">http://hl7.org/fhir/ExtensionDefinition/conformance-common-expectation</span>"</span><span class="xmltag">&gt;</span><b>
+          </b><span class="xmltag">&lt;valueCode</span><span class="xmlattr"> value="<span class="xmlattrvalue">SHALL</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;/extension&gt;</span><b>
+        </b><span class="xmltag">&lt;code</span><span class="xmlattr"> value="<span class="xmlattrvalue">search-type</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;documentation</span><span class="xmlattr"> value="<span class="xmlattrvalue">Allows discovery of existing DAFEncounter resources using different search criteria</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/interaction&gt;</span><b>
+      </b><span class="xmltag">&lt;interaction</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;extension</span><span class="xmlattr"> url="<span class="xmlattrvalue">http://hl7.org/fhir/ExtensionDefinition/conformance-common-expectation</span>"</span><span class="xmltag">&gt;</span><b>
+          </b><span class="xmltag">&lt;valueCode</span><span class="xmlattr"> value="<span class="xmlattrvalue">SHALL</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;/extension&gt;</span><b>
+        </b><span class="xmltag">&lt;code</span><span class="xmlattr"> value="<span class="xmlattrvalue">read</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;documentation</span><span class="xmlattr"> value="<span class="xmlattrvalue">Allows retrieval of a specific DAFEncounter by id</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/interaction&gt;</span><b>
+      </b><span class="xmltag">&lt;interaction</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;extension</span><span class="xmlattr"> url="<span class="xmlattrvalue">http://hl7.org/fhir/ExtensionDefinition/conformance-common-expectation</span>"</span><span class="xmltag">&gt;</span><b>
+          </b><span class="xmltag">&lt;valueCode</span><span class="xmlattr"> value="<span class="xmlattrvalue">SHOULD</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;/extension&gt;</span><b>
+        </b><span class="xmltag">&lt;code</span><span class="xmlattr"> value="<span class="xmlattrvalue">history-instance</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;documentation</span><span class="xmlattr"> value="<span class="xmlattrvalue">Allows review of changes to DAFEncounter instance over time</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/interaction&gt;</span><b>
+      </b><span class="xmltag">&lt;interaction</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;extension</span><span class="xmlattr"> url="<span class="xmlattrvalue">http://hl7.org/fhir/ExtensionDefinition/conformance-common-expectation</span>"</span><span class="xmltag">&gt;</span><b>
+          </b><span class="xmltag">&lt;valueCode</span><span class="xmlattr"> value="<span class="xmlattrvalue">SHOULD</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;/extension&gt;</span><b>
+        </b><span class="xmltag">&lt;code</span><span class="xmlattr"> value="<span class="xmlattrvalue">vread</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;documentation</span><span class="xmlattr"> value="<span class="xmlattrvalue">Allows retrieval of a historical version of a DAFEncounter instance</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/interaction&gt;</span><b>
+      </b><span class="xmltag">&lt;searchParam</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;extension</span><span class="xmlattr"> url="<span class="xmlattrvalue">http://hl7.org/fhir/ExtensionDefinition/conformance-common-expectation</span>"</span><span class="xmltag">&gt;</span><b>
+          </b><span class="xmltag">&lt;valueCode</span><span class="xmlattr"> value="<span class="xmlattrvalue">SHALL</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;/extension&gt;</span><b>
+        </b><span class="xmltag">&lt;name</span><span class="xmlattr"> value="<span class="xmlattrvalue">identifier</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;type</span><span class="xmlattr"> value="<span class="xmlattrvalue">token</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/searchParam&gt;</span><b>
+      </b><span class="xmltag">&lt;searchParam</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;extension</span><span class="xmlattr"> url="<span class="xmlattrvalue">http://hl7.org/fhir/ExtensionDefinition/conformance-common-expectation</span>"</span><span class="xmltag">&gt;</span><b>
+          </b><span class="xmltag">&lt;valueCode</span><span class="xmlattr"> value="<span class="xmlattrvalue">SHALL</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;/extension&gt;</span><b>
+        </b><span class="xmltag">&lt;name</span><span class="xmlattr"> value="<span class="xmlattrvalue">patient</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;type</span><span class="xmlattr"> value="<span class="xmlattrvalue">reference</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/searchParam&gt;</span><b>
+      </b><span class="xmltag">&lt;searchParam</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;extension</span><span class="xmlattr"> url="<span class="xmlattrvalue">http://hl7.org/fhir/ExtensionDefinition/conformance-common-expectation</span>"</span><span class="xmltag">&gt;</span><b>
+          </b><span class="xmltag">&lt;valueCode</span><span class="xmlattr"> value="<span class="xmlattrvalue">SHALL</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;/extension&gt;</span><b>
+        </b><span class="xmltag">&lt;name</span><span class="xmlattr"> value="<span class="xmlattrvalue">location</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;type</span><span class="xmlattr"> value="<span class="xmlattrvalue">reference</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/searchParam&gt;</span><b>
+      </b><span class="xmltag">&lt;searchParam</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;extension</span><span class="xmlattr"> url="<span class="xmlattrvalue">http://hl7.org/fhir/ExtensionDefinition/conformance-common-expectation</span>"</span><span class="xmltag">&gt;</span><b>
+          </b><span class="xmltag">&lt;valueCode</span><span class="xmlattr"> value="<span class="xmlattrvalue">SHALL</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;/extension&gt;</span><b>
+        </b><span class="xmltag">&lt;name</span><span class="xmlattr"> value="<span class="xmlattrvalue">type</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;type</span><span class="xmlattr"> value="<span class="xmlattrvalue">token</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/searchParam&gt;</span><b>
+      </b><span class="xmltag">&lt;searchParam</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;extension</span><span class="xmlattr"> url="<span class="xmlattrvalue">http://hl7.org/fhir/ExtensionDefinition/conformance-common-expectation</span>"</span><span class="xmltag">&gt;</span><b>
+          </b><span class="xmltag">&lt;valueCode</span><span class="xmlattr"> value="<span class="xmlattrvalue">SHALL</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;/extension&gt;</span><b>
+        </b><span class="xmltag">&lt;name</span><span class="xmlattr"> value="<span class="xmlattrvalue">date</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;type</span><span class="xmlattr"> value="<span class="xmlattrvalue">date</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/searchParam&gt;</span><b>
+      </b><span class="xmltag">&lt;searchParam</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;extension</span><span class="xmlattr"> url="<span class="xmlattrvalue">http://hl7.org/fhir/ExtensionDefinition/conformance-common-expectation</span>"</span><span class="xmltag">&gt;</span><b>
+          </b><span class="xmltag">&lt;valueCode</span><span class="xmlattr"> value="<span class="xmlattrvalue">SHALL</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;/extension&gt;</span><b>
+        </b><span class="xmltag">&lt;name</span><span class="xmlattr"> value="<span class="xmlattrvalue">location-period</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;type</span><span class="xmlattr"> value="<span class="xmlattrvalue">date</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/searchParam&gt;</span><b>
+    </b><span class="xmltag">&lt;/resource&gt;</span><b>
+    </b><span class="xmltag">&lt;resource</span><span class="xmltag">&gt;</span><b>
+      </b><span class="xmltag">&lt;type</span><span class="xmlattr"> value="<span class="xmlattrvalue">DAFFamilyHistory</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;profile</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;reference</span><span class="xmlattr"> value="<span class="xmlattrvalue">familyhistory-daf.html</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/profile&gt;</span><b>
+      </b><span class="xmltag">&lt;interaction</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;extension</span><span class="xmlattr"> url="<span class="xmlattrvalue">http://hl7.org/fhir/ExtensionDefinition/conformance-common-expectation</span>"</span><span class="xmltag">&gt;</span><b>
+          </b><span class="xmltag">&lt;valueCode</span><span class="xmlattr"> value="<span class="xmlattrvalue">SHALL</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;/extension&gt;</span><b>
+        </b><span class="xmltag">&lt;code</span><span class="xmlattr"> value="<span class="xmlattrvalue">search-type</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;documentation</span><span class="xmlattr"> value="<span class="xmlattrvalue">Allows discovery of existing DAFFamilyHistory resources using different search criteria</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/interaction&gt;</span><b>
+      </b><span class="xmltag">&lt;interaction</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;extension</span><span class="xmlattr"> url="<span class="xmlattrvalue">http://hl7.org/fhir/ExtensionDefinition/conformance-common-expectation</span>"</span><span class="xmltag">&gt;</span><b>
+          </b><span class="xmltag">&lt;valueCode</span><span class="xmlattr"> value="<span class="xmlattrvalue">SHALL</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;/extension&gt;</span><b>
+        </b><span class="xmltag">&lt;code</span><span class="xmlattr"> value="<span class="xmlattrvalue">read</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;documentation</span><span class="xmlattr"> value="<span class="xmlattrvalue">Allows retrieval of a specific DAFFamilyHistory by id</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/interaction&gt;</span><b>
+      </b><span class="xmltag">&lt;interaction</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;extension</span><span class="xmlattr"> url="<span class="xmlattrvalue">http://hl7.org/fhir/ExtensionDefinition/conformance-common-expectation</span>"</span><span class="xmltag">&gt;</span><b>
+          </b><span class="xmltag">&lt;valueCode</span><span class="xmlattr"> value="<span class="xmlattrvalue">SHOULD</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;/extension&gt;</span><b>
+        </b><span class="xmltag">&lt;code</span><span class="xmlattr"> value="<span class="xmlattrvalue">history-instance</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;documentation</span><span class="xmlattr"> value="<span class="xmlattrvalue">Allows review of changes to DAFFamilyHistory instance over time</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/interaction&gt;</span><b>
+      </b><span class="xmltag">&lt;interaction</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;extension</span><span class="xmlattr"> url="<span class="xmlattrvalue">http://hl7.org/fhir/ExtensionDefinition/conformance-common-expectation</span>"</span><span class="xmltag">&gt;</span><b>
+          </b><span class="xmltag">&lt;valueCode</span><span class="xmlattr"> value="<span class="xmlattrvalue">SHOULD</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;/extension&gt;</span><b>
+        </b><span class="xmltag">&lt;code</span><span class="xmlattr"> value="<span class="xmlattrvalue">vread</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;documentation</span><span class="xmlattr"> value="<span class="xmlattrvalue">Allows retrieval of a historical version of a DAFFamilyHistory instance</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/interaction&gt;</span><b>
+      </b><span class="xmltag">&lt;searchParam</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;extension</span><span class="xmlattr"> url="<span class="xmlattrvalue">http://hl7.org/fhir/ExtensionDefinition/conformance-common-expectation</span>"</span><span class="xmltag">&gt;</span><b>
+          </b><span class="xmltag">&lt;valueCode</span><span class="xmlattr"> value="<span class="xmlattrvalue">SHALL</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;/extension&gt;</span><b>
+        </b><span class="xmltag">&lt;name</span><span class="xmlattr"> value="<span class="xmlattrvalue">identifier</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;type</span><span class="xmlattr"> value="<span class="xmlattrvalue">token</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/searchParam&gt;</span><b>
+      </b><span class="xmltag">&lt;searchParam</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;extension</span><span class="xmlattr"> url="<span class="xmlattrvalue">http://hl7.org/fhir/ExtensionDefinition/conformance-common-expectation</span>"</span><span class="xmltag">&gt;</span><b>
+          </b><span class="xmltag">&lt;valueCode</span><span class="xmlattr"> value="<span class="xmlattrvalue">SHALL</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;/extension&gt;</span><b>
+        </b><span class="xmltag">&lt;name</span><span class="xmlattr"> value="<span class="xmlattrvalue">patient</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;type</span><span class="xmlattr"> value="<span class="xmlattrvalue">reference</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/searchParam&gt;</span><b>
+      </b><span class="xmltag">&lt;searchParam</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;extension</span><span class="xmlattr"> url="<span class="xmlattrvalue">http://hl7.org/fhir/ExtensionDefinition/conformance-common-expectation</span>"</span><span class="xmltag">&gt;</span><b>
+          </b><span class="xmltag">&lt;valueCode</span><span class="xmlattr"> value="<span class="xmlattrvalue">SHALL</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;/extension&gt;</span><b>
+        </b><span class="xmltag">&lt;name</span><span class="xmlattr"> value="<span class="xmlattrvalue">relationship</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;type</span><span class="xmlattr"> value="<span class="xmlattrvalue">reference</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/searchParam&gt;</span><b>
+      </b><span class="xmltag">&lt;searchParam</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;extension</span><span class="xmlattr"> url="<span class="xmlattrvalue">http://hl7.org/fhir/ExtensionDefinition/conformance-common-expectation</span>"</span><span class="xmltag">&gt;</span><b>
+          </b><span class="xmltag">&lt;valueCode</span><span class="xmlattr"> value="<span class="xmlattrvalue">SHALL</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;/extension&gt;</span><b>
+        </b><span class="xmltag">&lt;name</span><span class="xmlattr"> value="<span class="xmlattrvalue">familyHistoryCondition</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;type</span><span class="xmlattr"> value="<span class="xmlattrvalue">token</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/searchParam&gt;</span><b>
+    </b><span class="xmltag">&lt;/resource&gt;</span><b>
+    </b><span class="xmltag">&lt;resource</span><span class="xmltag">&gt;</span><b>
+      </b><span class="xmltag">&lt;type</span><span class="xmlattr"> value="<span class="xmlattrvalue">DAFImmunization</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;profile</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;reference</span><span class="xmlattr"> value="<span class="xmlattrvalue">immunization-daf.html</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/profile&gt;</span><b>
+      </b><span class="xmltag">&lt;interaction</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;extension</span><span class="xmlattr"> url="<span class="xmlattrvalue">http://hl7.org/fhir/ExtensionDefinition/conformance-common-expectation</span>"</span><span class="xmltag">&gt;</span><b>
+          </b><span class="xmltag">&lt;valueCode</span><span class="xmlattr"> value="<span class="xmlattrvalue">SHALL</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;/extension&gt;</span><b>
+        </b><span class="xmltag">&lt;code</span><span class="xmlattr"> value="<span class="xmlattrvalue">search-type</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;documentation</span><span class="xmlattr"> value="<span class="xmlattrvalue">Allows discovery of existing DAFImmunization resources using different search criteria</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/interaction&gt;</span><b>
+      </b><span class="xmltag">&lt;interaction</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;extension</span><span class="xmlattr"> url="<span class="xmlattrvalue">http://hl7.org/fhir/ExtensionDefinition/conformance-common-expectation</span>"</span><span class="xmltag">&gt;</span><b>
+          </b><span class="xmltag">&lt;valueCode</span><span class="xmlattr"> value="<span class="xmlattrvalue">SHALL</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;/extension&gt;</span><b>
+        </b><span class="xmltag">&lt;code</span><span class="xmlattr"> value="<span class="xmlattrvalue">read</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;documentation</span><span class="xmlattr"> value="<span class="xmlattrvalue">Allows retrieval of a specific DAFImmunization by id</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/interaction&gt;</span><b>
+      </b><span class="xmltag">&lt;interaction</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;extension</span><span class="xmlattr"> url="<span class="xmlattrvalue">http://hl7.org/fhir/ExtensionDefinition/conformance-common-expectation</span>"</span><span class="xmltag">&gt;</span><b>
+          </b><span class="xmltag">&lt;valueCode</span><span class="xmlattr"> value="<span class="xmlattrvalue">SHOULD</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;/extension&gt;</span><b>
+        </b><span class="xmltag">&lt;code</span><span class="xmlattr"> value="<span class="xmlattrvalue">history-instance</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;documentation</span><span class="xmlattr"> value="<span class="xmlattrvalue">Allows review of changes to DAFImmunization instance over time</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/interaction&gt;</span><b>
+      </b><span class="xmltag">&lt;interaction</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;extension</span><span class="xmlattr"> url="<span class="xmlattrvalue">http://hl7.org/fhir/ExtensionDefinition/conformance-common-expectation</span>"</span><span class="xmltag">&gt;</span><b>
+          </b><span class="xmltag">&lt;valueCode</span><span class="xmlattr"> value="<span class="xmlattrvalue">SHOULD</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;/extension&gt;</span><b>
+        </b><span class="xmltag">&lt;code</span><span class="xmlattr"> value="<span class="xmlattrvalue">vread</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;documentation</span><span class="xmlattr"> value="<span class="xmlattrvalue">Allows retrieval of a historical version of a DAFImmunization instance</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/interaction&gt;</span><b>
+      </b><span class="xmltag">&lt;searchParam</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;extension</span><span class="xmlattr"> url="<span class="xmlattrvalue">http://hl7.org/fhir/ExtensionDefinition/conformance-common-expectation</span>"</span><span class="xmltag">&gt;</span><b>
+          </b><span class="xmltag">&lt;valueCode</span><span class="xmlattr"> value="<span class="xmlattrvalue">SHALL</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;/extension&gt;</span><b>
+        </b><span class="xmltag">&lt;name</span><span class="xmlattr"> value="<span class="xmlattrvalue">identifier</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;type</span><span class="xmlattr"> value="<span class="xmlattrvalue">token</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/searchParam&gt;</span><b>
+      </b><span class="xmltag">&lt;searchParam</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;extension</span><span class="xmlattr"> url="<span class="xmlattrvalue">http://hl7.org/fhir/ExtensionDefinition/conformance-common-expectation</span>"</span><span class="xmltag">&gt;</span><b>
+          </b><span class="xmltag">&lt;valueCode</span><span class="xmlattr"> value="<span class="xmlattrvalue">SHALL</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;/extension&gt;</span><b>
+        </b><span class="xmltag">&lt;name</span><span class="xmlattr"> value="<span class="xmlattrvalue">patient</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;type</span><span class="xmlattr"> value="<span class="xmlattrvalue">reference</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/searchParam&gt;</span><b>
+      </b><span class="xmltag">&lt;searchParam</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;extension</span><span class="xmlattr"> url="<span class="xmlattrvalue">http://hl7.org/fhir/ExtensionDefinition/conformance-common-expectation</span>"</span><span class="xmltag">&gt;</span><b>
+          </b><span class="xmltag">&lt;valueCode</span><span class="xmlattr"> value="<span class="xmlattrvalue">SHALL</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;/extension&gt;</span><b>
+        </b><span class="xmltag">&lt;name</span><span class="xmlattr"> value="<span class="xmlattrvalue">date</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;type</span><span class="xmlattr"> value="<span class="xmlattrvalue">date</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/searchParam&gt;</span><b>
+      </b><span class="xmltag">&lt;searchParam</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;extension</span><span class="xmlattr"> url="<span class="xmlattrvalue">http://hl7.org/fhir/ExtensionDefinition/conformance-common-expectation</span>"</span><span class="xmltag">&gt;</span><b>
+          </b><span class="xmltag">&lt;valueCode</span><span class="xmlattr"> value="<span class="xmlattrvalue">SHALL</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;/extension&gt;</span><b>
+        </b><span class="xmltag">&lt;name</span><span class="xmlattr"> value="<span class="xmlattrvalue">vaccine-type</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;type</span><span class="xmlattr"> value="<span class="xmlattrvalue">token</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/searchParam&gt;</span><b>
+      </b><span class="xmltag">&lt;searchParam</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;extension</span><span class="xmlattr"> url="<span class="xmlattrvalue">http://hl7.org/fhir/ExtensionDefinition/conformance-common-expectation</span>"</span><span class="xmltag">&gt;</span><b>
+          </b><span class="xmltag">&lt;valueCode</span><span class="xmlattr"> value="<span class="xmlattrvalue">SHALL</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;/extension&gt;</span><b>
+        </b><span class="xmltag">&lt;name</span><span class="xmlattr"> value="<span class="xmlattrvalue">refused</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;type</span><span class="xmlattr"> value="<span class="xmlattrvalue">token</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/searchParam&gt;</span><b>
+      </b><span class="xmltag">&lt;searchParam</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;extension</span><span class="xmlattr"> url="<span class="xmlattrvalue">http://hl7.org/fhir/ExtensionDefinition/conformance-common-expectation</span>"</span><span class="xmltag">&gt;</span><b>
+          </b><span class="xmltag">&lt;valueCode</span><span class="xmlattr"> value="<span class="xmlattrvalue">SHALL</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;/extension&gt;</span><b>
+        </b><span class="xmltag">&lt;name</span><span class="xmlattr"> value="<span class="xmlattrvalue">reaction</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;type</span><span class="xmlattr"> value="<span class="xmlattrvalue">reference</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/searchParam&gt;</span><b>
+      </b><span class="xmltag">&lt;searchParam</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;extension</span><span class="xmlattr"> url="<span class="xmlattrvalue">http://hl7.org/fhir/ExtensionDefinition/conformance-common-expectation</span>"</span><span class="xmltag">&gt;</span><b>
+          </b><span class="xmltag">&lt;valueCode</span><span class="xmlattr"> value="<span class="xmlattrvalue">SHALL</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;/extension&gt;</span><b>
+        </b><span class="xmltag">&lt;name</span><span class="xmlattr"> value="<span class="xmlattrvalue">lot-number</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;type</span><span class="xmlattr"> value="<span class="xmlattrvalue">string</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/searchParam&gt;</span><b>
+      </b><span class="xmltag">&lt;searchParam</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;extension</span><span class="xmlattr"> url="<span class="xmlattrvalue">http://hl7.org/fhir/ExtensionDefinition/conformance-common-expectation</span>"</span><span class="xmltag">&gt;</span><b>
+          </b><span class="xmltag">&lt;valueCode</span><span class="xmlattr"> value="<span class="xmlattrvalue">SHALL</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;/extension&gt;</span><b>
+        </b><span class="xmltag">&lt;name</span><span class="xmlattr"> value="<span class="xmlattrvalue">requester</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;type</span><span class="xmlattr"> value="<span class="xmlattrvalue">reference</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/searchParam&gt;</span><b>
+    </b><span class="xmltag">&lt;/resource&gt;</span><b>
+    </b><span class="xmltag">&lt;resource</span><span class="xmltag">&gt;</span><b>
+      </b><span class="xmltag">&lt;type</span><span class="xmlattr"> value="<span class="xmlattrvalue">DAFResults</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;profile</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;reference</span><span class="xmlattr"> value="<span class="xmlattrvalue">observation-daf-results.html</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/profile&gt;</span><b>
+      </b><span class="xmltag">&lt;interaction</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;extension</span><span class="xmlattr"> url="<span class="xmlattrvalue">http://hl7.org/fhir/ExtensionDefinition/conformance-common-expectation</span>"</span><span class="xmltag">&gt;</span><b>
+          </b><span class="xmltag">&lt;valueCode</span><span class="xmlattr"> value="<span class="xmlattrvalue">SHALL</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;/extension&gt;</span><b>
+        </b><span class="xmltag">&lt;code</span><span class="xmlattr"> value="<span class="xmlattrvalue">search-type</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;documentation</span><span class="xmlattr"> value="<span class="xmlattrvalue">Allows discovery of existing DAFResults resources using different search criteria</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/interaction&gt;</span><b>
+      </b><span class="xmltag">&lt;interaction</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;extension</span><span class="xmlattr"> url="<span class="xmlattrvalue">http://hl7.org/fhir/ExtensionDefinition/conformance-common-expectation</span>"</span><span class="xmltag">&gt;</span><b>
+          </b><span class="xmltag">&lt;valueCode</span><span class="xmlattr"> value="<span class="xmlattrvalue">SHALL</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;/extension&gt;</span><b>
+        </b><span class="xmltag">&lt;code</span><span class="xmlattr"> value="<span class="xmlattrvalue">read</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;documentation</span><span class="xmlattr"> value="<span class="xmlattrvalue">Allows retrieval of a specific DAFResults by id</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/interaction&gt;</span><b>
+      </b><span class="xmltag">&lt;interaction</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;extension</span><span class="xmlattr"> url="<span class="xmlattrvalue">http://hl7.org/fhir/ExtensionDefinition/conformance-common-expectation</span>"</span><span class="xmltag">&gt;</span><b>
+          </b><span class="xmltag">&lt;valueCode</span><span class="xmlattr"> value="<span class="xmlattrvalue">SHOULD</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;/extension&gt;</span><b>
+        </b><span class="xmltag">&lt;code</span><span class="xmlattr"> value="<span class="xmlattrvalue">history-instance</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;documentation</span><span class="xmlattr"> value="<span class="xmlattrvalue">Allows review of changes to DAFResults instance over time</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/interaction&gt;</span><b>
+      </b><span class="xmltag">&lt;interaction</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;extension</span><span class="xmlattr"> url="<span class="xmlattrvalue">http://hl7.org/fhir/ExtensionDefinition/conformance-common-expectation</span>"</span><span class="xmltag">&gt;</span><b>
+          </b><span class="xmltag">&lt;valueCode</span><span class="xmlattr"> value="<span class="xmlattrvalue">SHOULD</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;/extension&gt;</span><b>
+        </b><span class="xmltag">&lt;code</span><span class="xmlattr"> value="<span class="xmlattrvalue">vread</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;documentation</span><span class="xmlattr"> value="<span class="xmlattrvalue">Allows retrieval of a historical version of a DAFResults instance</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/interaction&gt;</span><b>
+      </b><span class="xmltag">&lt;searchParam</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;extension</span><span class="xmlattr"> url="<span class="xmlattrvalue">http://hl7.org/fhir/ExtensionDefinition/conformance-common-expectation</span>"</span><span class="xmltag">&gt;</span><b>
+          </b><span class="xmltag">&lt;valueCode</span><span class="xmlattr"> value="<span class="xmlattrvalue">SHALL</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;/extension&gt;</span><b>
+        </b><span class="xmltag">&lt;name</span><span class="xmlattr"> value="<span class="xmlattrvalue">identifier</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;type</span><span class="xmlattr"> value="<span class="xmlattrvalue">token</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/searchParam&gt;</span><b>
+      </b><span class="xmltag">&lt;searchParam</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;extension</span><span class="xmlattr"> url="<span class="xmlattrvalue">http://hl7.org/fhir/ExtensionDefinition/conformance-common-expectation</span>"</span><span class="xmltag">&gt;</span><b>
+          </b><span class="xmltag">&lt;valueCode</span><span class="xmlattr"> value="<span class="xmlattrvalue">SHALL</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;/extension&gt;</span><b>
+        </b><span class="xmltag">&lt;name</span><span class="xmlattr"> value="<span class="xmlattrvalue">patient</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;type</span><span class="xmlattr"> value="<span class="xmlattrvalue">reference</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/searchParam&gt;</span><b>
+      </b><span class="xmltag">&lt;searchParam</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;extension</span><span class="xmlattr"> url="<span class="xmlattrvalue">http://hl7.org/fhir/ExtensionDefinition/conformance-common-expectation</span>"</span><span class="xmltag">&gt;</span><b>
+          </b><span class="xmltag">&lt;valueCode</span><span class="xmlattr"> value="<span class="xmlattrvalue">SHALL</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;/extension&gt;</span><b>
+        </b><span class="xmltag">&lt;name</span><span class="xmlattr"> value="<span class="xmlattrvalue">name</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;type</span><span class="xmlattr"> value="<span class="xmlattrvalue">token</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/searchParam&gt;</span><b>
+      </b><span class="xmltag">&lt;searchParam</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;extension</span><span class="xmlattr"> url="<span class="xmlattrvalue">http://hl7.org/fhir/ExtensionDefinition/conformance-common-expectation</span>"</span><span class="xmltag">&gt;</span><b>
+          </b><span class="xmltag">&lt;valueCode</span><span class="xmlattr"> value="<span class="xmlattrvalue">SHALL</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;/extension&gt;</span><b>
+        </b><span class="xmltag">&lt;name</span><span class="xmlattr"> value="<span class="xmlattrvalue">value-concept</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;type</span><span class="xmlattr"> value="<span class="xmlattrvalue">token</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/searchParam&gt;</span><b>
+      </b><span class="xmltag">&lt;searchParam</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;extension</span><span class="xmlattr"> url="<span class="xmlattrvalue">http://hl7.org/fhir/ExtensionDefinition/conformance-common-expectation</span>"</span><span class="xmltag">&gt;</span><b>
+          </b><span class="xmltag">&lt;valueCode</span><span class="xmlattr"> value="<span class="xmlattrvalue">SHALL</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;/extension&gt;</span><b>
+        </b><span class="xmltag">&lt;name</span><span class="xmlattr"> value="<span class="xmlattrvalue">value-quantity</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;type</span><span class="xmlattr"> value="<span class="xmlattrvalue">quantity</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/searchParam&gt;</span><b>
+      </b><span class="xmltag">&lt;searchParam</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;extension</span><span class="xmlattr"> url="<span class="xmlattrvalue">http://hl7.org/fhir/ExtensionDefinition/conformance-common-expectation</span>"</span><span class="xmltag">&gt;</span><b>
+          </b><span class="xmltag">&lt;valueCode</span><span class="xmlattr"> value="<span class="xmlattrvalue">SHALL</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;/extension&gt;</span><b>
+        </b><span class="xmltag">&lt;name</span><span class="xmlattr"> value="<span class="xmlattrvalue">name-value[x]</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;type</span><span class="xmlattr"> value="<span class="xmlattrvalue">composite</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/searchParam&gt;</span><b>
+    </b><span class="xmltag">&lt;/resource&gt;</span><b>
+    </b><span class="xmltag">&lt;resource</span><span class="xmltag">&gt;</span><b>
+      </b><span class="xmltag">&lt;type</span><span class="xmlattr"> value="<span class="xmlattrvalue">DAFMedication</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;profile</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;reference</span><span class="xmlattr"> value="<span class="xmlattrvalue">medication-daf.html</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/profile&gt;</span><b>
+      </b><span class="xmltag">&lt;interaction</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;extension</span><span class="xmlattr"> url="<span class="xmlattrvalue">http://hl7.org/fhir/ExtensionDefinition/conformance-common-expectation</span>"</span><span class="xmltag">&gt;</span><b>
+          </b><span class="xmltag">&lt;valueCode</span><span class="xmlattr"> value="<span class="xmlattrvalue">SHALL</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;/extension&gt;</span><b>
+        </b><span class="xmltag">&lt;code</span><span class="xmlattr"> value="<span class="xmlattrvalue">search-type</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;documentation</span><span class="xmlattr"> value="<span class="xmlattrvalue">Allows discovery of existing DAFMedication resources using different search criteria</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/interaction&gt;</span><b>
+      </b><span class="xmltag">&lt;interaction</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;extension</span><span class="xmlattr"> url="<span class="xmlattrvalue">http://hl7.org/fhir/ExtensionDefinition/conformance-common-expectation</span>"</span><span class="xmltag">&gt;</span><b>
+          </b><span class="xmltag">&lt;valueCode</span><span class="xmlattr"> value="<span class="xmlattrvalue">SHALL</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;/extension&gt;</span><b>
+        </b><span class="xmltag">&lt;code</span><span class="xmlattr"> value="<span class="xmlattrvalue">read</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;documentation</span><span class="xmlattr"> value="<span class="xmlattrvalue">Allows retrieval of a specific DAFMedication by id</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/interaction&gt;</span><b>
+      </b><span class="xmltag">&lt;interaction</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;extension</span><span class="xmlattr"> url="<span class="xmlattrvalue">http://hl7.org/fhir/ExtensionDefinition/conformance-common-expectation</span>"</span><span class="xmltag">&gt;</span><b>
+          </b><span class="xmltag">&lt;valueCode</span><span class="xmlattr"> value="<span class="xmlattrvalue">SHOULD</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;/extension&gt;</span><b>
+        </b><span class="xmltag">&lt;code</span><span class="xmlattr"> value="<span class="xmlattrvalue">history-instance</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;documentation</span><span class="xmlattr"> value="<span class="xmlattrvalue">Allows review of changes to DAFMedication instance over time</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/interaction&gt;</span><b>
+      </b><span class="xmltag">&lt;interaction</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;extension</span><span class="xmlattr"> url="<span class="xmlattrvalue">http://hl7.org/fhir/ExtensionDefinition/conformance-common-expectation</span>"</span><span class="xmltag">&gt;</span><b>
+          </b><span class="xmltag">&lt;valueCode</span><span class="xmlattr"> value="<span class="xmlattrvalue">SHOULD</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;/extension&gt;</span><b>
+        </b><span class="xmltag">&lt;code</span><span class="xmlattr"> value="<span class="xmlattrvalue">vread</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;documentation</span><span class="xmlattr"> value="<span class="xmlattrvalue">Allows retrieval of a historical version of a DAFMedication instance</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/interaction&gt;</span><b>
+      </b><span class="xmltag">&lt;searchParam</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;extension</span><span class="xmlattr"> url="<span class="xmlattrvalue">http://hl7.org/fhir/ExtensionDefinition/conformance-common-expectation</span>"</span><span class="xmltag">&gt;</span><b>
+          </b><span class="xmltag">&lt;valueCode</span><span class="xmlattr"> value="<span class="xmlattrvalue">SHALL</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;/extension&gt;</span><b>
+        </b><span class="xmltag">&lt;name</span><span class="xmlattr"> value="<span class="xmlattrvalue">identifier</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;type</span><span class="xmlattr"> value="<span class="xmlattrvalue">token</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/searchParam&gt;</span><b>
+      </b><span class="xmltag">&lt;searchParam</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;extension</span><span class="xmlattr"> url="<span class="xmlattrvalue">http://hl7.org/fhir/ExtensionDefinition/conformance-common-expectation</span>"</span><span class="xmltag">&gt;</span><b>
+          </b><span class="xmltag">&lt;valueCode</span><span class="xmlattr"> value="<span class="xmlattrvalue">SHALL</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;/extension&gt;</span><b>
+        </b><span class="xmltag">&lt;name</span><span class="xmlattr"> value="<span class="xmlattrvalue">code</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;type</span><span class="xmlattr"> value="<span class="xmlattrvalue">token</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/searchParam&gt;</span><b>
+      </b><span class="xmltag">&lt;searchParam</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;extension</span><span class="xmlattr"> url="<span class="xmlattrvalue">http://hl7.org/fhir/ExtensionDefinition/conformance-common-expectation</span>"</span><span class="xmltag">&gt;</span><b>
+          </b><span class="xmltag">&lt;valueCode</span><span class="xmlattr"> value="<span class="xmlattrvalue">SHALL</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;/extension&gt;</span><b>
+        </b><span class="xmltag">&lt;name</span><span class="xmlattr"> value="<span class="xmlattrvalue">name</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;type</span><span class="xmlattr"> value="<span class="xmlattrvalue">string</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/searchParam&gt;</span><b>
+      </b><span class="xmltag">&lt;searchParam</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;extension</span><span class="xmlattr"> url="<span class="xmlattrvalue">http://hl7.org/fhir/ExtensionDefinition/conformance-common-expectation</span>"</span><span class="xmltag">&gt;</span><b>
+          </b><span class="xmltag">&lt;valueCode</span><span class="xmlattr"> value="<span class="xmlattrvalue">SHALL</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;/extension&gt;</span><b>
+        </b><span class="xmltag">&lt;name</span><span class="xmlattr"> value="<span class="xmlattrvalue">form</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;type</span><span class="xmlattr"> value="<span class="xmlattrvalue">token</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/searchParam&gt;</span><b>
+      </b><span class="xmltag">&lt;searchParam</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;extension</span><span class="xmlattr"> url="<span class="xmlattrvalue">http://hl7.org/fhir/ExtensionDefinition/conformance-common-expectation</span>"</span><span class="xmltag">&gt;</span><b>
+          </b><span class="xmltag">&lt;valueCode</span><span class="xmlattr"> value="<span class="xmlattrvalue">SHALL</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;/extension&gt;</span><b>
+        </b><span class="xmltag">&lt;name</span><span class="xmlattr"> value="<span class="xmlattrvalue">ingredient</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;type</span><span class="xmlattr"> value="<span class="xmlattrvalue">reference</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/searchParam&gt;</span><b>
+    </b><span class="xmltag">&lt;/resource&gt;</span><b>
+    </b><span class="xmltag">&lt;resource</span><span class="xmltag">&gt;</span><b>
+      </b><span class="xmltag">&lt;type</span><span class="xmlattr"> value="<span class="xmlattrvalue">DAFMedicationStatement</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;profile</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;reference</span><span class="xmlattr"> value="<span class="xmlattrvalue">medicationstatement-daf.html</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/profile&gt;</span><b>
+      </b><span class="xmltag">&lt;interaction</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;extension</span><span class="xmlattr"> url="<span class="xmlattrvalue">http://hl7.org/fhir/ExtensionDefinition/conformance-common-expectation</span>"</span><span class="xmltag">&gt;</span><b>
+          </b><span class="xmltag">&lt;valueCode</span><span class="xmlattr"> value="<span class="xmlattrvalue">SHALL</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;/extension&gt;</span><b>
+        </b><span class="xmltag">&lt;code</span><span class="xmlattr"> value="<span class="xmlattrvalue">search-type</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;documentation</span><span class="xmlattr"> value="<span class="xmlattrvalue">Allows discovery of existing DAFMedicationStatement resources using different search criteria</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/interaction&gt;</span><b>
+      </b><span class="xmltag">&lt;interaction</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;extension</span><span class="xmlattr"> url="<span class="xmlattrvalue">http://hl7.org/fhir/ExtensionDefinition/conformance-common-expectation</span>"</span><span class="xmltag">&gt;</span><b>
+          </b><span class="xmltag">&lt;valueCode</span><span class="xmlattr"> value="<span class="xmlattrvalue">SHALL</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;/extension&gt;</span><b>
+        </b><span class="xmltag">&lt;code</span><span class="xmlattr"> value="<span class="xmlattrvalue">read</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;documentation</span><span class="xmlattr"> value="<span class="xmlattrvalue">Allows retrieval of a specific DAFMedicationStatement by id</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/interaction&gt;</span><b>
+      </b><span class="xmltag">&lt;interaction</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;extension</span><span class="xmlattr"> url="<span class="xmlattrvalue">http://hl7.org/fhir/ExtensionDefinition/conformance-common-expectation</span>"</span><span class="xmltag">&gt;</span><b>
+          </b><span class="xmltag">&lt;valueCode</span><span class="xmlattr"> value="<span class="xmlattrvalue">SHOULD</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;/extension&gt;</span><b>
+        </b><span class="xmltag">&lt;code</span><span class="xmlattr"> value="<span class="xmlattrvalue">history-instance</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;documentation</span><span class="xmlattr"> value="<span class="xmlattrvalue">Allows review of changes to DAFMedicationStatement instance over time</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/interaction&gt;</span><b>
+      </b><span class="xmltag">&lt;interaction</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;extension</span><span class="xmlattr"> url="<span class="xmlattrvalue">http://hl7.org/fhir/ExtensionDefinition/conformance-common-expectation</span>"</span><span class="xmltag">&gt;</span><b>
+          </b><span class="xmltag">&lt;valueCode</span><span class="xmlattr"> value="<span class="xmlattrvalue">SHOULD</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;/extension&gt;</span><b>
+        </b><span class="xmltag">&lt;code</span><span class="xmlattr"> value="<span class="xmlattrvalue">vread</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;documentation</span><span class="xmlattr"> value="<span class="xmlattrvalue">Allows retrieval of a historical version of a DAFMedicationStatement instance</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/interaction&gt;</span><b>
+      </b><span class="xmltag">&lt;searchParam</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;extension</span><span class="xmlattr"> url="<span class="xmlattrvalue">http://hl7.org/fhir/ExtensionDefinition/conformance-common-expectation</span>"</span><span class="xmltag">&gt;</span><b>
+          </b><span class="xmltag">&lt;valueCode</span><span class="xmlattr"> value="<span class="xmlattrvalue">SHALL</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;/extension&gt;</span><b>
+        </b><span class="xmltag">&lt;name</span><span class="xmlattr"> value="<span class="xmlattrvalue">identifier</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;type</span><span class="xmlattr"> value="<span class="xmlattrvalue">token</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/searchParam&gt;</span><b>
+      </b><span class="xmltag">&lt;searchParam</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;extension</span><span class="xmlattr"> url="<span class="xmlattrvalue">http://hl7.org/fhir/ExtensionDefinition/conformance-common-expectation</span>"</span><span class="xmltag">&gt;</span><b>
+          </b><span class="xmltag">&lt;valueCode</span><span class="xmlattr"> value="<span class="xmlattrvalue">SHALL</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;/extension&gt;</span><b>
+        </b><span class="xmltag">&lt;name</span><span class="xmlattr"> value="<span class="xmlattrvalue">patient</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;type</span><span class="xmlattr"> value="<span class="xmlattrvalue">reference</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/searchParam&gt;</span><b>
+      </b><span class="xmltag">&lt;searchParam</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;extension</span><span class="xmlattr"> url="<span class="xmlattrvalue">http://hl7.org/fhir/ExtensionDefinition/conformance-common-expectation</span>"</span><span class="xmltag">&gt;</span><b>
+          </b><span class="xmltag">&lt;valueCode</span><span class="xmlattr"> value="<span class="xmlattrvalue">SHALL</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;/extension&gt;</span><b>
+        </b><span class="xmltag">&lt;name</span><span class="xmlattr"> value="<span class="xmlattrvalue">when-given</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;type</span><span class="xmlattr"> value="<span class="xmlattrvalue">date</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/searchParam&gt;</span><b>
+    </b><span class="xmltag">&lt;/resource&gt;</span><b>
+    </b><span class="xmltag">&lt;resource</span><span class="xmltag">&gt;</span><b>
+      </b><span class="xmltag">&lt;type</span><span class="xmlattr"> value="<span class="xmlattrvalue">DAFMedicationAdministration</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;profile</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;reference</span><span class="xmlattr"> value="<span class="xmlattrvalue">medicationadministration-daf.html</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/profile&gt;</span><b>
+      </b><span class="xmltag">&lt;interaction</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;extension</span><span class="xmlattr"> url="<span class="xmlattrvalue">http://hl7.org/fhir/ExtensionDefinition/conformance-common-expectation</span>"</span><span class="xmltag">&gt;</span><b>
+          </b><span class="xmltag">&lt;valueCode</span><span class="xmlattr"> value="<span class="xmlattrvalue">SHALL</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;/extension&gt;</span><b>
+        </b><span class="xmltag">&lt;code</span><span class="xmlattr"> value="<span class="xmlattrvalue">search-type</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;documentation</span><span class="xmlattr"> value="<span class="xmlattrvalue">Allows discovery of existing DAFMedicationAdministration resources using different search
+         criteria</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/interaction&gt;</span><b>
+      </b><span class="xmltag">&lt;interaction</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;extension</span><span class="xmlattr"> url="<span class="xmlattrvalue">http://hl7.org/fhir/ExtensionDefinition/conformance-common-expectation</span>"</span><span class="xmltag">&gt;</span><b>
+          </b><span class="xmltag">&lt;valueCode</span><span class="xmlattr"> value="<span class="xmlattrvalue">SHALL</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;/extension&gt;</span><b>
+        </b><span class="xmltag">&lt;code</span><span class="xmlattr"> value="<span class="xmlattrvalue">read</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;documentation</span><span class="xmlattr"> value="<span class="xmlattrvalue">Allows retrieval of a specific DAFMedicationAdministration by id</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/interaction&gt;</span><b>
+      </b><span class="xmltag">&lt;interaction</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;extension</span><span class="xmlattr"> url="<span class="xmlattrvalue">http://hl7.org/fhir/ExtensionDefinition/conformance-common-expectation</span>"</span><span class="xmltag">&gt;</span><b>
+          </b><span class="xmltag">&lt;valueCode</span><span class="xmlattr"> value="<span class="xmlattrvalue">SHOULD</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;/extension&gt;</span><b>
+        </b><span class="xmltag">&lt;code</span><span class="xmlattr"> value="<span class="xmlattrvalue">history-instance</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;documentation</span><span class="xmlattr"> value="<span class="xmlattrvalue">Allows review of changes to DAFMedicationAdministration instance over time</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/interaction&gt;</span><b>
+      </b><span class="xmltag">&lt;interaction</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;extension</span><span class="xmlattr"> url="<span class="xmlattrvalue">http://hl7.org/fhir/ExtensionDefinition/conformance-common-expectation</span>"</span><span class="xmltag">&gt;</span><b>
+          </b><span class="xmltag">&lt;valueCode</span><span class="xmlattr"> value="<span class="xmlattrvalue">SHOULD</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;/extension&gt;</span><b>
+        </b><span class="xmltag">&lt;code</span><span class="xmlattr"> value="<span class="xmlattrvalue">vread</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;documentation</span><span class="xmlattr"> value="<span class="xmlattrvalue">Allows retrieval of a historical version of a DAFMedicationAdministration instance</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/interaction&gt;</span><b>
+      </b><span class="xmltag">&lt;searchParam</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;extension</span><span class="xmlattr"> url="<span class="xmlattrvalue">http://hl7.org/fhir/ExtensionDefinition/conformance-common-expectation</span>"</span><span class="xmltag">&gt;</span><b>
+          </b><span class="xmltag">&lt;valueCode</span><span class="xmlattr"> value="<span class="xmlattrvalue">SHALL</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;/extension&gt;</span><b>
+        </b><span class="xmltag">&lt;name</span><span class="xmlattr"> value="<span class="xmlattrvalue">identifier</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;type</span><span class="xmlattr"> value="<span class="xmlattrvalue">token</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/searchParam&gt;</span><b>
+      </b><span class="xmltag">&lt;searchParam</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;extension</span><span class="xmlattr"> url="<span class="xmlattrvalue">http://hl7.org/fhir/ExtensionDefinition/conformance-common-expectation</span>"</span><span class="xmltag">&gt;</span><b>
+          </b><span class="xmltag">&lt;valueCode</span><span class="xmlattr"> value="<span class="xmlattrvalue">SHALL</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;/extension&gt;</span><b>
+        </b><span class="xmltag">&lt;name</span><span class="xmlattr"> value="<span class="xmlattrvalue">patient</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;type</span><span class="xmlattr"> value="<span class="xmlattrvalue">reference</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/searchParam&gt;</span><b>
+      </b><span class="xmltag">&lt;searchParam</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;extension</span><span class="xmlattr"> url="<span class="xmlattrvalue">http://hl7.org/fhir/ExtensionDefinition/conformance-common-expectation</span>"</span><span class="xmltag">&gt;</span><b>
+          </b><span class="xmltag">&lt;valueCode</span><span class="xmlattr"> value="<span class="xmlattrvalue">SHALL</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;/extension&gt;</span><b>
+        </b><span class="xmltag">&lt;name</span><span class="xmlattr"> value="<span class="xmlattrvalue">effectivetime</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;type</span><span class="xmlattr"> value="<span class="xmlattrvalue">date</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/searchParam&gt;</span><b>
+      </b><span class="xmltag">&lt;searchParam</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;extension</span><span class="xmlattr"> url="<span class="xmlattrvalue">http://hl7.org/fhir/ExtensionDefinition/conformance-common-expectation</span>"</span><span class="xmltag">&gt;</span><b>
+          </b><span class="xmltag">&lt;valueCode</span><span class="xmlattr"> value="<span class="xmlattrvalue">SHALL</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;/extension&gt;</span><b>
+        </b><span class="xmltag">&lt;name</span><span class="xmlattr"> value="<span class="xmlattrvalue">encunter</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;type</span><span class="xmlattr"> value="<span class="xmlattrvalue">reference</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/searchParam&gt;</span><b>
+    </b><span class="xmltag">&lt;/resource&gt;</span><b>
+    </b><span class="xmltag">&lt;resource</span><span class="xmltag">&gt;</span><b>
+      </b><span class="xmltag">&lt;type</span><span class="xmlattr"> value="<span class="xmlattrvalue">DAFCondition</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;profile</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;reference</span><span class="xmlattr"> value="<span class="xmlattrvalue">condition-daf.html</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/profile&gt;</span><b>
+      </b><span class="xmltag">&lt;interaction</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;extension</span><span class="xmlattr"> url="<span class="xmlattrvalue">http://hl7.org/fhir/ExtensionDefinition/conformance-common-expectation</span>"</span><span class="xmltag">&gt;</span><b>
+          </b><span class="xmltag">&lt;valueCode</span><span class="xmlattr"> value="<span class="xmlattrvalue">SHALL</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;/extension&gt;</span><b>
+        </b><span class="xmltag">&lt;code</span><span class="xmlattr"> value="<span class="xmlattrvalue">search-type</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;documentation</span><span class="xmlattr"> value="<span class="xmlattrvalue">Allows discovery of existing DAFCondition resources using different search criteria</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/interaction&gt;</span><b>
+      </b><span class="xmltag">&lt;interaction</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;extension</span><span class="xmlattr"> url="<span class="xmlattrvalue">http://hl7.org/fhir/ExtensionDefinition/conformance-common-expectation</span>"</span><span class="xmltag">&gt;</span><b>
+          </b><span class="xmltag">&lt;valueCode</span><span class="xmlattr"> value="<span class="xmlattrvalue">SHALL</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;/extension&gt;</span><b>
+        </b><span class="xmltag">&lt;code</span><span class="xmlattr"> value="<span class="xmlattrvalue">read</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;documentation</span><span class="xmlattr"> value="<span class="xmlattrvalue">Allows retrieval of a specific DAFCondition by id</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/interaction&gt;</span><b>
+      </b><span class="xmltag">&lt;interaction</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;extension</span><span class="xmlattr"> url="<span class="xmlattrvalue">http://hl7.org/fhir/ExtensionDefinition/conformance-common-expectation</span>"</span><span class="xmltag">&gt;</span><b>
+          </b><span class="xmltag">&lt;valueCode</span><span class="xmlattr"> value="<span class="xmlattrvalue">SHOULD</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;/extension&gt;</span><b>
+        </b><span class="xmltag">&lt;code</span><span class="xmlattr"> value="<span class="xmlattrvalue">history-instance</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;documentation</span><span class="xmlattr"> value="<span class="xmlattrvalue">Allows review of changes to DAFCondition instance over time</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/interaction&gt;</span><b>
+      </b><span class="xmltag">&lt;interaction</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;extension</span><span class="xmlattr"> url="<span class="xmlattrvalue">http://hl7.org/fhir/ExtensionDefinition/conformance-common-expectation</span>"</span><span class="xmltag">&gt;</span><b>
+          </b><span class="xmltag">&lt;valueCode</span><span class="xmlattr"> value="<span class="xmlattrvalue">SHOULD</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;/extension&gt;</span><b>
+        </b><span class="xmltag">&lt;code</span><span class="xmlattr"> value="<span class="xmlattrvalue">vread</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;documentation</span><span class="xmlattr"> value="<span class="xmlattrvalue">Allows retrieval of a historical version of a DAFCondition instance</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/interaction&gt;</span><b>
+      </b><span class="xmltag">&lt;searchParam</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;extension</span><span class="xmlattr"> url="<span class="xmlattrvalue">http://hl7.org/fhir/ExtensionDefinition/conformance-common-expectation</span>"</span><span class="xmltag">&gt;</span><b>
+          </b><span class="xmltag">&lt;valueCode</span><span class="xmlattr"> value="<span class="xmlattrvalue">SHALL</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;/extension&gt;</span><b>
+        </b><span class="xmltag">&lt;name</span><span class="xmlattr"> value="<span class="xmlattrvalue">identifier</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;type</span><span class="xmlattr"> value="<span class="xmlattrvalue">token</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/searchParam&gt;</span><b>
+      </b><span class="xmltag">&lt;searchParam</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;extension</span><span class="xmlattr"> url="<span class="xmlattrvalue">http://hl7.org/fhir/ExtensionDefinition/conformance-common-expectation</span>"</span><span class="xmltag">&gt;</span><b>
+          </b><span class="xmltag">&lt;valueCode</span><span class="xmlattr"> value="<span class="xmlattrvalue">SHALL</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;/extension&gt;</span><b>
+        </b><span class="xmltag">&lt;name</span><span class="xmlattr"> value="<span class="xmlattrvalue">patient</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;type</span><span class="xmlattr"> value="<span class="xmlattrvalue">reference</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/searchParam&gt;</span><b>
+      </b><span class="xmltag">&lt;searchParam</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;extension</span><span class="xmlattr"> url="<span class="xmlattrvalue">http://hl7.org/fhir/ExtensionDefinition/conformance-common-expectation</span>"</span><span class="xmltag">&gt;</span><b>
+          </b><span class="xmltag">&lt;valueCode</span><span class="xmlattr"> value="<span class="xmlattrvalue">SHALL</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;/extension&gt;</span><b>
+        </b><span class="xmltag">&lt;name</span><span class="xmlattr"> value="<span class="xmlattrvalue">code</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;type</span><span class="xmlattr"> value="<span class="xmlattrvalue">token</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/searchParam&gt;</span><b>
+      </b><span class="xmltag">&lt;searchParam</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;extension</span><span class="xmlattr"> url="<span class="xmlattrvalue">http://hl7.org/fhir/ExtensionDefinition/conformance-common-expectation</span>"</span><span class="xmltag">&gt;</span><b>
+          </b><span class="xmltag">&lt;valueCode</span><span class="xmlattr"> value="<span class="xmlattrvalue">SHALL</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;/extension&gt;</span><b>
+        </b><span class="xmltag">&lt;name</span><span class="xmlattr"> value="<span class="xmlattrvalue">date-Asserted</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;type</span><span class="xmlattr"> value="<span class="xmlattrvalue">date</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/searchParam&gt;</span><b>
+      </b><span class="xmltag">&lt;searchParam</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;extension</span><span class="xmlattr"> url="<span class="xmlattrvalue">http://hl7.org/fhir/ExtensionDefinition/conformance-common-expectation</span>"</span><span class="xmltag">&gt;</span><b>
+          </b><span class="xmltag">&lt;valueCode</span><span class="xmlattr"> value="<span class="xmlattrvalue">SHALL</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;/extension&gt;</span><b>
+        </b><span class="xmltag">&lt;name</span><span class="xmlattr"> value="<span class="xmlattrvalue">encounter</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;type</span><span class="xmlattr"> value="<span class="xmlattrvalue">reference</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/searchParam&gt;</span><b>
+      </b><span class="xmltag">&lt;searchParam</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;extension</span><span class="xmlattr"> url="<span class="xmlattrvalue">http://hl7.org/fhir/ExtensionDefinition/conformance-common-expectation</span>"</span><span class="xmltag">&gt;</span><b>
+          </b><span class="xmltag">&lt;valueCode</span><span class="xmlattr"> value="<span class="xmlattrvalue">SHALL</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;/extension&gt;</span><b>
+        </b><span class="xmltag">&lt;name</span><span class="xmlattr"> value="<span class="xmlattrvalue">onset</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;type</span><span class="xmlattr"> value="<span class="xmlattrvalue">date</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/searchParam&gt;</span><b>
+      </b><span class="xmltag">&lt;searchParam</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;extension</span><span class="xmlattr"> url="<span class="xmlattrvalue">http://hl7.org/fhir/ExtensionDefinition/conformance-common-expectation</span>"</span><span class="xmltag">&gt;</span><b>
+          </b><span class="xmltag">&lt;valueCode</span><span class="xmlattr"> value="<span class="xmlattrvalue">SHALL</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;/extension&gt;</span><b>
+        </b><span class="xmltag">&lt;name</span><span class="xmlattr"> value="<span class="xmlattrvalue">severity</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;type</span><span class="xmlattr"> value="<span class="xmlattrvalue">token</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/searchParam&gt;</span><b>
+    </b><span class="xmltag">&lt;/resource&gt;</span><b>
+    </b><span class="xmltag">&lt;resource</span><span class="xmltag">&gt;</span><b>
+      </b><span class="xmltag">&lt;type</span><span class="xmlattr"> value="<span class="xmlattrvalue">DAFProcedure</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;profile</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;reference</span><span class="xmlattr"> value="<span class="xmlattrvalue">procedure-daf.html</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/profile&gt;</span><b>
+      </b><span class="xmltag">&lt;interaction</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;extension</span><span class="xmlattr"> url="<span class="xmlattrvalue">http://hl7.org/fhir/ExtensionDefinition/conformance-common-expectation</span>"</span><span class="xmltag">&gt;</span><b>
+          </b><span class="xmltag">&lt;valueCode</span><span class="xmlattr"> value="<span class="xmlattrvalue">SHALL</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;/extension&gt;</span><b>
+        </b><span class="xmltag">&lt;code</span><span class="xmlattr"> value="<span class="xmlattrvalue">search-type</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;documentation</span><span class="xmlattr"> value="<span class="xmlattrvalue">Allows discovery of existing DAFProcedure resources using different search criteria</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/interaction&gt;</span><b>
+      </b><span class="xmltag">&lt;interaction</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;extension</span><span class="xmlattr"> url="<span class="xmlattrvalue">http://hl7.org/fhir/ExtensionDefinition/conformance-common-expectation</span>"</span><span class="xmltag">&gt;</span><b>
+          </b><span class="xmltag">&lt;valueCode</span><span class="xmlattr"> value="<span class="xmlattrvalue">SHALL</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;/extension&gt;</span><b>
+        </b><span class="xmltag">&lt;code</span><span class="xmlattr"> value="<span class="xmlattrvalue">read</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;documentation</span><span class="xmlattr"> value="<span class="xmlattrvalue">Allows retrieval of a specific DAFProcedure by id</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/interaction&gt;</span><b>
+      </b><span class="xmltag">&lt;interaction</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;extension</span><span class="xmlattr"> url="<span class="xmlattrvalue">http://hl7.org/fhir/ExtensionDefinition/conformance-common-expectation</span>"</span><span class="xmltag">&gt;</span><b>
+          </b><span class="xmltag">&lt;valueCode</span><span class="xmlattr"> value="<span class="xmlattrvalue">SHOULD</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;/extension&gt;</span><b>
+        </b><span class="xmltag">&lt;code</span><span class="xmlattr"> value="<span class="xmlattrvalue">history-instance</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;documentation</span><span class="xmlattr"> value="<span class="xmlattrvalue">Allows review of changes to DAFProcedure instance over time</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/interaction&gt;</span><b>
+      </b><span class="xmltag">&lt;interaction</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;extension</span><span class="xmlattr"> url="<span class="xmlattrvalue">http://hl7.org/fhir/ExtensionDefinition/conformance-common-expectation</span>"</span><span class="xmltag">&gt;</span><b>
+          </b><span class="xmltag">&lt;valueCode</span><span class="xmlattr"> value="<span class="xmlattrvalue">SHOULD</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;/extension&gt;</span><b>
+        </b><span class="xmltag">&lt;code</span><span class="xmlattr"> value="<span class="xmlattrvalue">vread</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;documentation</span><span class="xmlattr"> value="<span class="xmlattrvalue">Allows retrieval of a historical version of a DAFProcedure instance</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/interaction&gt;</span><b>
+      </b><span class="xmltag">&lt;searchParam</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;extension</span><span class="xmlattr"> url="<span class="xmlattrvalue">http://hl7.org/fhir/ExtensionDefinition/conformance-common-expectation</span>"</span><span class="xmltag">&gt;</span><b>
+          </b><span class="xmltag">&lt;valueCode</span><span class="xmlattr"> value="<span class="xmlattrvalue">SHALL</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;/extension&gt;</span><b>
+        </b><span class="xmltag">&lt;name</span><span class="xmlattr"> value="<span class="xmlattrvalue">identifier</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;type</span><span class="xmlattr"> value="<span class="xmlattrvalue">token</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/searchParam&gt;</span><b>
+      </b><span class="xmltag">&lt;searchParam</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;extension</span><span class="xmlattr"> url="<span class="xmlattrvalue">http://hl7.org/fhir/ExtensionDefinition/conformance-common-expectation</span>"</span><span class="xmltag">&gt;</span><b>
+          </b><span class="xmltag">&lt;valueCode</span><span class="xmlattr"> value="<span class="xmlattrvalue">SHALL</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;/extension&gt;</span><b>
+        </b><span class="xmltag">&lt;name</span><span class="xmlattr"> value="<span class="xmlattrvalue">type</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;type</span><span class="xmlattr"> value="<span class="xmlattrvalue">token</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/searchParam&gt;</span><b>
+      </b><span class="xmltag">&lt;searchParam</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;extension</span><span class="xmlattr"> url="<span class="xmlattrvalue">http://hl7.org/fhir/ExtensionDefinition/conformance-common-expectation</span>"</span><span class="xmltag">&gt;</span><b>
+          </b><span class="xmltag">&lt;valueCode</span><span class="xmlattr"> value="<span class="xmlattrvalue">SHALL</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;/extension&gt;</span><b>
+        </b><span class="xmltag">&lt;name</span><span class="xmlattr"> value="<span class="xmlattrvalue">date</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;type</span><span class="xmlattr"> value="<span class="xmlattrvalue">date</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/searchParam&gt;</span><b>
+      </b><span class="xmltag">&lt;searchParam</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;extension</span><span class="xmlattr"> url="<span class="xmlattrvalue">http://hl7.org/fhir/ExtensionDefinition/conformance-common-expectation</span>"</span><span class="xmltag">&gt;</span><b>
+          </b><span class="xmltag">&lt;valueCode</span><span class="xmlattr"> value="<span class="xmlattrvalue">SHALL</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;/extension&gt;</span><b>
+        </b><span class="xmltag">&lt;name</span><span class="xmlattr"> value="<span class="xmlattrvalue">patient</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;type</span><span class="xmlattr"> value="<span class="xmlattrvalue">reference</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/searchParam&gt;</span><b>
+    </b><span class="xmltag">&lt;/resource&gt;</span><b>
+    </b><span class="xmltag">&lt;resource</span><span class="xmltag">&gt;</span><b>
+      </b><span class="xmltag">&lt;type</span><span class="xmlattr"> value="<span class="xmlattrvalue">DAFSmokingStatus</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;profile</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;reference</span><span class="xmlattr"> value="<span class="xmlattrvalue">observation-daf-smokingstatus.html</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/profile&gt;</span><b>
+      </b><span class="xmltag">&lt;interaction</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;extension</span><span class="xmlattr"> url="<span class="xmlattrvalue">http://hl7.org/fhir/ExtensionDefinition/conformance-common-expectation</span>"</span><span class="xmltag">&gt;</span><b>
+          </b><span class="xmltag">&lt;valueCode</span><span class="xmlattr"> value="<span class="xmlattrvalue">SHALL</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;/extension&gt;</span><b>
+        </b><span class="xmltag">&lt;code</span><span class="xmlattr"> value="<span class="xmlattrvalue">search-type</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;documentation</span><span class="xmlattr"> value="<span class="xmlattrvalue">Allows discovery of existing DAFSmokingStatus resources using different search criteria</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/interaction&gt;</span><b>
+      </b><span class="xmltag">&lt;interaction</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;extension</span><span class="xmlattr"> url="<span class="xmlattrvalue">http://hl7.org/fhir/ExtensionDefinition/conformance-common-expectation</span>"</span><span class="xmltag">&gt;</span><b>
+          </b><span class="xmltag">&lt;valueCode</span><span class="xmlattr"> value="<span class="xmlattrvalue">SHALL</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;/extension&gt;</span><b>
+        </b><span class="xmltag">&lt;code</span><span class="xmlattr"> value="<span class="xmlattrvalue">read</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;documentation</span><span class="xmlattr"> value="<span class="xmlattrvalue">Allows retrieval of a specific DAFSmokingStatus by id</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/interaction&gt;</span><b>
+      </b><span class="xmltag">&lt;interaction</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;extension</span><span class="xmlattr"> url="<span class="xmlattrvalue">http://hl7.org/fhir/ExtensionDefinition/conformance-common-expectation</span>"</span><span class="xmltag">&gt;</span><b>
+          </b><span class="xmltag">&lt;valueCode</span><span class="xmlattr"> value="<span class="xmlattrvalue">SHOULD</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;/extension&gt;</span><b>
+        </b><span class="xmltag">&lt;code</span><span class="xmlattr"> value="<span class="xmlattrvalue">history-instance</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;documentation</span><span class="xmlattr"> value="<span class="xmlattrvalue">Allows review of changes to DAFSmokingStatus instance over time</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/interaction&gt;</span><b>
+      </b><span class="xmltag">&lt;interaction</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;extension</span><span class="xmlattr"> url="<span class="xmlattrvalue">http://hl7.org/fhir/ExtensionDefinition/conformance-common-expectation</span>"</span><span class="xmltag">&gt;</span><b>
+          </b><span class="xmltag">&lt;valueCode</span><span class="xmlattr"> value="<span class="xmlattrvalue">SHOULD</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;/extension&gt;</span><b>
+        </b><span class="xmltag">&lt;code</span><span class="xmlattr"> value="<span class="xmlattrvalue">vread</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;documentation</span><span class="xmlattr"> value="<span class="xmlattrvalue">Allows retrieval of a historical version of a DAFSmokingStatus instance</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/interaction&gt;</span><b>
+      </b><span class="xmltag">&lt;searchParam</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;extension</span><span class="xmlattr"> url="<span class="xmlattrvalue">http://hl7.org/fhir/ExtensionDefinition/conformance-common-expectation</span>"</span><span class="xmltag">&gt;</span><b>
+          </b><span class="xmltag">&lt;valueCode</span><span class="xmlattr"> value="<span class="xmlattrvalue">SHALL</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;/extension&gt;</span><b>
+        </b><span class="xmltag">&lt;name</span><span class="xmlattr"> value="<span class="xmlattrvalue">identifier</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;type</span><span class="xmlattr"> value="<span class="xmlattrvalue">token</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/searchParam&gt;</span><b>
+      </b><span class="xmltag">&lt;searchParam</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;extension</span><span class="xmlattr"> url="<span class="xmlattrvalue">http://hl7.org/fhir/ExtensionDefinition/conformance-common-expectation</span>"</span><span class="xmltag">&gt;</span><b>
+          </b><span class="xmltag">&lt;valueCode</span><span class="xmlattr"> value="<span class="xmlattrvalue">SHALL</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;/extension&gt;</span><b>
+        </b><span class="xmltag">&lt;name</span><span class="xmlattr"> value="<span class="xmlattrvalue">date</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;type</span><span class="xmlattr"> value="<span class="xmlattrvalue">date</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/searchParam&gt;</span><b>
+      </b><span class="xmltag">&lt;searchParam</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;extension</span><span class="xmlattr"> url="<span class="xmlattrvalue">http://hl7.org/fhir/ExtensionDefinition/conformance-common-expectation</span>"</span><span class="xmltag">&gt;</span><b>
+          </b><span class="xmltag">&lt;valueCode</span><span class="xmlattr"> value="<span class="xmlattrvalue">SHALL</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;/extension&gt;</span><b>
+        </b><span class="xmltag">&lt;name</span><span class="xmlattr"> value="<span class="xmlattrvalue">value-concept</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;type</span><span class="xmlattr"> value="<span class="xmlattrvalue">token</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/searchParam&gt;</span><b>
+      </b><span class="xmltag">&lt;searchParam</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;extension</span><span class="xmlattr"> url="<span class="xmlattrvalue">http://hl7.org/fhir/ExtensionDefinition/conformance-common-expectation</span>"</span><span class="xmltag">&gt;</span><b>
+          </b><span class="xmltag">&lt;valueCode</span><span class="xmlattr"> value="<span class="xmlattrvalue">SHALL</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;/extension&gt;</span><b>
+        </b><span class="xmltag">&lt;name</span><span class="xmlattr"> value="<span class="xmlattrvalue">patient</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;type</span><span class="xmlattr"> value="<span class="xmlattrvalue">reference</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/searchParam&gt;</span><b>
+    </b><span class="xmltag">&lt;/resource&gt;</span><b>
+    </b><span class="xmltag">&lt;resource</span><span class="xmltag">&gt;</span><b>
+      </b><span class="xmltag">&lt;type</span><span class="xmlattr"> value="<span class="xmlattrvalue">DAFVitalSigns</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;profile</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;reference</span><span class="xmlattr"> value="<span class="xmlattrvalue">observation-daf-vitalsigns.html</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/profile&gt;</span><b>
+      </b><span class="xmltag">&lt;interaction</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;extension</span><span class="xmlattr"> url="<span class="xmlattrvalue">http://hl7.org/fhir/ExtensionDefinition/conformance-common-expectation</span>"</span><span class="xmltag">&gt;</span><b>
+          </b><span class="xmltag">&lt;valueCode</span><span class="xmlattr"> value="<span class="xmlattrvalue">SHALL</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;/extension&gt;</span><b>
+        </b><span class="xmltag">&lt;code</span><span class="xmlattr"> value="<span class="xmlattrvalue">search-type</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;documentation</span><span class="xmlattr"> value="<span class="xmlattrvalue">Allows discovery of existing DAFVitalSigns resources using different search criteria</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/interaction&gt;</span><b>
+      </b><span class="xmltag">&lt;interaction</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;extension</span><span class="xmlattr"> url="<span class="xmlattrvalue">http://hl7.org/fhir/ExtensionDefinition/conformance-common-expectation</span>"</span><span class="xmltag">&gt;</span><b>
+          </b><span class="xmltag">&lt;valueCode</span><span class="xmlattr"> value="<span class="xmlattrvalue">SHALL</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;/extension&gt;</span><b>
+        </b><span class="xmltag">&lt;code</span><span class="xmlattr"> value="<span class="xmlattrvalue">read</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;documentation</span><span class="xmlattr"> value="<span class="xmlattrvalue">Allows retrieval of a specific DAFVitalSigns by id</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/interaction&gt;</span><b>
+      </b><span class="xmltag">&lt;interaction</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;extension</span><span class="xmlattr"> url="<span class="xmlattrvalue">http://hl7.org/fhir/ExtensionDefinition/conformance-common-expectation</span>"</span><span class="xmltag">&gt;</span><b>
+          </b><span class="xmltag">&lt;valueCode</span><span class="xmlattr"> value="<span class="xmlattrvalue">SHOULD</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;/extension&gt;</span><b>
+        </b><span class="xmltag">&lt;code</span><span class="xmlattr"> value="<span class="xmlattrvalue">history-instance</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;documentation</span><span class="xmlattr"> value="<span class="xmlattrvalue">Allows review of changes to DAFVitalSigns instance over time</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/interaction&gt;</span><b>
+      </b><span class="xmltag">&lt;interaction</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;extension</span><span class="xmlattr"> url="<span class="xmlattrvalue">http://hl7.org/fhir/ExtensionDefinition/conformance-common-expectation</span>"</span><span class="xmltag">&gt;</span><b>
+          </b><span class="xmltag">&lt;valueCode</span><span class="xmlattr"> value="<span class="xmlattrvalue">SHOULD</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;/extension&gt;</span><b>
+        </b><span class="xmltag">&lt;code</span><span class="xmlattr"> value="<span class="xmlattrvalue">vread</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;documentation</span><span class="xmlattr"> value="<span class="xmlattrvalue">Allows retrieval of a historical version of a DAFVitalSigns instance</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/interaction&gt;</span><b>
+      </b><span class="xmltag">&lt;searchParam</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;extension</span><span class="xmlattr"> url="<span class="xmlattrvalue">http://hl7.org/fhir/ExtensionDefinition/conformance-common-expectation</span>"</span><span class="xmltag">&gt;</span><b>
+          </b><span class="xmltag">&lt;valueCode</span><span class="xmlattr"> value="<span class="xmlattrvalue">SHALL</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;/extension&gt;</span><b>
+        </b><span class="xmltag">&lt;name</span><span class="xmlattr"> value="<span class="xmlattrvalue">identifier</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;type</span><span class="xmlattr"> value="<span class="xmlattrvalue">token</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/searchParam&gt;</span><b>
+      </b><span class="xmltag">&lt;searchParam</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;extension</span><span class="xmlattr"> url="<span class="xmlattrvalue">http://hl7.org/fhir/ExtensionDefinition/conformance-common-expectation</span>"</span><span class="xmltag">&gt;</span><b>
+          </b><span class="xmltag">&lt;valueCode</span><span class="xmlattr"> value="<span class="xmlattrvalue">SHALL</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;/extension&gt;</span><b>
+        </b><span class="xmltag">&lt;name</span><span class="xmlattr"> value="<span class="xmlattrvalue">date</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;type</span><span class="xmlattr"> value="<span class="xmlattrvalue">date</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/searchParam&gt;</span><b>
+      </b><span class="xmltag">&lt;searchParam</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;extension</span><span class="xmlattr"> url="<span class="xmlattrvalue">http://hl7.org/fhir/ExtensionDefinition/conformance-common-expectation</span>"</span><span class="xmltag">&gt;</span><b>
+          </b><span class="xmltag">&lt;valueCode</span><span class="xmlattr"> value="<span class="xmlattrvalue">SHALL</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;/extension&gt;</span><b>
+        </b><span class="xmltag">&lt;name</span><span class="xmlattr"> value="<span class="xmlattrvalue">value-quantity</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;type</span><span class="xmlattr"> value="<span class="xmlattrvalue">quantity</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/searchParam&gt;</span><b>
+      </b><span class="xmltag">&lt;searchParam</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;extension</span><span class="xmlattr"> url="<span class="xmlattrvalue">http://hl7.org/fhir/ExtensionDefinition/conformance-common-expectation</span>"</span><span class="xmltag">&gt;</span><b>
+          </b><span class="xmltag">&lt;valueCode</span><span class="xmlattr"> value="<span class="xmlattrvalue">SHALL</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;/extension&gt;</span><b>
+        </b><span class="xmltag">&lt;name</span><span class="xmlattr"> value="<span class="xmlattrvalue">name-value[x]</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;type</span><span class="xmlattr"> value="<span class="xmlattrvalue">token</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/searchParam&gt;</span><b>
+      </b><span class="xmltag">&lt;searchParam</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;extension</span><span class="xmlattr"> url="<span class="xmlattrvalue">http://hl7.org/fhir/ExtensionDefinition/conformance-common-expectation</span>"</span><span class="xmltag">&gt;</span><b>
+          </b><span class="xmltag">&lt;valueCode</span><span class="xmlattr"> value="<span class="xmlattrvalue">SHALL</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;/extension&gt;</span><b>
+        </b><span class="xmltag">&lt;name</span><span class="xmlattr"> value="<span class="xmlattrvalue">patient</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;type</span><span class="xmlattr"> value="<span class="xmlattrvalue">reference</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/searchParam&gt;</span><b>
+    </b><span class="xmltag">&lt;/resource&gt;</span><b>
+    </b><span class="xmltag">&lt;resource</span><span class="xmltag">&gt;</span><b>
+      </b><span class="xmltag">&lt;type</span><span class="xmlattr"> value="<span class="xmlattrvalue">DAFList</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;profile</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;reference</span><span class="xmlattr"> value="<span class="xmlattrvalue">list-daf.html</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/profile&gt;</span><b>
+      </b><span class="xmltag">&lt;interaction</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;extension</span><span class="xmlattr"> url="<span class="xmlattrvalue">http://hl7.org/fhir/ExtensionDefinition/conformance-common-expectation</span>"</span><span class="xmltag">&gt;</span><b>
+          </b><span class="xmltag">&lt;valueCode</span><span class="xmlattr"> value="<span class="xmlattrvalue">SHALL</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;/extension&gt;</span><b>
+        </b><span class="xmltag">&lt;code</span><span class="xmlattr"> value="<span class="xmlattrvalue">search-type</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;documentation</span><span class="xmlattr"> value="<span class="xmlattrvalue">Allows discovery of existing DAFList resources using different search criteria</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/interaction&gt;</span><b>
+      </b><span class="xmltag">&lt;interaction</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;extension</span><span class="xmlattr"> url="<span class="xmlattrvalue">http://hl7.org/fhir/ExtensionDefinition/conformance-common-expectation</span>"</span><span class="xmltag">&gt;</span><b>
+          </b><span class="xmltag">&lt;valueCode</span><span class="xmlattr"> value="<span class="xmlattrvalue">SHALL</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;/extension&gt;</span><b>
+        </b><span class="xmltag">&lt;code</span><span class="xmlattr"> value="<span class="xmlattrvalue">read</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;documentation</span><span class="xmlattr"> value="<span class="xmlattrvalue">Allows retrieval of a specific DAFList by id</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/interaction&gt;</span><b>
+      </b><span class="xmltag">&lt;interaction</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;extension</span><span class="xmlattr"> url="<span class="xmlattrvalue">http://hl7.org/fhir/ExtensionDefinition/conformance-common-expectation</span>"</span><span class="xmltag">&gt;</span><b>
+          </b><span class="xmltag">&lt;valueCode</span><span class="xmlattr"> value="<span class="xmlattrvalue">SHOULD</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;/extension&gt;</span><b>
+        </b><span class="xmltag">&lt;code</span><span class="xmlattr"> value="<span class="xmlattrvalue">history-instance</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;documentation</span><span class="xmlattr"> value="<span class="xmlattrvalue">Allows review of changes to DAFList instance over time</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/interaction&gt;</span><b>
+      </b><span class="xmltag">&lt;interaction</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;extension</span><span class="xmlattr"> url="<span class="xmlattrvalue">http://hl7.org/fhir/ExtensionDefinition/conformance-common-expectation</span>"</span><span class="xmltag">&gt;</span><b>
+          </b><span class="xmltag">&lt;valueCode</span><span class="xmlattr"> value="<span class="xmlattrvalue">SHOULD</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;/extension&gt;</span><b>
+        </b><span class="xmltag">&lt;code</span><span class="xmlattr"> value="<span class="xmlattrvalue">vread</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;documentation</span><span class="xmlattr"> value="<span class="xmlattrvalue">Allows retrieval of a historical version of a DAFList instance</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/interaction&gt;</span><b>
+      </b><span class="xmltag">&lt;searchParam</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;extension</span><span class="xmlattr"> url="<span class="xmlattrvalue">http://hl7.org/fhir/ExtensionDefinition/conformance-common-expectation</span>"</span><span class="xmltag">&gt;</span><b>
+          </b><span class="xmltag">&lt;valueCode</span><span class="xmlattr"> value="<span class="xmlattrvalue">SHALL</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;/extension&gt;</span><b>
+        </b><span class="xmltag">&lt;name</span><span class="xmlattr"> value="<span class="xmlattrvalue">identifier</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;type</span><span class="xmlattr"> value="<span class="xmlattrvalue">token</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/searchParam&gt;</span><b>
+    </b><span class="xmltag">&lt;/resource&gt;</span><b>
+  </b><span class="xmltag">&lt;/rest&gt;</span><b>
+</b><span class="xmltag">&lt;/Conformance&gt;</span></pre>
+</div>
+
+
+<p>
+Usage note: every effort has been made to ensure that the 
+examples are correct and useful, but they are not a normative part 
+of the specification. 
+</p>
+
+</div>
+
+
+				</div><!-- /inner-wrapper -->
+            </div><!-- /row -->
+        </div><!-- /container -->
+        
+    </div><!-- /segment-content -->
+
+
+	<div id="segment-footer" class="segment"><!-- segment-footer -->
+		<div class="container"><!-- container -->
+			<div class="inner-wrapper">
+				<p>
+        © HL7.org 2011+. FHIR DSTU (v0.4.0-3920) generated on Tue, Dec 30, 2014 10:59+0000. <!-- <a href="qa.html">QA Report</a> --> <!-- achive note -->
+        <br/>
+        <span style="color: #FFFF77">
+        Links: <a style="color: #81BEF7" href="timelines.html">What's a DSTU?</a> | 
+               <a style="color: #81BEF7" href="history.html">Version History</a> | 
+               <a style="color: #81BEF7" href="http://services.w3.org/htmldiff?doc1=http%3A%2F%2Fhl7.org%2Fimplement%2Fstandards%2Ffhir%2Fconformance-daf-query-requestor.xml.html&amp;doc2=http%3A%2F%2Fhl7-fhir.github.io%2F%2Fconformance-daf-query-requestor.xml.html">Compare to DSTU</a> | 
+               <a style="color: #81BEF7" rel="license" href="license.html"><img src="cc0.png" style="border-style: none;" alt="CC0"/></a> | 
+               <a style="color: #81BEF7" target="_blank" href="http://gforge.hl7.org/gf/project/fhir/tracker/?action=TrackerItemAdd&amp;tracker_id=677">Propose a change</a>   
+        </span>
+        </p>
+			</div><!-- /inner-wrapper -->
+		</div><!-- /container -->
+	</div><!-- /segment-footer -->
+<!-- disqus thread -->
+<!--disqus-->
+<!-- end disqus -->        
+	
+	<div id="segment-post-footer" class="segment hidden"><!-- segment-post-footer -->
+		<div class="container"><!-- container -->
+		</div><!-- /container -->
+	</div><!-- /segment-post-footer -->
+    
+    <!-- JS and analytics only. -->
+    <!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="./assets/js/jquery.js"> </script>   <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+<script src="./dist/js/bootstrap.min.js"> </script>
+<script src="./assets/js/respond.min.js"> </script>
+
+<script src="./assets/js/fhir.js"> </script>
+
+<!-- Analytics Below
+================================================== -->
+
+    
+</body>
+</html>

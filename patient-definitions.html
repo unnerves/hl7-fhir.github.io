@@ -1,0 +1,441 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+  <title>Patient - FHIR v0.4.0</title>
+
+  
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <meta content="http://hl7.org/fhir" name="author"/>
+
+  <link rel="stylesheet" href="fhir.css"/>
+  <link rel="Prev" href="http://hl7.org/implement/standards/fhir/patient-definitions.html"/>
+
+    <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" href="./dist/css/bootstrap.css"/>
+  <link rel="stylesheet" href="./assets/css/bootstrap-fhir.css"/>
+
+    <!-- Project extras -->
+  <link rel="stylesheet" href="./assets/css/project.css"/>
+  <link rel="stylesheet" href="./assets/css/pygments-manni.css"/>
+	<link rel="stylesheet" href="jquery-ui.css"/>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- [if lt IE 9]>
+  <script src="./assets/js/html5shiv.js"></script>
+  <script src="./assets/js/respond.min.js"></script>
+  <![endif] -->
+
+    <!-- Favicons -->
+  <link sizes="144x144" rel="apple-touch-icon-precomposed" href="./assets/ico/apple-touch-icon-144-precomposed.png"/>
+  <link sizes="114x114" rel="apple-touch-icon-precomposed" href="./assets/ico/apple-touch-icon-114-precomposed.png"/>
+  <link sizes="72x72" rel="apple-touch-icon-precomposed" href="./assets/ico/apple-touch-icon-72-precomposed.png"/>
+  <link rel="apple-touch-icon-precomposed" href="./assets/ico/apple-touch-icon-57-precomposed.png"/>
+  <link rel="shortcut icon" href="./assets/ico/favicon.png"/>
+
+</head>
+<body>
+	<div id="segment-header" class="segment">  <!-- segment-header -->	
+		<div class="container">  <!-- container -->
+			<a id="logo" href="http://hl7.org/fhir"><img alt="logo fhir" src="./assets/images/fhir-logo-www.png"/> </a>
+			<div id="hl7-status">
+				<b>Continuous Integration Build</b>
+			</div>       	
+			
+			<div id="hl7-nav">
+				 <a id="hl7-logo" href="http://www.hl7.org">
+					<img height="50" alt="visit the hl7 website" width="42" src="./assets/images/hl7-logo.png"/>
+				</a> 
+			</div>       	
+			  <!-- hl7-search -->
+		</div>
+		<div class="container">  <!-- container -->
+	</div></div>  <!-- /segment-header -->	
+
+
+	<div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+		<div id="stripe"> </div>
+		<div class="container">  <!-- container -->
+   <!-- HEADER CONTENT -->
+ 	      		
+ 	      		      		
+			<nav class="navbar navbar-inverse">
+				<div class="container">
+					<button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+						<span class="icon-bar"> </span>
+						<span class="icon-bar"> </span>
+						<span class="icon-bar"> </span>
+					</button>
+					<a class="navbar-brand hidden" href="index.html">FHIR</a>
+					<div class="nav-collapse collapse navbar-inverse-collapse">
+						<ul class="nav navbar-nav">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="documentation.html">Documentation</a></li>
+              <li><a href="implementation.html">Implementation</a></li>
+              <li><a href="resourcelist.html">Resources</a></li>
+              <li><a href="clinical.html">Clinical</a></li>
+              <li><a href="administration.html">Administrative</a></li>
+              <li><a href="infrastructure.html">Infrastructure</a></li>
+              <li><a href="financial.html">Financial</a></li>
+
+						</ul>
+					</div>  <!-- /.nav-collapse -->
+				</div>  <!-- /.container -->
+			</nav>  <!-- /.navbar -->
+      		
+				
+  <!-- /HEADER CONTENT -->				
+		</div>  <!-- /container -->
+	</div>  <!-- /segment-navbar -->
+	
+
+	<div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+		<div class="container">  <!-- container -->	
+			<ul class="breadcrumb">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="administration.html">Administrative</a></li>        <li><a href="patient.html">Patient</a></li>        <li><b>Detailed Descriptions</b></li>          <!-- patient.html / res-Detailed Descriptions -->
+
+			</ul>	
+		</div>  <!-- /container -->
+	</div>  <!-- /segment-breadcrumb -->
+	
+
+	<div id="segment-content" class="segment">  <!-- segment-content -->
+	<div class="container">  <!-- container -->
+            <div class="row">
+            	<div class="inner-wrapper">
+  <!-- CONTENT CONTENT -->
+
+
+<div class="col-9">
+
+<ul class="nav nav-tabs"><li><a href="patient.html">Content</a></li><li><a href="patient-examples.html">Examples</a></li><li class="active"><a href="#">Detailed Descriptions</a></li><li><a href="patient-mappings.html">Mappings</a></li><li><a href="patient-packages.html">Conformance Packages</a></li><li><a href="patient-operations.html">Operations</a></li></ul>
+
+<h2><span class="sectioncount">5.1.7<a name="5.1.7"> </a></span> Resource Patient - Detailed Descriptions</h2>
+
+<p>Detailed Descriptions for the elements in the Patient resource.</p>
+
+<table class="dict">
+  <tr><td colspan="2" class="structure"><a name="Patient"> </a><b>Patient</b></td></tr>
+  <tr><td>Definition</td><td><p>Demographics and other administrative information about a person or animal receiving care or other health-related services.</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>1..1</td></tr>
+  <tr><td>Requirements</td><td><p>Tracking patient is the center of the healthcare process.</p>
+</td></tr>
+  <tr><td>Aliases</td><td>SubjectOfCare Client Resident</td></tr>
+  <tr><td colspan="2" class="structure"><a name="Patient.identifier"> </a><b>Patient.identifier</b></td></tr>
+  <tr><td>Definition</td><td><p>An identifier that applies to this person as a patient.</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>0..*</td></tr>
+  <tr><td><a href="datatypes.html">Type</a></td><td><a href="datatypes.html#Identifier">Identifier</a></td></tr>
+  <tr><td>Requirements</td><td><p>Patients are almost always assigned specific numerical identifiers.</p>
+</td></tr>
+  <tr><td><a href="search.html#summary">Summary</a></td><td>true</td></tr>
+  <tr><td colspan="2" class="structure"><a name="Patient.name"> </a><b>Patient.name</b></td></tr>
+  <tr><td>Definition</td><td><p>A name associated with the individual.</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>0..*</td></tr>
+  <tr><td><a href="datatypes.html">Type</a></td><td><a href="datatypes.html#HumanName">HumanName</a></td></tr>
+  <tr><td>Requirements</td><td><p>Need to be able to track the person by multiple names. Examples are your official name and a partner name.</p>
+</td></tr>
+  <tr><td><a href="search.html#summary">Summary</a></td><td>true</td></tr>
+  <tr><td>Comments</td><td><p>Person may have multiple names with different uses or applicable periods.For animals, the name is a &quot;HumanName&quot; in the sense that is assigned and used by humans and has the same patterns.</p>
+</td></tr>
+  <tr><td colspan="2" class="structure"><a name="Patient.telecom"> </a><b>Patient.telecom</b></td></tr>
+  <tr><td>Definition</td><td><p>A contact detail (e.g. a telephone number or an email address) by which the individual may be contacted.</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>0..*</td></tr>
+  <tr><td><a href="datatypes.html">Type</a></td><td><a href="datatypes.html#ContactPoint">ContactPoint</a></td></tr>
+  <tr><td>Requirements</td><td><p>People have (primary) ways to contact them in some way such as phone, email.</p>
+</td></tr>
+  <tr><td><a href="search.html#summary">Summary</a></td><td>true</td></tr>
+  <tr><td>Comments</td><td><p>Person may have multiple ways to be contacted with different uses or applicable periods.
+May need to have options for contacting the person urgently and also to help with identification. The address may not go directly to the individual, but may reach another party that is able to proxy for the patient (i.e. home phone, or pet owner's phone).</p>
+</td></tr>
+  <tr><td colspan="2" class="structure"><a name="Patient.gender"> </a><b>Patient.gender</b></td></tr>
+  <tr><td>Definition</td><td><p>Administrative Gender - the gender that the patient is considered to have for administration and record keeping purposes.</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
+  <tr><td><a href="terminologies.html">Binding</a></td><td>AdministrativeGender: Required: <a href="administrative-gender.html">http://hl7.org/fhir/administrative-gender</a> (The gender of a person used for administrative purposes)</td></tr>
+  <tr><td><a href="datatypes.html">Type</a></td><td><a href="datatypes.html#code">code</a></td></tr>
+  <tr><td>Requirements</td><td><p>Needed for identification of the individual, in combination with (at least) name and birth date. Gender of individual drives many clinical processes.</p>
+</td></tr>
+  <tr><td><a href="search.html#summary">Summary</a></td><td>true</td></tr>
+  <tr><td>Comments</td><td><p>The gender may not match the biological sex as determined by genetics, or the individual's preferred identification. Note that for both humans and particularly animals, there are other legitimate possibilities than M and F, though the vast majority of systems and contexts only support M and F.</p>
+</td></tr>
+  <tr><td colspan="2" class="structure"><a name="Patient.birthDate"> </a><b>Patient.birthDate</b></td></tr>
+  <tr><td>Definition</td><td><p>The date and time of birth for the individual.</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
+  <tr><td><a href="datatypes.html">Type</a></td><td><a href="datatypes.html#date">date</a></td></tr>
+  <tr><td>Requirements</td><td><p>Age of the individual drives many clinical processes. Next to the common use case of capturing someone birth date, also in some common cases time is registered.</p>
+</td></tr>
+  <tr><td><a href="search.html#summary">Summary</a></td><td>true</td></tr>
+  <tr><td>Comments</td><td><p>At least an estimated year should be provided as a guess if the real dob is unknown.</p>
+</td></tr>
+  <tr><td>LOINC Code</td><td>21112-8</td></tr>
+  <tr><td colspan="2" class="structure"><a name="Patient.deceased_x_"> </a><b>Patient.deceased[x]</b></td></tr>
+  <tr><td>Definition</td><td><p>Indicates if the individual is deceased or not.</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
+  <tr><td><a href="datatypes.html">Type</a></td><td><a href="datatypes.html#boolean">boolean</a>|<a href="datatypes.html#dateTime">dateTime</a></td></tr>
+  <tr><td><a href="conformance-rules.html#ismodifier">Is Modifier</a></td><td>true</td></tr>
+  <tr><td>Requirements</td><td><p>The fact that a patient is deceased influences the clinical process. Also, in human communication and relation management it is necessary to know whether the person is alive.</p>
+</td></tr>
+  <tr><td><a href="search.html#summary">Summary</a></td><td>true</td></tr>
+  <tr><td>Comments</td><td><p>If there's no value in the instance it means there is no statement on whether or not the individual is deceased. Most systems will interpret the absence of a value as a sign of the person being alive.</p>
+</td></tr>
+  <tr><td colspan="2" class="structure"><a name="Patient.address"> </a><b>Patient.address</b></td></tr>
+  <tr><td>Definition</td><td><p>Addresses for the individual.</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>0..*</td></tr>
+  <tr><td><a href="datatypes.html">Type</a></td><td><a href="datatypes.html#Address">Address</a></td></tr>
+  <tr><td>Requirements</td><td><p>May need to keep track of persons addresses for contacting, billing or reporting requirements and also to help with identification.</p>
+</td></tr>
+  <tr><td><a href="search.html#summary">Summary</a></td><td>true</td></tr>
+  <tr><td>Comments</td><td><p>Person may have multiple addresses with different uses or applicable periods.</p>
+</td></tr>
+  <tr><td colspan="2" class="structure"><a name="Patient.maritalStatus"> </a><b>Patient.maritalStatus</b></td></tr>
+  <tr><td>Definition</td><td><p>This field contains a patient's most recent marital (civil) status.</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
+  <tr><td><a href="terminologies.html">Binding</a></td><td>MaritalStatus: Preferred: <a href="valueset-marital-status.html">See http://hl7.org/fhir/vs/marital-status</a> (The domestic partnership status of a person)</td></tr>
+  <tr><td><a href="datatypes.html">Type</a></td><td><a href="datatypes.html#CodeableConcept">CodeableConcept</a></td></tr>
+  <tr><td>Requirements</td><td><p>Most, if not all systems capture it.</p>
+</td></tr>
+  <tr><td><a href="search.html#summary">Summary</a></td><td>true</td></tr>
+  <tr><td colspan="2" class="structure"><a name="Patient.multipleBirth_x_"> </a><b>Patient.multipleBirth[x]</b></td></tr>
+  <tr><td>Definition</td><td><p>Indicates whether the patient is part of a multiple or indicates the actual birth order.</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
+  <tr><td><a href="datatypes.html">Type</a></td><td><a href="datatypes.html#boolean">boolean</a>|<a href="datatypes.html#integer">integer</a></td></tr>
+  <tr><td>Requirements</td><td><p>For disambiguation of multiple-birth children, especially relevant where the care provider doesn't meet the patient, such as labs.</p>
+</td></tr>
+  <tr><td><a href="search.html#summary">Summary</a></td><td>true</td></tr>
+  <tr><td colspan="2" class="structure"><a name="Patient.photo"> </a><b>Patient.photo</b></td></tr>
+  <tr><td>Definition</td><td><p>Image of the person.</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>0..*</td></tr>
+  <tr><td><a href="datatypes.html">Type</a></td><td><a href="datatypes.html#Attachment">Attachment</a></td></tr>
+  <tr><td>Requirements</td><td><p>Many EHR systems have the capability to capture an image of the patient. Fits with newer social media usage too.</p>
+</td></tr>
+  <tr><td colspan="2" class="structure"><a name="Patient.contact"> </a><b>Patient.contact</b></td></tr>
+  <tr><td>Definition</td><td><p>A contact party (e.g. guardian, partner, friend) for the patient.</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>0..*</td></tr>
+  <tr><td>Requirements</td><td><p>Need to track people you can contact about the patient.</p>
+</td></tr>
+  <tr><td>Comments</td><td><p>Contact covers all kinds of contact parties: family members, business contacts, guardians, caregivers. Not applicable to register pedigree and family ties beyond use of having contact.</p>
+</td></tr>
+  <tr><td>Invariants</td><td><b>Defined on this element</b><br/>
+<b title="Formal Invariant Identifier">Inv-1</b>: SHALL at least contain a contact's details or a reference to an organization (xpath: f:name or f:telecom or f:address or f:organization)</td></tr>
+  <tr><td colspan="2" class="structure"><a name="Patient.contact.relationship"> </a><b>Patient.contact.relationship</b></td></tr>
+  <tr><td>Definition</td><td><p>The nature of the relationship between the patient and the contact person.</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>0..*</td></tr>
+  <tr><td><a href="terminologies.html">Binding</a></td><td>ContactRelationship: Preferred: <a href="valueset-patient-contact-relationship.html">See http://hl7.org/fhir/vs/patient-contact-relationship</a> (The nature of the relationship between a patient and a contact person for that patient)</td></tr>
+  <tr><td><a href="datatypes.html">Type</a></td><td><a href="datatypes.html#CodeableConcept">CodeableConcept</a></td></tr>
+  <tr><td>Requirements</td><td><p>Used to determine which contact person is the most relevant to approach, depending on circumstances.</p>
+</td></tr>
+  <tr><td colspan="2" class="structure"><a name="Patient.contact.name"> </a><b>Patient.contact.name</b></td></tr>
+  <tr><td>Definition</td><td><p>A name associated with the person.</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
+  <tr><td><a href="datatypes.html">Type</a></td><td><a href="datatypes.html#HumanName">HumanName</a></td></tr>
+  <tr><td>Requirements</td><td><p>Contact persons need to be identified by name, but it is uncommon to need details about multiple other names for that person.</p>
+</td></tr>
+  <tr><td colspan="2" class="structure"><a name="Patient.contact.telecom"> </a><b>Patient.contact.telecom</b></td></tr>
+  <tr><td>Definition</td><td><p>A contact detail for the person, e.g. a telephone number or an email address.</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>0..*</td></tr>
+  <tr><td><a href="datatypes.html">Type</a></td><td><a href="datatypes.html#ContactPoint">ContactPoint</a></td></tr>
+  <tr><td>Requirements</td><td><p>People have (primary) ways to contact them in some way such as phone, email.</p>
+</td></tr>
+  <tr><td>Comments</td><td><p>Person may have multiple ways to be contacted with different uses or applicable periods.
+May need to have options for contacting the person urgently, and also to help with identification.</p>
+</td></tr>
+  <tr><td colspan="2" class="structure"><a name="Patient.contact.address"> </a><b>Patient.contact.address</b></td></tr>
+  <tr><td>Definition</td><td><p>Address for the contact person.</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
+  <tr><td><a href="datatypes.html">Type</a></td><td><a href="datatypes.html#Address">Address</a></td></tr>
+  <tr><td>Requirements</td><td><p>Need to keep track where the contact person can be contacted per postal mail or visited.</p>
+</td></tr>
+  <tr><td colspan="2" class="structure"><a name="Patient.contact.gender"> </a><b>Patient.contact.gender</b></td></tr>
+  <tr><td>Definition</td><td><p>Administrative Gender - the gender that the person is considered to have for administration and record keeping purposes.</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
+  <tr><td><a href="terminologies.html">Binding</a></td><td>AdministrativeGender: Required: <a href="administrative-gender.html">http://hl7.org/fhir/administrative-gender</a> (The gender of a person used for administrative purposes)</td></tr>
+  <tr><td><a href="datatypes.html">Type</a></td><td><a href="datatypes.html#code">code</a></td></tr>
+  <tr><td>Requirements</td><td><p>Needed to address the person correctly.</p>
+</td></tr>
+  <tr><td colspan="2" class="structure"><a name="Patient.contact.organization"> </a><b>Patient.contact.organization</b></td></tr>
+  <tr><td>Definition</td><td><p>Organization on behalf of which the contact is acting or for which the contact is working.</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
+  <tr><td><a href="datatypes.html">Type</a></td><td><a href="references.html#Reference">Reference</a>(<a href="organization.html">Organization</a>)</td></tr>
+  <tr><td>Requirements</td><td><p>For guardians or business related contacts, the organization is relevant.</p>
+</td></tr>
+  <tr><td>Invariants</td><td><b>Affect this element</b><br/>
+<b>Inv-1</b>: SHALL at least contain a contact's details or a reference to an organization (xpath: f:name or f:telecom or f:address or f:organization)</td></tr>
+  <tr><td colspan="2" class="structure"><a name="Patient.contact.period"> </a><b>Patient.contact.period</b></td></tr>
+  <tr><td>Definition</td><td><p>The period during which this person or organization is valid to be contacted relating to this patient.</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
+  <tr><td><a href="datatypes.html">Type</a></td><td><a href="datatypes.html#Period">Period</a></td></tr>
+  <tr><td colspan="2" class="structure"><a name="Patient.animal"> </a><b>Patient.animal</b></td></tr>
+  <tr><td>Definition</td><td><p>This element has a value if the patient is an animal.</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
+  <tr><td><a href="conformance-rules.html#ismodifier">Is Modifier</a></td><td>true</td></tr>
+  <tr><td>Requirements</td><td><p>Many clinical systems are extended to care for animal patients as well as human.</p>
+</td></tr>
+  <tr><td><a href="search.html#summary">Summary</a></td><td>true</td></tr>
+  <tr><td>Comments</td><td><p>The animal element is labeled &quot;Is Modifier&quot; since patients may be non-human. Systems SHALL either handle patient details appropriately (e.g. inform users patient is not human) or reject non-human patient records.</p>
+</td></tr>
+  <tr><td colspan="2" class="structure"><a name="Patient.animal.species"> </a><b>Patient.animal.species</b></td></tr>
+  <tr><td>Definition</td><td><p>Identifies the high level categorization of the kind of animal.</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>1..1</td></tr>
+  <tr><td><a href="terminologies.html">Binding</a></td><td>AnimalSpecies: Example: <a href="valueset-animal-species.html">See http://hl7.org/fhir/vs/animal-species</a> (The species of an animal)</td></tr>
+  <tr><td><a href="datatypes.html">Type</a></td><td><a href="datatypes.html#CodeableConcept">CodeableConcept</a></td></tr>
+  <tr><td>Requirements</td><td><p>Need to know what kind of animal.</p>
+</td></tr>
+  <tr><td><a href="search.html#summary">Summary</a></td><td>true</td></tr>
+  <tr><td>Comments</td><td><p>If the patient is non-human, at least a species SHALL be specified.</p>
+</td></tr>
+  <tr><td colspan="2" class="structure"><a name="Patient.animal.breed"> </a><b>Patient.animal.breed</b></td></tr>
+  <tr><td>Definition</td><td><p>Identifies the detailed categorization of the kind of animal.</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
+  <tr><td><a href="terminologies.html">Binding</a></td><td>AnimalBreed: Example: <a href="valueset-animal-breeds.html">See http://hl7.org/fhir/vs/animal-breeds</a> (The breed of an animal)</td></tr>
+  <tr><td><a href="datatypes.html">Type</a></td><td><a href="datatypes.html#CodeableConcept">CodeableConcept</a></td></tr>
+  <tr><td>Requirements</td><td><p>May need to know the specific kind within the species.</p>
+</td></tr>
+  <tr><td><a href="search.html#summary">Summary</a></td><td>true</td></tr>
+  <tr><td colspan="2" class="structure"><a name="Patient.animal.genderStatus"> </a><b>Patient.animal.genderStatus</b></td></tr>
+  <tr><td>Definition</td><td><p>Indicates the current state of the animal's reproductive organs.</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
+  <tr><td><a href="terminologies.html">Binding</a></td><td>AnimalGenderStatus: Example: <a href="valueset-animal-genderstatus.html">See http://hl7.org/fhir/vs/animal-genderstatus</a> (The state of the animal's reproductive organs)</td></tr>
+  <tr><td><a href="datatypes.html">Type</a></td><td><a href="datatypes.html#CodeableConcept">CodeableConcept</a></td></tr>
+  <tr><td>Requirements</td><td><p>Gender status can affect housing and animal behavior.</p>
+</td></tr>
+  <tr><td><a href="search.html#summary">Summary</a></td><td>true</td></tr>
+  <tr><td colspan="2" class="structure"><a name="Patient.communication"> </a><b>Patient.communication</b></td></tr>
+  <tr><td>Definition</td><td><p>Languages which may be used to communicate with the patient about his or her health.</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>0..*</td></tr>
+  <tr><td><a href="terminologies.html">Binding</a></td><td>Language: Required: <a href="http://tools.ietf.org/html/bcp47">IETF language tag</a> (A human language)</td></tr>
+  <tr><td><a href="datatypes.html">Type</a></td><td><a href="datatypes.html#CodeableConcept">CodeableConcept</a></td></tr>
+  <tr><td>Requirements</td><td><p>If a patient does not speak the local language, interpreters may be required, so languages spoken is an important things to keep track of both for patient and other persons of interest.</p>
+</td></tr>
+  <tr><td>Comments</td><td><p>If no language is specified, this <em>implies</em> that the default local language is spoken.
+For animals, language is not a relevant field, and should be absent from the instance.</p>
+</td></tr>
+  <tr><td colspan="2" class="structure"><a name="Patient.careProvider"> </a><b>Patient.careProvider</b></td></tr>
+  <tr><td>Definition</td><td><p>Patient's nominated care provider.</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>0..*</td></tr>
+  <tr><td><a href="datatypes.html">Type</a></td><td><a href="references.html#Reference">Reference</a>(<a href="organization.html">Organization</a> | <a href="practitioner.html">Practitioner</a>)</td></tr>
+  <tr><td>To Do</td><td>Need to rationalize this with circleOfCare from CarePlan.</td></tr>
+  <tr><td colspan="2" class="structure"><a name="Patient.managingOrganization"> </a><b>Patient.managingOrganization</b></td></tr>
+  <tr><td>Definition</td><td><p>Organization that is the custodian of the patient record.</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
+  <tr><td><a href="datatypes.html">Type</a></td><td><a href="references.html#Reference">Reference</a>(<a href="organization.html">Organization</a>)</td></tr>
+  <tr><td>Requirements</td><td><p>Need to know who recognizes this patient record, manages and updates it.</p>
+</td></tr>
+  <tr><td><a href="search.html#summary">Summary</a></td><td>true</td></tr>
+  <tr><td colspan="2" class="structure"><a name="Patient.link"> </a><b>Patient.link</b></td></tr>
+  <tr><td>Definition</td><td><p>Link to another patient resource that concerns the same actual person.</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>0..*</td></tr>
+  <tr><td><a href="conformance-rules.html#ismodifier">Is Modifier</a></td><td>true</td></tr>
+  <tr><td>Requirements</td><td><p>There are multiple usecases: * Duplicate patient records due to the clerical errors associated with the difficulties of identifying humans consistently, and * Distribution of patient information across multiple servers.</p>
+</td></tr>
+  <tr><td><a href="search.html#summary">Summary</a></td><td>true</td></tr>
+  <tr><td>Comments</td><td><p>There is no assumption that linked patient records have mutual links.</p>
+</td></tr>
+  <tr><td colspan="2" class="structure"><a name="Patient.link.other"> </a><b>Patient.link.other</b></td></tr>
+  <tr><td>Definition</td><td><p>The other patient resource that the link refers to.</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>1..1</td></tr>
+  <tr><td><a href="datatypes.html">Type</a></td><td><a href="references.html#Reference">Reference</a>(<a href="patient.html">Patient</a>)</td></tr>
+  <tr><td><a href="conformance-rules.html#ismodifier">Is Modifier</a></td><td>true</td></tr>
+  <tr><td><a href="search.html#summary">Summary</a></td><td>true</td></tr>
+  <tr><td colspan="2" class="structure"><a name="Patient.link.type"> </a><b>Patient.link.type</b></td></tr>
+  <tr><td>Definition</td><td><p>The type of link between this patient resource and another patient resource.</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>1..1</td></tr>
+  <tr><td><a href="terminologies.html">Binding</a></td><td>LinkType: Required: <a href="link-type.html">http://hl7.org/fhir/link-type</a> (The type of link between this patient resource and another patient resource.)</td></tr>
+  <tr><td><a href="datatypes.html">Type</a></td><td><a href="datatypes.html#code">code</a></td></tr>
+  <tr><td><a href="conformance-rules.html#ismodifier">Is Modifier</a></td><td>true</td></tr>
+  <tr><td><a href="search.html#summary">Summary</a></td><td>true</td></tr>
+  <tr><td colspan="2" class="structure"><a name="Patient.active"> </a><b>Patient.active</b></td></tr>
+  <tr><td>Definition</td><td><p>Whether this patient record is in active use.</p>
+</td></tr>
+  <tr><td><a href="conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
+  <tr><td><a href="datatypes.html">Type</a></td><td><a href="datatypes.html#boolean">boolean</a></td></tr>
+  <tr><td><a href="conformance-rules.html#ismodifier">Is Modifier</a></td><td>true</td></tr>
+  <tr><td>Default Value</td><td>true</td></tr>
+  <tr><td>Requirements</td><td><p>Need to be able to mark a patient record as not to be used because it was created in error.</p>
+</td></tr>
+  <tr><td><a href="search.html#summary">Summary</a></td><td>true</td></tr>
+  <tr><td>Comments</td><td><p>Default is true. If a record is inactive, and linked to an active record, then future patient/person/record updates should occur on the other patient.</p>
+</td></tr>
+</table>
+
+
+
+</div>
+
+
+				</div>  <!-- /inner-wrapper -->
+            </div>  <!-- /row -->
+        </div>  <!-- /container -->
+        
+    </div>  <!-- /segment-content -->
+
+
+	<div id="segment-footer" class="segment">  <!-- segment-footer -->
+		<div class="container">  <!-- container -->
+			<div class="inner-wrapper">
+				<p>
+        © HL7.org 2011+. FHIR DSTU (v0.4.0-3920) generated on Tue, Dec 30, 2014 11:04+0000.   <!-- <a href="qa.html">QA Report</a> -->   <!-- achive note -->
+        <br/>
+        <span style="color: #FFFF77">
+        Links: <a style="color: #81BEF7" href="timelines.html">What's a DSTU?</a> | 
+               <a style="color: #81BEF7" href="history.html">Version History</a> | 
+               <a style="color: #81BEF7" href="http://services.w3.org/htmldiff?doc1=http%3A%2F%2Fhl7.org%2Fimplement%2Fstandards%2Ffhir%2Fpatient-definitions.html&amp;doc2=http%3A%2F%2Fhl7-fhir.github.io%2F%2Fpatient-definitions.html">Compare to DSTU</a> | 
+               <a style="color: #81BEF7" rel="license" href="license.html"><img style="border-style: none;" alt="CC0" src="cc0.png"/></a> | 
+               <a style="color: #81BEF7" target="_blank" href="http://gforge.hl7.org/gf/project/fhir/tracker/?action=TrackerItemAdd&amp;tracker_id=677">Propose a change</a>   
+        </span>
+        </p>
+			</div>  <!-- /inner-wrapper -->
+		</div>  <!-- /container -->
+	</div>  <!-- /segment-footer -->
+  <!-- disqus thread -->
+  <!-- disqus -->
+  <!-- end disqus -->        
+	
+	<div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+		<div class="container">  <!-- container -->
+		</div>  <!-- /container -->
+	</div>  <!-- /segment-post-footer -->
+    
+      <!-- JS and analytics only. -->
+      <!-- Bootstrap core JavaScript
+================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+<script src="./assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+<script src="./dist/js/bootstrap.min.js"> </script>
+<script src="./assets/js/respond.min.js"> </script>
+
+<script src="./assets/js/fhir.js"> </script>
+
+  <!-- Analytics Below
+================================================== -->
+
+    
+</body>
+</html>

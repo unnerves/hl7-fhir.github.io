@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ExtensionDefinition xmlns="http://hl7.org/fhir">
+  <id value="valueset-display"/>
+  <url value="http://hl7.org/fhir/ExtensionDefinition/valueset-display"/>
+  <name value="Display value for the code"/>
+  <publisher value="HL7"/>
+  <description value="The display name for the code.  I.e. ValueSet.define.concept.display (or its equivalent)."/>
+  <status value="draft"/>
+  <date value="2014-12-30T10:55:31"/>
+  <contextType value="resource"/>
+  <context value="ValueSet.compose.include.concept"/>
+  <element>
+    <path value="Extension"/>
+    <short value="Display value for the code"/>
+    <formal value="The display name for the code.  I.e. ValueSet.define.concept.display (or its equivalent)."/>
+    <min value="0"/>
+    <max value="*"/>
+    <type>
+      <code value="string"/>
+    </type>
+    <isSummary value="false"/>
+  </element>
+</ExtensionDefinition>

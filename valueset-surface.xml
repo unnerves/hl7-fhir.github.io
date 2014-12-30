@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="valueset-surface"/>
+  <meta>
+    <lastUpdated value="2014-12-30T10:55:31"/>
+  </meta>
+  <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      This value set includes a smattering of FDI tooth surface codes.
+    
+      <hr/>
+      <p>This value set contains 11 concepts</p>
+      <h2>Surface Codes</h2>
+      <p>This value set includes a smattering of FDI tooth surface codes.</p>
+      <p>
+        <b>Copyright Statement:</b> This is an example set
+      </p>
+      <p>This value set defines its own terms in the system http://hl7.org/fhir/FDI-surface</p>
+      <table class="codes">
+        <tr>
+          <td>
+            <b>Code</b>
+          </td>
+          <td>
+            <b>Definition</b>
+          </td>
+        </tr>
+        <tr>
+          <td>M
+            <a name="M"> </a>
+          </td>
+          <td/>
+        </tr>
+        <tr>
+          <td>O
+            <a name="O"> </a>
+          </td>
+          <td/>
+        </tr>
+        <tr>
+          <td>I
+            <a name="I"> </a>
+          </td>
+          <td/>
+        </tr>
+        <tr>
+          <td>D
+            <a name="D"> </a>
+          </td>
+          <td/>
+        </tr>
+        <tr>
+          <td>B
+            <a name="B"> </a>
+          </td>
+          <td/>
+        </tr>
+        <tr>
+          <td>V
+            <a name="V"> </a>
+          </td>
+          <td/>
+        </tr>
+        <tr>
+          <td>L
+            <a name="L"> </a>
+          </td>
+          <td/>
+        </tr>
+        <tr>
+          <td>MO
+            <a name="MO"> </a>
+          </td>
+          <td/>
+        </tr>
+        <tr>
+          <td>DO
+            <a name="DO"> </a>
+          </td>
+          <td/>
+        </tr>
+        <tr>
+          <td>DI
+            <a name="DI"> </a>
+          </td>
+          <td/>
+        </tr>
+        <tr>
+          <td>MOD
+            <a name="MOD"> </a>
+          </td>
+          <td/>
+        </tr>
+      </table>
+    </div>
+  </text>
+  <extension url="http://hl7.org/fhir/ExtensionDefinition/valueset-oid">
+    <valueUri value="urn:oid:2.16.840.1.113883.4.642.2.461"/>
+  </extension>
+  <identifier value="http://hl7.org/fhir/vs/surface"/>
+  <name value="Surface Codes"/>
+  <publisher value="FHIR Project team"/>
+  <telecom>
+    <system value="url"/>
+    <value value="http://hl7.org/fhir"/>
+  </telecom>
+  <description value="This value set includes a smattering of FDI tooth surface codes."/>
+  <copyright value="This is an example set"/>
+  <status value="draft"/>
+  <define>
+    <extension url="http://hl7.org/fhir/ExtensionDefinition/valueset-oid">
+      <valueUri value="urn:oid:null"/>
+    </extension>
+    <system value="http://hl7.org/fhir/FDI-surface"/>
+    <concept>
+      <code value="M"/>
+    </concept>
+    <concept>
+      <code value="O"/>
+    </concept>
+    <concept>
+      <code value="I"/>
+    </concept>
+    <concept>
+      <code value="D"/>
+    </concept>
+    <concept>
+      <code value="B"/>
+    </concept>
+    <concept>
+      <code value="V"/>
+    </concept>
+    <concept>
+      <code value="L"/>
+    </concept>
+    <concept>
+      <code value="MO"/>
+    </concept>
+    <concept>
+      <code value="DO"/>
+    </concept>
+    <concept>
+      <code value="DI"/>
+    </concept>
+    <concept>
+      <code value="MOD"/>
+    </concept>
+  </define>
+</ValueSet>

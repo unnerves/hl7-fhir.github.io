@@ -1,0 +1,1788 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Questionnaire xmlns="http://hl7.org/fhir">
+  <id value="qs1"/>
+  <identifier>
+    <system value="urn:ietf:rfc:3986"/>
+  </identifier>
+  <status value="draft"/>
+  <date value="2014-12-30T10:55:31"/>
+  <publisher value="HL7 FHIR Project (Financial Management)"/>
+  <group>
+    <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+      <valueString value="A provider issued list of services and products provided, or to be provided, to a patient which is provided to an insurer for payment recovery."/>
+    </extension>
+    <linkId value="OralHealthClaim"/>
+    <title value="Claim, Pre-determination or Pre-authorization"/>
+    <required value="true"/>
+    <group>
+      <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+        <valueString value="The logical id of the resource, as used in the url for the resoure. Once assigned, this value never changes. The only time that a resource does not have an id is when it is being submitted to the server using a create operation. Bundles always have an id, though it is usually a generated UUID."/>
+      </extension>
+      <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+        <valueString value="string"/>
+      </extension>
+      <linkId value="OralHealthClaim.id"/>
+      <repeats value="true"/>
+      <question>
+        <linkId value="OralHealthClaim.id.value"/>
+        <text value="Logical id of this artefact"/>
+        <type value="string"/>
+      </question>
+    </group>
+    <group>
+      <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+        <valueString value="The metadata about the resource. This is content that is maintained by the infrastructure. Changes to the content may not always be associated with version changes to the resource."/>
+      </extension>
+      <linkId value="OralHealthClaim.meta"/>
+      <title value="Metadata about the resource"/>
+      <group>
+        <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+          <valueString value="unique id for the element within a resource (for internal references)."/>
+        </extension>
+        <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+          <valueString value="string"/>
+        </extension>
+        <linkId value="OralHealthClaim.meta.id"/>
+        <repeats value="true"/>
+        <question>
+          <linkId value="OralHealthClaim.meta.id.value"/>
+          <text value="xml:id (or equivalent in JSON)"/>
+          <type value="string"/>
+        </question>
+      </group>
+      <group>
+        <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+          <valueString value="The version specific identifier, as it appears in the version portion of the url. This values changes when the resource is created, updated, or deleted. The server assigns this value, and ignores what the client specifies, except in the case that the server is imposing version integrity on updates/deletes."/>
+        </extension>
+        <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+          <valueString value="string"/>
+        </extension>
+        <linkId value="OralHealthClaim.meta.versionId"/>
+        <repeats value="true"/>
+        <question>
+          <linkId value="OralHealthClaim.meta.versionId.value"/>
+          <text value="Version specific identifier"/>
+          <type value="string"/>
+        </question>
+      </group>
+      <group>
+        <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+          <valueString value="When the resource last changed - e.g. when the version changed. This value is always populated except when the resource is first being created. The server / resource manager sets this value; what a client provides is irrelevant."/>
+        </extension>
+        <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+          <valueString value="instant"/>
+        </extension>
+        <linkId value="OralHealthClaim.meta.lastUpdated"/>
+        <repeats value="true"/>
+        <question>
+          <linkId value="OralHealthClaim.meta.lastUpdated.value"/>
+          <text value="When the resource version last changed"/>
+          <type value="instant"/>
+        </question>
+      </group>
+      <group>
+        <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+          <valueString value="A list of profiles that this resource claims to conform to. The URL is a reference to Profile.url. It is up to the server and/or other infrastruture of policy to determine whether/how these claims are verified and/or updated over tiem."/>
+        </extension>
+        <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+          <valueString value="uri"/>
+        </extension>
+        <linkId value="OralHealthClaim.meta.profile"/>
+        <repeats value="true"/>
+        <question>
+          <linkId value="OralHealthClaim.meta.profile.value"/>
+          <text value="Profiles this resource claims to conform to"/>
+          <type value="string"/>
+        </question>
+      </group>
+      <group>
+        <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+          <valueString value="Security labels applied to this resource. These tags connect specific resources to the overall security policy and infrastructure. The security labels can be updated without changing the stated version of the resource."/>
+        </extension>
+        <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+          <valueString value="Coding"/>
+        </extension>
+        <linkId value="OralHealthClaim.meta.security"/>
+        <repeats value="true"/>
+        <question>
+          <linkId value="OralHealthClaim.meta.security.value"/>
+          <text value="Security Labels applied to this resource"/>
+          <type value="open-choice"/>
+        </question>
+      </group>
+      <group>
+        <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+          <valueString value="Tags applied to this resource. Tags are intended to to be used to identify and relate resources to process and workflow, and applications are not required to consider the tags when interpreting the meaning of a resource. The tags can be updated without changing the stated version of the resource."/>
+        </extension>
+        <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+          <valueString value="Coding"/>
+        </extension>
+        <linkId value="OralHealthClaim.meta.tag"/>
+        <repeats value="true"/>
+        <question>
+          <linkId value="OralHealthClaim.meta.tag.value"/>
+          <text value="Tags applied"/>
+          <type value="open-choice"/>
+        </question>
+      </group>
+    </group>
+    <group>
+      <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+        <valueString value="A reference to a set of rules that were followed when the resource was constructed, and which must be understood when processing the content. Asserting this rule set restricts the content to be only understood by a limited set of trading partners. This inherently limits the usefulness of the data in the long term. However the existing health eco-system is highly fractured, and not yet ready to define, collect, and exchange data in a generally computable sense. Wherever possible, implementers and/or specification writers should avoid using this element as much as possible."/>
+      </extension>
+      <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+        <valueString value="uri"/>
+      </extension>
+      <linkId value="OralHealthClaim.implicitRules"/>
+      <repeats value="true"/>
+      <question>
+        <linkId value="OralHealthClaim.implicitRules.value"/>
+        <text value="A set of rules under which this content was created"/>
+        <type value="string"/>
+      </question>
+    </group>
+    <group>
+      <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+        <valueString value="The base language in which the resource is written. Language is provided to support indexing and accessibility (typically, services such as text to speech use the language tag). The html language tag in the narrative applies  to the narrative. The language tag on the resource may be used to specify the language of other presentations generated from the data in the resource
+
+Not all the content has to be in the base language. The Resource.language should not be assumed to apply to the narrative automatically. If a language is specified, it should it also be specified on the div element in the html (see rules in HTML5 for information about the relationship between xml:lang and the html lang attribute)."/>
+      </extension>
+      <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+        <valueString value="code"/>
+      </extension>
+      <linkId value="OralHealthClaim.language"/>
+      <repeats value="true"/>
+      <question>
+        <linkId value="OralHealthClaim.language.value"/>
+        <text value="language"/>
+        <type value="choice"/>
+      </question>
+    </group>
+    <group>
+      <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+        <valueString value="A human-readable narrative that contains a summary of the resource, and may be used to represent the content of the resource to a human. The narrative need not encode all the structured data, but is required to contain sufficient detail to make it &quot;clinically safe&quot; for a human to just read the narrative. Resource definitions may define what content should be represented in the narrative to ensure clinical safety. Contained resources do not have narrative. Resources that are not contained SHOULD have a narrative."/>
+      </extension>
+      <linkId value="OralHealthClaim.text"/>
+      <text value="Text summary of the resource, for human interpretation"/>
+      <repeats value="true"/>
+    </group>
+    <group>
+      <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+        <valueString value="These resources do not have an independent existence apart from the resource that contains them - they cannot be identified independently, and nor can they have their own independent transaction scope. This should never be done when the content can be identified properly, as once identification is lost, it is extremely difficult (and context dependent) to restore it again."/>
+      </extension>
+      <linkId value="OralHealthClaim.contained"/>
+      <text value="Contained, inline Resources"/>
+      <repeats value="true"/>
+    </group>
+    <group>
+      <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+        <valueString value="The business identifier for the instance: invoice number, claim number, pre-determination or pre-authorization number."/>
+      </extension>
+      <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+        <valueString value="Identifier"/>
+      </extension>
+      <linkId value="OralHealthClaim.identifier"/>
+      <text value="Claim number"/>
+      <repeats value="true"/>
+      <question>
+        <linkId value="OralHealthClaim.identifier.label"/>
+        <text value="label:"/>
+        <type value="string"/>
+      </question>
+      <question>
+        <linkId value="OralHealthClaim.identifier.system"/>
+        <text value="system:"/>
+        <type value="string"/>
+      </question>
+      <question>
+        <linkId value="OralHealthClaim.identifier.value"/>
+        <text value="value:"/>
+        <type value="string"/>
+      </question>
+    </group>
+    <group>
+      <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+        <valueString value="The version of the specification on which this instance relies."/>
+      </extension>
+      <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+        <valueString value="Coding"/>
+      </extension>
+      <linkId value="OralHealthClaim.ruleset"/>
+      <repeats value="true"/>
+      <question>
+        <linkId value="OralHealthClaim.ruleset.value"/>
+        <text value="Current specification followed"/>
+        <type value="open-choice"/>
+      </question>
+    </group>
+    <group>
+      <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+        <valueString value="The version of the specification from which the original instance was created."/>
+      </extension>
+      <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+        <valueString value="Coding"/>
+      </extension>
+      <linkId value="OralHealthClaim.originalRuleset"/>
+      <repeats value="true"/>
+      <question>
+        <linkId value="OralHealthClaim.originalRuleset.value"/>
+        <text value="Original specification followed"/>
+        <type value="open-choice"/>
+      </question>
+    </group>
+    <group>
+      <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+        <valueString value="The date when the enclosed suite of services were performed or completed."/>
+      </extension>
+      <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+        <valueString value="datetime"/>
+      </extension>
+      <linkId value="OralHealthClaim.created"/>
+      <repeats value="true"/>
+      <question>
+        <linkId value="OralHealthClaim.created.value"/>
+        <text value="Creation date"/>
+        <type value="dateTime"/>
+      </question>
+    </group>
+    <group>
+      <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+        <valueString value="Insurer Identifier, typical BIN number (6 digit)."/>
+      </extension>
+      <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+        <valueString value="Reference"/>
+      </extension>
+      <linkId value="OralHealthClaim.target"/>
+      <repeats value="true"/>
+      <question>
+        <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#reference">
+          <valueString value="/Organization?subject=$subj&amp;patient=$subj&amp;encounter=$encounter"/>
+        </extension>
+        <linkId value="OralHealthClaim.target.value"/>
+        <text value="Insurer"/>
+        <type value="reference"/>
+      </question>
+    </group>
+    <group>
+      <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+        <valueString value="The provider which is responsible for the bill, claim pre-determination, pre-authorization."/>
+      </extension>
+      <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+        <valueString value="Reference"/>
+      </extension>
+      <linkId value="OralHealthClaim.provider"/>
+      <repeats value="true"/>
+      <question>
+        <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#reference">
+          <valueString value="/Practitioner?subject=$subj&amp;patient=$subj&amp;encounter=$encounter"/>
+        </extension>
+        <linkId value="OralHealthClaim.provider.value"/>
+        <text value="Responsible provider"/>
+        <type value="reference"/>
+      </question>
+    </group>
+    <group>
+      <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+        <valueString value="The organization which is responsible for the bill, claim pre-determination, pre-authorization."/>
+      </extension>
+      <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+        <valueString value="Reference"/>
+      </extension>
+      <linkId value="OralHealthClaim.organization"/>
+      <repeats value="true"/>
+      <question>
+        <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#reference">
+          <valueString value="/Organization?subject=$subj&amp;patient=$subj&amp;encounter=$encounter"/>
+        </extension>
+        <linkId value="OralHealthClaim.organization.value"/>
+        <text value="Responsible organization"/>
+        <type value="reference"/>
+      </question>
+    </group>
+    <group>
+      <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+        <valueString value="Complete (Bill or Claim), Proposed (Pre-Authorization), Exploratory (Pre-determination)."/>
+      </extension>
+      <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+        <valueString value="code"/>
+      </extension>
+      <linkId value="OralHealthClaim.use"/>
+      <repeats value="true"/>
+      <question>
+        <linkId value="OralHealthClaim.use.value"/>
+        <text value="use"/>
+        <type value="choice"/>
+      </question>
+    </group>
+    <group>
+      <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+        <valueString value="Immediate (STAT), best effort (NORMAL), deferred (DEFER)."/>
+      </extension>
+      <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+        <valueString value="Coding"/>
+      </extension>
+      <linkId value="OralHealthClaim.priority"/>
+      <repeats value="true"/>
+      <question>
+        <linkId value="OralHealthClaim.priority.value"/>
+        <text value="Desired processing priority"/>
+        <type value="open-choice"/>
+      </question>
+    </group>
+    <group>
+      <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+        <valueString value="In the case of a Pre-Determination/Pre-Authorization the provider may request that funds in the amount of the expected Benefit be reserved (&#39;Patient&#39; or &#39;Provider&#39;) to pay for the Benefits determined on the subsequent claim(s). &#39;None&#39; explicitly indicates no funds reserving is requested."/>
+      </extension>
+      <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+        <valueString value="Coding"/>
+      </extension>
+      <linkId value="OralHealthClaim.fundsReserve"/>
+      <repeats value="true"/>
+      <question>
+        <linkId value="OralHealthClaim.fundsReserve.value"/>
+        <text value="Funds requested to be reserved"/>
+        <type value="open-choice"/>
+      </question>
+    </group>
+    <group>
+      <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+        <valueString value="Person who created the invoice/claim/pre-determination or pre-authorization."/>
+      </extension>
+      <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+        <valueString value="Reference"/>
+      </extension>
+      <linkId value="OralHealthClaim.enterer"/>
+      <repeats value="true"/>
+      <question>
+        <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#reference">
+          <valueString value="/Practitioner?subject=$subj&amp;patient=$subj&amp;encounter=$encounter"/>
+        </extension>
+        <linkId value="OralHealthClaim.enterer.value"/>
+        <text value="Author"/>
+        <type value="reference"/>
+      </question>
+    </group>
+    <group>
+      <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+        <valueString value="Facility where the services were provided."/>
+      </extension>
+      <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+        <valueString value="Reference"/>
+      </extension>
+      <linkId value="OralHealthClaim.facility"/>
+      <repeats value="true"/>
+      <question>
+        <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#reference">
+          <valueString value="/Location?subject=$subj&amp;patient=$subj&amp;encounter=$encounter"/>
+        </extension>
+        <linkId value="OralHealthClaim.facility.value"/>
+        <text value="Servicing Facility"/>
+        <type value="reference"/>
+      </question>
+    </group>
+    <group>
+      <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+        <valueString value="The party to be reimbursed for the services."/>
+      </extension>
+      <linkId value="OralHealthClaim.payee"/>
+      <title value="Payee"/>
+      <group>
+        <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+          <valueString value="unique id for the element within a resource (for internal references)."/>
+        </extension>
+        <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+          <valueString value="string"/>
+        </extension>
+        <linkId value="OralHealthClaim.payee.id"/>
+        <repeats value="true"/>
+        <question>
+          <linkId value="OralHealthClaim.payee.id.value"/>
+          <text value="xml:id (or equivalent in JSON)"/>
+          <type value="string"/>
+        </question>
+      </group>
+      <group>
+        <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+          <valueString value="Party to be reimbursed: Subscriber, provider, other."/>
+        </extension>
+        <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+          <valueString value="Coding"/>
+        </extension>
+        <linkId value="OralHealthClaim.payee.type"/>
+        <repeats value="true"/>
+        <question>
+          <linkId value="OralHealthClaim.payee.type.value"/>
+          <text value="Party to be paid any benefits payable"/>
+          <type value="open-choice"/>
+        </question>
+      </group>
+      <group>
+        <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+          <valueString value="The provider who is to be reimbursed for the claim (the party to whom any benefit is assigned)."/>
+        </extension>
+        <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+          <valueString value="Reference"/>
+        </extension>
+        <linkId value="OralHealthClaim.payee.provider"/>
+        <repeats value="true"/>
+        <question>
+          <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#reference">
+            <valueString value="/Practitioner?subject=$subj&amp;patient=$subj&amp;encounter=$encounter"/>
+          </extension>
+          <linkId value="OralHealthClaim.payee.provider.value"/>
+          <text value="Provider who is the payee"/>
+          <type value="reference"/>
+        </question>
+      </group>
+      <group>
+        <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+          <valueString value="The organization who is to be reimbursed for the claim (the party to whom any benefit is assigned)."/>
+        </extension>
+        <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+          <valueString value="Reference"/>
+        </extension>
+        <linkId value="OralHealthClaim.payee.organization"/>
+        <repeats value="true"/>
+        <question>
+          <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#reference">
+            <valueString value="/Organization?subject=$subj&amp;patient=$subj&amp;encounter=$encounter"/>
+          </extension>
+          <linkId value="OralHealthClaim.payee.organization.value"/>
+          <text value="Organization who is the payee"/>
+          <type value="reference"/>
+        </question>
+      </group>
+      <group>
+        <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+          <valueString value="The person other than the subscriber who is to be reimbursed for the claim (the party to whom any benefit is assigned)."/>
+        </extension>
+        <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+          <valueString value="Reference"/>
+        </extension>
+        <linkId value="OralHealthClaim.payee.person"/>
+        <repeats value="true"/>
+        <question>
+          <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#reference">
+            <valueString value="/Patient?subject=$subj&amp;patient=$subj&amp;encounter=$encounter"/>
+          </extension>
+          <linkId value="OralHealthClaim.payee.person.value"/>
+          <text value="Other person who is the payee"/>
+          <type value="reference"/>
+        </question>
+      </group>
+    </group>
+    <group>
+      <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+        <valueString value="The referral resource which lists the date, practitioner, reason and other supporting information."/>
+      </extension>
+      <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+        <valueString value="Reference"/>
+      </extension>
+      <linkId value="OralHealthClaim.referral"/>
+      <repeats value="true"/>
+      <question>
+        <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#reference">
+          <valueString value="/ReferralRequest?subject=$subj&amp;patient=$subj&amp;encounter=$encounter"/>
+        </extension>
+        <linkId value="OralHealthClaim.referral.value"/>
+        <text value="Treatment Referral"/>
+        <type value="reference"/>
+      </question>
+    </group>
+    <group>
+      <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+        <valueString value="Ordered list of patient diagnosis for which care is sought."/>
+      </extension>
+      <linkId value="OralHealthClaim.diagnosis"/>
+      <title value="Diagnosis"/>
+      <repeats value="true"/>
+      <group>
+        <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+          <valueString value="unique id for the element within a resource (for internal references)."/>
+        </extension>
+        <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+          <valueString value="string"/>
+        </extension>
+        <linkId value="OralHealthClaim.diagnosis.id"/>
+        <repeats value="true"/>
+        <question>
+          <linkId value="OralHealthClaim.diagnosis.id.value"/>
+          <text value="xml:id (or equivalent in JSON)"/>
+          <type value="string"/>
+        </question>
+      </group>
+      <group>
+        <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+          <valueString value="Sequence of diagnosis."/>
+        </extension>
+        <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+          <valueString value="integer"/>
+        </extension>
+        <linkId value="OralHealthClaim.diagnosis.sequence"/>
+        <required value="true"/>
+        <repeats value="true"/>
+        <question>
+          <linkId value="OralHealthClaim.diagnosis.sequence.value"/>
+          <text value="Sequence of diagnosis"/>
+          <type value="integer"/>
+        </question>
+      </group>
+      <group>
+        <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+          <valueString value="The diagnosis."/>
+        </extension>
+        <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+          <valueString value="Coding"/>
+        </extension>
+        <linkId value="OralHealthClaim.diagnosis.diagnosis"/>
+        <required value="true"/>
+        <repeats value="true"/>
+        <question>
+          <linkId value="OralHealthClaim.diagnosis.diagnosis.value"/>
+          <text value="Patient&#39;s list of diagnosis"/>
+          <type value="open-choice"/>
+        </question>
+      </group>
+    </group>
+    <group>
+      <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+        <valueString value="List of patient conditions for which care is sought."/>
+      </extension>
+      <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+        <valueString value="Coding"/>
+      </extension>
+      <linkId value="OralHealthClaim.condition"/>
+      <repeats value="true"/>
+      <question>
+        <linkId value="OralHealthClaim.condition.value"/>
+        <text value="List of presenting Conditions"/>
+        <type value="open-choice"/>
+      </question>
+    </group>
+    <group>
+      <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+        <valueString value="Patient Resource."/>
+      </extension>
+      <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+        <valueString value="Reference"/>
+      </extension>
+      <linkId value="OralHealthClaim.patient"/>
+      <required value="true"/>
+      <repeats value="true"/>
+      <question>
+        <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#reference">
+          <valueString value="/Patient?subject=$subj&amp;patient=$subj&amp;encounter=$encounter"/>
+        </extension>
+        <linkId value="OralHealthClaim.patient.value"/>
+        <text value="The subject of the Products and Services"/>
+        <type value="reference"/>
+      </question>
+    </group>
+    <group>
+      <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+        <valueString value="Financial instrument by which payment information for health care."/>
+      </extension>
+      <linkId value="OralHealthClaim.coverage"/>
+      <title value="Insurance or medical plan"/>
+      <repeats value="true"/>
+      <group>
+        <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+          <valueString value="unique id for the element within a resource (for internal references)."/>
+        </extension>
+        <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+          <valueString value="string"/>
+        </extension>
+        <linkId value="OralHealthClaim.coverage.id"/>
+        <repeats value="true"/>
+        <question>
+          <linkId value="OralHealthClaim.coverage.id.value"/>
+          <text value="xml:id (or equivalent in JSON)"/>
+          <type value="string"/>
+        </question>
+      </group>
+      <group>
+        <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+          <valueString value="A service line item."/>
+        </extension>
+        <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+          <valueString value="integer"/>
+        </extension>
+        <linkId value="OralHealthClaim.coverage.sequence"/>
+        <required value="true"/>
+        <repeats value="true"/>
+        <question>
+          <linkId value="OralHealthClaim.coverage.sequence.value"/>
+          <text value="Service instance identifier"/>
+          <type value="integer"/>
+        </question>
+      </group>
+      <group>
+        <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+          <valueString value="The instance number of the Coverage which is the focus for adjudication. The Coverage against which the claim is to be adjudicated."/>
+        </extension>
+        <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+          <valueString value="boolean"/>
+        </extension>
+        <linkId value="OralHealthClaim.coverage.focal"/>
+        <required value="true"/>
+        <repeats value="true"/>
+        <question>
+          <linkId value="OralHealthClaim.coverage.focal.value"/>
+          <text value="Is the focal Coverage"/>
+          <type value="boolean"/>
+        </question>
+      </group>
+      <group>
+        <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+          <valueString value="Reference to the program or plan identification, underwriter or payor."/>
+        </extension>
+        <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+          <valueString value="Reference"/>
+        </extension>
+        <linkId value="OralHealthClaim.coverage.coverage"/>
+        <required value="true"/>
+        <repeats value="true"/>
+        <question>
+          <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#reference">
+            <valueString value="/Coverage?subject=$subj&amp;patient=$subj&amp;encounter=$encounter"/>
+          </extension>
+          <linkId value="OralHealthClaim.coverage.coverage.value"/>
+          <text value="Insurance information"/>
+          <type value="reference"/>
+        </question>
+      </group>
+      <group>
+        <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+          <valueString value="The contract number of a business agreement which describes the terms and conditions."/>
+        </extension>
+        <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+          <valueString value="string"/>
+        </extension>
+        <linkId value="OralHealthClaim.coverage.businessArrangement"/>
+        <repeats value="true"/>
+        <question>
+          <linkId value="OralHealthClaim.coverage.businessArrangement.value"/>
+          <text value="Business agreement"/>
+          <type value="string"/>
+        </question>
+      </group>
+      <group>
+        <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+          <valueString value="The relationship of the patient to the subscriber."/>
+        </extension>
+        <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+          <valueString value="Coding"/>
+        </extension>
+        <linkId value="OralHealthClaim.coverage.relationship"/>
+        <required value="true"/>
+        <repeats value="true"/>
+        <question>
+          <linkId value="OralHealthClaim.coverage.relationship.value"/>
+          <text value="Patient relationship to subscriber"/>
+          <type value="open-choice"/>
+        </question>
+      </group>
+      <group>
+        <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+          <valueString value="A list of references from the Insurer to which these services pertain."/>
+        </extension>
+        <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+          <valueString value="string"/>
+        </extension>
+        <linkId value="OralHealthClaim.coverage.preauthref"/>
+        <repeats value="true"/>
+        <question>
+          <linkId value="OralHealthClaim.coverage.preauthref.value"/>
+          <text value="Pre-Authorization/Determination Reference"/>
+          <type value="string"/>
+        </question>
+      </group>
+      <group>
+        <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+          <valueString value="The Coverages adjudication details."/>
+        </extension>
+        <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+          <valueString value="Reference"/>
+        </extension>
+        <linkId value="OralHealthClaim.coverage.claimResponse"/>
+        <repeats value="true"/>
+        <question>
+          <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#reference">
+            <valueString value="/ClaimResponse?subject=$subj&amp;patient=$subj&amp;encounter=$encounter"/>
+          </extension>
+          <linkId value="OralHealthClaim.coverage.claimResponse.value"/>
+          <text value="Adjudication results"/>
+          <type value="reference"/>
+        </question>
+      </group>
+      <group>
+        <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+          <valueString value="The style (standard) and version of the original material which was converted into this resource."/>
+        </extension>
+        <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+          <valueString value="Coding"/>
+        </extension>
+        <linkId value="OralHealthClaim.coverage.originalRuleset"/>
+        <repeats value="true"/>
+        <question>
+          <linkId value="OralHealthClaim.coverage.originalRuleset.value"/>
+          <text value="Original version"/>
+          <type value="open-choice"/>
+        </question>
+      </group>
+    </group>
+    <group>
+      <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+        <valueString value="Factors which may influence the applicability of coverage."/>
+      </extension>
+      <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+        <valueString value="Coding"/>
+      </extension>
+      <linkId value="OralHealthClaim.exception"/>
+      <repeats value="true"/>
+      <question>
+        <linkId value="OralHealthClaim.exception.value"/>
+        <text value="Eligibility exceptions"/>
+        <type value="open-choice"/>
+      </question>
+    </group>
+    <group>
+      <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+        <valueString value="Name of school for over-aged dependants."/>
+      </extension>
+      <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+        <valueString value="string"/>
+      </extension>
+      <linkId value="OralHealthClaim.school"/>
+      <repeats value="true"/>
+      <question>
+        <linkId value="OralHealthClaim.school.value"/>
+        <text value="Name of School"/>
+        <type value="string"/>
+      </question>
+    </group>
+    <group>
+      <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+        <valueString value="Date of an accident which these services are addressing."/>
+      </extension>
+      <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+        <valueString value="datetime"/>
+      </extension>
+      <linkId value="OralHealthClaim.accident"/>
+      <repeats value="true"/>
+      <question>
+        <linkId value="OralHealthClaim.accident.value"/>
+        <text value="Accident Date"/>
+        <type value="dateTime"/>
+      </question>
+    </group>
+    <group>
+      <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+        <valueString value="Type of accident: work, auto, etc."/>
+      </extension>
+      <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+        <valueString value="Coding"/>
+      </extension>
+      <linkId value="OralHealthClaim.accidentType"/>
+      <repeats value="true"/>
+      <question>
+        <linkId value="OralHealthClaim.accidentType.value"/>
+        <text value="Accident Type"/>
+        <type value="open-choice"/>
+      </question>
+    </group>
+    <group>
+      <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+        <valueString value="A list of intervention and exception codes which may influence the adjudication of the claim."/>
+      </extension>
+      <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+        <valueString value="Coding"/>
+      </extension>
+      <linkId value="OralHealthClaim.interventionException"/>
+      <repeats value="true"/>
+      <question>
+        <linkId value="OralHealthClaim.interventionException.value"/>
+        <text value="Intervention and exception code (Pharma)"/>
+        <type value="open-choice"/>
+      </question>
+    </group>
+    <group>
+      <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+        <valueString value="A list of teeth which would be expected but are not found due to having been previously  extracted or for other reasons."/>
+      </extension>
+      <linkId value="OralHealthClaim.missingteeth"/>
+      <title value="Missing Teeth"/>
+      <repeats value="true"/>
+      <group>
+        <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+          <valueString value="unique id for the element within a resource (for internal references)."/>
+        </extension>
+        <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+          <valueString value="string"/>
+        </extension>
+        <linkId value="OralHealthClaim.missingteeth.id"/>
+        <repeats value="true"/>
+        <question>
+          <linkId value="OralHealthClaim.missingteeth.id.value"/>
+          <text value="xml:id (or equivalent in JSON)"/>
+          <type value="string"/>
+        </question>
+      </group>
+      <group>
+        <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+          <valueString value="The code identifying which tooth is missing."/>
+        </extension>
+        <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+          <valueString value="Coding"/>
+        </extension>
+        <linkId value="OralHealthClaim.missingteeth.tooth"/>
+        <required value="true"/>
+        <repeats value="true"/>
+        <question>
+          <linkId value="OralHealthClaim.missingteeth.tooth.value"/>
+          <text value="Tooth Code"/>
+          <type value="open-choice"/>
+        </question>
+      </group>
+      <group>
+        <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+          <valueString value="Missing reason may be: E-extraction, O-other."/>
+        </extension>
+        <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+          <valueString value="Coding"/>
+        </extension>
+        <linkId value="OralHealthClaim.missingteeth.reason"/>
+        <repeats value="true"/>
+        <question>
+          <linkId value="OralHealthClaim.missingteeth.reason.value"/>
+          <text value="Reason for missing"/>
+          <type value="open-choice"/>
+        </question>
+      </group>
+      <group>
+        <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+          <valueString value="The date of the extraction either known from records or patient reported estimate."/>
+        </extension>
+        <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+          <valueString value="datetime"/>
+        </extension>
+        <linkId value="OralHealthClaim.missingteeth.extractiondate"/>
+        <repeats value="true"/>
+        <question>
+          <linkId value="OralHealthClaim.missingteeth.extractiondate.value"/>
+          <text value="Date of Extraction"/>
+          <type value="dateTime"/>
+        </question>
+      </group>
+    </group>
+    <group>
+      <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+        <valueString value="The high-level details of an Orthodontic Treatment Plan."/>
+      </extension>
+      <linkId value="OralHealthClaim.orthoPlan"/>
+      <title value="Orthodontic Treatment Plan"/>
+      <group>
+        <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+          <valueString value="unique id for the element within a resource (for internal references)."/>
+        </extension>
+        <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+          <valueString value="string"/>
+        </extension>
+        <linkId value="OralHealthClaim.orthoPlan.id"/>
+        <repeats value="true"/>
+        <question>
+          <linkId value="OralHealthClaim.orthoPlan.id.value"/>
+          <text value="xml:id (or equivalent in JSON)"/>
+          <type value="string"/>
+        </question>
+      </group>
+      <group>
+        <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+          <valueString value="The intended start date for service."/>
+        </extension>
+        <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+          <valueString value="datetime"/>
+        </extension>
+        <linkId value="OralHealthClaim.orthoPlan.start"/>
+        <repeats value="true"/>
+        <question>
+          <linkId value="OralHealthClaim.orthoPlan.start.value"/>
+          <text value="Start date"/>
+          <type value="dateTime"/>
+        </question>
+      </group>
+      <group>
+        <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+          <valueString value="The estimated first examination fee."/>
+        </extension>
+        <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+          <valueString value="Money"/>
+        </extension>
+        <linkId value="OralHealthClaim.orthoPlan.examFee"/>
+        <text value="First exam fee"/>
+        <repeats value="true"/>
+        <question>
+          <linkId value="OralHealthClaim.orthoPlan.examFee.value"/>
+          <text value="value:"/>
+          <type value="decimal"/>
+        </question>
+        <question>
+          <linkId value="OralHealthClaim.orthoPlan.examFee.currency"/>
+          <text value="currency:"/>
+          <type value="string"/>
+        </question>
+      </group>
+      <group>
+        <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+          <valueString value="The estimated diagnostic fee."/>
+        </extension>
+        <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+          <valueString value="Money"/>
+        </extension>
+        <linkId value="OralHealthClaim.orthoPlan.diagnosticFee"/>
+        <text value="Diagnostic phase fee"/>
+        <repeats value="true"/>
+        <question>
+          <linkId value="OralHealthClaim.orthoPlan.diagnosticFee.value"/>
+          <text value="value:"/>
+          <type value="decimal"/>
+        </question>
+        <question>
+          <linkId value="OralHealthClaim.orthoPlan.diagnosticFee.currency"/>
+          <text value="currency:"/>
+          <type value="string"/>
+        </question>
+      </group>
+      <group>
+        <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+          <valueString value="The estimated initial payment."/>
+        </extension>
+        <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+          <valueString value="Money"/>
+        </extension>
+        <linkId value="OralHealthClaim.orthoPlan.initialPayment"/>
+        <text value="Initial payment"/>
+        <repeats value="true"/>
+        <question>
+          <linkId value="OralHealthClaim.orthoPlan.initialPayment.value"/>
+          <text value="value:"/>
+          <type value="decimal"/>
+        </question>
+        <question>
+          <linkId value="OralHealthClaim.orthoPlan.initialPayment.currency"/>
+          <text value="currency:"/>
+          <type value="string"/>
+        </question>
+      </group>
+      <group>
+        <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+          <valueString value="The estimated treatment duration in months."/>
+        </extension>
+        <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+          <valueString value="integer"/>
+        </extension>
+        <linkId value="OralHealthClaim.orthoPlan.durationMonths"/>
+        <repeats value="true"/>
+        <question>
+          <linkId value="OralHealthClaim.orthoPlan.durationMonths.value"/>
+          <text value="Duration in months"/>
+          <type value="integer"/>
+        </question>
+      </group>
+      <group>
+        <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+          <valueString value="The anticipated number of payments."/>
+        </extension>
+        <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+          <valueString value="integer"/>
+        </extension>
+        <linkId value="OralHealthClaim.orthoPlan.paymentCount"/>
+        <repeats value="true"/>
+        <question>
+          <linkId value="OralHealthClaim.orthoPlan.paymentCount.value"/>
+          <text value="Anticipated number of payments"/>
+          <type value="integer"/>
+        </question>
+      </group>
+      <group>
+        <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+          <valueString value="The anticipated payment amount."/>
+        </extension>
+        <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+          <valueString value="Money"/>
+        </extension>
+        <linkId value="OralHealthClaim.orthoPlan.periodicPayment"/>
+        <text value="Anticipated payment"/>
+        <repeats value="true"/>
+        <question>
+          <linkId value="OralHealthClaim.orthoPlan.periodicPayment.value"/>
+          <text value="value:"/>
+          <type value="decimal"/>
+        </question>
+        <question>
+          <linkId value="OralHealthClaim.orthoPlan.periodicPayment.currency"/>
+          <text value="currency:"/>
+          <type value="string"/>
+        </question>
+      </group>
+    </group>
+    <group>
+      <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+        <valueString value="First tier of goods and services."/>
+      </extension>
+      <linkId value="OralHealthClaim.item"/>
+      <title value="Goods and Services"/>
+      <repeats value="true"/>
+      <group>
+        <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+          <valueString value="unique id for the element within a resource (for internal references)."/>
+        </extension>
+        <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+          <valueString value="string"/>
+        </extension>
+        <linkId value="OralHealthClaim.item.id"/>
+        <repeats value="true"/>
+        <question>
+          <linkId value="OralHealthClaim.item.id.value"/>
+          <text value="xml:id (or equivalent in JSON)"/>
+          <type value="string"/>
+        </question>
+      </group>
+      <group>
+        <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+          <valueString value="A service line number."/>
+        </extension>
+        <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+          <valueString value="integer"/>
+        </extension>
+        <linkId value="OralHealthClaim.item.sequence"/>
+        <required value="true"/>
+        <repeats value="true"/>
+        <question>
+          <linkId value="OralHealthClaim.item.sequence.value"/>
+          <text value="Service instance"/>
+          <type value="integer"/>
+        </question>
+      </group>
+      <group>
+        <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+          <valueString value="The type of product or service."/>
+        </extension>
+        <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+          <valueString value="Coding"/>
+        </extension>
+        <linkId value="OralHealthClaim.item.type"/>
+        <required value="true"/>
+        <repeats value="true"/>
+        <question>
+          <linkId value="OralHealthClaim.item.type.value"/>
+          <text value="Group or type of product or service"/>
+          <type value="open-choice"/>
+        </question>
+      </group>
+      <group>
+        <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+          <valueString value="The practitioner who is responsible for the services rendered to the patient."/>
+        </extension>
+        <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+          <valueString value="Reference"/>
+        </extension>
+        <linkId value="OralHealthClaim.item.provider"/>
+        <repeats value="true"/>
+        <question>
+          <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#reference">
+            <valueString value="/Practitioner?subject=$subj&amp;patient=$subj&amp;encounter=$encounter"/>
+          </extension>
+          <linkId value="OralHealthClaim.item.provider.value"/>
+          <text value="Responsible practitioner"/>
+          <type value="reference"/>
+        </question>
+      </group>
+      <group>
+        <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+          <valueString value="Diagnosis applicable for this service or product line."/>
+        </extension>
+        <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+          <valueString value="integer"/>
+        </extension>
+        <linkId value="OralHealthClaim.item.diagnosisLinkId"/>
+        <repeats value="true"/>
+        <question>
+          <linkId value="OralHealthClaim.item.diagnosisLinkId.value"/>
+          <text value="Diagnosis Link"/>
+          <type value="integer"/>
+        </question>
+      </group>
+      <group>
+        <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+          <valueString value="If a grouping item then &#39;GROUP&#39; otherwise it is a node therefore a code to indicate the Professional Service or Product supplied."/>
+        </extension>
+        <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+          <valueString value="Coding"/>
+        </extension>
+        <linkId value="OralHealthClaim.item.service"/>
+        <required value="true"/>
+        <repeats value="true"/>
+        <question>
+          <linkId value="OralHealthClaim.item.service.value"/>
+          <text value="Item Code"/>
+          <type value="open-choice"/>
+        </question>
+      </group>
+      <group>
+        <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+          <valueString value="The date when the enclosed suite of services were performed or completed."/>
+        </extension>
+        <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+          <valueString value="datetime"/>
+        </extension>
+        <linkId value="OralHealthClaim.item.serviceDate"/>
+        <repeats value="true"/>
+        <question>
+          <linkId value="OralHealthClaim.item.serviceDate.value"/>
+          <text value="Date of Service"/>
+          <type value="dateTime"/>
+        </question>
+      </group>
+      <group>
+        <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+          <valueString value="The number of repetitions of a service or product."/>
+        </extension>
+        <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+          <valueString value="Quantity"/>
+        </extension>
+        <linkId value="OralHealthClaim.item.quantity"/>
+        <text value="Count of Products or Services"/>
+        <repeats value="true"/>
+        <question>
+          <linkId value="OralHealthClaim.item.quantity.comparator"/>
+          <text value="comp:"/>
+          <type value="choice"/>
+        </question>
+        <question>
+          <linkId value="OralHealthClaim.item.quantity.value"/>
+          <text value="value:"/>
+          <type value="decimal"/>
+        </question>
+        <question>
+          <linkId value="OralHealthClaim.item.quantity.units"/>
+          <text value="units:"/>
+          <type value="string"/>
+        </question>
+        <question>
+          <linkId value="OralHealthClaim.item.quantity.code"/>
+          <text value="coded units:"/>
+          <type value="string"/>
+        </question>
+        <question>
+          <linkId value="OralHealthClaim.item.quantity.system"/>
+          <text value="units system:"/>
+          <type value="string"/>
+        </question>
+      </group>
+      <group>
+        <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+          <valueString value="If the item is a node then this is the fee for the product or service, otherwise this is the total of the fees for the children of the group."/>
+        </extension>
+        <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+          <valueString value="Money"/>
+        </extension>
+        <linkId value="OralHealthClaim.item.unitPrice"/>
+        <text value="Fee, charge or cost per point"/>
+        <repeats value="true"/>
+        <question>
+          <linkId value="OralHealthClaim.item.unitPrice.value"/>
+          <text value="value:"/>
+          <type value="decimal"/>
+        </question>
+        <question>
+          <linkId value="OralHealthClaim.item.unitPrice.currency"/>
+          <text value="currency:"/>
+          <type value="string"/>
+        </question>
+      </group>
+      <group>
+        <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+          <valueString value="A real number that represents a multiplier used in determining the overall value of services delivered and/or goods received. The concept of a Factor allows for a discount or surcharge multiplier to be applied to a monetary amount."/>
+        </extension>
+        <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+          <valueString value="decimal"/>
+        </extension>
+        <linkId value="OralHealthClaim.item.factor"/>
+        <repeats value="true"/>
+        <question>
+          <linkId value="OralHealthClaim.item.factor.value"/>
+          <text value="Price scaling factor"/>
+          <type value="decimal"/>
+        </question>
+      </group>
+      <group>
+        <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+          <valueString value="An amount that expresses the weighting (based on difficulty, cost and/or resource intensiveness) associated with the good or service delivered. The concept of Points allows for assignment of point values for services and/or goods, such that a monetary amount can be assigned to each point."/>
+        </extension>
+        <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+          <valueString value="decimal"/>
+        </extension>
+        <linkId value="OralHealthClaim.item.points"/>
+        <repeats value="true"/>
+        <question>
+          <linkId value="OralHealthClaim.item.points.value"/>
+          <text value="Difficulty scaling factor"/>
+          <type value="decimal"/>
+        </question>
+      </group>
+      <group>
+        <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+          <valueString value="The quantity times the unit price for an addittional service or product or charge. For example, the formula: unit Quantity * unit Price (Cost per Point) * factor Number  * points = net Amount. Quantity, factor and points are assumed to be 1 if not supplied."/>
+        </extension>
+        <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+          <valueString value="Money"/>
+        </extension>
+        <linkId value="OralHealthClaim.item.net"/>
+        <text value="Total item cost"/>
+        <repeats value="true"/>
+        <question>
+          <linkId value="OralHealthClaim.item.net.value"/>
+          <text value="value:"/>
+          <type value="decimal"/>
+        </question>
+        <question>
+          <linkId value="OralHealthClaim.item.net.currency"/>
+          <text value="currency:"/>
+          <type value="string"/>
+        </question>
+      </group>
+      <group>
+        <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+          <valueString value="List of Unique Device Identifiers associated with this line item."/>
+        </extension>
+        <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+          <valueString value="Coding"/>
+        </extension>
+        <linkId value="OralHealthClaim.item.udi"/>
+        <repeats value="true"/>
+        <question>
+          <linkId value="OralHealthClaim.item.udi.value"/>
+          <text value="Unique Device Identifier"/>
+          <type value="open-choice"/>
+        </question>
+      </group>
+      <group>
+        <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+          <valueString value="Physical service site on the patient (limb, tooth, etc)."/>
+        </extension>
+        <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+          <valueString value="Coding"/>
+        </extension>
+        <linkId value="OralHealthClaim.item.bodySite"/>
+        <repeats value="true"/>
+        <question>
+          <linkId value="OralHealthClaim.item.bodySite.value"/>
+          <text value="Service Location"/>
+          <type value="open-choice"/>
+        </question>
+      </group>
+      <group>
+        <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+          <valueString value="A region or surface of the site, eg. limb region or tooth surface(s)."/>
+        </extension>
+        <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+          <valueString value="Coding"/>
+        </extension>
+        <linkId value="OralHealthClaim.item.subsite"/>
+        <repeats value="true"/>
+        <question>
+          <linkId value="OralHealthClaim.item.subsite.value"/>
+          <text value="Service Sub-location"/>
+          <type value="open-choice"/>
+        </question>
+      </group>
+      <group>
+        <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+          <valueString value="Item typification or modifiers codes, eg for Oral whether the treatment is cosmetic or associated with TMJ, or an appliance was lost or stolen."/>
+        </extension>
+        <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+          <valueString value="Coding"/>
+        </extension>
+        <linkId value="OralHealthClaim.item.modifier"/>
+        <repeats value="true"/>
+        <question>
+          <linkId value="OralHealthClaim.item.modifier.value"/>
+          <text value="Service/Product billing modifiers"/>
+          <type value="open-choice"/>
+        </question>
+      </group>
+      <group>
+        <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+          <valueString value="Second tier of goods and services."/>
+        </extension>
+        <linkId value="OralHealthClaim.item.detail"/>
+        <title value="Additional items"/>
+        <repeats value="true"/>
+        <group>
+          <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+            <valueString value="unique id for the element within a resource (for internal references)."/>
+          </extension>
+          <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+            <valueString value="string"/>
+          </extension>
+          <linkId value="OralHealthClaim.item.detail.id"/>
+          <repeats value="true"/>
+          <question>
+            <linkId value="OralHealthClaim.item.detail.id.value"/>
+            <text value="xml:id (or equivalent in JSON)"/>
+            <type value="string"/>
+          </question>
+        </group>
+        <group>
+          <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+            <valueString value="A service line number."/>
+          </extension>
+          <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+            <valueString value="integer"/>
+          </extension>
+          <linkId value="OralHealthClaim.item.detail.sequence"/>
+          <required value="true"/>
+          <repeats value="true"/>
+          <question>
+            <linkId value="OralHealthClaim.item.detail.sequence.value"/>
+            <text value="Service instance"/>
+            <type value="integer"/>
+          </question>
+        </group>
+        <group>
+          <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+            <valueString value="The type of product or service."/>
+          </extension>
+          <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+            <valueString value="Coding"/>
+          </extension>
+          <linkId value="OralHealthClaim.item.detail.type"/>
+          <required value="true"/>
+          <repeats value="true"/>
+          <question>
+            <linkId value="OralHealthClaim.item.detail.type.value"/>
+            <text value="Group or type of product or service"/>
+            <type value="open-choice"/>
+          </question>
+        </group>
+        <group>
+          <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+            <valueString value="If a grouping item then &#39;GROUP&#39; otherwise it is a node therefore a code to indicate the Professional Service or Product supplied."/>
+          </extension>
+          <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+            <valueString value="Coding"/>
+          </extension>
+          <linkId value="OralHealthClaim.item.detail.service"/>
+          <required value="true"/>
+          <repeats value="true"/>
+          <question>
+            <linkId value="OralHealthClaim.item.detail.service.value"/>
+            <text value="Additional item codes"/>
+            <type value="open-choice"/>
+          </question>
+        </group>
+        <group>
+          <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+            <valueString value="The number of repetitions of a service or product."/>
+          </extension>
+          <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+            <valueString value="Quantity"/>
+          </extension>
+          <linkId value="OralHealthClaim.item.detail.quantity"/>
+          <text value="Count of Products or Services"/>
+          <repeats value="true"/>
+          <question>
+            <linkId value="OralHealthClaim.item.detail.quantity.comparator"/>
+            <text value="comp:"/>
+            <type value="choice"/>
+          </question>
+          <question>
+            <linkId value="OralHealthClaim.item.detail.quantity.value"/>
+            <text value="value:"/>
+            <type value="decimal"/>
+          </question>
+          <question>
+            <linkId value="OralHealthClaim.item.detail.quantity.units"/>
+            <text value="units:"/>
+            <type value="string"/>
+          </question>
+          <question>
+            <linkId value="OralHealthClaim.item.detail.quantity.code"/>
+            <text value="coded units:"/>
+            <type value="string"/>
+          </question>
+          <question>
+            <linkId value="OralHealthClaim.item.detail.quantity.system"/>
+            <text value="units system:"/>
+            <type value="string"/>
+          </question>
+        </group>
+        <group>
+          <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+            <valueString value="If the item is a node then this is the fee for the product or service, otherwise this is the total of the fees for the children of the group."/>
+          </extension>
+          <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+            <valueString value="Money"/>
+          </extension>
+          <linkId value="OralHealthClaim.item.detail.unitPrice"/>
+          <text value="Fee, charge or cost per point"/>
+          <repeats value="true"/>
+          <question>
+            <linkId value="OralHealthClaim.item.detail.unitPrice.value"/>
+            <text value="value:"/>
+            <type value="decimal"/>
+          </question>
+          <question>
+            <linkId value="OralHealthClaim.item.detail.unitPrice.currency"/>
+            <text value="currency:"/>
+            <type value="string"/>
+          </question>
+        </group>
+        <group>
+          <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+            <valueString value="A real number that represents a multiplier used in determining the overall value of services delivered and/or goods received. The concept of a Factor allows for a discount or surcharge multiplier to be applied to a monetary amount."/>
+          </extension>
+          <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+            <valueString value="decimal"/>
+          </extension>
+          <linkId value="OralHealthClaim.item.detail.factor"/>
+          <repeats value="true"/>
+          <question>
+            <linkId value="OralHealthClaim.item.detail.factor.value"/>
+            <text value="Price scaling factor"/>
+            <type value="decimal"/>
+          </question>
+        </group>
+        <group>
+          <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+            <valueString value="An amount that expresses the weighting (based on difficulty, cost and/or resource intensiveness) associated with the good or service delivered. The concept of Points allows for assignment of point values for services and/or goods, such that a monetary amount can be assigned to each point."/>
+          </extension>
+          <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+            <valueString value="decimal"/>
+          </extension>
+          <linkId value="OralHealthClaim.item.detail.points"/>
+          <repeats value="true"/>
+          <question>
+            <linkId value="OralHealthClaim.item.detail.points.value"/>
+            <text value="Difficulty scaling factor"/>
+            <type value="decimal"/>
+          </question>
+        </group>
+        <group>
+          <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+            <valueString value="The quantity times the unit price for an addittional service or product or charge. For example, the formula: unit Quantity * unit Price (Cost per Point) * factor Number  * points = net Amount. Quantity, factor and points are assumed to be 1 if not supplied."/>
+          </extension>
+          <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+            <valueString value="Money"/>
+          </extension>
+          <linkId value="OralHealthClaim.item.detail.net"/>
+          <text value="Total additional item cost"/>
+          <repeats value="true"/>
+          <question>
+            <linkId value="OralHealthClaim.item.detail.net.value"/>
+            <text value="value:"/>
+            <type value="decimal"/>
+          </question>
+          <question>
+            <linkId value="OralHealthClaim.item.detail.net.currency"/>
+            <text value="currency:"/>
+            <type value="string"/>
+          </question>
+        </group>
+        <group>
+          <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+            <valueString value="List of Unique Device Identifiers associated with this line item."/>
+          </extension>
+          <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+            <valueString value="Coding"/>
+          </extension>
+          <linkId value="OralHealthClaim.item.detail.udi"/>
+          <repeats value="true"/>
+          <question>
+            <linkId value="OralHealthClaim.item.detail.udi.value"/>
+            <text value="Unique Device Identifier"/>
+            <type value="open-choice"/>
+          </question>
+        </group>
+        <group>
+          <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+            <valueString value="Third tier of goods and services."/>
+          </extension>
+          <linkId value="OralHealthClaim.item.detail.subDetail"/>
+          <title value="Additional items"/>
+          <repeats value="true"/>
+          <group>
+            <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+              <valueString value="unique id for the element within a resource (for internal references)."/>
+            </extension>
+            <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+              <valueString value="string"/>
+            </extension>
+            <linkId value="OralHealthClaim.item.detail.subDetail.id"/>
+            <repeats value="true"/>
+            <question>
+              <linkId value="OralHealthClaim.item.detail.subDetail.id.value"/>
+              <text value="xml:id (or equivalent in JSON)"/>
+              <type value="string"/>
+            </question>
+          </group>
+          <group>
+            <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+              <valueString value="A service line number."/>
+            </extension>
+            <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+              <valueString value="integer"/>
+            </extension>
+            <linkId value="OralHealthClaim.item.detail.subDetail.sequence"/>
+            <required value="true"/>
+            <repeats value="true"/>
+            <question>
+              <linkId value="OralHealthClaim.item.detail.subDetail.sequence.value"/>
+              <text value="Service instance"/>
+              <type value="integer"/>
+            </question>
+          </group>
+          <group>
+            <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+              <valueString value="The type of product or service."/>
+            </extension>
+            <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+              <valueString value="Coding"/>
+            </extension>
+            <linkId value="OralHealthClaim.item.detail.subDetail.type"/>
+            <required value="true"/>
+            <repeats value="true"/>
+            <question>
+              <linkId value="OralHealthClaim.item.detail.subDetail.type.value"/>
+              <text value="Type of product or service"/>
+              <type value="open-choice"/>
+            </question>
+          </group>
+          <group>
+            <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+              <valueString value="The fee for an addittional service or product or charge."/>
+            </extension>
+            <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+              <valueString value="Coding"/>
+            </extension>
+            <linkId value="OralHealthClaim.item.detail.subDetail.service"/>
+            <required value="true"/>
+            <repeats value="true"/>
+            <question>
+              <linkId value="OralHealthClaim.item.detail.subDetail.service.value"/>
+              <text value="Additional item codes"/>
+              <type value="open-choice"/>
+            </question>
+          </group>
+          <group>
+            <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+              <valueString value="The number of repetitions of a service or product."/>
+            </extension>
+            <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+              <valueString value="Quantity"/>
+            </extension>
+            <linkId value="OralHealthClaim.item.detail.subDetail.quantity"/>
+            <text value="Count of Products or Services"/>
+            <repeats value="true"/>
+            <question>
+              <linkId value="OralHealthClaim.item.detail.subDetail.quantity.comparator"/>
+              <text value="comp:"/>
+              <type value="choice"/>
+            </question>
+            <question>
+              <linkId value="OralHealthClaim.item.detail.subDetail.quantity.value"/>
+              <text value="value:"/>
+              <type value="decimal"/>
+            </question>
+            <question>
+              <linkId value="OralHealthClaim.item.detail.subDetail.quantity.units"/>
+              <text value="units:"/>
+              <type value="string"/>
+            </question>
+            <question>
+              <linkId value="OralHealthClaim.item.detail.subDetail.quantity.code"/>
+              <text value="coded units:"/>
+              <type value="string"/>
+            </question>
+            <question>
+              <linkId value="OralHealthClaim.item.detail.subDetail.quantity.system"/>
+              <text value="units system:"/>
+              <type value="string"/>
+            </question>
+          </group>
+          <group>
+            <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+              <valueString value="The fee for an addittional service or product or charge."/>
+            </extension>
+            <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+              <valueString value="Money"/>
+            </extension>
+            <linkId value="OralHealthClaim.item.detail.subDetail.unitPrice"/>
+            <text value="Fee, charge or cost per point"/>
+            <repeats value="true"/>
+            <question>
+              <linkId value="OralHealthClaim.item.detail.subDetail.unitPrice.value"/>
+              <text value="value:"/>
+              <type value="decimal"/>
+            </question>
+            <question>
+              <linkId value="OralHealthClaim.item.detail.subDetail.unitPrice.currency"/>
+              <text value="currency:"/>
+              <type value="string"/>
+            </question>
+          </group>
+          <group>
+            <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+              <valueString value="A real number that represents a multiplier used in determining the overall value of services delivered and/or goods received. The concept of a Factor allows for a discount or surcharge multiplier to be applied to a monetary amount."/>
+            </extension>
+            <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+              <valueString value="decimal"/>
+            </extension>
+            <linkId value="OralHealthClaim.item.detail.subDetail.factor"/>
+            <repeats value="true"/>
+            <question>
+              <linkId value="OralHealthClaim.item.detail.subDetail.factor.value"/>
+              <text value="Price scaling factor"/>
+              <type value="decimal"/>
+            </question>
+          </group>
+          <group>
+            <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+              <valueString value="An amount that expresses the weighting (based on difficulty, cost and/or resource intensiveness) associated with the good or service delivered. The concept of Points allows for assignment of point values for services and/or goods, such that a monetary amount can be assigned to each point."/>
+            </extension>
+            <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+              <valueString value="decimal"/>
+            </extension>
+            <linkId value="OralHealthClaim.item.detail.subDetail.points"/>
+            <repeats value="true"/>
+            <question>
+              <linkId value="OralHealthClaim.item.detail.subDetail.points.value"/>
+              <text value="Difficulty scaling factor"/>
+              <type value="decimal"/>
+            </question>
+          </group>
+          <group>
+            <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+              <valueString value="The quantity times the unit price for an addittional service or product or charge. For example, the formula: unit Quantity * unit Price (Cost per Point) * factor Number  * points = net Amount. Quantity, factor and points are assumed to be 1 if not supplied."/>
+            </extension>
+            <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+              <valueString value="Money"/>
+            </extension>
+            <linkId value="OralHealthClaim.item.detail.subDetail.net"/>
+            <text value="Net additional item cost"/>
+            <repeats value="true"/>
+            <question>
+              <linkId value="OralHealthClaim.item.detail.subDetail.net.value"/>
+              <text value="value:"/>
+              <type value="decimal"/>
+            </question>
+            <question>
+              <linkId value="OralHealthClaim.item.detail.subDetail.net.currency"/>
+              <text value="currency:"/>
+              <type value="string"/>
+            </question>
+          </group>
+          <group>
+            <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+              <valueString value="List of Unique Device Identifiers associated with this line item."/>
+            </extension>
+            <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+              <valueString value="Coding"/>
+            </extension>
+            <linkId value="OralHealthClaim.item.detail.subDetail.udi"/>
+            <repeats value="true"/>
+            <question>
+              <linkId value="OralHealthClaim.item.detail.subDetail.udi.value"/>
+              <text value="Unique Device Identifier"/>
+              <type value="open-choice"/>
+            </question>
+          </group>
+        </group>
+      </group>
+      <group>
+        <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+          <valueString value="The materials and placement date of prior fixed prosthesis."/>
+        </extension>
+        <linkId value="OralHealthClaim.item.prosthesis"/>
+        <title value="Prosthetic details"/>
+        <group>
+          <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+            <valueString value="unique id for the element within a resource (for internal references)."/>
+          </extension>
+          <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+            <valueString value="string"/>
+          </extension>
+          <linkId value="OralHealthClaim.item.prosthesis.id"/>
+          <repeats value="true"/>
+          <question>
+            <linkId value="OralHealthClaim.item.prosthesis.id.value"/>
+            <text value="xml:id (or equivalent in JSON)"/>
+            <type value="string"/>
+          </question>
+        </group>
+        <group>
+          <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+            <valueString value="Indicates whether this is the initial placement of a fixed prosthesis."/>
+          </extension>
+          <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+            <valueString value="boolean"/>
+          </extension>
+          <linkId value="OralHealthClaim.item.prosthesis.initial"/>
+          <repeats value="true"/>
+          <question>
+            <linkId value="OralHealthClaim.item.prosthesis.initial.value"/>
+            <text value="Is this the initial service"/>
+            <type value="boolean"/>
+          </question>
+        </group>
+        <group>
+          <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+            <valueString value="Date of the initial placement."/>
+          </extension>
+          <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+            <valueString value="datetime"/>
+          </extension>
+          <linkId value="OralHealthClaim.item.prosthesis.priorDate"/>
+          <repeats value="true"/>
+          <question>
+            <linkId value="OralHealthClaim.item.prosthesis.priorDate.value"/>
+            <text value="Initial service Date"/>
+            <type value="dateTime"/>
+          </question>
+        </group>
+        <group>
+          <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+            <valueString value="Material of the prior denture or bridge prosthesis. (Oral)."/>
+          </extension>
+          <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+            <valueString value="Coding"/>
+          </extension>
+          <linkId value="OralHealthClaim.item.prosthesis.priorMaterial"/>
+          <repeats value="true"/>
+          <question>
+            <linkId value="OralHealthClaim.item.prosthesis.priorMaterial.value"/>
+            <text value="Prosthetic Material"/>
+            <type value="open-choice"/>
+          </question>
+        </group>
+      </group>
+    </group>
+    <group>
+      <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+        <valueString value="Code to indicate that Xrays, images, emails, documents, models or attachments are being sent in support of this submission."/>
+      </extension>
+      <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+        <valueString value="Coding"/>
+      </extension>
+      <linkId value="OralHealthClaim.additionalMaterials"/>
+      <repeats value="true"/>
+      <question>
+        <linkId value="OralHealthClaim.additionalMaterials.value"/>
+        <text value="Additional materials, documents, etc."/>
+        <type value="open-choice"/>
+      </question>
+    </group>
+  </group>
+</Questionnaire>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ExtensionDefinition xmlns="http://hl7.org/fhir">
+  <id value="maxLength"/>
+  <url value="http://hl7.org/fhir/ExtensionDefinition/maxLength"/>
+  <name value="No more than this many characters"/>
+  <publisher value="HL7 FHIR project"/>
+  <telecom>
+    <system value="url"/>
+    <value value="http://hl7.org/fhir"/>
+  </telecom>
+  <description value="The maximum number of characters that must be present in the simple data type to be considered a &quot;valid&quot; instance."/>
+  <status value="draft"/>
+  <date value="2014-04-27"/>
+  <mapping>
+    <identity value="v2"/>
+    <uri value="http://hl7.org/v2"/>
+    <name value="HL7 v2"/>
+  </mapping>
+  <mapping>
+    <identity value="rim"/>
+    <uri value="http://hl7.org/v3"/>
+    <name value="RIM"/>
+  </mapping>
+  <contextType value="resource"/>
+  <context value="DataElement"/>
+  <context value="Questionnaire.group.question"/>
+  <element>
+    <path value="Extension"/>
+    <short value="No more than this many characters"/>
+    <formal value="The maximum number of characters that must be present in the simple data type to be considered a &quot;valid&quot; instance."/>
+    <comments value="For base64binary, reflects the number of characters representing the encoded data, not the number of bytes of the binary data."/>
+    <min value="0"/>
+    <max value="1"/>
+    <type>
+      <code value="integer"/>
+    </type>
+    <isSummary value="false"/>
+    <mapping>
+      <identity value="v2"/>
+      <map value="N/A"/>
+    </mapping>
+    <mapping>
+      <identity value="rim"/>
+      <map value="N/A (MIF-level)"/>
+    </mapping>
+  </element>
+</ExtensionDefinition>

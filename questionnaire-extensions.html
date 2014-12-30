@@ -1,0 +1,245 @@
+﻿<!DOCTYPE HTML>
+
+
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <title>Questionnaire-extensions - FHIR v0.4.0</title>
+
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="author" content="http://hl7.org/fhir"/>
+
+  <link href="fhir.css" rel="stylesheet"/>
+  <link rel="Prev" href="http://hl7.org/implement/standards/fhir/questionnaire-extensions"/>
+
+  <!-- Bootstrap core CSS -->
+  <link href="./dist/css/bootstrap.css" rel="stylesheet"/>
+  <link href="./assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+  <!-- Project extras -->
+  <link href="./assets/css/project.css" rel="stylesheet"/>
+  <link href="./assets/css/pygments-manni.css" rel="stylesheet"/>
+	<link href="jquery-ui.css" rel="stylesheet"/>
+
+  <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!--[if lt IE 9]>
+  <script src="./assets/js/html5shiv.js"></script>
+  <script src="./assets/js/respond.min.js"></script>
+  <![endif]-->
+
+  <!-- Favicons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="./assets/ico/apple-touch-icon-144-precomposed.png"/>
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="./assets/ico/apple-touch-icon-114-precomposed.png"/>
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="./assets/ico/apple-touch-icon-72-precomposed.png"/>
+  <link rel="apple-touch-icon-precomposed" href="./assets/ico/apple-touch-icon-57-precomposed.png"/>
+  <link rel="shortcut icon" href="./assets/ico/favicon.png"/>
+
+</head>
+<body>
+	<div id="segment-header" class="segment"><!-- segment-header -->	
+		<div class="container"><!-- container -->
+			<a id="logo" href="http://hl7.org/fhir"><img src="./assets/images/fhir-logo-www.png" alt="logo fhir"/> </a>
+			<div id="hl7-status">
+				<b>Continuous Integration Build</b>
+			</div>       	
+			
+			<div id="hl7-nav">
+				 <a id="hl7-logo" href="http://www.hl7.org">
+					<img src="./assets/images/hl7-logo.png" width="42" height="50" alt="visit the hl7 website"/>
+				</a> 
+			</div>       	
+			<!--hl7-search-->
+		</div>
+		<div class="container"><!-- container -->
+	</div></div><!-- /segment-header -->	
+
+
+	<div id="segment-navbar" class="segment"><!-- segment-navbar -->
+		<div id="stripe"> </div>
+		<div class="container"><!-- container -->
+ <!-- HEADER CONTENT -->
+ 	      		
+ 	      		      		
+			<nav class="navbar navbar-inverse">
+				<div class="container">
+					<button data-target=".navbar-inverse-collapse" data-toggle="collapse" class="navbar-toggle" type="button">
+						<span class="icon-bar"> </span>
+						<span class="icon-bar"> </span>
+						<span class="icon-bar"> </span>
+					</button>
+					<a href="index.html" class="navbar-brand hidden">FHIR</a>
+					<div class="nav-collapse collapse navbar-inverse-collapse">
+						<ul class="nav navbar-nav">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="documentation.html">Documentation</a></li>
+              <li><a href="implementation.html">Implementation</a></li>
+              <li><a href="resourcelist.html">Resources</a></li>
+              <li><a href="clinical.html">Clinical</a></li>
+              <li><a href="administration.html">Administrative</a></li>
+              <li><a href="infrastructure.html">Infrastructure</a></li>
+              <li><a href="financial.html">Financial</a></li>
+
+						</ul>
+					</div><!-- /.nav-collapse -->
+				</div><!-- /.container -->
+			</nav><!-- /.navbar -->
+      		
+				
+<!-- /HEADER CONTENT -->				
+		</div><!-- /container -->
+	</div><!-- /segment-navbar -->
+	
+
+	<div id="segment-breadcrumb" class="segment"><!-- segment-breadcrumb -->
+		<div class="container"><!-- container -->	
+			<ul class="breadcrumb">
+        <li><a href="index.html">Home</a></li>
+        <!-- questionnaire-extensions.html / package -->
+
+			</ul>	
+		</div><!-- /container -->
+	</div><!-- /segment-breadcrumb -->
+	
+
+	<div id="segment-content" class="segment"><!-- segment-content -->
+	<div class="container"><!-- container -->
+            <div class="row">
+            	<div class="inner-wrapper">
+<!-- CONTENT CONTENT -->
+
+
+<div class="col-9">
+
+<h1>Core extensions for Questionnaire (Conformance Package)</h1>
+
+
+<div>
+<h2>Scope and Usage</h2>
+<p>
+The core extensions provide HL7 provided extensions to the <a href="questionnaire.html">Questionnaire</a> resource.
+</p>
+</div>
+
+<div>
+<h2>Background and Context</h2>
+<h3>Questionnaire documentation</h3>
+<p>
+The <a href="#category"><b>category</b></a> extension allows a questionnaire to be grouped under various headings for discovery and/or
+for navigation of a list of categories.
+</p>
+<p>
+The <a href="#label"><b>label</b></a> extension allows the heading number for a group or question to be conveyed from the group title or
+question text.  This permits justification and more advanced formatting.
+</p>
+
+<h3>Repetitions</h3>
+<p>
+There are two extensions that provide precise control over the number of repetitions of a group or the number of answers to a question:
+</p>
+<ul>
+  <li><a href="#minOccurs"><b>minOccurs</b></a> establishes a minimum number of group repetitions or minimum number of question answers for "required" groups/questions where the minimum number is greater than 1</li>
+  <li><a href="#maxOccurs"><b>maxOccurs</b></a> establishes a maximum number of group repetitions or maximum number of question answers for "repeating" groups/questions where the maximum number is not unlimited</li>
+</ul>
+
+<h3>Visibility</h3>
+<p>
+There are two extensions that provide control over whether groups or questions are allowed to be answered and/or displayed to the user:
+</p>
+<ul>
+  <li><a href="#enableWhen"><b>enableWhen</b></a> indicates that a question or group should only be answerable (and generally visible) when a particular question has a specified answer (or at least has an answer)</li>
+  <li><a href="#hidden"><b>hidden</b></a> indicates that a question or group should not be displayed to the user at all because the answer is intended for internal use only</li>
+</ul>
+
+<h3>Defaults</h3>
+<p>
+Some questionnaires may choose to declare defaults (though this can obviously influence data collection and is generally avoided
+for questionnaires used for research purposes).  Two extensions are provided to support this:
+</p>
+<ul>
+<li>
+<a href="#defaultValue"><b>defaultValue</b></a> - This allows a default answer to be provided for a question.  The default value is typically displayed
+when the questionnaire is initially rendered, giving the user a chance to change it.
+</li>
+<li>
+<a href="#defaultAsFixed"><b>defaultAsFixed</b></a> - This prevents a user from changing the value of the default value.  It may be used in circumstances where
+a part of the questionnaire is set by context or where it's useful to expose certain data as though it were a question but
+preventing it from being changed.
+</li>
+</ul>
+
+<h3>References</h3>
+<a href="#deReference"><b>deReference</b></a> allows a question to be linked to the corresponding <a href="dataelement.html">DataElement</a>
+resource that defines the meaning and allowed answer types for the question.  Note that the question text and any constraints
+must still be explicitly declared.
+
+<h3>Attachments</h3>
+<p>
+These extensions constrain the attachments that can be returned as the answer to a question
+</p>
+<ul>
+  <li><a href="#mimeType"><b>mimeType</b></a> - Identifies the type of allowed attachment (multiple repetitions for multiple types)</li>
+  <li><a href="#maxSize"><b>maxSize</b></a> - Identifies the maximum number of megabytes an attachment can be</li>
+</ul>
+
+</div>
+
+
+
+<table class="lines"><tr><td colspan="2"><b>Extensions</b>: </td></tr><tr><td><a href="extension-questionnaire-category.html">questionnaire-category</a></td><td><b>What kind of questionnaire?</b> : A code that identifies the questionnaire as falling into a particular group of like questionnaires.  E.g. &quot;Pediatric&quot;, &quot;Admissions&quot;, &quot;Research&quot;, &quot;Demographic&quot;, &quot;Opinion Survey&quot;, etc.</td></tr><tr><td><a href="extension-questionnaire-label.html">questionnaire-label</a></td><td><b>E.g. &quot;1(a)&quot;, &quot;2.5.3&quot;</b> : A label for a particular group or question within the questionnaire.</td></tr><tr><td><a href="extension-questionnaire-minOccurs.html">questionnaire-minOccurs</a></td><td><b>Minimum repetitions</b> : The minimum number of times the group must appear or the minimum number of answers for a question - when greater than 1.</td></tr><tr><td><a href="extension-questionnaire-maxOccurs.html">questionnaire-maxOccurs</a></td><td><b>Maximum repetitions</b> : The maximum number of times the group must appear or the minimum number of answers for a question - when greater than 1 and not unlimited.</td></tr><tr><td><a href="extension-questionnaire-hidden.html">questionnaire-hidden</a></td><td><b>Don't display to user</b> : If true, indicates that the containing group or question should not be displayed to the user for data entry.</td></tr><tr><td><a href="extension-questionnaire-enableWhen.html">questionnaire-enableWhen</a></td><td><b>Only allow data when:</b> : If present, indicates that the group or question containing the extension should only be enabled (allow an answer to be present and, in most circumstances, even be visible to the user) when the specified condition is true.</td></tr><tr><td><a href="extension-questionnaire-defaultValue.html">questionnaire-defaultValue</a></td><td><b>Initial presumed answer for question</b> : This is the value that should be pre-populated when rendering the questionnaire for user input.</td></tr><tr><td><a href="extension-questionnaire-defaultAsFixed.html">questionnaire-defaultAsFixed</a></td><td><b>Treat default as fixed value?</b> : If true, the default value is set as a fixed &quot;answer&quot; for the question.</td></tr><tr><td><a href="extension-questionnaire-deReference.html">questionnaire-deReference</a></td><td><b>Implemented CDE</b> : A reference to the Data Element that corresponds to the question text and answer constraints for this question.</td></tr><tr><td><a href="extension-questionnaire-allowedResource.html">questionnaire-allowedResource</a></td><td><b>Allowed resource for reference</b> : Where the type for a question is &quot;Reference&quot;, indicates a type of resource that is permitted.</td></tr><tr><td><a href="extension-questionnaire-mimeType.html">questionnaire-mimeType</a></td><td><b>Type of attachment</b> : Identifies the kind(s) of [[[Attachment]]] allowed to be sent in answer to the question.</td></tr><tr><td><a href="extension-questionnaire-maxSize.html">questionnaire-maxSize</a></td><td><b>Max size in MB</b> : For attachment answers, indicates the maximum size an attachment provided in response to a question can be.</td></tr></table>
+
+
+
+
+</div>
+
+
+				</div><!-- /inner-wrapper -->
+            </div><!-- /row -->
+        </div><!-- /container -->
+        
+    </div><!-- /segment-content -->
+
+
+	<div id="segment-footer" class="segment"><!-- segment-footer -->
+		<div class="container"><!-- container -->
+			<div class="inner-wrapper">
+				<p>
+        © HL7.org 2011+. FHIR DSTU (v0.4.0-3920) generated on Tue, Dec 30, 2014 11:05+0000. <!-- <a href="qa.html">QA Report</a> --> <!-- achive note -->
+        <br/>
+        <span style="color: #FFFF77">
+        Links: <a style="color: #81BEF7" href="timelines.html">What's a DSTU?</a> | 
+               <a style="color: #81BEF7" href="history.html">Version History</a> | 
+               <a style="color: #81BEF7" href="http://services.w3.org/htmldiff?doc1=http%3A%2F%2Fhl7.org%2Fimplement%2Fstandards%2Ffhir%2Fquestionnaire-extensions&amp;doc2=http%3A%2F%2Fhl7-fhir.github.io%2F%2Fquestionnaire-extensions">Compare to DSTU</a> | 
+               <a style="color: #81BEF7" rel="license" href="license.html"><img src="cc0.png" style="border-style: none;" alt="CC0"/></a> | 
+               <a style="color: #81BEF7" target="_blank" href="http://gforge.hl7.org/gf/project/fhir/tracker/?action=TrackerItemAdd&amp;tracker_id=677">Propose a change</a>   
+        </span>
+        </p>
+			</div><!-- /inner-wrapper -->
+		</div><!-- /container -->
+	</div><!-- /segment-footer -->
+<!-- disqus thread -->
+<!--disqus-->
+<!-- end disqus -->        
+	
+	<div id="segment-post-footer" class="segment hidden"><!-- segment-post-footer -->
+		<div class="container"><!-- container -->
+		</div><!-- /container -->
+	</div><!-- /segment-post-footer -->
+    
+    <!-- JS and analytics only. -->
+    <!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="./assets/js/jquery.js"> </script>   <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+<script src="./dist/js/bootstrap.min.js"> </script>
+<script src="./assets/js/respond.min.js"> </script>
+
+<script src="./assets/js/fhir.js"> </script>
+
+<!-- Analytics Below
+================================================== -->
+
+    
+</body>
+</html>

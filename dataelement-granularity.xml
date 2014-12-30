@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="dataelement-granularity"/>
+  <meta>
+    <lastUpdated value="2014-12-30T10:55:31"/>
+  </meta>
+  <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      <p>This value set contains 6 concepts</p>
+      <h2>DataElementGranularity</h2>
+      <p>Indicates the degree of precision of the data element definition</p>
+      <p>This value set defines its own terms in the system http://hl7.org/fhir/dataelement-granularity</p>
+      <table class="codes">
+        <tr>
+          <td>
+            <b>Lvl</b>
+          </td>
+          <td>
+            <b>Code</b>
+          </td>
+          <td>
+            <b>Definition</b>
+          </td>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td>comparable
+            <a name="comparable"> </a>
+          </td>
+          <td>The data element is sufficiently well-constrained that multiple pieces of data captured according to the constraints of the data element will be comparable (though in some cases, a degree of automated conversion/normalization may be required).</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>  fully specified
+            <a name="fullyspecified"> </a>
+          </td>
+          <td>The data element is fully specified down to a single value set, single unit of measure, single data type, etc.  Multiple pieces of data associated with this data element are fully compareable.</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>  equivalent
+            <a name="equivalent"> </a>
+          </td>
+          <td>The data element allows multiple units of measure having equivalent meaning.  E.g. &quot;cc&quot; (cubic centimeter) and &quot;mL&quot;.</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>  convertable
+            <a name="convertable"> </a>
+          </td>
+          <td>The data element allows multiple units of measure that are convertable between each other (e.g. Inches and centimeters) and/or allows data to be captured in multiple value sets for which a known mapping exists allowing conversion of meaning.</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>    scaleable
+            <a name="scaleable"> </a>
+          </td>
+          <td>A convertable data element where unit conversions are different only by a power of 10.  E.g. g, mg, kg.</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>  flexible
+            <a name="flexible"> </a>
+          </td>
+          <td>The data element is unconstrained in units, choice of data types and/or choice of vocabulary such that automated comparison of data captured using the data element is not possible.</td>
+        </tr>
+      </table>
+    </div>
+  </text>
+  <extension url="http://hl7.org/fhir/ExtensionDefinition/valueset-oid">
+    <valueUri value="urn:oid:2.16.840.1.113883.4.642.2.581"/>
+  </extension>
+  <identifier value="http://hl7.org/fhir/vs/dataelement-granularity"/>
+  <name value="DataElementGranularity"/>
+  <publisher value="HL7 (FHIR Project)"/>
+  <telecom>
+    <system value="url"/>
+    <value value="http://hl7.org/fhir"/>
+  </telecom>
+  <telecom>
+    <system value="email"/>
+    <value value="fhir@lists.hl7.org"/>
+  </telecom>
+  <description value="Indicates the degree of precision of the data element definition"/>
+  <status value="draft"/>
+  <date value="2014-12-30T10:55:31"/>
+  <define>
+    <extension url="http://hl7.org/fhir/ExtensionDefinition/valueset-oid">
+      <valueUri value="urn:oid:2.16.840.1.113883.4.642.1.581"/>
+    </extension>
+    <system value="http://hl7.org/fhir/dataelement-granularity"/>
+    <caseSensitive value="true"/>
+    <concept>
+      <code value="comparable"/>
+      <definition value="The data element is sufficiently well-constrained that multiple pieces of data captured according to the constraints of the data element will be comparable (though in some cases, a degree of automated conversion/normalization may be required)."/>
+      <concept>
+        <code value="fully specified"/>
+        <definition value="The data element is fully specified down to a single value set, single unit of measure, single data type, etc.  Multiple pieces of data associated with this data element are fully compareable."/>
+      </concept>
+      <concept>
+        <code value="equivalent"/>
+        <definition value="The data element allows multiple units of measure having equivalent meaning.  E.g. &quot;cc&quot; (cubic centimeter) and &quot;mL&quot;."/>
+      </concept>
+      <concept>
+        <code value="convertable"/>
+        <definition value="The data element allows multiple units of measure that are convertable between each other (e.g. Inches and centimeters) and/or allows data to be captured in multiple value sets for which a known mapping exists allowing conversion of meaning."/>
+        <concept>
+          <code value="scaleable"/>
+          <definition value="A convertable data element where unit conversions are different only by a power of 10.  E.g. g, mg, kg."/>
+        </concept>
+      </concept>
+      <concept>
+        <code value="flexible"/>
+        <definition value="The data element is unconstrained in units, choice of data types and/or choice of vocabulary such that automated comparison of data captured using the data element is not possible."/>
+      </concept>
+    </concept>
+  </define>
+</ValueSet>

@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="bundle-entry-status"/>
+  <meta>
+    <lastUpdated value="2014-12-30T10:55:31"/>
+  </meta>
+  <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      <p>This value set contains 4 concepts</p>
+      <h2>BundleEntryStatus</h2>
+      <p>The status of a resource in the bundle. Used for search (to differentiate between resources included as a match, and resources included as an _include), and for transactions (create/update/delete)</p>
+      <p>This value set defines its own terms in the system http://hl7.org/fhir/bundle-entry-status</p>
+      <table class="codes">
+        <tr>
+          <td>
+            <b>Code</b>
+          </td>
+          <td>
+            <b>Display</b>
+          </td>
+          <td>
+            <b>Definition</b>
+          </td>
+        </tr>
+        <tr>
+          <td>create
+            <a name="create"> </a>
+          </td>
+          <td>Create</td>
+          <td>Transaction: perform a create operation on this resource.</td>
+        </tr>
+        <tr>
+          <td>update
+            <a name="update"> </a>
+          </td>
+          <td>Update</td>
+          <td>Transaction: perform an update operation on this resource.</td>
+        </tr>
+        <tr>
+          <td>match
+            <a name="match"> </a>
+          </td>
+          <td>Match</td>
+          <td>Transaction: look for this resource using the search url provided. If there&#39;s no match, create it. Search: this resource is returned because it matches the search criteria.</td>
+        </tr>
+        <tr>
+          <td>include
+            <a name="include"> </a>
+          </td>
+          <td>Include</td>
+          <td>Search: this resource is returned because it meets an _include criteria.</td>
+        </tr>
+      </table>
+    </div>
+  </text>
+  <extension url="http://hl7.org/fhir/ExtensionDefinition/valueset-oid">
+    <valueUri value="urn:oid:2.16.840.1.113883.4.642.2.494"/>
+  </extension>
+  <identifier value="http://hl7.org/fhir/vs/bundle-entry-status"/>
+  <name value="BundleEntryStatus"/>
+  <publisher value="HL7 (FHIR Project)"/>
+  <telecom>
+    <system value="url"/>
+    <value value="http://hl7.org/fhir"/>
+  </telecom>
+  <telecom>
+    <system value="email"/>
+    <value value="fhir@lists.hl7.org"/>
+  </telecom>
+  <description value="The status of a resource in the bundle. Used for search (to differentiate between resources included as a match, and resources included as an _include), and for transactions (create/update/delete)"/>
+  <status value="draft"/>
+  <date value="2014-12-30T10:55:31"/>
+  <define>
+    <extension url="http://hl7.org/fhir/ExtensionDefinition/valueset-oid">
+      <valueUri value="urn:oid:2.16.840.1.113883.4.642.1.494"/>
+    </extension>
+    <system value="http://hl7.org/fhir/bundle-entry-status"/>
+    <caseSensitive value="true"/>
+    <concept>
+      <code value="create"/>
+      <display value="Create"/>
+      <definition value="Transaction: perform a create operation on this resource."/>
+    </concept>
+    <concept>
+      <code value="update"/>
+      <display value="Update"/>
+      <definition value="Transaction: perform an update operation on this resource."/>
+    </concept>
+    <concept>
+      <code value="match"/>
+      <display value="Match"/>
+      <definition value="Transaction: look for this resource using the search url provided. If there&#39;s no match, create it. Search: this resource is returned because it matches the search criteria."/>
+    </concept>
+    <concept>
+      <code value="include"/>
+      <display value="Include"/>
+      <definition value="Search: this resource is returned because it meets an _include criteria."/>
+    </concept>
+  </define>
+</ValueSet>

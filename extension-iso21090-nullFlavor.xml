@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ExtensionDefinition xmlns="http://hl7.org/fhir">
+  <id value="iso21090-nullFlavor"/>
+  <url value="http://hl7.org/fhir/ExtensionDefinition/iso21090-nullFlavor"/>
+  <name value="NI | OTH | NINF | PINF | UNK | ASKU | NAV | NASK | TRC | MSK | NA | QS"/>
+  <publisher value="HL7"/>
+  <telecom>
+    <system value="url"/>
+    <value value="http://www.hl7.org"/>
+  </telecom>
+  <description value="If the value is not a proper value, indicates the reason."/>
+  <status value="draft"/>
+  <date value="2012-06-24"/>
+  <mapping>
+    <identity value="v2"/>
+    <uri value="http://hl7.org/v2"/>
+    <name value="HL7 v2"/>
+  </mapping>
+  <mapping>
+    <identity value="rim"/>
+    <uri value="http://hl7.org/v3"/>
+    <name value="RIM"/>
+  </mapping>
+  <contextType value="datatype"/>
+  <context value="Any"/>
+  <element>
+    <path value="Extension"/>
+    <short value="NI | OTH | NINF | PINF | UNK | ASKU | NAV | NASK | TRC | MSK | NA | QS"/>
+    <formal value="If the value is not a proper value, indicates the reason."/>
+    <comments value="Considerable care must be used when using nullFlavor in this context of FHIR - more than any other concept, this is tied to the way v3 works, and FHIR is quite different. For instance, there is no notion of a &quot;proper value&quot; as opposed to any other value in FHIR. a NullFlavor should be understood to mean, &quot;why information is missing&quot;, and the nulFlavors OTH, NINF, PINF, and TRC should not be used."/>
+    <min value="0"/>
+    <max value="1"/>
+    <type>
+      <code value="code"/>
+    </type>
+    <isSummary value="false"/>
+    <binding>
+      <name value="NullFlavor"/>
+      <isExtensible value="false"/>
+      <conformance value="required"/>
+      <description value="A collection of codes specifying why a valid value is not present"/>
+      <referenceReference>
+        <reference value="http://hl7.org/fhir/v3/vs/NullFlavor"/>
+      </referenceReference>
+    </binding>
+    <mapping>
+      <identity value="v2"/>
+      <map value="n/a"/>
+    </mapping>
+    <mapping>
+      <identity value="rim"/>
+      <map value="ANY.nullFlavor"/>
+    </mapping>
+  </element>
+</ExtensionDefinition>

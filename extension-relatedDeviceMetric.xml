@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ExtensionDefinition xmlns="http://hl7.org/fhir">
+  <id value="relatedDeviceMetric"/>
+  <url value="http://hl7.org/fhir/ExtensionDefinition/relatedDeviceMetric"/>
+  <name value="Reference to the DeviceMetric resource"/>
+  <display value="Reference to the external Device Metric resource"/>
+  <publisher value="Health Level Seven, Inc. - Health Care Devices (DEV) WG"/>
+  <telecom>
+    <system value="url"/>
+    <value value="http://hl7.org"/>
+  </telecom>
+  <description value="This extension provides the facility to link the current Observation resource to the DeviceMetric resource from where the data is coming from."/>
+  <status value="draft"/>
+  <date value="2014-11-17"/>
+  <contextType value="resource"/>
+  <context value="Observation"/>
+  <element>
+    <path value="Extension"/>
+    <short value="Reference to the DeviceMetric resource"/>
+    <formal value="This extension provides the facility to link the current Observation resource to the DeviceMetric resource from where the data is coming from."/>
+    <min value="1"/>
+    <max value="1"/>
+    <type>
+      <code value="Reference"/>
+      <profile value="http://hl7.org/fhir/Profile/DeviceMetric"/>
+    </type>
+    <isSummary value="false"/>
+  </element>
+</ExtensionDefinition>

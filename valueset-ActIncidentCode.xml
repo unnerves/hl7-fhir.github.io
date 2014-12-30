@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="valueset-ActIncidentCode"/>
+  <meta>
+    <lastUpdated value="2014-12-30T10:55:31"/>
+  </meta>
+  <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      This value set includes sample ActIncidentCode codes.
+    
+      <hr/>
+      <p>This value set contains 3 concepts</p>
+      <h2>ActIncidentCode Codes</h2>
+      <p>This value set includes sample ActIncidentCode codes.</p>
+      <p>
+        <b>Copyright Statement:</b> This is an example set
+      </p>
+      <p>This value set defines its own terms in the system http://hl7.org/fhir/actincidentcode</p>
+      <table class="codes">
+        <tr>
+          <td>
+            <b>Code</b>
+          </td>
+          <td>
+            <b>Definition</b>
+          </td>
+        </tr>
+        <tr>
+          <td>code1
+            <a name="code1"> </a>
+          </td>
+          <td/>
+        </tr>
+        <tr>
+          <td>code2
+            <a name="code2"> </a>
+          </td>
+          <td/>
+        </tr>
+        <tr>
+          <td>code3
+            <a name="code3"> </a>
+          </td>
+          <td/>
+        </tr>
+      </table>
+    </div>
+  </text>
+  <extension url="http://hl7.org/fhir/ExtensionDefinition/valueset-oid">
+    <valueUri value="urn:oid:2.16.840.1.113883.4.642.2.446"/>
+  </extension>
+  <identifier value="http://hl7.org/fhir/vs/ActIncidentCode"/>
+  <name value="ActIncidentCode Codes"/>
+  <publisher value="Financial Management"/>
+  <telecom>
+    <system value="url"/>
+    <value value="http://hl7.org/fhir"/>
+  </telecom>
+  <description value="This value set includes sample ActIncidentCode codes."/>
+  <copyright value="This is an example set"/>
+  <status value="draft"/>
+  <define>
+    <extension url="http://hl7.org/fhir/ExtensionDefinition/valueset-oid">
+      <valueUri value="urn:oid:null"/>
+    </extension>
+    <system value="http://hl7.org/fhir/actincidentcode"/>
+    <concept>
+      <code value="code1"/>
+    </concept>
+    <concept>
+      <code value="code2"/>
+    </concept>
+    <concept>
+      <code value="code3"/>
+    </concept>
+  </define>
+</ValueSet>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ExtensionDefinition xmlns="http://hl7.org/fhir">
+  <id value="questionnaire-sdc-specialGroup"/>
+  <url value="http://hl7.org/fhir/ExtensionDefinition/questionnaire-sdc-specialGroup"/>
+  <name value="header | footer"/>
+  <publisher value="U.S. Office of the National Coordinator (ONC)&#39;s Standards and Infrastructure (S&amp;I) Structured Data Capture project"/>
+  <telecom>
+    <system value="url"/>
+    <value value="http://wiki.siframework.org/Structured+Data+Capture+Initiative"/>
+  </telecom>
+  <description value="If specified, indicates that the group should be rendered as a repeating header or footer on each &quot;page&quot; of the questionnaire."/>
+  <status value="draft"/>
+  <date value="2014-04-21"/>
+  <contextType value="resource"/>
+  <context value="Questionnaire.group"/>
+  <context value="Questionnaire.group.group"/>
+  <element>
+    <path value="Extension"/>
+    <short value="header | footer"/>
+    <formal value="If specified, indicates that the group should be rendered as a repeating header or footer on each &quot;page&quot; of the questionnaire."/>
+    <comments value="When omitted, sections are presumed to be &quot;regular&quot; sections."/>
+    <min value="0"/>
+    <max value="1"/>
+    <type>
+      <code value="code"/>
+    </type>
+    <isSummary value="false"/>
+    <binding>
+      <name value="QuestionnaireGroupSpecialType"/>
+      <isExtensible value="true"/>
+      <description value="If specified, indicates that the group should be rendered as a repeating header or footer on each &quot;page&quot; of the questionnaire."/>
+      <referenceReference>
+        <reference value="http://hl7.org/fhir/vs/special-type"/>
+      </referenceReference>
+    </binding>
+  </element>
+</ExtensionDefinition>

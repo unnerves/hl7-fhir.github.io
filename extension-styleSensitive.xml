@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ExtensionDefinition xmlns="http://hl7.org/fhir">
+  <id value="styleSensitive"/>
+  <url value="http://hl7.org/fhir/ExtensionDefinition/styleSensitive"/>
+  <name value="Are styles important for processing?"/>
+  <publisher value="HL7 FHIR project"/>
+  <telecom>
+    <system value="url"/>
+    <value value="http://hl7.org/fhir"/>
+  </telecom>
+  <description value="Indicates that the style extensions in this resource are essential to the interpretation of the styled text and that it cannot be rendered without the style without losing essential information."/>
+  <status value="draft"/>
+  <date value="2014-04-23"/>
+  <contextType value="resource"/>
+  <context value="*"/>
+  <element>
+    <path value="Extension"/>
+    <short value="Are styles important for processing?"/>
+    <formal value="Indicates that the style extensions in this resource are essential to the interpretation of the styled text and that it cannot be rendered without the style without losing essential information."/>
+    <comments value="If set to true, all systems that claim to support this extension and which render elements of the resource containing this extension SHALL either render the content as required by the style extensions defined by this profile that are present in the resource or shall (if safe to do so based on their own rules), omit entirely the styled content they cannot render in accordance with the extensions."/>
+    <min value="0"/>
+    <max value="1"/>
+    <type>
+      <code value="boolean"/>
+    </type>
+    <isSummary value="false"/>
+  </element>
+</ExtensionDefinition>

@@ -1,0 +1,53 @@
+{
+  "resourceType": "ValueSet",
+  "id": "valueset-cqf-medicationprescription-status",
+  "meta": {
+    "lastUpdated": "2014-12-30T10:55:31.814"
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div>\n\t\t<p>This value set contains 4 concepts</p>\n\t\t<h2>MedicationPrescriptionStatus</h2>\n\t\t<p>A code specifying the state of the prescribing event. Describes the lifecycle of the prescription.</p>\n\t\t<p>This value set defines its own terms in the system http://hl7.org/fhir/medication-prescription-status\n\t\tand omits the &quot;entered in error&quot; and &quot;superceded&quot; codes.</p>\n\t\t<table class=\"codes\">\n\t\t  <tr>\n\t\t\t<td>\n\t\t\t  <b>Code</b>\n\t\t\t</td>\n\t\t\t<td>\n\t\t\t  <b>Definition</b>\n\t\t\t</td>\n\t\t\t<td>\n\t\t\t  <b>\n\t\t\t\t<a href=\"v3\\ActStatus\\index.html\">v3 Map (ctStatus)</a>\n\t\t\t  </b>\n\t\t\t</td>\n\t\t  </tr>\n\t\t  <tr>\n\t\t\t<td>active\n\t\t\t  <a name=\"active\"> </a>\n\t\t\t</td>\n\t\t\t<td>The prescription is 'actionable', but not all actions that are implied by it have occurred yet.</td>\n\t\t\t<td>\n\t\t\t  <span title=\"null\"/>\n\t\t\t  <a href=\"v3\\ActStatus\\index.html#active\">active</a>\n\t\t\t</td>\n\t\t  </tr>\n\t\t  <tr>\n\t\t\t<td>on hold\n\t\t\t  <a name=\"onhold\"> </a>\n\t\t\t</td>\n\t\t\t<td>Actions implied by the prescription have been temporarily halted, but are expected to continue later.  May also be called &quot;suspended&quot;.</td>\n\t\t\t<td>\n\t\t\t  <span title=\"null\"/>\n\t\t\t  <a href=\"v3\\ActStatus\\index.html#suspended\">suspended</a>\n\t\t\t</td>\n\t\t  </tr>\n\t\t  <tr>\n\t\t\t<td>completed\n\t\t\t  <a name=\"completed\"> </a>\n\t\t\t</td>\n\t\t\t<td>All actions that are implied by the prescription have occurred (this will rarely be made explicit).</td>\n\t\t\t<td>\n\t\t\t  <span title=\"null\"/>\n\t\t\t  <a href=\"v3\\ActStatus\\index.html#completed\">completed</a>\n\t\t\t</td>\n\t\t  </tr>\n\t\t  <tr>\n\t\t\t<td>stopped\n\t\t\t  <a name=\"stopped\"> </a>\n\t\t\t</td>\n\t\t\t<td>Actions implied by the prescription have been permanently halted, before all of them occurred.</td>\n\t\t\t<td>\n\t\t\t  <span title=\"null\"/>\n\t\t\t  <a href=\"v3\\ActStatus\\index.html#aborted\">aborted</a>\n\t\t\t</td>\n\t\t  </tr>\n\t\t</table>\n\t  </div>"
+  },
+  "http://hl7.org/fhir/ExtensionDefinition/valueset-oid": [
+    {
+      "valueUri": "urn:oid:2.16.840.1.113883.4.642.2.691"
+    }
+  ],
+  "identifier": "http://hl7.org/fhir/vs/cqf-medicationprescription-status",
+  "name": "CQFMedicationPrescriptionStatus",
+  "publisher": "Health Level Seven, Inc. - CQI WG",
+  "telecom": [
+    {
+      "system": "url",
+      "value": "http://www.hl7.org/Special/committees/cqi/"
+    },
+    {
+      "system": "url",
+      "value": "http://www.hl7.org"
+    }
+  ],
+  "description": "A code specifying the state of the prescribing event. Describes the lifecycle of the prescription.",
+  "status": "draft",
+  "date": "2014-12-18T11:36:49.025-05:00",
+  "compose": {
+    "include": [
+      {
+        "system": "http://hl7.org/fhir/medication-prescription-status",
+        "concept": [
+          {
+            "code": "active"
+          },
+          {
+            "code": "on hold"
+          },
+          {
+            "code": "completed"
+          },
+          {
+            "code": "stopped"
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ExtensionDefinition xmlns="http://hl7.org/fhir">
+  <id value="11179-objectClass"/>
+  <url value="http://hl7.org/fhir/ExtensionDefinition/11179-objectClass"/>
+  <name value="Object Class"/>
+  <display value="Object Class"/>
+  <publisher value="Health Level Seven"/>
+  <telecom>
+    <system value="url"/>
+    <value value="http://hl7.org"/>
+  </telecom>
+  <description value="A concept that represents a set of ideas, abstractions, or things in the real world that can be identified with explicit boundaries and meaning and whose properties and behavior follow the same rules. It may be either a single or a group of associated concepts, abstractions, or things."/>
+  <status value="draft"/>
+  <date value="2014-04-21"/>
+  <mapping>
+    <identity value="v2"/>
+    <uri value="http://hl7.org/v2"/>
+    <name value="HL7 v2"/>
+  </mapping>
+  <mapping>
+    <identity value="rim"/>
+    <uri value="http://hl7.org/v3"/>
+    <name value="RIM"/>
+  </mapping>
+  <mapping>
+    <identity value="iso11179"/>
+    <uri value="http://metadata-standards.org/11179/"/>
+    <name value="ISO 11179"/>
+  </mapping>
+  <contextType value="resource"/>
+  <context value="DataElement.mapping"/>
+  <element>
+    <path value="Extension"/>
+    <short value="Object Class"/>
+    <formal value="A concept that represents a set of ideas, abstractions, or things in the real world that can be identified with explicit boundaries and meaning and whose properties and behavior follow the same rules. It may be either a single or a group of associated concepts, abstractions, or things."/>
+    <comments value="ObjectClass and Property are treated as a data model that can be mapped to like any other.  This extension merely captures the ObjectClass element as a discrete code.  The information conveyed here should also be conveyed in human-readable form in the mapping.map element."/>
+    <min value="0"/>
+    <max value="1"/>
+    <type>
+      <code value="Coding"/>
+    </type>
+    <isSummary value="false"/>
+    <binding>
+      <name value="11179ObjectClass"/>
+      <isExtensible value="true"/>
+      <description value="A concept that represents a set of ideas, abstractions, or things in the real world that can be identified with explicit boundaries and meaning and whose properties and behavior follow the same rules.  E.g. Person, Prescription, Encounter, etc."/>
+    </binding>
+    <mapping>
+      <identity value="v2"/>
+      <map value="N/A"/>
+    </mapping>
+    <mapping>
+      <identity value="rim"/>
+      <map value="N/A"/>
+    </mapping>
+    <mapping>
+      <identity value="iso11179"/>
+      <map value="Data_Element.meaning.object_class"/>
+    </mapping>
+  </element>
+</ExtensionDefinition>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="device-use-request-priority"/>
+  <meta>
+    <lastUpdated value="2014-12-30T10:55:31"/>
+  </meta>
+  <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      <p>This value set contains 4 concepts</p>
+      <h2>DeviceUseRequestPriority</h2>
+      <p>Codes representing the priority of the request</p>
+      <p>This value set defines its own terms in the system http://hl7.org/fhir/device-use-request-priority</p>
+      <table class="codes">
+        <tr>
+          <td>
+            <b>Code</b>
+          </td>
+          <td>
+            <b>Definition</b>
+          </td>
+        </tr>
+        <tr>
+          <td>routine
+            <a name="routine"> </a>
+          </td>
+          <td>The request has a normal priority.</td>
+        </tr>
+        <tr>
+          <td>urgent
+            <a name="urgent"> </a>
+          </td>
+          <td>The request should be done urgently.</td>
+        </tr>
+        <tr>
+          <td>stat
+            <a name="stat"> </a>
+          </td>
+          <td>The request is time-critical.</td>
+        </tr>
+        <tr>
+          <td>asap
+            <a name="asap"> </a>
+          </td>
+          <td>The request should be acted on as soon as possible.</td>
+        </tr>
+      </table>
+    </div>
+  </text>
+  <extension url="http://hl7.org/fhir/ExtensionDefinition/valueset-oid">
+    <valueUri value="urn:oid:2.16.840.1.113883.4.642.2.499"/>
+  </extension>
+  <identifier value="http://hl7.org/fhir/vs/device-use-request-priority"/>
+  <name value="DeviceUseRequestPriority"/>
+  <publisher value="HL7 (FHIR Project)"/>
+  <telecom>
+    <system value="url"/>
+    <value value="http://hl7.org/fhir"/>
+  </telecom>
+  <telecom>
+    <system value="email"/>
+    <value value="fhir@lists.hl7.org"/>
+  </telecom>
+  <description value="Codes representing the priority of the request"/>
+  <status value="draft"/>
+  <date value="2014-12-30T10:55:31"/>
+  <define>
+    <extension url="http://hl7.org/fhir/ExtensionDefinition/valueset-oid">
+      <valueUri value="urn:oid:2.16.840.1.113883.4.642.1.499"/>
+    </extension>
+    <system value="http://hl7.org/fhir/device-use-request-priority"/>
+    <caseSensitive value="true"/>
+    <concept>
+      <code value="routine"/>
+      <definition value="The request has a normal priority."/>
+    </concept>
+    <concept>
+      <code value="urgent"/>
+      <definition value="The request should be done urgently."/>
+    </concept>
+    <concept>
+      <code value="stat"/>
+      <definition value="The request is time-critical."/>
+    </concept>
+    <concept>
+      <code value="asap"/>
+      <definition value="The request should be acted on as soon as possible."/>
+    </concept>
+  </define>
+</ValueSet>

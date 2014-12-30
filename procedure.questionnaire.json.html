@@ -1,0 +1,1266 @@
+﻿<!DOCTYPE HTML>
+
+
+
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <title>Procedure.questionnaire.json - FHIR v0.4.0</title>
+
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="author" content="http://hl7.org/fhir"/>
+
+  <link href="fhir.css" rel="stylesheet"/>
+  <link rel="Prev" href="http://hl7.org/implement/standards/fhir/procedure.questionnaire.json.html"/>
+
+  <!-- Bootstrap core CSS -->
+  <link href="./dist/css/bootstrap.css" rel="stylesheet"/>
+  <link href="./assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+  <!-- Project extras -->
+  <link href="./assets/css/project.css" rel="stylesheet"/>
+  <link href="./assets/css/pygments-manni.css" rel="stylesheet"/>
+	<link href="jquery-ui.css" rel="stylesheet"/>
+
+  <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!--[if lt IE 9]>
+  <script src="./assets/js/html5shiv.js"></script>
+  <script src="./assets/js/respond.min.js"></script>
+  <![endif]-->
+
+  <!-- Favicons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="./assets/ico/apple-touch-icon-144-precomposed.png"/>
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="./assets/ico/apple-touch-icon-114-precomposed.png"/>
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="./assets/ico/apple-touch-icon-72-precomposed.png"/>
+  <link rel="apple-touch-icon-precomposed" href="./assets/ico/apple-touch-icon-57-precomposed.png"/>
+  <link rel="shortcut icon" href="./assets/ico/favicon.png"/>
+
+</head>
+<body>
+	<div id="segment-header" class="segment"><!-- segment-header -->	
+		<div class="container"><!-- container -->
+			<a id="logo" href="http://hl7.org/fhir"><img src="./assets/images/fhir-logo-www.png" alt="logo fhir"/> </a>
+			<div id="hl7-status">
+				<b>Continuous Integration Build</b>
+			</div>       	
+			
+			<div id="hl7-nav">
+				 <a id="hl7-logo" href="http://www.hl7.org">
+					<img src="./assets/images/hl7-logo.png" width="42" height="50" alt="visit the hl7 website"/>
+				</a> 
+			</div>       	
+			<!--hl7-search-->
+		</div>
+		<div class="container"><!-- container -->
+	</div></div><!-- /segment-header -->	
+
+
+	<div id="segment-navbar" class="segment"><!-- segment-navbar -->
+		<div id="stripe"> </div>
+		<div class="container"><!-- container -->
+ <!-- HEADER CONTENT -->
+ 	      		
+ 	      		      		
+			<nav class="navbar navbar-inverse">
+				<div class="container">
+					<button data-target=".navbar-inverse-collapse" data-toggle="collapse" class="navbar-toggle" type="button">
+						<span class="icon-bar"> </span>
+						<span class="icon-bar"> </span>
+						<span class="icon-bar"> </span>
+					</button>
+					<a href="index.html" class="navbar-brand hidden">FHIR</a>
+					<div class="nav-collapse collapse navbar-inverse-collapse">
+						<ul class="nav navbar-nav">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="documentation.html">Documentation</a></li>
+              <li><a href="implementation.html">Implementation</a></li>
+              <li><a href="resourcelist.html">Resources</a></li>
+              <li><a href="clinical.html">Clinical</a></li>
+              <li><a href="administration.html">Administrative</a></li>
+              <li><a href="infrastructure.html">Infrastructure</a></li>
+              <li><a href="financial.html">Financial</a></li>
+
+						</ul>
+					</div><!-- /.nav-collapse -->
+				</div><!-- /.container -->
+			</nav><!-- /.navbar -->
+      		
+				
+<!-- /HEADER CONTENT -->				
+		</div><!-- /container -->
+	</div><!-- /segment-navbar -->
+	
+
+	<div id="segment-breadcrumb" class="segment"><!-- segment-breadcrumb -->
+		<div class="container"><!-- container -->	
+			<ul class="breadcrumb">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="clinical.html">Clinical</a></li>        <li><a href="procedure.html">Procedure</a></li>        <li><b>Generated Questionnaire</b></li>        <!-- procedure.questionnaire.json.html / resource-questionnaire:Procedure -->
+
+			</ul>	
+		</div><!-- /container -->
+	</div><!-- /segment-breadcrumb -->
+	
+
+	<div id="segment-content" class="segment"><!-- segment-content -->
+	<div class="container"><!-- container -->
+            <div class="row">
+            	<div class="inner-wrapper">
+<!-- CONTENT CONTENT -->
+
+
+<div class="col-9">
+
+<h1>Procedure.questionnaire.json</h1>
+
+<p>
+<a href="procedure.questionnaire.json">Raw JSON</a> (<a href="procedure.questionnaire.canonical.json">canonical form</a>)
+</p>
+
+<div class="example">
+<p>Generated Questionnaire for Procedure</p>
+<pre class="json">
+{
+  &quot;resourceType&quot;: &quot;Questionnaire&quot;,
+  &quot;id&quot;: &quot;qs1&quot;,
+  &quot;contained&quot;: [
+    {
+      &quot;resourceType&quot;: &quot;ValueSet&quot;,
+      &quot;id&quot;: &quot;vs2&quot;,
+      &quot;identifier&quot;: &quot;urn:uuid:0d1bd1fe-3320-4297-8c67-e13bdddedf0f&quot;,
+      &quot;name&quot;: &quot;Type options for Procedure.relatedItem.target&quot;,
+      &quot;description&quot;: &quot;Type options for Procedure.relatedItem.target&quot;,
+      &quot;status&quot;: &quot;active&quot;,
+      &quot;expansion&quot;: {
+        &quot;timestamp&quot;: &quot;2014-12-30T11:05:35+00:00&quot;,
+        &quot;contains&quot;: [
+          {
+            &quot;system&quot;: &quot;http://hl7.org/fhir/resource-types&quot;,
+            &quot;code&quot;: &quot;AllergyIntolerance&quot;,
+            &quot;display&quot;: &quot;AllergyIntolerance&quot;
+          },
+          {
+            &quot;system&quot;: &quot;http://hl7.org/fhir/resource-types&quot;,
+            &quot;code&quot;: &quot;CarePlan&quot;,
+            &quot;display&quot;: &quot;CarePlan&quot;
+          },
+          {
+            &quot;system&quot;: &quot;http://hl7.org/fhir/resource-types&quot;,
+            &quot;code&quot;: &quot;Condition&quot;,
+            &quot;display&quot;: &quot;Condition&quot;
+          },
+          {
+            &quot;system&quot;: &quot;http://hl7.org/fhir/resource-types&quot;,
+            &quot;code&quot;: &quot;DiagnosticReport&quot;,
+            &quot;display&quot;: &quot;DiagnosticReport&quot;
+          },
+          {
+            &quot;system&quot;: &quot;http://hl7.org/fhir/resource-types&quot;,
+            &quot;code&quot;: &quot;FamilyHistory&quot;,
+            &quot;display&quot;: &quot;FamilyHistory&quot;
+          },
+          {
+            &quot;system&quot;: &quot;http://hl7.org/fhir/resource-types&quot;,
+            &quot;code&quot;: &quot;ImagingStudy&quot;,
+            &quot;display&quot;: &quot;ImagingStudy&quot;
+          },
+          {
+            &quot;system&quot;: &quot;http://hl7.org/fhir/resource-types&quot;,
+            &quot;code&quot;: &quot;Immunization&quot;,
+            &quot;display&quot;: &quot;Immunization&quot;
+          },
+          {
+            &quot;system&quot;: &quot;http://hl7.org/fhir/resource-types&quot;,
+            &quot;code&quot;: &quot;ImmunizationRecommendation&quot;,
+            &quot;display&quot;: &quot;ImmunizationRecommendation&quot;
+          },
+          {
+            &quot;system&quot;: &quot;http://hl7.org/fhir/resource-types&quot;,
+            &quot;code&quot;: &quot;MedicationAdministration&quot;,
+            &quot;display&quot;: &quot;MedicationAdministration&quot;
+          },
+          {
+            &quot;system&quot;: &quot;http://hl7.org/fhir/resource-types&quot;,
+            &quot;code&quot;: &quot;MedicationDispense&quot;,
+            &quot;display&quot;: &quot;MedicationDispense&quot;
+          },
+          {
+            &quot;system&quot;: &quot;http://hl7.org/fhir/resource-types&quot;,
+            &quot;code&quot;: &quot;MedicationPrescription&quot;,
+            &quot;display&quot;: &quot;MedicationPrescription&quot;
+          },
+          {
+            &quot;system&quot;: &quot;http://hl7.org/fhir/resource-types&quot;,
+            &quot;code&quot;: &quot;MedicationStatement&quot;,
+            &quot;display&quot;: &quot;MedicationStatement&quot;
+          },
+          {
+            &quot;system&quot;: &quot;http://hl7.org/fhir/resource-types&quot;,
+            &quot;code&quot;: &quot;Observation&quot;,
+            &quot;display&quot;: &quot;Observation&quot;
+          },
+          {
+            &quot;system&quot;: &quot;http://hl7.org/fhir/resource-types&quot;,
+            &quot;code&quot;: &quot;Procedure&quot;,
+            &quot;display&quot;: &quot;Procedure&quot;
+          }
+        ]
+      }
+    }
+  ],
+  &quot;identifier&quot;: [
+    {
+      &quot;system&quot;: &quot;urn:ietf:rfc:3986&quot;
+    }
+  ],
+  &quot;status&quot;: &quot;draft&quot;,
+  &quot;date&quot;: &quot;2014-12-30T10:55:31&quot;,
+  &quot;publisher&quot;: &quot;HL7 FHIR Project (Patient Care)&quot;,
+  &quot;group&quot;: {
+    &quot;http://hl7.org/fhir/Profile/questionnaire-extensions#flyover&quot;: [
+      {
+        &quot;valueString&quot;: &quot;An action that is performed on a patient. This can be a physical 'thing' like an operation, or less invasive like counseling or hypnotherapy.&quot;
+      }
+    ],
+    &quot;linkId&quot;: &quot;Procedure&quot;,
+    &quot;title&quot;: &quot;An action that is performed on a patient&quot;,
+    &quot;required&quot;: true,
+    &quot;group&quot;: [
+      {
+        &quot;http://hl7.org/fhir/Profile/questionnaire-extensions#flyover&quot;: [
+          {
+            &quot;valueString&quot;: &quot;The logical id of the resource, as used in the url for the resoure. Once assigned, this value never changes. The only time that a resource does not have an id is when it is being submitted to the server using a create operation. Bundles always have an id, though it is usually a generated UUID.&quot;
+          }
+        ],
+        &quot;http://www.healthintersections.com.au/fhir/Profile/metadata#type&quot;: [
+          {
+            &quot;valueString&quot;: &quot;string&quot;
+          }
+        ],
+        &quot;linkId&quot;: &quot;Procedure.id&quot;,
+        &quot;repeats&quot;: true,
+        &quot;question&quot;: [
+          {
+            &quot;linkId&quot;: &quot;Procedure.id.value&quot;,
+            &quot;text&quot;: &quot;Logical id of this artefact&quot;,
+            &quot;type&quot;: &quot;string&quot;
+          }
+        ]
+      },
+      {
+        &quot;http://hl7.org/fhir/Profile/questionnaire-extensions#flyover&quot;: [
+          {
+            &quot;valueString&quot;: &quot;The metadata about the resource. This is content that is maintained by the infrastructure. Changes to the content may not always be associated with version changes to the resource.&quot;
+          }
+        ],
+        &quot;linkId&quot;: &quot;Procedure.meta&quot;,
+        &quot;title&quot;: &quot;Metadata about the resource&quot;,
+        &quot;group&quot;: [
+          {
+            &quot;http://hl7.org/fhir/Profile/questionnaire-extensions#flyover&quot;: [
+              {
+                &quot;valueString&quot;: &quot;unique id for the element within a resource (for internal references).&quot;
+              }
+            ],
+            &quot;http://www.healthintersections.com.au/fhir/Profile/metadata#type&quot;: [
+              {
+                &quot;valueString&quot;: &quot;string&quot;
+              }
+            ],
+            &quot;linkId&quot;: &quot;Procedure.meta.id&quot;,
+            &quot;repeats&quot;: true,
+            &quot;question&quot;: [
+              {
+                &quot;linkId&quot;: &quot;Procedure.meta.id.value&quot;,
+                &quot;text&quot;: &quot;xml:id (or equivalent in JSON)&quot;,
+                &quot;type&quot;: &quot;string&quot;
+              }
+            ]
+          },
+          {
+            &quot;http://hl7.org/fhir/Profile/questionnaire-extensions#flyover&quot;: [
+              {
+                &quot;valueString&quot;: &quot;The version specific identifier, as it appears in the version portion of the url. This values changes when the resource is created, updated, or deleted. The server assigns this value, and ignores what the client specifies, except in the case that the server is imposing version integrity on updates/deletes.&quot;
+              }
+            ],
+            &quot;http://www.healthintersections.com.au/fhir/Profile/metadata#type&quot;: [
+              {
+                &quot;valueString&quot;: &quot;string&quot;
+              }
+            ],
+            &quot;linkId&quot;: &quot;Procedure.meta.versionId&quot;,
+            &quot;repeats&quot;: true,
+            &quot;question&quot;: [
+              {
+                &quot;linkId&quot;: &quot;Procedure.meta.versionId.value&quot;,
+                &quot;text&quot;: &quot;Version specific identifier&quot;,
+                &quot;type&quot;: &quot;string&quot;
+              }
+            ]
+          },
+          {
+            &quot;http://hl7.org/fhir/Profile/questionnaire-extensions#flyover&quot;: [
+              {
+                &quot;valueString&quot;: &quot;When the resource last changed - e.g. when the version changed. This value is always populated except when the resource is first being created. The server / resource manager sets this value; what a client provides is irrelevant.&quot;
+              }
+            ],
+            &quot;http://www.healthintersections.com.au/fhir/Profile/metadata#type&quot;: [
+              {
+                &quot;valueString&quot;: &quot;instant&quot;
+              }
+            ],
+            &quot;linkId&quot;: &quot;Procedure.meta.lastUpdated&quot;,
+            &quot;repeats&quot;: true,
+            &quot;question&quot;: [
+              {
+                &quot;linkId&quot;: &quot;Procedure.meta.lastUpdated.value&quot;,
+                &quot;text&quot;: &quot;When the resource version last changed&quot;,
+                &quot;type&quot;: &quot;instant&quot;
+              }
+            ]
+          },
+          {
+            &quot;http://hl7.org/fhir/Profile/questionnaire-extensions#flyover&quot;: [
+              {
+                &quot;valueString&quot;: &quot;A list of profiles that this resource claims to conform to. The URL is a reference to Profile.url. It is up to the server and/or other infrastruture of policy to determine whether/how these claims are verified and/or updated over tiem.&quot;
+              }
+            ],
+            &quot;http://www.healthintersections.com.au/fhir/Profile/metadata#type&quot;: [
+              {
+                &quot;valueString&quot;: &quot;uri&quot;
+              }
+            ],
+            &quot;linkId&quot;: &quot;Procedure.meta.profile&quot;,
+            &quot;repeats&quot;: true,
+            &quot;question&quot;: [
+              {
+                &quot;linkId&quot;: &quot;Procedure.meta.profile.value&quot;,
+                &quot;text&quot;: &quot;Profiles this resource claims to conform to&quot;,
+                &quot;type&quot;: &quot;string&quot;
+              }
+            ]
+          },
+          {
+            &quot;http://hl7.org/fhir/Profile/questionnaire-extensions#flyover&quot;: [
+              {
+                &quot;valueString&quot;: &quot;Security labels applied to this resource. These tags connect specific resources to the overall security policy and infrastructure. The security labels can be updated without changing the stated version of the resource.&quot;
+              }
+            ],
+            &quot;http://www.healthintersections.com.au/fhir/Profile/metadata#type&quot;: [
+              {
+                &quot;valueString&quot;: &quot;Coding&quot;
+              }
+            ],
+            &quot;linkId&quot;: &quot;Procedure.meta.security&quot;,
+            &quot;repeats&quot;: true,
+            &quot;question&quot;: [
+              {
+                &quot;linkId&quot;: &quot;Procedure.meta.security.value&quot;,
+                &quot;text&quot;: &quot;Security Labels applied to this resource&quot;,
+                &quot;type&quot;: &quot;open-choice&quot;
+              }
+            ]
+          },
+          {
+            &quot;http://hl7.org/fhir/Profile/questionnaire-extensions#flyover&quot;: [
+              {
+                &quot;valueString&quot;: &quot;Tags applied to this resource. Tags are intended to to be used to identify and relate resources to process and workflow, and applications are not required to consider the tags when interpreting the meaning of a resource. The tags can be updated without changing the stated version of the resource.&quot;
+              }
+            ],
+            &quot;http://www.healthintersections.com.au/fhir/Profile/metadata#type&quot;: [
+              {
+                &quot;valueString&quot;: &quot;Coding&quot;
+              }
+            ],
+            &quot;linkId&quot;: &quot;Procedure.meta.tag&quot;,
+            &quot;repeats&quot;: true,
+            &quot;question&quot;: [
+              {
+                &quot;linkId&quot;: &quot;Procedure.meta.tag.value&quot;,
+                &quot;text&quot;: &quot;Tags applied&quot;,
+                &quot;type&quot;: &quot;open-choice&quot;
+              }
+            ]
+          }
+        ]
+      },
+      {
+        &quot;http://hl7.org/fhir/Profile/questionnaire-extensions#flyover&quot;: [
+          {
+            &quot;valueString&quot;: &quot;A reference to a set of rules that were followed when the resource was constructed, and which must be understood when processing the content. Asserting this rule set restricts the content to be only understood by a limited set of trading partners. This inherently limits the usefulness of the data in the long term. However the existing health eco-system is highly fractured, and not yet ready to define, collect, and exchange data in a generally computable sense. Wherever possible, implementers and/or specification writers should avoid using this element as much as possible.&quot;
+          }
+        ],
+        &quot;http://www.healthintersections.com.au/fhir/Profile/metadata#type&quot;: [
+          {
+            &quot;valueString&quot;: &quot;uri&quot;
+          }
+        ],
+        &quot;linkId&quot;: &quot;Procedure.implicitRules&quot;,
+        &quot;repeats&quot;: true,
+        &quot;question&quot;: [
+          {
+            &quot;linkId&quot;: &quot;Procedure.implicitRules.value&quot;,
+            &quot;text&quot;: &quot;A set of rules under which this content was created&quot;,
+            &quot;type&quot;: &quot;string&quot;
+          }
+        ]
+      },
+      {
+        &quot;http://hl7.org/fhir/Profile/questionnaire-extensions#flyover&quot;: [
+          {
+            &quot;valueString&quot;: &quot;The base language in which the resource is written. Language is provided to support indexing and accessibility (typically, services such as text to speech use the language tag). The html language tag in the narrative applies  to the narrative. The language tag on the resource may be used to specify the language of other presentations generated from the data in the resource\n\nNot all the content has to be in the base language. The Resource.language should not be assumed to apply to the narrative automatically. If a language is specified, it should it also be specified on the div element in the html (see rules in HTML5 for information about the relationship between xml:lang and the html lang attribute).&quot;
+          }
+        ],
+        &quot;http://www.healthintersections.com.au/fhir/Profile/metadata#type&quot;: [
+          {
+            &quot;valueString&quot;: &quot;code&quot;
+          }
+        ],
+        &quot;linkId&quot;: &quot;Procedure.language&quot;,
+        &quot;repeats&quot;: true,
+        &quot;question&quot;: [
+          {
+            &quot;linkId&quot;: &quot;Procedure.language.value&quot;,
+            &quot;text&quot;: &quot;language&quot;,
+            &quot;type&quot;: &quot;choice&quot;
+          }
+        ]
+      },
+      {
+        &quot;http://hl7.org/fhir/Profile/questionnaire-extensions#flyover&quot;: [
+          {
+            &quot;valueString&quot;: &quot;A human-readable narrative that contains a summary of the resource, and may be used to represent the content of the resource to a human. The narrative need not encode all the structured data, but is required to contain sufficient detail to make it \&quot;clinically safe\&quot; for a human to just read the narrative. Resource definitions may define what content should be represented in the narrative to ensure clinical safety. Contained resources do not have narrative. Resources that are not contained SHOULD have a narrative.&quot;
+          }
+        ],
+        &quot;linkId&quot;: &quot;Procedure.text&quot;,
+        &quot;text&quot;: &quot;Text summary of the resource, for human interpretation&quot;,
+        &quot;repeats&quot;: true
+      },
+      {
+        &quot;http://hl7.org/fhir/Profile/questionnaire-extensions#flyover&quot;: [
+          {
+            &quot;valueString&quot;: &quot;These resources do not have an independent existence apart from the resource that contains them - they cannot be identified independently, and nor can they have their own independent transaction scope. This should never be done when the content can be identified properly, as once identification is lost, it is extremely difficult (and context dependent) to restore it again.&quot;
+          }
+        ],
+        &quot;linkId&quot;: &quot;Procedure.contained&quot;,
+        &quot;text&quot;: &quot;Contained, inline Resources&quot;,
+        &quot;repeats&quot;: true
+      },
+      {
+        &quot;http://hl7.org/fhir/Profile/questionnaire-extensions#flyover&quot;: [
+          {
+            &quot;valueString&quot;: &quot;This records identifiers associated with this procedure that are defined by business processed and/ or used to refer to it when a direct URL reference to the resource itself is not appropriate (e.g. in CDA documents, or in written / printed documentation).&quot;
+          }
+        ],
+        &quot;http://www.healthintersections.com.au/fhir/Profile/metadata#type&quot;: [
+          {
+            &quot;valueString&quot;: &quot;Identifier&quot;
+          }
+        ],
+        &quot;linkId&quot;: &quot;Procedure.identifier&quot;,
+        &quot;text&quot;: &quot;External Ids for this procedure&quot;,
+        &quot;repeats&quot;: true,
+        &quot;question&quot;: [
+          {
+            &quot;linkId&quot;: &quot;Procedure.identifier.label&quot;,
+            &quot;text&quot;: &quot;label:&quot;,
+            &quot;type&quot;: &quot;string&quot;
+          },
+          {
+            &quot;linkId&quot;: &quot;Procedure.identifier.system&quot;,
+            &quot;text&quot;: &quot;system:&quot;,
+            &quot;type&quot;: &quot;string&quot;
+          },
+          {
+            &quot;linkId&quot;: &quot;Procedure.identifier.value&quot;,
+            &quot;text&quot;: &quot;value:&quot;,
+            &quot;type&quot;: &quot;string&quot;
+          }
+        ]
+      },
+      {
+        &quot;http://hl7.org/fhir/Profile/questionnaire-extensions#flyover&quot;: [
+          {
+            &quot;valueString&quot;: &quot;The person on whom the procedure was performed.&quot;
+          }
+        ],
+        &quot;http://www.healthintersections.com.au/fhir/Profile/metadata#type&quot;: [
+          {
+            &quot;valueString&quot;: &quot;Reference&quot;
+          }
+        ],
+        &quot;linkId&quot;: &quot;Procedure.patient&quot;,
+        &quot;required&quot;: true,
+        &quot;repeats&quot;: true,
+        &quot;question&quot;: [
+          {
+            &quot;http://www.healthintersections.com.au/fhir/Profile/metadata#reference&quot;: [
+              {
+                &quot;valueString&quot;: &quot;/Patient?subject=$subj&amp;patient=$subj&amp;encounter=$encounter&quot;
+              }
+            ],
+            &quot;linkId&quot;: &quot;Procedure.patient.value&quot;,
+            &quot;text&quot;: &quot;Who procedure was performed on&quot;,
+            &quot;type&quot;: &quot;reference&quot;
+          }
+        ]
+      },
+      {
+        &quot;http://hl7.org/fhir/Profile/questionnaire-extensions#flyover&quot;: [
+          {
+            &quot;valueString&quot;: &quot;The specific procedure that is performed. Use text if the exact nature of the procedure can't be coded.&quot;
+          }
+        ],
+        &quot;http://www.healthintersections.com.au/fhir/Profile/metadata#type&quot;: [
+          {
+            &quot;valueString&quot;: &quot;CodeableConcept&quot;
+          }
+        ],
+        &quot;linkId&quot;: &quot;Procedure.type&quot;,
+        &quot;text&quot;: &quot;Identification of the procedure&quot;,
+        &quot;required&quot;: true,
+        &quot;repeats&quot;: true,
+        &quot;question&quot;: [
+          {
+            &quot;linkId&quot;: &quot;Procedure.type.coding&quot;,
+            &quot;text&quot;: &quot;code:&quot;,
+            &quot;type&quot;: &quot;open-choice&quot;
+          },
+          {
+            &quot;linkId&quot;: &quot;Procedure.type.text&quot;,
+            &quot;text&quot;: &quot;text:&quot;,
+            &quot;type&quot;: &quot;string&quot;
+          }
+        ]
+      },
+      {
+        &quot;http://hl7.org/fhir/Profile/questionnaire-extensions#flyover&quot;: [
+          {
+            &quot;valueString&quot;: &quot;Detailed and structured anatomical location information. Multiple locations are allowed - e.g. multiple punch biopsies of a lesion.&quot;
+          }
+        ],
+        &quot;http://www.healthintersections.com.au/fhir/Profile/metadata#type&quot;: [
+          {
+            &quot;valueString&quot;: &quot;CodeableConcept&quot;
+          }
+        ],
+        &quot;linkId&quot;: &quot;Procedure.bodySite&quot;,
+        &quot;text&quot;: &quot;Precise location details&quot;,
+        &quot;repeats&quot;: true,
+        &quot;question&quot;: [
+          {
+            &quot;linkId&quot;: &quot;Procedure.bodySite.coding&quot;,
+            &quot;text&quot;: &quot;code:&quot;,
+            &quot;type&quot;: &quot;open-choice&quot;
+          },
+          {
+            &quot;linkId&quot;: &quot;Procedure.bodySite.text&quot;,
+            &quot;text&quot;: &quot;text:&quot;,
+            &quot;type&quot;: &quot;string&quot;
+          }
+        ]
+      },
+      {
+        &quot;http://hl7.org/fhir/Profile/questionnaire-extensions#flyover&quot;: [
+          {
+            &quot;valueString&quot;: &quot;The reason why the procedure was performed. This may be due to a Condition, may be coded entity of some type, or may simply be present as text. e.g. endoscopy for dilatation and biopsy, combination diagnosis and therapuetic.&quot;
+          }
+        ],
+        &quot;http://www.healthintersections.com.au/fhir/Profile/metadata#type&quot;: [
+          {
+            &quot;valueString&quot;: &quot;CodeableConcept&quot;
+          }
+        ],
+        &quot;linkId&quot;: &quot;Procedure.indication&quot;,
+        &quot;text&quot;: &quot;Reason procedure performed&quot;,
+        &quot;repeats&quot;: true,
+        &quot;question&quot;: [
+          {
+            &quot;linkId&quot;: &quot;Procedure.indication.coding&quot;,
+            &quot;text&quot;: &quot;code:&quot;,
+            &quot;type&quot;: &quot;open-choice&quot;
+          },
+          {
+            &quot;linkId&quot;: &quot;Procedure.indication.text&quot;,
+            &quot;text&quot;: &quot;text:&quot;,
+            &quot;type&quot;: &quot;string&quot;
+          }
+        ]
+      },
+      {
+        &quot;http://hl7.org/fhir/Profile/questionnaire-extensions#flyover&quot;: [
+          {
+            &quot;valueString&quot;: &quot;Limited to 'real' people rather than equipment.&quot;
+          }
+        ],
+        &quot;linkId&quot;: &quot;Procedure.performer&quot;,
+        &quot;title&quot;: &quot;The people who performed the procedure&quot;,
+        &quot;repeats&quot;: true,
+        &quot;group&quot;: [
+          {
+            &quot;http://hl7.org/fhir/Profile/questionnaire-extensions#flyover&quot;: [
+              {
+                &quot;valueString&quot;: &quot;unique id for the element within a resource (for internal references).&quot;
+              }
+            ],
+            &quot;http://www.healthintersections.com.au/fhir/Profile/metadata#type&quot;: [
+              {
+                &quot;valueString&quot;: &quot;string&quot;
+              }
+            ],
+            &quot;linkId&quot;: &quot;Procedure.performer.id&quot;,
+            &quot;repeats&quot;: true,
+            &quot;question&quot;: [
+              {
+                &quot;linkId&quot;: &quot;Procedure.performer.id.value&quot;,
+                &quot;text&quot;: &quot;xml:id (or equivalent in JSON)&quot;,
+                &quot;type&quot;: &quot;string&quot;
+              }
+            ]
+          },
+          {
+            &quot;http://hl7.org/fhir/Profile/questionnaire-extensions#flyover&quot;: [
+              {
+                &quot;valueString&quot;: &quot;The practitioner who was involved in the procedure.&quot;
+              }
+            ],
+            &quot;http://www.healthintersections.com.au/fhir/Profile/metadata#type&quot;: [
+              {
+                &quot;valueString&quot;: &quot;Reference&quot;
+              }
+            ],
+            &quot;linkId&quot;: &quot;Procedure.performer.person&quot;,
+            &quot;repeats&quot;: true,
+            &quot;question&quot;: [
+              {
+                &quot;http://www.healthintersections.com.au/fhir/Profile/metadata#reference&quot;: [
+                  {
+                    &quot;valueString&quot;: &quot;/Practitioner?subject=$subj&amp;patient=$subj&amp;encounter=$encounter&quot;
+                  }
+                ],
+                &quot;linkId&quot;: &quot;Procedure.performer.person.value&quot;,
+                &quot;text&quot;: &quot;The reference to the practitioner&quot;,
+                &quot;type&quot;: &quot;reference&quot;
+              }
+            ]
+          },
+          {
+            &quot;http://hl7.org/fhir/Profile/questionnaire-extensions#flyover&quot;: [
+              {
+                &quot;valueString&quot;: &quot;E.g. surgeon, anaethetist, endoscopist.&quot;
+              }
+            ],
+            &quot;http://www.healthintersections.com.au/fhir/Profile/metadata#type&quot;: [
+              {
+                &quot;valueString&quot;: &quot;CodeableConcept&quot;
+              }
+            ],
+            &quot;linkId&quot;: &quot;Procedure.performer.role&quot;,
+            &quot;text&quot;: &quot;The role the person was in&quot;,
+            &quot;repeats&quot;: true,
+            &quot;question&quot;: [
+              {
+                &quot;linkId&quot;: &quot;Procedure.performer.role.coding&quot;,
+                &quot;text&quot;: &quot;code:&quot;,
+                &quot;type&quot;: &quot;open-choice&quot;
+              },
+              {
+                &quot;linkId&quot;: &quot;Procedure.performer.role.text&quot;,
+                &quot;text&quot;: &quot;text:&quot;,
+                &quot;type&quot;: &quot;string&quot;
+              }
+            ]
+          }
+        ]
+      },
+      {
+        &quot;http://hl7.org/fhir/Profile/questionnaire-extensions#flyover&quot;: [
+          {
+            &quot;valueString&quot;: &quot;The dates over which the procedure was performed. Allows a period to support complex procedures that span more than one date, and also allows for the length of the procedure to be captured.&quot;
+          }
+        ],
+        &quot;http://www.healthintersections.com.au/fhir/Profile/metadata#type&quot;: [
+          {
+            &quot;valueString&quot;: &quot;Period&quot;
+          }
+        ],
+        &quot;linkId&quot;: &quot;Procedure.date&quot;,
+        &quot;text&quot;: &quot;The date the procedure was performed&quot;,
+        &quot;repeats&quot;: true,
+        &quot;question&quot;: [
+          {
+            &quot;linkId&quot;: &quot;Procedure.date.low&quot;,
+            &quot;text&quot;: &quot;start:&quot;,
+            &quot;type&quot;: &quot;dateTime&quot;
+          },
+          {
+            &quot;linkId&quot;: &quot;Procedure.date.end&quot;,
+            &quot;text&quot;: &quot;end:&quot;,
+            &quot;type&quot;: &quot;dateTime&quot;
+          }
+        ]
+      },
+      {
+        &quot;http://hl7.org/fhir/Profile/questionnaire-extensions#flyover&quot;: [
+          {
+            &quot;valueString&quot;: &quot;The encounter during which the procedure was performed.&quot;
+          }
+        ],
+        &quot;http://www.healthintersections.com.au/fhir/Profile/metadata#type&quot;: [
+          {
+            &quot;valueString&quot;: &quot;Reference&quot;
+          }
+        ],
+        &quot;linkId&quot;: &quot;Procedure.encounter&quot;,
+        &quot;repeats&quot;: true,
+        &quot;question&quot;: [
+          {
+            &quot;http://www.healthintersections.com.au/fhir/Profile/metadata#reference&quot;: [
+              {
+                &quot;valueString&quot;: &quot;/Encounter?subject=$subj&amp;patient=$subj&amp;encounter=$encounter&quot;
+              }
+            ],
+            &quot;linkId&quot;: &quot;Procedure.encounter.value&quot;,
+            &quot;text&quot;: &quot;The encounter when procedure performed&quot;,
+            &quot;type&quot;: &quot;reference&quot;
+          }
+        ]
+      },
+      {
+        &quot;http://hl7.org/fhir/Profile/questionnaire-extensions#flyover&quot;: [
+          {
+            &quot;valueString&quot;: &quot;What was the outcome of the procedure - did it resolve reasons why the procedure was performed?.&quot;
+          }
+        ],
+        &quot;http://www.healthintersections.com.au/fhir/Profile/metadata#type&quot;: [
+          {
+            &quot;valueString&quot;: &quot;string&quot;
+          }
+        ],
+        &quot;linkId&quot;: &quot;Procedure.outcome&quot;,
+        &quot;repeats&quot;: true,
+        &quot;question&quot;: [
+          {
+            &quot;linkId&quot;: &quot;Procedure.outcome.value&quot;,
+            &quot;text&quot;: &quot;What was result of procedure?&quot;,
+            &quot;type&quot;: &quot;string&quot;
+          }
+        ]
+      },
+      {
+        &quot;http://hl7.org/fhir/Profile/questionnaire-extensions#flyover&quot;: [
+          {
+            &quot;valueString&quot;: &quot;This could be a histology result. There could potentially be multiple reports - e.g. if this was a procedure that made multiple biopsies.&quot;
+          }
+        ],
+        &quot;http://www.healthintersections.com.au/fhir/Profile/metadata#type&quot;: [
+          {
+            &quot;valueString&quot;: &quot;Reference&quot;
+          }
+        ],
+        &quot;linkId&quot;: &quot;Procedure.report&quot;,
+        &quot;repeats&quot;: true,
+        &quot;question&quot;: [
+          {
+            &quot;http://www.healthintersections.com.au/fhir/Profile/metadata#reference&quot;: [
+              {
+                &quot;valueString&quot;: &quot;/DiagnosticReport?subject=$subj&amp;patient=$subj&amp;encounter=$encounter&quot;
+              }
+            ],
+            &quot;linkId&quot;: &quot;Procedure.report.value&quot;,
+            &quot;text&quot;: &quot;Any report that results from the procedure&quot;,
+            &quot;type&quot;: &quot;reference&quot;
+          }
+        ]
+      },
+      {
+        &quot;http://hl7.org/fhir/Profile/questionnaire-extensions#flyover&quot;: [
+          {
+            &quot;valueString&quot;: &quot;Any complications that occurred during the procedure, or in the immediate post-operative period. These are generally tracked separately from the notes, which typically will describe the procedure itself rather than any 'post procedure' issues.&quot;
+          }
+        ],
+        &quot;http://www.healthintersections.com.au/fhir/Profile/metadata#type&quot;: [
+          {
+            &quot;valueString&quot;: &quot;CodeableConcept&quot;
+          }
+        ],
+        &quot;linkId&quot;: &quot;Procedure.complication&quot;,
+        &quot;text&quot;: &quot;Complication following the procedure&quot;,
+        &quot;repeats&quot;: true,
+        &quot;question&quot;: [
+          {
+            &quot;linkId&quot;: &quot;Procedure.complication.coding&quot;,
+            &quot;text&quot;: &quot;code:&quot;,
+            &quot;type&quot;: &quot;open-choice&quot;
+          },
+          {
+            &quot;linkId&quot;: &quot;Procedure.complication.text&quot;,
+            &quot;text&quot;: &quot;text:&quot;,
+            &quot;type&quot;: &quot;string&quot;
+          }
+        ]
+      },
+      {
+        &quot;http://hl7.org/fhir/Profile/questionnaire-extensions#flyover&quot;: [
+          {
+            &quot;valueString&quot;: &quot;If the procedure required specific follow up - e.g. removal of sutures. The followup may be represented as a simple note, or potentially could be more complex in which case the CarePlan resource can be used.&quot;
+          }
+        ],
+        &quot;http://www.healthintersections.com.au/fhir/Profile/metadata#type&quot;: [
+          {
+            &quot;valueString&quot;: &quot;string&quot;
+          }
+        ],
+        &quot;linkId&quot;: &quot;Procedure.followUp&quot;,
+        &quot;repeats&quot;: true,
+        &quot;question&quot;: [
+          {
+            &quot;linkId&quot;: &quot;Procedure.followUp.value&quot;,
+            &quot;text&quot;: &quot;Instructions for follow up&quot;,
+            &quot;type&quot;: &quot;string&quot;
+          }
+        ]
+      },
+      {
+        &quot;http://hl7.org/fhir/Profile/questionnaire-extensions#flyover&quot;: [
+          {
+            &quot;valueString&quot;: &quot;Procedures may be related to other items such as procedures or medications. For example treating wound dehiscence following a previous procedure.&quot;
+          }
+        ],
+        &quot;linkId&quot;: &quot;Procedure.relatedItem&quot;,
+        &quot;title&quot;: &quot;A procedure that is related to this one&quot;,
+        &quot;repeats&quot;: true,
+        &quot;group&quot;: [
+          {
+            &quot;http://hl7.org/fhir/Profile/questionnaire-extensions#flyover&quot;: [
+              {
+                &quot;valueString&quot;: &quot;unique id for the element within a resource (for internal references).&quot;
+              }
+            ],
+            &quot;http://www.healthintersections.com.au/fhir/Profile/metadata#type&quot;: [
+              {
+                &quot;valueString&quot;: &quot;string&quot;
+              }
+            ],
+            &quot;linkId&quot;: &quot;Procedure.relatedItem.id&quot;,
+            &quot;repeats&quot;: true,
+            &quot;question&quot;: [
+              {
+                &quot;linkId&quot;: &quot;Procedure.relatedItem.id.value&quot;,
+                &quot;text&quot;: &quot;xml:id (or equivalent in JSON)&quot;,
+                &quot;type&quot;: &quot;string&quot;
+              }
+            ]
+          },
+          {
+            &quot;http://hl7.org/fhir/Profile/questionnaire-extensions#flyover&quot;: [
+              {
+                &quot;valueString&quot;: &quot;The nature of the relationship.&quot;
+              }
+            ],
+            &quot;http://www.healthintersections.com.au/fhir/Profile/metadata#type&quot;: [
+              {
+                &quot;valueString&quot;: &quot;code&quot;
+              }
+            ],
+            &quot;linkId&quot;: &quot;Procedure.relatedItem.type&quot;,
+            &quot;repeats&quot;: true,
+            &quot;question&quot;: [
+              {
+                &quot;linkId&quot;: &quot;Procedure.relatedItem.type.value&quot;,
+                &quot;text&quot;: &quot;type&quot;,
+                &quot;type&quot;: &quot;choice&quot;
+              }
+            ]
+          },
+          {
+            &quot;http://hl7.org/fhir/Profile/questionnaire-extensions#flyover&quot;: [
+              {
+                &quot;valueString&quot;: &quot;The related item - e.g. a procedure.&quot;
+              }
+            ],
+            &quot;linkId&quot;: &quot;Procedure.relatedItem.target&quot;,
+            &quot;text&quot;: &quot;The related item - e.g. a procedure&quot;,
+            &quot;repeats&quot;: true,
+            &quot;question&quot;: [
+              {
+                &quot;linkId&quot;: &quot;Procedure.relatedItem.target._type&quot;,
+                &quot;text&quot;: &quot;type&quot;,
+                &quot;type&quot;: &quot;choice&quot;,
+                &quot;options&quot;: {
+                  &quot;reference&quot;: &quot;#vs2&quot;
+                },
+                &quot;group&quot;: [
+                  {
+                    &quot;http://www.healthintersections.com.au/fhir/Profile/metadata#type&quot;: [
+                      {
+                        &quot;valueString&quot;: &quot;Reference&quot;
+                      }
+                    ],
+                    &quot;linkId&quot;: &quot;Procedure.relatedItem.target._AllergyIntolerance&quot;,
+                    &quot;question&quot;: [
+                      {
+                        &quot;http://www.healthintersections.com.au/fhir/Profile/metadata#reference&quot;: [
+                          {
+                            &quot;valueString&quot;: &quot;/AllergyIntolerance?subject=$subj&amp;patient=$subj&amp;encounter=$encounter&quot;
+                          }
+                        ],
+                        &quot;linkId&quot;: &quot;Procedure.relatedItem.target._AllergyIntolerance.value&quot;,
+                        &quot;text&quot;: &quot;AllergyIntolerance&quot;,
+                        &quot;type&quot;: &quot;reference&quot;
+                      }
+                    ]
+                  },
+                  {
+                    &quot;http://www.healthintersections.com.au/fhir/Profile/metadata#type&quot;: [
+                      {
+                        &quot;valueString&quot;: &quot;Reference&quot;
+                      }
+                    ],
+                    &quot;linkId&quot;: &quot;Procedure.relatedItem.target._CarePlan&quot;,
+                    &quot;question&quot;: [
+                      {
+                        &quot;http://www.healthintersections.com.au/fhir/Profile/metadata#reference&quot;: [
+                          {
+                            &quot;valueString&quot;: &quot;/CarePlan?subject=$subj&amp;patient=$subj&amp;encounter=$encounter&quot;
+                          }
+                        ],
+                        &quot;linkId&quot;: &quot;Procedure.relatedItem.target._CarePlan.value&quot;,
+                        &quot;text&quot;: &quot;CarePlan&quot;,
+                        &quot;type&quot;: &quot;reference&quot;
+                      }
+                    ]
+                  },
+                  {
+                    &quot;http://www.healthintersections.com.au/fhir/Profile/metadata#type&quot;: [
+                      {
+                        &quot;valueString&quot;: &quot;Reference&quot;
+                      }
+                    ],
+                    &quot;linkId&quot;: &quot;Procedure.relatedItem.target._Condition&quot;,
+                    &quot;question&quot;: [
+                      {
+                        &quot;http://www.healthintersections.com.au/fhir/Profile/metadata#reference&quot;: [
+                          {
+                            &quot;valueString&quot;: &quot;/Condition?subject=$subj&amp;patient=$subj&amp;encounter=$encounter&quot;
+                          }
+                        ],
+                        &quot;linkId&quot;: &quot;Procedure.relatedItem.target._Condition.value&quot;,
+                        &quot;text&quot;: &quot;Condition&quot;,
+                        &quot;type&quot;: &quot;reference&quot;
+                      }
+                    ]
+                  },
+                  {
+                    &quot;http://www.healthintersections.com.au/fhir/Profile/metadata#type&quot;: [
+                      {
+                        &quot;valueString&quot;: &quot;Reference&quot;
+                      }
+                    ],
+                    &quot;linkId&quot;: &quot;Procedure.relatedItem.target._DiagnosticReport&quot;,
+                    &quot;question&quot;: [
+                      {
+                        &quot;http://www.healthintersections.com.au/fhir/Profile/metadata#reference&quot;: [
+                          {
+                            &quot;valueString&quot;: &quot;/DiagnosticReport?subject=$subj&amp;patient=$subj&amp;encounter=$encounter&quot;
+                          }
+                        ],
+                        &quot;linkId&quot;: &quot;Procedure.relatedItem.target._DiagnosticReport.value&quot;,
+                        &quot;text&quot;: &quot;DiagnosticReport&quot;,
+                        &quot;type&quot;: &quot;reference&quot;
+                      }
+                    ]
+                  },
+                  {
+                    &quot;http://www.healthintersections.com.au/fhir/Profile/metadata#type&quot;: [
+                      {
+                        &quot;valueString&quot;: &quot;Reference&quot;
+                      }
+                    ],
+                    &quot;linkId&quot;: &quot;Procedure.relatedItem.target._FamilyHistory&quot;,
+                    &quot;question&quot;: [
+                      {
+                        &quot;http://www.healthintersections.com.au/fhir/Profile/metadata#reference&quot;: [
+                          {
+                            &quot;valueString&quot;: &quot;/FamilyHistory?subject=$subj&amp;patient=$subj&amp;encounter=$encounter&quot;
+                          }
+                        ],
+                        &quot;linkId&quot;: &quot;Procedure.relatedItem.target._FamilyHistory.value&quot;,
+                        &quot;text&quot;: &quot;FamilyHistory&quot;,
+                        &quot;type&quot;: &quot;reference&quot;
+                      }
+                    ]
+                  },
+                  {
+                    &quot;http://www.healthintersections.com.au/fhir/Profile/metadata#type&quot;: [
+                      {
+                        &quot;valueString&quot;: &quot;Reference&quot;
+                      }
+                    ],
+                    &quot;linkId&quot;: &quot;Procedure.relatedItem.target._ImagingStudy&quot;,
+                    &quot;question&quot;: [
+                      {
+                        &quot;http://www.healthintersections.com.au/fhir/Profile/metadata#reference&quot;: [
+                          {
+                            &quot;valueString&quot;: &quot;/ImagingStudy?subject=$subj&amp;patient=$subj&amp;encounter=$encounter&quot;
+                          }
+                        ],
+                        &quot;linkId&quot;: &quot;Procedure.relatedItem.target._ImagingStudy.value&quot;,
+                        &quot;text&quot;: &quot;ImagingStudy&quot;,
+                        &quot;type&quot;: &quot;reference&quot;
+                      }
+                    ]
+                  },
+                  {
+                    &quot;http://www.healthintersections.com.au/fhir/Profile/metadata#type&quot;: [
+                      {
+                        &quot;valueString&quot;: &quot;Reference&quot;
+                      }
+                    ],
+                    &quot;linkId&quot;: &quot;Procedure.relatedItem.target._Immunization&quot;,
+                    &quot;question&quot;: [
+                      {
+                        &quot;http://www.healthintersections.com.au/fhir/Profile/metadata#reference&quot;: [
+                          {
+                            &quot;valueString&quot;: &quot;/Immunization?subject=$subj&amp;patient=$subj&amp;encounter=$encounter&quot;
+                          }
+                        ],
+                        &quot;linkId&quot;: &quot;Procedure.relatedItem.target._Immunization.value&quot;,
+                        &quot;text&quot;: &quot;Immunization&quot;,
+                        &quot;type&quot;: &quot;reference&quot;
+                      }
+                    ]
+                  },
+                  {
+                    &quot;http://www.healthintersections.com.au/fhir/Profile/metadata#type&quot;: [
+                      {
+                        &quot;valueString&quot;: &quot;Reference&quot;
+                      }
+                    ],
+                    &quot;linkId&quot;: &quot;Procedure.relatedItem.target._ImmunizationRecommendation&quot;,
+                    &quot;question&quot;: [
+                      {
+                        &quot;http://www.healthintersections.com.au/fhir/Profile/metadata#reference&quot;: [
+                          {
+                            &quot;valueString&quot;: &quot;/ImmunizationRecommendation?subject=$subj&amp;patient=$subj&amp;encounter=$encounter&quot;
+                          }
+                        ],
+                        &quot;linkId&quot;: &quot;Procedure.relatedItem.target._ImmunizationRecommendation.value&quot;,
+                        &quot;text&quot;: &quot;ImmunizationRecommendation&quot;,
+                        &quot;type&quot;: &quot;reference&quot;
+                      }
+                    ]
+                  },
+                  {
+                    &quot;http://www.healthintersections.com.au/fhir/Profile/metadata#type&quot;: [
+                      {
+                        &quot;valueString&quot;: &quot;Reference&quot;
+                      }
+                    ],
+                    &quot;linkId&quot;: &quot;Procedure.relatedItem.target._MedicationAdministration&quot;,
+                    &quot;question&quot;: [
+                      {
+                        &quot;http://www.healthintersections.com.au/fhir/Profile/metadata#reference&quot;: [
+                          {
+                            &quot;valueString&quot;: &quot;/MedicationAdministration?subject=$subj&amp;patient=$subj&amp;encounter=$encounter&quot;
+                          }
+                        ],
+                        &quot;linkId&quot;: &quot;Procedure.relatedItem.target._MedicationAdministration.value&quot;,
+                        &quot;text&quot;: &quot;MedicationAdministration&quot;,
+                        &quot;type&quot;: &quot;reference&quot;
+                      }
+                    ]
+                  },
+                  {
+                    &quot;http://www.healthintersections.com.au/fhir/Profile/metadata#type&quot;: [
+                      {
+                        &quot;valueString&quot;: &quot;Reference&quot;
+                      }
+                    ],
+                    &quot;linkId&quot;: &quot;Procedure.relatedItem.target._MedicationDispense&quot;,
+                    &quot;question&quot;: [
+                      {
+                        &quot;http://www.healthintersections.com.au/fhir/Profile/metadata#reference&quot;: [
+                          {
+                            &quot;valueString&quot;: &quot;/MedicationDispense?subject=$subj&amp;patient=$subj&amp;encounter=$encounter&quot;
+                          }
+                        ],
+                        &quot;linkId&quot;: &quot;Procedure.relatedItem.target._MedicationDispense.value&quot;,
+                        &quot;text&quot;: &quot;MedicationDispense&quot;,
+                        &quot;type&quot;: &quot;reference&quot;
+                      }
+                    ]
+                  },
+                  {
+                    &quot;http://www.healthintersections.com.au/fhir/Profile/metadata#type&quot;: [
+                      {
+                        &quot;valueString&quot;: &quot;Reference&quot;
+                      }
+                    ],
+                    &quot;linkId&quot;: &quot;Procedure.relatedItem.target._MedicationPrescription&quot;,
+                    &quot;question&quot;: [
+                      {
+                        &quot;http://www.healthintersections.com.au/fhir/Profile/metadata#reference&quot;: [
+                          {
+                            &quot;valueString&quot;: &quot;/MedicationPrescription?subject=$subj&amp;patient=$subj&amp;encounter=$encounter&quot;
+                          }
+                        ],
+                        &quot;linkId&quot;: &quot;Procedure.relatedItem.target._MedicationPrescription.value&quot;,
+                        &quot;text&quot;: &quot;MedicationPrescription&quot;,
+                        &quot;type&quot;: &quot;reference&quot;
+                      }
+                    ]
+                  },
+                  {
+                    &quot;http://www.healthintersections.com.au/fhir/Profile/metadata#type&quot;: [
+                      {
+                        &quot;valueString&quot;: &quot;Reference&quot;
+                      }
+                    ],
+                    &quot;linkId&quot;: &quot;Procedure.relatedItem.target._MedicationStatement&quot;,
+                    &quot;question&quot;: [
+                      {
+                        &quot;http://www.healthintersections.com.au/fhir/Profile/metadata#reference&quot;: [
+                          {
+                            &quot;valueString&quot;: &quot;/MedicationStatement?subject=$subj&amp;patient=$subj&amp;encounter=$encounter&quot;
+                          }
+                        ],
+                        &quot;linkId&quot;: &quot;Procedure.relatedItem.target._MedicationStatement.value&quot;,
+                        &quot;text&quot;: &quot;MedicationStatement&quot;,
+                        &quot;type&quot;: &quot;reference&quot;
+                      }
+                    ]
+                  },
+                  {
+                    &quot;http://www.healthintersections.com.au/fhir/Profile/metadata#type&quot;: [
+                      {
+                        &quot;valueString&quot;: &quot;Reference&quot;
+                      }
+                    ],
+                    &quot;linkId&quot;: &quot;Procedure.relatedItem.target._Observation&quot;,
+                    &quot;question&quot;: [
+                      {
+                        &quot;http://www.healthintersections.com.au/fhir/Profile/metadata#reference&quot;: [
+                          {
+                            &quot;valueString&quot;: &quot;/Observation?subject=$subj&amp;patient=$subj&amp;encounter=$encounter&quot;
+                          }
+                        ],
+                        &quot;linkId&quot;: &quot;Procedure.relatedItem.target._Observation.value&quot;,
+                        &quot;text&quot;: &quot;Observation&quot;,
+                        &quot;type&quot;: &quot;reference&quot;
+                      }
+                    ]
+                  },
+                  {
+                    &quot;http://www.healthintersections.com.au/fhir/Profile/metadata#type&quot;: [
+                      {
+                        &quot;valueString&quot;: &quot;Reference&quot;
+                      }
+                    ],
+                    &quot;linkId&quot;: &quot;Procedure.relatedItem.target._Procedure&quot;,
+                    &quot;question&quot;: [
+                      {
+                        &quot;http://www.healthintersections.com.au/fhir/Profile/metadata#reference&quot;: [
+                          {
+                            &quot;valueString&quot;: &quot;/Procedure?subject=$subj&amp;patient=$subj&amp;encounter=$encounter&quot;
+                          }
+                        ],
+                        &quot;linkId&quot;: &quot;Procedure.relatedItem.target._Procedure.value&quot;,
+                        &quot;text&quot;: &quot;Procedure&quot;,
+                        &quot;type&quot;: &quot;reference&quot;
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        &quot;http://hl7.org/fhir/Profile/questionnaire-extensions#flyover&quot;: [
+          {
+            &quot;valueString&quot;: &quot;Any other notes about the procedure - e.g. the operative notes.&quot;
+          }
+        ],
+        &quot;http://www.healthintersections.com.au/fhir/Profile/metadata#type&quot;: [
+          {
+            &quot;valueString&quot;: &quot;string&quot;
+          }
+        ],
+        &quot;linkId&quot;: &quot;Procedure.notes&quot;,
+        &quot;repeats&quot;: true,
+        &quot;question&quot;: [
+          {
+            &quot;linkId&quot;: &quot;Procedure.notes.value&quot;,
+            &quot;text&quot;: &quot;Additional information about procedure&quot;,
+            &quot;type&quot;: &quot;string&quot;
+          }
+        ]
+      }
+    ]
+  }
+}
+</pre>
+</div>
+
+
+<p>
+Usage note: every effort has been made to ensure that the
+examples are correct and useful, but they are not a normative part 
+of the specification. 
+</p>
+
+</div>
+
+
+				</div><!-- /inner-wrapper -->
+            </div><!-- /row -->
+        </div><!-- /container -->
+        
+    </div><!-- /segment-content -->
+
+
+	<div id="segment-footer" class="segment"><!-- segment-footer -->
+		<div class="container"><!-- container -->
+			<div class="inner-wrapper">
+				<p>
+        © HL7.org 2011+. FHIR DSTU (v0.4.0-3920) generated on Tue, Dec 30, 2014 11:05+0000. <!-- <a href="qa.html">QA Report</a> --> <!-- achive note -->
+        <br/>
+        <span style="color: #FFFF77">
+        Links: <a style="color: #81BEF7" href="timelines.html">What's a DSTU?</a> | 
+               <a style="color: #81BEF7" href="history.html">Version History</a> | 
+               <a style="color: #81BEF7" href="http://services.w3.org/htmldiff?doc1=http%3A%2F%2Fhl7.org%2Fimplement%2Fstandards%2Ffhir%2Fprocedure.questionnaire.json.html&amp;doc2=http%3A%2F%2Fhl7-fhir.github.io%2F%2Fprocedure.questionnaire.json.html">Compare to DSTU</a> | 
+               <a style="color: #81BEF7" rel="license" href="license.html"><img src="cc0.png" style="border-style: none;" alt="CC0"/></a> | 
+               <a style="color: #81BEF7" target="_blank" href="http://gforge.hl7.org/gf/project/fhir/tracker/?action=TrackerItemAdd&amp;tracker_id=677">Propose a change</a>   
+        </span>
+        </p>
+			</div><!-- /inner-wrapper -->
+		</div><!-- /container -->
+	</div><!-- /segment-footer -->
+<!-- disqus thread -->
+<!--disqus-->
+<!-- end disqus -->        
+	
+	<div id="segment-post-footer" class="segment hidden"><!-- segment-post-footer -->
+		<div class="container"><!-- container -->
+		</div><!-- /container -->
+	</div><!-- /segment-post-footer -->
+    
+    <!-- JS and analytics only. -->
+    <!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="./assets/js/jquery.js"> </script>   <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+<script src="./dist/js/bootstrap.min.js"> </script>
+<script src="./assets/js/respond.min.js"> </script>
+
+<script src="./assets/js/fhir.js"> </script>
+
+<!-- Analytics Below
+================================================== -->
+
+    
+</body>
+</html>

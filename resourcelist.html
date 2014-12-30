@@ -1,0 +1,528 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+  <title>Resourcelist - FHIR v0.4.0</title>
+
+  
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <meta content="http://hl7.org/fhir" name="author"/>
+
+  <link rel="stylesheet" href="fhir.css"/>
+  <link rel="Prev" href="http://hl7.org/implement/standards/fhir/resourcelist.html"/>
+
+    <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" href="./dist/css/bootstrap.css"/>
+  <link rel="stylesheet" href="./assets/css/bootstrap-fhir.css"/>
+
+    <!-- Project extras -->
+  <link rel="stylesheet" href="./assets/css/project.css"/>
+  <link rel="stylesheet" href="./assets/css/pygments-manni.css"/>
+	<link rel="stylesheet" href="jquery-ui.css"/>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- [if lt IE 9]>
+  <script src="./assets/js/html5shiv.js"></script>
+  <script src="./assets/js/respond.min.js"></script>
+  <![endif] -->
+
+    <!-- Favicons -->
+  <link sizes="144x144" rel="apple-touch-icon-precomposed" href="./assets/ico/apple-touch-icon-144-precomposed.png"/>
+  <link sizes="114x114" rel="apple-touch-icon-precomposed" href="./assets/ico/apple-touch-icon-114-precomposed.png"/>
+  <link sizes="72x72" rel="apple-touch-icon-precomposed" href="./assets/ico/apple-touch-icon-72-precomposed.png"/>
+  <link rel="apple-touch-icon-precomposed" href="./assets/ico/apple-touch-icon-57-precomposed.png"/>
+  <link rel="shortcut icon" href="./assets/ico/favicon.png"/>
+
+</head>
+<body>
+	<div id="segment-header" class="segment">  <!-- segment-header -->	
+		<div class="container">  <!-- container -->
+			<a id="logo" href="http://hl7.org/fhir"><img alt="logo fhir" src="./assets/images/fhir-logo-www.png"/> </a>
+			<div id="hl7-status">
+				<b>Continuous Integration Build</b>
+			</div>       	
+			
+			<div id="hl7-nav">
+				 <a id="hl7-logo" href="http://www.hl7.org">
+					<img height="50" alt="visit the hl7 website" width="42" src="./assets/images/hl7-logo.png"/>
+				</a> 
+			</div>       	
+			  <!-- hl7-search -->
+		</div>
+		<div class="container">  <!-- container -->
+	</div></div>  <!-- /segment-header -->	
+
+
+	<div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+		<div id="stripe"> </div>
+		<div class="container">  <!-- container -->
+   <!-- HEADER CONTENT -->
+ 	      		
+ 	      		      		
+			<nav class="navbar navbar-inverse">
+				<div class="container">
+					<button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+						<span class="icon-bar"> </span>
+						<span class="icon-bar"> </span>
+						<span class="icon-bar"> </span>
+					</button>
+					<a class="navbar-brand hidden" href="index.html">FHIR</a>
+					<div class="nav-collapse collapse navbar-inverse-collapse">
+						<ul class="nav navbar-nav">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="documentation.html">Documentation</a></li>
+              <li><a href="implementation.html">Implementation</a></li>
+              <li><a href="resourcelist.html">Resources</a></li>
+              <li><a href="clinical.html">Clinical</a></li>
+              <li><a href="administration.html">Administrative</a></li>
+              <li><a href="infrastructure.html">Infrastructure</a></li>
+              <li><a href="financial.html">Financial</a></li>
+
+						</ul>
+					</div>  <!-- /.nav-collapse -->
+				</div>  <!-- /.container -->
+			</nav>  <!-- /.navbar -->
+      		
+				
+  <!-- /HEADER CONTENT -->				
+		</div>  <!-- /container -->
+	</div>  <!-- /segment-navbar -->
+	
+
+	<div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+		<div class="container">  <!-- container -->	
+			<ul class="breadcrumb">
+        <li><a href="index.html">Home</a></li>
+        <li><b>Resources</b></li>          <!-- resourcelist.html / page -->
+
+			</ul>	
+		</div>  <!-- /container -->
+	</div>  <!-- /segment-breadcrumb -->
+	
+
+	<div id="segment-content" class="segment">  <!-- segment-content -->
+	<div class="container">  <!-- container -->
+            <div class="row">
+            	<div class="inner-wrapper">
+  <!-- CONTENT CONTENT -->
+
+
+<div class="col-9">
+
+<h2><span class="sectioncount">3<a name="3"> </a></span> Resource Index</h2>
+<div id="tabs">
+  <ul>
+    <li><a href="#tabs-1">Categorized</a></li>
+    <li><a href="#tabs-2">Alphabetical</a></li>
+  </ul>
+  <div id="tabs-1">
+  
+<a name="Any"> </a> 
+<a name="clinical"> </a> 
+<table width="100%">
+<tr><td colspan="4"><a href="clinical.html"><b>Clinical</b></a></td></tr>
+<tr><td>
+<p><b>General:</b></p>
+<ul>
+  <li><a title="Risk of harmful or undesirable, physiological response which is unique to an individual and associated with exposure to a substance." href="allergyintolerance.html">AllergyIntolerance</a></li>
+  <li><a title="A record of a clinical assessment performed to determine what problem(s) may affect the patient and before planning the treatments or management strategies that are best to manage a patient's condition. Assessments are often 1:1 with a clinical consultation / encounter,  but this varies greatly depending on the clinical workflow." href="clinicalassessment.html">ClinicalAssessment</a></li>
+  <li><a title="Use to record detailed information about conditions, problems or diagnoses recognized by a clinician. There are many uses including: recording a Diagnosis during an Encounter; populating a problem List or a Summary Statement, such as a Discharge Summary." href="condition.html">Condition</a> (aka Problem)</li>
+  <li><a title="Used to record and send details about a request for referral service or transfer of a patient to the care of another provider or provider organisation." href="referralrequest.html">ReferralRequest</a></li>
+  <li><a title="An action that is performed on a patient. This can be a physical 'thing' like an operation, or less invasive like counseling or hypnotherapy." href="procedure.html">Procedure</a></li>
+  <li><a title="Indicates an actual or potential clinical issue with or between one or more active or proposed clinical actions for a patient.  E.g. Drug-drug interaction, Ineffective treatment frequency, Procedure-condition conflict, etc." href="contraindication.html">Contraindication</a></li>
+  <li><a title="An assessment of the likely outcome(s) for a patient or other subject as well as the likelihood of each outcome." href="riskassessment.html">RiskAssessment</a></li>
+  <li><a title="An authorization for the supply of glasses and/or contact lenses to a patient." href="visionprescription.html">VisionPrescription</a></li>
+</ul>
+</td><td style="border-left: 1px solid #eeeeee">
+<p><b>Data Collection &amp; Care Plan:</b></p>
+<ul>
+  <li><a title="A structured set of questions intended to guide the collection of answers. The questions are ordered and grouped into coherent subsets, corresponding to the structure of the grouping of the underlying questions." href="questionnaire.html">Questionnaire</a></li>
+  <li><a title="A structured set of questions and their answers. The questions are ordered and grouped into coherent subsets, corresponding to the structure of the grouping of the underlying questions." href="questionnaireanswers.html">QuestionnaireAnswers</a></li>
+  <li><a title="Significant health events and conditions for people related to the subject relevant in the context of care for the subject." href="familyhistory.html">FamilyHistory</a></li>
+  <li><a title="Describes the intention of how one or more practitioners intend to deliver care for a particular patient for a period of time, possibly limited to care for a specific condition or set of conditions." href="careplan.html">CarePlan</a></li>
+  <li><a title="Describes the intention of how one or more practitioners intend to deliver care for a particular patient for a period of time, possibly limited to care for a specific condition or set of conditions." href="careplan2.html">CarePlan2</a></li>
+  <li><a title="Describes the intended objective(s) of the care." href="goal.html">Goal</a></li>
+</ul>
+</td><td style="border-left: 1px solid #eeeeee">
+<p><b>Medication, Immunization &amp; Nutrition:</b></p>
+<ul>
+  <li><a title="Primarily used for identification and definition of Medication, but also covers ingredients and packaging." href="medication.html">Medication</a></li>
+  <li><a title="An order for both supply of the medication and the instructions for administration of the medicine to a patient." href="medicationprescription.html">MedicationPrescription</a></li>
+  <li><a title="Describes the event of a patient being given a dose of a medication.  This may be as simple as swallowing a tablet or it may be a long running infusion.
+
+Related resources tie this event to the authorizing prescription, and the specific encounter between patient and health care practitioner." href="medicationadministration.html">MedicationAdministration</a></li>
+  <li><a title="Dispensing a medication to a named patient.  This includes a description of the supply provided and the instructions for administering the medication." href="medicationdispense.html">MedicationDispense</a></li>
+  <li><a title="A record of medication being taken by a patient, or that the medication has been given to a patient where the record is the result of a report from the patient or another clinician." href="medicationstatement.html">MedicationStatement</a></li>
+  <li><a title="A request to supply a diet, formula feeding (enteral) or oral nutritional supplement to a patient/resident." href="nutritionorder.html">NutritionOrder</a></li>
+  <li><a title="Immunization event information." href="immunization.html">Immunization</a></li>
+  <li><a title="A patient's point-of-time immunization status and recommendation with optional supporting justification." href="immunizationrecommendation.html">ImmunizationRecommendation</a></li>
+</ul>
+</td><td style="border-left: 1px solid #eeeeee">
+<p><b>Diagnostics:</b></p>
+<ul>
+  <li><a title="Measurements and simple assertions made about a patient, device or other subject." href="observation.html">Observation</a></li>
+  <li><a title="The findings and interpretation of diagnostic  tests performed on patients, groups of patients, devices, and locations, and/or specimens derived from these. The report includes clinical context such as requesting and provider information, and some mix of atomic results, images, textual and coded interpretation, and formatted representation of diagnostic reports." href="diagnosticreport.html">DiagnosticReport</a></li>
+  <li><a title="A request for a diagnostic investigation service to be performed." href="diagnosticorder.html">DiagnosticOrder</a></li>
+  <li><a title="Representation of the content produced in a DICOM imaging study. A study comprises a set of Series, each of which includes a set of Service-Object Pair Instances (SOP Instances - images or other data) acquired or produced in a common context.  A Series is of only one modality (e.g., X-ray, CT, MR, ultrasound), but a Study may have multiple Series of different modalities." href="imagingstudy.html">ImagingStudy</a></li>
+  <li><a title="A set of DICOM SOP Instances of a patient, selected for some application purpose, e.g., quality assurance, teaching, conference, consulting, etc.  Objects selected can be from different studies, but must be of the same patient." href="imagingobjectselection.html">ImagingObjectSelection</a></li>
+  <li><a title="Sample for analysis." href="specimen.html">Specimen</a></li>  
+</ul>
+</td></tr>
+<tr><td colspan="4"><a href="administration.html"><b>Administrative</b></a><a name="administrative"> </a></td></tr>
+<tr><td>
+<p><b>Attribution:</b></p>
+<ul>
+  <li><a title="Demographics and other administrative information about a person or animal receiving care or other health-related services." href="patient.html">Patient</a></li>
+  <li><a title="Information about a person that is involved in the care for a patient, but who is not the target of healthcare, nor has a formal responsibility in the care process." href="relatedperson.html">RelatedPerson</a></li>
+  <li><a title="Demographics and administrative information about a person independent of a specific health-related context." href="person.html">Person</a></li>
+  <li><a title="A person who is directly or indirectly involved in the provisioning of healthcare." href="practitioner.html">Practitioner</a></li>
+  <li><a title="A formally or informally recognized grouping of people or organizations formed for the purpose of achieving some form of collective action.  Includes companies, institutions, corporations, departments, community groups, healthcare practice groups, etc." href="organization.html">Organization</a></li>
+  <li><a title="The details of a Healthcare Service available at a location." href="healthcareservice.html">HealthcareService</a></li>
+</ul>
+</td><td style="border-left: 1px solid #eeeeee">
+<p><b>Entities:</b></p>
+<ul>  
+  <li><a title="A formal agreement between parties regarding the conduct of business, exchange of information or other matters." href="contract.html">Contract</a></li>
+  <li><a title="This resource identifies an instance of a manufactured thing that is used in the provision of healthcare without being substantially changed through that activity. The device may be a machine, an insert, a computer, an application, etc. This includes durable (reusable) medical equipment as well as disposable equipment used for diagnostic, treatment, and research for healthcare and public health." href="device.html">Device</a></li>
+  <li><a title="Describes the characteristics, operational status and capabilities of a medical-related component of a medical device." href="devicecomponent.html">DeviceComponent</a></li>
+  <li><a title="Describes a measurement, calculation or setting capability of a medical device." href="devicemetric.html">DeviceMetric</a></li>
+  <li><a title="Details and position information for a physical place where services are provided  and resources and participants may be stored, found, contained or accommodated." href="location.html">Location</a></li>
+  <li><a title="A homogeneous material with a definite composition." href="substance.html">Substance</a></li>
+  <li><a title="Represents a defined collection of entities that may be discussed or acted upon collectively but which are not expected to act collectively and are not formally or legally recognized.  I.e. A collection of entities that isn't an Organization." href="group.html">Group</a></li>
+</ul>
+</td><td style="border-left: 1px solid #eeeeee">
+<p><b>Workflow Management:</b></p>
+<ul>
+  <li><a title="An interaction between a patient and healthcare provider(s) for the purpose of providing healthcare service(s) or assessing the health status of a patient." href="encounter.html">Encounter</a></li>
+  <li><a title="An association between a patient and an organization / healthcare provider(s) during which time encounters may occur. The managing organization assumes a level of responsibility for the patient during this time." href="episodeofcare.html">EpisodeOfCare</a></li>
+  <li><a title="Prospective warnings of potential issues when providing care to the patient." href="alert.html">Alert</a></li>
+  <li><a title="An occurrence of information being transmitted. E.g., an alert that was sent to a responsible provider, a public health agency was notified about a reportable condition." href="communication.html">Communication</a></li>
+  <li><a title="A request to convey information. E.g., the CDS system proposes that an alert be sent to a responsible provider, the CDS system proposes that the public health agency be notified about a reportable condition." href="communicationrequest.html">CommunicationRequest</a></li>
+  <li><a title="A supply - a  request for something, and provision of what is supplied." href="supply.html">Supply</a></li>
+  <li><a title="A record of a device being used by a patient where the record is the result of a report from the patient or another clinician." href="deviceusestatement.html">DeviceUseStatement</a></li>
+</ul>
+</td><td style="border-left: 1px solid #eeeeee">
+<p><b>Scheduling / Ordering:</b></p>
+<ul>
+	<li><a title="A scheduled healthcare event for a patient and/or practitioner(s) where a service may take place at a specific date/time." href="appointment.html">Appointment</a></li>
+	<li><a title="A reply to an appointment request for a patient and/or practitioner(s), such as a confirmation or rejection." href="appointmentresponse.html">Appointment Response</a></li>
+	<li><a title="A container for slot(s) of time that may be available for booking appointments." href="schedule.html">Schedule</a></li>
+	<li><a title="A slot of time on a schedule that may be available for booking appointments." href="slot.html">Slot</a></li>
+  <li><a title="A request to perform an action." href="order.html">Order</a></li>
+  <li><a title="A response to an order." href="orderresponse.html">OrderResponse</a></li>
+  <li><a title="Represents a request for the use of a device." href="deviceuserequest.html">DeviceUseRequest</a></li>
+  <li><a title="A request for a procedure to be performed. May be a proposal or an order." href="procedurerequest.html">ProcedureRequest</a></li>
+</ul>
+
+</td></tr>
+<tr><td colspan="4"><a href="infrastructure.html"><b>Infrastructure</b></a><a name="infrastructure"> </a></td></tr>
+<tr><td>
+<p><b>Support:</b></p>
+<ul>
+  <li><a title="A photo, video, or audio recording acquired or used in healthcare. The actual content may be inline or provided by direct reference." href="media.html">Media</a></li>
+  <li><a title="Basic is used for handling concepts not yet defined in FHIR, narrative-only resources that don't map to an existing resource, and custom resources not appropriate for inclusion in the FHIR specification." href="basic.html">Basic</a></li>
+  <li><a title="Other is a conformant for handling resource concepts not yet defined for FHIR or outside HL7's scope of interest." href="other.html">Other</a></li>
+  <li><a title="Provenance information that describes the activity that led to the creation of a set of resources. This information can be used to help determine their reliability or trace where the information in them came from. The focus of the provenance resource is record keeping, audit and traceability, and not explicit statements of clinical significance." href="provenance.html">Provenance</a></li>
+  <li><a title="A record of an event made for purposes of maintaining a security log. Typical uses include detection of intrusion attempts and monitoring for inappropriate usage." href="securityevent.html">SecurityEvent</a></li>
+</ul>
+</td><td style="border-left: 1px solid #eeeeee">
+<p><b>Documents &amp; Structure:</b></p>
+<ul>
+  <li><a title="A set of information summarized from a list of other resources." href="list.html">List</a></li>
+  <li><a title="A set of healthcare-related information that is assembled together into a single logical document that provides a single coherent statement of meaning, establishes its own context and that has clinical attestation with regard to who is making the statement." href="composition.html">Composition</a></li>
+  <li><a title="A reference to a document." href="documentreference.html">DocumentReference</a></li>
+  <li><a title="A manifest that defines a set of documents." href="documentmanifest.html">DocumentManifest</a></li>
+</ul>
+</td><td style="border-left: 1px solid #eeeeee">
+<p><b>Exchange:</b></p>
+<ul>
+  <li><a title="The header for a message exchange that is either requesting or responding to an action.  The Reference(s) that are the subject of the action as well as other Information related to the action are typically transmitted in a bundle in which the MessageHeader resource instance is the first resource in the bundle." href="messageheader.html">MessageHeader</a></li>
+  <li><a title="A collection of error, warning or information messages that result from a system action." href="operationoutcome.html">OperationOutcome</a></li>
+  <li><a title="Todo." href="subscription.html">Subscription</a></li>
+  <li><a title="A container for a group of resources." href="bundle.html">Bundle</a></li>
+  <li><a title="A binary resource can contain any content, whether text, image, pdf, zip archive, etc." href="binary.html">Binary</a></li>
+</ul>
+</td><td style="border-left: 1px solid #eeeeee">
+  <!-- <p><b>Security:</b></p>
+<ul>
+</ul>
+</td><td style="border-left: 1px solid #eeeeee"> -->
+<p><b>Conformance:</b></p>
+<ul>
+  <li><a title="A conformance statement is a set of requirements for a desired implementation or a description of how a target application fulfills those requirements in a particular implementation." href="conformance.html">Conformance</a></li>
+  <li><a title="A Resource Profile - a statement of use of one or more FHIR Resources.  It may include constraints on Resources and Data Types, Terminology Binding Statements and Extension Definitions." href="profile.html">Profile</a></li>
+  <li><a title="Defines an extension that can be used in resources." href="extensiondefinition.html">ExtensionDefinition</a></li>
+  <li><a title="The formal description of a single piece of information that can be gathered and reported." href="dataelement.html">DataElement</a></li>
+  <li><a title="A Search Parameter that defines a named search item that can be used to search/filter on a resource." href="searchparameter.html">SearchParameter</a></li>
+  <li><a title="A formal computable definition of an operation (on the RESTful interface) or a named query (using the search interaction)." href="operationdefinition.html">OperationDefinition</a></li>
+  <li><a title="A value set specifies a set of codes drawn from one or more code systems." href="valueset.html">ValueSet</a></li>
+  <li><a title="A curated namespace that issues unique symbols within that namespace for the identification of concepts, people, devices, etc.  Represents a &quot;System&quot; used within the Identifier and Coding data types." href="namingsystem.html">NamingSystem</a></li>
+  <li><a title="A statement of relationships from one set of concepts to one or more other concepts - either code systems or data elements, or classes in class models." href="conceptmap.html">ConceptMap</a></li>
+</ul>
+
+</td></tr>
+<tr><td colspan="4"><a href="financial.html"><b>Financial</b></a><a name="financial"> </a></td></tr>
+<tr><td>
+<p><b>Support:</b></p>
+<ul>
+  <li><a title="Financial instrument which may be used to pay for or reimburse for health care products and services." href="coverage.html">Coverage</a></li>
+  <li><a title="This resource provides the insurance eligibility details from the insurer regarding a specified coverage and optionally some class of service." href="eligibilityrequest.html">EligibilityRequest</a></li>
+  <li><a title="This resource provides eligibility and plan details from the processing of an Eligibility resource." href="eligibilityresponse.html">EligibilityResponse</a></li>
+  <li><a title="This resource provides the insurance Enrollment details to the insurer regarding a specified coverage." href="enrollmentrequest.html">EnrollmentRequest</a></li>
+  <li><a title="This resource provides Enrollment and plan details from the processing of an Enrollment resource." href="enrollmentresponse.html">EnrollmentResponse</a></li>
+  <li><a title="This resource provides the request and response details for the resource for which the status is to be checked." href="pendedrequest.html">PendedRequest</a></li>
+  <li><a title="This resource provides the request and response details for the request for which all actions are to be reversed or terminated." href="reversal.html">Reversal</a></li>
+  <li><a title="This resource provides the request and response details for the resource for which the processing status is to be checked." href="statusrequest.html">StatusRequest</a></li>
+  <li><a title="This resource provides processing status, errors and notes from the processing of a resource." href="statusresponse.html">StatusResponse</a></li>
+  <li><a title="This resource provides the supporting information for a process, for example clinical or financial  information related to a claim or pre-authorization." href="supportingdocumentation.html">SupportingDocumentation</a></li>
+</ul>
+</td><td style="border-left: 1px solid #eeeeee">
+<p><b>Billing:</b></p>
+<ul>
+  <li><a title="This resource provides the adjudication details from the processing of a Claim resource." href="claimresponse.html">ClaimResponse</a></li>
+  <li><a title="A provider issued list of services and products provided, or to be provided, to a patient which is provided to an insurer for payment recovery." href="institutionalclaim.html">InstitutionalClaim</a></li>
+  <li><a title="A provider issued list of services and products provided, or to be provided, to a patient which is provided to an insurer for payment recovery." href="oralhealthclaim.html">OralHealthClaim</a></li>
+  <li><a title="A provider issued list of services and products provided, or to be provided, to a patient which is provided to an insurer for payment recovery." href="pharmacyclaim.html">PharmacyClaim</a></li>
+  <li><a title="A provider issued list of services and products provided, or to be provided, to a patient which is provided to an insurer for payment recovery." href="professionalclaim.html">ProfessionalClaim</a></li>
+  <li><a title="This resource provides the request and line items details for the claim which is to be re-adjudicated." href="readjudicate.html">Readjudicate</a></li>
+  <li><a title="A provider issued list of services and products provided, or to be provided, to a patient which is provided to an insurer for payment recovery." href="visionclaim.html">VisionClaim</a></li>
+</ul>
+</td><td style="border-left: 1px solid #eeeeee">
+<p><b>Payment:</b></p>
+<ul>
+  <li><a title="This resource provides the status of the payment for goods and services rendered, and the request and response resource references." href="paymentnotice.html">PaymentNotice</a></li>
+  <li><a title="This resource provides payment details and claim references supporting a bulk payment." href="paymentreconciliation.html">PaymentReconciliation</a></li>
+</ul>
+</td><td style="border-left: 1px solid #eeeeee">
+  <!-- <p><b>Security:</b></p>
+<ul>
+</ul>
+</td><td style="border-left: 1px solid #eeeeee"> -->
+<p><b>Other:</b></p>
+<ul>
+  <li><a title="This resource provides: the claim details; adjudication details from the processing of a Claim; and optionally account balance information, for informing the subscriber of the benefits provided." href="explanationofbenefit.html">ExplanationOfBenefit</a></li>
+</ul>
+
+</td></tr>
+</table>
+
+  </div>
+  <div id="tabs-2">
+
+<table width="100%">
+<tr><td colspan="4"><b>Alphabetical</b><a name="alphabetical"> </a></td></tr>
+<tr><td>
+<p><b>A-D:</b></p>
+<ul>
+  <li><a title="Prospective warnings of potential issues when providing care to the patient." href="alert.html">Alert</a></li>
+  <li><a title="Risk of harmful or undesirable, physiological response which is unique to an individual and associated with exposure to a substance." href="allergyintolerance.html">AllergyIntolerance</a></li>
+	<li><a title="A scheduled healthcare event for a patient and/or practitioner(s) where a service may take place at a specific date/time." href="appointment.html">Appointment</a></li>
+	<li><a title="A reply to an appointment request for a patient and/or practitioner(s), such as a confirmation or rejection." href="appointmentresponse.html">Appointment Response</a></li>
+  <li><a title="Basic is used for handling concepts not yet defined in FHIR, narrative-only resources that don't map to an existing resource, and custom resources not appropriate for inclusion in the FHIR specification." href="basic.html">Basic</a></li>
+  <li><a title="A binary resource can contain any content, whether text, image, pdf, zip archive, etc." href="binary.html">Binary</a></li>
+  <li><a title="A container for a group of resources." href="bundle.html">Bundle</a></li>
+  <li><a title="Describes the intention of how one or more practitioners intend to deliver care for a particular patient for a period of time, possibly limited to care for a specific condition or set of conditions." href="careplan.html">CarePlan</a></li>
+  <li><a title="Describes the intention of how one or more practitioners intend to deliver care for a particular patient for a period of time, possibly limited to care for a specific condition or set of conditions." href="careplan2.html">CarePlan2</a></li>
+  <li><a title="This resource provides the adjudication details from the processing of a Claim resource." href="claimresponse.html">ClaimResponse</a></li>
+  <li><a title="A record of a clinical assessment performed to determine what problem(s) may affect the patient and before planning the treatments or management strategies that are best to manage a patient's condition. Assessments are often 1:1 with a clinical consultation / encounter,  but this varies greatly depending on the clinical workflow." href="clinicalassessment.html">ClinicalAssessment</a></li>
+  <li><a title="An occurrence of information being transmitted. E.g., an alert that was sent to a responsible provider, a public health agency was notified about a reportable condition." href="communication.html">Communication</a></li>
+  <li><a title="A request to convey information. E.g., the CDS system proposes that an alert be sent to a responsible provider, the CDS system proposes that the public health agency be notified about a reportable condition." href="communicationrequest.html">CommunicationRequest</a></li>
+  <li><a title="A set of healthcare-related information that is assembled together into a single logical document that provides a single coherent statement of meaning, establishes its own context and that has clinical attestation with regard to who is making the statement." href="composition.html">Composition</a></li>
+  <li><a title="A statement of relationships from one set of concepts to one or more other concepts - either code systems or data elements, or classes in class models." href="conceptmap.html">ConceptMap</a></li>
+  <li><a title="Use to record detailed information about conditions, problems or diagnoses recognized by a clinician. There are many uses including: recording a Diagnosis during an Encounter; populating a problem List or a Summary Statement, such as a Discharge Summary." href="condition.html">Condition</a> (aka Problem)</li>
+  <li><a title="A conformance statement is a set of requirements for a desired implementation or a description of how a target application fulfills those requirements in a particular implementation." href="conformance.html">Conformance</a></li>
+  <li><a title="A formal agreement between parties regarding the conduct of business, exchange of information or other matters." href="contract.html">Contract</a></li>
+  <li><a title="Indicates an actual or potential clinical issue with or between one or more active or proposed clinical actions for a patient.  E.g. Drug-drug interaction, Ineffective treatment frequency, Procedure-condition conflict, etc." href="contraindication.html">Contraindication</a></li>
+  <li><a title="Financial instrument which may be used to pay for or reimburse for health care products and services." href="coverage.html">Coverage</a></li>
+  <li><a title="The formal description of a single piece of information that can be gathered and reported." href="dataelement.html">DataElement</a></li>
+  <li><a title="This resource identifies an instance of a manufactured thing that is used in the provision of healthcare without being substantially changed through that activity. The device may be a machine, an insert, a computer, an application, etc. This includes durable (reusable) medical equipment as well as disposable equipment used for diagnostic, treatment, and research for healthcare and public health." href="device.html">Device</a></li>
+  <li><a title="Describes the characteristics, operational status and capabilities of a medical-related component of a medical device." href="devicecomponent.html">DeviceComponent</a></li>
+  <li><a title="Describes a measurement, calculation or setting capability of a medical device." href="devicemetric.html">DeviceMetric</a></li>
+  <li><a title="Represents a request for the use of a device." href="deviceuserequest.html">DeviceUseRequest</a></li>
+</ul>
+</td><td style="border-left: 1px solid #eeeeee">
+<p><b>D-L:</b></p>
+<ul>
+  <li><a title=" " href="deviceusestatement.html">DeviceUseStatement</a></li>
+  <li><a title="A request for a diagnostic investigation service to be performed." href="diagnosticorder.html">DiagnosticOrder</a></li>
+  <li><a title="The findings and interpretation of diagnostic  tests performed on patients, groups of patients, devices, and locations, and/or specimens derived from these. The report includes clinical context such as requesting and provider information, and some mix of atomic results, images, textual and coded interpretation, and formatted representation of diagnostic reports." href="diagnosticreport.html">DiagnosticReport</a></li>
+  <li><a title="A manifest that defines a set of documents." href="documentmanifest.html">DocumentManifest</a></li>
+  <li><a title="A reference to a document." href="documentreference.html">DocumentReference</a></li>
+  <li><a title="This resource provides the insurance eligibility details from the insurer regarding a specified coverage and optionally some class of service." href="eligibilityrequest.html">EligibilityRequest</a></li>
+  <li><a title="This resource provides eligibility and plan details from the processing of an Eligibility resource." href="eligibilityresponse.html">EligibilityResponse</a></li>
+  <li><a title="An interaction between a patient and healthcare provider(s) for the purpose of providing healthcare service(s) or assessing the health status of a patient." href="encounter.html">Encounter</a></li>
+  <li><a title="This resource provides the insurance Enrollment details to the insurer regarding a specified coverage." href="enrollmentrequest.html">EnrollmentRequest</a></li>
+  <li><a title="This resource provides Enrollment and plan details from the processing of an Enrollment resource." href="enrollmentresponse.html">EnrollmentResponse</a></li>
+  <li><a title="An association between a patient and an organization / healthcare provider(s) during which time encounters may occur. The managing organization assumes a level of responsibility for the patient during this time." href="episodeofcare.html">EpisodeOfCare</a></li>
+  <li><a title="This resource provides: the claim details; adjudication details from the processing of a Claim; and optionally account balance information, for informing the subscriber of the benefits provided." href="explanationofbenefit.html">ExplanationOfBenefit</a></li>
+  <li><a title="Defines an extension that can be used in resources." href="extensiondefinition.html">ExtensionDefinition</a></li>
+  <li><a title="Significant health events and conditions for people related to the subject relevant in the context of care for the subject." href="familyhistory.html">FamilyHistory</a></li>
+  <li><a title="Describes the intended objective(s) of the care." href="goal.html">Goal</a></li>
+  <li><a title="Represents a defined collection of entities that may be discussed or acted upon collectively but which are not expected to act collectively and are not formally or legally recognized.  I.e. A collection of entities that isn't an Organization." href="group.html">Group</a></li>
+  <li><a title="The details of a Healthcare Service available at a location." href="healthcareservice.html">HealthcareService</a></li>
+  <li><a title="A set of DICOM SOP Instances of a patient, selected for some application purpose, e.g., quality assurance, teaching, conference, consulting, etc.  Objects selected can be from different studies, but must be of the same patient." href="imagingobjectselection.html">ImagingObjectSelection</a></li>
+  <li><a title="Representation of the content produced in a DICOM imaging study. A study comprises a set of Series, each of which includes a set of Service-Object Pair Instances (SOP Instances - images or other data) acquired or produced in a common context.  A Series is of only one modality (e.g., X-ray, CT, MR, ultrasound), but a Study may have multiple Series of different modalities." href="imagingstudy.html">ImagingStudy</a></li>
+  <li><a title="Immunization event information." href="immunization.html">Immunization</a></li>
+  <li><a title="A patient's point-of-time immunization status and recommendation with optional supporting justification." href="immunizationrecommendation.html">ImmunizationRecommendation</a></li>
+  <li><a title="A provider issued list of services and products provided, or to be provided, to a patient which is provided to an insurer for payment recovery." href="institutionalclaim.html">InstitutionalClaim</a></li>
+  <li><a title="A set of information summarized from a list of other resources." href="list.html">List</a></li>
+  <li><a title="Details and position information for a physical place where services are provided  and resources and participants may be stored, found, contained or accommodated." href="location.html">Location</a></li>
+</ul>
+</td><td style="border-left: 1px solid #eeeeee">
+<p><b>M-P:</b></p>
+<ul>
+  <li><a title="A photo, video, or audio recording acquired or used in healthcare. The actual content may be inline or provided by direct reference." href="media.html">Media</a></li>
+  <li><a title="Primarily used for identification and definition of Medication, but also covers ingredients and packaging." href="medication.html">Medication</a></li>
+  <li><a title="Describes the event of a patient being given a dose of a medication.  This may be as simple as swallowing a tablet or it may be a long running infusion.
+
+Related resources tie this event to the authorizing prescription, and the specific encounter between patient and health care practitioner." href="medicationadministration.html">MedicationAdministration</a></li>
+  <li><a title="Dispensing a medication to a named patient.  This includes a description of the supply provided and the instructions for administering the medication." href="medicationdispense.html">MedicationDispense</a></li>
+  <li><a title="An order for both supply of the medication and the instructions for administration of the medicine to a patient." href="medicationprescription.html">MedicationPrescription</a></li>
+  <li><a title="A record of medication being taken by a patient, or that the medication has been given to a patient where the record is the result of a report from the patient or another clinician." href="medicationstatement.html">MedicationStatement</a></li>
+  <li><a title="The header for a message exchange that is either requesting or responding to an action.  The Reference(s) that are the subject of the action as well as other Information related to the action are typically transmitted in a bundle in which the MessageHeader resource instance is the first resource in the bundle." href="messageheader.html">MessageHeader</a></li>
+  <li><a title="A curated namespace that issues unique symbols within that namespace for the identification of concepts, people, devices, etc.  Represents a &quot;System&quot; used within the Identifier and Coding data types." href="namingsystem.html">NamingSystem</a></li>
+  <li><a title="A request to supply a diet, formula feeding (enteral) or oral nutritional supplement to a patient/resident." href="nutritionorder.html">NutritionOrder</a></li>
+  <li><a title="Measurements and simple assertions made about a patient, device or other subject." href="observation.html">Observation</a></li>
+  <li><a title="A formal computable definition of an operation (on the RESTful interface) or a named query (using the search interaction)." href="operationdefinition.html">OperationDefinition</a></li>
+  <li><a title="A collection of error, warning or information messages that result from a system action." href="operationoutcome.html">OperationOutcome</a></li>
+  <li><a title="A provider issued list of services and products provided, or to be provided, to a patient which is provided to an insurer for payment recovery." href="oralhealthclaim.html">OralHealthClaim</a></li>
+  <li><a title="A request to perform an action." href="order.html">Order</a></li>
+  <li><a title="A response to an order." href="orderresponse.html">OrderResponse</a></li>
+  <li><a title="A formally or informally recognized grouping of people or organizations formed for the purpose of achieving some form of collective action.  Includes companies, institutions, corporations, departments, community groups, healthcare practice groups, etc." href="organization.html">Organization</a></li>
+  <li><a title="Other is a conformant for handling resource concepts not yet defined for FHIR or outside HL7's scope of interest." href="other.html">Other</a></li>
+  <li><a title="Demographics and other administrative information about a person or animal receiving care or other health-related services." href="patient.html">Patient</a></li>
+  <li><a title="This resource provides the status of the payment for goods and services rendered, and the request and response resource references." href="paymentnotice.html">PaymentNotice</a></li>
+  <li><a title="This resource provides payment details and claim references supporting a bulk payment." href="paymentreconciliation.html">PaymentReconciliation</a></li>
+  <li><a title="This resource provides the request and response details for the resource for which the status is to be checked." href="pendedrequest.html">PendedRequest</a></li>
+  <li><a title="Demographics and administrative information about a person independent of a specific health-related context." href="person.html">Person</a></li>
+  <li><a title="A provider issued list of services and products provided, or to be provided, to a patient which is provided to an insurer for payment recovery." href="pharmacyclaim.html">PharmacyClaim</a></li>
+  <li><a title="A person who is directly or indirectly involved in the provisioning of healthcare." href="practitioner.html">Practitioner</a></li>
+  <li><a title="An action that is performed on a patient. This can be a physical 'thing' like an operation, or less invasive like counseling or hypnotherapy." href="procedure.html">Procedure</a></li>
+</ul>
+</td><td style="border-left: 1px solid #eeeeee">
+<p><b>P-Z:</b></p>
+<ul>
+  <li><a title="A request for a procedure to be performed. May be a proposal or an order." href="procedurerequest.html">ProcedureRequest</a></li>
+  <li><a title="A provider issued list of services and products provided, or to be provided, to a patient which is provided to an insurer for payment recovery." href="professionalclaim.html">ProfessionalClaim</a></li>
+  <li><a title="A Resource Profile - a statement of use of one or more FHIR Resources.  It may include constraints on Resources and Data Types, Terminology Binding Statements and Extension Definitions." href="profile.html">Profile</a></li>
+  <li><a title="Provenance information that describes the activity that led to the creation of a set of resources. This information can be used to help determine their reliability or trace where the information in them came from. The focus of the provenance resource is record keeping, audit and traceability, and not explicit statements of clinical significance." href="provenance.html">Provenance</a></li>
+  <li><a title="A structured set of questions intended to guide the collection of answers. The questions are ordered and grouped into coherent subsets, corresponding to the structure of the grouping of the underlying questions." href="questionnaire.html">Questionnaire</a></li>
+  <li><a title="A structured set of questions and their answers. The questions are ordered and grouped into coherent subsets, corresponding to the structure of the grouping of the underlying questions." href="questionnaireanswers.html">QuestionnaireAnswers</a></li>
+  <li><a title="This resource provides the request and line items details for the claim which is to be re-adjudicated." href="readjudicate.html">Readjudicate</a></li>
+  <li><a title="Used to record and send details about a request for referral service or transfer of a patient to the care of another provider or provider organisation." href="referralrequest.html">ReferralRequest</a></li>
+  <li><a title="Information about a person that is involved in the care for a patient, but who is not the target of healthcare, nor has a formal responsibility in the care process." href="relatedperson.html">RelatedPerson</a></li>
+  <li><a title="This resource provides the request and response details for the request for which all actions are to be reversed or terminated." href="reversal.html">Reversal</a></li>
+  <li><a title="An assessment of the likely outcome(s) for a patient or other subject as well as the likelihood of each outcome." href="riskassessment.html">RiskAssessment</a></li>
+  <li><a title="A container for slot(s) of time that may be available for booking appointments." href="schedule.html">Schedule</a></li>
+  <li><a title="A Search Parameter that defines a named search item that can be used to search/filter on a resource." href="searchparameter.html">SearchParameter</a></li>
+  <li><a title="A record of an event made for purposes of maintaining a security log. Typical uses include detection of intrusion attempts and monitoring for inappropriate usage." href="securityevent.html">SecurityEvent</a></li>
+  <li><a title="A slot of time on a schedule that may be available for booking appointments." href="slot.html">Slot</a></li>
+  <li><a title="Sample for analysis." href="specimen.html">Specimen</a></li>  
+  <li><a title="This resource provides the request and response details for the resource for which the processing status is to be checked." href="statusrequest.html">StatusRequest</a></li>
+  <li><a title="This resource provides processing status, errors and notes from the processing of a resource." href="statusresponse.html">StatusResponse</a></li>
+  <li><a title="Todo." href="subscription.html">Subscription</a></li>
+  <li><a title="A homogeneous material with a definite composition." href="substance.html">Substance</a></li>
+  <li><a title="A supply - a  request for something, and provision of what is supplied." href="supply.html">Supply</a></li>
+  <li><a title="This resource provides the supporting information for a process, for example clinical or financial  information related to a claim or pre-authorization." href="supportingdocumentation.html">SupportingDocumentation</a></li>
+  <li><a title="A value set specifies a set of codes drawn from one or more code systems." href="valueset.html">ValueSet</a></li>
+  <li><a title="A provider issued list of services and products provided, or to be provided, to a patient which is provided to an insurer for payment recovery." href="visionclaim.html">VisionClaim</a></li>
+  <li><a title="An authorization for the supply of glasses and/or contact lenses to a patient." href="visionprescription.html">VisionPrescription</a></li>
+</ul>
+</td></tr>
+
+</table>
+</div>
+</div>
+
+
+
+<a name="adding"> </a>
+<p>
+Additional Resources will be added in the future. A list of hypothesized resources can be found on the 
+<a href="http://wiki.hl7.org/index.php?title=FHIR_Resource_Types">HL7 wiki</a>.  Feel free to add any you think are missing or engage with one 
+of the <a href="http://www.hl7.org/Special/committees/index.cfm">HL7 Work Groups</a> to submit a 
+<a href="http://wiki.hl7.org/index.php?title=Category:FHIR_Resource_Proposal">proposal</a> to define a resource of particular interest.
+</p>
+
+
+</div>
+
+
+				</div>  <!-- /inner-wrapper -->
+            </div>  <!-- /row -->
+        </div>  <!-- /container -->
+        
+    </div>  <!-- /segment-content -->
+
+
+	<div id="segment-footer" class="segment">  <!-- segment-footer -->
+		<div class="container">  <!-- container -->
+			<div class="inner-wrapper">
+				<p>
+        © HL7.org 2011+. FHIR DSTU (v0.4.0-3920) generated on Tue, Dec 30, 2014 11:07+0000.   <!-- <a href="qa.html">QA Report</a> -->   <!-- achive note -->
+        <br/>
+        <span style="color: #FFFF77">
+        Links: <a style="color: #81BEF7" href="timelines.html">What's a DSTU?</a> | 
+               <a style="color: #81BEF7" href="history.html">Version History</a> | 
+               <a style="color: #81BEF7" href="http://services.w3.org/htmldiff?doc1=http%3A%2F%2Fhl7.org%2Fimplement%2Fstandards%2Ffhir%2Fresourcelist.html&amp;doc2=http%3A%2F%2Fhl7-fhir.github.io%2F%2Fresourcelist.html">Compare to DSTU</a> | 
+               <a style="color: #81BEF7" rel="license" href="license.html"><img style="border-style: none;" alt="CC0" src="cc0.png"/></a> | 
+               <a style="color: #81BEF7" target="_blank" href="http://gforge.hl7.org/gf/project/fhir/tracker/?action=TrackerItemAdd&amp;tracker_id=677">Propose a change</a>   
+        </span>
+        </p>
+			</div>  <!-- /inner-wrapper -->
+		</div>  <!-- /container -->
+	</div>  <!-- /segment-footer -->
+  <!-- disqus thread -->
+  <!-- disqus -->
+  <!-- end disqus -->        
+	
+	<div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+		<div class="container">  <!-- container -->
+		</div>  <!-- /container -->
+	</div>  <!-- /segment-post-footer -->
+    
+      <!-- JS and analytics only. -->
+      <!-- Bootstrap core JavaScript
+================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+<script src="./assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+<script src="./dist/js/bootstrap.min.js"> </script>
+<script src="./assets/js/respond.min.js"> </script>
+
+<script src="./assets/js/fhir.js"> </script>
+
+  <!-- Analytics Below
+================================================== -->
+
+
+<script src="external/jquery/jquery.js"> </script>
+<script src="jquery-ui.min.js"> </script>
+<script>
+try {
+  var currentTabIndex = sessionStorage.getItem('fhir-resourcelist-tab-index');
+}
+catch(exception){ 
+  if (navigator.userAgent.toLowerCase().indexof('msie') == -1)
+    alert(exception);
+}
+
+if (!currentTabIndex)
+  currentTabIndex = '0';
+
+$( '#tabs' ).tabs({
+         active: currentTabIndex,
+         activate: function( event, ui ) {
+             var active = $('.selector').tabs('option', 'active');
+             currentTabIndex = ui.newTab.index();
+             try {
+               sessionStorage.setItem('fhir-resourcelist-tab-index', currentTabIndex);
+             }
+             catch(exception){ 
+              if (navigator.userAgent.toLowerCase().indexof('msie') == -1)
+                alert(exception);
+             }
+         }
+     });
+</script>
+
+</body>
+</html>

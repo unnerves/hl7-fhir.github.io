@@ -1,0 +1,1013 @@
+﻿<!DOCTYPE HTML>
+
+
+
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <title>Careplan2.questionnaire.json - FHIR v0.4.0</title>
+
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="author" content="http://hl7.org/fhir"/>
+
+  <link href="fhir.css" rel="stylesheet"/>
+  <link rel="Prev" href="http://hl7.org/implement/standards/fhir/careplan2.questionnaire.json.html"/>
+
+  <!-- Bootstrap core CSS -->
+  <link href="./dist/css/bootstrap.css" rel="stylesheet"/>
+  <link href="./assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+  <!-- Project extras -->
+  <link href="./assets/css/project.css" rel="stylesheet"/>
+  <link href="./assets/css/pygments-manni.css" rel="stylesheet"/>
+	<link href="jquery-ui.css" rel="stylesheet"/>
+
+  <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!--[if lt IE 9]>
+  <script src="./assets/js/html5shiv.js"></script>
+  <script src="./assets/js/respond.min.js"></script>
+  <![endif]-->
+
+  <!-- Favicons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="./assets/ico/apple-touch-icon-144-precomposed.png"/>
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="./assets/ico/apple-touch-icon-114-precomposed.png"/>
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="./assets/ico/apple-touch-icon-72-precomposed.png"/>
+  <link rel="apple-touch-icon-precomposed" href="./assets/ico/apple-touch-icon-57-precomposed.png"/>
+  <link rel="shortcut icon" href="./assets/ico/favicon.png"/>
+
+</head>
+<body>
+	<div id="segment-header" class="segment"><!-- segment-header -->	
+		<div class="container"><!-- container -->
+			<a id="logo" href="http://hl7.org/fhir"><img src="./assets/images/fhir-logo-www.png" alt="logo fhir"/> </a>
+			<div id="hl7-status">
+				<b>Continuous Integration Build</b>
+			</div>       	
+			
+			<div id="hl7-nav">
+				 <a id="hl7-logo" href="http://www.hl7.org">
+					<img src="./assets/images/hl7-logo.png" width="42" height="50" alt="visit the hl7 website"/>
+				</a> 
+			</div>       	
+			<!--hl7-search-->
+		</div>
+		<div class="container"><!-- container -->
+	</div></div><!-- /segment-header -->	
+
+
+	<div id="segment-navbar" class="segment"><!-- segment-navbar -->
+		<div id="stripe"> </div>
+		<div class="container"><!-- container -->
+ <!-- HEADER CONTENT -->
+ 	      		
+ 	      		      		
+			<nav class="navbar navbar-inverse">
+				<div class="container">
+					<button data-target=".navbar-inverse-collapse" data-toggle="collapse" class="navbar-toggle" type="button">
+						<span class="icon-bar"> </span>
+						<span class="icon-bar"> </span>
+						<span class="icon-bar"> </span>
+					</button>
+					<a href="index.html" class="navbar-brand hidden">FHIR</a>
+					<div class="nav-collapse collapse navbar-inverse-collapse">
+						<ul class="nav navbar-nav">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="documentation.html">Documentation</a></li>
+              <li><a href="implementation.html">Implementation</a></li>
+              <li><a href="resourcelist.html">Resources</a></li>
+              <li><a href="clinical.html">Clinical</a></li>
+              <li><a href="administration.html">Administrative</a></li>
+              <li><a href="infrastructure.html">Infrastructure</a></li>
+              <li><a href="financial.html">Financial</a></li>
+
+						</ul>
+					</div><!-- /.nav-collapse -->
+				</div><!-- /.container -->
+			</nav><!-- /.navbar -->
+      		
+				
+<!-- /HEADER CONTENT -->				
+		</div><!-- /container -->
+	</div><!-- /segment-navbar -->
+	
+
+	<div id="segment-breadcrumb" class="segment"><!-- segment-breadcrumb -->
+		<div class="container"><!-- container -->	
+			<ul class="breadcrumb">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="clinical.html">Clinical</a></li>        <li><a href="careplan2.html">CarePlan2</a></li>        <li><b>Generated Questionnaire</b></li>        <!-- careplan2.questionnaire.json.html / resource-questionnaire:CarePlan2 -->
+
+			</ul>	
+		</div><!-- /container -->
+	</div><!-- /segment-breadcrumb -->
+	
+
+	<div id="segment-content" class="segment"><!-- segment-content -->
+	<div class="container"><!-- container -->
+            <div class="row">
+            	<div class="inner-wrapper">
+<!-- CONTENT CONTENT -->
+
+
+<div class="col-9">
+
+<h1>Careplan2.questionnaire.json</h1>
+
+<p>
+<a href="careplan2.questionnaire.json">Raw JSON</a> (<a href="careplan2.questionnaire.canonical.json">canonical form</a>)
+</p>
+
+<div class="example">
+<p>Generated Questionnaire for CarePlan2</p>
+<pre class="json">
+{
+  &quot;resourceType&quot;: &quot;Questionnaire&quot;,
+  &quot;id&quot;: &quot;qs1&quot;,
+  &quot;contained&quot;: [
+    {
+      &quot;resourceType&quot;: &quot;ValueSet&quot;,
+      &quot;id&quot;: &quot;vs2&quot;,
+      &quot;identifier&quot;: &quot;urn:uuid:b115dab5-593f-43b6-a04e-c0e76636232a&quot;,
+      &quot;name&quot;: &quot;Type options for CarePlan2.participant.member&quot;,
+      &quot;description&quot;: &quot;Type options for CarePlan2.participant.member&quot;,
+      &quot;status&quot;: &quot;active&quot;,
+      &quot;expansion&quot;: {
+        &quot;timestamp&quot;: &quot;2014-12-30T10:58:19+00:00&quot;,
+        &quot;contains&quot;: [
+          {
+            &quot;system&quot;: &quot;http://hl7.org/fhir/resource-types&quot;,
+            &quot;code&quot;: &quot;Practitioner&quot;,
+            &quot;display&quot;: &quot;Practitioner&quot;
+          },
+          {
+            &quot;system&quot;: &quot;http://hl7.org/fhir/resource-types&quot;,
+            &quot;code&quot;: &quot;RelatedPerson&quot;,
+            &quot;display&quot;: &quot;RelatedPerson&quot;
+          },
+          {
+            &quot;system&quot;: &quot;http://hl7.org/fhir/resource-types&quot;,
+            &quot;code&quot;: &quot;Patient&quot;,
+            &quot;display&quot;: &quot;Patient&quot;
+          },
+          {
+            &quot;system&quot;: &quot;http://hl7.org/fhir/resource-types&quot;,
+            &quot;code&quot;: &quot;Organization&quot;,
+            &quot;display&quot;: &quot;Organization&quot;
+          }
+        ]
+      }
+    },
+    {
+      &quot;resourceType&quot;: &quot;ValueSet&quot;,
+      &quot;id&quot;: &quot;vs3&quot;,
+      &quot;identifier&quot;: &quot;urn:uuid:b1028a10-f600-4394-9f0b-190284221d5d&quot;,
+      &quot;name&quot;: &quot;Type options for CarePlan2.activity&quot;,
+      &quot;description&quot;: &quot;Type options for CarePlan2.activity&quot;,
+      &quot;status&quot;: &quot;active&quot;,
+      &quot;expansion&quot;: {
+        &quot;timestamp&quot;: &quot;2014-12-30T10:58:19+00:00&quot;,
+        &quot;contains&quot;: [
+          {
+            &quot;system&quot;: &quot;http://hl7.org/fhir/resource-types&quot;,
+            &quot;code&quot;: &quot;ProcedureRequest&quot;,
+            &quot;display&quot;: &quot;ProcedureRequest&quot;
+          },
+          {
+            &quot;system&quot;: &quot;http://hl7.org/fhir/resource-types&quot;,
+            &quot;code&quot;: &quot;MedicationPrescription&quot;,
+            &quot;display&quot;: &quot;MedicationPrescription&quot;
+          },
+          {
+            &quot;system&quot;: &quot;http://hl7.org/fhir/resource-types&quot;,
+            &quot;code&quot;: &quot;DiagnosticOrder&quot;,
+            &quot;display&quot;: &quot;DiagnosticOrder&quot;
+          },
+          {
+            &quot;system&quot;: &quot;http://hl7.org/fhir/resource-types&quot;,
+            &quot;code&quot;: &quot;ReferralRequest&quot;,
+            &quot;display&quot;: &quot;ReferralRequest&quot;
+          },
+          {
+            &quot;system&quot;: &quot;http://hl7.org/fhir/resource-types&quot;,
+            &quot;code&quot;: &quot;CommunicationRequest&quot;,
+            &quot;display&quot;: &quot;CommunicationRequest&quot;
+          },
+          {
+            &quot;system&quot;: &quot;http://hl7.org/fhir/resource-types&quot;,
+            &quot;code&quot;: &quot;NutritionOrder&quot;,
+            &quot;display&quot;: &quot;NutritionOrder&quot;
+          }
+        ]
+      }
+    }
+  ],
+  &quot;identifier&quot;: [
+    {
+      &quot;system&quot;: &quot;urn:ietf:rfc:3986&quot;
+    }
+  ],
+  &quot;status&quot;: &quot;draft&quot;,
+  &quot;date&quot;: &quot;2014-12-30T10:55:31&quot;,
+  &quot;publisher&quot;: &quot;HL7 FHIR Project&quot;,
+  &quot;group&quot;: {
+    &quot;http://hl7.org/fhir/Profile/questionnaire-extensions#flyover&quot;: [
+      {
+        &quot;valueString&quot;: &quot;Describes the intention of how one or more practitioners intend to deliver care for a particular patient for a period of time, possibly limited to care for a specific condition or set of conditions.&quot;
+      }
+    ],
+    &quot;linkId&quot;: &quot;CarePlan2&quot;,
+    &quot;title&quot;: &quot;Healthcare plan for patient&quot;,
+    &quot;required&quot;: true,
+    &quot;group&quot;: [
+      {
+        &quot;http://hl7.org/fhir/Profile/questionnaire-extensions#flyover&quot;: [
+          {
+            &quot;valueString&quot;: &quot;The logical id of the resource, as used in the url for the resoure. Once assigned, this value never changes. The only time that a resource does not have an id is when it is being submitted to the server using a create operation. Bundles always have an id, though it is usually a generated UUID.&quot;
+          }
+        ],
+        &quot;http://www.healthintersections.com.au/fhir/Profile/metadata#type&quot;: [
+          {
+            &quot;valueString&quot;: &quot;string&quot;
+          }
+        ],
+        &quot;linkId&quot;: &quot;CarePlan2.id&quot;,
+        &quot;repeats&quot;: true,
+        &quot;question&quot;: [
+          {
+            &quot;linkId&quot;: &quot;CarePlan2.id.value&quot;,
+            &quot;text&quot;: &quot;Logical id of this artefact&quot;,
+            &quot;type&quot;: &quot;string&quot;
+          }
+        ]
+      },
+      {
+        &quot;http://hl7.org/fhir/Profile/questionnaire-extensions#flyover&quot;: [
+          {
+            &quot;valueString&quot;: &quot;The metadata about the resource. This is content that is maintained by the infrastructure. Changes to the content may not always be associated with version changes to the resource.&quot;
+          }
+        ],
+        &quot;linkId&quot;: &quot;CarePlan2.meta&quot;,
+        &quot;title&quot;: &quot;Metadata about the resource&quot;,
+        &quot;group&quot;: [
+          {
+            &quot;http://hl7.org/fhir/Profile/questionnaire-extensions#flyover&quot;: [
+              {
+                &quot;valueString&quot;: &quot;unique id for the element within a resource (for internal references).&quot;
+              }
+            ],
+            &quot;http://www.healthintersections.com.au/fhir/Profile/metadata#type&quot;: [
+              {
+                &quot;valueString&quot;: &quot;string&quot;
+              }
+            ],
+            &quot;linkId&quot;: &quot;CarePlan2.meta.id&quot;,
+            &quot;repeats&quot;: true,
+            &quot;question&quot;: [
+              {
+                &quot;linkId&quot;: &quot;CarePlan2.meta.id.value&quot;,
+                &quot;text&quot;: &quot;xml:id (or equivalent in JSON)&quot;,
+                &quot;type&quot;: &quot;string&quot;
+              }
+            ]
+          },
+          {
+            &quot;http://hl7.org/fhir/Profile/questionnaire-extensions#flyover&quot;: [
+              {
+                &quot;valueString&quot;: &quot;The version specific identifier, as it appears in the version portion of the url. This values changes when the resource is created, updated, or deleted. The server assigns this value, and ignores what the client specifies, except in the case that the server is imposing version integrity on updates/deletes.&quot;
+              }
+            ],
+            &quot;http://www.healthintersections.com.au/fhir/Profile/metadata#type&quot;: [
+              {
+                &quot;valueString&quot;: &quot;string&quot;
+              }
+            ],
+            &quot;linkId&quot;: &quot;CarePlan2.meta.versionId&quot;,
+            &quot;repeats&quot;: true,
+            &quot;question&quot;: [
+              {
+                &quot;linkId&quot;: &quot;CarePlan2.meta.versionId.value&quot;,
+                &quot;text&quot;: &quot;Version specific identifier&quot;,
+                &quot;type&quot;: &quot;string&quot;
+              }
+            ]
+          },
+          {
+            &quot;http://hl7.org/fhir/Profile/questionnaire-extensions#flyover&quot;: [
+              {
+                &quot;valueString&quot;: &quot;When the resource last changed - e.g. when the version changed. This value is always populated except when the resource is first being created. The server / resource manager sets this value; what a client provides is irrelevant.&quot;
+              }
+            ],
+            &quot;http://www.healthintersections.com.au/fhir/Profile/metadata#type&quot;: [
+              {
+                &quot;valueString&quot;: &quot;instant&quot;
+              }
+            ],
+            &quot;linkId&quot;: &quot;CarePlan2.meta.lastUpdated&quot;,
+            &quot;repeats&quot;: true,
+            &quot;question&quot;: [
+              {
+                &quot;linkId&quot;: &quot;CarePlan2.meta.lastUpdated.value&quot;,
+                &quot;text&quot;: &quot;When the resource version last changed&quot;,
+                &quot;type&quot;: &quot;instant&quot;
+              }
+            ]
+          },
+          {
+            &quot;http://hl7.org/fhir/Profile/questionnaire-extensions#flyover&quot;: [
+              {
+                &quot;valueString&quot;: &quot;A list of profiles that this resource claims to conform to. The URL is a reference to Profile.url. It is up to the server and/or other infrastruture of policy to determine whether/how these claims are verified and/or updated over tiem.&quot;
+              }
+            ],
+            &quot;http://www.healthintersections.com.au/fhir/Profile/metadata#type&quot;: [
+              {
+                &quot;valueString&quot;: &quot;uri&quot;
+              }
+            ],
+            &quot;linkId&quot;: &quot;CarePlan2.meta.profile&quot;,
+            &quot;repeats&quot;: true,
+            &quot;question&quot;: [
+              {
+                &quot;linkId&quot;: &quot;CarePlan2.meta.profile.value&quot;,
+                &quot;text&quot;: &quot;Profiles this resource claims to conform to&quot;,
+                &quot;type&quot;: &quot;string&quot;
+              }
+            ]
+          },
+          {
+            &quot;http://hl7.org/fhir/Profile/questionnaire-extensions#flyover&quot;: [
+              {
+                &quot;valueString&quot;: &quot;Security labels applied to this resource. These tags connect specific resources to the overall security policy and infrastructure. The security labels can be updated without changing the stated version of the resource.&quot;
+              }
+            ],
+            &quot;http://www.healthintersections.com.au/fhir/Profile/metadata#type&quot;: [
+              {
+                &quot;valueString&quot;: &quot;Coding&quot;
+              }
+            ],
+            &quot;linkId&quot;: &quot;CarePlan2.meta.security&quot;,
+            &quot;repeats&quot;: true,
+            &quot;question&quot;: [
+              {
+                &quot;linkId&quot;: &quot;CarePlan2.meta.security.value&quot;,
+                &quot;text&quot;: &quot;Security Labels applied to this resource&quot;,
+                &quot;type&quot;: &quot;open-choice&quot;
+              }
+            ]
+          },
+          {
+            &quot;http://hl7.org/fhir/Profile/questionnaire-extensions#flyover&quot;: [
+              {
+                &quot;valueString&quot;: &quot;Tags applied to this resource. Tags are intended to to be used to identify and relate resources to process and workflow, and applications are not required to consider the tags when interpreting the meaning of a resource. The tags can be updated without changing the stated version of the resource.&quot;
+              }
+            ],
+            &quot;http://www.healthintersections.com.au/fhir/Profile/metadata#type&quot;: [
+              {
+                &quot;valueString&quot;: &quot;Coding&quot;
+              }
+            ],
+            &quot;linkId&quot;: &quot;CarePlan2.meta.tag&quot;,
+            &quot;repeats&quot;: true,
+            &quot;question&quot;: [
+              {
+                &quot;linkId&quot;: &quot;CarePlan2.meta.tag.value&quot;,
+                &quot;text&quot;: &quot;Tags applied&quot;,
+                &quot;type&quot;: &quot;open-choice&quot;
+              }
+            ]
+          }
+        ]
+      },
+      {
+        &quot;http://hl7.org/fhir/Profile/questionnaire-extensions#flyover&quot;: [
+          {
+            &quot;valueString&quot;: &quot;A reference to a set of rules that were followed when the resource was constructed, and which must be understood when processing the content. Asserting this rule set restricts the content to be only understood by a limited set of trading partners. This inherently limits the usefulness of the data in the long term. However the existing health eco-system is highly fractured, and not yet ready to define, collect, and exchange data in a generally computable sense. Wherever possible, implementers and/or specification writers should avoid using this element as much as possible.&quot;
+          }
+        ],
+        &quot;http://www.healthintersections.com.au/fhir/Profile/metadata#type&quot;: [
+          {
+            &quot;valueString&quot;: &quot;uri&quot;
+          }
+        ],
+        &quot;linkId&quot;: &quot;CarePlan2.implicitRules&quot;,
+        &quot;repeats&quot;: true,
+        &quot;question&quot;: [
+          {
+            &quot;linkId&quot;: &quot;CarePlan2.implicitRules.value&quot;,
+            &quot;text&quot;: &quot;A set of rules under which this content was created&quot;,
+            &quot;type&quot;: &quot;string&quot;
+          }
+        ]
+      },
+      {
+        &quot;http://hl7.org/fhir/Profile/questionnaire-extensions#flyover&quot;: [
+          {
+            &quot;valueString&quot;: &quot;The base language in which the resource is written. Language is provided to support indexing and accessibility (typically, services such as text to speech use the language tag). The html language tag in the narrative applies  to the narrative. The language tag on the resource may be used to specify the language of other presentations generated from the data in the resource\n\nNot all the content has to be in the base language. The Resource.language should not be assumed to apply to the narrative automatically. If a language is specified, it should it also be specified on the div element in the html (see rules in HTML5 for information about the relationship between xml:lang and the html lang attribute).&quot;
+          }
+        ],
+        &quot;http://www.healthintersections.com.au/fhir/Profile/metadata#type&quot;: [
+          {
+            &quot;valueString&quot;: &quot;code&quot;
+          }
+        ],
+        &quot;linkId&quot;: &quot;CarePlan2.language&quot;,
+        &quot;repeats&quot;: true,
+        &quot;question&quot;: [
+          {
+            &quot;linkId&quot;: &quot;CarePlan2.language.value&quot;,
+            &quot;text&quot;: &quot;language&quot;,
+            &quot;type&quot;: &quot;choice&quot;
+          }
+        ]
+      },
+      {
+        &quot;http://hl7.org/fhir/Profile/questionnaire-extensions#flyover&quot;: [
+          {
+            &quot;valueString&quot;: &quot;A human-readable narrative that contains a summary of the resource, and may be used to represent the content of the resource to a human. The narrative need not encode all the structured data, but is required to contain sufficient detail to make it \&quot;clinically safe\&quot; for a human to just read the narrative. Resource definitions may define what content should be represented in the narrative to ensure clinical safety. Contained resources do not have narrative. Resources that are not contained SHOULD have a narrative.&quot;
+          }
+        ],
+        &quot;linkId&quot;: &quot;CarePlan2.text&quot;,
+        &quot;text&quot;: &quot;Text summary of the resource, for human interpretation&quot;,
+        &quot;repeats&quot;: true
+      },
+      {
+        &quot;http://hl7.org/fhir/Profile/questionnaire-extensions#flyover&quot;: [
+          {
+            &quot;valueString&quot;: &quot;These resources do not have an independent existence apart from the resource that contains them - they cannot be identified independently, and nor can they have their own independent transaction scope. This should never be done when the content can be identified properly, as once identification is lost, it is extremely difficult (and context dependent) to restore it again.&quot;
+          }
+        ],
+        &quot;linkId&quot;: &quot;CarePlan2.contained&quot;,
+        &quot;text&quot;: &quot;Contained, inline Resources&quot;,
+        &quot;repeats&quot;: true
+      },
+      {
+        &quot;http://hl7.org/fhir/Profile/questionnaire-extensions#flyover&quot;: [
+          {
+            &quot;valueString&quot;: &quot;This records identifiers associated with this care plan that are defined by business processed and/ or used to refer to it when a direct URL reference to the resource itself is not appropriate (e.g. in CDA documents, or in written / printed documentation).&quot;
+          }
+        ],
+        &quot;http://www.healthintersections.com.au/fhir/Profile/metadata#type&quot;: [
+          {
+            &quot;valueString&quot;: &quot;Identifier&quot;
+          }
+        ],
+        &quot;linkId&quot;: &quot;CarePlan2.identifier&quot;,
+        &quot;text&quot;: &quot;External Ids for this plan&quot;,
+        &quot;repeats&quot;: true,
+        &quot;question&quot;: [
+          {
+            &quot;linkId&quot;: &quot;CarePlan2.identifier.label&quot;,
+            &quot;text&quot;: &quot;label:&quot;,
+            &quot;type&quot;: &quot;string&quot;
+          },
+          {
+            &quot;linkId&quot;: &quot;CarePlan2.identifier.system&quot;,
+            &quot;text&quot;: &quot;system:&quot;,
+            &quot;type&quot;: &quot;string&quot;
+          },
+          {
+            &quot;linkId&quot;: &quot;CarePlan2.identifier.value&quot;,
+            &quot;text&quot;: &quot;value:&quot;,
+            &quot;type&quot;: &quot;string&quot;
+          }
+        ]
+      },
+      {
+        &quot;http://hl7.org/fhir/Profile/questionnaire-extensions#flyover&quot;: [
+          {
+            &quot;valueString&quot;: &quot;Identifies the patient/subject whose intended care is described by the plan.&quot;
+          }
+        ],
+        &quot;http://www.healthintersections.com.au/fhir/Profile/metadata#type&quot;: [
+          {
+            &quot;valueString&quot;: &quot;Reference&quot;
+          }
+        ],
+        &quot;linkId&quot;: &quot;CarePlan2.patient&quot;,
+        &quot;repeats&quot;: true,
+        &quot;question&quot;: [
+          {
+            &quot;http://www.healthintersections.com.au/fhir/Profile/metadata#reference&quot;: [
+              {
+                &quot;valueString&quot;: &quot;/Patient?subject=$subj&amp;patient=$subj&amp;encounter=$encounter&quot;
+              }
+            ],
+            &quot;linkId&quot;: &quot;CarePlan2.patient.value&quot;,
+            &quot;text&quot;: &quot;Who care plan is for&quot;,
+            &quot;type&quot;: &quot;reference&quot;
+          }
+        ]
+      },
+      {
+        &quot;http://hl7.org/fhir/Profile/questionnaire-extensions#flyover&quot;: [
+          {
+            &quot;valueString&quot;: &quot;Indicates whether the plan is currently being acted upon, represents future intentions or is now just historical record.&quot;
+          }
+        ],
+        &quot;http://www.healthintersections.com.au/fhir/Profile/metadata#type&quot;: [
+          {
+            &quot;valueString&quot;: &quot;code&quot;
+          }
+        ],
+        &quot;linkId&quot;: &quot;CarePlan2.status&quot;,
+        &quot;required&quot;: true,
+        &quot;repeats&quot;: true,
+        &quot;question&quot;: [
+          {
+            &quot;linkId&quot;: &quot;CarePlan2.status.value&quot;,
+            &quot;text&quot;: &quot;status&quot;,
+            &quot;type&quot;: &quot;choice&quot;
+          }
+        ]
+      },
+      {
+        &quot;http://hl7.org/fhir/Profile/questionnaire-extensions#flyover&quot;: [
+          {
+            &quot;valueString&quot;: &quot;Indicates when the plan did (or is intended to) come into effect and end. Any activities scheduled as part of the plan should be constrained to the specified period.&quot;
+          }
+        ],
+        &quot;http://www.healthintersections.com.au/fhir/Profile/metadata#type&quot;: [
+          {
+            &quot;valueString&quot;: &quot;Period&quot;
+          }
+        ],
+        &quot;linkId&quot;: &quot;CarePlan2.period&quot;,
+        &quot;text&quot;: &quot;Time period plan covers&quot;,
+        &quot;repeats&quot;: true,
+        &quot;question&quot;: [
+          {
+            &quot;linkId&quot;: &quot;CarePlan2.period.low&quot;,
+            &quot;text&quot;: &quot;start:&quot;,
+            &quot;type&quot;: &quot;dateTime&quot;
+          },
+          {
+            &quot;linkId&quot;: &quot;CarePlan2.period.end&quot;,
+            &quot;text&quot;: &quot;end:&quot;,
+            &quot;type&quot;: &quot;dateTime&quot;
+          }
+        ]
+      },
+      {
+        &quot;http://hl7.org/fhir/Profile/questionnaire-extensions#flyover&quot;: [
+          {
+            &quot;valueString&quot;: &quot;Identifies the most recent date on which the plan has been revised.&quot;
+          }
+        ],
+        &quot;http://www.healthintersections.com.au/fhir/Profile/metadata#type&quot;: [
+          {
+            &quot;valueString&quot;: &quot;datetime&quot;
+          }
+        ],
+        &quot;linkId&quot;: &quot;CarePlan2.modified&quot;,
+        &quot;repeats&quot;: true,
+        &quot;question&quot;: [
+          {
+            &quot;linkId&quot;: &quot;CarePlan2.modified.value&quot;,
+            &quot;text&quot;: &quot;When last updated&quot;,
+            &quot;type&quot;: &quot;dateTime&quot;
+          }
+        ]
+      },
+      {
+        &quot;http://hl7.org/fhir/Profile/questionnaire-extensions#flyover&quot;: [
+          {
+            &quot;valueString&quot;: &quot;Identifies the conditions/problems/concerns/diagnoses/etc. whose management and/or mitigation are handled by this plan.&quot;
+          }
+        ],
+        &quot;http://www.healthintersections.com.au/fhir/Profile/metadata#type&quot;: [
+          {
+            &quot;valueString&quot;: &quot;Reference&quot;
+          }
+        ],
+        &quot;linkId&quot;: &quot;CarePlan2.concern&quot;,
+        &quot;repeats&quot;: true,
+        &quot;question&quot;: [
+          {
+            &quot;http://www.healthintersections.com.au/fhir/Profile/metadata#reference&quot;: [
+              {
+                &quot;valueString&quot;: &quot;/Condition?subject=$subj&amp;patient=$subj&amp;encounter=$encounter&quot;
+              }
+            ],
+            &quot;linkId&quot;: &quot;CarePlan2.concern.value&quot;,
+            &quot;text&quot;: &quot;Health issues this plan addresses&quot;,
+            &quot;type&quot;: &quot;reference&quot;
+          }
+        ]
+      },
+      {
+        &quot;http://hl7.org/fhir/Profile/questionnaire-extensions#flyover&quot;: [
+          {
+            &quot;valueString&quot;: &quot;Identifies all people and organizations who are expected to be involved in the care envisioned by this plan.&quot;
+          }
+        ],
+        &quot;linkId&quot;: &quot;CarePlan2.participant&quot;,
+        &quot;title&quot;: &quot;Who's involved in plan?&quot;,
+        &quot;repeats&quot;: true,
+        &quot;group&quot;: [
+          {
+            &quot;http://hl7.org/fhir/Profile/questionnaire-extensions#flyover&quot;: [
+              {
+                &quot;valueString&quot;: &quot;unique id for the element within a resource (for internal references).&quot;
+              }
+            ],
+            &quot;http://www.healthintersections.com.au/fhir/Profile/metadata#type&quot;: [
+              {
+                &quot;valueString&quot;: &quot;string&quot;
+              }
+            ],
+            &quot;linkId&quot;: &quot;CarePlan2.participant.id&quot;,
+            &quot;repeats&quot;: true,
+            &quot;question&quot;: [
+              {
+                &quot;linkId&quot;: &quot;CarePlan2.participant.id.value&quot;,
+                &quot;text&quot;: &quot;xml:id (or equivalent in JSON)&quot;,
+                &quot;type&quot;: &quot;string&quot;
+              }
+            ]
+          },
+          {
+            &quot;http://hl7.org/fhir/Profile/questionnaire-extensions#flyover&quot;: [
+              {
+                &quot;valueString&quot;: &quot;Indicates specific responsibility of an individual within the care plan.  E.g. \&quot;Primary physician\&quot;, \&quot;Team coordinator\&quot;, \&quot;Caregiver\&quot;, etc. Roles may sometimes be inferred by type of Practitioner.  These are relationships that hold only within the context of the care plan.  General relationships should be handled as properties of the Patient resource directly.&quot;
+              }
+            ],
+            &quot;http://www.healthintersections.com.au/fhir/Profile/metadata#type&quot;: [
+              {
+                &quot;valueString&quot;: &quot;CodeableConcept&quot;
+              }
+            ],
+            &quot;linkId&quot;: &quot;CarePlan2.participant.role&quot;,
+            &quot;text&quot;: &quot;Type of involvement&quot;,
+            &quot;repeats&quot;: true,
+            &quot;question&quot;: [
+              {
+                &quot;linkId&quot;: &quot;CarePlan2.participant.role.coding&quot;,
+                &quot;text&quot;: &quot;code:&quot;,
+                &quot;type&quot;: &quot;open-choice&quot;
+              },
+              {
+                &quot;linkId&quot;: &quot;CarePlan2.participant.role.text&quot;,
+                &quot;text&quot;: &quot;text:&quot;,
+                &quot;type&quot;: &quot;string&quot;
+              }
+            ]
+          },
+          {
+            &quot;http://hl7.org/fhir/Profile/questionnaire-extensions#flyover&quot;: [
+              {
+                &quot;valueString&quot;: &quot;The specific person or organization who is participating/expected to participate in the care plan. Patient only needs to be listed if they have a role other than \&quot;subject of care\&quot;.&quot;
+              }
+            ],
+            &quot;linkId&quot;: &quot;CarePlan2.participant.member&quot;,
+            &quot;text&quot;: &quot;Who is involved&quot;,
+            &quot;required&quot;: true,
+            &quot;repeats&quot;: true,
+            &quot;question&quot;: [
+              {
+                &quot;linkId&quot;: &quot;CarePlan2.participant.member._type&quot;,
+                &quot;text&quot;: &quot;type&quot;,
+                &quot;type&quot;: &quot;choice&quot;,
+                &quot;options&quot;: {
+                  &quot;reference&quot;: &quot;#vs2&quot;
+                },
+                &quot;group&quot;: [
+                  {
+                    &quot;http://www.healthintersections.com.au/fhir/Profile/metadata#type&quot;: [
+                      {
+                        &quot;valueString&quot;: &quot;Reference&quot;
+                      }
+                    ],
+                    &quot;linkId&quot;: &quot;CarePlan2.participant.member._Practitioner&quot;,
+                    &quot;question&quot;: [
+                      {
+                        &quot;http://www.healthintersections.com.au/fhir/Profile/metadata#reference&quot;: [
+                          {
+                            &quot;valueString&quot;: &quot;/Practitioner?subject=$subj&amp;patient=$subj&amp;encounter=$encounter&quot;
+                          }
+                        ],
+                        &quot;linkId&quot;: &quot;CarePlan2.participant.member._Practitioner.value&quot;,
+                        &quot;text&quot;: &quot;Practitioner&quot;,
+                        &quot;type&quot;: &quot;reference&quot;
+                      }
+                    ]
+                  },
+                  {
+                    &quot;http://www.healthintersections.com.au/fhir/Profile/metadata#type&quot;: [
+                      {
+                        &quot;valueString&quot;: &quot;Reference&quot;
+                      }
+                    ],
+                    &quot;linkId&quot;: &quot;CarePlan2.participant.member._RelatedPerson&quot;,
+                    &quot;question&quot;: [
+                      {
+                        &quot;http://www.healthintersections.com.au/fhir/Profile/metadata#reference&quot;: [
+                          {
+                            &quot;valueString&quot;: &quot;/RelatedPerson?subject=$subj&amp;patient=$subj&amp;encounter=$encounter&quot;
+                          }
+                        ],
+                        &quot;linkId&quot;: &quot;CarePlan2.participant.member._RelatedPerson.value&quot;,
+                        &quot;text&quot;: &quot;RelatedPerson&quot;,
+                        &quot;type&quot;: &quot;reference&quot;
+                      }
+                    ]
+                  },
+                  {
+                    &quot;http://www.healthintersections.com.au/fhir/Profile/metadata#type&quot;: [
+                      {
+                        &quot;valueString&quot;: &quot;Reference&quot;
+                      }
+                    ],
+                    &quot;linkId&quot;: &quot;CarePlan2.participant.member._Patient&quot;,
+                    &quot;question&quot;: [
+                      {
+                        &quot;http://www.healthintersections.com.au/fhir/Profile/metadata#reference&quot;: [
+                          {
+                            &quot;valueString&quot;: &quot;/Patient?subject=$subj&amp;patient=$subj&amp;encounter=$encounter&quot;
+                          }
+                        ],
+                        &quot;linkId&quot;: &quot;CarePlan2.participant.member._Patient.value&quot;,
+                        &quot;text&quot;: &quot;Patient&quot;,
+                        &quot;type&quot;: &quot;reference&quot;
+                      }
+                    ]
+                  },
+                  {
+                    &quot;http://www.healthintersections.com.au/fhir/Profile/metadata#type&quot;: [
+                      {
+                        &quot;valueString&quot;: &quot;Reference&quot;
+                      }
+                    ],
+                    &quot;linkId&quot;: &quot;CarePlan2.participant.member._Organization&quot;,
+                    &quot;question&quot;: [
+                      {
+                        &quot;http://www.healthintersections.com.au/fhir/Profile/metadata#reference&quot;: [
+                          {
+                            &quot;valueString&quot;: &quot;/Organization?subject=$subj&amp;patient=$subj&amp;encounter=$encounter&quot;
+                          }
+                        ],
+                        &quot;linkId&quot;: &quot;CarePlan2.participant.member._Organization.value&quot;,
+                        &quot;text&quot;: &quot;Organization&quot;,
+                        &quot;type&quot;: &quot;reference&quot;
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        &quot;http://hl7.org/fhir/Profile/questionnaire-extensions#flyover&quot;: [
+          {
+            &quot;valueString&quot;: &quot;General notes about the care plan not covered elsewhere.&quot;
+          }
+        ],
+        &quot;http://www.healthintersections.com.au/fhir/Profile/metadata#type&quot;: [
+          {
+            &quot;valueString&quot;: &quot;string&quot;
+          }
+        ],
+        &quot;linkId&quot;: &quot;CarePlan2.notes&quot;,
+        &quot;repeats&quot;: true,
+        &quot;question&quot;: [
+          {
+            &quot;linkId&quot;: &quot;CarePlan2.notes.value&quot;,
+            &quot;text&quot;: &quot;Comments about the plan&quot;,
+            &quot;type&quot;: &quot;string&quot;
+          }
+        ]
+      },
+      {
+        &quot;http://hl7.org/fhir/Profile/questionnaire-extensions#flyover&quot;: [
+          {
+            &quot;valueString&quot;: &quot;Describes the intended objective(s) of carrying out the Care Plan. Goal can be achieving a particular change or merely maintaining a current state or even slowing a decline.&quot;
+          }
+        ],
+        &quot;http://www.healthintersections.com.au/fhir/Profile/metadata#type&quot;: [
+          {
+            &quot;valueString&quot;: &quot;Reference&quot;
+          }
+        ],
+        &quot;linkId&quot;: &quot;CarePlan2.goal&quot;,
+        &quot;repeats&quot;: true,
+        &quot;question&quot;: [
+          {
+            &quot;http://www.healthintersections.com.au/fhir/Profile/metadata#reference&quot;: [
+              {
+                &quot;valueString&quot;: &quot;/Goal?subject=$subj&amp;patient=$subj&amp;encounter=$encounter&quot;
+              }
+            ],
+            &quot;linkId&quot;: &quot;CarePlan2.goal.value&quot;,
+            &quot;text&quot;: &quot;CarePlan Goal&quot;,
+            &quot;type&quot;: &quot;reference&quot;
+          }
+        ]
+      },
+      {
+        &quot;http://hl7.org/fhir/Profile/questionnaire-extensions#flyover&quot;: [
+          {
+            &quot;valueString&quot;: &quot;Identifies an action that is planned to happen as part of the careplan. For example, a medication to be used, lab tests to perform, self-monitoring, education, etc.&quot;
+          }
+        ],
+        &quot;linkId&quot;: &quot;CarePlan2.activity&quot;,
+        &quot;text&quot;: &quot;CarePlan Activity&quot;,
+        &quot;repeats&quot;: true,
+        &quot;question&quot;: [
+          {
+            &quot;linkId&quot;: &quot;CarePlan2.activity._type&quot;,
+            &quot;text&quot;: &quot;type&quot;,
+            &quot;type&quot;: &quot;choice&quot;,
+            &quot;options&quot;: {
+              &quot;reference&quot;: &quot;#vs3&quot;
+            },
+            &quot;group&quot;: [
+              {
+                &quot;http://www.healthintersections.com.au/fhir/Profile/metadata#type&quot;: [
+                  {
+                    &quot;valueString&quot;: &quot;Reference&quot;
+                  }
+                ],
+                &quot;linkId&quot;: &quot;CarePlan2.activity._ProcedureRequest&quot;,
+                &quot;question&quot;: [
+                  {
+                    &quot;http://www.healthintersections.com.au/fhir/Profile/metadata#reference&quot;: [
+                      {
+                        &quot;valueString&quot;: &quot;/ProcedureRequest?subject=$subj&amp;patient=$subj&amp;encounter=$encounter&quot;
+                      }
+                    ],
+                    &quot;linkId&quot;: &quot;CarePlan2.activity._ProcedureRequest.value&quot;,
+                    &quot;text&quot;: &quot;ProcedureRequest&quot;,
+                    &quot;type&quot;: &quot;reference&quot;
+                  }
+                ]
+              },
+              {
+                &quot;http://www.healthintersections.com.au/fhir/Profile/metadata#type&quot;: [
+                  {
+                    &quot;valueString&quot;: &quot;Reference&quot;
+                  }
+                ],
+                &quot;linkId&quot;: &quot;CarePlan2.activity._MedicationPrescription&quot;,
+                &quot;question&quot;: [
+                  {
+                    &quot;http://www.healthintersections.com.au/fhir/Profile/metadata#reference&quot;: [
+                      {
+                        &quot;valueString&quot;: &quot;/MedicationPrescription?subject=$subj&amp;patient=$subj&amp;encounter=$encounter&quot;
+                      }
+                    ],
+                    &quot;linkId&quot;: &quot;CarePlan2.activity._MedicationPrescription.value&quot;,
+                    &quot;text&quot;: &quot;MedicationPrescription&quot;,
+                    &quot;type&quot;: &quot;reference&quot;
+                  }
+                ]
+              },
+              {
+                &quot;http://www.healthintersections.com.au/fhir/Profile/metadata#type&quot;: [
+                  {
+                    &quot;valueString&quot;: &quot;Reference&quot;
+                  }
+                ],
+                &quot;linkId&quot;: &quot;CarePlan2.activity._DiagnosticOrder&quot;,
+                &quot;question&quot;: [
+                  {
+                    &quot;http://www.healthintersections.com.au/fhir/Profile/metadata#reference&quot;: [
+                      {
+                        &quot;valueString&quot;: &quot;/DiagnosticOrder?subject=$subj&amp;patient=$subj&amp;encounter=$encounter&quot;
+                      }
+                    ],
+                    &quot;linkId&quot;: &quot;CarePlan2.activity._DiagnosticOrder.value&quot;,
+                    &quot;text&quot;: &quot;DiagnosticOrder&quot;,
+                    &quot;type&quot;: &quot;reference&quot;
+                  }
+                ]
+              },
+              {
+                &quot;http://www.healthintersections.com.au/fhir/Profile/metadata#type&quot;: [
+                  {
+                    &quot;valueString&quot;: &quot;Reference&quot;
+                  }
+                ],
+                &quot;linkId&quot;: &quot;CarePlan2.activity._ReferralRequest&quot;,
+                &quot;question&quot;: [
+                  {
+                    &quot;http://www.healthintersections.com.au/fhir/Profile/metadata#reference&quot;: [
+                      {
+                        &quot;valueString&quot;: &quot;/ReferralRequest?subject=$subj&amp;patient=$subj&amp;encounter=$encounter&quot;
+                      }
+                    ],
+                    &quot;linkId&quot;: &quot;CarePlan2.activity._ReferralRequest.value&quot;,
+                    &quot;text&quot;: &quot;ReferralRequest&quot;,
+                    &quot;type&quot;: &quot;reference&quot;
+                  }
+                ]
+              },
+              {
+                &quot;http://www.healthintersections.com.au/fhir/Profile/metadata#type&quot;: [
+                  {
+                    &quot;valueString&quot;: &quot;Reference&quot;
+                  }
+                ],
+                &quot;linkId&quot;: &quot;CarePlan2.activity._CommunicationRequest&quot;,
+                &quot;question&quot;: [
+                  {
+                    &quot;http://www.healthintersections.com.au/fhir/Profile/metadata#reference&quot;: [
+                      {
+                        &quot;valueString&quot;: &quot;/CommunicationRequest?subject=$subj&amp;patient=$subj&amp;encounter=$encounter&quot;
+                      }
+                    ],
+                    &quot;linkId&quot;: &quot;CarePlan2.activity._CommunicationRequest.value&quot;,
+                    &quot;text&quot;: &quot;CommunicationRequest&quot;,
+                    &quot;type&quot;: &quot;reference&quot;
+                  }
+                ]
+              },
+              {
+                &quot;http://www.healthintersections.com.au/fhir/Profile/metadata#type&quot;: [
+                  {
+                    &quot;valueString&quot;: &quot;Reference&quot;
+                  }
+                ],
+                &quot;linkId&quot;: &quot;CarePlan2.activity._NutritionOrder&quot;,
+                &quot;question&quot;: [
+                  {
+                    &quot;http://www.healthintersections.com.au/fhir/Profile/metadata#reference&quot;: [
+                      {
+                        &quot;valueString&quot;: &quot;/NutritionOrder?subject=$subj&amp;patient=$subj&amp;encounter=$encounter&quot;
+                      }
+                    ],
+                    &quot;linkId&quot;: &quot;CarePlan2.activity._NutritionOrder.value&quot;,
+                    &quot;text&quot;: &quot;NutritionOrder&quot;,
+                    &quot;type&quot;: &quot;reference&quot;
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}
+</pre>
+</div>
+
+
+<p>
+Usage note: every effort has been made to ensure that the
+examples are correct and useful, but they are not a normative part 
+of the specification. 
+</p>
+
+</div>
+
+
+				</div><!-- /inner-wrapper -->
+            </div><!-- /row -->
+        </div><!-- /container -->
+        
+    </div><!-- /segment-content -->
+
+
+	<div id="segment-footer" class="segment"><!-- segment-footer -->
+		<div class="container"><!-- container -->
+			<div class="inner-wrapper">
+				<p>
+        © HL7.org 2011+. FHIR DSTU (v0.4.0-3920) generated on Tue, Dec 30, 2014 10:58+0000. <!-- <a href="qa.html">QA Report</a> --> <!-- achive note -->
+        <br/>
+        <span style="color: #FFFF77">
+        Links: <a style="color: #81BEF7" href="timelines.html">What's a DSTU?</a> | 
+               <a style="color: #81BEF7" href="history.html">Version History</a> | 
+               <a style="color: #81BEF7" href="http://services.w3.org/htmldiff?doc1=http%3A%2F%2Fhl7.org%2Fimplement%2Fstandards%2Ffhir%2Fcareplan2.questionnaire.json.html&amp;doc2=http%3A%2F%2Fhl7-fhir.github.io%2F%2Fcareplan2.questionnaire.json.html">Compare to DSTU</a> | 
+               <a style="color: #81BEF7" rel="license" href="license.html"><img src="cc0.png" style="border-style: none;" alt="CC0"/></a> | 
+               <a style="color: #81BEF7" target="_blank" href="http://gforge.hl7.org/gf/project/fhir/tracker/?action=TrackerItemAdd&amp;tracker_id=677">Propose a change</a>   
+        </span>
+        </p>
+			</div><!-- /inner-wrapper -->
+		</div><!-- /container -->
+	</div><!-- /segment-footer -->
+<!-- disqus thread -->
+<!--disqus-->
+<!-- end disqus -->        
+	
+	<div id="segment-post-footer" class="segment hidden"><!-- segment-post-footer -->
+		<div class="container"><!-- container -->
+		</div><!-- /container -->
+	</div><!-- /segment-post-footer -->
+    
+    <!-- JS and analytics only. -->
+    <!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="./assets/js/jquery.js"> </script>   <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+<script src="./dist/js/bootstrap.min.js"> </script>
+<script src="./assets/js/respond.min.js"> </script>
+
+<script src="./assets/js/fhir.js"> </script>
+
+<!-- Analytics Below
+================================================== -->
+
+    
+</body>
+</html>

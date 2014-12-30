@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="valueset-oral-prosthodontic-material"/>
+  <meta>
+    <lastUpdated value="2014-12-30T10:55:31"/>
+  </meta>
+  <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      This value set includes sample Oral Prosthodontic Material type codes.
+    
+      <hr/>
+      <p>This value set contains 4 concepts</p>
+      <h2>Oral Prostho Material type Codes</h2>
+      <p>This value set includes sample Oral Prosthodontic Material type codes.</p>
+      <p>
+        <b>Copyright Statement:</b> This is an example set
+      </p>
+      <p>This value set defines its own terms in the system http://hl7.org/fhir/ex-oralprostho</p>
+      <table class="codes">
+        <tr>
+          <td>
+            <b>Code</b>
+          </td>
+          <td>
+            <b>Definition</b>
+          </td>
+        </tr>
+        <tr>
+          <td>1
+            <a name="1"> </a>
+          </td>
+          <td/>
+        </tr>
+        <tr>
+          <td>2
+            <a name="2"> </a>
+          </td>
+          <td/>
+        </tr>
+        <tr>
+          <td>3
+            <a name="3"> </a>
+          </td>
+          <td/>
+        </tr>
+        <tr>
+          <td>4
+            <a name="4"> </a>
+          </td>
+          <td/>
+        </tr>
+      </table>
+    </div>
+  </text>
+  <extension url="http://hl7.org/fhir/ExtensionDefinition/valueset-oid">
+    <valueUri value="urn:oid:2.16.840.1.113883.4.642.2.454"/>
+  </extension>
+  <identifier value="http://hl7.org/fhir/vs/oral-prosthodontic-material"/>
+  <name value="Oral Prostho Material type Codes"/>
+  <publisher value="Financial Management"/>
+  <telecom>
+    <system value="url"/>
+    <value value="http://hl7.org/fhir"/>
+  </telecom>
+  <description value="This value set includes sample Oral Prosthodontic Material type codes."/>
+  <copyright value="This is an example set"/>
+  <status value="draft"/>
+  <define>
+    <extension url="http://hl7.org/fhir/ExtensionDefinition/valueset-oid">
+      <valueUri value="urn:oid:null"/>
+    </extension>
+    <system value="http://hl7.org/fhir/ex-oralprostho"/>
+    <concept>
+      <code value="1"/>
+    </concept><!--  Fixed Bridge  -->
+    <concept>
+      <code value="2"/>
+    </concept><!--  Maryland Bridge  -->
+    <concept>
+      <code value="3"/>
+    </concept><!--  Denture Acrylic  -->
+    <concept>
+      <code value="4"/>
+    </concept>
+  </define>
+</ValueSet>

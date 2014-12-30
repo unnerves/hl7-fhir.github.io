@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ExtensionDefinition xmlns="http://hl7.org/fhir">
+  <id value="identifier"/>
+  <url value="http://hl7.org/fhir/ExtensionDefinition/identifier"/>
+  <name value="External Identifier associated with this element"/>
+  <display value="Identifier"/>
+  <publisher value="HL7 FHIR project"/>
+  <telecom>
+    <system value="url"/>
+    <value value="http://hl7.org/fhir"/>
+  </telecom>
+  <description value="External Identifiers associated with this element - these are identifiers that are associated with the concept this element represents."/>
+  <status value="draft"/>
+  <date value="2014-04-27"/>
+  <mapping>
+    <identity value="v2"/>
+    <uri value="http://hl7.org/v2"/>
+    <name value="HL7 v2"/>
+  </mapping>
+  <mapping>
+    <identity value="rim"/>
+    <uri value="http://hl7.org/v3"/>
+    <name value="RIM"/>
+  </mapping>
+  <contextType value="datatype"/>
+  <context value="Element"/>
+  <element>
+    <path value="Extension"/>
+    <short value="External Identifier associated with this element"/>
+    <formal value="External Identifiers associated with this element - these are identifiers that are associated with the concept this element represents."/>
+    <min value="0"/>
+    <max value="*"/>
+    <type>
+      <code value="Identifier"/>
+    </type>
+    <isSummary value="false"/>
+    <mapping>
+      <identity value="v2"/>
+      <map value="N/A"/>
+    </mapping>
+    <mapping>
+      <identity value="rim"/>
+      <map value="Act.id, Role.id, Entity.id"/>
+    </mapping>
+  </element>
+</ExtensionDefinition>

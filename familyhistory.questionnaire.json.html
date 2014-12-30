@@ -1,0 +1,1236 @@
+﻿<!DOCTYPE HTML>
+
+
+
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <title>Familyhistory.questionnaire.json - FHIR v0.4.0</title>
+
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="author" content="http://hl7.org/fhir"/>
+
+  <link href="fhir.css" rel="stylesheet"/>
+  <link rel="Prev" href="http://hl7.org/implement/standards/fhir/familyhistory.questionnaire.json.html"/>
+
+  <!-- Bootstrap core CSS -->
+  <link href="./dist/css/bootstrap.css" rel="stylesheet"/>
+  <link href="./assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+  <!-- Project extras -->
+  <link href="./assets/css/project.css" rel="stylesheet"/>
+  <link href="./assets/css/pygments-manni.css" rel="stylesheet"/>
+	<link href="jquery-ui.css" rel="stylesheet"/>
+
+  <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!--[if lt IE 9]>
+  <script src="./assets/js/html5shiv.js"></script>
+  <script src="./assets/js/respond.min.js"></script>
+  <![endif]-->
+
+  <!-- Favicons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="./assets/ico/apple-touch-icon-144-precomposed.png"/>
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="./assets/ico/apple-touch-icon-114-precomposed.png"/>
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="./assets/ico/apple-touch-icon-72-precomposed.png"/>
+  <link rel="apple-touch-icon-precomposed" href="./assets/ico/apple-touch-icon-57-precomposed.png"/>
+  <link rel="shortcut icon" href="./assets/ico/favicon.png"/>
+
+</head>
+<body>
+	<div id="segment-header" class="segment"><!-- segment-header -->	
+		<div class="container"><!-- container -->
+			<a id="logo" href="http://hl7.org/fhir"><img src="./assets/images/fhir-logo-www.png" alt="logo fhir"/> </a>
+			<div id="hl7-status">
+				<b>Continuous Integration Build</b>
+			</div>       	
+			
+			<div id="hl7-nav">
+				 <a id="hl7-logo" href="http://www.hl7.org">
+					<img src="./assets/images/hl7-logo.png" width="42" height="50" alt="visit the hl7 website"/>
+				</a> 
+			</div>       	
+			<!--hl7-search-->
+		</div>
+		<div class="container"><!-- container -->
+	</div></div><!-- /segment-header -->	
+
+
+	<div id="segment-navbar" class="segment"><!-- segment-navbar -->
+		<div id="stripe"> </div>
+		<div class="container"><!-- container -->
+ <!-- HEADER CONTENT -->
+ 	      		
+ 	      		      		
+			<nav class="navbar navbar-inverse">
+				<div class="container">
+					<button data-target=".navbar-inverse-collapse" data-toggle="collapse" class="navbar-toggle" type="button">
+						<span class="icon-bar"> </span>
+						<span class="icon-bar"> </span>
+						<span class="icon-bar"> </span>
+					</button>
+					<a href="index.html" class="navbar-brand hidden">FHIR</a>
+					<div class="nav-collapse collapse navbar-inverse-collapse">
+						<ul class="nav navbar-nav">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="documentation.html">Documentation</a></li>
+              <li><a href="implementation.html">Implementation</a></li>
+              <li><a href="resourcelist.html">Resources</a></li>
+              <li><a href="clinical.html">Clinical</a></li>
+              <li><a href="administration.html">Administrative</a></li>
+              <li><a href="infrastructure.html">Infrastructure</a></li>
+              <li><a href="financial.html">Financial</a></li>
+
+						</ul>
+					</div><!-- /.nav-collapse -->
+				</div><!-- /.container -->
+			</nav><!-- /.navbar -->
+      		
+				
+<!-- /HEADER CONTENT -->				
+		</div><!-- /container -->
+	</div><!-- /segment-navbar -->
+	
+
+	<div id="segment-breadcrumb" class="segment"><!-- segment-breadcrumb -->
+		<div class="container"><!-- container -->	
+			<ul class="breadcrumb">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="clinical.html">Clinical</a></li>        <li><a href="familyhistory.html">FamilyHistory</a></li>        <li><b>Generated Questionnaire</b></li>        <!-- familyhistory.questionnaire.json.html / resource-questionnaire:FamilyHistory -->
+
+			</ul>	
+		</div><!-- /container -->
+	</div><!-- /segment-breadcrumb -->
+	
+
+	<div id="segment-content" class="segment"><!-- segment-content -->
+	<div class="container"><!-- container -->
+            <div class="row">
+            	<div class="inner-wrapper">
+<!-- CONTENT CONTENT -->
+
+
+<div class="col-9">
+
+<h1>Familyhistory.questionnaire.json</h1>
+
+<p>
+<a href="familyhistory.questionnaire.json">Raw JSON</a> (<a href="familyhistory.questionnaire.canonical.json">canonical form</a>)
+</p>
+
+<div class="example">
+<p>Generated Questionnaire for FamilyHistory</p>
+<pre class="json">
+{
+  &quot;resourceType&quot;: &quot;Questionnaire&quot;,
+  &quot;id&quot;: &quot;qs1&quot;,
+  &quot;contained&quot;: [
+    {
+      &quot;resourceType&quot;: &quot;ValueSet&quot;,
+      &quot;id&quot;: &quot;vs2&quot;,
+      &quot;identifier&quot;: &quot;urn:uuid:e98c8996-ce58-4854-8f7b-d0675a0b4c7e&quot;,
+      &quot;name&quot;: &quot;Type options for FamilyHistory.relation.born[x]&quot;,
+      &quot;description&quot;: &quot;Type options for FamilyHistory.relation.born[x]&quot;,
+      &quot;status&quot;: &quot;active&quot;,
+      &quot;expansion&quot;: {
+        &quot;timestamp&quot;: &quot;2014-12-30T11:01:18+00:00&quot;,
+        &quot;contains&quot;: [
+          {
+            &quot;system&quot;: &quot;http://hl7.org/fhir/data-types&quot;,
+            &quot;code&quot;: &quot;Period&quot;,
+            &quot;display&quot;: &quot;Period&quot;
+          },
+          {
+            &quot;system&quot;: &quot;http://hl7.org/fhir/data-types&quot;,
+            &quot;code&quot;: &quot;date&quot;,
+            &quot;display&quot;: &quot;date&quot;
+          },
+          {
+            &quot;system&quot;: &quot;http://hl7.org/fhir/data-types&quot;,
+            &quot;code&quot;: &quot;string&quot;,
+            &quot;display&quot;: &quot;string&quot;
+          }
+        ]
+      }
+    },
+    {
+      &quot;resourceType&quot;: &quot;ValueSet&quot;,
+      &quot;id&quot;: &quot;vs3&quot;,
+      &quot;identifier&quot;: &quot;urn:uuid:70cdc82d-fc5c-4723-8b78-a375d60b1b56&quot;,
+      &quot;name&quot;: &quot;Type options for FamilyHistory.relation.age[x]&quot;,
+      &quot;description&quot;: &quot;Type options for FamilyHistory.relation.age[x]&quot;,
+      &quot;status&quot;: &quot;active&quot;,
+      &quot;expansion&quot;: {
+        &quot;timestamp&quot;: &quot;2014-12-30T11:01:18+00:00&quot;,
+        &quot;contains&quot;: [
+          {
+            &quot;system&quot;: &quot;http://hl7.org/fhir/data-types&quot;,
+            &quot;code&quot;: &quot;Age&quot;,
+            &quot;display&quot;: &quot;Age&quot;
+          },
+          {
+            &quot;system&quot;: &quot;http://hl7.org/fhir/data-types&quot;,
+            &quot;code&quot;: &quot;Range&quot;,
+            &quot;display&quot;: &quot;Range&quot;
+          },
+          {
+            &quot;system&quot;: &quot;http://hl7.org/fhir/data-types&quot;,
+            &quot;code&quot;: &quot;string&quot;,
+            &quot;display&quot;: &quot;string&quot;
+          }
+        ]
+      }
+    },
+    {
+      &quot;resourceType&quot;: &quot;ValueSet&quot;,
+      &quot;id&quot;: &quot;vs4&quot;,
+      &quot;identifier&quot;: &quot;urn:uuid:c63a0c57-6a50-4861-801e-b9e14aecddd2&quot;,
+      &quot;name&quot;: &quot;Type options for FamilyHistory.relation.deceased[x]&quot;,
+      &quot;description&quot;: &quot;Type options for FamilyHistory.relation.deceased[x]&quot;,
+      &quot;status&quot;: &quot;active&quot;,
+      &quot;expansion&quot;: {
+        &quot;timestamp&quot;: &quot;2014-12-30T11:01:18+00:00&quot;,
+        &quot;contains&quot;: [
+          {
+            &quot;system&quot;: &quot;http://hl7.org/fhir/data-types&quot;,
+            &quot;code&quot;: &quot;boolean&quot;,
+            &quot;display&quot;: &quot;boolean&quot;
+          },
+          {
+            &quot;system&quot;: &quot;http://hl7.org/fhir/data-types&quot;,
+            &quot;code&quot;: &quot;Age&quot;,
+            &quot;display&quot;: &quot;Age&quot;
+          },
+          {
+            &quot;system&quot;: &quot;http://hl7.org/fhir/data-types&quot;,
+            &quot;code&quot;: &quot;Range&quot;,
+            &quot;display&quot;: &quot;Range&quot;
+          },
+          {
+            &quot;system&quot;: &quot;http://hl7.org/fhir/data-types&quot;,
+            &quot;code&quot;: &quot;date&quot;,
+            &quot;display&quot;: &quot;date&quot;
+          },
+          {
+            &quot;system&quot;: &quot;http://hl7.org/fhir/data-types&quot;,
+            &quot;code&quot;: &quot;string&quot;,
+            &quot;display&quot;: &quot;string&quot;
+          }
+        ]
+      }
+    },
+    {
+      &quot;resourceType&quot;: &quot;ValueSet&quot;,
+      &quot;id&quot;: &quot;vs5&quot;,
+      &quot;identifier&quot;: &quot;urn:uuid:a26a1953-03a9-4a13-b3a7-dfce8771b408&quot;,
+      &quot;name&quot;: &quot;Type options for FamilyHistory.relation.condition.onset[x]&quot;,
+      &quot;description&quot;: &quot;Type options for FamilyHistory.relation.condition.onset[x]&quot;,
+      &quot;status&quot;: &quot;active&quot;,
+      &quot;expansion&quot;: {
+        &quot;timestamp&quot;: &quot;2014-12-30T11:01:18+00:00&quot;,
+        &quot;contains&quot;: [
+          {
+            &quot;system&quot;: &quot;http://hl7.org/fhir/data-types&quot;,
+            &quot;code&quot;: &quot;Age&quot;,
+            &quot;display&quot;: &quot;Age&quot;
+          },
+          {
+            &quot;system&quot;: &quot;http://hl7.org/fhir/data-types&quot;,
+            &quot;code&quot;: &quot;Range&quot;,
+            &quot;display&quot;: &quot;Range&quot;
+          },
+          {
+            &quot;system&quot;: &quot;http://hl7.org/fhir/data-types&quot;,
+            &quot;code&quot;: &quot;string&quot;,
+            &quot;display&quot;: &quot;string&quot;
+          }
+        ]
+      }
+    }
+  ],
+  &quot;identifier&quot;: [
+    {
+      &quot;system&quot;: &quot;urn:ietf:rfc:3986&quot;
+    }
+  ],
+  &quot;status&quot;: &quot;draft&quot;,
+  &quot;date&quot;: &quot;2014-12-30T10:55:31&quot;,
+  &quot;publisher&quot;: &quot;HL7 FHIR Project (Patient Care)&quot;,
+  &quot;group&quot;: {
+    &quot;http://hl7.org/fhir/Profile/questionnaire-extensions#flyover&quot;: [
+      {
+        &quot;valueString&quot;: &quot;Significant health events and conditions for people related to the subject relevant in the context of care for the subject.&quot;
+      }
+    ],
+    &quot;linkId&quot;: &quot;FamilyHistory&quot;,
+    &quot;title&quot;: &quot;Information about patient's relatives, relevant for patient&quot;,
+    &quot;required&quot;: true,
+    &quot;group&quot;: [
+      {
+        &quot;http://hl7.org/fhir/Profile/questionnaire-extensions#flyover&quot;: [
+          {
+            &quot;valueString&quot;: &quot;The logical id of the resource, as used in the url for the resoure. Once assigned, this value never changes. The only time that a resource does not have an id is when it is being submitted to the server using a create operation. Bundles always have an id, though it is usually a generated UUID.&quot;
+          }
+        ],
+        &quot;http://www.healthintersections.com.au/fhir/Profile/metadata#type&quot;: [
+          {
+            &quot;valueString&quot;: &quot;string&quot;
+          }
+        ],
+        &quot;linkId&quot;: &quot;FamilyHistory.id&quot;,
+        &quot;repeats&quot;: true,
+        &quot;question&quot;: [
+          {
+            &quot;linkId&quot;: &quot;FamilyHistory.id.value&quot;,
+            &quot;text&quot;: &quot;Logical id of this artefact&quot;,
+            &quot;type&quot;: &quot;string&quot;
+          }
+        ]
+      },
+      {
+        &quot;http://hl7.org/fhir/Profile/questionnaire-extensions#flyover&quot;: [
+          {
+            &quot;valueString&quot;: &quot;The metadata about the resource. This is content that is maintained by the infrastructure. Changes to the content may not always be associated with version changes to the resource.&quot;
+          }
+        ],
+        &quot;linkId&quot;: &quot;FamilyHistory.meta&quot;,
+        &quot;title&quot;: &quot;Metadata about the resource&quot;,
+        &quot;group&quot;: [
+          {
+            &quot;http://hl7.org/fhir/Profile/questionnaire-extensions#flyover&quot;: [
+              {
+                &quot;valueString&quot;: &quot;unique id for the element within a resource (for internal references).&quot;
+              }
+            ],
+            &quot;http://www.healthintersections.com.au/fhir/Profile/metadata#type&quot;: [
+              {
+                &quot;valueString&quot;: &quot;string&quot;
+              }
+            ],
+            &quot;linkId&quot;: &quot;FamilyHistory.meta.id&quot;,
+            &quot;repeats&quot;: true,
+            &quot;question&quot;: [
+              {
+                &quot;linkId&quot;: &quot;FamilyHistory.meta.id.value&quot;,
+                &quot;text&quot;: &quot;xml:id (or equivalent in JSON)&quot;,
+                &quot;type&quot;: &quot;string&quot;
+              }
+            ]
+          },
+          {
+            &quot;http://hl7.org/fhir/Profile/questionnaire-extensions#flyover&quot;: [
+              {
+                &quot;valueString&quot;: &quot;The version specific identifier, as it appears in the version portion of the url. This values changes when the resource is created, updated, or deleted. The server assigns this value, and ignores what the client specifies, except in the case that the server is imposing version integrity on updates/deletes.&quot;
+              }
+            ],
+            &quot;http://www.healthintersections.com.au/fhir/Profile/metadata#type&quot;: [
+              {
+                &quot;valueString&quot;: &quot;string&quot;
+              }
+            ],
+            &quot;linkId&quot;: &quot;FamilyHistory.meta.versionId&quot;,
+            &quot;repeats&quot;: true,
+            &quot;question&quot;: [
+              {
+                &quot;linkId&quot;: &quot;FamilyHistory.meta.versionId.value&quot;,
+                &quot;text&quot;: &quot;Version specific identifier&quot;,
+                &quot;type&quot;: &quot;string&quot;
+              }
+            ]
+          },
+          {
+            &quot;http://hl7.org/fhir/Profile/questionnaire-extensions#flyover&quot;: [
+              {
+                &quot;valueString&quot;: &quot;When the resource last changed - e.g. when the version changed. This value is always populated except when the resource is first being created. The server / resource manager sets this value; what a client provides is irrelevant.&quot;
+              }
+            ],
+            &quot;http://www.healthintersections.com.au/fhir/Profile/metadata#type&quot;: [
+              {
+                &quot;valueString&quot;: &quot;instant&quot;
+              }
+            ],
+            &quot;linkId&quot;: &quot;FamilyHistory.meta.lastUpdated&quot;,
+            &quot;repeats&quot;: true,
+            &quot;question&quot;: [
+              {
+                &quot;linkId&quot;: &quot;FamilyHistory.meta.lastUpdated.value&quot;,
+                &quot;text&quot;: &quot;When the resource version last changed&quot;,
+                &quot;type&quot;: &quot;instant&quot;
+              }
+            ]
+          },
+          {
+            &quot;http://hl7.org/fhir/Profile/questionnaire-extensions#flyover&quot;: [
+              {
+                &quot;valueString&quot;: &quot;A list of profiles that this resource claims to conform to. The URL is a reference to Profile.url. It is up to the server and/or other infrastruture of policy to determine whether/how these claims are verified and/or updated over tiem.&quot;
+              }
+            ],
+            &quot;http://www.healthintersections.com.au/fhir/Profile/metadata#type&quot;: [
+              {
+                &quot;valueString&quot;: &quot;uri&quot;
+              }
+            ],
+            &quot;linkId&quot;: &quot;FamilyHistory.meta.profile&quot;,
+            &quot;repeats&quot;: true,
+            &quot;question&quot;: [
+              {
+                &quot;linkId&quot;: &quot;FamilyHistory.meta.profile.value&quot;,
+                &quot;text&quot;: &quot;Profiles this resource claims to conform to&quot;,
+                &quot;type&quot;: &quot;string&quot;
+              }
+            ]
+          },
+          {
+            &quot;http://hl7.org/fhir/Profile/questionnaire-extensions#flyover&quot;: [
+              {
+                &quot;valueString&quot;: &quot;Security labels applied to this resource. These tags connect specific resources to the overall security policy and infrastructure. The security labels can be updated without changing the stated version of the resource.&quot;
+              }
+            ],
+            &quot;http://www.healthintersections.com.au/fhir/Profile/metadata#type&quot;: [
+              {
+                &quot;valueString&quot;: &quot;Coding&quot;
+              }
+            ],
+            &quot;linkId&quot;: &quot;FamilyHistory.meta.security&quot;,
+            &quot;repeats&quot;: true,
+            &quot;question&quot;: [
+              {
+                &quot;linkId&quot;: &quot;FamilyHistory.meta.security.value&quot;,
+                &quot;text&quot;: &quot;Security Labels applied to this resource&quot;,
+                &quot;type&quot;: &quot;open-choice&quot;
+              }
+            ]
+          },
+          {
+            &quot;http://hl7.org/fhir/Profile/questionnaire-extensions#flyover&quot;: [
+              {
+                &quot;valueString&quot;: &quot;Tags applied to this resource. Tags are intended to to be used to identify and relate resources to process and workflow, and applications are not required to consider the tags when interpreting the meaning of a resource. The tags can be updated without changing the stated version of the resource.&quot;
+              }
+            ],
+            &quot;http://www.healthintersections.com.au/fhir/Profile/metadata#type&quot;: [
+              {
+                &quot;valueString&quot;: &quot;Coding&quot;
+              }
+            ],
+            &quot;linkId&quot;: &quot;FamilyHistory.meta.tag&quot;,
+            &quot;repeats&quot;: true,
+            &quot;question&quot;: [
+              {
+                &quot;linkId&quot;: &quot;FamilyHistory.meta.tag.value&quot;,
+                &quot;text&quot;: &quot;Tags applied&quot;,
+                &quot;type&quot;: &quot;open-choice&quot;
+              }
+            ]
+          }
+        ]
+      },
+      {
+        &quot;http://hl7.org/fhir/Profile/questionnaire-extensions#flyover&quot;: [
+          {
+            &quot;valueString&quot;: &quot;A reference to a set of rules that were followed when the resource was constructed, and which must be understood when processing the content. Asserting this rule set restricts the content to be only understood by a limited set of trading partners. This inherently limits the usefulness of the data in the long term. However the existing health eco-system is highly fractured, and not yet ready to define, collect, and exchange data in a generally computable sense. Wherever possible, implementers and/or specification writers should avoid using this element as much as possible.&quot;
+          }
+        ],
+        &quot;http://www.healthintersections.com.au/fhir/Profile/metadata#type&quot;: [
+          {
+            &quot;valueString&quot;: &quot;uri&quot;
+          }
+        ],
+        &quot;linkId&quot;: &quot;FamilyHistory.implicitRules&quot;,
+        &quot;repeats&quot;: true,
+        &quot;question&quot;: [
+          {
+            &quot;linkId&quot;: &quot;FamilyHistory.implicitRules.value&quot;,
+            &quot;text&quot;: &quot;A set of rules under which this content was created&quot;,
+            &quot;type&quot;: &quot;string&quot;
+          }
+        ]
+      },
+      {
+        &quot;http://hl7.org/fhir/Profile/questionnaire-extensions#flyover&quot;: [
+          {
+            &quot;valueString&quot;: &quot;The base language in which the resource is written. Language is provided to support indexing and accessibility (typically, services such as text to speech use the language tag). The html language tag in the narrative applies  to the narrative. The language tag on the resource may be used to specify the language of other presentations generated from the data in the resource\n\nNot all the content has to be in the base language. The Resource.language should not be assumed to apply to the narrative automatically. If a language is specified, it should it also be specified on the div element in the html (see rules in HTML5 for information about the relationship between xml:lang and the html lang attribute).&quot;
+          }
+        ],
+        &quot;http://www.healthintersections.com.au/fhir/Profile/metadata#type&quot;: [
+          {
+            &quot;valueString&quot;: &quot;code&quot;
+          }
+        ],
+        &quot;linkId&quot;: &quot;FamilyHistory.language&quot;,
+        &quot;repeats&quot;: true,
+        &quot;question&quot;: [
+          {
+            &quot;linkId&quot;: &quot;FamilyHistory.language.value&quot;,
+            &quot;text&quot;: &quot;language&quot;,
+            &quot;type&quot;: &quot;choice&quot;
+          }
+        ]
+      },
+      {
+        &quot;http://hl7.org/fhir/Profile/questionnaire-extensions#flyover&quot;: [
+          {
+            &quot;valueString&quot;: &quot;A human-readable narrative that contains a summary of the resource, and may be used to represent the content of the resource to a human. The narrative need not encode all the structured data, but is required to contain sufficient detail to make it \&quot;clinically safe\&quot; for a human to just read the narrative. Resource definitions may define what content should be represented in the narrative to ensure clinical safety. Contained resources do not have narrative. Resources that are not contained SHOULD have a narrative.&quot;
+          }
+        ],
+        &quot;linkId&quot;: &quot;FamilyHistory.text&quot;,
+        &quot;text&quot;: &quot;Text summary of the resource, for human interpretation&quot;,
+        &quot;repeats&quot;: true
+      },
+      {
+        &quot;http://hl7.org/fhir/Profile/questionnaire-extensions#flyover&quot;: [
+          {
+            &quot;valueString&quot;: &quot;These resources do not have an independent existence apart from the resource that contains them - they cannot be identified independently, and nor can they have their own independent transaction scope. This should never be done when the content can be identified properly, as once identification is lost, it is extremely difficult (and context dependent) to restore it again.&quot;
+          }
+        ],
+        &quot;linkId&quot;: &quot;FamilyHistory.contained&quot;,
+        &quot;text&quot;: &quot;Contained, inline Resources&quot;,
+        &quot;repeats&quot;: true
+      },
+      {
+        &quot;http://hl7.org/fhir/Profile/questionnaire-extensions#flyover&quot;: [
+          {
+            &quot;valueString&quot;: &quot;This records identifiers associated with this family history record that are defined by business processes and/ or used to refer to it when a direct URL reference to the resource itself is not appropriate (e.g. in CDA documents, or in written / printed documentation).&quot;
+          }
+        ],
+        &quot;http://www.healthintersections.com.au/fhir/Profile/metadata#type&quot;: [
+          {
+            &quot;valueString&quot;: &quot;Identifier&quot;
+          }
+        ],
+        &quot;linkId&quot;: &quot;FamilyHistory.identifier&quot;,
+        &quot;text&quot;: &quot;External Id(s) for this record&quot;,
+        &quot;repeats&quot;: true,
+        &quot;question&quot;: [
+          {
+            &quot;linkId&quot;: &quot;FamilyHistory.identifier.label&quot;,
+            &quot;text&quot;: &quot;label:&quot;,
+            &quot;type&quot;: &quot;string&quot;
+          },
+          {
+            &quot;linkId&quot;: &quot;FamilyHistory.identifier.system&quot;,
+            &quot;text&quot;: &quot;system:&quot;,
+            &quot;type&quot;: &quot;string&quot;
+          },
+          {
+            &quot;linkId&quot;: &quot;FamilyHistory.identifier.value&quot;,
+            &quot;text&quot;: &quot;value:&quot;,
+            &quot;type&quot;: &quot;string&quot;
+          }
+        ]
+      },
+      {
+        &quot;http://hl7.org/fhir/Profile/questionnaire-extensions#flyover&quot;: [
+          {
+            &quot;valueString&quot;: &quot;The person who this history concerns.&quot;
+          }
+        ],
+        &quot;http://www.healthintersections.com.au/fhir/Profile/metadata#type&quot;: [
+          {
+            &quot;valueString&quot;: &quot;Reference&quot;
+          }
+        ],
+        &quot;linkId&quot;: &quot;FamilyHistory.patient&quot;,
+        &quot;required&quot;: true,
+        &quot;repeats&quot;: true,
+        &quot;question&quot;: [
+          {
+            &quot;http://www.healthintersections.com.au/fhir/Profile/metadata#reference&quot;: [
+              {
+                &quot;valueString&quot;: &quot;/Patient?subject=$subj&amp;patient=$subj&amp;encounter=$encounter&quot;
+              }
+            ],
+            &quot;linkId&quot;: &quot;FamilyHistory.patient.value&quot;,
+            &quot;text&quot;: &quot;Patient history is about&quot;,
+            &quot;type&quot;: &quot;reference&quot;
+          }
+        ]
+      },
+      {
+        &quot;http://hl7.org/fhir/Profile/questionnaire-extensions#flyover&quot;: [
+          {
+            &quot;valueString&quot;: &quot;The date (and possibly time) when the family history was taken.&quot;
+          }
+        ],
+        &quot;http://www.healthintersections.com.au/fhir/Profile/metadata#type&quot;: [
+          {
+            &quot;valueString&quot;: &quot;datetime&quot;
+          }
+        ],
+        &quot;linkId&quot;: &quot;FamilyHistory.date&quot;,
+        &quot;repeats&quot;: true,
+        &quot;question&quot;: [
+          {
+            &quot;linkId&quot;: &quot;FamilyHistory.date.value&quot;,
+            &quot;text&quot;: &quot;When history was captured/updated&quot;,
+            &quot;type&quot;: &quot;dateTime&quot;
+          }
+        ]
+      },
+      {
+        &quot;http://hl7.org/fhir/Profile/questionnaire-extensions#flyover&quot;: [
+          {
+            &quot;valueString&quot;: &quot;Conveys information about family history not specific to individual relations.&quot;
+          }
+        ],
+        &quot;http://www.healthintersections.com.au/fhir/Profile/metadata#type&quot;: [
+          {
+            &quot;valueString&quot;: &quot;string&quot;
+          }
+        ],
+        &quot;linkId&quot;: &quot;FamilyHistory.note&quot;,
+        &quot;repeats&quot;: true,
+        &quot;question&quot;: [
+          {
+            &quot;linkId&quot;: &quot;FamilyHistory.note.value&quot;,
+            &quot;text&quot;: &quot;Additional details not covered elsewhere&quot;,
+            &quot;type&quot;: &quot;string&quot;
+          }
+        ]
+      },
+      {
+        &quot;http://hl7.org/fhir/Profile/questionnaire-extensions#flyover&quot;: [
+          {
+            &quot;valueString&quot;: &quot;The related person. Each FamilyHistory resource contains the entire family history for a single person.&quot;
+          }
+        ],
+        &quot;linkId&quot;: &quot;FamilyHistory.relation&quot;,
+        &quot;title&quot;: &quot;Relative described by history&quot;,
+        &quot;repeats&quot;: true,
+        &quot;group&quot;: [
+          {
+            &quot;http://hl7.org/fhir/Profile/questionnaire-extensions#flyover&quot;: [
+              {
+                &quot;valueString&quot;: &quot;unique id for the element within a resource (for internal references).&quot;
+              }
+            ],
+            &quot;http://www.healthintersections.com.au/fhir/Profile/metadata#type&quot;: [
+              {
+                &quot;valueString&quot;: &quot;string&quot;
+              }
+            ],
+            &quot;linkId&quot;: &quot;FamilyHistory.relation.id&quot;,
+            &quot;repeats&quot;: true,
+            &quot;question&quot;: [
+              {
+                &quot;linkId&quot;: &quot;FamilyHistory.relation.id.value&quot;,
+                &quot;text&quot;: &quot;xml:id (or equivalent in JSON)&quot;,
+                &quot;type&quot;: &quot;string&quot;
+              }
+            ]
+          },
+          {
+            &quot;http://hl7.org/fhir/Profile/questionnaire-extensions#flyover&quot;: [
+              {
+                &quot;valueString&quot;: &quot;This will either be a name or a description.  E.g. \&quot;Aunt Susan\&quot;, \&quot;my cousin with the red hair\&quot;.&quot;
+              }
+            ],
+            &quot;http://www.healthintersections.com.au/fhir/Profile/metadata#type&quot;: [
+              {
+                &quot;valueString&quot;: &quot;string&quot;
+              }
+            ],
+            &quot;linkId&quot;: &quot;FamilyHistory.relation.name&quot;,
+            &quot;repeats&quot;: true,
+            &quot;question&quot;: [
+              {
+                &quot;linkId&quot;: &quot;FamilyHistory.relation.name.value&quot;,
+                &quot;text&quot;: &quot;The family member described&quot;,
+                &quot;type&quot;: &quot;string&quot;
+              }
+            ]
+          },
+          {
+            &quot;http://hl7.org/fhir/Profile/questionnaire-extensions#flyover&quot;: [
+              {
+                &quot;valueString&quot;: &quot;The type of relationship this person has to the patient (father, mother, brother etc.).&quot;
+              }
+            ],
+            &quot;http://www.healthintersections.com.au/fhir/Profile/metadata#type&quot;: [
+              {
+                &quot;valueString&quot;: &quot;CodeableConcept&quot;
+              }
+            ],
+            &quot;linkId&quot;: &quot;FamilyHistory.relation.relationship&quot;,
+            &quot;text&quot;: &quot;Relationship to the subject&quot;,
+            &quot;required&quot;: true,
+            &quot;repeats&quot;: true,
+            &quot;question&quot;: [
+              {
+                &quot;linkId&quot;: &quot;FamilyHistory.relation.relationship.coding&quot;,
+                &quot;text&quot;: &quot;code:&quot;,
+                &quot;type&quot;: &quot;open-choice&quot;
+              },
+              {
+                &quot;linkId&quot;: &quot;FamilyHistory.relation.relationship.text&quot;,
+                &quot;text&quot;: &quot;text:&quot;,
+                &quot;type&quot;: &quot;string&quot;
+              }
+            ]
+          },
+          {
+            &quot;http://hl7.org/fhir/Profile/questionnaire-extensions#flyover&quot;: [
+              {
+                &quot;valueString&quot;: &quot;The actual or approximate date of birth of the relative.&quot;
+              }
+            ],
+            &quot;linkId&quot;: &quot;FamilyHistory.relation.born[x]&quot;,
+            &quot;text&quot;: &quot;(approximate) date of birth&quot;,
+            &quot;repeats&quot;: true,
+            &quot;question&quot;: [
+              {
+                &quot;linkId&quot;: &quot;FamilyHistory.relation.born[x]._type&quot;,
+                &quot;text&quot;: &quot;type&quot;,
+                &quot;type&quot;: &quot;choice&quot;,
+                &quot;options&quot;: {
+                  &quot;reference&quot;: &quot;#vs2&quot;
+                },
+                &quot;group&quot;: [
+                  {
+                    &quot;http://www.healthintersections.com.au/fhir/Profile/metadata#type&quot;: [
+                      {
+                        &quot;valueString&quot;: &quot;Period&quot;
+                      }
+                    ],
+                    &quot;linkId&quot;: &quot;FamilyHistory.relation.born[x]._Period&quot;,
+                    &quot;text&quot;: &quot;Period&quot;,
+                    &quot;question&quot;: [
+                      {
+                        &quot;linkId&quot;: &quot;FamilyHistory.relation.born[x]._Period.low&quot;,
+                        &quot;text&quot;: &quot;start:&quot;,
+                        &quot;type&quot;: &quot;dateTime&quot;
+                      },
+                      {
+                        &quot;linkId&quot;: &quot;FamilyHistory.relation.born[x]._Period.end&quot;,
+                        &quot;text&quot;: &quot;end:&quot;,
+                        &quot;type&quot;: &quot;dateTime&quot;
+                      }
+                    ]
+                  },
+                  {
+                    &quot;http://www.healthintersections.com.au/fhir/Profile/metadata#type&quot;: [
+                      {
+                        &quot;valueString&quot;: &quot;datetime&quot;
+                      }
+                    ],
+                    &quot;linkId&quot;: &quot;FamilyHistory.relation.born[x]._date&quot;,
+                    &quot;question&quot;: [
+                      {
+                        &quot;linkId&quot;: &quot;FamilyHistory.relation.born[x]._date.value&quot;,
+                        &quot;text&quot;: &quot;date&quot;,
+                        &quot;type&quot;: &quot;dateTime&quot;
+                      }
+                    ]
+                  },
+                  {
+                    &quot;http://www.healthintersections.com.au/fhir/Profile/metadata#type&quot;: [
+                      {
+                        &quot;valueString&quot;: &quot;string&quot;
+                      }
+                    ],
+                    &quot;linkId&quot;: &quot;FamilyHistory.relation.born[x]._string&quot;,
+                    &quot;question&quot;: [
+                      {
+                        &quot;linkId&quot;: &quot;FamilyHistory.relation.born[x]._string.value&quot;,
+                        &quot;text&quot;: &quot;string&quot;,
+                        &quot;type&quot;: &quot;string&quot;
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            &quot;http://hl7.org/fhir/Profile/questionnaire-extensions#flyover&quot;: [
+              {
+                &quot;valueString&quot;: &quot;The actual or approximate age of the relative at the time the family history is recorded.&quot;
+              }
+            ],
+            &quot;linkId&quot;: &quot;FamilyHistory.relation.age[x]&quot;,
+            &quot;text&quot;: &quot;(approximate) age&quot;,
+            &quot;repeats&quot;: true,
+            &quot;question&quot;: [
+              {
+                &quot;linkId&quot;: &quot;FamilyHistory.relation.age[x]._type&quot;,
+                &quot;text&quot;: &quot;type&quot;,
+                &quot;type&quot;: &quot;choice&quot;,
+                &quot;options&quot;: {
+                  &quot;reference&quot;: &quot;#vs3&quot;
+                },
+                &quot;group&quot;: [
+                  {
+                    &quot;http://www.healthintersections.com.au/fhir/Profile/metadata#type&quot;: [
+                      {
+                        &quot;valueString&quot;: &quot;Age&quot;
+                      }
+                    ],
+                    &quot;linkId&quot;: &quot;FamilyHistory.relation.age[x]._Age&quot;,
+                    &quot;text&quot;: &quot;Age&quot;,
+                    &quot;question&quot;: [
+                      {
+                        &quot;linkId&quot;: &quot;FamilyHistory.relation.age[x]._Age.comparator&quot;,
+                        &quot;text&quot;: &quot;comp:&quot;,
+                        &quot;type&quot;: &quot;choice&quot;
+                      },
+                      {
+                        &quot;linkId&quot;: &quot;FamilyHistory.relation.age[x]._Age.value&quot;,
+                        &quot;text&quot;: &quot;value:&quot;,
+                        &quot;type&quot;: &quot;decimal&quot;
+                      },
+                      {
+                        &quot;linkId&quot;: &quot;FamilyHistory.relation.age[x]._Age.units&quot;,
+                        &quot;text&quot;: &quot;units:&quot;,
+                        &quot;type&quot;: &quot;choice&quot;
+                      }
+                    ]
+                  },
+                  {
+                    &quot;http://www.healthintersections.com.au/fhir/Profile/metadata#type&quot;: [
+                      {
+                        &quot;valueString&quot;: &quot;Range&quot;
+                      }
+                    ],
+                    &quot;linkId&quot;: &quot;FamilyHistory.relation.age[x]._Range&quot;,
+                    &quot;text&quot;: &quot;Range&quot;,
+                    &quot;question&quot;: [
+                      {
+                        &quot;linkId&quot;: &quot;FamilyHistory.relation.age[x]._Range.low&quot;,
+                        &quot;text&quot;: &quot;low:&quot;,
+                        &quot;type&quot;: &quot;decimal&quot;
+                      },
+                      {
+                        &quot;linkId&quot;: &quot;FamilyHistory.relation.age[x]._Range.high&quot;,
+                        &quot;text&quot;: &quot;high:&quot;,
+                        &quot;type&quot;: &quot;decimal&quot;
+                      },
+                      {
+                        &quot;linkId&quot;: &quot;FamilyHistory.relation.age[x]._Range.units&quot;,
+                        &quot;text&quot;: &quot;units:&quot;,
+                        &quot;type&quot;: &quot;string&quot;
+                      }
+                    ]
+                  },
+                  {
+                    &quot;http://www.healthintersections.com.au/fhir/Profile/metadata#type&quot;: [
+                      {
+                        &quot;valueString&quot;: &quot;string&quot;
+                      }
+                    ],
+                    &quot;linkId&quot;: &quot;FamilyHistory.relation.age[x]._string&quot;,
+                    &quot;question&quot;: [
+                      {
+                        &quot;linkId&quot;: &quot;FamilyHistory.relation.age[x]._string.value&quot;,
+                        &quot;text&quot;: &quot;string&quot;,
+                        &quot;type&quot;: &quot;string&quot;
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            &quot;http://hl7.org/fhir/Profile/questionnaire-extensions#flyover&quot;: [
+              {
+                &quot;valueString&quot;: &quot;If this resource is indicating that the related person is deceased, then an indicator of whether the person is deceased (yes) or not (no) or the age or age range or description of age at death - can be indicated here. If the reason for death is known, then it can be indicated in the outcome code of the condition - in this case the deceased property should still be set.&quot;
+              }
+            ],
+            &quot;linkId&quot;: &quot;FamilyHistory.relation.deceased[x]&quot;,
+            &quot;text&quot;: &quot;Dead? How old/when?&quot;,
+            &quot;repeats&quot;: true,
+            &quot;question&quot;: [
+              {
+                &quot;linkId&quot;: &quot;FamilyHistory.relation.deceased[x]._type&quot;,
+                &quot;text&quot;: &quot;type&quot;,
+                &quot;type&quot;: &quot;choice&quot;,
+                &quot;options&quot;: {
+                  &quot;reference&quot;: &quot;#vs4&quot;
+                },
+                &quot;group&quot;: [
+                  {
+                    &quot;http://www.healthintersections.com.au/fhir/Profile/metadata#type&quot;: [
+                      {
+                        &quot;valueString&quot;: &quot;boolean&quot;
+                      }
+                    ],
+                    &quot;linkId&quot;: &quot;FamilyHistory.relation.deceased[x]._boolean&quot;,
+                    &quot;question&quot;: [
+                      {
+                        &quot;linkId&quot;: &quot;FamilyHistory.relation.deceased[x]._boolean.value&quot;,
+                        &quot;text&quot;: &quot;boolean&quot;,
+                        &quot;type&quot;: &quot;boolean&quot;
+                      }
+                    ]
+                  },
+                  {
+                    &quot;http://www.healthintersections.com.au/fhir/Profile/metadata#type&quot;: [
+                      {
+                        &quot;valueString&quot;: &quot;Age&quot;
+                      }
+                    ],
+                    &quot;linkId&quot;: &quot;FamilyHistory.relation.deceased[x]._Age&quot;,
+                    &quot;text&quot;: &quot;Age&quot;,
+                    &quot;question&quot;: [
+                      {
+                        &quot;linkId&quot;: &quot;FamilyHistory.relation.deceased[x]._Age.comparator&quot;,
+                        &quot;text&quot;: &quot;comp:&quot;,
+                        &quot;type&quot;: &quot;choice&quot;
+                      },
+                      {
+                        &quot;linkId&quot;: &quot;FamilyHistory.relation.deceased[x]._Age.value&quot;,
+                        &quot;text&quot;: &quot;value:&quot;,
+                        &quot;type&quot;: &quot;decimal&quot;
+                      },
+                      {
+                        &quot;linkId&quot;: &quot;FamilyHistory.relation.deceased[x]._Age.units&quot;,
+                        &quot;text&quot;: &quot;units:&quot;,
+                        &quot;type&quot;: &quot;choice&quot;
+                      }
+                    ]
+                  },
+                  {
+                    &quot;http://www.healthintersections.com.au/fhir/Profile/metadata#type&quot;: [
+                      {
+                        &quot;valueString&quot;: &quot;Range&quot;
+                      }
+                    ],
+                    &quot;linkId&quot;: &quot;FamilyHistory.relation.deceased[x]._Range&quot;,
+                    &quot;text&quot;: &quot;Range&quot;,
+                    &quot;question&quot;: [
+                      {
+                        &quot;linkId&quot;: &quot;FamilyHistory.relation.deceased[x]._Range.low&quot;,
+                        &quot;text&quot;: &quot;low:&quot;,
+                        &quot;type&quot;: &quot;decimal&quot;
+                      },
+                      {
+                        &quot;linkId&quot;: &quot;FamilyHistory.relation.deceased[x]._Range.high&quot;,
+                        &quot;text&quot;: &quot;high:&quot;,
+                        &quot;type&quot;: &quot;decimal&quot;
+                      },
+                      {
+                        &quot;linkId&quot;: &quot;FamilyHistory.relation.deceased[x]._Range.units&quot;,
+                        &quot;text&quot;: &quot;units:&quot;,
+                        &quot;type&quot;: &quot;string&quot;
+                      }
+                    ]
+                  },
+                  {
+                    &quot;http://www.healthintersections.com.au/fhir/Profile/metadata#type&quot;: [
+                      {
+                        &quot;valueString&quot;: &quot;datetime&quot;
+                      }
+                    ],
+                    &quot;linkId&quot;: &quot;FamilyHistory.relation.deceased[x]._date&quot;,
+                    &quot;question&quot;: [
+                      {
+                        &quot;linkId&quot;: &quot;FamilyHistory.relation.deceased[x]._date.value&quot;,
+                        &quot;text&quot;: &quot;date&quot;,
+                        &quot;type&quot;: &quot;dateTime&quot;
+                      }
+                    ]
+                  },
+                  {
+                    &quot;http://www.healthintersections.com.au/fhir/Profile/metadata#type&quot;: [
+                      {
+                        &quot;valueString&quot;: &quot;string&quot;
+                      }
+                    ],
+                    &quot;linkId&quot;: &quot;FamilyHistory.relation.deceased[x]._string&quot;,
+                    &quot;question&quot;: [
+                      {
+                        &quot;linkId&quot;: &quot;FamilyHistory.relation.deceased[x]._string.value&quot;,
+                        &quot;text&quot;: &quot;string&quot;,
+                        &quot;type&quot;: &quot;string&quot;
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            &quot;http://hl7.org/fhir/Profile/questionnaire-extensions#flyover&quot;: [
+              {
+                &quot;valueString&quot;: &quot;This property allows a non condition-specific note to the made about the related person. Ideally, the note would be in the condition property, but this is not always possible.&quot;
+              }
+            ],
+            &quot;http://www.healthintersections.com.au/fhir/Profile/metadata#type&quot;: [
+              {
+                &quot;valueString&quot;: &quot;string&quot;
+              }
+            ],
+            &quot;linkId&quot;: &quot;FamilyHistory.relation.note&quot;,
+            &quot;repeats&quot;: true,
+            &quot;question&quot;: [
+              {
+                &quot;linkId&quot;: &quot;FamilyHistory.relation.note.value&quot;,
+                &quot;text&quot;: &quot;General note about related person&quot;,
+                &quot;type&quot;: &quot;string&quot;
+              }
+            ]
+          },
+          {
+            &quot;http://hl7.org/fhir/Profile/questionnaire-extensions#flyover&quot;: [
+              {
+                &quot;valueString&quot;: &quot;The significant Conditions (or condition) that the family member had. This is a repeating section to allow a system to represent more than one condition per resource, though there is nothing stopping multiple resources - one per condition.&quot;
+              }
+            ],
+            &quot;linkId&quot;: &quot;FamilyHistory.relation.condition&quot;,
+            &quot;title&quot;: &quot;Condition that the related person had&quot;,
+            &quot;repeats&quot;: true,
+            &quot;group&quot;: [
+              {
+                &quot;http://hl7.org/fhir/Profile/questionnaire-extensions#flyover&quot;: [
+                  {
+                    &quot;valueString&quot;: &quot;unique id for the element within a resource (for internal references).&quot;
+                  }
+                ],
+                &quot;http://www.healthintersections.com.au/fhir/Profile/metadata#type&quot;: [
+                  {
+                    &quot;valueString&quot;: &quot;string&quot;
+                  }
+                ],
+                &quot;linkId&quot;: &quot;FamilyHistory.relation.condition.id&quot;,
+                &quot;repeats&quot;: true,
+                &quot;question&quot;: [
+                  {
+                    &quot;linkId&quot;: &quot;FamilyHistory.relation.condition.id.value&quot;,
+                    &quot;text&quot;: &quot;xml:id (or equivalent in JSON)&quot;,
+                    &quot;type&quot;: &quot;string&quot;
+                  }
+                ]
+              },
+              {
+                &quot;http://hl7.org/fhir/Profile/questionnaire-extensions#flyover&quot;: [
+                  {
+                    &quot;valueString&quot;: &quot;The actual condition specified. Could be a coded condition (like MI or Diabetes) or a less specific string like 'cancer' depending on how much is known about the condition and the capabilities of the creating system.&quot;
+                  }
+                ],
+                &quot;http://www.healthintersections.com.au/fhir/Profile/metadata#type&quot;: [
+                  {
+                    &quot;valueString&quot;: &quot;CodeableConcept&quot;
+                  }
+                ],
+                &quot;linkId&quot;: &quot;FamilyHistory.relation.condition.type&quot;,
+                &quot;text&quot;: &quot;Condition suffered by relation&quot;,
+                &quot;required&quot;: true,
+                &quot;repeats&quot;: true,
+                &quot;question&quot;: [
+                  {
+                    &quot;linkId&quot;: &quot;FamilyHistory.relation.condition.type.coding&quot;,
+                    &quot;text&quot;: &quot;code:&quot;,
+                    &quot;type&quot;: &quot;open-choice&quot;
+                  },
+                  {
+                    &quot;linkId&quot;: &quot;FamilyHistory.relation.condition.type.text&quot;,
+                    &quot;text&quot;: &quot;text:&quot;,
+                    &quot;type&quot;: &quot;string&quot;
+                  }
+                ]
+              },
+              {
+                &quot;http://hl7.org/fhir/Profile/questionnaire-extensions#flyover&quot;: [
+                  {
+                    &quot;valueString&quot;: &quot;Indicates what happened as a result of this condition.  If the condition resulted in death, deceased date is captured on the relation.&quot;
+                  }
+                ],
+                &quot;http://www.healthintersections.com.au/fhir/Profile/metadata#type&quot;: [
+                  {
+                    &quot;valueString&quot;: &quot;CodeableConcept&quot;
+                  }
+                ],
+                &quot;linkId&quot;: &quot;FamilyHistory.relation.condition.outcome&quot;,
+                &quot;text&quot;: &quot;deceased | permanent disability | etc.&quot;,
+                &quot;repeats&quot;: true,
+                &quot;question&quot;: [
+                  {
+                    &quot;linkId&quot;: &quot;FamilyHistory.relation.condition.outcome.coding&quot;,
+                    &quot;text&quot;: &quot;code:&quot;,
+                    &quot;type&quot;: &quot;open-choice&quot;
+                  },
+                  {
+                    &quot;linkId&quot;: &quot;FamilyHistory.relation.condition.outcome.text&quot;,
+                    &quot;text&quot;: &quot;text:&quot;,
+                    &quot;type&quot;: &quot;string&quot;
+                  }
+                ]
+              },
+              {
+                &quot;http://hl7.org/fhir/Profile/questionnaire-extensions#flyover&quot;: [
+                  {
+                    &quot;valueString&quot;: &quot;Either the age of onset, range of approximate age or descriptive string can be recorded.  For conditions with multiple occurrences, this describes the first known occurrence.&quot;
+                  }
+                ],
+                &quot;linkId&quot;: &quot;FamilyHistory.relation.condition.onset[x]&quot;,
+                &quot;text&quot;: &quot;When condition first manifested&quot;,
+                &quot;repeats&quot;: true,
+                &quot;question&quot;: [
+                  {
+                    &quot;linkId&quot;: &quot;FamilyHistory.relation.condition.onset[x]._type&quot;,
+                    &quot;text&quot;: &quot;type&quot;,
+                    &quot;type&quot;: &quot;choice&quot;,
+                    &quot;options&quot;: {
+                      &quot;reference&quot;: &quot;#vs5&quot;
+                    },
+                    &quot;group&quot;: [
+                      {
+                        &quot;http://www.healthintersections.com.au/fhir/Profile/metadata#type&quot;: [
+                          {
+                            &quot;valueString&quot;: &quot;Age&quot;
+                          }
+                        ],
+                        &quot;linkId&quot;: &quot;FamilyHistory.relation.condition.onset[x]._Age&quot;,
+                        &quot;text&quot;: &quot;Age&quot;,
+                        &quot;question&quot;: [
+                          {
+                            &quot;linkId&quot;: &quot;FamilyHistory.relation.condition.onset[x]._Age.comparator&quot;,
+                            &quot;text&quot;: &quot;comp:&quot;,
+                            &quot;type&quot;: &quot;choice&quot;
+                          },
+                          {
+                            &quot;linkId&quot;: &quot;FamilyHistory.relation.condition.onset[x]._Age.value&quot;,
+                            &quot;text&quot;: &quot;value:&quot;,
+                            &quot;type&quot;: &quot;decimal&quot;
+                          },
+                          {
+                            &quot;linkId&quot;: &quot;FamilyHistory.relation.condition.onset[x]._Age.units&quot;,
+                            &quot;text&quot;: &quot;units:&quot;,
+                            &quot;type&quot;: &quot;choice&quot;
+                          }
+                        ]
+                      },
+                      {
+                        &quot;http://www.healthintersections.com.au/fhir/Profile/metadata#type&quot;: [
+                          {
+                            &quot;valueString&quot;: &quot;Range&quot;
+                          }
+                        ],
+                        &quot;linkId&quot;: &quot;FamilyHistory.relation.condition.onset[x]._Range&quot;,
+                        &quot;text&quot;: &quot;Range&quot;,
+                        &quot;question&quot;: [
+                          {
+                            &quot;linkId&quot;: &quot;FamilyHistory.relation.condition.onset[x]._Range.low&quot;,
+                            &quot;text&quot;: &quot;low:&quot;,
+                            &quot;type&quot;: &quot;decimal&quot;
+                          },
+                          {
+                            &quot;linkId&quot;: &quot;FamilyHistory.relation.condition.onset[x]._Range.high&quot;,
+                            &quot;text&quot;: &quot;high:&quot;,
+                            &quot;type&quot;: &quot;decimal&quot;
+                          },
+                          {
+                            &quot;linkId&quot;: &quot;FamilyHistory.relation.condition.onset[x]._Range.units&quot;,
+                            &quot;text&quot;: &quot;units:&quot;,
+                            &quot;type&quot;: &quot;string&quot;
+                          }
+                        ]
+                      },
+                      {
+                        &quot;http://www.healthintersections.com.au/fhir/Profile/metadata#type&quot;: [
+                          {
+                            &quot;valueString&quot;: &quot;string&quot;
+                          }
+                        ],
+                        &quot;linkId&quot;: &quot;FamilyHistory.relation.condition.onset[x]._string&quot;,
+                        &quot;question&quot;: [
+                          {
+                            &quot;linkId&quot;: &quot;FamilyHistory.relation.condition.onset[x]._string.value&quot;,
+                            &quot;text&quot;: &quot;string&quot;,
+                            &quot;type&quot;: &quot;string&quot;
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                &quot;http://hl7.org/fhir/Profile/questionnaire-extensions#flyover&quot;: [
+                  {
+                    &quot;valueString&quot;: &quot;An area where general notes can be placed about this specific condition.&quot;
+                  }
+                ],
+                &quot;http://www.healthintersections.com.au/fhir/Profile/metadata#type&quot;: [
+                  {
+                    &quot;valueString&quot;: &quot;string&quot;
+                  }
+                ],
+                &quot;linkId&quot;: &quot;FamilyHistory.relation.condition.note&quot;,
+                &quot;repeats&quot;: true,
+                &quot;question&quot;: [
+                  {
+                    &quot;linkId&quot;: &quot;FamilyHistory.relation.condition.note.value&quot;,
+                    &quot;text&quot;: &quot;Extra information about condition&quot;,
+                    &quot;type&quot;: &quot;string&quot;
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}
+</pre>
+</div>
+
+
+<p>
+Usage note: every effort has been made to ensure that the
+examples are correct and useful, but they are not a normative part 
+of the specification. 
+</p>
+
+</div>
+
+
+				</div><!-- /inner-wrapper -->
+            </div><!-- /row -->
+        </div><!-- /container -->
+        
+    </div><!-- /segment-content -->
+
+
+	<div id="segment-footer" class="segment"><!-- segment-footer -->
+		<div class="container"><!-- container -->
+			<div class="inner-wrapper">
+				<p>
+        © HL7.org 2011+. FHIR DSTU (v0.4.0-3920) generated on Tue, Dec 30, 2014 11:01+0000. <!-- <a href="qa.html">QA Report</a> --> <!-- achive note -->
+        <br/>
+        <span style="color: #FFFF77">
+        Links: <a style="color: #81BEF7" href="timelines.html">What's a DSTU?</a> | 
+               <a style="color: #81BEF7" href="history.html">Version History</a> | 
+               <a style="color: #81BEF7" href="http://services.w3.org/htmldiff?doc1=http%3A%2F%2Fhl7.org%2Fimplement%2Fstandards%2Ffhir%2Ffamilyhistory.questionnaire.json.html&amp;doc2=http%3A%2F%2Fhl7-fhir.github.io%2F%2Ffamilyhistory.questionnaire.json.html">Compare to DSTU</a> | 
+               <a style="color: #81BEF7" rel="license" href="license.html"><img src="cc0.png" style="border-style: none;" alt="CC0"/></a> | 
+               <a style="color: #81BEF7" target="_blank" href="http://gforge.hl7.org/gf/project/fhir/tracker/?action=TrackerItemAdd&amp;tracker_id=677">Propose a change</a>   
+        </span>
+        </p>
+			</div><!-- /inner-wrapper -->
+		</div><!-- /container -->
+	</div><!-- /segment-footer -->
+<!-- disqus thread -->
+<!--disqus-->
+<!-- end disqus -->        
+	
+	<div id="segment-post-footer" class="segment hidden"><!-- segment-post-footer -->
+		<div class="container"><!-- container -->
+		</div><!-- /container -->
+	</div><!-- /segment-post-footer -->
+    
+    <!-- JS and analytics only. -->
+    <!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="./assets/js/jquery.js"> </script>   <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+<script src="./dist/js/bootstrap.min.js"> </script>
+<script src="./assets/js/respond.min.js"> </script>
+
+<script src="./assets/js/fhir.js"> </script>
+
+<!-- Analytics Below
+================================================== -->
+
+    
+</body>
+</html>

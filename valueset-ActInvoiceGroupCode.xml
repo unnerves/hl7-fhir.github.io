@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="valueset-ActInvoiceGroupCode"/>
+  <meta>
+    <lastUpdated value="2014-12-30T10:55:31"/>
+  </meta>
+  <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      This value set includes sample ActInvoiceGroupCode codes.
+    
+      <hr/>
+      <p>This value set contains 4 concepts</p>
+      <h2>ActInvoiceGroupCode Codes</h2>
+      <p>This value set includes sample ActInvoiceGroupCode codes.</p>
+      <p>
+        <b>Copyright Statement:</b> This is an example set
+      </p>
+      <p>This value set defines its own terms in the system http://hl7.org/fhir/actinvoicegroupcode</p>
+      <table class="codes">
+        <tr>
+          <td>
+            <b>Code</b>
+          </td>
+          <td>
+            <b>Definition</b>
+          </td>
+        </tr>
+        <tr>
+          <td>service
+            <a name="service"> </a>
+          </td>
+          <td/>
+        </tr>
+        <tr>
+          <td>product
+            <a name="product"> </a>
+          </td>
+          <td/>
+        </tr>
+        <tr>
+          <td>group
+            <a name="group"> </a>
+          </td>
+          <td/>
+        </tr>
+        <tr>
+          <td>tax
+            <a name="tax"> </a>
+          </td>
+          <td/>
+        </tr>
+      </table>
+    </div>
+  </text>
+  <extension url="http://hl7.org/fhir/ExtensionDefinition/valueset-oid">
+    <valueUri value="urn:oid:2.16.840.1.113883.4.642.2.462"/>
+  </extension>
+  <identifier value="http://hl7.org/fhir/vs/ActInvoiceGroupCode"/>
+  <name value="ActInvoiceGroupCode Codes"/>
+  <publisher value="Financial Management"/>
+  <telecom>
+    <system value="url"/>
+    <value value="http://hl7.org/fhir"/>
+  </telecom>
+  <description value="This value set includes sample ActInvoiceGroupCode codes."/>
+  <copyright value="This is an example set"/>
+  <status value="draft"/>
+  <define>
+    <extension url="http://hl7.org/fhir/ExtensionDefinition/valueset-oid">
+      <valueUri value="urn:oid:null"/>
+    </extension>
+    <system value="http://hl7.org/fhir/actinvoicegroupcode"/>
+    <concept>
+      <code value="service"/>
+    </concept>
+    <concept>
+      <code value="product"/>
+    </concept>
+    <concept>
+      <code value="group"/>
+    </concept>
+    <concept>
+      <code value="tax"/>
+    </concept>
+  </define>
+</ValueSet>

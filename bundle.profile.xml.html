@@ -1,0 +1,1275 @@
+﻿<!DOCTYPE HTML>
+
+
+
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <title>Bundle.profile.xml - FHIR v0.4.0</title>
+
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="author" content="http://hl7.org/fhir"/>
+
+  <link href="fhir.css" rel="stylesheet"/>
+  <link rel="Prev" href="http://hl7.org/implement/standards/fhir/bundle.profile.xml.html"/>
+
+  <!-- Bootstrap core CSS -->
+  <link href="./dist/css/bootstrap.css" rel="stylesheet"/>
+  <link href="./assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+  <!-- Project extras -->
+  <link href="./assets/css/project.css" rel="stylesheet"/>
+  <link href="./assets/css/pygments-manni.css" rel="stylesheet"/>
+	<link href="jquery-ui.css" rel="stylesheet"/>
+
+  <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!--[if lt IE 9]>
+  <script src="./assets/js/html5shiv.js"></script>
+  <script src="./assets/js/respond.min.js"></script>
+  <![endif]-->
+
+  <!-- Favicons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="./assets/ico/apple-touch-icon-144-precomposed.png"/>
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="./assets/ico/apple-touch-icon-114-precomposed.png"/>
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="./assets/ico/apple-touch-icon-72-precomposed.png"/>
+  <link rel="apple-touch-icon-precomposed" href="./assets/ico/apple-touch-icon-57-precomposed.png"/>
+  <link rel="shortcut icon" href="./assets/ico/favicon.png"/>
+
+</head>
+<body>
+	<div id="segment-header" class="segment"><!-- segment-header -->	
+		<div class="container"><!-- container -->
+			<a id="logo" href="http://hl7.org/fhir"><img src="./assets/images/fhir-logo-www.png" alt="logo fhir"/> </a>
+			<div id="hl7-status">
+				<b>Continuous Integration Build</b>
+			</div>       	
+			
+			<div id="hl7-nav">
+				 <a id="hl7-logo" href="http://www.hl7.org">
+					<img src="./assets/images/hl7-logo.png" width="42" height="50" alt="visit the hl7 website"/>
+				</a> 
+			</div>       	
+			<!--hl7-search-->
+		</div>
+		<div class="container"><!-- container -->
+	</div></div><!-- /segment-header -->	
+
+
+	<div id="segment-navbar" class="segment"><!-- segment-navbar -->
+		<div id="stripe"> </div>
+		<div class="container"><!-- container -->
+ <!-- HEADER CONTENT -->
+ 	      		
+ 	      		      		
+			<nav class="navbar navbar-inverse">
+				<div class="container">
+					<button data-target=".navbar-inverse-collapse" data-toggle="collapse" class="navbar-toggle" type="button">
+						<span class="icon-bar"> </span>
+						<span class="icon-bar"> </span>
+						<span class="icon-bar"> </span>
+					</button>
+					<a href="index.html" class="navbar-brand hidden">FHIR</a>
+					<div class="nav-collapse collapse navbar-inverse-collapse">
+						<ul class="nav navbar-nav">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="documentation.html">Documentation</a></li>
+              <li><a href="implementation.html">Implementation</a></li>
+              <li><a href="resourcelist.html">Resources</a></li>
+              <li><a href="clinical.html">Clinical</a></li>
+              <li><a href="administration.html">Administrative</a></li>
+              <li><a href="infrastructure.html">Infrastructure</a></li>
+              <li><a href="financial.html">Financial</a></li>
+
+						</ul>
+					</div><!-- /.nav-collapse -->
+				</div><!-- /.container -->
+			</nav><!-- /.navbar -->
+      		
+				
+<!-- /HEADER CONTENT -->				
+		</div><!-- /container -->
+	</div><!-- /segment-navbar -->
+	
+
+	<div id="segment-breadcrumb" class="segment"><!-- segment-breadcrumb -->
+		<div class="container"><!-- container -->	
+			<ul class="breadcrumb">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="infrastructure.html">Infrastructure</a></li>          <li><a href="bundle.html">Bundle</a></li>        <li><b>Profile Instance</b></li>        <!-- bundle.profile.xml.html / profile-instance:resource:Bundle -->
+
+			</ul>	
+		</div><!-- /container -->
+	</div><!-- /segment-breadcrumb -->
+	
+
+	<div id="segment-content" class="segment"><!-- segment-content -->
+	<div class="container"><!-- container -->
+            <div class="row">
+            	<div class="inner-wrapper">
+<!-- CONTENT CONTENT -->
+
+
+<div class="col-9">
+
+<h1>Bundle.profile.xml</h1>
+
+<p>
+<a href="bundle.profile.xml">Raw XML</a> (<a href="bundle.profile.canonical.xml">canonical form</a>)
+</p>
+
+
+<div class="example">
+<p>Profile for bundle</p>
+<p><a href="bundle.profile.xml">Raw XML</a></p>
+<pre class="xml">
+<span class="xmltag">&lt;Profile</span><span class="xmlattr"> xmlns="<span class="xmlattrvalue">http://hl7.org/fhir</span>"</span><span class="xmltag">&gt;</span><b>
+  </b><span class="xmltag">&lt;id</span><span class="xmlattr"> value="<span class="xmlattrvalue">Bundle</span>"</span><span class="xmltag">/&gt;</span><b>
+  </b><span class="xmltag">&lt;meta</span><span class="xmltag">&gt;</span><b>
+    </b><span class="xmltag">&lt;lastUpdated</span><span class="xmlattr"> value="<span class="xmlattrvalue">2014-12-30T10:55:31</span>"</span><span class="xmltag">/&gt;</span><b>
+  </b><span class="xmltag">&lt;/meta&gt;</span><b>
+  </b><span class="xmltag">&lt;text</span><span class="xmltag">&gt;</span><b>
+    </b><span class="xmltag">&lt;status</span><span class="xmlattr"> value="<span class="xmlattrvalue">generated</span>"</span><span class="xmltag">/&gt;</span><b>
+    </b><span class="xmltag">&lt;div</span><span class="xmlattr"> xmlns="<span class="xmlattrvalue">http://www.w3.org/1999/xhtml</span>"</span><span class="xmltag">&gt;</span><span class="xmlcomment">&lt;!-- Snipped for brevity --&gt;</span><span class="xmltag">&lt;/div&gt;</span><b>
+  </b><span class="xmltag">&lt;/text&gt;</span><b>
+  </b><span class="xmltag">&lt;url</span><span class="xmlattr"> value="<span class="xmlattrvalue">http://hl7.org/fhir/Profile/Bundle</span>"</span><span class="xmltag">/&gt;</span><b>
+  </b><span class="xmltag">&lt;name</span><span class="xmlattr"> value="<span class="xmlattrvalue">Bundle</span>"</span><span class="xmltag">/&gt;</span><b>
+  </b><span class="xmltag">&lt;publisher</span><span class="xmlattr"> value="<span class="xmlattrvalue">HL7 FHIR Project (FHIR Management Group)</span>"</span><span class="xmltag">/&gt;</span><b>
+  </b><span class="xmltag">&lt;telecom</span><span class="xmltag">&gt;</span><b>
+    </b><span class="xmltag">&lt;system</span><span class="xmlattr"> value="<span class="xmlattrvalue">url</span>"</span><span class="xmltag">/&gt;</span><b>
+    </b><span class="xmltag">&lt;value</span><span class="xmlattr"> value="<span class="xmlattrvalue">http://hl7.org/fhir</span>"</span><span class="xmltag">/&gt;</span><b>
+  </b><span class="xmltag">&lt;/telecom&gt;</span><b>
+  </b><span class="xmltag">&lt;telecom</span><span class="xmltag">&gt;</span><b>
+    </b><span class="xmltag">&lt;system</span><span class="xmlattr"> value="<span class="xmlattrvalue">url</span>"</span><span class="xmltag">/&gt;</span><b>
+    </b><span class="xmltag">&lt;value</span><span class="xmlattr"> value="<span class="xmlattrvalue">http://www.hl7.org/Special/committees/fhirmg/index.cfm</span>"</span><span class="xmltag">/&gt;</span><b>
+  </b><span class="xmltag">&lt;/telecom&gt;</span><b>
+  </b><span class="xmltag">&lt;description</span><span class="xmlattr"> value="<span class="xmlattrvalue">Base Profile for Bundle Resource</span>"</span><span class="xmltag">/&gt;</span><b>
+  </b><span class="xmltag">&lt;status</span><span class="xmlattr"> value="<span class="xmlattrvalue">draft</span>"</span><span class="xmltag">/&gt;</span><b>
+  </b><span class="xmltag">&lt;date</span><span class="xmlattr"> value="<span class="xmlattrvalue">2014-12-30T10:55:31</span>"</span><span class="xmltag">/&gt;</span><b>
+  </b><span class="xmltag">&lt;mapping</span><span class="xmltag">&gt;</span><b>
+    </b><span class="xmltag">&lt;identity</span><span class="xmlattr"> value="<span class="xmlattrvalue">v2</span>"</span><span class="xmltag">/&gt;</span><b>
+    </b><span class="xmltag">&lt;uri</span><span class="xmlattr"> value="<span class="xmlattrvalue">http://hl7.org/v2</span>"</span><span class="xmltag">/&gt;</span><b>
+    </b><span class="xmltag">&lt;name</span><span class="xmlattr"> value="<span class="xmlattrvalue">HL7 v2</span>"</span><span class="xmltag">/&gt;</span><b>
+  </b><span class="xmltag">&lt;/mapping&gt;</span><b>
+  </b><span class="xmltag">&lt;mapping</span><span class="xmltag">&gt;</span><b>
+    </b><span class="xmltag">&lt;identity</span><span class="xmlattr"> value="<span class="xmlattrvalue">rim</span>"</span><span class="xmltag">/&gt;</span><b>
+    </b><span class="xmltag">&lt;uri</span><span class="xmlattr"> value="<span class="xmlattrvalue">http://hl7.org/v3</span>"</span><span class="xmltag">/&gt;</span><b>
+    </b><span class="xmltag">&lt;name</span><span class="xmlattr"> value="<span class="xmlattrvalue">RIM</span>"</span><span class="xmltag">/&gt;</span><b>
+  </b><span class="xmltag">&lt;/mapping&gt;</span><b>
+  </b><span class="xmltag">&lt;type</span><span class="xmlattr"> value="<span class="xmlattrvalue">Bundle</span>"</span><span class="xmltag">/&gt;</span><b>
+  </b><span class="xmltag">&lt;snapshot</span><span class="xmltag">&gt;</span><b>
+    </b><span class="xmltag">&lt;element</span><span class="xmltag">&gt;</span><b>
+      </b><span class="xmltag">&lt;path</span><span class="xmlattr"> value="<span class="xmlattrvalue">Bundle</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;short</span><span class="xmlattr"> value="<span class="xmlattrvalue">Contains a group of resources</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;formal</span><span class="xmlattr"> value="<span class="xmlattrvalue">A container for a group of resources.</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;min</span><span class="xmlattr"> value="<span class="xmlattrvalue">1</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;max</span><span class="xmlattr"> value="<span class="xmlattrvalue">1</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;constraint</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;key</span><span class="xmlattr"> value="<span class="xmlattrvalue">2</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;name</span><span class="xmlattr"> value="<span class="xmlattrvalue">Search Rule</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;severity</span><span class="xmlattr"> value="<span class="xmlattrvalue">error</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;human</span><span class="xmlattr"> value="<span class="xmlattrvalue">Search only when transaction</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;xpath</span><span class="xmlattr"> value="<span class="xmlattrvalue">not(f:entry/f:search) or (f:type/@value = &apos;transaction&apos;)</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/constraint&gt;</span><b>
+      </b><span class="xmltag">&lt;constraint</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;key</span><span class="xmlattr"> value="<span class="xmlattrvalue">1</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;name</span><span class="xmlattr"> value="<span class="xmlattrvalue">Status Rule</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;severity</span><span class="xmlattr"> value="<span class="xmlattrvalue">error</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;human</span><span class="xmlattr"> value="<span class="xmlattrvalue">Status only when transaction or search</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;xpath</span><span class="xmlattr"> value="<span class="xmlattrvalue">not(f:entry/f:status) or (f:type/@value = &apos;transaction&apos;) or (f:type/@value = &apos;search&apos;)</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/constraint&gt;</span><b>
+      </b><span class="xmltag">&lt;constraint</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;key</span><span class="xmlattr"> value="<span class="xmlattrvalue">5</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;name</span><span class="xmlattr"> value="<span class="xmlattrvalue">Deleted rule</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;severity</span><span class="xmlattr"> value="<span class="xmlattrvalue">error</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;human</span><span class="xmlattr"> value="<span class="xmlattrvalue">Status only when transaction or history</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;xpath</span><span class="xmlattr"> value="<span class="xmlattrvalue">not(f:entry/f:status) or (f:type/@value = &apos;transaction&apos;) or (f:type/@value = &apos;history&apos;)</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/constraint&gt;</span><b>
+      </b><span class="xmltag">&lt;isSummary</span><span class="xmlattr"> value="<span class="xmlattrvalue">false</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;mapping</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;identity</span><span class="xmlattr"> value="<span class="xmlattrvalue">v2</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;map</span><span class="xmlattr"> value="<span class="xmlattrvalue">N/A</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/mapping&gt;</span><b>
+      </b><span class="xmltag">&lt;mapping</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;identity</span><span class="xmlattr"> value="<span class="xmlattrvalue">rim</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;map</span><span class="xmlattr"> value="<span class="xmlattrvalue">N/A</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/mapping&gt;</span><b>
+      </b><span class="xmltag">&lt;mapping</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;identity</span><span class="xmlattr"> value="<span class="xmlattrvalue">v2</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;map</span><span class="xmlattr"> value="<span class="xmlattrvalue">N/A</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/mapping&gt;</span><b>
+      </b><span class="xmltag">&lt;mapping</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;identity</span><span class="xmlattr"> value="<span class="xmlattrvalue">rim</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;map</span><span class="xmlattr"> value="<span class="xmlattrvalue">N/A</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/mapping&gt;</span><b>
+    </b><span class="xmltag">&lt;/element&gt;</span><b>
+    </b><span class="xmltag">&lt;element</span><span class="xmltag">&gt;</span><b>
+      </b><span class="xmltag">&lt;path</span><span class="xmlattr"> value="<span class="xmlattrvalue">Bundle.id</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;short</span><span class="xmlattr"> value="<span class="xmlattrvalue">Logical id of this artefact</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;formal</span><span class="xmlattr"> value="<span class="xmlattrvalue">The logical id of the resource, as used in the url for the resoure. Once assigned, this
+       value never changes.</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;comments</span><span class="xmlattr"> value="<span class="xmlattrvalue">The only time that a resource does not have an id is when it is being submitted to the
+       server using a create operation. Bundles always have an id, though it is usually a generated
+       UUID.</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;min</span><span class="xmlattr"> value="<span class="xmlattrvalue">0</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;max</span><span class="xmlattr"> value="<span class="xmlattrvalue">1</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;type</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;code</span><span class="xmlattr"> value="<span class="xmlattrvalue">id</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/type&gt;</span><b>
+      </b><span class="xmltag">&lt;isSummary</span><span class="xmlattr"> value="<span class="xmlattrvalue">false</span>"</span><span class="xmltag">/&gt;</span><b>
+    </b><span class="xmltag">&lt;/element&gt;</span><b>
+    </b><span class="xmltag">&lt;element</span><span class="xmltag">&gt;</span><b>
+      </b><span class="xmltag">&lt;path</span><span class="xmlattr"> value="<span class="xmlattrvalue">Bundle.meta</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;short</span><span class="xmlattr"> value="<span class="xmlattrvalue">Metadata about the resource</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;formal</span><span class="xmlattr"> value="<span class="xmlattrvalue">The metadata about the resource. This is content that is maintained by the infrastructure.
+       Changes to the content may not always be associated with version changes to the resource.</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;min</span><span class="xmlattr"> value="<span class="xmlattrvalue">0</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;max</span><span class="xmlattr"> value="<span class="xmlattrvalue">1</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;isSummary</span><span class="xmlattr"> value="<span class="xmlattrvalue">false</span>"</span><span class="xmltag">/&gt;</span><b>
+    </b><span class="xmltag">&lt;/element&gt;</span><b>
+    </b><span class="xmltag">&lt;element</span><span class="xmltag">&gt;</span><b>
+      </b><span class="xmltag">&lt;path</span><span class="xmlattr"> value="<span class="xmlattrvalue">Bundle.meta.id</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;representation</span><span class="xmlattr"> value="<span class="xmlattrvalue">xmlAttr</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;short</span><span class="xmlattr"> value="<span class="xmlattrvalue">xml:id (or equivalent in JSON)</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;formal</span><span class="xmlattr"> value="<span class="xmlattrvalue">unique id for the element within a resource (for internal references).</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;min</span><span class="xmlattr"> value="<span class="xmlattrvalue">0</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;max</span><span class="xmlattr"> value="<span class="xmlattrvalue">1</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;type</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;code</span><span class="xmlattr"> value="<span class="xmlattrvalue">id</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/type&gt;</span><b>
+      </b><span class="xmltag">&lt;isSummary</span><span class="xmlattr"> value="<span class="xmlattrvalue">false</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;mapping</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;identity</span><span class="xmlattr"> value="<span class="xmlattrvalue">rim</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;map</span><span class="xmlattr"> value="<span class="xmlattrvalue">n/a</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/mapping&gt;</span><b>
+      </b><span class="xmltag">&lt;mapping</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;identity</span><span class="xmlattr"> value="<span class="xmlattrvalue">rim</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;map</span><span class="xmlattr"> value="<span class="xmlattrvalue">n/a</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/mapping&gt;</span><b>
+    </b><span class="xmltag">&lt;/element&gt;</span><b>
+    </b><span class="xmltag">&lt;element</span><span class="xmltag">&gt;</span><b>
+      </b><span class="xmltag">&lt;path</span><span class="xmlattr"> value="<span class="xmlattrvalue">Bundle.meta.extension</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;short</span><span class="xmlattr"> value="<span class="xmlattrvalue">Additional Content defined by implementations</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;formal</span><span class="xmlattr"> value="<span class="xmlattrvalue">May be used to represent additional information that is not part of the basic definition
+       of the element. In order to make the use of extensions safe and manageable, there is a
+       strict set of governance  applied to the definition and use of extensions. Though any
+       implementer is allowed to define an extension, there is a set of requirements that SHALL
+       be met as part of the definition of the extension.</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;comments</span><span class="xmlattr"> value="<span class="xmlattrvalue">There can be no stigma associated with the use of extensions by any application, project,
+       or standard - regardless of the institution or jurisdiction that uses or defines the extensions.
+        The use of extensions is what allows the FHIR specification to retain a core level of
+       simplicity for everyone.</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;synonym</span><span class="xmlattr"> value="<span class="xmlattrvalue">extensions</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;synonym</span><span class="xmlattr"> value="<span class="xmlattrvalue">user content</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;min</span><span class="xmlattr"> value="<span class="xmlattrvalue">0</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;max</span><span class="xmlattr"> value="<span class="xmlattrvalue">*</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;type</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;code</span><span class="xmlattr"> value="<span class="xmlattrvalue">Extension</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/type&gt;</span><b>
+      </b><span class="xmltag">&lt;isSummary</span><span class="xmlattr"> value="<span class="xmlattrvalue">false</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;mapping</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;identity</span><span class="xmlattr"> value="<span class="xmlattrvalue">rim</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;map</span><span class="xmlattr"> value="<span class="xmlattrvalue">n/a</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/mapping&gt;</span><b>
+      </b><span class="xmltag">&lt;mapping</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;identity</span><span class="xmlattr"> value="<span class="xmlattrvalue">rim</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;map</span><span class="xmlattr"> value="<span class="xmlattrvalue">n/a</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/mapping&gt;</span><b>
+    </b><span class="xmltag">&lt;/element&gt;</span><b>
+    </b><span class="xmltag">&lt;element</span><span class="xmltag">&gt;</span><b>
+      </b><span class="xmltag">&lt;path</span><span class="xmlattr"> value="<span class="xmlattrvalue">Bundle.meta.modifierExtension</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;short</span><span class="xmlattr"> value="<span class="xmlattrvalue">Extensions that cannot be ignored</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;formal</span><span class="xmlattr"> value="<span class="xmlattrvalue">May be used to represent additional information that is not part of the basic definition
+       of the element, and that modifies the understanding of the element that contains it. Usually
+       modifier elements provide negation or qualification. In order to make the use of extensions
+       safe and manageable, there is a strict set of governance applied to the definition and
+       use of extensions. Though any implementer is allowed to define an extension, there is
+       a set of requirements that SHALL be met as part of the definition of the extension. Applications
+       processing a resource are required to check for modifier extensions.</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;comments</span><span class="xmlattr"> value="<span class="xmlattrvalue">There can be no stigma associated with the use of extensions by any application, project,
+       or standard - regardless of the institution or jurisdiction that uses or defines the extensions.
+        The use of extensions is what allows the FHIR specification to retain a core level of
+       simplicity for everyone.</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;synonym</span><span class="xmlattr"> value="<span class="xmlattrvalue">extensions</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;synonym</span><span class="xmlattr"> value="<span class="xmlattrvalue">user content</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;synonym</span><span class="xmlattr"> value="<span class="xmlattrvalue">modifiers</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;min</span><span class="xmlattr"> value="<span class="xmlattrvalue">0</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;max</span><span class="xmlattr"> value="<span class="xmlattrvalue">*</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;type</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;code</span><span class="xmlattr"> value="<span class="xmlattrvalue">Extension</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/type&gt;</span><b>
+      </b><span class="xmltag">&lt;isSummary</span><span class="xmlattr"> value="<span class="xmlattrvalue">false</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;mapping</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;identity</span><span class="xmlattr"> value="<span class="xmlattrvalue">rim</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;map</span><span class="xmlattr"> value="<span class="xmlattrvalue">N/A</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/mapping&gt;</span><b>
+      </b><span class="xmltag">&lt;mapping</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;identity</span><span class="xmlattr"> value="<span class="xmlattrvalue">rim</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;map</span><span class="xmlattr"> value="<span class="xmlattrvalue">N/A</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/mapping&gt;</span><b>
+    </b><span class="xmltag">&lt;/element&gt;</span><b>
+    </b><span class="xmltag">&lt;element</span><span class="xmltag">&gt;</span><b>
+      </b><span class="xmltag">&lt;path</span><span class="xmlattr"> value="<span class="xmlattrvalue">Bundle.meta.versionId</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;short</span><span class="xmlattr"> value="<span class="xmlattrvalue">Version specific identifier</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;formal</span><span class="xmlattr"> value="<span class="xmlattrvalue">The version specific identifier, as it appears in the version portion of the url. This
+       values changes when the resource is created, updated, or deleted.</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;comments</span><span class="xmlattr"> value="<span class="xmlattrvalue">The server assigns this value, and ignores what the client specifies, except in the case
+       that the server is imposing version integrity on updates/deletes.</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;min</span><span class="xmlattr"> value="<span class="xmlattrvalue">0</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;max</span><span class="xmlattr"> value="<span class="xmlattrvalue">1</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;type</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;code</span><span class="xmlattr"> value="<span class="xmlattrvalue">id</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/type&gt;</span><b>
+      </b><span class="xmltag">&lt;isSummary</span><span class="xmlattr"> value="<span class="xmlattrvalue">false</span>"</span><span class="xmltag">/&gt;</span><b>
+    </b><span class="xmltag">&lt;/element&gt;</span><b>
+    </b><span class="xmltag">&lt;element</span><span class="xmltag">&gt;</span><b>
+      </b><span class="xmltag">&lt;path</span><span class="xmlattr"> value="<span class="xmlattrvalue">Bundle.meta.lastUpdated</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;short</span><span class="xmlattr"> value="<span class="xmlattrvalue">When the resource version last changed</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;formal</span><span class="xmlattr"> value="<span class="xmlattrvalue">When the resource last changed - e.g. when the version changed.</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;comments</span><span class="xmlattr"> value="<span class="xmlattrvalue">This value is always populated except when the resource is first being created. The server
+       / resource manager sets this value; what a client provides is irrelevant.</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;min</span><span class="xmlattr"> value="<span class="xmlattrvalue">0</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;max</span><span class="xmlattr"> value="<span class="xmlattrvalue">1</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;type</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;code</span><span class="xmlattr"> value="<span class="xmlattrvalue">instant</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/type&gt;</span><b>
+      </b><span class="xmltag">&lt;isSummary</span><span class="xmlattr"> value="<span class="xmlattrvalue">false</span>"</span><span class="xmltag">/&gt;</span><b>
+    </b><span class="xmltag">&lt;/element&gt;</span><b>
+    </b><span class="xmltag">&lt;element</span><span class="xmltag">&gt;</span><b>
+      </b><span class="xmltag">&lt;path</span><span class="xmlattr"> value="<span class="xmlattrvalue">Bundle.meta.profile</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;short</span><span class="xmlattr"> value="<span class="xmlattrvalue">Profiles this resource claims to conform to</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;formal</span><span class="xmlattr"> value="<span class="xmlattrvalue">A list of profiles that this resource claims to conform to. The URL is a reference to
+       Profile.url.</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;comments</span><span class="xmlattr"> value="<span class="xmlattrvalue">It is up to the server and/or other infrastruture of policy to determine whether/how these
+       claims are verified and/or updated over tiem.</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;min</span><span class="xmlattr"> value="<span class="xmlattrvalue">0</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;max</span><span class="xmlattr"> value="<span class="xmlattrvalue">*</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;type</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;code</span><span class="xmlattr"> value="<span class="xmlattrvalue">uri</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/type&gt;</span><b>
+      </b><span class="xmltag">&lt;isSummary</span><span class="xmlattr"> value="<span class="xmlattrvalue">false</span>"</span><span class="xmltag">/&gt;</span><b>
+    </b><span class="xmltag">&lt;/element&gt;</span><b>
+    </b><span class="xmltag">&lt;element</span><span class="xmltag">&gt;</span><b>
+      </b><span class="xmltag">&lt;path</span><span class="xmlattr"> value="<span class="xmlattrvalue">Bundle.meta.security</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;short</span><span class="xmlattr"> value="<span class="xmlattrvalue">Security Labels applied to this resource</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;formal</span><span class="xmlattr"> value="<span class="xmlattrvalue">Security labels applied to this resource. These tags connect specific resources to the
+       overall security policy and infrastructure.</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;comments</span><span class="xmlattr"> value="<span class="xmlattrvalue">The security labels can be updated without changing the stated version of the resource.</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;min</span><span class="xmlattr"> value="<span class="xmlattrvalue">0</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;max</span><span class="xmlattr"> value="<span class="xmlattrvalue">*</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;type</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;code</span><span class="xmlattr"> value="<span class="xmlattrvalue">Coding</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/type&gt;</span><b>
+      </b><span class="xmltag">&lt;isSummary</span><span class="xmlattr"> value="<span class="xmlattrvalue">false</span>"</span><span class="xmltag">/&gt;</span><b>
+    </b><span class="xmltag">&lt;/element&gt;</span><b>
+    </b><span class="xmltag">&lt;element</span><span class="xmltag">&gt;</span><b>
+      </b><span class="xmltag">&lt;path</span><span class="xmlattr"> value="<span class="xmlattrvalue">Bundle.meta.tag</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;short</span><span class="xmlattr"> value="<span class="xmlattrvalue">Tags applied</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;formal</span><span class="xmlattr"> value="<span class="xmlattrvalue">Tags applied to this resource. Tags are intended to to be used to identify and relate
+       resources to process and workflow, and applications are not required to consider the tags
+       when interpreting the meaning of a resource.</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;comments</span><span class="xmlattr"> value="<span class="xmlattrvalue">The tags can be updated without changing the stated version of the resource.</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;min</span><span class="xmlattr"> value="<span class="xmlattrvalue">0</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;max</span><span class="xmlattr"> value="<span class="xmlattrvalue">*</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;type</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;code</span><span class="xmlattr"> value="<span class="xmlattrvalue">Coding</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/type&gt;</span><b>
+      </b><span class="xmltag">&lt;isSummary</span><span class="xmlattr"> value="<span class="xmlattrvalue">false</span>"</span><span class="xmltag">/&gt;</span><b>
+    </b><span class="xmltag">&lt;/element&gt;</span><b>
+    </b><span class="xmltag">&lt;element</span><span class="xmltag">&gt;</span><b>
+      </b><span class="xmltag">&lt;path</span><span class="xmlattr"> value="<span class="xmlattrvalue">Bundle.implicitRules</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;short</span><span class="xmlattr"> value="<span class="xmlattrvalue">A set of rules under which this content was created</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;formal</span><span class="xmlattr"> value="<span class="xmlattrvalue">A reference to a set of rules that were followed when the resource was constructed, and
+       which must be understood when processing the content.</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;comments</span><span class="xmlattr"> value="<span class="xmlattrvalue">Asserting this rule set restricts the content to be only understood by a limited set of
+       trading partners. This inherently limits the usefulness of the data in the long term.
+       However the existing health eco-system is highly fractured, and not yet ready to define,
+       collect, and exchange data in a generally computable sense. Wherever possible, implementers
+       and/or specification writers should avoid using this element as much as possible.</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;min</span><span class="xmlattr"> value="<span class="xmlattrvalue">0</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;max</span><span class="xmlattr"> value="<span class="xmlattrvalue">1</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;type</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;code</span><span class="xmlattr"> value="<span class="xmlattrvalue">uri</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/type&gt;</span><b>
+      </b><span class="xmltag">&lt;isModifier</span><span class="xmlattr"> value="<span class="xmlattrvalue">true</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;isSummary</span><span class="xmlattr"> value="<span class="xmlattrvalue">false</span>"</span><span class="xmltag">/&gt;</span><b>
+    </b><span class="xmltag">&lt;/element&gt;</span><b>
+    </b><span class="xmltag">&lt;element</span><span class="xmltag">&gt;</span><b>
+      </b><span class="xmltag">&lt;path</span><span class="xmlattr"> value="<span class="xmlattrvalue">Bundle.language</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;short</span><span class="xmlattr"> value="<span class="xmlattrvalue">Language of the resource content</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;formal</span><span class="xmlattr"> value="<span class="xmlattrvalue">The base language in which the resource is written.</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;comments</span><span class="xmlattr"> value="<span class="xmlattrvalue">Language is provided to support indexing and accessibility (typically, services such as
+       text to speech use the language tag). The html language tag in the narrative applies 
+       to the narrative. The language tag on the resource may be used to specify the language
+       of other presentations generated from the data in the resource  Not all the content has
+       to be in the base language. The Resource.language should not be assumed to apply to the
+       narrative automatically. If a language is specified, it should it also be specified on
+       the div element in the html (see rules in HTML5 for information about the relationship
+       between xml:lang and the html lang attribute).</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;min</span><span class="xmlattr"> value="<span class="xmlattrvalue">0</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;max</span><span class="xmlattr"> value="<span class="xmlattrvalue">1</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;type</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;code</span><span class="xmlattr"> value="<span class="xmlattrvalue">code</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/type&gt;</span><b>
+      </b><span class="xmltag">&lt;isSummary</span><span class="xmlattr"> value="<span class="xmlattrvalue">false</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;binding</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;name</span><span class="xmlattr"> value="<span class="xmlattrvalue">Language</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;isExtensible</span><span class="xmlattr"> value="<span class="xmlattrvalue">false</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;conformance</span><span class="xmlattr"> value="<span class="xmlattrvalue">required</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;description</span><span class="xmlattr"> value="<span class="xmlattrvalue">A human language</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;referenceUri</span><span class="xmlattr"> value="<span class="xmlattrvalue">http://tools.ietf.org/html/bcp47</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/binding&gt;</span><b>
+    </b><span class="xmltag">&lt;/element&gt;</span><b>
+    </b><span class="xmltag">&lt;element</span><span class="xmltag">&gt;</span><b>
+      </b><span class="xmltag">&lt;path</span><span class="xmlattr"> value="<span class="xmlattrvalue">Bundle.type</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;short</span><span class="xmlattr"> value="<span class="xmlattrvalue">document | message | transaction | transaction-response | history | searchset | collection</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;formal</span><span class="xmlattr"> value="<span class="xmlattrvalue">Indicates the purpose of this bundle- how it was intended to be used.</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;comments</span><span class="xmlattr"> value="<span class="xmlattrvalue">It&apos;s possible to use a bundle for other purposes (e.g. a document can be accepted as a
+       transaction). This is primarily defined so that there can be specific rules for some of
+       the bundle types.</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;min</span><span class="xmlattr"> value="<span class="xmlattrvalue">1</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;max</span><span class="xmlattr"> value="<span class="xmlattrvalue">1</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;type</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;code</span><span class="xmlattr"> value="<span class="xmlattrvalue">code</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/type&gt;</span><b>
+      </b><span class="xmltag">&lt;isSummary</span><span class="xmlattr"> value="<span class="xmlattrvalue">false</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;binding</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;name</span><span class="xmlattr"> value="<span class="xmlattrvalue">BundleType</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;isExtensible</span><span class="xmlattr"> value="<span class="xmlattrvalue">false</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;conformance</span><span class="xmlattr"> value="<span class="xmlattrvalue">required</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;description</span><span class="xmlattr"> value="<span class="xmlattrvalue">Indicates the purpose of a bundle- how it was intended to be used</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;referenceReference</span><span class="xmltag">&gt;</span><b>
+          </b><span class="xmltag">&lt;reference</span><span class="xmlattr"> value="<span class="xmlattrvalue">http://hl7.org/fhir/vs/bundle-type</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;/referenceReference&gt;</span><b>
+      </b><span class="xmltag">&lt;/binding&gt;</span><b>
+    </b><span class="xmltag">&lt;/element&gt;</span><b>
+    </b><span class="xmltag">&lt;element</span><span class="xmltag">&gt;</span><b>
+      </b><span class="xmltag">&lt;path</span><span class="xmlattr"> value="<span class="xmlattrvalue">Bundle.base</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;short</span><span class="xmlattr"> value="<span class="xmlattrvalue">Stated Base URL</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;formal</span><span class="xmlattr"> value="<span class="xmlattrvalue">The base URL for the service that provided these resources. All relative URLs are relative
+       to this one (equivalent to xml:base).</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;min</span><span class="xmlattr"> value="<span class="xmlattrvalue">0</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;max</span><span class="xmlattr"> value="<span class="xmlattrvalue">1</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;type</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;code</span><span class="xmlattr"> value="<span class="xmlattrvalue">uri</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/type&gt;</span><b>
+      </b><span class="xmltag">&lt;isSummary</span><span class="xmlattr"> value="<span class="xmlattrvalue">false</span>"</span><span class="xmltag">/&gt;</span><b>
+    </b><span class="xmltag">&lt;/element&gt;</span><b>
+    </b><span class="xmltag">&lt;element</span><span class="xmltag">&gt;</span><b>
+      </b><span class="xmltag">&lt;path</span><span class="xmlattr"> value="<span class="xmlattrvalue">Bundle.total</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;short</span><span class="xmlattr"> value="<span class="xmlattrvalue">If search, the total number of matches</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;formal</span><span class="xmlattr"> value="<span class="xmlattrvalue">If a set of search matches, this is the total number of matches for the search (as opposed
+       to the number of results in this bundle).</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;comments</span><span class="xmlattr"> value="<span class="xmlattrvalue">Only used if the bundle is a search result set.</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;min</span><span class="xmlattr"> value="<span class="xmlattrvalue">0</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;max</span><span class="xmlattr"> value="<span class="xmlattrvalue">1</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;type</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;code</span><span class="xmlattr"> value="<span class="xmlattrvalue">integer</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/type&gt;</span><b>
+      </b><span class="xmltag">&lt;isSummary</span><span class="xmlattr"> value="<span class="xmlattrvalue">false</span>"</span><span class="xmltag">/&gt;</span><b>
+    </b><span class="xmltag">&lt;/element&gt;</span><b>
+    </b><span class="xmltag">&lt;element</span><span class="xmltag">&gt;</span><b>
+      </b><span class="xmltag">&lt;path</span><span class="xmlattr"> value="<span class="xmlattrvalue">Bundle.link</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;short</span><span class="xmlattr"> value="<span class="xmlattrvalue">Links related to this Bundle</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;formal</span><span class="xmlattr"> value="<span class="xmlattrvalue">A series of links that provide context to this bundle.</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;min</span><span class="xmlattr"> value="<span class="xmlattrvalue">0</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;max</span><span class="xmlattr"> value="<span class="xmlattrvalue">*</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;isSummary</span><span class="xmlattr"> value="<span class="xmlattrvalue">false</span>"</span><span class="xmltag">/&gt;</span><b>
+    </b><span class="xmltag">&lt;/element&gt;</span><b>
+    </b><span class="xmltag">&lt;element</span><span class="xmltag">&gt;</span><b>
+      </b><span class="xmltag">&lt;path</span><span class="xmlattr"> value="<span class="xmlattrvalue">Bundle.link.id</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;representation</span><span class="xmlattr"> value="<span class="xmlattrvalue">xmlAttr</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;short</span><span class="xmlattr"> value="<span class="xmlattrvalue">xml:id (or equivalent in JSON)</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;formal</span><span class="xmlattr"> value="<span class="xmlattrvalue">unique id for the element within a resource (for internal references).</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;min</span><span class="xmlattr"> value="<span class="xmlattrvalue">0</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;max</span><span class="xmlattr"> value="<span class="xmlattrvalue">1</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;type</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;code</span><span class="xmlattr"> value="<span class="xmlattrvalue">id</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/type&gt;</span><b>
+      </b><span class="xmltag">&lt;isSummary</span><span class="xmlattr"> value="<span class="xmlattrvalue">false</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;mapping</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;identity</span><span class="xmlattr"> value="<span class="xmlattrvalue">rim</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;map</span><span class="xmlattr"> value="<span class="xmlattrvalue">n/a</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/mapping&gt;</span><b>
+      </b><span class="xmltag">&lt;mapping</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;identity</span><span class="xmlattr"> value="<span class="xmlattrvalue">rim</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;map</span><span class="xmlattr"> value="<span class="xmlattrvalue">n/a</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/mapping&gt;</span><b>
+    </b><span class="xmltag">&lt;/element&gt;</span><b>
+    </b><span class="xmltag">&lt;element</span><span class="xmltag">&gt;</span><b>
+      </b><span class="xmltag">&lt;path</span><span class="xmlattr"> value="<span class="xmlattrvalue">Bundle.link.extension</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;short</span><span class="xmlattr"> value="<span class="xmlattrvalue">Additional Content defined by implementations</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;formal</span><span class="xmlattr"> value="<span class="xmlattrvalue">May be used to represent additional information that is not part of the basic definition
+       of the element. In order to make the use of extensions safe and manageable, there is a
+       strict set of governance  applied to the definition and use of extensions. Though any
+       implementer is allowed to define an extension, there is a set of requirements that SHALL
+       be met as part of the definition of the extension.</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;comments</span><span class="xmlattr"> value="<span class="xmlattrvalue">There can be no stigma associated with the use of extensions by any application, project,
+       or standard - regardless of the institution or jurisdiction that uses or defines the extensions.
+        The use of extensions is what allows the FHIR specification to retain a core level of
+       simplicity for everyone.</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;synonym</span><span class="xmlattr"> value="<span class="xmlattrvalue">extensions</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;synonym</span><span class="xmlattr"> value="<span class="xmlattrvalue">user content</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;min</span><span class="xmlattr"> value="<span class="xmlattrvalue">0</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;max</span><span class="xmlattr"> value="<span class="xmlattrvalue">*</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;type</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;code</span><span class="xmlattr"> value="<span class="xmlattrvalue">Extension</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/type&gt;</span><b>
+      </b><span class="xmltag">&lt;isSummary</span><span class="xmlattr"> value="<span class="xmlattrvalue">false</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;mapping</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;identity</span><span class="xmlattr"> value="<span class="xmlattrvalue">rim</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;map</span><span class="xmlattr"> value="<span class="xmlattrvalue">n/a</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/mapping&gt;</span><b>
+      </b><span class="xmltag">&lt;mapping</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;identity</span><span class="xmlattr"> value="<span class="xmlattrvalue">rim</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;map</span><span class="xmlattr"> value="<span class="xmlattrvalue">n/a</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/mapping&gt;</span><b>
+    </b><span class="xmltag">&lt;/element&gt;</span><b>
+    </b><span class="xmltag">&lt;element</span><span class="xmltag">&gt;</span><b>
+      </b><span class="xmltag">&lt;path</span><span class="xmlattr"> value="<span class="xmlattrvalue">Bundle.link.modifierExtension</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;short</span><span class="xmlattr"> value="<span class="xmlattrvalue">Extensions that cannot be ignored</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;formal</span><span class="xmlattr"> value="<span class="xmlattrvalue">May be used to represent additional information that is not part of the basic definition
+       of the element, and that modifies the understanding of the element that contains it. Usually
+       modifier elements provide negation or qualification. In order to make the use of extensions
+       safe and manageable, there is a strict set of governance applied to the definition and
+       use of extensions. Though any implementer is allowed to define an extension, there is
+       a set of requirements that SHALL be met as part of the definition of the extension. Applications
+       processing a resource are required to check for modifier extensions.</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;comments</span><span class="xmlattr"> value="<span class="xmlattrvalue">There can be no stigma associated with the use of extensions by any application, project,
+       or standard - regardless of the institution or jurisdiction that uses or defines the extensions.
+        The use of extensions is what allows the FHIR specification to retain a core level of
+       simplicity for everyone.</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;synonym</span><span class="xmlattr"> value="<span class="xmlattrvalue">extensions</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;synonym</span><span class="xmlattr"> value="<span class="xmlattrvalue">user content</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;synonym</span><span class="xmlattr"> value="<span class="xmlattrvalue">modifiers</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;min</span><span class="xmlattr"> value="<span class="xmlattrvalue">0</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;max</span><span class="xmlattr"> value="<span class="xmlattrvalue">*</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;type</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;code</span><span class="xmlattr"> value="<span class="xmlattrvalue">Extension</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/type&gt;</span><b>
+      </b><span class="xmltag">&lt;isSummary</span><span class="xmlattr"> value="<span class="xmlattrvalue">false</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;mapping</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;identity</span><span class="xmlattr"> value="<span class="xmlattrvalue">rim</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;map</span><span class="xmlattr"> value="<span class="xmlattrvalue">N/A</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/mapping&gt;</span><b>
+      </b><span class="xmltag">&lt;mapping</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;identity</span><span class="xmlattr"> value="<span class="xmlattrvalue">rim</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;map</span><span class="xmlattr"> value="<span class="xmlattrvalue">N/A</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/mapping&gt;</span><b>
+    </b><span class="xmltag">&lt;/element&gt;</span><b>
+    </b><span class="xmltag">&lt;element</span><span class="xmltag">&gt;</span><b>
+      </b><span class="xmltag">&lt;path</span><span class="xmlattr"> value="<span class="xmlattrvalue">Bundle.link.relation</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;short</span><span class="xmlattr"> value="<span class="xmlattrvalue">http://www.iana.org/assignments/link-relations/link-relations.xhtml</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;formal</span><span class="xmlattr"> value="<span class="xmlattrvalue">A name which details the functional use for this link - see [[http://www.iana.org/assignments/link-r
+      elations/link-relations.xhtml]].</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;min</span><span class="xmlattr"> value="<span class="xmlattrvalue">1</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;max</span><span class="xmlattr"> value="<span class="xmlattrvalue">1</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;type</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;code</span><span class="xmlattr"> value="<span class="xmlattrvalue">string</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/type&gt;</span><b>
+      </b><span class="xmltag">&lt;isSummary</span><span class="xmlattr"> value="<span class="xmlattrvalue">false</span>"</span><span class="xmltag">/&gt;</span><b>
+    </b><span class="xmltag">&lt;/element&gt;</span><b>
+    </b><span class="xmltag">&lt;element</span><span class="xmltag">&gt;</span><b>
+      </b><span class="xmltag">&lt;path</span><span class="xmlattr"> value="<span class="xmlattrvalue">Bundle.link.url</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;short</span><span class="xmlattr"> value="<span class="xmlattrvalue">Reference details for the link</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;formal</span><span class="xmlattr"> value="<span class="xmlattrvalue">The reference details for the link.</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;min</span><span class="xmlattr"> value="<span class="xmlattrvalue">1</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;max</span><span class="xmlattr"> value="<span class="xmlattrvalue">1</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;type</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;code</span><span class="xmlattr"> value="<span class="xmlattrvalue">uri</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/type&gt;</span><b>
+      </b><span class="xmltag">&lt;isSummary</span><span class="xmlattr"> value="<span class="xmlattrvalue">false</span>"</span><span class="xmltag">/&gt;</span><b>
+    </b><span class="xmltag">&lt;/element&gt;</span><b>
+    </b><span class="xmltag">&lt;element</span><span class="xmltag">&gt;</span><b>
+      </b><span class="xmltag">&lt;path</span><span class="xmlattr"> value="<span class="xmlattrvalue">Bundle.entry</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;short</span><span class="xmlattr"> value="<span class="xmlattrvalue">Entry in the bundle - will have deleted or resource</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;formal</span><span class="xmlattr"> value="<span class="xmlattrvalue">An entry in a bundle resource - will either contain a resource, or a deleted entry (transaction
+       and history bundles only).</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;min</span><span class="xmlattr"> value="<span class="xmlattrvalue">0</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;max</span><span class="xmlattr"> value="<span class="xmlattrvalue">*</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;constraint</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;key</span><span class="xmlattr"> value="<span class="xmlattrvalue">3</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;name</span><span class="xmlattr"> value="<span class="xmlattrvalue">Status Resource Rule</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;severity</span><span class="xmlattr"> value="<span class="xmlattrvalue">error</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;human</span><span class="xmlattr"> value="<span class="xmlattrvalue">status only when resource</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;xpath</span><span class="xmlattr"> value="<span class="xmlattrvalue">not(f:status) or f:resource</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/constraint&gt;</span><b>
+      </b><span class="xmltag">&lt;constraint</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;key</span><span class="xmlattr"> value="<span class="xmlattrvalue">4</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;name</span><span class="xmlattr"> value="<span class="xmlattrvalue">Resource or deleted rule</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;severity</span><span class="xmlattr"> value="<span class="xmlattrvalue">error</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;human</span><span class="xmlattr"> value="<span class="xmlattrvalue">deleted or resource (but not both)</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;xpath</span><span class="xmlattr"> value="<span class="xmlattrvalue">not(f:deleted) or not(f:resource)</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/constraint&gt;</span><b>
+      </b><span class="xmltag">&lt;isSummary</span><span class="xmlattr"> value="<span class="xmlattrvalue">false</span>"</span><span class="xmltag">/&gt;</span><b>
+    </b><span class="xmltag">&lt;/element&gt;</span><b>
+    </b><span class="xmltag">&lt;element</span><span class="xmltag">&gt;</span><b>
+      </b><span class="xmltag">&lt;path</span><span class="xmlattr"> value="<span class="xmlattrvalue">Bundle.entry.id</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;representation</span><span class="xmlattr"> value="<span class="xmlattrvalue">xmlAttr</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;short</span><span class="xmlattr"> value="<span class="xmlattrvalue">xml:id (or equivalent in JSON)</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;formal</span><span class="xmlattr"> value="<span class="xmlattrvalue">unique id for the element within a resource (for internal references).</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;min</span><span class="xmlattr"> value="<span class="xmlattrvalue">0</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;max</span><span class="xmlattr"> value="<span class="xmlattrvalue">1</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;type</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;code</span><span class="xmlattr"> value="<span class="xmlattrvalue">id</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/type&gt;</span><b>
+      </b><span class="xmltag">&lt;isSummary</span><span class="xmlattr"> value="<span class="xmlattrvalue">false</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;mapping</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;identity</span><span class="xmlattr"> value="<span class="xmlattrvalue">rim</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;map</span><span class="xmlattr"> value="<span class="xmlattrvalue">n/a</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/mapping&gt;</span><b>
+      </b><span class="xmltag">&lt;mapping</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;identity</span><span class="xmlattr"> value="<span class="xmlattrvalue">rim</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;map</span><span class="xmlattr"> value="<span class="xmlattrvalue">n/a</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/mapping&gt;</span><b>
+    </b><span class="xmltag">&lt;/element&gt;</span><b>
+    </b><span class="xmltag">&lt;element</span><span class="xmltag">&gt;</span><b>
+      </b><span class="xmltag">&lt;path</span><span class="xmlattr"> value="<span class="xmlattrvalue">Bundle.entry.extension</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;short</span><span class="xmlattr"> value="<span class="xmlattrvalue">Additional Content defined by implementations</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;formal</span><span class="xmlattr"> value="<span class="xmlattrvalue">May be used to represent additional information that is not part of the basic definition
+       of the element. In order to make the use of extensions safe and manageable, there is a
+       strict set of governance  applied to the definition and use of extensions. Though any
+       implementer is allowed to define an extension, there is a set of requirements that SHALL
+       be met as part of the definition of the extension.</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;comments</span><span class="xmlattr"> value="<span class="xmlattrvalue">There can be no stigma associated with the use of extensions by any application, project,
+       or standard - regardless of the institution or jurisdiction that uses or defines the extensions.
+        The use of extensions is what allows the FHIR specification to retain a core level of
+       simplicity for everyone.</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;synonym</span><span class="xmlattr"> value="<span class="xmlattrvalue">extensions</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;synonym</span><span class="xmlattr"> value="<span class="xmlattrvalue">user content</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;min</span><span class="xmlattr"> value="<span class="xmlattrvalue">0</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;max</span><span class="xmlattr"> value="<span class="xmlattrvalue">*</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;type</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;code</span><span class="xmlattr"> value="<span class="xmlattrvalue">Extension</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/type&gt;</span><b>
+      </b><span class="xmltag">&lt;isSummary</span><span class="xmlattr"> value="<span class="xmlattrvalue">false</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;mapping</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;identity</span><span class="xmlattr"> value="<span class="xmlattrvalue">rim</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;map</span><span class="xmlattr"> value="<span class="xmlattrvalue">n/a</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/mapping&gt;</span><b>
+      </b><span class="xmltag">&lt;mapping</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;identity</span><span class="xmlattr"> value="<span class="xmlattrvalue">rim</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;map</span><span class="xmlattr"> value="<span class="xmlattrvalue">n/a</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/mapping&gt;</span><b>
+    </b><span class="xmltag">&lt;/element&gt;</span><b>
+    </b><span class="xmltag">&lt;element</span><span class="xmltag">&gt;</span><b>
+      </b><span class="xmltag">&lt;path</span><span class="xmlattr"> value="<span class="xmlattrvalue">Bundle.entry.modifierExtension</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;short</span><span class="xmlattr"> value="<span class="xmlattrvalue">Extensions that cannot be ignored</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;formal</span><span class="xmlattr"> value="<span class="xmlattrvalue">May be used to represent additional information that is not part of the basic definition
+       of the element, and that modifies the understanding of the element that contains it. Usually
+       modifier elements provide negation or qualification. In order to make the use of extensions
+       safe and manageable, there is a strict set of governance applied to the definition and
+       use of extensions. Though any implementer is allowed to define an extension, there is
+       a set of requirements that SHALL be met as part of the definition of the extension. Applications
+       processing a resource are required to check for modifier extensions.</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;comments</span><span class="xmlattr"> value="<span class="xmlattrvalue">There can be no stigma associated with the use of extensions by any application, project,
+       or standard - regardless of the institution or jurisdiction that uses or defines the extensions.
+        The use of extensions is what allows the FHIR specification to retain a core level of
+       simplicity for everyone.</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;synonym</span><span class="xmlattr"> value="<span class="xmlattrvalue">extensions</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;synonym</span><span class="xmlattr"> value="<span class="xmlattrvalue">user content</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;synonym</span><span class="xmlattr"> value="<span class="xmlattrvalue">modifiers</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;min</span><span class="xmlattr"> value="<span class="xmlattrvalue">0</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;max</span><span class="xmlattr"> value="<span class="xmlattrvalue">*</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;type</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;code</span><span class="xmlattr"> value="<span class="xmlattrvalue">Extension</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/type&gt;</span><b>
+      </b><span class="xmltag">&lt;isSummary</span><span class="xmlattr"> value="<span class="xmlattrvalue">false</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;mapping</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;identity</span><span class="xmlattr"> value="<span class="xmlattrvalue">rim</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;map</span><span class="xmlattr"> value="<span class="xmlattrvalue">N/A</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/mapping&gt;</span><b>
+      </b><span class="xmltag">&lt;mapping</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;identity</span><span class="xmlattr"> value="<span class="xmlattrvalue">rim</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;map</span><span class="xmlattr"> value="<span class="xmlattrvalue">N/A</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/mapping&gt;</span><b>
+    </b><span class="xmltag">&lt;/element&gt;</span><b>
+    </b><span class="xmltag">&lt;element</span><span class="xmltag">&gt;</span><b>
+      </b><span class="xmltag">&lt;path</span><span class="xmlattr"> value="<span class="xmlattrvalue">Bundle.entry.base</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;short</span><span class="xmlattr"> value="<span class="xmlattrvalue">Base URL, if different to bundle base</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;formal</span><span class="xmlattr"> value="<span class="xmlattrvalue">The Base URL for the resource, if different to the base URL specified for the bundle as
+       a whole.</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;comments</span><span class="xmlattr"> value="<span class="xmlattrvalue">This allows bundles to be composed of resources from multiple servers (collated search,
+       documents etc).</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;min</span><span class="xmlattr"> value="<span class="xmlattrvalue">0</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;max</span><span class="xmlattr"> value="<span class="xmlattrvalue">1</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;type</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;code</span><span class="xmlattr"> value="<span class="xmlattrvalue">uri</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/type&gt;</span><b>
+      </b><span class="xmltag">&lt;isSummary</span><span class="xmlattr"> value="<span class="xmlattrvalue">false</span>"</span><span class="xmltag">/&gt;</span><b>
+    </b><span class="xmltag">&lt;/element&gt;</span><b>
+    </b><span class="xmltag">&lt;element</span><span class="xmltag">&gt;</span><b>
+      </b><span class="xmltag">&lt;path</span><span class="xmlattr"> value="<span class="xmlattrvalue">Bundle.entry.status</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;short</span><span class="xmlattr"> value="<span class="xmlattrvalue">create | update | match | include - for search &amp;amp; transaction</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;formal</span><span class="xmlattr"> value="<span class="xmlattrvalue">The status of a resource in the bundle. Used for search (to differentiate between resources
+       included as a match, and resources included as an _include), for history (deleted resources),
+       and for transactions (create/update/delete).</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;min</span><span class="xmlattr"> value="<span class="xmlattrvalue">0</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;max</span><span class="xmlattr"> value="<span class="xmlattrvalue">1</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;type</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;code</span><span class="xmlattr"> value="<span class="xmlattrvalue">code</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/type&gt;</span><b>
+      </b><span class="xmltag">&lt;isSummary</span><span class="xmlattr"> value="<span class="xmlattrvalue">false</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;binding</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;name</span><span class="xmlattr"> value="<span class="xmlattrvalue">BundleEntryStatus</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;isExtensible</span><span class="xmlattr"> value="<span class="xmlattrvalue">false</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;conformance</span><span class="xmlattr"> value="<span class="xmlattrvalue">required</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;description</span><span class="xmlattr"> value="<span class="xmlattrvalue">The status of a resource in the bundle. Used for search (to differentiate between resources
+         included as a match, and resources included as an _include), and for transactions (create/update/del
+        ete)</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;referenceReference</span><span class="xmltag">&gt;</span><b>
+          </b><span class="xmltag">&lt;reference</span><span class="xmlattr"> value="<span class="xmlattrvalue">http://hl7.org/fhir/vs/bundle-entry-status</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;/referenceReference&gt;</span><b>
+      </b><span class="xmltag">&lt;/binding&gt;</span><b>
+    </b><span class="xmltag">&lt;/element&gt;</span><b>
+    </b><span class="xmltag">&lt;element</span><span class="xmltag">&gt;</span><b>
+      </b><span class="xmltag">&lt;path</span><span class="xmlattr"> value="<span class="xmlattrvalue">Bundle.entry.search</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;short</span><span class="xmlattr"> value="<span class="xmlattrvalue">Search URL (see transaction)</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;formal</span><span class="xmlattr"> value="<span class="xmlattrvalue">Search URL for this resource when processing a transaction (see transaction documentation).</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;min</span><span class="xmlattr"> value="<span class="xmlattrvalue">0</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;max</span><span class="xmlattr"> value="<span class="xmlattrvalue">1</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;type</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;code</span><span class="xmlattr"> value="<span class="xmlattrvalue">uri</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/type&gt;</span><b>
+      </b><span class="xmltag">&lt;isSummary</span><span class="xmlattr"> value="<span class="xmlattrvalue">false</span>"</span><span class="xmltag">/&gt;</span><b>
+    </b><span class="xmltag">&lt;/element&gt;</span><b>
+    </b><span class="xmltag">&lt;element</span><span class="xmltag">&gt;</span><b>
+      </b><span class="xmltag">&lt;path</span><span class="xmlattr"> value="<span class="xmlattrvalue">Bundle.entry.score</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;short</span><span class="xmlattr"> value="<span class="xmlattrvalue">Search ranking (between 0 and 1)</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;formal</span><span class="xmlattr"> value="<span class="xmlattrvalue">When searching, the server&apos;s search ranking score for the entry.</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;comments</span><span class="xmlattr"> value="<span class="xmlattrvalue">Servers are not required to return a ranking score.</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;min</span><span class="xmlattr"> value="<span class="xmlattrvalue">0</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;max</span><span class="xmlattr"> value="<span class="xmlattrvalue">1</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;type</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;code</span><span class="xmlattr"> value="<span class="xmlattrvalue">decimal</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/type&gt;</span><b>
+      </b><span class="xmltag">&lt;isSummary</span><span class="xmlattr"> value="<span class="xmlattrvalue">false</span>"</span><span class="xmltag">/&gt;</span><b>
+    </b><span class="xmltag">&lt;/element&gt;</span><b>
+    </b><span class="xmltag">&lt;element</span><span class="xmltag">&gt;</span><b>
+      </b><span class="xmltag">&lt;path</span><span class="xmlattr"> value="<span class="xmlattrvalue">Bundle.entry.deleted</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;short</span><span class="xmlattr"> value="<span class="xmlattrvalue">If this is a deleted resource (transaction/history)</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;formal</span><span class="xmlattr"> value="<span class="xmlattrvalue">If this is an entry that represents a deleted resource. Only used when the bundle is a
+       transaction or a history type. See RESTful API documentation for further information.</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;min</span><span class="xmlattr"> value="<span class="xmlattrvalue">0</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;max</span><span class="xmlattr"> value="<span class="xmlattrvalue">1</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;isSummary</span><span class="xmlattr"> value="<span class="xmlattrvalue">false</span>"</span><span class="xmltag">/&gt;</span><b>
+    </b><span class="xmltag">&lt;/element&gt;</span><b>
+    </b><span class="xmltag">&lt;element</span><span class="xmltag">&gt;</span><b>
+      </b><span class="xmltag">&lt;path</span><span class="xmlattr"> value="<span class="xmlattrvalue">Bundle.entry.deleted.id</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;representation</span><span class="xmlattr"> value="<span class="xmlattrvalue">xmlAttr</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;short</span><span class="xmlattr"> value="<span class="xmlattrvalue">xml:id (or equivalent in JSON)</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;formal</span><span class="xmlattr"> value="<span class="xmlattrvalue">unique id for the element within a resource (for internal references).</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;min</span><span class="xmlattr"> value="<span class="xmlattrvalue">0</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;max</span><span class="xmlattr"> value="<span class="xmlattrvalue">1</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;type</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;code</span><span class="xmlattr"> value="<span class="xmlattrvalue">id</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/type&gt;</span><b>
+      </b><span class="xmltag">&lt;isSummary</span><span class="xmlattr"> value="<span class="xmlattrvalue">false</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;mapping</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;identity</span><span class="xmlattr"> value="<span class="xmlattrvalue">rim</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;map</span><span class="xmlattr"> value="<span class="xmlattrvalue">n/a</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/mapping&gt;</span><b>
+      </b><span class="xmltag">&lt;mapping</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;identity</span><span class="xmlattr"> value="<span class="xmlattrvalue">rim</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;map</span><span class="xmlattr"> value="<span class="xmlattrvalue">n/a</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/mapping&gt;</span><b>
+    </b><span class="xmltag">&lt;/element&gt;</span><b>
+    </b><span class="xmltag">&lt;element</span><span class="xmltag">&gt;</span><b>
+      </b><span class="xmltag">&lt;path</span><span class="xmlattr"> value="<span class="xmlattrvalue">Bundle.entry.deleted.extension</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;short</span><span class="xmlattr"> value="<span class="xmlattrvalue">Additional Content defined by implementations</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;formal</span><span class="xmlattr"> value="<span class="xmlattrvalue">May be used to represent additional information that is not part of the basic definition
+       of the element. In order to make the use of extensions safe and manageable, there is a
+       strict set of governance  applied to the definition and use of extensions. Though any
+       implementer is allowed to define an extension, there is a set of requirements that SHALL
+       be met as part of the definition of the extension.</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;comments</span><span class="xmlattr"> value="<span class="xmlattrvalue">There can be no stigma associated with the use of extensions by any application, project,
+       or standard - regardless of the institution or jurisdiction that uses or defines the extensions.
+        The use of extensions is what allows the FHIR specification to retain a core level of
+       simplicity for everyone.</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;synonym</span><span class="xmlattr"> value="<span class="xmlattrvalue">extensions</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;synonym</span><span class="xmlattr"> value="<span class="xmlattrvalue">user content</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;min</span><span class="xmlattr"> value="<span class="xmlattrvalue">0</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;max</span><span class="xmlattr"> value="<span class="xmlattrvalue">*</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;type</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;code</span><span class="xmlattr"> value="<span class="xmlattrvalue">Extension</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/type&gt;</span><b>
+      </b><span class="xmltag">&lt;isSummary</span><span class="xmlattr"> value="<span class="xmlattrvalue">false</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;mapping</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;identity</span><span class="xmlattr"> value="<span class="xmlattrvalue">rim</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;map</span><span class="xmlattr"> value="<span class="xmlattrvalue">n/a</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/mapping&gt;</span><b>
+      </b><span class="xmltag">&lt;mapping</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;identity</span><span class="xmlattr"> value="<span class="xmlattrvalue">rim</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;map</span><span class="xmlattr"> value="<span class="xmlattrvalue">n/a</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/mapping&gt;</span><b>
+    </b><span class="xmltag">&lt;/element&gt;</span><b>
+    </b><span class="xmltag">&lt;element</span><span class="xmltag">&gt;</span><b>
+      </b><span class="xmltag">&lt;path</span><span class="xmlattr"> value="<span class="xmlattrvalue">Bundle.entry.deleted.modifierExtension</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;short</span><span class="xmlattr"> value="<span class="xmlattrvalue">Extensions that cannot be ignored</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;formal</span><span class="xmlattr"> value="<span class="xmlattrvalue">May be used to represent additional information that is not part of the basic definition
+       of the element, and that modifies the understanding of the element that contains it. Usually
+       modifier elements provide negation or qualification. In order to make the use of extensions
+       safe and manageable, there is a strict set of governance applied to the definition and
+       use of extensions. Though any implementer is allowed to define an extension, there is
+       a set of requirements that SHALL be met as part of the definition of the extension. Applications
+       processing a resource are required to check for modifier extensions.</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;comments</span><span class="xmlattr"> value="<span class="xmlattrvalue">There can be no stigma associated with the use of extensions by any application, project,
+       or standard - regardless of the institution or jurisdiction that uses or defines the extensions.
+        The use of extensions is what allows the FHIR specification to retain a core level of
+       simplicity for everyone.</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;synonym</span><span class="xmlattr"> value="<span class="xmlattrvalue">extensions</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;synonym</span><span class="xmlattr"> value="<span class="xmlattrvalue">user content</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;synonym</span><span class="xmlattr"> value="<span class="xmlattrvalue">modifiers</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;min</span><span class="xmlattr"> value="<span class="xmlattrvalue">0</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;max</span><span class="xmlattr"> value="<span class="xmlattrvalue">*</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;type</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;code</span><span class="xmlattr"> value="<span class="xmlattrvalue">Extension</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/type&gt;</span><b>
+      </b><span class="xmltag">&lt;isSummary</span><span class="xmlattr"> value="<span class="xmlattrvalue">false</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;mapping</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;identity</span><span class="xmlattr"> value="<span class="xmlattrvalue">rim</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;map</span><span class="xmlattr"> value="<span class="xmlattrvalue">N/A</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/mapping&gt;</span><b>
+      </b><span class="xmltag">&lt;mapping</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;identity</span><span class="xmlattr"> value="<span class="xmlattrvalue">rim</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;map</span><span class="xmlattr"> value="<span class="xmlattrvalue">N/A</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/mapping&gt;</span><b>
+    </b><span class="xmltag">&lt;/element&gt;</span><b>
+    </b><span class="xmltag">&lt;element</span><span class="xmltag">&gt;</span><b>
+      </b><span class="xmltag">&lt;path</span><span class="xmlattr"> value="<span class="xmlattrvalue">Bundle.entry.deleted.type</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;short</span><span class="xmlattr"> value="<span class="xmlattrvalue">Type of resource that was deleted</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;formal</span><span class="xmlattr"> value="<span class="xmlattrvalue">The type of resource that was deleted (required to construct the identity).</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;min</span><span class="xmlattr"> value="<span class="xmlattrvalue">1</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;max</span><span class="xmlattr"> value="<span class="xmlattrvalue">1</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;type</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;code</span><span class="xmlattr"> value="<span class="xmlattrvalue">code</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/type&gt;</span><b>
+      </b><span class="xmltag">&lt;isSummary</span><span class="xmlattr"> value="<span class="xmlattrvalue">false</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;binding</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;name</span><span class="xmlattr"> value="<span class="xmlattrvalue">ResourceType</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;isExtensible</span><span class="xmlattr"> value="<span class="xmlattrvalue">false</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;conformance</span><span class="xmlattr"> value="<span class="xmlattrvalue">required</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;description</span><span class="xmlattr"> value="<span class="xmlattrvalue">One of the resource types defined as part of FHIR</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;referenceReference</span><span class="xmltag">&gt;</span><b>
+          </b><span class="xmltag">&lt;reference</span><span class="xmlattr"> value="<span class="xmlattrvalue">http://hl7.org/fhir/vs/resource-types</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;/referenceReference&gt;</span><b>
+      </b><span class="xmltag">&lt;/binding&gt;</span><b>
+    </b><span class="xmltag">&lt;/element&gt;</span><b>
+    </b><span class="xmltag">&lt;element</span><span class="xmltag">&gt;</span><b>
+      </b><span class="xmltag">&lt;path</span><span class="xmlattr"> value="<span class="xmlattrvalue">Bundle.entry.deleted.resourceId</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;short</span><span class="xmlattr"> value="<span class="xmlattrvalue">Id of resource that was deleted</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;formal</span><span class="xmlattr"> value="<span class="xmlattrvalue">The id of the resource that was deleted.</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;comments</span><span class="xmlattr"> value="<span class="xmlattrvalue">This would naturally be called &amp;quot;id&amp;quot; but this is not allowed (would clash with
+       @id on all elements0.</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;min</span><span class="xmlattr"> value="<span class="xmlattrvalue">1</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;max</span><span class="xmlattr"> value="<span class="xmlattrvalue">1</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;type</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;code</span><span class="xmlattr"> value="<span class="xmlattrvalue">id</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/type&gt;</span><b>
+      </b><span class="xmltag">&lt;isSummary</span><span class="xmlattr"> value="<span class="xmlattrvalue">false</span>"</span><span class="xmltag">/&gt;</span><b>
+    </b><span class="xmltag">&lt;/element&gt;</span><b>
+    </b><span class="xmltag">&lt;element</span><span class="xmltag">&gt;</span><b>
+      </b><span class="xmltag">&lt;path</span><span class="xmlattr"> value="<span class="xmlattrvalue">Bundle.entry.deleted.versionId</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;short</span><span class="xmlattr"> value="<span class="xmlattrvalue">Version id for releted resource</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;formal</span><span class="xmlattr"> value="<span class="xmlattrvalue">Version id for releted resource.</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;min</span><span class="xmlattr"> value="<span class="xmlattrvalue">1</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;max</span><span class="xmlattr"> value="<span class="xmlattrvalue">1</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;type</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;code</span><span class="xmlattr"> value="<span class="xmlattrvalue">id</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/type&gt;</span><b>
+      </b><span class="xmltag">&lt;isSummary</span><span class="xmlattr"> value="<span class="xmlattrvalue">false</span>"</span><span class="xmltag">/&gt;</span><b>
+    </b><span class="xmltag">&lt;/element&gt;</span><b>
+    </b><span class="xmltag">&lt;element</span><span class="xmltag">&gt;</span><b>
+      </b><span class="xmltag">&lt;path</span><span class="xmlattr"> value="<span class="xmlattrvalue">Bundle.entry.deleted.instant</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;short</span><span class="xmlattr"> value="<span class="xmlattrvalue">When the resource was deleted</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;formal</span><span class="xmlattr"> value="<span class="xmlattrvalue">The date/time that the resource was deleted.</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;min</span><span class="xmlattr"> value="<span class="xmlattrvalue">1</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;max</span><span class="xmlattr"> value="<span class="xmlattrvalue">1</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;type</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;code</span><span class="xmlattr"> value="<span class="xmlattrvalue">instant</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/type&gt;</span><b>
+      </b><span class="xmltag">&lt;isSummary</span><span class="xmlattr"> value="<span class="xmlattrvalue">false</span>"</span><span class="xmltag">/&gt;</span><b>
+    </b><span class="xmltag">&lt;/element&gt;</span><b>
+    </b><span class="xmltag">&lt;element</span><span class="xmltag">&gt;</span><b>
+      </b><span class="xmltag">&lt;path</span><span class="xmlattr"> value="<span class="xmlattrvalue">Bundle.entry.resource</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;short</span><span class="xmlattr"> value="<span class="xmlattrvalue">Resources in this bundle</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;formal</span><span class="xmlattr"> value="<span class="xmlattrvalue">The Resources for the entry.</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;min</span><span class="xmlattr"> value="<span class="xmlattrvalue">0</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;max</span><span class="xmlattr"> value="<span class="xmlattrvalue">1</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;type</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;code</span><span class="xmlattr"> value="<span class="xmlattrvalue">Resource</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/type&gt;</span><b>
+      </b><span class="xmltag">&lt;isSummary</span><span class="xmlattr"> value="<span class="xmlattrvalue">false</span>"</span><span class="xmltag">/&gt;</span><b>
+    </b><span class="xmltag">&lt;/element&gt;</span><b>
+    </b><span class="xmltag">&lt;element</span><span class="xmltag">&gt;</span><b>
+      </b><span class="xmltag">&lt;path</span><span class="xmlattr"> value="<span class="xmlattrvalue">Bundle.signature</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;short</span><span class="xmlattr"> value="<span class="xmlattrvalue">XML Digital Signature (base64 encoded)</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;formal</span><span class="xmlattr"> value="<span class="xmlattrvalue">XML Digital Signature - base64 encoded.</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;comments</span><span class="xmlattr"> value="<span class="xmlattrvalue">This is base 64 encoded to address issues with json/xml.</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;min</span><span class="xmlattr"> value="<span class="xmlattrvalue">0</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;max</span><span class="xmlattr"> value="<span class="xmlattrvalue">1</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;type</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;code</span><span class="xmlattr"> value="<span class="xmlattrvalue">base64Binary</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/type&gt;</span><b>
+      </b><span class="xmltag">&lt;isSummary</span><span class="xmlattr"> value="<span class="xmlattrvalue">false</span>"</span><span class="xmltag">/&gt;</span><b>
+    </b><span class="xmltag">&lt;/element&gt;</span><b>
+  </b><span class="xmltag">&lt;/snapshot&gt;</span><b>
+  </b><span class="xmltag">&lt;differential</span><span class="xmltag">&gt;</span><b>
+    </b><span class="xmltag">&lt;element</span><span class="xmltag">&gt;</span><b>
+      </b><span class="xmltag">&lt;path</span><span class="xmlattr"> value="<span class="xmlattrvalue">Bundle</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;short</span><span class="xmlattr"> value="<span class="xmlattrvalue">Contains a group of resources</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;formal</span><span class="xmlattr"> value="<span class="xmlattrvalue">A container for a group of resources.</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;min</span><span class="xmlattr"> value="<span class="xmlattrvalue">1</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;max</span><span class="xmlattr"> value="<span class="xmlattrvalue">1</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;constraint</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;key</span><span class="xmlattr"> value="<span class="xmlattrvalue">2</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;name</span><span class="xmlattr"> value="<span class="xmlattrvalue">Search Rule</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;severity</span><span class="xmlattr"> value="<span class="xmlattrvalue">error</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;human</span><span class="xmlattr"> value="<span class="xmlattrvalue">Search only when transaction</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;xpath</span><span class="xmlattr"> value="<span class="xmlattrvalue">not(f:entry/f:search) or (f:type/@value = &apos;transaction&apos;)</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/constraint&gt;</span><b>
+      </b><span class="xmltag">&lt;constraint</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;key</span><span class="xmlattr"> value="<span class="xmlattrvalue">1</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;name</span><span class="xmlattr"> value="<span class="xmlattrvalue">Status Rule</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;severity</span><span class="xmlattr"> value="<span class="xmlattrvalue">error</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;human</span><span class="xmlattr"> value="<span class="xmlattrvalue">Status only when transaction or search</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;xpath</span><span class="xmlattr"> value="<span class="xmlattrvalue">not(f:entry/f:status) or (f:type/@value = &apos;transaction&apos;) or (f:type/@value = &apos;search&apos;)</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/constraint&gt;</span><b>
+      </b><span class="xmltag">&lt;constraint</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;key</span><span class="xmlattr"> value="<span class="xmlattrvalue">5</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;name</span><span class="xmlattr"> value="<span class="xmlattrvalue">Deleted rule</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;severity</span><span class="xmlattr"> value="<span class="xmlattrvalue">error</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;human</span><span class="xmlattr"> value="<span class="xmlattrvalue">Status only when transaction or history</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;xpath</span><span class="xmlattr"> value="<span class="xmlattrvalue">not(f:entry/f:status) or (f:type/@value = &apos;transaction&apos;) or (f:type/@value = &apos;history&apos;)</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/constraint&gt;</span><b>
+      </b><span class="xmltag">&lt;isSummary</span><span class="xmlattr"> value="<span class="xmlattrvalue">false</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;mapping</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;identity</span><span class="xmlattr"> value="<span class="xmlattrvalue">v2</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;map</span><span class="xmlattr"> value="<span class="xmlattrvalue">N/A</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/mapping&gt;</span><b>
+      </b><span class="xmltag">&lt;mapping</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;identity</span><span class="xmlattr"> value="<span class="xmlattrvalue">rim</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;map</span><span class="xmlattr"> value="<span class="xmlattrvalue">N/A</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/mapping&gt;</span><b>
+      </b><span class="xmltag">&lt;mapping</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;identity</span><span class="xmlattr"> value="<span class="xmlattrvalue">v2</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;map</span><span class="xmlattr"> value="<span class="xmlattrvalue">N/A</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/mapping&gt;</span><b>
+      </b><span class="xmltag">&lt;mapping</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;identity</span><span class="xmlattr"> value="<span class="xmlattrvalue">rim</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;map</span><span class="xmlattr"> value="<span class="xmlattrvalue">N/A</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/mapping&gt;</span><b>
+    </b><span class="xmltag">&lt;/element&gt;</span><b>
+    </b><span class="xmltag">&lt;element</span><span class="xmltag">&gt;</span><b>
+      </b><span class="xmltag">&lt;path</span><span class="xmlattr"> value="<span class="xmlattrvalue">Bundle.type</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;short</span><span class="xmlattr"> value="<span class="xmlattrvalue">document | message | transaction | transaction-response | history | searchset | collection</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;formal</span><span class="xmlattr"> value="<span class="xmlattrvalue">Indicates the purpose of this bundle- how it was intended to be used.</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;comments</span><span class="xmlattr"> value="<span class="xmlattrvalue">It&apos;s possible to use a bundle for other purposes (e.g. a document can be accepted as a
+       transaction). This is primarily defined so that there can be specific rules for some of
+       the bundle types.</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;min</span><span class="xmlattr"> value="<span class="xmlattrvalue">1</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;max</span><span class="xmlattr"> value="<span class="xmlattrvalue">1</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;type</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;code</span><span class="xmlattr"> value="<span class="xmlattrvalue">code</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/type&gt;</span><b>
+      </b><span class="xmltag">&lt;isSummary</span><span class="xmlattr"> value="<span class="xmlattrvalue">false</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;binding</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;name</span><span class="xmlattr"> value="<span class="xmlattrvalue">BundleType</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;isExtensible</span><span class="xmlattr"> value="<span class="xmlattrvalue">false</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;conformance</span><span class="xmlattr"> value="<span class="xmlattrvalue">required</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;description</span><span class="xmlattr"> value="<span class="xmlattrvalue">Indicates the purpose of a bundle- how it was intended to be used</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;referenceReference</span><span class="xmltag">&gt;</span><b>
+          </b><span class="xmltag">&lt;reference</span><span class="xmlattr"> value="<span class="xmlattrvalue">http://hl7.org/fhir/vs/bundle-type</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;/referenceReference&gt;</span><b>
+      </b><span class="xmltag">&lt;/binding&gt;</span><b>
+    </b><span class="xmltag">&lt;/element&gt;</span><b>
+    </b><span class="xmltag">&lt;element</span><span class="xmltag">&gt;</span><b>
+      </b><span class="xmltag">&lt;path</span><span class="xmlattr"> value="<span class="xmlattrvalue">Bundle.base</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;short</span><span class="xmlattr"> value="<span class="xmlattrvalue">Stated Base URL</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;formal</span><span class="xmlattr"> value="<span class="xmlattrvalue">The base URL for the service that provided these resources. All relative URLs are relative
+       to this one (equivalent to xml:base).</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;min</span><span class="xmlattr"> value="<span class="xmlattrvalue">0</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;max</span><span class="xmlattr"> value="<span class="xmlattrvalue">1</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;type</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;code</span><span class="xmlattr"> value="<span class="xmlattrvalue">uri</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/type&gt;</span><b>
+      </b><span class="xmltag">&lt;isSummary</span><span class="xmlattr"> value="<span class="xmlattrvalue">false</span>"</span><span class="xmltag">/&gt;</span><b>
+    </b><span class="xmltag">&lt;/element&gt;</span><b>
+    </b><span class="xmltag">&lt;element</span><span class="xmltag">&gt;</span><b>
+      </b><span class="xmltag">&lt;path</span><span class="xmlattr"> value="<span class="xmlattrvalue">Bundle.total</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;short</span><span class="xmlattr"> value="<span class="xmlattrvalue">If search, the total number of matches</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;formal</span><span class="xmlattr"> value="<span class="xmlattrvalue">If a set of search matches, this is the total number of matches for the search (as opposed
+       to the number of results in this bundle).</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;comments</span><span class="xmlattr"> value="<span class="xmlattrvalue">Only used if the bundle is a search result set.</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;min</span><span class="xmlattr"> value="<span class="xmlattrvalue">0</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;max</span><span class="xmlattr"> value="<span class="xmlattrvalue">1</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;type</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;code</span><span class="xmlattr"> value="<span class="xmlattrvalue">integer</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/type&gt;</span><b>
+      </b><span class="xmltag">&lt;isSummary</span><span class="xmlattr"> value="<span class="xmlattrvalue">false</span>"</span><span class="xmltag">/&gt;</span><b>
+    </b><span class="xmltag">&lt;/element&gt;</span><b>
+    </b><span class="xmltag">&lt;element</span><span class="xmltag">&gt;</span><b>
+      </b><span class="xmltag">&lt;path</span><span class="xmlattr"> value="<span class="xmlattrvalue">Bundle.link</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;short</span><span class="xmlattr"> value="<span class="xmlattrvalue">Links related to this Bundle</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;formal</span><span class="xmlattr"> value="<span class="xmlattrvalue">A series of links that provide context to this bundle.</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;min</span><span class="xmlattr"> value="<span class="xmlattrvalue">0</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;max</span><span class="xmlattr"> value="<span class="xmlattrvalue">*</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;isSummary</span><span class="xmlattr"> value="<span class="xmlattrvalue">false</span>"</span><span class="xmltag">/&gt;</span><b>
+    </b><span class="xmltag">&lt;/element&gt;</span><b>
+    </b><span class="xmltag">&lt;element</span><span class="xmltag">&gt;</span><b>
+      </b><span class="xmltag">&lt;path</span><span class="xmlattr"> value="<span class="xmlattrvalue">Bundle.link.relation</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;short</span><span class="xmlattr"> value="<span class="xmlattrvalue">http://www.iana.org/assignments/link-relations/link-relations.xhtml</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;formal</span><span class="xmlattr"> value="<span class="xmlattrvalue">A name which details the functional use for this link - see [[http://www.iana.org/assignments/link-r
+      elations/link-relations.xhtml]].</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;min</span><span class="xmlattr"> value="<span class="xmlattrvalue">1</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;max</span><span class="xmlattr"> value="<span class="xmlattrvalue">1</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;type</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;code</span><span class="xmlattr"> value="<span class="xmlattrvalue">string</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/type&gt;</span><b>
+      </b><span class="xmltag">&lt;isSummary</span><span class="xmlattr"> value="<span class="xmlattrvalue">false</span>"</span><span class="xmltag">/&gt;</span><b>
+    </b><span class="xmltag">&lt;/element&gt;</span><b>
+    </b><span class="xmltag">&lt;element</span><span class="xmltag">&gt;</span><b>
+      </b><span class="xmltag">&lt;path</span><span class="xmlattr"> value="<span class="xmlattrvalue">Bundle.link.url</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;short</span><span class="xmlattr"> value="<span class="xmlattrvalue">Reference details for the link</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;formal</span><span class="xmlattr"> value="<span class="xmlattrvalue">The reference details for the link.</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;min</span><span class="xmlattr"> value="<span class="xmlattrvalue">1</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;max</span><span class="xmlattr"> value="<span class="xmlattrvalue">1</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;type</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;code</span><span class="xmlattr"> value="<span class="xmlattrvalue">uri</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/type&gt;</span><b>
+      </b><span class="xmltag">&lt;isSummary</span><span class="xmlattr"> value="<span class="xmlattrvalue">false</span>"</span><span class="xmltag">/&gt;</span><b>
+    </b><span class="xmltag">&lt;/element&gt;</span><b>
+    </b><span class="xmltag">&lt;element</span><span class="xmltag">&gt;</span><b>
+      </b><span class="xmltag">&lt;path</span><span class="xmlattr"> value="<span class="xmlattrvalue">Bundle.entry</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;short</span><span class="xmlattr"> value="<span class="xmlattrvalue">Entry in the bundle - will have deleted or resource</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;formal</span><span class="xmlattr"> value="<span class="xmlattrvalue">An entry in a bundle resource - will either contain a resource, or a deleted entry (transaction
+       and history bundles only).</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;min</span><span class="xmlattr"> value="<span class="xmlattrvalue">0</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;max</span><span class="xmlattr"> value="<span class="xmlattrvalue">*</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;constraint</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;key</span><span class="xmlattr"> value="<span class="xmlattrvalue">3</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;name</span><span class="xmlattr"> value="<span class="xmlattrvalue">Status Resource Rule</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;severity</span><span class="xmlattr"> value="<span class="xmlattrvalue">error</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;human</span><span class="xmlattr"> value="<span class="xmlattrvalue">status only when resource</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;xpath</span><span class="xmlattr"> value="<span class="xmlattrvalue">not(f:status) or f:resource</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/constraint&gt;</span><b>
+      </b><span class="xmltag">&lt;constraint</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;key</span><span class="xmlattr"> value="<span class="xmlattrvalue">4</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;name</span><span class="xmlattr"> value="<span class="xmlattrvalue">Resource or deleted rule</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;severity</span><span class="xmlattr"> value="<span class="xmlattrvalue">error</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;human</span><span class="xmlattr"> value="<span class="xmlattrvalue">deleted or resource (but not both)</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;xpath</span><span class="xmlattr"> value="<span class="xmlattrvalue">not(f:deleted) or not(f:resource)</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/constraint&gt;</span><b>
+      </b><span class="xmltag">&lt;isSummary</span><span class="xmlattr"> value="<span class="xmlattrvalue">false</span>"</span><span class="xmltag">/&gt;</span><b>
+    </b><span class="xmltag">&lt;/element&gt;</span><b>
+    </b><span class="xmltag">&lt;element</span><span class="xmltag">&gt;</span><b>
+      </b><span class="xmltag">&lt;path</span><span class="xmlattr"> value="<span class="xmlattrvalue">Bundle.entry.base</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;short</span><span class="xmlattr"> value="<span class="xmlattrvalue">Base URL, if different to bundle base</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;formal</span><span class="xmlattr"> value="<span class="xmlattrvalue">The Base URL for the resource, if different to the base URL specified for the bundle as
+       a whole.</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;comments</span><span class="xmlattr"> value="<span class="xmlattrvalue">This allows bundles to be composed of resources from multiple servers (collated search,
+       documents etc).</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;min</span><span class="xmlattr"> value="<span class="xmlattrvalue">0</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;max</span><span class="xmlattr"> value="<span class="xmlattrvalue">1</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;type</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;code</span><span class="xmlattr"> value="<span class="xmlattrvalue">uri</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/type&gt;</span><b>
+      </b><span class="xmltag">&lt;isSummary</span><span class="xmlattr"> value="<span class="xmlattrvalue">false</span>"</span><span class="xmltag">/&gt;</span><b>
+    </b><span class="xmltag">&lt;/element&gt;</span><b>
+    </b><span class="xmltag">&lt;element</span><span class="xmltag">&gt;</span><b>
+      </b><span class="xmltag">&lt;path</span><span class="xmlattr"> value="<span class="xmlattrvalue">Bundle.entry.status</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;short</span><span class="xmlattr"> value="<span class="xmlattrvalue">create | update | match | include - for search &amp;amp; transaction</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;formal</span><span class="xmlattr"> value="<span class="xmlattrvalue">The status of a resource in the bundle. Used for search (to differentiate between resources
+       included as a match, and resources included as an _include), for history (deleted resources),
+       and for transactions (create/update/delete).</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;min</span><span class="xmlattr"> value="<span class="xmlattrvalue">0</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;max</span><span class="xmlattr"> value="<span class="xmlattrvalue">1</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;type</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;code</span><span class="xmlattr"> value="<span class="xmlattrvalue">code</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/type&gt;</span><b>
+      </b><span class="xmltag">&lt;isSummary</span><span class="xmlattr"> value="<span class="xmlattrvalue">false</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;binding</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;name</span><span class="xmlattr"> value="<span class="xmlattrvalue">BundleEntryStatus</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;isExtensible</span><span class="xmlattr"> value="<span class="xmlattrvalue">false</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;conformance</span><span class="xmlattr"> value="<span class="xmlattrvalue">required</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;description</span><span class="xmlattr"> value="<span class="xmlattrvalue">The status of a resource in the bundle. Used for search (to differentiate between resources
+         included as a match, and resources included as an _include), and for transactions (create/update/del
+        ete)</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;referenceReference</span><span class="xmltag">&gt;</span><b>
+          </b><span class="xmltag">&lt;reference</span><span class="xmlattr"> value="<span class="xmlattrvalue">http://hl7.org/fhir/vs/bundle-entry-status</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;/referenceReference&gt;</span><b>
+      </b><span class="xmltag">&lt;/binding&gt;</span><b>
+    </b><span class="xmltag">&lt;/element&gt;</span><b>
+    </b><span class="xmltag">&lt;element</span><span class="xmltag">&gt;</span><b>
+      </b><span class="xmltag">&lt;path</span><span class="xmlattr"> value="<span class="xmlattrvalue">Bundle.entry.search</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;short</span><span class="xmlattr"> value="<span class="xmlattrvalue">Search URL (see transaction)</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;formal</span><span class="xmlattr"> value="<span class="xmlattrvalue">Search URL for this resource when processing a transaction (see transaction documentation).</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;min</span><span class="xmlattr"> value="<span class="xmlattrvalue">0</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;max</span><span class="xmlattr"> value="<span class="xmlattrvalue">1</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;type</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;code</span><span class="xmlattr"> value="<span class="xmlattrvalue">uri</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/type&gt;</span><b>
+      </b><span class="xmltag">&lt;isSummary</span><span class="xmlattr"> value="<span class="xmlattrvalue">false</span>"</span><span class="xmltag">/&gt;</span><b>
+    </b><span class="xmltag">&lt;/element&gt;</span><b>
+    </b><span class="xmltag">&lt;element</span><span class="xmltag">&gt;</span><b>
+      </b><span class="xmltag">&lt;path</span><span class="xmlattr"> value="<span class="xmlattrvalue">Bundle.entry.score</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;short</span><span class="xmlattr"> value="<span class="xmlattrvalue">Search ranking (between 0 and 1)</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;formal</span><span class="xmlattr"> value="<span class="xmlattrvalue">When searching, the server&apos;s search ranking score for the entry.</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;comments</span><span class="xmlattr"> value="<span class="xmlattrvalue">Servers are not required to return a ranking score.</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;min</span><span class="xmlattr"> value="<span class="xmlattrvalue">0</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;max</span><span class="xmlattr"> value="<span class="xmlattrvalue">1</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;type</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;code</span><span class="xmlattr"> value="<span class="xmlattrvalue">decimal</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/type&gt;</span><b>
+      </b><span class="xmltag">&lt;isSummary</span><span class="xmlattr"> value="<span class="xmlattrvalue">false</span>"</span><span class="xmltag">/&gt;</span><b>
+    </b><span class="xmltag">&lt;/element&gt;</span><b>
+    </b><span class="xmltag">&lt;element</span><span class="xmltag">&gt;</span><b>
+      </b><span class="xmltag">&lt;path</span><span class="xmlattr"> value="<span class="xmlattrvalue">Bundle.entry.deleted</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;short</span><span class="xmlattr"> value="<span class="xmlattrvalue">If this is a deleted resource (transaction/history)</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;formal</span><span class="xmlattr"> value="<span class="xmlattrvalue">If this is an entry that represents a deleted resource. Only used when the bundle is a
+       transaction or a history type. See RESTful API documentation for further information.</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;min</span><span class="xmlattr"> value="<span class="xmlattrvalue">0</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;max</span><span class="xmlattr"> value="<span class="xmlattrvalue">1</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;isSummary</span><span class="xmlattr"> value="<span class="xmlattrvalue">false</span>"</span><span class="xmltag">/&gt;</span><b>
+    </b><span class="xmltag">&lt;/element&gt;</span><b>
+    </b><span class="xmltag">&lt;element</span><span class="xmltag">&gt;</span><b>
+      </b><span class="xmltag">&lt;path</span><span class="xmlattr"> value="<span class="xmlattrvalue">Bundle.entry.deleted.type</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;short</span><span class="xmlattr"> value="<span class="xmlattrvalue">Type of resource that was deleted</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;formal</span><span class="xmlattr"> value="<span class="xmlattrvalue">The type of resource that was deleted (required to construct the identity).</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;min</span><span class="xmlattr"> value="<span class="xmlattrvalue">1</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;max</span><span class="xmlattr"> value="<span class="xmlattrvalue">1</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;type</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;code</span><span class="xmlattr"> value="<span class="xmlattrvalue">code</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/type&gt;</span><b>
+      </b><span class="xmltag">&lt;isSummary</span><span class="xmlattr"> value="<span class="xmlattrvalue">false</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;binding</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;name</span><span class="xmlattr"> value="<span class="xmlattrvalue">ResourceType</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;isExtensible</span><span class="xmlattr"> value="<span class="xmlattrvalue">false</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;conformance</span><span class="xmlattr"> value="<span class="xmlattrvalue">required</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;description</span><span class="xmlattr"> value="<span class="xmlattrvalue">One of the resource types defined as part of FHIR</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;referenceReference</span><span class="xmltag">&gt;</span><b>
+          </b><span class="xmltag">&lt;reference</span><span class="xmlattr"> value="<span class="xmlattrvalue">http://hl7.org/fhir/vs/resource-types</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;/referenceReference&gt;</span><b>
+      </b><span class="xmltag">&lt;/binding&gt;</span><b>
+    </b><span class="xmltag">&lt;/element&gt;</span><b>
+    </b><span class="xmltag">&lt;element</span><span class="xmltag">&gt;</span><b>
+      </b><span class="xmltag">&lt;path</span><span class="xmlattr"> value="<span class="xmlattrvalue">Bundle.entry.deleted.resourceId</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;short</span><span class="xmlattr"> value="<span class="xmlattrvalue">Id of resource that was deleted</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;formal</span><span class="xmlattr"> value="<span class="xmlattrvalue">The id of the resource that was deleted.</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;comments</span><span class="xmlattr"> value="<span class="xmlattrvalue">This would naturally be called &amp;quot;id&amp;quot; but this is not allowed (would clash with
+       @id on all elements0.</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;min</span><span class="xmlattr"> value="<span class="xmlattrvalue">1</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;max</span><span class="xmlattr"> value="<span class="xmlattrvalue">1</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;type</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;code</span><span class="xmlattr"> value="<span class="xmlattrvalue">id</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/type&gt;</span><b>
+      </b><span class="xmltag">&lt;isSummary</span><span class="xmlattr"> value="<span class="xmlattrvalue">false</span>"</span><span class="xmltag">/&gt;</span><b>
+    </b><span class="xmltag">&lt;/element&gt;</span><b>
+    </b><span class="xmltag">&lt;element</span><span class="xmltag">&gt;</span><b>
+      </b><span class="xmltag">&lt;path</span><span class="xmlattr"> value="<span class="xmlattrvalue">Bundle.entry.deleted.versionId</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;short</span><span class="xmlattr"> value="<span class="xmlattrvalue">Version id for releted resource</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;formal</span><span class="xmlattr"> value="<span class="xmlattrvalue">Version id for releted resource.</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;min</span><span class="xmlattr"> value="<span class="xmlattrvalue">1</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;max</span><span class="xmlattr"> value="<span class="xmlattrvalue">1</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;type</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;code</span><span class="xmlattr"> value="<span class="xmlattrvalue">id</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/type&gt;</span><b>
+      </b><span class="xmltag">&lt;isSummary</span><span class="xmlattr"> value="<span class="xmlattrvalue">false</span>"</span><span class="xmltag">/&gt;</span><b>
+    </b><span class="xmltag">&lt;/element&gt;</span><b>
+    </b><span class="xmltag">&lt;element</span><span class="xmltag">&gt;</span><b>
+      </b><span class="xmltag">&lt;path</span><span class="xmlattr"> value="<span class="xmlattrvalue">Bundle.entry.deleted.instant</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;short</span><span class="xmlattr"> value="<span class="xmlattrvalue">When the resource was deleted</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;formal</span><span class="xmlattr"> value="<span class="xmlattrvalue">The date/time that the resource was deleted.</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;min</span><span class="xmlattr"> value="<span class="xmlattrvalue">1</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;max</span><span class="xmlattr"> value="<span class="xmlattrvalue">1</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;type</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;code</span><span class="xmlattr"> value="<span class="xmlattrvalue">instant</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/type&gt;</span><b>
+      </b><span class="xmltag">&lt;isSummary</span><span class="xmlattr"> value="<span class="xmlattrvalue">false</span>"</span><span class="xmltag">/&gt;</span><b>
+    </b><span class="xmltag">&lt;/element&gt;</span><b>
+    </b><span class="xmltag">&lt;element</span><span class="xmltag">&gt;</span><b>
+      </b><span class="xmltag">&lt;path</span><span class="xmlattr"> value="<span class="xmlattrvalue">Bundle.entry.resource</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;short</span><span class="xmlattr"> value="<span class="xmlattrvalue">Resources in this bundle</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;formal</span><span class="xmlattr"> value="<span class="xmlattrvalue">The Resources for the entry.</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;min</span><span class="xmlattr"> value="<span class="xmlattrvalue">0</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;max</span><span class="xmlattr"> value="<span class="xmlattrvalue">1</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;type</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;code</span><span class="xmlattr"> value="<span class="xmlattrvalue">Resource</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/type&gt;</span><b>
+      </b><span class="xmltag">&lt;isSummary</span><span class="xmlattr"> value="<span class="xmlattrvalue">false</span>"</span><span class="xmltag">/&gt;</span><b>
+    </b><span class="xmltag">&lt;/element&gt;</span><b>
+    </b><span class="xmltag">&lt;element</span><span class="xmltag">&gt;</span><b>
+      </b><span class="xmltag">&lt;path</span><span class="xmlattr"> value="<span class="xmlattrvalue">Bundle.signature</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;short</span><span class="xmlattr"> value="<span class="xmlattrvalue">XML Digital Signature (base64 encoded)</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;formal</span><span class="xmlattr"> value="<span class="xmlattrvalue">XML Digital Signature - base64 encoded.</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;comments</span><span class="xmlattr"> value="<span class="xmlattrvalue">This is base 64 encoded to address issues with json/xml.</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;min</span><span class="xmlattr"> value="<span class="xmlattrvalue">0</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;max</span><span class="xmlattr"> value="<span class="xmlattrvalue">1</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;type</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;code</span><span class="xmlattr"> value="<span class="xmlattrvalue">base64Binary</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/type&gt;</span><b>
+      </b><span class="xmltag">&lt;isSummary</span><span class="xmlattr"> value="<span class="xmlattrvalue">false</span>"</span><span class="xmltag">/&gt;</span><b>
+    </b><span class="xmltag">&lt;/element&gt;</span><b>
+  </b><span class="xmltag">&lt;/differential&gt;</span><b>
+</b><span class="xmltag">&lt;/Profile&gt;</span></pre>
+</div>
+
+
+<p>
+Usage note: every effort has been made to ensure that the 
+examples are correct and useful, but they are not a normative part 
+of the specification. 
+</p>
+
+</div>
+
+
+				</div><!-- /inner-wrapper -->
+            </div><!-- /row -->
+        </div><!-- /container -->
+        
+    </div><!-- /segment-content -->
+
+
+	<div id="segment-footer" class="segment"><!-- segment-footer -->
+		<div class="container"><!-- container -->
+			<div class="inner-wrapper">
+				<p>
+        © HL7.org 2011+. FHIR DSTU (v0.4.0-3920) generated on Tue, Dec 30, 2014 10:57+0000. <!-- <a href="qa.html">QA Report</a> --> <!-- achive note -->
+        <br/>
+        <span style="color: #FFFF77">
+        Links: <a style="color: #81BEF7" href="timelines.html">What's a DSTU?</a> | 
+               <a style="color: #81BEF7" href="history.html">Version History</a> | 
+               <a style="color: #81BEF7" href="http://services.w3.org/htmldiff?doc1=http%3A%2F%2Fhl7.org%2Fimplement%2Fstandards%2Ffhir%2Fbundle.profile.xml.html&amp;doc2=http%3A%2F%2Fhl7-fhir.github.io%2F%2Fbundle.profile.xml.html">Compare to DSTU</a> | 
+               <a style="color: #81BEF7" rel="license" href="license.html"><img src="cc0.png" style="border-style: none;" alt="CC0"/></a> | 
+               <a style="color: #81BEF7" target="_blank" href="http://gforge.hl7.org/gf/project/fhir/tracker/?action=TrackerItemAdd&amp;tracker_id=677">Propose a change</a>   
+        </span>
+        </p>
+			</div><!-- /inner-wrapper -->
+		</div><!-- /container -->
+	</div><!-- /segment-footer -->
+<!-- disqus thread -->
+<!--disqus-->
+<!-- end disqus -->        
+	
+	<div id="segment-post-footer" class="segment hidden"><!-- segment-post-footer -->
+		<div class="container"><!-- container -->
+		</div><!-- /container -->
+	</div><!-- /segment-post-footer -->
+    
+    <!-- JS and analytics only. -->
+    <!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="./assets/js/jquery.js"> </script>   <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+<script src="./dist/js/bootstrap.min.js"> </script>
+<script src="./assets/js/respond.min.js"> </script>
+
+<script src="./assets/js/fhir.js"> </script>
+
+<!-- Analytics Below
+================================================== -->
+
+    
+</body>
+</html>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ExtensionDefinition xmlns="http://hl7.org/fhir">
+  <id value="cda-org-partof-statuscode"/>
+  <meta>
+    <lastUpdated value="2014-11-05T20:31:00Z"/>
+  </meta>
+  <url value="http://hl7.org/fhir/ExtensionDefinition/cda-org-partof-statuscode"/>
+  <name value="CDA Organization Relationship Status"/>
+  <publisher value="HL7 FHIR Project"/>
+  <telecom>
+    <system value="url"/>
+    <value value="http://hl7.org/fhir"/>
+  </telecom>
+  <description value="Standard Profile for CDA R2 on FHIR"/>
+  <status value="draft"/>
+  <date value="2014-11-05"/>
+  <mapping>
+    <identity value="rim"/>
+    <uri value="http://hl7.org/v3"/>
+    <name value="RIM"/>
+  </mapping>
+  <contextType value="resource"/>
+  <context value="Organization.partOf"/>
+  <element>
+    <path value="Extension"/>
+    <short value="The status of the organizational relationship"/>
+    <min value="0"/>
+    <max value="1"/>
+    <type>
+      <code value="CodeableConcept"/>
+    </type>
+    <binding>
+      <name value="RoleStatus"/>
+      <isExtensible value="false"/>
+      <referenceUri value="http://hl7.org/fhir/v3/vs/RoleStatus"/>
+    </binding>
+    <mapping>
+      <identity value="rim"/>
+      <map value="Role.statusCode"/>
+    </mapping>
+  </element>
+</ExtensionDefinition>

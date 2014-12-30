@@ -1,0 +1,2199 @@
+﻿<!DOCTYPE HTML>
+
+
+
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <title>Claimresponse.questionnaire.json - FHIR v0.4.0</title>
+
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="author" content="http://hl7.org/fhir"/>
+
+  <link href="fhir.css" rel="stylesheet"/>
+  <link rel="Prev" href="http://hl7.org/implement/standards/fhir/claimresponse.questionnaire.json.html"/>
+
+  <!-- Bootstrap core CSS -->
+  <link href="./dist/css/bootstrap.css" rel="stylesheet"/>
+  <link href="./assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+  <!-- Project extras -->
+  <link href="./assets/css/project.css" rel="stylesheet"/>
+  <link href="./assets/css/pygments-manni.css" rel="stylesheet"/>
+	<link href="jquery-ui.css" rel="stylesheet"/>
+
+  <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!--[if lt IE 9]>
+  <script src="./assets/js/html5shiv.js"></script>
+  <script src="./assets/js/respond.min.js"></script>
+  <![endif]-->
+
+  <!-- Favicons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="./assets/ico/apple-touch-icon-144-precomposed.png"/>
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="./assets/ico/apple-touch-icon-114-precomposed.png"/>
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="./assets/ico/apple-touch-icon-72-precomposed.png"/>
+  <link rel="apple-touch-icon-precomposed" href="./assets/ico/apple-touch-icon-57-precomposed.png"/>
+  <link rel="shortcut icon" href="./assets/ico/favicon.png"/>
+
+</head>
+<body>
+	<div id="segment-header" class="segment"><!-- segment-header -->	
+		<div class="container"><!-- container -->
+			<a id="logo" href="http://hl7.org/fhir"><img src="./assets/images/fhir-logo-www.png" alt="logo fhir"/> </a>
+			<div id="hl7-status">
+				<b>Continuous Integration Build</b>
+			</div>       	
+			
+			<div id="hl7-nav">
+				 <a id="hl7-logo" href="http://www.hl7.org">
+					<img src="./assets/images/hl7-logo.png" width="42" height="50" alt="visit the hl7 website"/>
+				</a> 
+			</div>       	
+			<!--hl7-search-->
+		</div>
+		<div class="container"><!-- container -->
+	</div></div><!-- /segment-header -->	
+
+
+	<div id="segment-navbar" class="segment"><!-- segment-navbar -->
+		<div id="stripe"> </div>
+		<div class="container"><!-- container -->
+ <!-- HEADER CONTENT -->
+ 	      		
+ 	      		      		
+			<nav class="navbar navbar-inverse">
+				<div class="container">
+					<button data-target=".navbar-inverse-collapse" data-toggle="collapse" class="navbar-toggle" type="button">
+						<span class="icon-bar"> </span>
+						<span class="icon-bar"> </span>
+						<span class="icon-bar"> </span>
+					</button>
+					<a href="index.html" class="navbar-brand hidden">FHIR</a>
+					<div class="nav-collapse collapse navbar-inverse-collapse">
+						<ul class="nav navbar-nav">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="documentation.html">Documentation</a></li>
+              <li><a href="implementation.html">Implementation</a></li>
+              <li><a href="resourcelist.html">Resources</a></li>
+              <li><a href="clinical.html">Clinical</a></li>
+              <li><a href="administration.html">Administrative</a></li>
+              <li><a href="infrastructure.html">Infrastructure</a></li>
+              <li><a href="financial.html">Financial</a></li>
+
+						</ul>
+					</div><!-- /.nav-collapse -->
+				</div><!-- /.container -->
+			</nav><!-- /.navbar -->
+      		
+				
+<!-- /HEADER CONTENT -->				
+		</div><!-- /container -->
+	</div><!-- /segment-navbar -->
+	
+
+	<div id="segment-breadcrumb" class="segment"><!-- segment-breadcrumb -->
+		<div class="container"><!-- container -->	
+			<ul class="breadcrumb">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="financial.html">Financial</a></li>        <li><a href="claimresponse.html">ClaimResponse</a></li>        <li><b>Generated Questionnaire</b></li>        <!-- claimresponse.questionnaire.json.html / resource-questionnaire:ClaimResponse -->
+
+			</ul>	
+		</div><!-- /container -->
+	</div><!-- /segment-breadcrumb -->
+	
+
+	<div id="segment-content" class="segment"><!-- segment-content -->
+	<div class="container"><!-- container -->
+            <div class="row">
+            	<div class="inner-wrapper">
+<!-- CONTENT CONTENT -->
+
+
+<div class="col-9">
+
+<h1>Claimresponse.questionnaire.json</h1>
+
+<p>
+<a href="claimresponse.questionnaire.json">Raw JSON</a> (<a href="claimresponse.questionnaire.canonical.json">canonical form</a>)
+</p>
+
+<div class="example">
+<p>Generated Questionnaire for ClaimResponse</p>
+<pre class="json">
+{
+  &quot;resourceType&quot;: &quot;Questionnaire&quot;,
+  &quot;id&quot;: &quot;qs1&quot;,
+  &quot;contained&quot;: [
+    {
+      &quot;resourceType&quot;: &quot;ValueSet&quot;,
+      &quot;id&quot;: &quot;vs2&quot;,
+      &quot;identifier&quot;: &quot;urn:uuid:daf617cf-67c5-4a69-81b6-588d3c404afc&quot;,
+      &quot;name&quot;: &quot;Type options for ClaimResponse.request&quot;,
+      &quot;description&quot;: &quot;Type options for ClaimResponse.request&quot;,
+      &quot;status&quot;: &quot;active&quot;,
+      &quot;expansion&quot;: {
+        &quot;timestamp&quot;: &quot;2014-12-30T10:58:21+00:00&quot;,
+        &quot;contains&quot;: [
+          {
+            &quot;system&quot;: &quot;http://hl7.org/fhir/resource-types&quot;,
+            &quot;code&quot;: &quot;OralHealthClaim&quot;,
+            &quot;display&quot;: &quot;OralHealthClaim&quot;
+          },
+          {
+            &quot;system&quot;: &quot;http://hl7.org/fhir/resource-types&quot;,
+            &quot;code&quot;: &quot;PharmacyClaim&quot;,
+            &quot;display&quot;: &quot;PharmacyClaim&quot;
+          },
+          {
+            &quot;system&quot;: &quot;http://hl7.org/fhir/resource-types&quot;,
+            &quot;code&quot;: &quot;VisionClaim&quot;,
+            &quot;display&quot;: &quot;VisionClaim&quot;
+          },
+          {
+            &quot;system&quot;: &quot;http://hl7.org/fhir/resource-types&quot;,
+            &quot;code&quot;: &quot;ProfessionalClaim&quot;,
+            &quot;display&quot;: &quot;ProfessionalClaim&quot;
+          },
+          {
+            &quot;system&quot;: &quot;http://hl7.org/fhir/resource-types&quot;,
+            &quot;code&quot;: &quot;InstitutionalClaim&quot;,
+            &quot;display&quot;: &quot;InstitutionalClaim&quot;
+          }
+        ]
+      }
+    }
+  ],
+  &quot;identifier&quot;: [
+    {
+      &quot;system&quot;: &quot;urn:ietf:rfc:3986&quot;
+    }
+  ],
+  &quot;status&quot;: &quot;draft&quot;,
+  &quot;date&quot;: &quot;2014-12-30T10:55:31&quot;,
+  &quot;publisher&quot;: &quot;HL7 FHIR Project (Financial Management)&quot;,
+  &quot;group&quot;: {
+    &quot;http://hl7.org/fhir/Profile/questionnaire-extensions#flyover&quot;: [
+      {
+        &quot;valueString&quot;: &quot;This resource provides the adjudication details from the processing of a Claim resource.&quot;
+      }
+    ],
+    &quot;linkId&quot;: &quot;ClaimResponse&quot;,
+    &quot;title&quot;: &quot;Remittance resource&quot;,
+    &quot;required&quot;: true,
+    &quot;group&quot;: [
+      {
+        &quot;http://hl7.org/fhir/Profile/questionnaire-extensions#flyover&quot;: [
+          {
+            &quot;valueString&quot;: &quot;The logical id of the resource, as used in the url for the resoure. Once assigned, this value never changes. The only time that a resource does not have an id is when it is being submitted to the server using a create operation. Bundles always have an id, though it is usually a generated UUID.&quot;
+          }
+        ],
+        &quot;http://www.healthintersections.com.au/fhir/Profile/metadata#type&quot;: [
+          {
+            &quot;valueString&quot;: &quot;string&quot;
+          }
+        ],
+        &quot;linkId&quot;: &quot;ClaimResponse.id&quot;,
+        &quot;repeats&quot;: true,
+        &quot;question&quot;: [
+          {
+            &quot;linkId&quot;: &quot;ClaimResponse.id.value&quot;,
+            &quot;text&quot;: &quot;Logical id of this artefact&quot;,
+            &quot;type&quot;: &quot;string&quot;
+          }
+        ]
+      },
+      {
+        &quot;http://hl7.org/fhir/Profile/questionnaire-extensions#flyover&quot;: [
+          {
+            &quot;valueString&quot;: &quot;The metadata about the resource. This is content that is maintained by the infrastructure. Changes to the content may not always be associated with version changes to the resource.&quot;
+          }
+        ],
+        &quot;linkId&quot;: &quot;ClaimResponse.meta&quot;,
+        &quot;title&quot;: &quot;Metadata about the resource&quot;,
+        &quot;group&quot;: [
+          {
+            &quot;http://hl7.org/fhir/Profile/questionnaire-extensions#flyover&quot;: [
+              {
+                &quot;valueString&quot;: &quot;unique id for the element within a resource (for internal references).&quot;
+              }
+            ],
+            &quot;http://www.healthintersections.com.au/fhir/Profile/metadata#type&quot;: [
+              {
+                &quot;valueString&quot;: &quot;string&quot;
+              }
+            ],
+            &quot;linkId&quot;: &quot;ClaimResponse.meta.id&quot;,
+            &quot;repeats&quot;: true,
+            &quot;question&quot;: [
+              {
+                &quot;linkId&quot;: &quot;ClaimResponse.meta.id.value&quot;,
+                &quot;text&quot;: &quot;xml:id (or equivalent in JSON)&quot;,
+                &quot;type&quot;: &quot;string&quot;
+              }
+            ]
+          },
+          {
+            &quot;http://hl7.org/fhir/Profile/questionnaire-extensions#flyover&quot;: [
+              {
+                &quot;valueString&quot;: &quot;The version specific identifier, as it appears in the version portion of the url. This values changes when the resource is created, updated, or deleted. The server assigns this value, and ignores what the client specifies, except in the case that the server is imposing version integrity on updates/deletes.&quot;
+              }
+            ],
+            &quot;http://www.healthintersections.com.au/fhir/Profile/metadata#type&quot;: [
+              {
+                &quot;valueString&quot;: &quot;string&quot;
+              }
+            ],
+            &quot;linkId&quot;: &quot;ClaimResponse.meta.versionId&quot;,
+            &quot;repeats&quot;: true,
+            &quot;question&quot;: [
+              {
+                &quot;linkId&quot;: &quot;ClaimResponse.meta.versionId.value&quot;,
+                &quot;text&quot;: &quot;Version specific identifier&quot;,
+                &quot;type&quot;: &quot;string&quot;
+              }
+            ]
+          },
+          {
+            &quot;http://hl7.org/fhir/Profile/questionnaire-extensions#flyover&quot;: [
+              {
+                &quot;valueString&quot;: &quot;When the resource last changed - e.g. when the version changed. This value is always populated except when the resource is first being created. The server / resource manager sets this value; what a client provides is irrelevant.&quot;
+              }
+            ],
+            &quot;http://www.healthintersections.com.au/fhir/Profile/metadata#type&quot;: [
+              {
+                &quot;valueString&quot;: &quot;instant&quot;
+              }
+            ],
+            &quot;linkId&quot;: &quot;ClaimResponse.meta.lastUpdated&quot;,
+            &quot;repeats&quot;: true,
+            &quot;question&quot;: [
+              {
+                &quot;linkId&quot;: &quot;ClaimResponse.meta.lastUpdated.value&quot;,
+                &quot;text&quot;: &quot;When the resource version last changed&quot;,
+                &quot;type&quot;: &quot;instant&quot;
+              }
+            ]
+          },
+          {
+            &quot;http://hl7.org/fhir/Profile/questionnaire-extensions#flyover&quot;: [
+              {
+                &quot;valueString&quot;: &quot;A list of profiles that this resource claims to conform to. The URL is a reference to Profile.url. It is up to the server and/or other infrastruture of policy to determine whether/how these claims are verified and/or updated over tiem.&quot;
+              }
+            ],
+            &quot;http://www.healthintersections.com.au/fhir/Profile/metadata#type&quot;: [
+              {
+                &quot;valueString&quot;: &quot;uri&quot;
+              }
+            ],
+            &quot;linkId&quot;: &quot;ClaimResponse.meta.profile&quot;,
+            &quot;repeats&quot;: true,
+            &quot;question&quot;: [
+              {
+                &quot;linkId&quot;: &quot;ClaimResponse.meta.profile.value&quot;,
+                &quot;text&quot;: &quot;Profiles this resource claims to conform to&quot;,
+                &quot;type&quot;: &quot;string&quot;
+              }
+            ]
+          },
+          {
+            &quot;http://hl7.org/fhir/Profile/questionnaire-extensions#flyover&quot;: [
+              {
+                &quot;valueString&quot;: &quot;Security labels applied to this resource. These tags connect specific resources to the overall security policy and infrastructure. The security labels can be updated without changing the stated version of the resource.&quot;
+              }
+            ],
+            &quot;http://www.healthintersections.com.au/fhir/Profile/metadata#type&quot;: [
+              {
+                &quot;valueString&quot;: &quot;Coding&quot;
+              }
+            ],
+            &quot;linkId&quot;: &quot;ClaimResponse.meta.security&quot;,
+            &quot;repeats&quot;: true,
+            &quot;question&quot;: [
+              {
+                &quot;linkId&quot;: &quot;ClaimResponse.meta.security.value&quot;,
+                &quot;text&quot;: &quot;Security Labels applied to this resource&quot;,
+                &quot;type&quot;: &quot;open-choice&quot;
+              }
+            ]
+          },
+          {
+            &quot;http://hl7.org/fhir/Profile/questionnaire-extensions#flyover&quot;: [
+              {
+                &quot;valueString&quot;: &quot;Tags applied to this resource. Tags are intended to to be used to identify and relate resources to process and workflow, and applications are not required to consider the tags when interpreting the meaning of a resource. The tags can be updated without changing the stated version of the resource.&quot;
+              }
+            ],
+            &quot;http://www.healthintersections.com.au/fhir/Profile/metadata#type&quot;: [
+              {
+                &quot;valueString&quot;: &quot;Coding&quot;
+              }
+            ],
+            &quot;linkId&quot;: &quot;ClaimResponse.meta.tag&quot;,
+            &quot;repeats&quot;: true,
+            &quot;question&quot;: [
+              {
+                &quot;linkId&quot;: &quot;ClaimResponse.meta.tag.value&quot;,
+                &quot;text&quot;: &quot;Tags applied&quot;,
+                &quot;type&quot;: &quot;open-choice&quot;
+              }
+            ]
+          }
+        ]
+      },
+      {
+        &quot;http://hl7.org/fhir/Profile/questionnaire-extensions#flyover&quot;: [
+          {
+            &quot;valueString&quot;: &quot;A reference to a set of rules that were followed when the resource was constructed, and which must be understood when processing the content. Asserting this rule set restricts the content to be only understood by a limited set of trading partners. This inherently limits the usefulness of the data in the long term. However the existing health eco-system is highly fractured, and not yet ready to define, collect, and exchange data in a generally computable sense. Wherever possible, implementers and/or specification writers should avoid using this element as much as possible.&quot;
+          }
+        ],
+        &quot;http://www.healthintersections.com.au/fhir/Profile/metadata#type&quot;: [
+          {
+            &quot;valueString&quot;: &quot;uri&quot;
+          }
+        ],
+        &quot;linkId&quot;: &quot;ClaimResponse.implicitRules&quot;,
+        &quot;repeats&quot;: true,
+        &quot;question&quot;: [
+          {
+            &quot;linkId&quot;: &quot;ClaimResponse.implicitRules.value&quot;,
+            &quot;text&quot;: &quot;A set of rules under which this content was created&quot;,
+            &quot;type&quot;: &quot;string&quot;
+          }
+        ]
+      },
+      {
+        &quot;http://hl7.org/fhir/Profile/questionnaire-extensions#flyover&quot;: [
+          {
+            &quot;valueString&quot;: &quot;The base language in which the resource is written. Language is provided to support indexing and accessibility (typically, services such as text to speech use the language tag). The html language tag in the narrative applies  to the narrative. The language tag on the resource may be used to specify the language of other presentations generated from the data in the resource\n\nNot all the content has to be in the base language. The Resource.language should not be assumed to apply to the narrative automatically. If a language is specified, it should it also be specified on the div element in the html (see rules in HTML5 for information about the relationship between xml:lang and the html lang attribute).&quot;
+          }
+        ],
+        &quot;http://www.healthintersections.com.au/fhir/Profile/metadata#type&quot;: [
+          {
+            &quot;valueString&quot;: &quot;code&quot;
+          }
+        ],
+        &quot;linkId&quot;: &quot;ClaimResponse.language&quot;,
+        &quot;repeats&quot;: true,
+        &quot;question&quot;: [
+          {
+            &quot;linkId&quot;: &quot;ClaimResponse.language.value&quot;,
+            &quot;text&quot;: &quot;language&quot;,
+            &quot;type&quot;: &quot;choice&quot;
+          }
+        ]
+      },
+      {
+        &quot;http://hl7.org/fhir/Profile/questionnaire-extensions#flyover&quot;: [
+          {
+            &quot;valueString&quot;: &quot;A human-readable narrative that contains a summary of the resource, and may be used to represent the content of the resource to a human. The narrative need not encode all the structured data, but is required to contain sufficient detail to make it \&quot;clinically safe\&quot; for a human to just read the narrative. Resource definitions may define what content should be represented in the narrative to ensure clinical safety. Contained resources do not have narrative. Resources that are not contained SHOULD have a narrative.&quot;
+          }
+        ],
+        &quot;linkId&quot;: &quot;ClaimResponse.text&quot;,
+        &quot;text&quot;: &quot;Text summary of the resource, for human interpretation&quot;,
+        &quot;repeats&quot;: true
+      },
+      {
+        &quot;http://hl7.org/fhir/Profile/questionnaire-extensions#flyover&quot;: [
+          {
+            &quot;valueString&quot;: &quot;These resources do not have an independent existence apart from the resource that contains them - they cannot be identified independently, and nor can they have their own independent transaction scope. This should never be done when the content can be identified properly, as once identification is lost, it is extremely difficult (and context dependent) to restore it again.&quot;
+          }
+        ],
+        &quot;linkId&quot;: &quot;ClaimResponse.contained&quot;,
+        &quot;text&quot;: &quot;Contained, inline Resources&quot;,
+        &quot;repeats&quot;: true
+      },
+      {
+        &quot;http://hl7.org/fhir/Profile/questionnaire-extensions#flyover&quot;: [
+          {
+            &quot;valueString&quot;: &quot;The Response Business Identifier.&quot;
+          }
+        ],
+        &quot;http://www.healthintersections.com.au/fhir/Profile/metadata#type&quot;: [
+          {
+            &quot;valueString&quot;: &quot;Identifier&quot;
+          }
+        ],
+        &quot;linkId&quot;: &quot;ClaimResponse.identifier&quot;,
+        &quot;text&quot;: &quot;Response  number&quot;,
+        &quot;repeats&quot;: true,
+        &quot;question&quot;: [
+          {
+            &quot;linkId&quot;: &quot;ClaimResponse.identifier.label&quot;,
+            &quot;text&quot;: &quot;label:&quot;,
+            &quot;type&quot;: &quot;string&quot;
+          },
+          {
+            &quot;linkId&quot;: &quot;ClaimResponse.identifier.system&quot;,
+            &quot;text&quot;: &quot;system:&quot;,
+            &quot;type&quot;: &quot;string&quot;
+          },
+          {
+            &quot;linkId&quot;: &quot;ClaimResponse.identifier.value&quot;,
+            &quot;text&quot;: &quot;value:&quot;,
+            &quot;type&quot;: &quot;string&quot;
+          }
+        ]
+      },
+      {
+        &quot;http://hl7.org/fhir/Profile/questionnaire-extensions#flyover&quot;: [
+          {
+            &quot;valueString&quot;: &quot;Original request resource referrence.&quot;
+          }
+        ],
+        &quot;linkId&quot;: &quot;ClaimResponse.request&quot;,
+        &quot;text&quot;: &quot;Id of resource triggering adjudication&quot;,
+        &quot;repeats&quot;: true,
+        &quot;question&quot;: [
+          {
+            &quot;linkId&quot;: &quot;ClaimResponse.request._type&quot;,
+            &quot;text&quot;: &quot;type&quot;,
+            &quot;type&quot;: &quot;choice&quot;,
+            &quot;options&quot;: {
+              &quot;reference&quot;: &quot;#vs2&quot;
+            },
+            &quot;group&quot;: [
+              {
+                &quot;http://www.healthintersections.com.au/fhir/Profile/metadata#type&quot;: [
+                  {
+                    &quot;valueString&quot;: &quot;Reference&quot;
+                  }
+                ],
+                &quot;linkId&quot;: &quot;ClaimResponse.request._OralHealthClaim&quot;,
+                &quot;question&quot;: [
+                  {
+                    &quot;http://www.healthintersections.com.au/fhir/Profile/metadata#reference&quot;: [
+                      {
+                        &quot;valueString&quot;: &quot;/OralHealthClaim?subject=$subj&amp;patient=$subj&amp;encounter=$encounter&quot;
+                      }
+                    ],
+                    &quot;linkId&quot;: &quot;ClaimResponse.request._OralHealthClaim.value&quot;,
+                    &quot;text&quot;: &quot;OralHealthClaim&quot;,
+                    &quot;type&quot;: &quot;reference&quot;
+                  }
+                ]
+              },
+              {
+                &quot;http://www.healthintersections.com.au/fhir/Profile/metadata#type&quot;: [
+                  {
+                    &quot;valueString&quot;: &quot;Reference&quot;
+                  }
+                ],
+                &quot;linkId&quot;: &quot;ClaimResponse.request._PharmacyClaim&quot;,
+                &quot;question&quot;: [
+                  {
+                    &quot;http://www.healthintersections.com.au/fhir/Profile/metadata#reference&quot;: [
+                      {
+                        &quot;valueString&quot;: &quot;/PharmacyClaim?subject=$subj&amp;patient=$subj&amp;encounter=$encounter&quot;
+                      }
+                    ],
+                    &quot;linkId&quot;: &quot;ClaimResponse.request._PharmacyClaim.value&quot;,
+                    &quot;text&quot;: &quot;PharmacyClaim&quot;,
+                    &quot;type&quot;: &quot;reference&quot;
+                  }
+                ]
+              },
+              {
+                &quot;http://www.healthintersections.com.au/fhir/Profile/metadata#type&quot;: [
+                  {
+                    &quot;valueString&quot;: &quot;Reference&quot;
+                  }
+                ],
+                &quot;linkId&quot;: &quot;ClaimResponse.request._VisionClaim&quot;,
+                &quot;question&quot;: [
+                  {
+                    &quot;http://www.healthintersections.com.au/fhir/Profile/metadata#reference&quot;: [
+                      {
+                        &quot;valueString&quot;: &quot;/VisionClaim?subject=$subj&amp;patient=$subj&amp;encounter=$encounter&quot;
+                      }
+                    ],
+                    &quot;linkId&quot;: &quot;ClaimResponse.request._VisionClaim.value&quot;,
+                    &quot;text&quot;: &quot;VisionClaim&quot;,
+                    &quot;type&quot;: &quot;reference&quot;
+                  }
+                ]
+              },
+              {
+                &quot;http://www.healthintersections.com.au/fhir/Profile/metadata#type&quot;: [
+                  {
+                    &quot;valueString&quot;: &quot;Reference&quot;
+                  }
+                ],
+                &quot;linkId&quot;: &quot;ClaimResponse.request._ProfessionalClaim&quot;,
+                &quot;question&quot;: [
+                  {
+                    &quot;http://www.healthintersections.com.au/fhir/Profile/metadata#reference&quot;: [
+                      {
+                        &quot;valueString&quot;: &quot;/ProfessionalClaim?subject=$subj&amp;patient=$subj&amp;encounter=$encounter&quot;
+                      }
+                    ],
+                    &quot;linkId&quot;: &quot;ClaimResponse.request._ProfessionalClaim.value&quot;,
+                    &quot;text&quot;: &quot;ProfessionalClaim&quot;,
+                    &quot;type&quot;: &quot;reference&quot;
+                  }
+                ]
+              },
+              {
+                &quot;http://www.healthintersections.com.au/fhir/Profile/metadata#type&quot;: [
+                  {
+                    &quot;valueString&quot;: &quot;Reference&quot;
+                  }
+                ],
+                &quot;linkId&quot;: &quot;ClaimResponse.request._InstitutionalClaim&quot;,
+                &quot;question&quot;: [
+                  {
+                    &quot;http://www.healthintersections.com.au/fhir/Profile/metadata#reference&quot;: [
+                      {
+                        &quot;valueString&quot;: &quot;/InstitutionalClaim?subject=$subj&amp;patient=$subj&amp;encounter=$encounter&quot;
+                      }
+                    ],
+                    &quot;linkId&quot;: &quot;ClaimResponse.request._InstitutionalClaim.value&quot;,
+                    &quot;text&quot;: &quot;InstitutionalClaim&quot;,
+                    &quot;type&quot;: &quot;reference&quot;
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        &quot;http://hl7.org/fhir/Profile/questionnaire-extensions#flyover&quot;: [
+          {
+            &quot;valueString&quot;: &quot;The version of the style of resource contents. This should be mapped to the allowable profiles for this and supporting resources.&quot;
+          }
+        ],
+        &quot;http://www.healthintersections.com.au/fhir/Profile/metadata#type&quot;: [
+          {
+            &quot;valueString&quot;: &quot;Coding&quot;
+          }
+        ],
+        &quot;linkId&quot;: &quot;ClaimResponse.ruleset&quot;,
+        &quot;repeats&quot;: true,
+        &quot;question&quot;: [
+          {
+            &quot;linkId&quot;: &quot;ClaimResponse.ruleset.value&quot;,
+            &quot;text&quot;: &quot;Resource version&quot;,
+            &quot;type&quot;: &quot;open-choice&quot;
+          }
+        ]
+      },
+      {
+        &quot;http://hl7.org/fhir/Profile/questionnaire-extensions#flyover&quot;: [
+          {
+            &quot;valueString&quot;: &quot;The style (standard) and version of the original material which was converted into this resource.&quot;
+          }
+        ],
+        &quot;http://www.healthintersections.com.au/fhir/Profile/metadata#type&quot;: [
+          {
+            &quot;valueString&quot;: &quot;Coding&quot;
+          }
+        ],
+        &quot;linkId&quot;: &quot;ClaimResponse.originalRuleset&quot;,
+        &quot;repeats&quot;: true,
+        &quot;question&quot;: [
+          {
+            &quot;linkId&quot;: &quot;ClaimResponse.originalRuleset.value&quot;,
+            &quot;text&quot;: &quot;Original version&quot;,
+            &quot;type&quot;: &quot;open-choice&quot;
+          }
+        ]
+      },
+      {
+        &quot;http://hl7.org/fhir/Profile/questionnaire-extensions#flyover&quot;: [
+          {
+            &quot;valueString&quot;: &quot;The date when the enclosed suite of services were performed or completed.&quot;
+          }
+        ],
+        &quot;http://www.healthintersections.com.au/fhir/Profile/metadata#type&quot;: [
+          {
+            &quot;valueString&quot;: &quot;datetime&quot;
+          }
+        ],
+        &quot;linkId&quot;: &quot;ClaimResponse.created&quot;,
+        &quot;repeats&quot;: true,
+        &quot;question&quot;: [
+          {
+            &quot;linkId&quot;: &quot;ClaimResponse.created.value&quot;,
+            &quot;text&quot;: &quot;Creation date&quot;,
+            &quot;type&quot;: &quot;dateTime&quot;
+          }
+        ]
+      },
+      {
+        &quot;http://hl7.org/fhir/Profile/questionnaire-extensions#flyover&quot;: [
+          {
+            &quot;valueString&quot;: &quot;The Insurer who produced this adjudicated response.&quot;
+          }
+        ],
+        &quot;http://www.healthintersections.com.au/fhir/Profile/metadata#type&quot;: [
+          {
+            &quot;valueString&quot;: &quot;Reference&quot;
+          }
+        ],
+        &quot;linkId&quot;: &quot;ClaimResponse.organization&quot;,
+        &quot;repeats&quot;: true,
+        &quot;question&quot;: [
+          {
+            &quot;http://www.healthintersections.com.au/fhir/Profile/metadata#reference&quot;: [
+              {
+                &quot;valueString&quot;: &quot;/Organization?subject=$subj&amp;patient=$subj&amp;encounter=$encounter&quot;
+              }
+            ],
+            &quot;linkId&quot;: &quot;ClaimResponse.organization.value&quot;,
+            &quot;text&quot;: &quot;Insurer&quot;,
+            &quot;type&quot;: &quot;reference&quot;
+          }
+        ]
+      },
+      {
+        &quot;http://hl7.org/fhir/Profile/questionnaire-extensions#flyover&quot;: [
+          {
+            &quot;valueString&quot;: &quot;The practitioner who is responsible for the services rendered to the patient.&quot;
+          }
+        ],
+        &quot;http://www.healthintersections.com.au/fhir/Profile/metadata#type&quot;: [
+          {
+            &quot;valueString&quot;: &quot;Reference&quot;
+          }
+        ],
+        &quot;linkId&quot;: &quot;ClaimResponse.requestProvider&quot;,
+        &quot;repeats&quot;: true,
+        &quot;question&quot;: [
+          {
+            &quot;http://www.healthintersections.com.au/fhir/Profile/metadata#reference&quot;: [
+              {
+                &quot;valueString&quot;: &quot;/Practitioner?subject=$subj&amp;patient=$subj&amp;encounter=$encounter&quot;
+              }
+            ],
+            &quot;linkId&quot;: &quot;ClaimResponse.requestProvider.value&quot;,
+            &quot;text&quot;: &quot;Responsible practitioner&quot;,
+            &quot;type&quot;: &quot;reference&quot;
+          }
+        ]
+      },
+      {
+        &quot;http://hl7.org/fhir/Profile/questionnaire-extensions#flyover&quot;: [
+          {
+            &quot;valueString&quot;: &quot;The organization which is responsible for the services rendered to the patient.&quot;
+          }
+        ],
+        &quot;http://www.healthintersections.com.au/fhir/Profile/metadata#type&quot;: [
+          {
+            &quot;valueString&quot;: &quot;Reference&quot;
+          }
+        ],
+        &quot;linkId&quot;: &quot;ClaimResponse.requestOrganization&quot;,
+        &quot;repeats&quot;: true,
+        &quot;question&quot;: [
+          {
+            &quot;http://www.healthintersections.com.au/fhir/Profile/metadata#reference&quot;: [
+              {
+                &quot;valueString&quot;: &quot;/Organization?subject=$subj&amp;patient=$subj&amp;encounter=$encounter&quot;
+              }
+            ],
+            &quot;linkId&quot;: &quot;ClaimResponse.requestOrganization.value&quot;,
+            &quot;text&quot;: &quot;Responsible organization&quot;,
+            &quot;type&quot;: &quot;reference&quot;
+          }
+        ]
+      },
+      {
+        &quot;http://hl7.org/fhir/Profile/questionnaire-extensions#flyover&quot;: [
+          {
+            &quot;valueString&quot;: &quot;Transaction status: error, complete.&quot;
+          }
+        ],
+        &quot;http://www.healthintersections.com.au/fhir/Profile/metadata#type&quot;: [
+          {
+            &quot;valueString&quot;: &quot;code&quot;
+          }
+        ],
+        &quot;linkId&quot;: &quot;ClaimResponse.outcome&quot;,
+        &quot;repeats&quot;: true,
+        &quot;question&quot;: [
+          {
+            &quot;linkId&quot;: &quot;ClaimResponse.outcome.value&quot;,
+            &quot;text&quot;: &quot;outcome&quot;,
+            &quot;type&quot;: &quot;choice&quot;
+          }
+        ]
+      },
+      {
+        &quot;http://hl7.org/fhir/Profile/questionnaire-extensions#flyover&quot;: [
+          {
+            &quot;valueString&quot;: &quot;A description of the status of the adjudication.&quot;
+          }
+        ],
+        &quot;http://www.healthintersections.com.au/fhir/Profile/metadata#type&quot;: [
+          {
+            &quot;valueString&quot;: &quot;string&quot;
+          }
+        ],
+        &quot;linkId&quot;: &quot;ClaimResponse.disposition&quot;,
+        &quot;repeats&quot;: true,
+        &quot;question&quot;: [
+          {
+            &quot;linkId&quot;: &quot;ClaimResponse.disposition.value&quot;,
+            &quot;text&quot;: &quot;Disposition Message&quot;,
+            &quot;type&quot;: &quot;string&quot;
+          }
+        ]
+      },
+      {
+        &quot;http://hl7.org/fhir/Profile/questionnaire-extensions#flyover&quot;: [
+          {
+            &quot;valueString&quot;: &quot;Party to be reimbursed: Subscriber, provider, other.&quot;
+          }
+        ],
+        &quot;http://www.healthintersections.com.au/fhir/Profile/metadata#type&quot;: [
+          {
+            &quot;valueString&quot;: &quot;Coding&quot;
+          }
+        ],
+        &quot;linkId&quot;: &quot;ClaimResponse.payeeType&quot;,
+        &quot;repeats&quot;: true,
+        &quot;question&quot;: [
+          {
+            &quot;linkId&quot;: &quot;ClaimResponse.payeeType.value&quot;,
+            &quot;text&quot;: &quot;Party to be paid any benefits payable&quot;,
+            &quot;type&quot;: &quot;open-choice&quot;
+          }
+        ]
+      },
+      {
+        &quot;http://hl7.org/fhir/Profile/questionnaire-extensions#flyover&quot;: [
+          {
+            &quot;valueString&quot;: &quot;The first tier service adjudications for submitted services.&quot;
+          }
+        ],
+        &quot;linkId&quot;: &quot;ClaimResponse.item&quot;,
+        &quot;title&quot;: &quot;Line items&quot;,
+        &quot;repeats&quot;: true,
+        &quot;group&quot;: [
+          {
+            &quot;http://hl7.org/fhir/Profile/questionnaire-extensions#flyover&quot;: [
+              {
+                &quot;valueString&quot;: &quot;unique id for the element within a resource (for internal references).&quot;
+              }
+            ],
+            &quot;http://www.healthintersections.com.au/fhir/Profile/metadata#type&quot;: [
+              {
+                &quot;valueString&quot;: &quot;string&quot;
+              }
+            ],
+            &quot;linkId&quot;: &quot;ClaimResponse.item.id&quot;,
+            &quot;repeats&quot;: true,
+            &quot;question&quot;: [
+              {
+                &quot;linkId&quot;: &quot;ClaimResponse.item.id.value&quot;,
+                &quot;text&quot;: &quot;xml:id (or equivalent in JSON)&quot;,
+                &quot;type&quot;: &quot;string&quot;
+              }
+            ]
+          },
+          {
+            &quot;http://hl7.org/fhir/Profile/questionnaire-extensions#flyover&quot;: [
+              {
+                &quot;valueString&quot;: &quot;A service line number.&quot;
+              }
+            ],
+            &quot;http://www.healthintersections.com.au/fhir/Profile/metadata#type&quot;: [
+              {
+                &quot;valueString&quot;: &quot;integer&quot;
+              }
+            ],
+            &quot;linkId&quot;: &quot;ClaimResponse.item.sequenceLinkId&quot;,
+            &quot;required&quot;: true,
+            &quot;repeats&quot;: true,
+            &quot;question&quot;: [
+              {
+                &quot;linkId&quot;: &quot;ClaimResponse.item.sequenceLinkId.value&quot;,
+                &quot;text&quot;: &quot;Service instance&quot;,
+                &quot;type&quot;: &quot;integer&quot;
+              }
+            ]
+          },
+          {
+            &quot;http://hl7.org/fhir/Profile/questionnaire-extensions#flyover&quot;: [
+              {
+                &quot;valueString&quot;: &quot;A list of note references to the notes provided below.&quot;
+              }
+            ],
+            &quot;http://www.healthintersections.com.au/fhir/Profile/metadata#type&quot;: [
+              {
+                &quot;valueString&quot;: &quot;integer&quot;
+              }
+            ],
+            &quot;linkId&quot;: &quot;ClaimResponse.item.noteNumber&quot;,
+            &quot;repeats&quot;: true,
+            &quot;question&quot;: [
+              {
+                &quot;linkId&quot;: &quot;ClaimResponse.item.noteNumber.value&quot;,
+                &quot;text&quot;: &quot;List of note numbers which apply&quot;,
+                &quot;type&quot;: &quot;integer&quot;
+              }
+            ]
+          },
+          {
+            &quot;http://hl7.org/fhir/Profile/questionnaire-extensions#flyover&quot;: [
+              {
+                &quot;valueString&quot;: &quot;The adjudications results.&quot;
+              }
+            ],
+            &quot;linkId&quot;: &quot;ClaimResponse.item.adjudication&quot;,
+            &quot;title&quot;: &quot;Adjudication details&quot;,
+            &quot;repeats&quot;: true,
+            &quot;group&quot;: [
+              {
+                &quot;http://hl7.org/fhir/Profile/questionnaire-extensions#flyover&quot;: [
+                  {
+                    &quot;valueString&quot;: &quot;unique id for the element within a resource (for internal references).&quot;
+                  }
+                ],
+                &quot;http://www.healthintersections.com.au/fhir/Profile/metadata#type&quot;: [
+                  {
+                    &quot;valueString&quot;: &quot;string&quot;
+                  }
+                ],
+                &quot;linkId&quot;: &quot;ClaimResponse.item.adjudication.id&quot;,
+                &quot;repeats&quot;: true,
+                &quot;question&quot;: [
+                  {
+                    &quot;linkId&quot;: &quot;ClaimResponse.item.adjudication.id.value&quot;,
+                    &quot;text&quot;: &quot;xml:id (or equivalent in JSON)&quot;,
+                    &quot;type&quot;: &quot;string&quot;
+                  }
+                ]
+              },
+              {
+                &quot;http://hl7.org/fhir/Profile/questionnaire-extensions#flyover&quot;: [
+                  {
+                    &quot;valueString&quot;: &quot;Code indicating: Co-Pay, deductable, elegible, benefit, tax, etc.&quot;
+                  }
+                ],
+                &quot;http://www.healthintersections.com.au/fhir/Profile/metadata#type&quot;: [
+                  {
+                    &quot;valueString&quot;: &quot;Coding&quot;
+                  }
+                ],
+                &quot;linkId&quot;: &quot;ClaimResponse.item.adjudication.code&quot;,
+                &quot;required&quot;: true,
+                &quot;repeats&quot;: true,
+                &quot;question&quot;: [
+                  {
+                    &quot;linkId&quot;: &quot;ClaimResponse.item.adjudication.code.value&quot;,
+                    &quot;text&quot;: &quot;Adjudication category such as co-pay, eligible, benefit, etc.&quot;,
+                    &quot;type&quot;: &quot;open-choice&quot;
+                  }
+                ]
+              },
+              {
+                &quot;http://hl7.org/fhir/Profile/questionnaire-extensions#flyover&quot;: [
+                  {
+                    &quot;valueString&quot;: &quot;Monitory amount associated with the code.&quot;
+                  }
+                ],
+                &quot;http://www.healthintersections.com.au/fhir/Profile/metadata#type&quot;: [
+                  {
+                    &quot;valueString&quot;: &quot;Money&quot;
+                  }
+                ],
+                &quot;linkId&quot;: &quot;ClaimResponse.item.adjudication.amount&quot;,
+                &quot;text&quot;: &quot;Monitary amount&quot;,
+                &quot;repeats&quot;: true,
+                &quot;question&quot;: [
+                  {
+                    &quot;linkId&quot;: &quot;ClaimResponse.item.adjudication.amount.value&quot;,
+                    &quot;text&quot;: &quot;value:&quot;,
+                    &quot;type&quot;: &quot;decimal&quot;
+                  },
+                  {
+                    &quot;linkId&quot;: &quot;ClaimResponse.item.adjudication.amount.currency&quot;,
+                    &quot;text&quot;: &quot;currency:&quot;,
+                    &quot;type&quot;: &quot;string&quot;
+                  }
+                ]
+              },
+              {
+                &quot;http://hl7.org/fhir/Profile/questionnaire-extensions#flyover&quot;: [
+                  {
+                    &quot;valueString&quot;: &quot;A non-monitary value for example a percentage. Mutually exclusive to the amount element above.&quot;
+                  }
+                ],
+                &quot;http://www.healthintersections.com.au/fhir/Profile/metadata#type&quot;: [
+                  {
+                    &quot;valueString&quot;: &quot;decimal&quot;
+                  }
+                ],
+                &quot;linkId&quot;: &quot;ClaimResponse.item.adjudication.value&quot;,
+                &quot;repeats&quot;: true,
+                &quot;question&quot;: [
+                  {
+                    &quot;linkId&quot;: &quot;ClaimResponse.item.adjudication.value.value&quot;,
+                    &quot;text&quot;: &quot;Non-monitory value&quot;,
+                    &quot;type&quot;: &quot;decimal&quot;
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            &quot;http://hl7.org/fhir/Profile/questionnaire-extensions#flyover&quot;: [
+              {
+                &quot;valueString&quot;: &quot;The second tier service adjudications for submitted services.&quot;
+              }
+            ],
+            &quot;linkId&quot;: &quot;ClaimResponse.item.detail&quot;,
+            &quot;title&quot;: &quot;Detail line items&quot;,
+            &quot;repeats&quot;: true,
+            &quot;group&quot;: [
+              {
+                &quot;http://hl7.org/fhir/Profile/questionnaire-extensions#flyover&quot;: [
+                  {
+                    &quot;valueString&quot;: &quot;unique id for the element within a resource (for internal references).&quot;
+                  }
+                ],
+                &quot;http://www.healthintersections.com.au/fhir/Profile/metadata#type&quot;: [
+                  {
+                    &quot;valueString&quot;: &quot;string&quot;
+                  }
+                ],
+                &quot;linkId&quot;: &quot;ClaimResponse.item.detail.id&quot;,
+                &quot;repeats&quot;: true,
+                &quot;question&quot;: [
+                  {
+                    &quot;linkId&quot;: &quot;ClaimResponse.item.detail.id.value&quot;,
+                    &quot;text&quot;: &quot;xml:id (or equivalent in JSON)&quot;,
+                    &quot;type&quot;: &quot;string&quot;
+                  }
+                ]
+              },
+              {
+                &quot;http://hl7.org/fhir/Profile/questionnaire-extensions#flyover&quot;: [
+                  {
+                    &quot;valueString&quot;: &quot;A service line number.&quot;
+                  }
+                ],
+                &quot;http://www.healthintersections.com.au/fhir/Profile/metadata#type&quot;: [
+                  {
+                    &quot;valueString&quot;: &quot;integer&quot;
+                  }
+                ],
+                &quot;linkId&quot;: &quot;ClaimResponse.item.detail.sequenceLinkId&quot;,
+                &quot;required&quot;: true,
+                &quot;repeats&quot;: true,
+                &quot;question&quot;: [
+                  {
+                    &quot;linkId&quot;: &quot;ClaimResponse.item.detail.sequenceLinkId.value&quot;,
+                    &quot;text&quot;: &quot;Service instance&quot;,
+                    &quot;type&quot;: &quot;integer&quot;
+                  }
+                ]
+              },
+              {
+                &quot;http://hl7.org/fhir/Profile/questionnaire-extensions#flyover&quot;: [
+                  {
+                    &quot;valueString&quot;: &quot;The adjudications results.&quot;
+                  }
+                ],
+                &quot;linkId&quot;: &quot;ClaimResponse.item.detail.adjudication&quot;,
+                &quot;title&quot;: &quot;Detail adjudication&quot;,
+                &quot;repeats&quot;: true,
+                &quot;group&quot;: [
+                  {
+                    &quot;http://hl7.org/fhir/Profile/questionnaire-extensions#flyover&quot;: [
+                      {
+                        &quot;valueString&quot;: &quot;unique id for the element within a resource (for internal references).&quot;
+                      }
+                    ],
+                    &quot;http://www.healthintersections.com.au/fhir/Profile/metadata#type&quot;: [
+                      {
+                        &quot;valueString&quot;: &quot;string&quot;
+                      }
+                    ],
+                    &quot;linkId&quot;: &quot;ClaimResponse.item.detail.adjudication.id&quot;,
+                    &quot;repeats&quot;: true,
+                    &quot;question&quot;: [
+                      {
+                        &quot;linkId&quot;: &quot;ClaimResponse.item.detail.adjudication.id.value&quot;,
+                        &quot;text&quot;: &quot;xml:id (or equivalent in JSON)&quot;,
+                        &quot;type&quot;: &quot;string&quot;
+                      }
+                    ]
+                  },
+                  {
+                    &quot;http://hl7.org/fhir/Profile/questionnaire-extensions#flyover&quot;: [
+                      {
+                        &quot;valueString&quot;: &quot;Code indicating: Co-Pay, deductable, elegible, benefit, tax, etc.&quot;
+                      }
+                    ],
+                    &quot;http://www.healthintersections.com.au/fhir/Profile/metadata#type&quot;: [
+                      {
+                        &quot;valueString&quot;: &quot;Coding&quot;
+                      }
+                    ],
+                    &quot;linkId&quot;: &quot;ClaimResponse.item.detail.adjudication.code&quot;,
+                    &quot;required&quot;: true,
+                    &quot;repeats&quot;: true,
+                    &quot;question&quot;: [
+                      {
+                        &quot;linkId&quot;: &quot;ClaimResponse.item.detail.adjudication.code.value&quot;,
+                        &quot;text&quot;: &quot;Adjudication category such as co-pay, eligible, benefit, etc.&quot;,
+                        &quot;type&quot;: &quot;open-choice&quot;
+                      }
+                    ]
+                  },
+                  {
+                    &quot;http://hl7.org/fhir/Profile/questionnaire-extensions#flyover&quot;: [
+                      {
+                        &quot;valueString&quot;: &quot;Monitory amount associated with the code.&quot;
+                      }
+                    ],
+                    &quot;http://www.healthintersections.com.au/fhir/Profile/metadata#type&quot;: [
+                      {
+                        &quot;valueString&quot;: &quot;Money&quot;
+                      }
+                    ],
+                    &quot;linkId&quot;: &quot;ClaimResponse.item.detail.adjudication.amount&quot;,
+                    &quot;text&quot;: &quot;Monitary amount&quot;,
+                    &quot;repeats&quot;: true,
+                    &quot;question&quot;: [
+                      {
+                        &quot;linkId&quot;: &quot;ClaimResponse.item.detail.adjudication.amount.value&quot;,
+                        &quot;text&quot;: &quot;value:&quot;,
+                        &quot;type&quot;: &quot;decimal&quot;
+                      },
+                      {
+                        &quot;linkId&quot;: &quot;ClaimResponse.item.detail.adjudication.amount.currency&quot;,
+                        &quot;text&quot;: &quot;currency:&quot;,
+                        &quot;type&quot;: &quot;string&quot;
+                      }
+                    ]
+                  },
+                  {
+                    &quot;http://hl7.org/fhir/Profile/questionnaire-extensions#flyover&quot;: [
+                      {
+                        &quot;valueString&quot;: &quot;A non-monitary value for example a percentage. Mutually exclusive to the amount element above.&quot;
+                      }
+                    ],
+                    &quot;http://www.healthintersections.com.au/fhir/Profile/metadata#type&quot;: [
+                      {
+                        &quot;valueString&quot;: &quot;decimal&quot;
+                      }
+                    ],
+                    &quot;linkId&quot;: &quot;ClaimResponse.item.detail.adjudication.value&quot;,
+                    &quot;repeats&quot;: true,
+                    &quot;question&quot;: [
+                      {
+                        &quot;linkId&quot;: &quot;ClaimResponse.item.detail.adjudication.value.value&quot;,
+                        &quot;text&quot;: &quot;Non-monitory value&quot;,
+                        &quot;type&quot;: &quot;decimal&quot;
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                &quot;http://hl7.org/fhir/Profile/questionnaire-extensions#flyover&quot;: [
+                  {
+                    &quot;valueString&quot;: &quot;The third tier service adjudications for submitted services.&quot;
+                  }
+                ],
+                &quot;linkId&quot;: &quot;ClaimResponse.item.detail.subdetail&quot;,
+                &quot;title&quot;: &quot;Subdetail line items&quot;,
+                &quot;repeats&quot;: true,
+                &quot;group&quot;: [
+                  {
+                    &quot;http://hl7.org/fhir/Profile/questionnaire-extensions#flyover&quot;: [
+                      {
+                        &quot;valueString&quot;: &quot;unique id for the element within a resource (for internal references).&quot;
+                      }
+                    ],
+                    &quot;http://www.healthintersections.com.au/fhir/Profile/metadata#type&quot;: [
+                      {
+                        &quot;valueString&quot;: &quot;string&quot;
+                      }
+                    ],
+                    &quot;linkId&quot;: &quot;ClaimResponse.item.detail.subdetail.id&quot;,
+                    &quot;repeats&quot;: true,
+                    &quot;question&quot;: [
+                      {
+                        &quot;linkId&quot;: &quot;ClaimResponse.item.detail.subdetail.id.value&quot;,
+                        &quot;text&quot;: &quot;xml:id (or equivalent in JSON)&quot;,
+                        &quot;type&quot;: &quot;string&quot;
+                      }
+                    ]
+                  },
+                  {
+                    &quot;http://hl7.org/fhir/Profile/questionnaire-extensions#flyover&quot;: [
+                      {
+                        &quot;valueString&quot;: &quot;A service line number.&quot;
+                      }
+                    ],
+                    &quot;http://www.healthintersections.com.au/fhir/Profile/metadata#type&quot;: [
+                      {
+                        &quot;valueString&quot;: &quot;integer&quot;
+                      }
+                    ],
+                    &quot;linkId&quot;: &quot;ClaimResponse.item.detail.subdetail.sequenceLinkId&quot;,
+                    &quot;required&quot;: true,
+                    &quot;repeats&quot;: true,
+                    &quot;question&quot;: [
+                      {
+                        &quot;linkId&quot;: &quot;ClaimResponse.item.detail.subdetail.sequenceLinkId.value&quot;,
+                        &quot;text&quot;: &quot;Service instance&quot;,
+                        &quot;type&quot;: &quot;integer&quot;
+                      }
+                    ]
+                  },
+                  {
+                    &quot;http://hl7.org/fhir/Profile/questionnaire-extensions#flyover&quot;: [
+                      {
+                        &quot;valueString&quot;: &quot;The adjudications results.&quot;
+                      }
+                    ],
+                    &quot;linkId&quot;: &quot;ClaimResponse.item.detail.subdetail.adjudication&quot;,
+                    &quot;title&quot;: &quot;Subdetail adjudication&quot;,
+                    &quot;repeats&quot;: true,
+                    &quot;group&quot;: [
+                      {
+                        &quot;http://hl7.org/fhir/Profile/questionnaire-extensions#flyover&quot;: [
+                          {
+                            &quot;valueString&quot;: &quot;unique id for the element within a resource (for internal references).&quot;
+                          }
+                        ],
+                        &quot;http://www.healthintersections.com.au/fhir/Profile/metadata#type&quot;: [
+                          {
+                            &quot;valueString&quot;: &quot;string&quot;
+                          }
+                        ],
+                        &quot;linkId&quot;: &quot;ClaimResponse.item.detail.subdetail.adjudication.id&quot;,
+                        &quot;repeats&quot;: true,
+                        &quot;question&quot;: [
+                          {
+                            &quot;linkId&quot;: &quot;ClaimResponse.item.detail.subdetail.adjudication.id.value&quot;,
+                            &quot;text&quot;: &quot;xml:id (or equivalent in JSON)&quot;,
+                            &quot;type&quot;: &quot;string&quot;
+                          }
+                        ]
+                      },
+                      {
+                        &quot;http://hl7.org/fhir/Profile/questionnaire-extensions#flyover&quot;: [
+                          {
+                            &quot;valueString&quot;: &quot;Code indicating: Co-Pay, deductable, elegible, benefit, tax, etc.&quot;
+                          }
+                        ],
+                        &quot;http://www.healthintersections.com.au/fhir/Profile/metadata#type&quot;: [
+                          {
+                            &quot;valueString&quot;: &quot;Coding&quot;
+                          }
+                        ],
+                        &quot;linkId&quot;: &quot;ClaimResponse.item.detail.subdetail.adjudication.code&quot;,
+                        &quot;required&quot;: true,
+                        &quot;repeats&quot;: true,
+                        &quot;question&quot;: [
+                          {
+                            &quot;linkId&quot;: &quot;ClaimResponse.item.detail.subdetail.adjudication.code.value&quot;,
+                            &quot;text&quot;: &quot;Adjudication category such as co-pay, eligible, benefit, etc.&quot;,
+                            &quot;type&quot;: &quot;open-choice&quot;
+                          }
+                        ]
+                      },
+                      {
+                        &quot;http://hl7.org/fhir/Profile/questionnaire-extensions#flyover&quot;: [
+                          {
+                            &quot;valueString&quot;: &quot;Monitory amount associated with the code.&quot;
+                          }
+                        ],
+                        &quot;http://www.healthintersections.com.au/fhir/Profile/metadata#type&quot;: [
+                          {
+                            &quot;valueString&quot;: &quot;Money&quot;
+                          }
+                        ],
+                        &quot;linkId&quot;: &quot;ClaimResponse.item.detail.subdetail.adjudication.amount&quot;,
+                        &quot;text&quot;: &quot;Monitary amount&quot;,
+                        &quot;repeats&quot;: true,
+                        &quot;question&quot;: [
+                          {
+                            &quot;linkId&quot;: &quot;ClaimResponse.item.detail.subdetail.adjudication.amount.value&quot;,
+                            &quot;text&quot;: &quot;value:&quot;,
+                            &quot;type&quot;: &quot;decimal&quot;
+                          },
+                          {
+                            &quot;linkId&quot;: &quot;ClaimResponse.item.detail.subdetail.adjudication.amount.currency&quot;,
+                            &quot;text&quot;: &quot;currency:&quot;,
+                            &quot;type&quot;: &quot;string&quot;
+                          }
+                        ]
+                      },
+                      {
+                        &quot;http://hl7.org/fhir/Profile/questionnaire-extensions#flyover&quot;: [
+                          {
+                            &quot;valueString&quot;: &quot;A non-monitary value for example a percentage. Mutually exclusive to the amount element above.&quot;
+                          }
+                        ],
+                        &quot;http://www.healthintersections.com.au/fhir/Profile/metadata#type&quot;: [
+                          {
+                            &quot;valueString&quot;: &quot;decimal&quot;
+                          }
+                        ],
+                        &quot;linkId&quot;: &quot;ClaimResponse.item.detail.subdetail.adjudication.value&quot;,
+                        &quot;repeats&quot;: true,
+                        &quot;question&quot;: [
+                          {
+                            &quot;linkId&quot;: &quot;ClaimResponse.item.detail.subdetail.adjudication.value.value&quot;,
+                            &quot;text&quot;: &quot;Non-monitory value&quot;,
+                            &quot;type&quot;: &quot;decimal&quot;
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        &quot;http://hl7.org/fhir/Profile/questionnaire-extensions#flyover&quot;: [
+          {
+            &quot;valueString&quot;: &quot;The first tier service adjudications for payor added services.&quot;
+          }
+        ],
+        &quot;linkId&quot;: &quot;ClaimResponse.additem&quot;,
+        &quot;title&quot;: &quot;Insurer added line items&quot;,
+        &quot;repeats&quot;: true,
+        &quot;group&quot;: [
+          {
+            &quot;http://hl7.org/fhir/Profile/questionnaire-extensions#flyover&quot;: [
+              {
+                &quot;valueString&quot;: &quot;unique id for the element within a resource (for internal references).&quot;
+              }
+            ],
+            &quot;http://www.healthintersections.com.au/fhir/Profile/metadata#type&quot;: [
+              {
+                &quot;valueString&quot;: &quot;string&quot;
+              }
+            ],
+            &quot;linkId&quot;: &quot;ClaimResponse.additem.id&quot;,
+            &quot;repeats&quot;: true,
+            &quot;question&quot;: [
+              {
+                &quot;linkId&quot;: &quot;ClaimResponse.additem.id.value&quot;,
+                &quot;text&quot;: &quot;xml:id (or equivalent in JSON)&quot;,
+                &quot;type&quot;: &quot;string&quot;
+              }
+            ]
+          },
+          {
+            &quot;http://hl7.org/fhir/Profile/questionnaire-extensions#flyover&quot;: [
+              {
+                &quot;valueString&quot;: &quot;List of input service items which this service line is intended to replace.&quot;
+              }
+            ],
+            &quot;http://www.healthintersections.com.au/fhir/Profile/metadata#type&quot;: [
+              {
+                &quot;valueString&quot;: &quot;integer&quot;
+              }
+            ],
+            &quot;linkId&quot;: &quot;ClaimResponse.additem.sequenceLinkId&quot;,
+            &quot;repeats&quot;: true,
+            &quot;question&quot;: [
+              {
+                &quot;linkId&quot;: &quot;ClaimResponse.additem.sequenceLinkId.value&quot;,
+                &quot;text&quot;: &quot;Service instances&quot;,
+                &quot;type&quot;: &quot;integer&quot;
+              }
+            ]
+          },
+          {
+            &quot;http://hl7.org/fhir/Profile/questionnaire-extensions#flyover&quot;: [
+              {
+                &quot;valueString&quot;: &quot;A code to indicate the Professional Service or Product supplied.&quot;
+              }
+            ],
+            &quot;http://www.healthintersections.com.au/fhir/Profile/metadata#type&quot;: [
+              {
+                &quot;valueString&quot;: &quot;Coding&quot;
+              }
+            ],
+            &quot;linkId&quot;: &quot;ClaimResponse.additem.service&quot;,
+            &quot;required&quot;: true,
+            &quot;repeats&quot;: true,
+            &quot;question&quot;: [
+              {
+                &quot;linkId&quot;: &quot;ClaimResponse.additem.service.value&quot;,
+                &quot;text&quot;: &quot;Group, Service or Product&quot;,
+                &quot;type&quot;: &quot;open-choice&quot;
+              }
+            ]
+          },
+          {
+            &quot;http://hl7.org/fhir/Profile/questionnaire-extensions#flyover&quot;: [
+              {
+                &quot;valueString&quot;: &quot;The fee charged for the professional service or product..&quot;
+              }
+            ],
+            &quot;http://www.healthintersections.com.au/fhir/Profile/metadata#type&quot;: [
+              {
+                &quot;valueString&quot;: &quot;Money&quot;
+              }
+            ],
+            &quot;linkId&quot;: &quot;ClaimResponse.additem.fee&quot;,
+            &quot;text&quot;: &quot;Professional fee or Product charge&quot;,
+            &quot;repeats&quot;: true,
+            &quot;question&quot;: [
+              {
+                &quot;linkId&quot;: &quot;ClaimResponse.additem.fee.value&quot;,
+                &quot;text&quot;: &quot;value:&quot;,
+                &quot;type&quot;: &quot;decimal&quot;
+              },
+              {
+                &quot;linkId&quot;: &quot;ClaimResponse.additem.fee.currency&quot;,
+                &quot;text&quot;: &quot;currency:&quot;,
+                &quot;type&quot;: &quot;string&quot;
+              }
+            ]
+          },
+          {
+            &quot;http://hl7.org/fhir/Profile/questionnaire-extensions#flyover&quot;: [
+              {
+                &quot;valueString&quot;: &quot;A list of note references to the notes provided below.&quot;
+              }
+            ],
+            &quot;http://www.healthintersections.com.au/fhir/Profile/metadata#type&quot;: [
+              {
+                &quot;valueString&quot;: &quot;integer&quot;
+              }
+            ],
+            &quot;linkId&quot;: &quot;ClaimResponse.additem.noteNumberLinkId&quot;,
+            &quot;repeats&quot;: true,
+            &quot;question&quot;: [
+              {
+                &quot;linkId&quot;: &quot;ClaimResponse.additem.noteNumberLinkId.value&quot;,
+                &quot;text&quot;: &quot;List of note numbers which apply&quot;,
+                &quot;type&quot;: &quot;integer&quot;
+              }
+            ]
+          },
+          {
+            &quot;http://hl7.org/fhir/Profile/questionnaire-extensions#flyover&quot;: [
+              {
+                &quot;valueString&quot;: &quot;The adjudications results.&quot;
+              }
+            ],
+            &quot;linkId&quot;: &quot;ClaimResponse.additem.adjudication&quot;,
+            &quot;title&quot;: &quot;Added items adjudication&quot;,
+            &quot;repeats&quot;: true,
+            &quot;group&quot;: [
+              {
+                &quot;http://hl7.org/fhir/Profile/questionnaire-extensions#flyover&quot;: [
+                  {
+                    &quot;valueString&quot;: &quot;unique id for the element within a resource (for internal references).&quot;
+                  }
+                ],
+                &quot;http://www.healthintersections.com.au/fhir/Profile/metadata#type&quot;: [
+                  {
+                    &quot;valueString&quot;: &quot;string&quot;
+                  }
+                ],
+                &quot;linkId&quot;: &quot;ClaimResponse.additem.adjudication.id&quot;,
+                &quot;repeats&quot;: true,
+                &quot;question&quot;: [
+                  {
+                    &quot;linkId&quot;: &quot;ClaimResponse.additem.adjudication.id.value&quot;,
+                    &quot;text&quot;: &quot;xml:id (or equivalent in JSON)&quot;,
+                    &quot;type&quot;: &quot;string&quot;
+                  }
+                ]
+              },
+              {
+                &quot;http://hl7.org/fhir/Profile/questionnaire-extensions#flyover&quot;: [
+                  {
+                    &quot;valueString&quot;: &quot;Code indicating: Co-Pay, deductable, elegible, benefit, tax, etc.&quot;
+                  }
+                ],
+                &quot;http://www.healthintersections.com.au/fhir/Profile/metadata#type&quot;: [
+                  {
+                    &quot;valueString&quot;: &quot;Coding&quot;
+                  }
+                ],
+                &quot;linkId&quot;: &quot;ClaimResponse.additem.adjudication.code&quot;,
+                &quot;required&quot;: true,
+                &quot;repeats&quot;: true,
+                &quot;question&quot;: [
+                  {
+                    &quot;linkId&quot;: &quot;ClaimResponse.additem.adjudication.code.value&quot;,
+                    &quot;text&quot;: &quot;Adjudication category such as co-pay, eligible, benefit, etc.&quot;,
+                    &quot;type&quot;: &quot;open-choice&quot;
+                  }
+                ]
+              },
+              {
+                &quot;http://hl7.org/fhir/Profile/questionnaire-extensions#flyover&quot;: [
+                  {
+                    &quot;valueString&quot;: &quot;Monitory amount associated with the code.&quot;
+                  }
+                ],
+                &quot;http://www.healthintersections.com.au/fhir/Profile/metadata#type&quot;: [
+                  {
+                    &quot;valueString&quot;: &quot;Money&quot;
+                  }
+                ],
+                &quot;linkId&quot;: &quot;ClaimResponse.additem.adjudication.amount&quot;,
+                &quot;text&quot;: &quot;Monitary amount&quot;,
+                &quot;repeats&quot;: true,
+                &quot;question&quot;: [
+                  {
+                    &quot;linkId&quot;: &quot;ClaimResponse.additem.adjudication.amount.value&quot;,
+                    &quot;text&quot;: &quot;value:&quot;,
+                    &quot;type&quot;: &quot;decimal&quot;
+                  },
+                  {
+                    &quot;linkId&quot;: &quot;ClaimResponse.additem.adjudication.amount.currency&quot;,
+                    &quot;text&quot;: &quot;currency:&quot;,
+                    &quot;type&quot;: &quot;string&quot;
+                  }
+                ]
+              },
+              {
+                &quot;http://hl7.org/fhir/Profile/questionnaire-extensions#flyover&quot;: [
+                  {
+                    &quot;valueString&quot;: &quot;A non-monitary value for example a percentage. Mutually exclusive to the amount element above.&quot;
+                  }
+                ],
+                &quot;http://www.healthintersections.com.au/fhir/Profile/metadata#type&quot;: [
+                  {
+                    &quot;valueString&quot;: &quot;decimal&quot;
+                  }
+                ],
+                &quot;linkId&quot;: &quot;ClaimResponse.additem.adjudication.value&quot;,
+                &quot;repeats&quot;: true,
+                &quot;question&quot;: [
+                  {
+                    &quot;linkId&quot;: &quot;ClaimResponse.additem.adjudication.value.value&quot;,
+                    &quot;text&quot;: &quot;Non-monitory value&quot;,
+                    &quot;type&quot;: &quot;decimal&quot;
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            &quot;http://hl7.org/fhir/Profile/questionnaire-extensions#flyover&quot;: [
+              {
+                &quot;valueString&quot;: &quot;The second tier service adjudications for payor added services.&quot;
+              }
+            ],
+            &quot;linkId&quot;: &quot;ClaimResponse.additem.detail&quot;,
+            &quot;title&quot;: &quot;Added items details&quot;,
+            &quot;repeats&quot;: true,
+            &quot;group&quot;: [
+              {
+                &quot;http://hl7.org/fhir/Profile/questionnaire-extensions#flyover&quot;: [
+                  {
+                    &quot;valueString&quot;: &quot;unique id for the element within a resource (for internal references).&quot;
+                  }
+                ],
+                &quot;http://www.healthintersections.com.au/fhir/Profile/metadata#type&quot;: [
+                  {
+                    &quot;valueString&quot;: &quot;string&quot;
+                  }
+                ],
+                &quot;linkId&quot;: &quot;ClaimResponse.additem.detail.id&quot;,
+                &quot;repeats&quot;: true,
+                &quot;question&quot;: [
+                  {
+                    &quot;linkId&quot;: &quot;ClaimResponse.additem.detail.id.value&quot;,
+                    &quot;text&quot;: &quot;xml:id (or equivalent in JSON)&quot;,
+                    &quot;type&quot;: &quot;string&quot;
+                  }
+                ]
+              },
+              {
+                &quot;http://hl7.org/fhir/Profile/questionnaire-extensions#flyover&quot;: [
+                  {
+                    &quot;valueString&quot;: &quot;A code to indicate the Professional Service or Product supplied.&quot;
+                  }
+                ],
+                &quot;http://www.healthintersections.com.au/fhir/Profile/metadata#type&quot;: [
+                  {
+                    &quot;valueString&quot;: &quot;Coding&quot;
+                  }
+                ],
+                &quot;linkId&quot;: &quot;ClaimResponse.additem.detail.service&quot;,
+                &quot;required&quot;: true,
+                &quot;repeats&quot;: true,
+                &quot;question&quot;: [
+                  {
+                    &quot;linkId&quot;: &quot;ClaimResponse.additem.detail.service.value&quot;,
+                    &quot;text&quot;: &quot;Service or Product&quot;,
+                    &quot;type&quot;: &quot;open-choice&quot;
+                  }
+                ]
+              },
+              {
+                &quot;http://hl7.org/fhir/Profile/questionnaire-extensions#flyover&quot;: [
+                  {
+                    &quot;valueString&quot;: &quot;The fee charged for the professional service or product..&quot;
+                  }
+                ],
+                &quot;http://www.healthintersections.com.au/fhir/Profile/metadata#type&quot;: [
+                  {
+                    &quot;valueString&quot;: &quot;Money&quot;
+                  }
+                ],
+                &quot;linkId&quot;: &quot;ClaimResponse.additem.detail.fee&quot;,
+                &quot;text&quot;: &quot;Professional fee or Product charge&quot;,
+                &quot;repeats&quot;: true,
+                &quot;question&quot;: [
+                  {
+                    &quot;linkId&quot;: &quot;ClaimResponse.additem.detail.fee.value&quot;,
+                    &quot;text&quot;: &quot;value:&quot;,
+                    &quot;type&quot;: &quot;decimal&quot;
+                  },
+                  {
+                    &quot;linkId&quot;: &quot;ClaimResponse.additem.detail.fee.currency&quot;,
+                    &quot;text&quot;: &quot;currency:&quot;,
+                    &quot;type&quot;: &quot;string&quot;
+                  }
+                ]
+              },
+              {
+                &quot;http://hl7.org/fhir/Profile/questionnaire-extensions#flyover&quot;: [
+                  {
+                    &quot;valueString&quot;: &quot;The adjudications results.&quot;
+                  }
+                ],
+                &quot;linkId&quot;: &quot;ClaimResponse.additem.detail.adjudication&quot;,
+                &quot;title&quot;: &quot;Added items detail adjudication&quot;,
+                &quot;repeats&quot;: true,
+                &quot;group&quot;: [
+                  {
+                    &quot;http://hl7.org/fhir/Profile/questionnaire-extensions#flyover&quot;: [
+                      {
+                        &quot;valueString&quot;: &quot;unique id for the element within a resource (for internal references).&quot;
+                      }
+                    ],
+                    &quot;http://www.healthintersections.com.au/fhir/Profile/metadata#type&quot;: [
+                      {
+                        &quot;valueString&quot;: &quot;string&quot;
+                      }
+                    ],
+                    &quot;linkId&quot;: &quot;ClaimResponse.additem.detail.adjudication.id&quot;,
+                    &quot;repeats&quot;: true,
+                    &quot;question&quot;: [
+                      {
+                        &quot;linkId&quot;: &quot;ClaimResponse.additem.detail.adjudication.id.value&quot;,
+                        &quot;text&quot;: &quot;xml:id (or equivalent in JSON)&quot;,
+                        &quot;type&quot;: &quot;string&quot;
+                      }
+                    ]
+                  },
+                  {
+                    &quot;http://hl7.org/fhir/Profile/questionnaire-extensions#flyover&quot;: [
+                      {
+                        &quot;valueString&quot;: &quot;Code indicating: Co-Pay, deductable, elegible, benefit, tax, etc.&quot;
+                      }
+                    ],
+                    &quot;http://www.healthintersections.com.au/fhir/Profile/metadata#type&quot;: [
+                      {
+                        &quot;valueString&quot;: &quot;Coding&quot;
+                      }
+                    ],
+                    &quot;linkId&quot;: &quot;ClaimResponse.additem.detail.adjudication.code&quot;,
+                    &quot;required&quot;: true,
+                    &quot;repeats&quot;: true,
+                    &quot;question&quot;: [
+                      {
+                        &quot;linkId&quot;: &quot;ClaimResponse.additem.detail.adjudication.code.value&quot;,
+                        &quot;text&quot;: &quot;Adjudication category such as co-pay, eligible, benefit, etc.&quot;,
+                        &quot;type&quot;: &quot;open-choice&quot;
+                      }
+                    ]
+                  },
+                  {
+                    &quot;http://hl7.org/fhir/Profile/questionnaire-extensions#flyover&quot;: [
+                      {
+                        &quot;valueString&quot;: &quot;Monitory amount associated with the code.&quot;
+                      }
+                    ],
+                    &quot;http://www.healthintersections.com.au/fhir/Profile/metadata#type&quot;: [
+                      {
+                        &quot;valueString&quot;: &quot;Money&quot;
+                      }
+                    ],
+                    &quot;linkId&quot;: &quot;ClaimResponse.additem.detail.adjudication.amount&quot;,
+                    &quot;text&quot;: &quot;Monitary amount&quot;,
+                    &quot;repeats&quot;: true,
+                    &quot;question&quot;: [
+                      {
+                        &quot;linkId&quot;: &quot;ClaimResponse.additem.detail.adjudication.amount.value&quot;,
+                        &quot;text&quot;: &quot;value:&quot;,
+                        &quot;type&quot;: &quot;decimal&quot;
+                      },
+                      {
+                        &quot;linkId&quot;: &quot;ClaimResponse.additem.detail.adjudication.amount.currency&quot;,
+                        &quot;text&quot;: &quot;currency:&quot;,
+                        &quot;type&quot;: &quot;string&quot;
+                      }
+                    ]
+                  },
+                  {
+                    &quot;http://hl7.org/fhir/Profile/questionnaire-extensions#flyover&quot;: [
+                      {
+                        &quot;valueString&quot;: &quot;A non-monitary value for example a percentage. Mutually exclusive to the amount element above.&quot;
+                      }
+                    ],
+                    &quot;http://www.healthintersections.com.au/fhir/Profile/metadata#type&quot;: [
+                      {
+                        &quot;valueString&quot;: &quot;decimal&quot;
+                      }
+                    ],
+                    &quot;linkId&quot;: &quot;ClaimResponse.additem.detail.adjudication.value&quot;,
+                    &quot;repeats&quot;: true,
+                    &quot;question&quot;: [
+                      {
+                        &quot;linkId&quot;: &quot;ClaimResponse.additem.detail.adjudication.value.value&quot;,
+                        &quot;text&quot;: &quot;Non-monitory value&quot;,
+                        &quot;type&quot;: &quot;decimal&quot;
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        &quot;http://hl7.org/fhir/Profile/questionnaire-extensions#flyover&quot;: [
+          {
+            &quot;valueString&quot;: &quot;Mutually exclusive with Services Provided (Item).&quot;
+          }
+        ],
+        &quot;linkId&quot;: &quot;ClaimResponse.error&quot;,
+        &quot;title&quot;: &quot;Processing errors&quot;,
+        &quot;repeats&quot;: true,
+        &quot;group&quot;: [
+          {
+            &quot;http://hl7.org/fhir/Profile/questionnaire-extensions#flyover&quot;: [
+              {
+                &quot;valueString&quot;: &quot;unique id for the element within a resource (for internal references).&quot;
+              }
+            ],
+            &quot;http://www.healthintersections.com.au/fhir/Profile/metadata#type&quot;: [
+              {
+                &quot;valueString&quot;: &quot;string&quot;
+              }
+            ],
+            &quot;linkId&quot;: &quot;ClaimResponse.error.id&quot;,
+            &quot;repeats&quot;: true,
+            &quot;question&quot;: [
+              {
+                &quot;linkId&quot;: &quot;ClaimResponse.error.id.value&quot;,
+                &quot;text&quot;: &quot;xml:id (or equivalent in JSON)&quot;,
+                &quot;type&quot;: &quot;string&quot;
+              }
+            ]
+          },
+          {
+            &quot;http://hl7.org/fhir/Profile/questionnaire-extensions#flyover&quot;: [
+              {
+                &quot;valueString&quot;: &quot;The sequence number of the line item submitted which contains the error. This value is ommitted when the error is elsewhere.&quot;
+              }
+            ],
+            &quot;http://www.healthintersections.com.au/fhir/Profile/metadata#type&quot;: [
+              {
+                &quot;valueString&quot;: &quot;integer&quot;
+              }
+            ],
+            &quot;linkId&quot;: &quot;ClaimResponse.error.sequenceLinkId&quot;,
+            &quot;repeats&quot;: true,
+            &quot;question&quot;: [
+              {
+                &quot;linkId&quot;: &quot;ClaimResponse.error.sequenceLinkId.value&quot;,
+                &quot;text&quot;: &quot;Item sequence number&quot;,
+                &quot;type&quot;: &quot;integer&quot;
+              }
+            ]
+          },
+          {
+            &quot;http://hl7.org/fhir/Profile/questionnaire-extensions#flyover&quot;: [
+              {
+                &quot;valueString&quot;: &quot;The sequence number of the addition within the line item submitted which contains the error. This value is ommitted when the error is not related to an Addition.&quot;
+              }
+            ],
+            &quot;http://www.healthintersections.com.au/fhir/Profile/metadata#type&quot;: [
+              {
+                &quot;valueString&quot;: &quot;integer&quot;
+              }
+            ],
+            &quot;linkId&quot;: &quot;ClaimResponse.error.detailSequenceLinkId&quot;,
+            &quot;repeats&quot;: true,
+            &quot;question&quot;: [
+              {
+                &quot;linkId&quot;: &quot;ClaimResponse.error.detailSequenceLinkId.value&quot;,
+                &quot;text&quot;: &quot;Detail sequence number&quot;,
+                &quot;type&quot;: &quot;integer&quot;
+              }
+            ]
+          },
+          {
+            &quot;http://hl7.org/fhir/Profile/questionnaire-extensions#flyover&quot;: [
+              {
+                &quot;valueString&quot;: &quot;The sequence number of the addition within the line item submitted which contains the error. This value is ommitted when the error is not related to an Addition.&quot;
+              }
+            ],
+            &quot;http://www.healthintersections.com.au/fhir/Profile/metadata#type&quot;: [
+              {
+                &quot;valueString&quot;: &quot;integer&quot;
+              }
+            ],
+            &quot;linkId&quot;: &quot;ClaimResponse.error.subdetailSequenceLinkId&quot;,
+            &quot;repeats&quot;: true,
+            &quot;question&quot;: [
+              {
+                &quot;linkId&quot;: &quot;ClaimResponse.error.subdetailSequenceLinkId.value&quot;,
+                &quot;text&quot;: &quot;Subdetail sequence number&quot;,
+                &quot;type&quot;: &quot;integer&quot;
+              }
+            ]
+          },
+          {
+            &quot;http://hl7.org/fhir/Profile/questionnaire-extensions#flyover&quot;: [
+              {
+                &quot;valueString&quot;: &quot;An error code,froma specified code system, which details why the claim could not be adjudicated.&quot;
+              }
+            ],
+            &quot;http://www.healthintersections.com.au/fhir/Profile/metadata#type&quot;: [
+              {
+                &quot;valueString&quot;: &quot;Coding&quot;
+              }
+            ],
+            &quot;linkId&quot;: &quot;ClaimResponse.error.code&quot;,
+            &quot;required&quot;: true,
+            &quot;repeats&quot;: true,
+            &quot;question&quot;: [
+              {
+                &quot;linkId&quot;: &quot;ClaimResponse.error.code.value&quot;,
+                &quot;text&quot;: &quot;Error code detailing processing issues&quot;,
+                &quot;type&quot;: &quot;open-choice&quot;
+              }
+            ]
+          }
+        ]
+      },
+      {
+        &quot;http://hl7.org/fhir/Profile/questionnaire-extensions#flyover&quot;: [
+          {
+            &quot;valueString&quot;: &quot;The total cost of the services reported.&quot;
+          }
+        ],
+        &quot;http://www.healthintersections.com.au/fhir/Profile/metadata#type&quot;: [
+          {
+            &quot;valueString&quot;: &quot;Money&quot;
+          }
+        ],
+        &quot;linkId&quot;: &quot;ClaimResponse.totalCost&quot;,
+        &quot;text&quot;: &quot;Total Cost of service from the Claim&quot;,
+        &quot;repeats&quot;: true,
+        &quot;question&quot;: [
+          {
+            &quot;linkId&quot;: &quot;ClaimResponse.totalCost.value&quot;,
+            &quot;text&quot;: &quot;value:&quot;,
+            &quot;type&quot;: &quot;decimal&quot;
+          },
+          {
+            &quot;linkId&quot;: &quot;ClaimResponse.totalCost.currency&quot;,
+            &quot;text&quot;: &quot;currency:&quot;,
+            &quot;type&quot;: &quot;string&quot;
+          }
+        ]
+      },
+      {
+        &quot;http://hl7.org/fhir/Profile/questionnaire-extensions#flyover&quot;: [
+          {
+            &quot;valueString&quot;: &quot;The amount of deductable applied which was not allocated to any particular service line.&quot;
+          }
+        ],
+        &quot;http://www.healthintersections.com.au/fhir/Profile/metadata#type&quot;: [
+          {
+            &quot;valueString&quot;: &quot;Money&quot;
+          }
+        ],
+        &quot;linkId&quot;: &quot;ClaimResponse.unallocDeductable&quot;,
+        &quot;text&quot;: &quot;Unallocated deductable&quot;,
+        &quot;repeats&quot;: true,
+        &quot;question&quot;: [
+          {
+            &quot;linkId&quot;: &quot;ClaimResponse.unallocDeductable.value&quot;,
+            &quot;text&quot;: &quot;value:&quot;,
+            &quot;type&quot;: &quot;decimal&quot;
+          },
+          {
+            &quot;linkId&quot;: &quot;ClaimResponse.unallocDeductable.currency&quot;,
+            &quot;text&quot;: &quot;currency:&quot;,
+            &quot;type&quot;: &quot;string&quot;
+          }
+        ]
+      },
+      {
+        &quot;http://hl7.org/fhir/Profile/questionnaire-extensions#flyover&quot;: [
+          {
+            &quot;valueString&quot;: &quot;Total amount of benefit payable (Equal to sum of the Benefit amounts from all detail lines and additions less the Unallocated Deductable).&quot;
+          }
+        ],
+        &quot;http://www.healthintersections.com.au/fhir/Profile/metadata#type&quot;: [
+          {
+            &quot;valueString&quot;: &quot;Money&quot;
+          }
+        ],
+        &quot;linkId&quot;: &quot;ClaimResponse.totalBenefit&quot;,
+        &quot;text&quot;: &quot;Total benefit payable for the Claim&quot;,
+        &quot;repeats&quot;: true,
+        &quot;question&quot;: [
+          {
+            &quot;linkId&quot;: &quot;ClaimResponse.totalBenefit.value&quot;,
+            &quot;text&quot;: &quot;value:&quot;,
+            &quot;type&quot;: &quot;decimal&quot;
+          },
+          {
+            &quot;linkId&quot;: &quot;ClaimResponse.totalBenefit.currency&quot;,
+            &quot;text&quot;: &quot;currency:&quot;,
+            &quot;type&quot;: &quot;string&quot;
+          }
+        ]
+      },
+      {
+        &quot;http://hl7.org/fhir/Profile/questionnaire-extensions#flyover&quot;: [
+          {
+            &quot;valueString&quot;: &quot;Adjustment to the payment of this transaction which is not related to adjudication of this transaction.&quot;
+          }
+        ],
+        &quot;http://www.healthintersections.com.au/fhir/Profile/metadata#type&quot;: [
+          {
+            &quot;valueString&quot;: &quot;Money&quot;
+          }
+        ],
+        &quot;linkId&quot;: &quot;ClaimResponse.paymentAdjustment&quot;,
+        &quot;text&quot;: &quot;Payment adjustment for non-Claim issues&quot;,
+        &quot;repeats&quot;: true,
+        &quot;question&quot;: [
+          {
+            &quot;linkId&quot;: &quot;ClaimResponse.paymentAdjustment.value&quot;,
+            &quot;text&quot;: &quot;value:&quot;,
+            &quot;type&quot;: &quot;decimal&quot;
+          },
+          {
+            &quot;linkId&quot;: &quot;ClaimResponse.paymentAdjustment.currency&quot;,
+            &quot;text&quot;: &quot;currency:&quot;,
+            &quot;type&quot;: &quot;string&quot;
+          }
+        ]
+      },
+      {
+        &quot;http://hl7.org/fhir/Profile/questionnaire-extensions#flyover&quot;: [
+          {
+            &quot;valueString&quot;: &quot;Reason for the payment adjustment.&quot;
+          }
+        ],
+        &quot;http://www.healthintersections.com.au/fhir/Profile/metadata#type&quot;: [
+          {
+            &quot;valueString&quot;: &quot;Coding&quot;
+          }
+        ],
+        &quot;linkId&quot;: &quot;ClaimResponse.paymentAdjustmentReason&quot;,
+        &quot;repeats&quot;: true,
+        &quot;question&quot;: [
+          {
+            &quot;linkId&quot;: &quot;ClaimResponse.paymentAdjustmentReason.value&quot;,
+            &quot;text&quot;: &quot;Reason for Payment adjustment&quot;,
+            &quot;type&quot;: &quot;open-choice&quot;
+          }
+        ]
+      },
+      {
+        &quot;http://hl7.org/fhir/Profile/questionnaire-extensions#flyover&quot;: [
+          {
+            &quot;valueString&quot;: &quot;Estimated payment data.&quot;
+          }
+        ],
+        &quot;http://www.healthintersections.com.au/fhir/Profile/metadata#type&quot;: [
+          {
+            &quot;valueString&quot;: &quot;datetime&quot;
+          }
+        ],
+        &quot;linkId&quot;: &quot;ClaimResponse.paymentDate&quot;,
+        &quot;repeats&quot;: true,
+        &quot;question&quot;: [
+          {
+            &quot;linkId&quot;: &quot;ClaimResponse.paymentDate.value&quot;,
+            &quot;text&quot;: &quot;Expected data of Payment&quot;,
+            &quot;type&quot;: &quot;dateTime&quot;
+          }
+        ]
+      },
+      {
+        &quot;http://hl7.org/fhir/Profile/questionnaire-extensions#flyover&quot;: [
+          {
+            &quot;valueString&quot;: &quot;Payable less any payment adjustment.&quot;
+          }
+        ],
+        &quot;http://www.healthintersections.com.au/fhir/Profile/metadata#type&quot;: [
+          {
+            &quot;valueString&quot;: &quot;Money&quot;
+          }
+        ],
+        &quot;linkId&quot;: &quot;ClaimResponse.paymentAmount&quot;,
+        &quot;text&quot;: &quot;Payment amount&quot;,
+        &quot;repeats&quot;: true,
+        &quot;question&quot;: [
+          {
+            &quot;linkId&quot;: &quot;ClaimResponse.paymentAmount.value&quot;,
+            &quot;text&quot;: &quot;value:&quot;,
+            &quot;type&quot;: &quot;decimal&quot;
+          },
+          {
+            &quot;linkId&quot;: &quot;ClaimResponse.paymentAmount.currency&quot;,
+            &quot;text&quot;: &quot;currency:&quot;,
+            &quot;type&quot;: &quot;string&quot;
+          }
+        ]
+      },
+      {
+        &quot;http://hl7.org/fhir/Profile/questionnaire-extensions#flyover&quot;: [
+          {
+            &quot;valueString&quot;: &quot;Payment identifer.&quot;
+          }
+        ],
+        &quot;http://www.healthintersections.com.au/fhir/Profile/metadata#type&quot;: [
+          {
+            &quot;valueString&quot;: &quot;Identifier&quot;
+          }
+        ],
+        &quot;linkId&quot;: &quot;ClaimResponse.paymentRef&quot;,
+        &quot;text&quot;: &quot;Payment identifier&quot;,
+        &quot;repeats&quot;: true,
+        &quot;question&quot;: [
+          {
+            &quot;linkId&quot;: &quot;ClaimResponse.paymentRef.label&quot;,
+            &quot;text&quot;: &quot;label:&quot;,
+            &quot;type&quot;: &quot;string&quot;
+          },
+          {
+            &quot;linkId&quot;: &quot;ClaimResponse.paymentRef.system&quot;,
+            &quot;text&quot;: &quot;system:&quot;,
+            &quot;type&quot;: &quot;string&quot;
+          },
+          {
+            &quot;linkId&quot;: &quot;ClaimResponse.paymentRef.value&quot;,
+            &quot;text&quot;: &quot;value:&quot;,
+            &quot;type&quot;: &quot;string&quot;
+          }
+        ]
+      },
+      {
+        &quot;http://hl7.org/fhir/Profile/questionnaire-extensions#flyover&quot;: [
+          {
+            &quot;valueString&quot;: &quot;Status of funds reservation (For provider, for Patient, None).&quot;
+          }
+        ],
+        &quot;http://www.healthintersections.com.au/fhir/Profile/metadata#type&quot;: [
+          {
+            &quot;valueString&quot;: &quot;Coding&quot;
+          }
+        ],
+        &quot;linkId&quot;: &quot;ClaimResponse.reserved&quot;,
+        &quot;repeats&quot;: true,
+        &quot;question&quot;: [
+          {
+            &quot;linkId&quot;: &quot;ClaimResponse.reserved.value&quot;,
+            &quot;text&quot;: &quot;Funds reserved status&quot;,
+            &quot;type&quot;: &quot;open-choice&quot;
+          }
+        ]
+      },
+      {
+        &quot;http://hl7.org/fhir/Profile/questionnaire-extensions#flyover&quot;: [
+          {
+            &quot;valueString&quot;: &quot;The form to be used for printing the content.&quot;
+          }
+        ],
+        &quot;http://www.healthintersections.com.au/fhir/Profile/metadata#type&quot;: [
+          {
+            &quot;valueString&quot;: &quot;Coding&quot;
+          }
+        ],
+        &quot;linkId&quot;: &quot;ClaimResponse.form&quot;,
+        &quot;repeats&quot;: true,
+        &quot;question&quot;: [
+          {
+            &quot;linkId&quot;: &quot;ClaimResponse.form.value&quot;,
+            &quot;text&quot;: &quot;Printed Form Identifier&quot;,
+            &quot;type&quot;: &quot;open-choice&quot;
+          }
+        ]
+      },
+      {
+        &quot;http://hl7.org/fhir/Profile/questionnaire-extensions#flyover&quot;: [
+          {
+            &quot;valueString&quot;: &quot;Note text.&quot;
+          }
+        ],
+        &quot;linkId&quot;: &quot;ClaimResponse.note&quot;,
+        &quot;title&quot;: &quot;Processing notes&quot;,
+        &quot;repeats&quot;: true,
+        &quot;group&quot;: [
+          {
+            &quot;http://hl7.org/fhir/Profile/questionnaire-extensions#flyover&quot;: [
+              {
+                &quot;valueString&quot;: &quot;unique id for the element within a resource (for internal references).&quot;
+              }
+            ],
+            &quot;http://www.healthintersections.com.au/fhir/Profile/metadata#type&quot;: [
+              {
+                &quot;valueString&quot;: &quot;string&quot;
+              }
+            ],
+            &quot;linkId&quot;: &quot;ClaimResponse.note.id&quot;,
+            &quot;repeats&quot;: true,
+            &quot;question&quot;: [
+              {
+                &quot;linkId&quot;: &quot;ClaimResponse.note.id.value&quot;,
+                &quot;text&quot;: &quot;xml:id (or equivalent in JSON)&quot;,
+                &quot;type&quot;: &quot;string&quot;
+              }
+            ]
+          },
+          {
+            &quot;http://hl7.org/fhir/Profile/questionnaire-extensions#flyover&quot;: [
+              {
+                &quot;valueString&quot;: &quot;An integer associated with each note which may be referred to from each service line item.&quot;
+              }
+            ],
+            &quot;http://www.healthintersections.com.au/fhir/Profile/metadata#type&quot;: [
+              {
+                &quot;valueString&quot;: &quot;integer&quot;
+              }
+            ],
+            &quot;linkId&quot;: &quot;ClaimResponse.note.number&quot;,
+            &quot;repeats&quot;: true,
+            &quot;question&quot;: [
+              {
+                &quot;linkId&quot;: &quot;ClaimResponse.note.number.value&quot;,
+                &quot;text&quot;: &quot;Note Number for this note&quot;,
+                &quot;type&quot;: &quot;integer&quot;
+              }
+            ]
+          },
+          {
+            &quot;http://hl7.org/fhir/Profile/questionnaire-extensions#flyover&quot;: [
+              {
+                &quot;valueString&quot;: &quot;The note purpose: Print/Display.&quot;
+              }
+            ],
+            &quot;http://www.healthintersections.com.au/fhir/Profile/metadata#type&quot;: [
+              {
+                &quot;valueString&quot;: &quot;Coding&quot;
+              }
+            ],
+            &quot;linkId&quot;: &quot;ClaimResponse.note.type&quot;,
+            &quot;repeats&quot;: true,
+            &quot;question&quot;: [
+              {
+                &quot;linkId&quot;: &quot;ClaimResponse.note.type.value&quot;,
+                &quot;text&quot;: &quot;display | print | printoper&quot;,
+                &quot;type&quot;: &quot;open-choice&quot;
+              }
+            ]
+          },
+          {
+            &quot;http://hl7.org/fhir/Profile/questionnaire-extensions#flyover&quot;: [
+              {
+                &quot;valueString&quot;: &quot;The note text.&quot;
+              }
+            ],
+            &quot;http://www.healthintersections.com.au/fhir/Profile/metadata#type&quot;: [
+              {
+                &quot;valueString&quot;: &quot;string&quot;
+              }
+            ],
+            &quot;linkId&quot;: &quot;ClaimResponse.note.text&quot;,
+            &quot;repeats&quot;: true,
+            &quot;question&quot;: [
+              {
+                &quot;linkId&quot;: &quot;ClaimResponse.note.text.value&quot;,
+                &quot;text&quot;: &quot;Note explanitory text&quot;,
+                &quot;type&quot;: &quot;string&quot;
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}
+</pre>
+</div>
+
+
+<p>
+Usage note: every effort has been made to ensure that the
+examples are correct and useful, but they are not a normative part 
+of the specification. 
+</p>
+
+</div>
+
+
+				</div><!-- /inner-wrapper -->
+            </div><!-- /row -->
+        </div><!-- /container -->
+        
+    </div><!-- /segment-content -->
+
+
+	<div id="segment-footer" class="segment"><!-- segment-footer -->
+		<div class="container"><!-- container -->
+			<div class="inner-wrapper">
+				<p>
+        © HL7.org 2011+. FHIR DSTU (v0.4.0-3920) generated on Tue, Dec 30, 2014 10:58+0000. <!-- <a href="qa.html">QA Report</a> --> <!-- achive note -->
+        <br/>
+        <span style="color: #FFFF77">
+        Links: <a style="color: #81BEF7" href="timelines.html">What's a DSTU?</a> | 
+               <a style="color: #81BEF7" href="history.html">Version History</a> | 
+               <a style="color: #81BEF7" href="http://services.w3.org/htmldiff?doc1=http%3A%2F%2Fhl7.org%2Fimplement%2Fstandards%2Ffhir%2Fclaimresponse.questionnaire.json.html&amp;doc2=http%3A%2F%2Fhl7-fhir.github.io%2F%2Fclaimresponse.questionnaire.json.html">Compare to DSTU</a> | 
+               <a style="color: #81BEF7" rel="license" href="license.html"><img src="cc0.png" style="border-style: none;" alt="CC0"/></a> | 
+               <a style="color: #81BEF7" target="_blank" href="http://gforge.hl7.org/gf/project/fhir/tracker/?action=TrackerItemAdd&amp;tracker_id=677">Propose a change</a>   
+        </span>
+        </p>
+			</div><!-- /inner-wrapper -->
+		</div><!-- /container -->
+	</div><!-- /segment-footer -->
+<!-- disqus thread -->
+<!--disqus-->
+<!-- end disqus -->        
+	
+	<div id="segment-post-footer" class="segment hidden"><!-- segment-post-footer -->
+		<div class="container"><!-- container -->
+		</div><!-- /container -->
+	</div><!-- /segment-post-footer -->
+    
+    <!-- JS and analytics only. -->
+    <!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="./assets/js/jquery.js"> </script>   <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+<script src="./dist/js/bootstrap.min.js"> </script>
+<script src="./assets/js/respond.min.js"> </script>
+
+<script src="./assets/js/fhir.js"> </script>
+
+<!-- Analytics Below
+================================================== -->
+
+    
+</body>
+</html>

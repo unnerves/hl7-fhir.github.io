@@ -1,0 +1,938 @@
+﻿<!DOCTYPE HTML>
+
+
+
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <title>Immunizationrecommendation.questionnaire.json - FHIR v0.4.0</title>
+
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="author" content="http://hl7.org/fhir"/>
+
+  <link href="fhir.css" rel="stylesheet"/>
+  <link rel="Prev" href="http://hl7.org/implement/standards/fhir/immunizationrecommendation.questionnaire.json.html"/>
+
+  <!-- Bootstrap core CSS -->
+  <link href="./dist/css/bootstrap.css" rel="stylesheet"/>
+  <link href="./assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+  <!-- Project extras -->
+  <link href="./assets/css/project.css" rel="stylesheet"/>
+  <link href="./assets/css/pygments-manni.css" rel="stylesheet"/>
+	<link href="jquery-ui.css" rel="stylesheet"/>
+
+  <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!--[if lt IE 9]>
+  <script src="./assets/js/html5shiv.js"></script>
+  <script src="./assets/js/respond.min.js"></script>
+  <![endif]-->
+
+  <!-- Favicons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="./assets/ico/apple-touch-icon-144-precomposed.png"/>
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="./assets/ico/apple-touch-icon-114-precomposed.png"/>
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="./assets/ico/apple-touch-icon-72-precomposed.png"/>
+  <link rel="apple-touch-icon-precomposed" href="./assets/ico/apple-touch-icon-57-precomposed.png"/>
+  <link rel="shortcut icon" href="./assets/ico/favicon.png"/>
+
+</head>
+<body>
+	<div id="segment-header" class="segment"><!-- segment-header -->	
+		<div class="container"><!-- container -->
+			<a id="logo" href="http://hl7.org/fhir"><img src="./assets/images/fhir-logo-www.png" alt="logo fhir"/> </a>
+			<div id="hl7-status">
+				<b>Continuous Integration Build</b>
+			</div>       	
+			
+			<div id="hl7-nav">
+				 <a id="hl7-logo" href="http://www.hl7.org">
+					<img src="./assets/images/hl7-logo.png" width="42" height="50" alt="visit the hl7 website"/>
+				</a> 
+			</div>       	
+			<!--hl7-search-->
+		</div>
+		<div class="container"><!-- container -->
+	</div></div><!-- /segment-header -->	
+
+
+	<div id="segment-navbar" class="segment"><!-- segment-navbar -->
+		<div id="stripe"> </div>
+		<div class="container"><!-- container -->
+ <!-- HEADER CONTENT -->
+ 	      		
+ 	      		      		
+			<nav class="navbar navbar-inverse">
+				<div class="container">
+					<button data-target=".navbar-inverse-collapse" data-toggle="collapse" class="navbar-toggle" type="button">
+						<span class="icon-bar"> </span>
+						<span class="icon-bar"> </span>
+						<span class="icon-bar"> </span>
+					</button>
+					<a href="index.html" class="navbar-brand hidden">FHIR</a>
+					<div class="nav-collapse collapse navbar-inverse-collapse">
+						<ul class="nav navbar-nav">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="documentation.html">Documentation</a></li>
+              <li><a href="implementation.html">Implementation</a></li>
+              <li><a href="resourcelist.html">Resources</a></li>
+              <li><a href="clinical.html">Clinical</a></li>
+              <li><a href="administration.html">Administrative</a></li>
+              <li><a href="infrastructure.html">Infrastructure</a></li>
+              <li><a href="financial.html">Financial</a></li>
+
+						</ul>
+					</div><!-- /.nav-collapse -->
+				</div><!-- /.container -->
+			</nav><!-- /.navbar -->
+      		
+				
+<!-- /HEADER CONTENT -->				
+		</div><!-- /container -->
+	</div><!-- /segment-navbar -->
+	
+
+	<div id="segment-breadcrumb" class="segment"><!-- segment-breadcrumb -->
+		<div class="container"><!-- container -->	
+			<ul class="breadcrumb">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="clinical.html">Clinical</a></li>        <li><a href="immunizationrecommendation.html">ImmunizationRecommendation</a></li>        <li><b>Generated Questionnaire</b></li>        <!-- immunizationrecommendation.questionnaire.json.html / resource-questionnaire:ImmunizationRecommendation -->
+
+			</ul>	
+		</div><!-- /container -->
+	</div><!-- /segment-breadcrumb -->
+	
+
+	<div id="segment-content" class="segment"><!-- segment-content -->
+	<div class="container"><!-- container -->
+            <div class="row">
+            	<div class="inner-wrapper">
+<!-- CONTENT CONTENT -->
+
+
+<div class="col-9">
+
+<h1>Immunizationrecommendation.questionnaire.json</h1>
+
+<p>
+<a href="immunizationrecommendation.questionnaire.json">Raw JSON</a> (<a href="immunizationrecommendation.questionnaire.canonical.json">canonical form</a>)
+</p>
+
+<div class="example">
+<p>Generated Questionnaire for ImmunizationRecommendation</p>
+<pre class="json">
+{
+  &quot;resourceType&quot;: &quot;Questionnaire&quot;,
+  &quot;id&quot;: &quot;qs1&quot;,
+  &quot;contained&quot;: [
+    {
+      &quot;resourceType&quot;: &quot;ValueSet&quot;,
+      &quot;id&quot;: &quot;vs2&quot;,
+      &quot;identifier&quot;: &quot;urn:uuid:ce96a63f-cd51-4b5b-8aa6-8abf4f798b35&quot;,
+      &quot;name&quot;: &quot;Type options for ImmunizationRecommendation.recommendation.supportingPatientInformation&quot;,
+      &quot;description&quot;: &quot;Type options for ImmunizationRecommendation.recommendation.supportingPatientInformation&quot;,
+      &quot;status&quot;: &quot;active&quot;,
+      &quot;expansion&quot;: {
+        &quot;timestamp&quot;: &quot;2014-12-30T11:01:33+00:00&quot;,
+        &quot;contains&quot;: [
+          {
+            &quot;system&quot;: &quot;http://hl7.org/fhir/resource-types&quot;,
+            &quot;code&quot;: &quot;Observation&quot;,
+            &quot;display&quot;: &quot;Observation&quot;
+          },
+          {
+            &quot;system&quot;: &quot;http://hl7.org/fhir/resource-types&quot;,
+            &quot;code&quot;: &quot;AllergyIntolerance&quot;,
+            &quot;display&quot;: &quot;AllergyIntolerance&quot;
+          }
+        ]
+      }
+    }
+  ],
+  &quot;identifier&quot;: [
+    {
+      &quot;system&quot;: &quot;urn:ietf:rfc:3986&quot;
+    }
+  ],
+  &quot;status&quot;: &quot;draft&quot;,
+  &quot;date&quot;: &quot;2014-12-30T10:55:31&quot;,
+  &quot;publisher&quot;: &quot;HL7 FHIR Project (Public Health and Emergency Response)&quot;,
+  &quot;group&quot;: {
+    &quot;http://hl7.org/fhir/Profile/questionnaire-extensions#flyover&quot;: [
+      {
+        &quot;valueString&quot;: &quot;A patient's point-of-time immunization status and recommendation with optional supporting justification.&quot;
+      }
+    ],
+    &quot;linkId&quot;: &quot;ImmunizationRecommendation&quot;,
+    &quot;title&quot;: &quot;Immunization profile&quot;,
+    &quot;required&quot;: true,
+    &quot;group&quot;: [
+      {
+        &quot;http://hl7.org/fhir/Profile/questionnaire-extensions#flyover&quot;: [
+          {
+            &quot;valueString&quot;: &quot;The logical id of the resource, as used in the url for the resoure. Once assigned, this value never changes. The only time that a resource does not have an id is when it is being submitted to the server using a create operation. Bundles always have an id, though it is usually a generated UUID.&quot;
+          }
+        ],
+        &quot;http://www.healthintersections.com.au/fhir/Profile/metadata#type&quot;: [
+          {
+            &quot;valueString&quot;: &quot;string&quot;
+          }
+        ],
+        &quot;linkId&quot;: &quot;ImmunizationRecommendation.id&quot;,
+        &quot;repeats&quot;: true,
+        &quot;question&quot;: [
+          {
+            &quot;linkId&quot;: &quot;ImmunizationRecommendation.id.value&quot;,
+            &quot;text&quot;: &quot;Logical id of this artefact&quot;,
+            &quot;type&quot;: &quot;string&quot;
+          }
+        ]
+      },
+      {
+        &quot;http://hl7.org/fhir/Profile/questionnaire-extensions#flyover&quot;: [
+          {
+            &quot;valueString&quot;: &quot;The metadata about the resource. This is content that is maintained by the infrastructure. Changes to the content may not always be associated with version changes to the resource.&quot;
+          }
+        ],
+        &quot;linkId&quot;: &quot;ImmunizationRecommendation.meta&quot;,
+        &quot;title&quot;: &quot;Metadata about the resource&quot;,
+        &quot;group&quot;: [
+          {
+            &quot;http://hl7.org/fhir/Profile/questionnaire-extensions#flyover&quot;: [
+              {
+                &quot;valueString&quot;: &quot;unique id for the element within a resource (for internal references).&quot;
+              }
+            ],
+            &quot;http://www.healthintersections.com.au/fhir/Profile/metadata#type&quot;: [
+              {
+                &quot;valueString&quot;: &quot;string&quot;
+              }
+            ],
+            &quot;linkId&quot;: &quot;ImmunizationRecommendation.meta.id&quot;,
+            &quot;repeats&quot;: true,
+            &quot;question&quot;: [
+              {
+                &quot;linkId&quot;: &quot;ImmunizationRecommendation.meta.id.value&quot;,
+                &quot;text&quot;: &quot;xml:id (or equivalent in JSON)&quot;,
+                &quot;type&quot;: &quot;string&quot;
+              }
+            ]
+          },
+          {
+            &quot;http://hl7.org/fhir/Profile/questionnaire-extensions#flyover&quot;: [
+              {
+                &quot;valueString&quot;: &quot;The version specific identifier, as it appears in the version portion of the url. This values changes when the resource is created, updated, or deleted. The server assigns this value, and ignores what the client specifies, except in the case that the server is imposing version integrity on updates/deletes.&quot;
+              }
+            ],
+            &quot;http://www.healthintersections.com.au/fhir/Profile/metadata#type&quot;: [
+              {
+                &quot;valueString&quot;: &quot;string&quot;
+              }
+            ],
+            &quot;linkId&quot;: &quot;ImmunizationRecommendation.meta.versionId&quot;,
+            &quot;repeats&quot;: true,
+            &quot;question&quot;: [
+              {
+                &quot;linkId&quot;: &quot;ImmunizationRecommendation.meta.versionId.value&quot;,
+                &quot;text&quot;: &quot;Version specific identifier&quot;,
+                &quot;type&quot;: &quot;string&quot;
+              }
+            ]
+          },
+          {
+            &quot;http://hl7.org/fhir/Profile/questionnaire-extensions#flyover&quot;: [
+              {
+                &quot;valueString&quot;: &quot;When the resource last changed - e.g. when the version changed. This value is always populated except when the resource is first being created. The server / resource manager sets this value; what a client provides is irrelevant.&quot;
+              }
+            ],
+            &quot;http://www.healthintersections.com.au/fhir/Profile/metadata#type&quot;: [
+              {
+                &quot;valueString&quot;: &quot;instant&quot;
+              }
+            ],
+            &quot;linkId&quot;: &quot;ImmunizationRecommendation.meta.lastUpdated&quot;,
+            &quot;repeats&quot;: true,
+            &quot;question&quot;: [
+              {
+                &quot;linkId&quot;: &quot;ImmunizationRecommendation.meta.lastUpdated.value&quot;,
+                &quot;text&quot;: &quot;When the resource version last changed&quot;,
+                &quot;type&quot;: &quot;instant&quot;
+              }
+            ]
+          },
+          {
+            &quot;http://hl7.org/fhir/Profile/questionnaire-extensions#flyover&quot;: [
+              {
+                &quot;valueString&quot;: &quot;A list of profiles that this resource claims to conform to. The URL is a reference to Profile.url. It is up to the server and/or other infrastruture of policy to determine whether/how these claims are verified and/or updated over tiem.&quot;
+              }
+            ],
+            &quot;http://www.healthintersections.com.au/fhir/Profile/metadata#type&quot;: [
+              {
+                &quot;valueString&quot;: &quot;uri&quot;
+              }
+            ],
+            &quot;linkId&quot;: &quot;ImmunizationRecommendation.meta.profile&quot;,
+            &quot;repeats&quot;: true,
+            &quot;question&quot;: [
+              {
+                &quot;linkId&quot;: &quot;ImmunizationRecommendation.meta.profile.value&quot;,
+                &quot;text&quot;: &quot;Profiles this resource claims to conform to&quot;,
+                &quot;type&quot;: &quot;string&quot;
+              }
+            ]
+          },
+          {
+            &quot;http://hl7.org/fhir/Profile/questionnaire-extensions#flyover&quot;: [
+              {
+                &quot;valueString&quot;: &quot;Security labels applied to this resource. These tags connect specific resources to the overall security policy and infrastructure. The security labels can be updated without changing the stated version of the resource.&quot;
+              }
+            ],
+            &quot;http://www.healthintersections.com.au/fhir/Profile/metadata#type&quot;: [
+              {
+                &quot;valueString&quot;: &quot;Coding&quot;
+              }
+            ],
+            &quot;linkId&quot;: &quot;ImmunizationRecommendation.meta.security&quot;,
+            &quot;repeats&quot;: true,
+            &quot;question&quot;: [
+              {
+                &quot;linkId&quot;: &quot;ImmunizationRecommendation.meta.security.value&quot;,
+                &quot;text&quot;: &quot;Security Labels applied to this resource&quot;,
+                &quot;type&quot;: &quot;open-choice&quot;
+              }
+            ]
+          },
+          {
+            &quot;http://hl7.org/fhir/Profile/questionnaire-extensions#flyover&quot;: [
+              {
+                &quot;valueString&quot;: &quot;Tags applied to this resource. Tags are intended to to be used to identify and relate resources to process and workflow, and applications are not required to consider the tags when interpreting the meaning of a resource. The tags can be updated without changing the stated version of the resource.&quot;
+              }
+            ],
+            &quot;http://www.healthintersections.com.au/fhir/Profile/metadata#type&quot;: [
+              {
+                &quot;valueString&quot;: &quot;Coding&quot;
+              }
+            ],
+            &quot;linkId&quot;: &quot;ImmunizationRecommendation.meta.tag&quot;,
+            &quot;repeats&quot;: true,
+            &quot;question&quot;: [
+              {
+                &quot;linkId&quot;: &quot;ImmunizationRecommendation.meta.tag.value&quot;,
+                &quot;text&quot;: &quot;Tags applied&quot;,
+                &quot;type&quot;: &quot;open-choice&quot;
+              }
+            ]
+          }
+        ]
+      },
+      {
+        &quot;http://hl7.org/fhir/Profile/questionnaire-extensions#flyover&quot;: [
+          {
+            &quot;valueString&quot;: &quot;A reference to a set of rules that were followed when the resource was constructed, and which must be understood when processing the content. Asserting this rule set restricts the content to be only understood by a limited set of trading partners. This inherently limits the usefulness of the data in the long term. However the existing health eco-system is highly fractured, and not yet ready to define, collect, and exchange data in a generally computable sense. Wherever possible, implementers and/or specification writers should avoid using this element as much as possible.&quot;
+          }
+        ],
+        &quot;http://www.healthintersections.com.au/fhir/Profile/metadata#type&quot;: [
+          {
+            &quot;valueString&quot;: &quot;uri&quot;
+          }
+        ],
+        &quot;linkId&quot;: &quot;ImmunizationRecommendation.implicitRules&quot;,
+        &quot;repeats&quot;: true,
+        &quot;question&quot;: [
+          {
+            &quot;linkId&quot;: &quot;ImmunizationRecommendation.implicitRules.value&quot;,
+            &quot;text&quot;: &quot;A set of rules under which this content was created&quot;,
+            &quot;type&quot;: &quot;string&quot;
+          }
+        ]
+      },
+      {
+        &quot;http://hl7.org/fhir/Profile/questionnaire-extensions#flyover&quot;: [
+          {
+            &quot;valueString&quot;: &quot;The base language in which the resource is written. Language is provided to support indexing and accessibility (typically, services such as text to speech use the language tag). The html language tag in the narrative applies  to the narrative. The language tag on the resource may be used to specify the language of other presentations generated from the data in the resource\n\nNot all the content has to be in the base language. The Resource.language should not be assumed to apply to the narrative automatically. If a language is specified, it should it also be specified on the div element in the html (see rules in HTML5 for information about the relationship between xml:lang and the html lang attribute).&quot;
+          }
+        ],
+        &quot;http://www.healthintersections.com.au/fhir/Profile/metadata#type&quot;: [
+          {
+            &quot;valueString&quot;: &quot;code&quot;
+          }
+        ],
+        &quot;linkId&quot;: &quot;ImmunizationRecommendation.language&quot;,
+        &quot;repeats&quot;: true,
+        &quot;question&quot;: [
+          {
+            &quot;linkId&quot;: &quot;ImmunizationRecommendation.language.value&quot;,
+            &quot;text&quot;: &quot;language&quot;,
+            &quot;type&quot;: &quot;choice&quot;
+          }
+        ]
+      },
+      {
+        &quot;http://hl7.org/fhir/Profile/questionnaire-extensions#flyover&quot;: [
+          {
+            &quot;valueString&quot;: &quot;A human-readable narrative that contains a summary of the resource, and may be used to represent the content of the resource to a human. The narrative need not encode all the structured data, but is required to contain sufficient detail to make it \&quot;clinically safe\&quot; for a human to just read the narrative. Resource definitions may define what content should be represented in the narrative to ensure clinical safety. Contained resources do not have narrative. Resources that are not contained SHOULD have a narrative.&quot;
+          }
+        ],
+        &quot;linkId&quot;: &quot;ImmunizationRecommendation.text&quot;,
+        &quot;text&quot;: &quot;Text summary of the resource, for human interpretation&quot;,
+        &quot;repeats&quot;: true
+      },
+      {
+        &quot;http://hl7.org/fhir/Profile/questionnaire-extensions#flyover&quot;: [
+          {
+            &quot;valueString&quot;: &quot;These resources do not have an independent existence apart from the resource that contains them - they cannot be identified independently, and nor can they have their own independent transaction scope. This should never be done when the content can be identified properly, as once identification is lost, it is extremely difficult (and context dependent) to restore it again.&quot;
+          }
+        ],
+        &quot;linkId&quot;: &quot;ImmunizationRecommendation.contained&quot;,
+        &quot;text&quot;: &quot;Contained, inline Resources&quot;,
+        &quot;repeats&quot;: true
+      },
+      {
+        &quot;http://hl7.org/fhir/Profile/questionnaire-extensions#flyover&quot;: [
+          {
+            &quot;valueString&quot;: &quot;A unique identifier assigned to this particular recommendation record.&quot;
+          }
+        ],
+        &quot;http://www.healthintersections.com.au/fhir/Profile/metadata#type&quot;: [
+          {
+            &quot;valueString&quot;: &quot;Identifier&quot;
+          }
+        ],
+        &quot;linkId&quot;: &quot;ImmunizationRecommendation.identifier&quot;,
+        &quot;text&quot;: &quot;Business identifier&quot;,
+        &quot;repeats&quot;: true,
+        &quot;question&quot;: [
+          {
+            &quot;linkId&quot;: &quot;ImmunizationRecommendation.identifier.label&quot;,
+            &quot;text&quot;: &quot;label:&quot;,
+            &quot;type&quot;: &quot;string&quot;
+          },
+          {
+            &quot;linkId&quot;: &quot;ImmunizationRecommendation.identifier.system&quot;,
+            &quot;text&quot;: &quot;system:&quot;,
+            &quot;type&quot;: &quot;string&quot;
+          },
+          {
+            &quot;linkId&quot;: &quot;ImmunizationRecommendation.identifier.value&quot;,
+            &quot;text&quot;: &quot;value:&quot;,
+            &quot;type&quot;: &quot;string&quot;
+          }
+        ]
+      },
+      {
+        &quot;http://hl7.org/fhir/Profile/questionnaire-extensions#flyover&quot;: [
+          {
+            &quot;valueString&quot;: &quot;The patient who is the subject of the profile.&quot;
+          }
+        ],
+        &quot;http://www.healthintersections.com.au/fhir/Profile/metadata#type&quot;: [
+          {
+            &quot;valueString&quot;: &quot;Reference&quot;
+          }
+        ],
+        &quot;linkId&quot;: &quot;ImmunizationRecommendation.subject&quot;,
+        &quot;required&quot;: true,
+        &quot;repeats&quot;: true,
+        &quot;question&quot;: [
+          {
+            &quot;http://www.healthintersections.com.au/fhir/Profile/metadata#reference&quot;: [
+              {
+                &quot;valueString&quot;: &quot;/Patient?subject=$subj&amp;patient=$subj&amp;encounter=$encounter&quot;
+              }
+            ],
+            &quot;linkId&quot;: &quot;ImmunizationRecommendation.subject.value&quot;,
+            &quot;text&quot;: &quot;Who this profile is for&quot;,
+            &quot;type&quot;: &quot;reference&quot;
+          }
+        ]
+      },
+      {
+        &quot;http://hl7.org/fhir/Profile/questionnaire-extensions#flyover&quot;: [
+          {
+            &quot;valueString&quot;: &quot;Vaccine administration recommendations.&quot;
+          }
+        ],
+        &quot;linkId&quot;: &quot;ImmunizationRecommendation.recommendation&quot;,
+        &quot;title&quot;: &quot;Vaccine administration recommendations&quot;,
+        &quot;required&quot;: true,
+        &quot;repeats&quot;: true,
+        &quot;group&quot;: [
+          {
+            &quot;http://hl7.org/fhir/Profile/questionnaire-extensions#flyover&quot;: [
+              {
+                &quot;valueString&quot;: &quot;unique id for the element within a resource (for internal references).&quot;
+              }
+            ],
+            &quot;http://www.healthintersections.com.au/fhir/Profile/metadata#type&quot;: [
+              {
+                &quot;valueString&quot;: &quot;string&quot;
+              }
+            ],
+            &quot;linkId&quot;: &quot;ImmunizationRecommendation.recommendation.id&quot;,
+            &quot;repeats&quot;: true,
+            &quot;question&quot;: [
+              {
+                &quot;linkId&quot;: &quot;ImmunizationRecommendation.recommendation.id.value&quot;,
+                &quot;text&quot;: &quot;xml:id (or equivalent in JSON)&quot;,
+                &quot;type&quot;: &quot;string&quot;
+              }
+            ]
+          },
+          {
+            &quot;http://hl7.org/fhir/Profile/questionnaire-extensions#flyover&quot;: [
+              {
+                &quot;valueString&quot;: &quot;The date the immunization recommendation was created.&quot;
+              }
+            ],
+            &quot;http://www.healthintersections.com.au/fhir/Profile/metadata#type&quot;: [
+              {
+                &quot;valueString&quot;: &quot;datetime&quot;
+              }
+            ],
+            &quot;linkId&quot;: &quot;ImmunizationRecommendation.recommendation.date&quot;,
+            &quot;required&quot;: true,
+            &quot;repeats&quot;: true,
+            &quot;question&quot;: [
+              {
+                &quot;linkId&quot;: &quot;ImmunizationRecommendation.recommendation.date.value&quot;,
+                &quot;text&quot;: &quot;Date recommendation created&quot;,
+                &quot;type&quot;: &quot;dateTime&quot;
+              }
+            ]
+          },
+          {
+            &quot;http://hl7.org/fhir/Profile/questionnaire-extensions#flyover&quot;: [
+              {
+                &quot;valueString&quot;: &quot;Vaccine that pertains to the recommendation.&quot;
+              }
+            ],
+            &quot;http://www.healthintersections.com.au/fhir/Profile/metadata#type&quot;: [
+              {
+                &quot;valueString&quot;: &quot;CodeableConcept&quot;
+              }
+            ],
+            &quot;linkId&quot;: &quot;ImmunizationRecommendation.recommendation.vaccineType&quot;,
+            &quot;text&quot;: &quot;Vaccine recommendation applies to&quot;,
+            &quot;required&quot;: true,
+            &quot;repeats&quot;: true,
+            &quot;question&quot;: [
+              {
+                &quot;linkId&quot;: &quot;ImmunizationRecommendation.recommendation.vaccineType.coding&quot;,
+                &quot;text&quot;: &quot;code:&quot;,
+                &quot;type&quot;: &quot;open-choice&quot;
+              },
+              {
+                &quot;linkId&quot;: &quot;ImmunizationRecommendation.recommendation.vaccineType.text&quot;,
+                &quot;text&quot;: &quot;text:&quot;,
+                &quot;type&quot;: &quot;string&quot;
+              }
+            ]
+          },
+          {
+            &quot;http://hl7.org/fhir/Profile/questionnaire-extensions#flyover&quot;: [
+              {
+                &quot;valueString&quot;: &quot;This indicates the next recommended dose number (e.g. dose 2 is the next recommended dose). May need other dose concepts such as administered vs. valid.&quot;
+              }
+            ],
+            &quot;http://www.healthintersections.com.au/fhir/Profile/metadata#type&quot;: [
+              {
+                &quot;valueString&quot;: &quot;integer&quot;
+              }
+            ],
+            &quot;linkId&quot;: &quot;ImmunizationRecommendation.recommendation.doseNumber&quot;,
+            &quot;repeats&quot;: true,
+            &quot;question&quot;: [
+              {
+                &quot;linkId&quot;: &quot;ImmunizationRecommendation.recommendation.doseNumber.value&quot;,
+                &quot;text&quot;: &quot;Recommended dose number&quot;,
+                &quot;type&quot;: &quot;integer&quot;
+              }
+            ]
+          },
+          {
+            &quot;http://hl7.org/fhir/Profile/questionnaire-extensions#flyover&quot;: [
+              {
+                &quot;valueString&quot;: &quot;Vaccine administration status.&quot;
+              }
+            ],
+            &quot;http://www.healthintersections.com.au/fhir/Profile/metadata#type&quot;: [
+              {
+                &quot;valueString&quot;: &quot;CodeableConcept&quot;
+              }
+            ],
+            &quot;linkId&quot;: &quot;ImmunizationRecommendation.recommendation.forecastStatus&quot;,
+            &quot;text&quot;: &quot;Vaccine administration status&quot;,
+            &quot;required&quot;: true,
+            &quot;repeats&quot;: true,
+            &quot;question&quot;: [
+              {
+                &quot;linkId&quot;: &quot;ImmunizationRecommendation.recommendation.forecastStatus.coding&quot;,
+                &quot;text&quot;: &quot;code:&quot;,
+                &quot;type&quot;: &quot;open-choice&quot;
+              },
+              {
+                &quot;linkId&quot;: &quot;ImmunizationRecommendation.recommendation.forecastStatus.text&quot;,
+                &quot;text&quot;: &quot;text:&quot;,
+                &quot;type&quot;: &quot;string&quot;
+              }
+            ]
+          },
+          {
+            &quot;http://hl7.org/fhir/Profile/questionnaire-extensions#flyover&quot;: [
+              {
+                &quot;valueString&quot;: &quot;Vaccine date recommendations - e.g. earliest date to administer, latest date to administer, etc.&quot;
+              }
+            ],
+            &quot;linkId&quot;: &quot;ImmunizationRecommendation.recommendation.dateCriterion&quot;,
+            &quot;title&quot;: &quot;Dates governing proposed immunization&quot;,
+            &quot;repeats&quot;: true,
+            &quot;group&quot;: [
+              {
+                &quot;http://hl7.org/fhir/Profile/questionnaire-extensions#flyover&quot;: [
+                  {
+                    &quot;valueString&quot;: &quot;unique id for the element within a resource (for internal references).&quot;
+                  }
+                ],
+                &quot;http://www.healthintersections.com.au/fhir/Profile/metadata#type&quot;: [
+                  {
+                    &quot;valueString&quot;: &quot;string&quot;
+                  }
+                ],
+                &quot;linkId&quot;: &quot;ImmunizationRecommendation.recommendation.dateCriterion.id&quot;,
+                &quot;repeats&quot;: true,
+                &quot;question&quot;: [
+                  {
+                    &quot;linkId&quot;: &quot;ImmunizationRecommendation.recommendation.dateCriterion.id.value&quot;,
+                    &quot;text&quot;: &quot;xml:id (or equivalent in JSON)&quot;,
+                    &quot;type&quot;: &quot;string&quot;
+                  }
+                ]
+              },
+              {
+                &quot;http://hl7.org/fhir/Profile/questionnaire-extensions#flyover&quot;: [
+                  {
+                    &quot;valueString&quot;: &quot;Date classification of recommendation - e.g. earliest date to give, latest date to give, etc.&quot;
+                  }
+                ],
+                &quot;http://www.healthintersections.com.au/fhir/Profile/metadata#type&quot;: [
+                  {
+                    &quot;valueString&quot;: &quot;CodeableConcept&quot;
+                  }
+                ],
+                &quot;linkId&quot;: &quot;ImmunizationRecommendation.recommendation.dateCriterion.code&quot;,
+                &quot;text&quot;: &quot;Type of date&quot;,
+                &quot;required&quot;: true,
+                &quot;repeats&quot;: true,
+                &quot;question&quot;: [
+                  {
+                    &quot;linkId&quot;: &quot;ImmunizationRecommendation.recommendation.dateCriterion.code.coding&quot;,
+                    &quot;text&quot;: &quot;code:&quot;,
+                    &quot;type&quot;: &quot;open-choice&quot;
+                  },
+                  {
+                    &quot;linkId&quot;: &quot;ImmunizationRecommendation.recommendation.dateCriterion.code.text&quot;,
+                    &quot;text&quot;: &quot;text:&quot;,
+                    &quot;type&quot;: &quot;string&quot;
+                  }
+                ]
+              },
+              {
+                &quot;http://hl7.org/fhir/Profile/questionnaire-extensions#flyover&quot;: [
+                  {
+                    &quot;valueString&quot;: &quot;Date recommendation.&quot;
+                  }
+                ],
+                &quot;http://www.healthintersections.com.au/fhir/Profile/metadata#type&quot;: [
+                  {
+                    &quot;valueString&quot;: &quot;datetime&quot;
+                  }
+                ],
+                &quot;linkId&quot;: &quot;ImmunizationRecommendation.recommendation.dateCriterion.value&quot;,
+                &quot;required&quot;: true,
+                &quot;repeats&quot;: true,
+                &quot;question&quot;: [
+                  {
+                    &quot;linkId&quot;: &quot;ImmunizationRecommendation.recommendation.dateCriterion.value.value&quot;,
+                    &quot;text&quot;: &quot;Recommended date&quot;,
+                    &quot;type&quot;: &quot;dateTime&quot;
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            &quot;http://hl7.org/fhir/Profile/questionnaire-extensions#flyover&quot;: [
+              {
+                &quot;valueString&quot;: &quot;Contains information about the protocol under which the vaccine was administered.&quot;
+              }
+            ],
+            &quot;linkId&quot;: &quot;ImmunizationRecommendation.recommendation.protocol&quot;,
+            &quot;title&quot;: &quot;Protocol used by recommendation&quot;,
+            &quot;group&quot;: [
+              {
+                &quot;http://hl7.org/fhir/Profile/questionnaire-extensions#flyover&quot;: [
+                  {
+                    &quot;valueString&quot;: &quot;unique id for the element within a resource (for internal references).&quot;
+                  }
+                ],
+                &quot;http://www.healthintersections.com.au/fhir/Profile/metadata#type&quot;: [
+                  {
+                    &quot;valueString&quot;: &quot;string&quot;
+                  }
+                ],
+                &quot;linkId&quot;: &quot;ImmunizationRecommendation.recommendation.protocol.id&quot;,
+                &quot;repeats&quot;: true,
+                &quot;question&quot;: [
+                  {
+                    &quot;linkId&quot;: &quot;ImmunizationRecommendation.recommendation.protocol.id.value&quot;,
+                    &quot;text&quot;: &quot;xml:id (or equivalent in JSON)&quot;,
+                    &quot;type&quot;: &quot;string&quot;
+                  }
+                ]
+              },
+              {
+                &quot;http://hl7.org/fhir/Profile/questionnaire-extensions#flyover&quot;: [
+                  {
+                    &quot;valueString&quot;: &quot;Indicates the nominal position in a series of the next dose.  This is the recommended dose number as per a specified protocol.&quot;
+                  }
+                ],
+                &quot;http://www.healthintersections.com.au/fhir/Profile/metadata#type&quot;: [
+                  {
+                    &quot;valueString&quot;: &quot;integer&quot;
+                  }
+                ],
+                &quot;linkId&quot;: &quot;ImmunizationRecommendation.recommendation.protocol.doseSequence&quot;,
+                &quot;repeats&quot;: true,
+                &quot;question&quot;: [
+                  {
+                    &quot;linkId&quot;: &quot;ImmunizationRecommendation.recommendation.protocol.doseSequence.value&quot;,
+                    &quot;text&quot;: &quot;Number of dose within sequence&quot;,
+                    &quot;type&quot;: &quot;integer&quot;
+                  }
+                ]
+              },
+              {
+                &quot;http://hl7.org/fhir/Profile/questionnaire-extensions#flyover&quot;: [
+                  {
+                    &quot;valueString&quot;: &quot;Contains the description about the protocol under which the vaccine was administered.&quot;
+                  }
+                ],
+                &quot;http://www.healthintersections.com.au/fhir/Profile/metadata#type&quot;: [
+                  {
+                    &quot;valueString&quot;: &quot;string&quot;
+                  }
+                ],
+                &quot;linkId&quot;: &quot;ImmunizationRecommendation.recommendation.protocol.description&quot;,
+                &quot;repeats&quot;: true,
+                &quot;question&quot;: [
+                  {
+                    &quot;linkId&quot;: &quot;ImmunizationRecommendation.recommendation.protocol.description.value&quot;,
+                    &quot;text&quot;: &quot;Protocol details&quot;,
+                    &quot;type&quot;: &quot;string&quot;
+                  }
+                ]
+              },
+              {
+                &quot;http://hl7.org/fhir/Profile/questionnaire-extensions#flyover&quot;: [
+                  {
+                    &quot;valueString&quot;: &quot;Indicates the authority who published the protocol?  E.g. ACIP.&quot;
+                  }
+                ],
+                &quot;http://www.healthintersections.com.au/fhir/Profile/metadata#type&quot;: [
+                  {
+                    &quot;valueString&quot;: &quot;Reference&quot;
+                  }
+                ],
+                &quot;linkId&quot;: &quot;ImmunizationRecommendation.recommendation.protocol.authority&quot;,
+                &quot;repeats&quot;: true,
+                &quot;question&quot;: [
+                  {
+                    &quot;http://www.healthintersections.com.au/fhir/Profile/metadata#reference&quot;: [
+                      {
+                        &quot;valueString&quot;: &quot;/Organization?subject=$subj&amp;patient=$subj&amp;encounter=$encounter&quot;
+                      }
+                    ],
+                    &quot;linkId&quot;: &quot;ImmunizationRecommendation.recommendation.protocol.authority.value&quot;,
+                    &quot;text&quot;: &quot;Who is responsible for protocol&quot;,
+                    &quot;type&quot;: &quot;reference&quot;
+                  }
+                ]
+              },
+              {
+                &quot;http://hl7.org/fhir/Profile/questionnaire-extensions#flyover&quot;: [
+                  {
+                    &quot;valueString&quot;: &quot;One possible path to achieve presumed immunity against a disease - within the context of an authority.&quot;
+                  }
+                ],
+                &quot;http://www.healthintersections.com.au/fhir/Profile/metadata#type&quot;: [
+                  {
+                    &quot;valueString&quot;: &quot;string&quot;
+                  }
+                ],
+                &quot;linkId&quot;: &quot;ImmunizationRecommendation.recommendation.protocol.series&quot;,
+                &quot;repeats&quot;: true,
+                &quot;question&quot;: [
+                  {
+                    &quot;linkId&quot;: &quot;ImmunizationRecommendation.recommendation.protocol.series.value&quot;,
+                    &quot;text&quot;: &quot;Name of vaccination series&quot;,
+                    &quot;type&quot;: &quot;string&quot;
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            &quot;http://hl7.org/fhir/Profile/questionnaire-extensions#flyover&quot;: [
+              {
+                &quot;valueString&quot;: &quot;Immunization event history that supports the status and recommendation.&quot;
+              }
+            ],
+            &quot;http://www.healthintersections.com.au/fhir/Profile/metadata#type&quot;: [
+              {
+                &quot;valueString&quot;: &quot;Reference&quot;
+              }
+            ],
+            &quot;linkId&quot;: &quot;ImmunizationRecommendation.recommendation.supportingImmunization&quot;,
+            &quot;repeats&quot;: true,
+            &quot;question&quot;: [
+              {
+                &quot;http://www.healthintersections.com.au/fhir/Profile/metadata#reference&quot;: [
+                  {
+                    &quot;valueString&quot;: &quot;/Immunization?subject=$subj&amp;patient=$subj&amp;encounter=$encounter&quot;
+                  }
+                ],
+                &quot;linkId&quot;: &quot;ImmunizationRecommendation.recommendation.supportingImmunization.value&quot;,
+                &quot;text&quot;: &quot;Past immunizations supporting recommendation&quot;,
+                &quot;type&quot;: &quot;reference&quot;
+              }
+            ]
+          },
+          {
+            &quot;http://hl7.org/fhir/Profile/questionnaire-extensions#flyover&quot;: [
+              {
+                &quot;valueString&quot;: &quot;Patient Information that supports the status and recommendation.  This includes patient observations, adverse reactions and allergy/intolerance information.&quot;
+              }
+            ],
+            &quot;linkId&quot;: &quot;ImmunizationRecommendation.recommendation.supportingPatientInformation&quot;,
+            &quot;text&quot;: &quot;Patient observations supporting recommendation&quot;,
+            &quot;repeats&quot;: true,
+            &quot;question&quot;: [
+              {
+                &quot;linkId&quot;: &quot;ImmunizationRecommendation.recommendation.supportingPatientInformation._type&quot;,
+                &quot;text&quot;: &quot;type&quot;,
+                &quot;type&quot;: &quot;choice&quot;,
+                &quot;options&quot;: {
+                  &quot;reference&quot;: &quot;#vs2&quot;
+                },
+                &quot;group&quot;: [
+                  {
+                    &quot;http://www.healthintersections.com.au/fhir/Profile/metadata#type&quot;: [
+                      {
+                        &quot;valueString&quot;: &quot;Reference&quot;
+                      }
+                    ],
+                    &quot;linkId&quot;: &quot;ImmunizationRecommendation.recommendation.supportingPatientInformation._Observation&quot;,
+                    &quot;question&quot;: [
+                      {
+                        &quot;http://www.healthintersections.com.au/fhir/Profile/metadata#reference&quot;: [
+                          {
+                            &quot;valueString&quot;: &quot;/Observation?subject=$subj&amp;patient=$subj&amp;encounter=$encounter&quot;
+                          }
+                        ],
+                        &quot;linkId&quot;: &quot;ImmunizationRecommendation.recommendation.supportingPatientInformation._Observation.value&quot;,
+                        &quot;text&quot;: &quot;Observation&quot;,
+                        &quot;type&quot;: &quot;reference&quot;
+                      }
+                    ]
+                  },
+                  {
+                    &quot;http://www.healthintersections.com.au/fhir/Profile/metadata#type&quot;: [
+                      {
+                        &quot;valueString&quot;: &quot;Reference&quot;
+                      }
+                    ],
+                    &quot;linkId&quot;: &quot;ImmunizationRecommendation.recommendation.supportingPatientInformation._AllergyIntolerance&quot;,
+                    &quot;question&quot;: [
+                      {
+                        &quot;http://www.healthintersections.com.au/fhir/Profile/metadata#reference&quot;: [
+                          {
+                            &quot;valueString&quot;: &quot;/AllergyIntolerance?subject=$subj&amp;patient=$subj&amp;encounter=$encounter&quot;
+                          }
+                        ],
+                        &quot;linkId&quot;: &quot;ImmunizationRecommendation.recommendation.supportingPatientInformation._AllergyIntolerance.value&quot;,
+                        &quot;text&quot;: &quot;AllergyIntolerance&quot;,
+                        &quot;type&quot;: &quot;reference&quot;
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}
+</pre>
+</div>
+
+
+<p>
+Usage note: every effort has been made to ensure that the
+examples are correct and useful, but they are not a normative part 
+of the specification. 
+</p>
+
+</div>
+
+
+				</div><!-- /inner-wrapper -->
+            </div><!-- /row -->
+        </div><!-- /container -->
+        
+    </div><!-- /segment-content -->
+
+
+	<div id="segment-footer" class="segment"><!-- segment-footer -->
+		<div class="container"><!-- container -->
+			<div class="inner-wrapper">
+				<p>
+        © HL7.org 2011+. FHIR DSTU (v0.4.0-3920) generated on Tue, Dec 30, 2014 11:01+0000. <!-- <a href="qa.html">QA Report</a> --> <!-- achive note -->
+        <br/>
+        <span style="color: #FFFF77">
+        Links: <a style="color: #81BEF7" href="timelines.html">What's a DSTU?</a> | 
+               <a style="color: #81BEF7" href="history.html">Version History</a> | 
+               <a style="color: #81BEF7" href="http://services.w3.org/htmldiff?doc1=http%3A%2F%2Fhl7.org%2Fimplement%2Fstandards%2Ffhir%2Fimmunizationrecommendation.questionnaire.json.html&amp;doc2=http%3A%2F%2Fhl7-fhir.github.io%2F%2Fimmunizationrecommendation.questionnaire.json.html">Compare to DSTU</a> | 
+               <a style="color: #81BEF7" rel="license" href="license.html"><img src="cc0.png" style="border-style: none;" alt="CC0"/></a> | 
+               <a style="color: #81BEF7" target="_blank" href="http://gforge.hl7.org/gf/project/fhir/tracker/?action=TrackerItemAdd&amp;tracker_id=677">Propose a change</a>   
+        </span>
+        </p>
+			</div><!-- /inner-wrapper -->
+		</div><!-- /container -->
+	</div><!-- /segment-footer -->
+<!-- disqus thread -->
+<!--disqus-->
+<!-- end disqus -->        
+	
+	<div id="segment-post-footer" class="segment hidden"><!-- segment-post-footer -->
+		<div class="container"><!-- container -->
+		</div><!-- /container -->
+	</div><!-- /segment-post-footer -->
+    
+    <!-- JS and analytics only. -->
+    <!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="./assets/js/jquery.js"> </script>   <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+<script src="./dist/js/bootstrap.min.js"> </script>
+<script src="./assets/js/respond.min.js"> </script>
+
+<script src="./assets/js/fhir.js"> </script>
+
+<!-- Analytics Below
+================================================== -->
+
+    
+</body>
+</html>

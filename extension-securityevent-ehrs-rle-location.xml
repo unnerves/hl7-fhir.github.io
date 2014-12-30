@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ExtensionDefinition xmlns="http://hl7.org/fhir">
+  <id value="securityevent-ehrs-rle-location"/>
+  <url value="http://hl7.org/fhir/ExtensionDefinition/securityevent-ehrs-rle-location"/>
+  <name value="Where the activity occurred, if relevant"/>
+  <publisher value="Health Level Seven, Inc. - EHR WG"/>
+  <telecom>
+    <system value="url"/>
+    <value value="http://hl7.org/special/committees/ehr.html"/>
+  </telecom>
+  <description value="The phyiscal location of the event (e.g. Building, room, etc.)."/>
+  <status value="draft"/>
+  <date value="2014-12-04"/>
+  <mapping>
+    <identity value="v2"/>
+    <uri value="http://hl7.org/v2"/>
+    <name value="HL7 v2"/>
+  </mapping>
+  <mapping>
+    <identity value="rim"/>
+    <uri value="http://hl7.org/v3"/>
+    <name value="RIM"/>
+  </mapping>
+  <contextType value="resource"/>
+  <context value="SecurityEvent.event"/>
+  <element>
+    <path value="Extension"/>
+    <short value="Where the activity occurred, if relevant"/>
+    <formal value="The phyiscal location of the event (e.g. Building, room, etc.)."/>
+    <min value="0"/>
+    <max value="1"/>
+    <type>
+      <code value="Resource"/>
+      <profile value="http://hl7.org/fhir/Profile/Location"/>
+    </type>
+    <isSummary value="false"/>
+    <mapping>
+      <identity value="v2"/>
+      <map value="N/A"/>
+    </mapping>
+    <mapping>
+      <identity value="rim"/>
+      <map value=".participant[typeCode=LOC].role"/>
+    </mapping>
+  </element>
+</ExtensionDefinition>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ExtensionDefinition xmlns="http://hl7.org/fhir">
+  <id value="valueset-usage"/>
+  <url value="http://hl7.org/fhir/ExtensionDefinition/valueset-usage"/>
+  <name value="Who has used and how?"/>
+  <publisher value="HL7"/>
+  <description value="Consumers of the value set and the implementations, projects or standards that the author has utilized the value set in."/>
+  <status value="draft"/>
+  <date value="2014-12-30T10:55:31"/>
+  <contextType value="resource"/>
+  <context value="ValueSet"/>
+  <element>
+    <path value="Extension"/>
+    <short value="Who has used and how?"/>
+    <formal value="Consumers of the value set and the implementations, projects or standards that the author has utilized the value set in."/>
+    <comments value="This is likely to be a ???point in time??? view and should not be considered an authoritative listing of all uses of the value set."/>
+    <min value="0"/>
+    <max value="*"/>
+    <isSummary value="false"/>
+  </element>
+  <element>
+    <path value="Extension.user"/>
+    <short value="A consumer of or client for the value set"/>
+    <formal value="This is most likely to be an organization but can be an individual. It would not be a program, that information should be recorded in the usage.use."/>
+    <min value="1"/>
+    <max value="1"/>
+    <type>
+      <code value="string"/>
+    </type>
+    <isSummary value="false"/>
+  </element>
+  <element>
+    <path value="Extension.use"/>
+    <short value="Implementation/project/standard that uses value set"/>
+    <formal value="A descriptive name of the project or standard in which the value set is used."/>
+    <min value="1"/>
+    <max value="1"/>
+    <type>
+      <code value="string"/>
+    </type>
+    <isSummary value="false"/>
+  </element>
+</ExtensionDefinition>

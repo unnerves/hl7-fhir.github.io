@@ -1,0 +1,371 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+  <title>Contraindication - FHIR v0.4.0</title>
+
+  
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <meta content="http://hl7.org/fhir" name="author"/>
+
+  <link rel="stylesheet" href="fhir.css"/>
+  <link rel="Prev" href="http://hl7.org/implement/standards/fhir/contraindication-examples.html"/>
+
+    <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" href="./dist/css/bootstrap.css"/>
+  <link rel="stylesheet" href="./assets/css/bootstrap-fhir.css"/>
+
+    <!-- Project extras -->
+  <link rel="stylesheet" href="./assets/css/project.css"/>
+  <link rel="stylesheet" href="./assets/css/pygments-manni.css"/>
+	<link rel="stylesheet" href="jquery-ui.css"/>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- [if lt IE 9]>
+  <script src="./assets/js/html5shiv.js"></script>
+  <script src="./assets/js/respond.min.js"></script>
+  <![endif] -->
+
+    <!-- Favicons -->
+  <link sizes="144x144" rel="apple-touch-icon-precomposed" href="./assets/ico/apple-touch-icon-144-precomposed.png"/>
+  <link sizes="114x114" rel="apple-touch-icon-precomposed" href="./assets/ico/apple-touch-icon-114-precomposed.png"/>
+  <link sizes="72x72" rel="apple-touch-icon-precomposed" href="./assets/ico/apple-touch-icon-72-precomposed.png"/>
+  <link rel="apple-touch-icon-precomposed" href="./assets/ico/apple-touch-icon-57-precomposed.png"/>
+  <link rel="shortcut icon" href="./assets/ico/favicon.png"/>
+
+</head>
+<body>
+	<div id="segment-header" class="segment">  <!-- segment-header -->	
+		<div class="container">  <!-- container -->
+			<a id="logo" href="http://hl7.org/fhir"><img alt="logo fhir" src="./assets/images/fhir-logo-www.png"/> </a>
+			<div id="hl7-status">
+				<b>Continuous Integration Build</b>
+			</div>       	
+			
+			<div id="hl7-nav">
+				 <a id="hl7-logo" href="http://www.hl7.org">
+					<img height="50" alt="visit the hl7 website" width="42" src="./assets/images/hl7-logo.png"/>
+				</a> 
+			</div>       	
+			  <!-- hl7-search -->
+		</div>
+		<div class="container">  <!-- container -->
+	</div></div>  <!-- /segment-header -->	
+
+
+	<div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+		<div id="stripe"> </div>
+		<div class="container">  <!-- container -->
+   <!-- HEADER CONTENT -->
+ 	      		
+ 	      		      		
+			<nav class="navbar navbar-inverse">
+				<div class="container">
+					<button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+						<span class="icon-bar"> </span>
+						<span class="icon-bar"> </span>
+						<span class="icon-bar"> </span>
+					</button>
+					<a class="navbar-brand hidden" href="index.html">FHIR</a>
+					<div class="nav-collapse collapse navbar-inverse-collapse">
+						<ul class="nav navbar-nav">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="documentation.html">Documentation</a></li>
+              <li><a href="implementation.html">Implementation</a></li>
+              <li><a href="resourcelist.html">Resources</a></li>
+              <li><a href="clinical.html">Clinical</a></li>
+              <li><a href="administration.html">Administrative</a></li>
+              <li><a href="infrastructure.html">Infrastructure</a></li>
+              <li><a href="financial.html">Financial</a></li>
+
+						</ul>
+					</div>  <!-- /.nav-collapse -->
+				</div>  <!-- /.container -->
+			</nav>  <!-- /.navbar -->
+      		
+				
+  <!-- /HEADER CONTENT -->				
+		</div>  <!-- /container -->
+	</div>  <!-- /segment-navbar -->
+	
+
+	<div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+		<div class="container">  <!-- container -->	
+			<ul class="breadcrumb">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="clinical.html">Clinical</a></li>        <li><a href="contraindication.html">Contraindication</a></li>        <li><b>Examples</b></li>          <!-- contraindication.html / res-Examples -->
+
+			</ul>	
+		</div>  <!-- /container -->
+	</div>  <!-- /segment-breadcrumb -->
+	
+
+	<div id="segment-content" class="segment">  <!-- segment-content -->
+	<div class="container">  <!-- container -->
+            <div class="row">
+            	<div class="inner-wrapper">
+  <!-- CONTENT CONTENT -->
+
+
+<div class="col-9">
+
+<ul class="nav nav-tabs"><li><a href="contraindication.html">Content</a></li><li class="active"><a href="#">Examples</a></li><li><a href="contraindication-definitions.html">Detailed Descriptions</a></li><li><a href="contraindication-mappings.html">Mappings</a></li><li><a href="contraindication-packages.html">Conformance Packages</a></li></ul>
+
+<h2><span class="sectioncount">4.10.9<a name="4.10.9"> </a></span> Resource Contraindication - Examples</h2>
+
+
+  <!-- content goes here -->
+
+
+
+<p>Example Index:</p>
+<table class="list">
+<tr><td><a href="contraindication-example.html">Drug-drug interaction between prescription and medication statement</a></td><td><a href="contraindication-example.xml.html">XML</a></td><td><a href="contraindication-example.json.html">JSON</a></td></tr><tr><td><a href="contraindication-example-dup.html">Diagnostic order is placed when a recent image of the same body site already exists</a></td><td><a href="contraindication-example-dup.xml.html">XML</a></td><td><a href="contraindication-example-dup.json.html">JSON</a></td></tr><tr><td><a href="contraindication-example-allergy.html">Patient is allergic to an inactive ingredient in an ordered medication</a></td><td><a href="contraindication-example-allergy.xml.html">XML</a></td><td><a href="contraindication-example-allergy.json.html">JSON</a></td></tr><tr><td><a href="contraindication-example-lab.html">Lab order is contraindicated based on a patient's existing medication</a></td><td><a href="contraindication-example-lab.xml.html">XML</a></td><td><a href="contraindication-example-lab.json.html">JSON</a></td></tr></table>
+
+
+<h3><span class="sectioncount">4.10.9.1<a name="4.10.9.1"> </a></span> Drug-drug</h3>
+<p>XML</p>
+<div class="example">
+<p>Drug-drug interaction between prescription and medication statement (id = &quot;ddi&quot;)</p>
+<p><a href="contraindication-example.xml">Raw XML</a></p>
+<pre class="xml">
+<span class="xmltag">&lt;Contraindication</span><span class="xmlattr"> xmlns=&quot;<span class="xmlattrvalue">http://hl7.org/fhir</span>&quot;</span><span class="xmltag">&gt;</span><b>
+  </b><span class="xmltag">&lt;id</span><span class="xmlattr"> value=&quot;<span class="xmlattrvalue">ddi</span>&quot;</span><span class="xmltag">/&gt;</span><b>
+  </b><span class="xmltag">&lt;text</span><span class="xmltag">&gt;</span><b>
+    </b><span class="xmltag">&lt;status</span><span class="xmlattr"> value=&quot;<span class="xmlattrvalue">generated</span>&quot;</span><span class="xmltag">/&gt;</span><b>
+    </b><span class="xmltag">&lt;div</span><span class="xmlattr"> xmlns=&quot;<span class="xmlattrvalue">http://www.w3.org/1999/xhtml</span>&quot;</span><span class="xmltag">&gt;</span><span class="xmlcomment">&lt;!-- Snipped for brevity --&gt;</span><span class="xmltag">&lt;/div&gt;</span><b>
+  </b><span class="xmltag">&lt;/text&gt;</span><b>
+  </b><span class="xmltag">&lt;category</span><span class="xmltag">&gt;</span><b>
+    </b><span class="xmltag">&lt;coding</span><span class="xmltag">&gt;</span><b>
+      </b><span class="xmltag">&lt;system</span><span class="xmlattr"> value=&quot;<span class="xmlattrvalue">http://hl7.org/fhir/v3/ActCode</span>&quot;</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;code</span><span class="xmlattr"> value=&quot;<span class="xmlattrvalue">DRG</span>&quot;</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;display</span><span class="xmlattr"> value=&quot;<span class="xmlattrvalue">Drug Interaction Alert</span>&quot;</span><span class="xmltag">/&gt;</span><b>
+    </b><span class="xmltag">&lt;/coding&gt;</span><b>
+  </b><span class="xmltag">&lt;/category&gt;</span><b>
+  </b><span class="xmltag">&lt;severity</span><span class="xmlattr"> value=&quot;<span class="xmlattrvalue">H</span>&quot;</span><span class="xmltag">/&gt;</span><b>
+  </b><span class="xmltag">&lt;implicated</span><span class="xmltag">&gt;</span><b>
+    </b><span class="xmltag">&lt;reference</span><span class="xmlattr"> value=&quot;<span class="xmlattrvalue"><a href="medicationstatement-example-tylenol.xml.html">MedicationStatement/tylenol</a></span>&quot;</span><span class="xmltag">/&gt;</span><b>
+    </b><span class="xmltag">&lt;display</span><span class="xmlattr"> value=&quot;<span class="xmlattrvalue">500 mg Acetaminophen tablet 1/day, PRN since 2010</span>&quot;</span><span class="xmltag">/&gt;</span><b>
+  </b><span class="xmltag">&lt;/implicated&gt;</span><b>
+  </b><span class="xmltag">&lt;implicated</span><span class="xmltag">&gt;</span><b>
+    </b><span class="xmltag">&lt;reference</span><span class="xmlattr"> value=&quot;<span class="xmlattrvalue"><a href="medicationprescription-example-warfarin.xml.html">MedicationPrescription/warfarin</a></span>&quot;</span><span class="xmltag">/&gt;</span><b>
+    </b><span class="xmltag">&lt;display</span><span class="xmlattr"> value=&quot;<span class="xmlattrvalue">Warfarin 1 MG TAB prescribed Jan. 5, 2014</span>&quot;</span><span class="xmltag">/&gt;</span><b>
+  </b><span class="xmltag">&lt;/implicated&gt;</span><b>
+  </b><span class="xmltag">&lt;detail</span><span class="xmlattr"> value=&quot;<span class="xmlattrvalue">Risk of internal bleeding.  Those who take acetaminophen along with the widely used blood-thinning
+   drug warfarin may face the risk of serious internal bleeding. People on warfarin who take
+   acetaminophen for at least seven days in a row should be closely watched for bleeding.</span>&quot;</span><span class="xmltag">/&gt;</span><b>
+  </b><span class="xmltag">&lt;date</span><span class="xmlattr"> value=&quot;<span class="xmlattrvalue">2014-01-05</span>&quot;</span><span class="xmltag">/&gt;</span><b>
+  </b><span class="xmltag">&lt;author</span><span class="xmltag">&gt;</span><b>
+    </b><span class="xmltag">&lt;reference</span><span class="xmlattr"> value=&quot;<span class="xmlattrvalue"><font color="red">Device/dsp</font></span>&quot;</span><span class="xmltag">/&gt;</span><b>
+  </b><span class="xmltag">&lt;/author&gt;</span><b>
+  </b><span class="xmltag">&lt;mitigation</span><span class="xmltag">&gt;</span><b>
+    </b><span class="xmltag">&lt;action</span><span class="xmltag">&gt;</span><b>
+      </b><span class="xmltag">&lt;coding</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;system</span><span class="xmlattr"> value=&quot;<span class="xmlattrvalue">http://hl7.org/fhir/v3/ActCode</span>&quot;</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;code</span><span class="xmlattr"> value=&quot;<span class="xmlattrvalue">30</span>&quot;</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;display</span><span class="xmlattr"> value=&quot;<span class="xmlattrvalue">Stopped Concurrent Therapy</span>&quot;</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/coding&gt;</span><b>
+      </b><span class="xmltag">&lt;text</span><span class="xmlattr"> value=&quot;<span class="xmlattrvalue">Asked patient to discontinue regular use of Tylenol and to consult with clinician if they
+       need to resume to allow appropriate INR monitoring</span>&quot;</span><span class="xmltag">/&gt;</span><b>
+    </b><span class="xmltag">&lt;/action&gt;</span><b>
+    </b><span class="xmltag">&lt;date</span><span class="xmlattr"> value=&quot;<span class="xmlattrvalue">2014-01-05</span>&quot;</span><span class="xmltag">/&gt;</span><b>
+    </b><span class="xmltag">&lt;author</span><span class="xmltag">&gt;</span><b>
+      </b><span class="xmltag">&lt;reference</span><span class="xmlattr"> value=&quot;<span class="xmlattrvalue"><a href="practitioner-example.xml.html">Practitioner/example</a></span>&quot;</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;display</span><span class="xmlattr"> value=&quot;<span class="xmlattrvalue">Dr. Adam Careful</span>&quot;</span><span class="xmltag">/&gt;</span><b>
+    </b><span class="xmltag">&lt;/author&gt;</span><b>
+  </b><span class="xmltag">&lt;/mitigation&gt;</span><b>
+</b><span class="xmltag">&lt;/Contraindication&gt;</span></pre>
+</div>
+<p>JSON</p>
+<div class="example">
+<p>Drug-drug interaction between prescription and medication statement</p>
+<p><a href="contraindication-example.json">Raw JSON</a> (<a href="contraindication-example.canonical.json">Canonical</a>)</p>
+<pre class="json">
+{
+  &quot;resourceType&quot;: &quot;Contraindication&quot;,
+  &quot;id&quot;: &quot;ddi&quot;,
+  &quot;text&quot;: {
+    &quot;status&quot;: &quot;generated&quot;,
+    &quot;div&quot;: &quot;&lt;div&gt;!-- Snipped for Brevity --&gt;&lt;/div&gt;&quot;
+  },
+  &quot;category&quot;: {
+    &quot;coding&quot;: [
+      {
+        &quot;system&quot;: &quot;http://hl7.org/fhir/v3/ActCode&quot;,
+        &quot;code&quot;: &quot;DRG&quot;,
+        &quot;display&quot;: &quot;Drug Interaction Alert&quot;
+      }
+    ]
+  },
+  &quot;severity&quot;: &quot;H&quot;,
+  &quot;implicated&quot;: [
+    {
+      &quot;reference&quot;: &quot;MedicationStatement/tylenol&quot;,
+      &quot;display&quot;: &quot;500 mg Acetaminophen tablet 1/day, PRN since 2010&quot;
+    },
+    {
+      &quot;reference&quot;: &quot;MedicationPrescription/warfarin&quot;,
+      &quot;display&quot;: &quot;Warfarin 1 MG TAB prescribed Jan. 5, 2014&quot;
+    }
+  ],
+  &quot;detail&quot;: &quot;Risk of internal bleeding.  Those who take acetaminophen along with the widely used blood-thinning drug warfarin may face the risk of serious internal bleeding. People on warfarin who take acetaminophen for at least seven days in a row should be closely watched for bleeding.&quot;,
+  &quot;date&quot;: &quot;2014-01-05&quot;,
+  &quot;author&quot;: {
+    &quot;reference&quot;: &quot;Device/dsp&quot;
+  },
+  &quot;mitigation&quot;: [
+    {
+      &quot;action&quot;: {
+        &quot;coding&quot;: [
+          {
+            &quot;system&quot;: &quot;http://hl7.org/fhir/v3/ActCode&quot;,
+            &quot;code&quot;: &quot;30&quot;,
+            &quot;display&quot;: &quot;Stopped Concurrent Therapy&quot;
+          }
+        ],
+        &quot;text&quot;: &quot;Asked patient to discontinue regular use of Tylenol and to consult with clinician if they need to resume to allow appropriate INR monitoring&quot;
+      },
+      &quot;date&quot;: &quot;2014-01-05&quot;,
+      &quot;author&quot;: {
+        &quot;reference&quot;: &quot;Practitioner/example&quot;,
+        &quot;display&quot;: &quot;Dr. Adam Careful&quot;
+      }
+    }
+  ]
+}
+</pre>
+</div>
+<h3><span class="sectioncount">4.10.9.2<a name="4.10.9.2"> </a></span> Duplicate Therapy</h3>
+<p>XML</p>
+<div class="example">
+<p>Diagnostic order is placed when a recent image of the same body site already exists (id = &quot;duplicate&quot;)</p>
+<p><a href="contraindication-example-dup.xml">Raw XML</a></p>
+<pre class="xml">
+<span class="xmltag">&lt;Contraindication</span><span class="xmlattr"> xmlns=&quot;<span class="xmlattrvalue">http://hl7.org/fhir</span>&quot;</span><span class="xmltag">&gt;</span><b>
+  </b><span class="xmltag">&lt;id</span><span class="xmlattr"> value=&quot;<span class="xmlattrvalue">duplicate</span>&quot;</span><span class="xmltag">/&gt;</span><b>
+  </b><span class="xmltag">&lt;text</span><span class="xmltag">&gt;</span><b>
+    </b><span class="xmltag">&lt;status</span><span class="xmlattr"> value=&quot;<span class="xmlattrvalue">generated</span>&quot;</span><span class="xmltag">/&gt;</span><b>
+    </b><span class="xmltag">&lt;div</span><span class="xmlattr"> xmlns=&quot;<span class="xmlattrvalue">http://www.w3.org/1999/xhtml</span>&quot;</span><span class="xmltag">&gt;</span><span class="xmlcomment">&lt;!-- Snipped for brevity --&gt;</span><span class="xmltag">&lt;/div&gt;</span><b>
+  </b><span class="xmltag">&lt;/text&gt;</span><span class="xmlcomment">&lt;!--    test 1    --&gt;</span><b>
+  </b><span class="xmltag">&lt;category</span><span class="xmltag">&gt;</span><b>
+    </b><span class="xmltag">&lt;coding</span><span class="xmltag">&gt;</span><b>
+      </b><span class="xmltag">&lt;system</span><span class="xmlattr"> value=&quot;<span class="xmlattrvalue">http://hl7.org/fhir/v3/ActCode</span>&quot;</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;code</span><span class="xmlattr"> value=&quot;<span class="xmlattrvalue">DUPTHPY</span>&quot;</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;display</span><span class="xmlattr"> value=&quot;<span class="xmlattrvalue">Duplicate Therapy Alert</span>&quot;</span><span class="xmltag">/&gt;</span><b>
+    </b><span class="xmltag">&lt;/coding&gt;</span><b>
+  </b><span class="xmltag">&lt;/category&gt;</span><b>
+  </b><span class="xmltag">&lt;implicated</span><span class="xmltag">&gt;</span><b>
+    </b><span class="xmltag">&lt;reference</span><span class="xmlattr"> value=&quot;<span class="xmlattrvalue"><a href="diagnosticorder-example-di.xml.html">DiagnosticOrder/di</a></span>&quot;</span><span class="xmltag">/&gt;</span><b>
+    </b><span class="xmltag">&lt;display</span><span class="xmlattr"> value=&quot;<span class="xmlattrvalue">Chest CT - ordered May 8, 2013 by Dr. Adam Careful</span>&quot;</span><span class="xmltag">/&gt;</span><b>
+  </b><span class="xmltag">&lt;/implicated&gt;</span><span class="xmlcomment">&lt;!--    test 2    --&gt;</span><b>
+  </b><span class="xmltag">&lt;implicated</span><span class="xmltag">&gt;</span><b>
+    </b><span class="xmltag">&lt;reference</span><span class="xmlattr"> value=&quot;<span class="xmlattrvalue"><a href="imagingstudy-example.xml.html">ImagingStudy/example</a></span>&quot;</span><span class="xmltag">/&gt;</span><b>
+    </b><span class="xmltag">&lt;display</span><span class="xmlattr"> value=&quot;<span class="xmlattrvalue">Image 1 from Series 3: CT Images on Patient MINT (MINT1234) taken at 1-Jan 2011 01:20
+     AM</span>&quot;</span><span class="xmltag">/&gt;</span><b>
+  </b><span class="xmltag">&lt;/implicated&gt;</span><b>
+  </b><span class="xmltag">&lt;detail</span><span class="xmlattr"> value=&quot;<span class="xmlattrvalue">Similar test was performed within the past 14 days</span>&quot;</span><span class="xmltag">/&gt;</span><b>
+  </b><span class="xmltag">&lt;date</span><span class="xmlattr"> value=&quot;<span class="xmlattrvalue">2013-05-08</span>&quot;</span><span class="xmltag">/&gt;</span><b>
+  </b><span class="xmltag">&lt;author</span><span class="xmltag">&gt;</span><b>
+    </b><span class="xmltag">&lt;reference</span><span class="xmlattr"> value=&quot;<span class="xmlattrvalue"><font color="red">Device/dsp</font></span>&quot;</span><span class="xmltag">/&gt;</span><b>
+  </b><span class="xmltag">&lt;/author&gt;</span><b>
+</b><span class="xmltag">&lt;/Contraindication&gt;</span></pre>
+</div>
+<p>JSON</p>
+<div class="example">
+<p>Diagnostic order is placed when a recent image of the same body site already exists</p>
+<p><a href="contraindication-example-dup.json">Raw JSON</a> (<a href="contraindication-example-dup.canonical.json">Canonical</a>)</p>
+<pre class="json">
+{
+  &quot;resourceType&quot;: &quot;Contraindication&quot;,
+  &quot;id&quot;: &quot;duplicate&quot;,
+  &quot;text&quot;: {
+    &quot;status&quot;: &quot;generated&quot;,
+    &quot;div&quot;: &quot;&lt;div&gt;!-- Snipped for Brevity --&gt;&lt;/div&gt;&quot;
+  },
+  &quot;category&quot;: {
+    &quot;coding&quot;: [
+      {
+        &quot;system&quot;: &quot;http://hl7.org/fhir/v3/ActCode&quot;,
+        &quot;code&quot;: &quot;DUPTHPY&quot;,
+        &quot;display&quot;: &quot;Duplicate Therapy Alert&quot;
+      }
+    ]
+  },
+  &quot;implicated&quot;: [
+    {
+      &quot;reference&quot;: &quot;DiagnosticOrder/di&quot;,
+      &quot;display&quot;: &quot;Chest CT - ordered May 8, 2013 by Dr. Adam Careful&quot;
+    },
+    {
+      &quot;reference&quot;: &quot;ImagingStudy/example&quot;,
+      &quot;display&quot;: &quot;Image 1 from Series 3: CT Images on Patient MINT (MINT1234) taken at 1-Jan 2011 01:20 AM&quot;
+    }
+  ],
+  &quot;detail&quot;: &quot;Similar test was performed within the past 14 days&quot;,
+  &quot;date&quot;: &quot;2013-05-08&quot;,
+  &quot;author&quot;: {
+    &quot;reference&quot;: &quot;Device/dsp&quot;
+  }
+}
+</pre>
+</div>
+
+
+<p>
+Usage note: every effort has been made to ensure that the 
+examples are correct and useful, but they are not a normative part 
+of the specification. 
+</p>
+
+
+</div>
+
+
+				</div>  <!-- /inner-wrapper -->
+            </div>  <!-- /row -->
+        </div>  <!-- /container -->
+        
+    </div>  <!-- /segment-content -->
+
+
+	<div id="segment-footer" class="segment">  <!-- segment-footer -->
+		<div class="container">  <!-- container -->
+			<div class="inner-wrapper">
+				<p>
+        © HL7.org 2011+. FHIR DSTU (v0.4.0-3920) generated on Tue, Dec 30, 2014 10:59+0000.   <!-- <a href="qa.html">QA Report</a> -->   <!-- achive note -->
+        <br/>
+        <span style="color: #FFFF77">
+        Links: <a style="color: #81BEF7" href="timelines.html">What's a DSTU?</a> | 
+               <a style="color: #81BEF7" href="history.html">Version History</a> | 
+               <a style="color: #81BEF7" href="http://services.w3.org/htmldiff?doc1=http%3A%2F%2Fhl7.org%2Fimplement%2Fstandards%2Ffhir%2Fcontraindication-examples.html&amp;doc2=http%3A%2F%2Fhl7-fhir.github.io%2F%2Fcontraindication-examples.html">Compare to DSTU</a> | 
+               <a style="color: #81BEF7" rel="license" href="license.html"><img style="border-style: none;" alt="CC0" src="cc0.png"/></a> | 
+               <a style="color: #81BEF7" target="_blank" href="http://gforge.hl7.org/gf/project/fhir/tracker/?action=TrackerItemAdd&amp;tracker_id=677">Propose a change</a>   
+        </span>
+        </p>
+			</div>  <!-- /inner-wrapper -->
+		</div>  <!-- /container -->
+	</div>  <!-- /segment-footer -->
+  <!-- disqus thread -->
+  <!-- disqus -->
+  <!-- end disqus -->        
+	
+	<div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+		<div class="container">  <!-- container -->
+		</div>  <!-- /container -->
+	</div>  <!-- /segment-post-footer -->
+    
+      <!-- JS and analytics only. -->
+      <!-- Bootstrap core JavaScript
+================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+<script src="./assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+<script src="./dist/js/bootstrap.min.js"> </script>
+<script src="./assets/js/respond.min.js"> </script>
+
+<script src="./assets/js/fhir.js"> </script>
+
+  <!-- Analytics Below
+================================================== -->
+
+    
+</body>
+</html>

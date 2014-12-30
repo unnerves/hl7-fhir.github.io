@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="valueset-additionalmaterials"/>
+  <meta>
+    <lastUpdated value="2014-12-30T10:55:31"/>
+  </meta>
+  <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      This value set includes sample additional material type codes.
+    
+      <hr/>
+      <p>This value set contains 6 concepts</p>
+      <h2>Additional Material Codes</h2>
+      <p>This value set includes sample additional material type codes.</p>
+      <p>
+        <b>Copyright Statement:</b> This is an example set
+      </p>
+      <p>This value set defines its own terms in the system http://hl7.org/fhir/additionalmaterials</p>
+      <table class="codes">
+        <tr>
+          <td>
+            <b>Code</b>
+          </td>
+          <td>
+            <b>Definition</b>
+          </td>
+        </tr>
+        <tr>
+          <td>xray
+            <a name="xray"> </a>
+          </td>
+          <td/>
+        </tr>
+        <tr>
+          <td>image
+            <a name="image"> </a>
+          </td>
+          <td/>
+        </tr>
+        <tr>
+          <td>email
+            <a name="email"> </a>
+          </td>
+          <td/>
+        </tr>
+        <tr>
+          <td>model
+            <a name="model"> </a>
+          </td>
+          <td/>
+        </tr>
+        <tr>
+          <td>document
+            <a name="document"> </a>
+          </td>
+          <td/>
+        </tr>
+        <tr>
+          <td>other
+            <a name="other"> </a>
+          </td>
+          <td/>
+        </tr>
+      </table>
+    </div>
+  </text>
+  <extension url="http://hl7.org/fhir/ExtensionDefinition/valueset-oid">
+    <valueUri value="urn:oid:2.16.840.1.113883.4.642.2.447"/>
+  </extension>
+  <identifier value="http://hl7.org/fhir/vs/additionalmaterials"/>
+  <name value="Additional Material Codes"/>
+  <publisher value="Financial Management"/>
+  <telecom>
+    <system value="url"/>
+    <value value="http://hl7.org/fhir"/>
+  </telecom>
+  <description value="This value set includes sample additional material type codes."/>
+  <copyright value="This is an example set"/>
+  <status value="draft"/>
+  <extensible value="false"/>
+  <define>
+    <extension url="http://hl7.org/fhir/ExtensionDefinition/valueset-oid">
+      <valueUri value="urn:oid:null"/>
+    </extension>
+    <system value="http://hl7.org/fhir/additionalmaterials"/>
+    <concept>
+      <code value="xray"/>
+    </concept>
+    <concept>
+      <code value="image"/>
+    </concept>
+    <concept>
+      <code value="email"/>
+    </concept>
+    <concept>
+      <code value="model"/>
+    </concept>
+    <concept>
+      <code value="document"/>
+    </concept>
+    <concept>
+      <code value="other"/>
+    </concept>
+  </define>
+</ValueSet>

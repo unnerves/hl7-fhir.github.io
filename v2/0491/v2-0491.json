@@ -1,0 +1,42 @@
+{
+  "resourceType": "ValueSet",
+  "id": "v2-0491",
+  "text": {
+    "status": "additional",
+    "div": "<div><p>Specimen Quality</p>\r\n<table class=\"grid\"><tr><td><b>Code</b></td><td><b>Description</b></td><td><b>Version</b></td></tr><tr><td>E<a name=\"E\"> </a></td><td>Excellent</td><td>added v2.5</td></tr><tr><td>F<a name=\"F\"> </a></td><td>Fair</td><td>added v2.5</td></tr><tr><td>G<a name=\"G\"> </a></td><td>Good</td><td>added v2.5</td></tr><tr><td>P<a name=\"P\"> </a></td><td>Poor</td><td>added v2.5</td></tr></table>\r\n</div>"
+  },
+  "identifier": "http://hl7.org/fhir/v2/vs/0491",
+  "name": "v2 Specimen Quality",
+  "publisher": "HL7, Inc",
+  "telecom": [
+    {
+      "system": "url",
+      "value": "http://hl7.org"
+    }
+  ],
+  "description": "FHIR Value set/code system definition for HL7 v2 table 0491 ( Specimen Quality)",
+  "status": "active",
+  "date": "2011-01-28",
+  "define": {
+    "system": "http://hl7.org/fhir/v2/0491",
+    "caseSensitive": true,
+    "concept": [
+      {
+        "code": "E",
+        "display": "Excellent"
+      },
+      {
+        "code": "F",
+        "display": "Fair"
+      },
+      {
+        "code": "G",
+        "display": "Good"
+      },
+      {
+        "code": "P",
+        "display": "Poor"
+      }
+    ]
+  }
+}

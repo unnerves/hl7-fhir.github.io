@@ -1,0 +1,654 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+  <title>Provenance - FHIR v0.4.0</title>
+
+  
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <meta content="http://hl7.org/fhir" name="author"/>
+
+  <link rel="stylesheet" href="fhir.css"/>
+  <link rel="Prev" href="http://hl7.org/implement/standards/fhir/provenance.html"/>
+
+    <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" href="./dist/css/bootstrap.css"/>
+  <link rel="stylesheet" href="./assets/css/bootstrap-fhir.css"/>
+
+    <!-- Project extras -->
+  <link rel="stylesheet" href="./assets/css/project.css"/>
+  <link rel="stylesheet" href="./assets/css/pygments-manni.css"/>
+	<link rel="stylesheet" href="jquery-ui.css"/>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- [if lt IE 9]>
+  <script src="./assets/js/html5shiv.js"></script>
+  <script src="./assets/js/respond.min.js"></script>
+  <![endif] -->
+
+    <!-- Favicons -->
+  <link sizes="144x144" rel="apple-touch-icon-precomposed" href="./assets/ico/apple-touch-icon-144-precomposed.png"/>
+  <link sizes="114x114" rel="apple-touch-icon-precomposed" href="./assets/ico/apple-touch-icon-114-precomposed.png"/>
+  <link sizes="72x72" rel="apple-touch-icon-precomposed" href="./assets/ico/apple-touch-icon-72-precomposed.png"/>
+  <link rel="apple-touch-icon-precomposed" href="./assets/ico/apple-touch-icon-57-precomposed.png"/>
+  <link rel="shortcut icon" href="./assets/ico/favicon.png"/>
+
+</head>
+<body>
+	<div id="segment-header" class="segment">  <!-- segment-header -->	
+		<div class="container">  <!-- container -->
+			<a id="logo" href="http://hl7.org/fhir"><img alt="logo fhir" src="./assets/images/fhir-logo-www.png"/> </a>
+			<div id="hl7-status">
+				<b>Continuous Integration Build</b>
+			</div>       	
+			
+			<div id="hl7-nav">
+				 <a id="hl7-logo" href="http://www.hl7.org">
+					<img height="50" alt="visit the hl7 website" width="42" src="./assets/images/hl7-logo.png"/>
+				</a> 
+			</div>       	
+			  <!-- hl7-search -->
+		</div>
+		<div class="container">  <!-- container -->
+	</div></div>  <!-- /segment-header -->	
+
+
+	<div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+		<div id="stripe"> </div>
+		<div class="container">  <!-- container -->
+   <!-- HEADER CONTENT -->
+ 	      		
+ 	      		      		
+			<nav class="navbar navbar-inverse">
+				<div class="container">
+					<button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+						<span class="icon-bar"> </span>
+						<span class="icon-bar"> </span>
+						<span class="icon-bar"> </span>
+					</button>
+					<a class="navbar-brand hidden" href="index.html">FHIR</a>
+					<div class="nav-collapse collapse navbar-inverse-collapse">
+						<ul class="nav navbar-nav">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="documentation.html">Documentation</a></li>
+              <li><a href="implementation.html">Implementation</a></li>
+              <li><a href="resourcelist.html">Resources</a></li>
+              <li><a href="clinical.html">Clinical</a></li>
+              <li><a href="administration.html">Administrative</a></li>
+              <li><a href="infrastructure.html">Infrastructure</a></li>
+              <li><a href="financial.html">Financial</a></li>
+
+						</ul>
+					</div>  <!-- /.nav-collapse -->
+				</div>  <!-- /.container -->
+			</nav>  <!-- /.navbar -->
+      		
+				
+  <!-- /HEADER CONTENT -->				
+		</div>  <!-- /container -->
+	</div>  <!-- /segment-navbar -->
+	
+
+	<div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+		<div class="container">  <!-- container -->	
+			<ul class="breadcrumb">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="infrastructure.html">Infrastructure</a></li>        <li><b>Provenance</b></li>          <!-- provenance.html / resource -->
+
+			</ul>	
+		</div>  <!-- /container -->
+	</div>  <!-- /segment-breadcrumb -->
+	
+
+	<div id="segment-content" class="segment">  <!-- segment-content -->
+	<div class="container">  <!-- container -->
+            <div class="row">
+            	<div class="inner-wrapper">
+  <!-- CONTENT CONTENT -->
+
+
+<div class="col-9">
+
+<ul class="nav nav-tabs"><li class="active"><a href="#">Content</a></li><li><a href="provenance-examples.html">Examples</a></li><li><a href="provenance-definitions.html">Detailed Descriptions</a></li><li><a href="provenance-mappings.html">Mappings</a></li><li><a href="provenance-packages.html">Conformance Packages</a></li></ul>
+
+<h1><span class="sectioncount">6.5<a name="6.5"> </a></span> Resource Provenance - Content</h1>
+  <!-- <p class="status">Status: null</p> -->
+
+<p>This resource cultivated by the <a _target="blank" href="http://www.hl7.org/Special/committees/fhirmg/index.cfm">FHIR Management Group</a> Work Group</p>
+
+
+<p> 
+Provenance information that describes the activity that led to the creation of a set of resources. This information can be used to help determine their reliability or trace where the information in them came from. The focus of the provenance resource is record keeping, audit and traceability, and not explicit statements of clinical significance. 
+</p>
+
+
+<div>
+<h2><span class="sectioncount">6.5.1<a name="6.5.1"> </a></span> Scope and Usage</h2>
+<p>
+The provenance resource tracks information about activity that created a version of a resource, including the entities, and agents involved in producing a resource.
+This information can be used to form assessments about its quality, reliability or trustworthiness, or to provide pointers for where to go to further investigate the origins of the resource and the information in it. 
+</p>
+<p>
+<a href="provenance.html">Provenance resources</a> are a record-keeping assertion that gathers information about the context in which the information in a resource was obtained. 
+Provenance resources are prepared by the application that initiates the create/update etc. of the resource.
+A <a href="securityevent.html">Security Event</a> resource contains overlapping information, but is created as events occur, to track and audit the events. 
+Security Event resources are often (though not exclusively) created by the application responding to the read/query/create/update etc. event. 
+</p>
+</div>
+
+<div>
+<h2><span class="sectioncount">6.5.2<a name="6.5.2"> </a></span> Boundaries and Relationships</h2>
+<p>
+Many other FHIR resources contain some elements that represent information
+about how the resource was obtained, and therefore thay overlap with the 
+functionality of the Provenance resource. These properties in other resources
+should always be used in preference to the provenance resource, and the 
+provenance resource should be used where additional information is required,
+though overlap can occur. 
+</p>
+</div>
+
+<div>
+<h2><span class="sectioncount">6.5.3<a name="6.5.3"> </a></span> Background and Context</h2>
+<p>
+The provenance resource is based on the <a href="http://www.w3.org/TR/2013/NOTE-prov-overview-20130430/">W3C Provenance specification</a>, 
+and mappings are provided. The Provenance resource is tailored to fit the FHIR use-cases for provenance more directly. 
+The W3C Provenance Specification has the following fundamental model:
+</p>
+<p>
+<img height="173" style="float: none; clear: both" alt="Key concepts" width="280" src="http://www.w3.org/TR/prov-primer/images/key-concepts.png"/>
+</p>
+<p>
+The <i>Provenance</i> resource actually corresponds to a single activity that identifies a set of resources (<i>target</i>) generated by the activity.
+The activity also references other entities (<i>entity</i>) that were used and the agents (<i>agent</i>) that were associated with the activity. 
+</p>
+</div>
+
+
+
+
+
+<a name="resource"/>
+<h2><span class="sectioncount">6.5.4<a name="6.5.4"> </a></span> 
+Resource Content
+</h2>
+<a name="def"> </a>
+<a name="provenance"> </a>
+<a name="Provenance"> </a>
+
+<div id="tabs">
+  <ul>
+    <li><a href="#tabs-struc">Structure</a></li>
+    <li><a href="#tabs-uml">UML</a></li>
+    <li><a href="#tabs-xml">XML</a></li>
+    <li><a href="#tabs-json">JSON</a></li>
+    <li><a href="#tabs-all">All</a></li>
+  </ul>
+  <div id="tabs-struc">
+
+<div id="tbl">
+<p><b>Structure</b></p>
+ <div id="tbl-inner">
+  <table style="border: 0px; font-size: 11px; font-family: verdana; vertical-align: top;" cellpadding="0" border="0" cellspacing="0"><tr style="border: 1px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;"><th style="vertical-align: top; text-align : left; padding:0px 4px 0px 4px" class="heirarchy">Name</th><th style="vertical-align: top; text-align : left; padding:0px 4px 0px 4px" class="heirarchy">Flags</th><th style="vertical-align: top; text-align : left; padding:0px 4px 0px 4px" class="heirarchy">Card.</th><th style="width: 100px" class="heirarchy">Type</th><th style="vertical-align: top; text-align : left; padding:0px 4px 0px 4px" class="heirarchy">Description &amp; Constraints<span style="float: right"><a title="Legend for this format" href="formats.html#table"><img alt="doco" src="help16.png"/></a></span></th></tr><tr style="border: 0px; padding:0px; vertical-align: top; background-color: white;"><td style="vertical-align: top; text-align : left; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1.png)" class="heirarchy"><img alt="." class="heirarchy" src="tbl_spacer.png"/><img title="Resource" style="background-color: white;" alt="." class="heirarchy" src="icon_resource.png"/> <a title="Provenance information that describes the activity that led to the creation of a set of resources. This information can be used to help determine their reliability or trace where the information in them came from. The focus of the provenance resource is record keeping, audit and traceability, and not explicit statements of clinical significance." href="provenance-definitions.html#Provenance">Provenance</a><a name="Provenance"> </a></td><td style="vertical-align: top; text-align : left; padding:0px 4px 0px 4px" class="heirarchy"/><td style="vertical-align: top; text-align : left; padding:0px 4px 0px 4px" class="heirarchy"/><td style="vertical-align: top; text-align : left; padding:0px 4px 0px 4px" class="heirarchy"><a href="domainresource.html">DomainResource</a></td><td style="vertical-align: top; text-align : left; padding:0px 4px 0px 4px" class="heirarchy">Who, What, When for a set of resources</td></tr>
+<tr style="border: 0px; padding:0px; vertical-align: top; background-color: white;"><td style="vertical-align: top; text-align : left; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="heirarchy"><img alt="." class="heirarchy" src="tbl_spacer.png"/><img alt="." class="heirarchy" src="tbl_vjoin.png"/><img title="Reference to another Resource" style="background-color: white;" alt="." class="heirarchy" src="icon_reference.png"/> <a title="The Reference(s) that were generated by  the activity described in this resource. A provenance can point to more than one target if multiple resources were created/updated by the same activity." href="provenance-definitions.html#Provenance.target">target</a><a name="Provenance.target"> </a></td><td style="vertical-align: top; text-align : left; padding:0px 4px 0px 4px" class="heirarchy"/><td style="vertical-align: top; text-align : left; padding:0px 4px 0px 4px" class="heirarchy">1..*</td><td style="vertical-align: top; text-align : left; padding:0px 4px 0px 4px" class="heirarchy"><a href="resourcelist.html">Any</a></td><td style="vertical-align: top; text-align : left; padding:0px 4px 0px 4px" class="heirarchy">Target Reference(s) (usually version specific)</td></tr>
+<tr style="border: 0px; padding:0px; vertical-align: top; background-color: white;"><td style="vertical-align: top; text-align : left; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="heirarchy"><img alt="." class="heirarchy" src="tbl_spacer.png"/><img alt="." class="heirarchy" src="tbl_vjoin.png"/><img title="Data Type" style="background-color: white;" alt="." class="heirarchy" src="icon_datatype.gif"/> <a title="The period during which the activity occurred." href="provenance-definitions.html#Provenance.period">period</a><a name="Provenance.period"> </a></td><td style="vertical-align: top; text-align : left; padding:0px 4px 0px 4px" class="heirarchy"/><td style="vertical-align: top; text-align : left; padding:0px 4px 0px 4px" class="heirarchy">0..1</td><td style="vertical-align: top; text-align : left; padding:0px 4px 0px 4px" class="heirarchy"><a href="datatypes.html#Period">Period</a></td><td style="vertical-align: top; text-align : left; padding:0px 4px 0px 4px" class="heirarchy">When the activity occurred</td></tr>
+<tr style="border: 0px; padding:0px; vertical-align: top; background-color: white;"><td style="vertical-align: top; text-align : left; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="heirarchy"><img alt="." class="heirarchy" src="tbl_spacer.png"/><img alt="." class="heirarchy" src="tbl_vjoin.png"/><img title="Primitive Data Type" style="background-color: white;" alt="." class="heirarchy" src="icon_primitive.png"/> <a title="The instant of time at which the activity was recorded." href="provenance-definitions.html#Provenance.recorded">recorded</a><a name="Provenance.recorded"> </a></td><td style="vertical-align: top; text-align : left; padding:0px 4px 0px 4px" class="heirarchy"/><td style="vertical-align: top; text-align : left; padding:0px 4px 0px 4px" class="heirarchy">1..1</td><td style="vertical-align: top; text-align : left; padding:0px 4px 0px 4px" class="heirarchy"><a href="datatypes.html#instant">instant</a></td><td style="vertical-align: top; text-align : left; padding:0px 4px 0px 4px" class="heirarchy">When the activity was recorded / updated</td></tr>
+<tr style="border: 0px; padding:0px; vertical-align: top; background-color: white;"><td style="vertical-align: top; text-align : left; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="heirarchy"><img alt="." class="heirarchy" src="tbl_spacer.png"/><img alt="." class="heirarchy" src="tbl_vjoin.png"/><img title="Data Type" style="background-color: white;" alt="." class="heirarchy" src="icon_datatype.gif"/> <a title="The reason that the activity was taking place." href="provenance-definitions.html#Provenance.reason">reason</a><a name="Provenance.reason"> </a></td><td style="vertical-align: top; text-align : left; padding:0px 4px 0px 4px" class="heirarchy"/><td style="vertical-align: top; text-align : left; padding:0px 4px 0px 4px" class="heirarchy">0..1</td><td style="vertical-align: top; text-align : left; padding:0px 4px 0px 4px" class="heirarchy"><a href="datatypes.html#CodeableConcept">CodeableConcept</a></td><td style="vertical-align: top; text-align : left; padding:0px 4px 0px 4px" class="heirarchy">Reason the activity is occurring</td></tr>
+<tr style="border: 0px; padding:0px; vertical-align: top; background-color: white;"><td style="vertical-align: top; text-align : left; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="heirarchy"><img alt="." class="heirarchy" src="tbl_spacer.png"/><img alt="." class="heirarchy" src="tbl_vjoin.png"/><img title="Reference to another Resource" style="background-color: white;" alt="." class="heirarchy" src="icon_reference.png"/> <a title="Where the activity occurred, if relevant." href="provenance-definitions.html#Provenance.location">location</a><a name="Provenance.location"> </a></td><td style="vertical-align: top; text-align : left; padding:0px 4px 0px 4px" class="heirarchy"/><td style="vertical-align: top; text-align : left; padding:0px 4px 0px 4px" class="heirarchy">0..1</td><td style="vertical-align: top; text-align : left; padding:0px 4px 0px 4px" class="heirarchy"><a href="location.html">Location</a></td><td style="vertical-align: top; text-align : left; padding:0px 4px 0px 4px" class="heirarchy">Where the activity occurred, if relevant</td></tr>
+<tr style="border: 0px; padding:0px; vertical-align: top; background-color: white;"><td style="vertical-align: top; text-align : left; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="heirarchy"><img alt="." class="heirarchy" src="tbl_spacer.png"/><img alt="." class="heirarchy" src="tbl_vjoin.png"/><img title="Primitive Data Type" style="background-color: white;" alt="." class="heirarchy" src="icon_primitive.png"/> <a title="Policy or plan the activity was defined by. Typically, a single activity may have multiple applicable policy documents, such as patient consent, guarantor funding, etc." href="provenance-definitions.html#Provenance.policy">policy</a><a name="Provenance.policy"> </a></td><td style="vertical-align: top; text-align : left; padding:0px 4px 0px 4px" class="heirarchy"/><td style="vertical-align: top; text-align : left; padding:0px 4px 0px 4px" class="heirarchy">0..*</td><td style="vertical-align: top; text-align : left; padding:0px 4px 0px 4px" class="heirarchy"><a href="datatypes.html#uri">uri</a></td><td style="vertical-align: top; text-align : left; padding:0px 4px 0px 4px" class="heirarchy">Policy or plan the activity was defined by</td></tr>
+<tr style="border: 0px; padding:0px; vertical-align: top; background-color: white;"><td style="vertical-align: top; text-align : left; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck11.png)" class="heirarchy"><img alt="." class="heirarchy" src="tbl_spacer.png"/><img alt="." class="heirarchy" src="tbl_vjoin.png"/><img title="Element" style="background-color: white;" alt="." class="heirarchy" src="icon_element.gif"/> <a title="An agent takes a role in an activity such that the agent can be assigned some degree of responsibility for the activity taking place. An agent can be a person, a piece of software, an inanimate object, an organization, or other entities that may be ascribed responsibility." href="provenance-definitions.html#Provenance.agent">agent</a><a name="Provenance.agent"> </a></td><td style="vertical-align: top; text-align : left; padding:0px 4px 0px 4px" class="heirarchy"/><td style="vertical-align: top; text-align : left; padding:0px 4px 0px 4px" class="heirarchy">0..*</td><td style="vertical-align: top; text-align : left; padding:0px 4px 0px 4px" class="heirarchy"><a href="element.html">Element</a></td><td style="vertical-align: top; text-align : left; padding:0px 4px 0px 4px" class="heirarchy">Person, organization, records, etc. involved in creating resource</td></tr>
+<tr style="border: 0px; padding:0px; vertical-align: top; background-color: white;"><td style="vertical-align: top; text-align : left; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)" class="heirarchy"><img alt="." class="heirarchy" src="tbl_spacer.png"/><img alt="." class="heirarchy" src="tbl_vline.png"/><img alt="." class="heirarchy" src="tbl_vjoin.png"/><img title="Data Type" style="background-color: white;" alt="." class="heirarchy" src="icon_datatype.gif"/> <a title="The role that the participant played." href="provenance-definitions.html#Provenance.agent.role">role</a><a name="Provenance.agent.role"> </a></td><td style="vertical-align: top; text-align : left; padding:0px 4px 0px 4px" class="heirarchy"/><td style="vertical-align: top; text-align : left; padding:0px 4px 0px 4px" class="heirarchy">1..1</td><td style="vertical-align: top; text-align : left; padding:0px 4px 0px 4px" class="heirarchy"><a href="datatypes.html#Coding">Coding</a></td><td style="vertical-align: top; text-align : left; padding:0px 4px 0px 4px" class="heirarchy">e.g. author | overseer | enterer | attester | source | cc: +<br/><a title="The role that a provenance agent played" href="valueset-provenance-agent-role.html">ProvenanceAgentRole</a> (<a title="If one of the defined codes is appropriate, it must be used, or some other code may be used" href="terminologies.html#incomplete">Incomplete</a>)</td></tr>
+<tr style="border: 0px; padding:0px; vertical-align: top; background-color: white;"><td style="vertical-align: top; text-align : left; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)" class="heirarchy"><img alt="." class="heirarchy" src="tbl_spacer.png"/><img alt="." class="heirarchy" src="tbl_vline.png"/><img alt="." class="heirarchy" src="tbl_vjoin.png"/><img title="Data Type" style="background-color: white;" alt="." class="heirarchy" src="icon_datatype.gif"/> <a title="The type of the participant." href="provenance-definitions.html#Provenance.agent.type">type</a><a name="Provenance.agent.type"> </a></td><td style="vertical-align: top; text-align : left; padding:0px 4px 0px 4px" class="heirarchy"/><td style="vertical-align: top; text-align : left; padding:0px 4px 0px 4px" class="heirarchy">1..1</td><td style="vertical-align: top; text-align : left; padding:0px 4px 0px 4px" class="heirarchy"><a href="datatypes.html#Coding">Coding</a></td><td style="vertical-align: top; text-align : left; padding:0px 4px 0px 4px" class="heirarchy">e.g. Resource | Person | Application | Record | Document +<br/><a title="The type of a provenance agent" href="valueset-provenance-agent-type.html">ProvenanceAgentType</a> (<a title="If one of the defined codes is appropriate, it must be used, or some other code may be used" href="terminologies.html#incomplete">Incomplete</a>)</td></tr>
+<tr style="border: 0px; padding:0px; vertical-align: top; background-color: white;"><td style="vertical-align: top; text-align : left; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)" class="heirarchy"><img alt="." class="heirarchy" src="tbl_spacer.png"/><img alt="." class="heirarchy" src="tbl_vline.png"/><img alt="." class="heirarchy" src="tbl_vjoin.png"/><img title="Primitive Data Type" style="background-color: white;" alt="." class="heirarchy" src="icon_primitive.png"/> <a title="Identity of participant. May be a logical or physical uri and maybe absolute or relative." href="provenance-definitions.html#Provenance.agent.reference">reference</a><a name="Provenance.agent.reference"> </a></td><td style="vertical-align: top; text-align : left; padding:0px 4px 0px 4px" class="heirarchy"/><td style="vertical-align: top; text-align : left; padding:0px 4px 0px 4px" class="heirarchy">1..1</td><td style="vertical-align: top; text-align : left; padding:0px 4px 0px 4px" class="heirarchy"><a href="datatypes.html#uri">uri</a></td><td style="vertical-align: top; text-align : left; padding:0px 4px 0px 4px" class="heirarchy">Identity of agent (urn or url)</td></tr>
+<tr style="border: 0px; padding:0px; vertical-align: top; background-color: white;"><td style="vertical-align: top; text-align : left; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck100.png)" class="heirarchy"><img alt="." class="heirarchy" src="tbl_spacer.png"/><img alt="." class="heirarchy" src="tbl_vline.png"/><img alt="." class="heirarchy" src="tbl_vjoin_end.png"/><img title="Primitive Data Type" style="background-color: white;" alt="." class="heirarchy" src="icon_primitive.png"/> <a title="Human-readable description of the participant." href="provenance-definitions.html#Provenance.agent.display">display</a><a name="Provenance.agent.display"> </a></td><td style="vertical-align: top; text-align : left; padding:0px 4px 0px 4px" class="heirarchy"/><td style="vertical-align: top; text-align : left; padding:0px 4px 0px 4px" class="heirarchy">0..1</td><td style="vertical-align: top; text-align : left; padding:0px 4px 0px 4px" class="heirarchy"><a href="datatypes.html#string">string</a></td><td style="vertical-align: top; text-align : left; padding:0px 4px 0px 4px" class="heirarchy">Human description of participant</td></tr>
+<tr style="border: 0px; padding:0px; vertical-align: top; background-color: white;"><td style="vertical-align: top; text-align : left; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck11.png)" class="heirarchy"><img alt="." class="heirarchy" src="tbl_spacer.png"/><img alt="." class="heirarchy" src="tbl_vjoin.png"/><img title="Element" style="background-color: white;" alt="." class="heirarchy" src="icon_element.gif"/> <a title="An entity used in this activity." href="provenance-definitions.html#Provenance.entity">entity</a><a name="Provenance.entity"> </a></td><td style="vertical-align: top; text-align : left; padding:0px 4px 0px 4px" class="heirarchy"/><td style="vertical-align: top; text-align : left; padding:0px 4px 0px 4px" class="heirarchy">0..*</td><td style="vertical-align: top; text-align : left; padding:0px 4px 0px 4px" class="heirarchy"><a href="element.html">Element</a></td><td style="vertical-align: top; text-align : left; padding:0px 4px 0px 4px" class="heirarchy">An entity used in this activity</td></tr>
+<tr style="border: 0px; padding:0px; vertical-align: top; background-color: white;"><td style="vertical-align: top; text-align : left; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)" class="heirarchy"><img alt="." class="heirarchy" src="tbl_spacer.png"/><img alt="." class="heirarchy" src="tbl_vline.png"/><img alt="." class="heirarchy" src="tbl_vjoin.png"/><img title="Primitive Data Type" style="background-color: white;" alt="." class="heirarchy" src="icon_primitive.png"/> <a title="How the entity was used during the activity." href="provenance-definitions.html#Provenance.entity.role">role</a><a name="Provenance.entity.role"> </a></td><td style="vertical-align: top; text-align : left; padding:0px 4px 0px 4px" class="heirarchy"/><td style="vertical-align: top; text-align : left; padding:0px 4px 0px 4px" class="heirarchy">1..1</td><td style="vertical-align: top; text-align : left; padding:0px 4px 0px 4px" class="heirarchy"><a href="datatypes.html#code">code</a></td><td style="vertical-align: top; text-align : left; padding:0px 4px 0px 4px" class="heirarchy">derivation | revision | quotation | source<br/><a title="How an entity was used in an activity" href="provenance-entity-role.html">ProvenanceEntityRole</a> (<a title="One of the the defined codes must be used" href="terminologies.html#code">Required</a>)</td></tr>
+<tr style="border: 0px; padding:0px; vertical-align: top; background-color: white;"><td style="vertical-align: top; text-align : left; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)" class="heirarchy"><img alt="." class="heirarchy" src="tbl_spacer.png"/><img alt="." class="heirarchy" src="tbl_vline.png"/><img alt="." class="heirarchy" src="tbl_vjoin.png"/><img title="Data Type" style="background-color: white;" alt="." class="heirarchy" src="icon_datatype.gif"/> <a title="The type of the entity. If the entity is a resource, then this is a resource type." href="provenance-definitions.html#Provenance.entity.type">type</a><a name="Provenance.entity.type"> </a></td><td style="vertical-align: top; text-align : left; padding:0px 4px 0px 4px" class="heirarchy"/><td style="vertical-align: top; text-align : left; padding:0px 4px 0px 4px" class="heirarchy">1..1</td><td style="vertical-align: top; text-align : left; padding:0px 4px 0px 4px" class="heirarchy"><a href="datatypes.html#Coding">Coding</a></td><td style="vertical-align: top; text-align : left; padding:0px 4px 0px 4px" class="heirarchy">Resource Type, or something else<br/><a title="The type of an entity used in an activity" href="resource-types.html">ProvenanceEntityType</a> (<a title="If one of the defined codes is appropriate, it must be used, or some other code may be used" href="terminologies.html#incomplete">Incomplete</a>)</td></tr>
+<tr style="border: 0px; padding:0px; vertical-align: top; background-color: white;"><td style="vertical-align: top; text-align : left; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)" class="heirarchy"><img alt="." class="heirarchy" src="tbl_spacer.png"/><img alt="." class="heirarchy" src="tbl_vline.png"/><img alt="." class="heirarchy" src="tbl_vjoin.png"/><img title="Primitive Data Type" style="background-color: white;" alt="." class="heirarchy" src="icon_primitive.png"/> <a title="Identity of participant. May be a logical or physical uri and maybe absolute or relative." href="provenance-definitions.html#Provenance.entity.reference">reference</a><a name="Provenance.entity.reference"> </a></td><td style="vertical-align: top; text-align : left; padding:0px 4px 0px 4px" class="heirarchy"/><td style="vertical-align: top; text-align : left; padding:0px 4px 0px 4px" class="heirarchy">1..1</td><td style="vertical-align: top; text-align : left; padding:0px 4px 0px 4px" class="heirarchy"><a href="datatypes.html#uri">uri</a></td><td style="vertical-align: top; text-align : left; padding:0px 4px 0px 4px" class="heirarchy">Identity of participant (urn or url)</td></tr>
+<tr style="border: 0px; padding:0px; vertical-align: top; background-color: white;"><td style="vertical-align: top; text-align : left; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)" class="heirarchy"><img alt="." class="heirarchy" src="tbl_spacer.png"/><img alt="." class="heirarchy" src="tbl_vline.png"/><img alt="." class="heirarchy" src="tbl_vjoin.png"/><img title="Primitive Data Type" style="background-color: white;" alt="." class="heirarchy" src="icon_primitive.png"/> <a title="Human-readable description of the entity." href="provenance-definitions.html#Provenance.entity.display">display</a><a name="Provenance.entity.display"> </a></td><td style="vertical-align: top; text-align : left; padding:0px 4px 0px 4px" class="heirarchy"/><td style="vertical-align: top; text-align : left; padding:0px 4px 0px 4px" class="heirarchy">0..1</td><td style="vertical-align: top; text-align : left; padding:0px 4px 0px 4px" class="heirarchy"><a href="datatypes.html#string">string</a></td><td style="vertical-align: top; text-align : left; padding:0px 4px 0px 4px" class="heirarchy">Human description of participant</td></tr>
+<tr style="border: 0px; padding:0px; vertical-align: top; background-color: white;"><td style="vertical-align: top; text-align : left; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck100.png)" class="heirarchy"><img alt="." class="heirarchy" src="tbl_spacer.png"/><img alt="." class="heirarchy" src="tbl_vline.png"/><img alt="." class="heirarchy" src="tbl_vjoin_end.png"/><img title="Reference to another Element" style="background-color: white;" alt="." class="heirarchy" src="icon_reuse.png"/> <a title="The entity is attributed to an agent to express the agent's responsibility for that entity, possibly along with other agents. This description can be understood as shorthand for saying that the agent was responsible for the activity which generated the entity." href="provenance-definitions.html#Provenance.entity.agent">agent</a><a name="Provenance.entity.agent"> </a></td><td style="vertical-align: top; text-align : left; padding:0px 4px 0px 4px" class="heirarchy"/><td style="vertical-align: top; text-align : left; padding:0px 4px 0px 4px" class="heirarchy">0..1</td><td style="vertical-align: top; text-align : left; padding:0px 4px 0px 4px" class="heirarchy">see <a title="Provenance.agent" href="#Provenance.agent">agent</a></td><td style="vertical-align: top; text-align : left; padding:0px 4px 0px 4px" class="heirarchy">Entity is attributed to this agent</td></tr>
+<tr style="border: 0px; padding:0px; vertical-align: top; background-color: white;"><td style="vertical-align: top; text-align : left; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck00.png)" class="heirarchy"><img alt="." class="heirarchy" src="tbl_spacer.png"/><img alt="." class="heirarchy" src="tbl_vjoin_end.png"/><img title="Primitive Data Type" style="background-color: white;" alt="." class="heirarchy" src="icon_primitive.png"/> <a title="A digital signature on the target Reference(s). The signature should match a Provenance.agent.reference in the provenance resource. The signature is only added to support checking cryptographic integrity of the resource, and not to represent workflow and clinical aspects of the signing process, or to support non-repudiation." href="provenance-definitions.html#Provenance.integritySignature">integritySignature</a><a name="Provenance.integritySignature"> </a></td><td style="vertical-align: top; text-align : left; padding:0px 4px 0px 4px" class="heirarchy"/><td style="vertical-align: top; text-align : left; padding:0px 4px 0px 4px" class="heirarchy">0..1</td><td style="vertical-align: top; text-align : left; padding:0px 4px 0px 4px" class="heirarchy"><a href="datatypes.html#string">string</a></td><td style="vertical-align: top; text-align : left; padding:0px 4px 0px 4px" class="heirarchy">Base64 signature (DigSig) - integrity check</td></tr>
+</table>
+ </div>
+</div>
+
+  </div>
+  <div id="tabs-uml">
+  
+<div id="uml">
+<p><b>UML Diagram</b></p>
+ <div id="uml-inner">
+ <svg height="326.0" width="668.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" version="1.1">  <defs>
+    <filter id="shadow" height="200%" width="200%" y="0" x="0">
+      <feOffset result="offOut" dx="3" dy="3" in="SourceGraphic"/>
+      <feColorMatrix result="matrixOut" values="0.2 0 0 0 0 0 0.2 0 0 0 0 0 0.2 0 0 0 0 0 1 0" type="matrix" in="offOut"/>
+      <feGaussianBlur result="blurOut" stdDeviation="2" in="matrixOut"/>
+      <feBlend in2="blurOut" in="SourceGraphic" mode="normal"/>
+    </filter>
+  </defs><rect height="134.0" style="fill:#f0f8ff;stroke:black;stroke-width:1" width="148.0" filter="url(#shadow)" rx="4" y="0.0" ry="4" x="16.0"/><line style="stroke:dimgrey;stroke-width:1" y1="28.0" y2="28.0" x2="164.0" x1="16.0"/><text fill="black" class="diagram-class-title  diagram-class-resource" y="20.0" x="90.0">Provenance<tspan class="diagram-class-title-link"> (<a class="diagram-class-reference" xlink:href="domainresource.html">DomainResource</a>)</tspan></text><text fill="black" class="diagram-class-detail" y="42.0" x="22.0"><a xlink:href="provenance-definitions.html#Provenance.target"><title>The Reference(s) that were generated by  the activity described in this resource. A provenance can point to more than one target if multiple resources were created/updated by the same activity</title>target</a> : <a xlink:href="references.html#Reference">Reference</a>(<a xlink:href="resourcelist.html#Any">Any</a>) 1..*</text><text fill="black" class="diagram-class-detail" y="56.0" x="22.0"><a xlink:href="provenance-definitions.html#Provenance.period"><title>The period during which the activity occurred</title>period</a> : <a xlink:href="datatypes.html#Period">Period</a> 0..1</text><text fill="black" class="diagram-class-detail" y="70.0" x="22.0"><a xlink:href="provenance-definitions.html#Provenance.recorded"><title>The instant of time at which the activity was recorded</title>recorded</a> : <a xlink:href="datatypes.html#instant">instant</a> 1..1</text><text fill="black" class="diagram-class-detail" y="84.0" x="22.0"><a xlink:href="provenance-definitions.html#Provenance.reason"><title>The reason that the activity was taking place</title>reason</a> : <a xlink:href="datatypes.html#CodeableConcept">CodeableConcept</a> 0..1</text><text fill="black" class="diagram-class-detail" y="98.0" x="22.0"><a xlink:href="provenance-definitions.html#Provenance.location"><title>Where the activity occurred, if relevant</title>location</a> : <a xlink:href="references.html#Reference">Reference</a>(<a xlink:href="location.html#Location">Location</a>) 0..1</text><text fill="black" class="diagram-class-detail" y="112.0" x="22.0"><a xlink:href="provenance-definitions.html#Provenance.policy"><title>Policy or plan the activity was defined by. Typically, a single activity may have multiple applicable policy documents, such as patient consent, guarantor funding, etc</title>policy</a> : <a xlink:href="datatypes.html#uri">uri</a> 0..*</text><text fill="black" class="diagram-class-detail" y="126.0" x="22.0"><a xlink:href="provenance-definitions.html#Provenance.integritySignature"><title>A digital signature on the target Reference(s). The signature should match a Provenance.agent.reference in the provenance resource. The signature is only added to support checking cryptographic integrity of the resource, and not to represent workflow and clinical aspects of the signing process, or to support non-repudiation</title>integritySignature</a> : <a xlink:href="datatypes.html#string">string</a> 0..1</text><rect height="92.0" style="fill:#f0f8ff;stroke:black;stroke-width:1" width="180.0" filter="url(#shadow)" rx="4" y="214.0" ry="4" x="0.0"/><line style="stroke:dimgrey;stroke-width:1" y1="242.0" y2="242.0" x2="180.0" x1="0.0"/><text fill="black" class="diagram-class-title" y="234.0" x="90.0">Agent</text><text fill="black" class="diagram-class-detail" y="256.0" x="6.0"><a xlink:href="provenance-definitions.html#Provenance.agent.role"><title>The role that the participant played</title>role</a> : <a xlink:href="datatypes.html#Coding">Coding</a> 1..1 « <a xlink:href="valueset-provenance-agent-role.html"><title>The role that a provenance agent played</title>ProvenanceAgentRole</a>+ »</text><text fill="black" class="diagram-class-detail" y="270.0" x="6.0"><a xlink:href="provenance-definitions.html#Provenance.agent.type"><title>The type of the participant</title>type</a> : <a xlink:href="datatypes.html#Coding">Coding</a> 1..1 « <a xlink:href="valueset-provenance-agent-type.html"><title>The type of a provenance agent</title>ProvenanceAgentType</a>+ »</text><text fill="black" class="diagram-class-detail" y="284.0" x="6.0"><a xlink:href="provenance-definitions.html#Provenance.agent.reference"><title>Identity of participant. May be a logical or physical uri and maybe absolute or relative</title>reference</a> : <a xlink:href="datatypes.html#uri">uri</a> 1..1</text><text fill="black" class="diagram-class-detail" y="298.0" x="6.0"><a xlink:href="provenance-definitions.html#Provenance.agent.display"><title>Human-readable description of the participant</title>display</a> : <a xlink:href="datatypes.html#string">string</a> 0..1</text><rect height="92.0" style="fill:#f0f8ff;stroke:black;stroke-width:1" width="184.0" filter="url(#shadow)" rx="4" y="21.0" ry="4" x="284.0"/><line style="stroke:dimgrey;stroke-width:1" y1="49.0" y2="49.0" x2="468.0" x1="284.0"/><text fill="black" class="diagram-class-title" y="41.0" x="376.0">Entity</text><text fill="black" class="diagram-class-detail" y="63.0" x="290.0"><a xlink:href="provenance-definitions.html#Provenance.entity.role"><title>How the entity was used during the activity</title>role</a> : <a xlink:href="datatypes.html#code">code</a> 1..1 « <a xlink:href="provenance-entity-role.html"><title>How an entity was used in an activity</title>ProvenanceEntityRole</a> »</text><text fill="black" class="diagram-class-detail" y="77.0" x="290.0"><a xlink:href="provenance-definitions.html#Provenance.entity.type"><title>The type of the entity. If the entity is a resource, then this is a resource type</title>type</a> : <a xlink:href="datatypes.html#Coding">Coding</a> 1..1 « <a xlink:href="resource-types.html"><title>The type of an entity used in an activity</title>ProvenanceEntityType</a>+ »</text><text fill="black" class="diagram-class-detail" y="91.0" x="290.0"><a xlink:href="provenance-definitions.html#Provenance.entity.reference"><title>Identity of participant. May be a logical or physical uri and maybe absolute or relative</title>reference</a> : <a xlink:href="datatypes.html#uri">uri</a> 1..1</text><text fill="black" class="diagram-class-detail" y="105.0" x="290.0"><a xlink:href="provenance-definitions.html#Provenance.entity.display"><title>Human-readable description of the entity</title>display</a> : <a xlink:href="datatypes.html#string">string</a> 0..1</text><line style="stroke:navy;stroke-width:1" y1="134.0" y2="214.0" x2="90.0" x1="90.0"/><polygon transform="rotate(90.0 90.0 134.0)" style="fill:navy;stroke:navy;stroke-width:1" points="90.0,134.0 96.0,138.0 102.0,134.0 96.0,130.0 90.0,134.0"/><rect height="18.0" style="fill:white;stroke:black;stroke-width:0" width="20.0" y="167.0" x="80.0"/><text fill="black" class="diagram-class-linkage" y="177.0" x="90.0"><a xlink:href="provenance-definitions.html#Provenance.agent"><title>An agent takes a role in an activity such that the agent can be assigned some degree of responsibility for the activity taking place. An agent can be a person, a piece of software, an inanimate object, an organization, or other entities that may be ascribed responsibility</title>agent</a></text><text fill="black" class="diagram-class-linkage" y="210.0" x="90.0">0..*</text><line style="stroke:navy;stroke-width:1" y1="113.0" y2="214.0" x2="158.16580310880835" x1="307.83419689119177"/><polygon transform="rotate(145.98753197272686 307.83419689119177 113.0)" style="fill:navy;stroke:navy;stroke-width:1" points="307.83419689119177,113.0 313.83419689119177,117.0 319.83419689119177,113.0 313.83419689119177,109.0 307.83419689119177,113.0"/><rect height="18.0" style="fill:white;stroke:black;stroke-width:0" width="20.0" y="156.0" x="223.0"/><text fill="black" class="diagram-class-linkage" y="166.0" x="233.0"><a xlink:href="provenance-definitions.html#Provenance.entity.agent"><title>The entity is attributed to an agent to express the agent's responsibility for that entity, possibly along with other agents. This description can be understood as shorthand for saying that the agent was responsible for the activity which generated the entity</title>agent</a></text><text fill="black" class="diagram-class-linkage" y="210.0" x="158.16580310880835">0..1</text><line style="stroke:navy;stroke-width:1" y1="67.0" y2="67.0" x2="284.0" x1="164.0"/><polygon transform="rotate(0.0 164.0 67.0)" style="fill:navy;stroke:navy;stroke-width:1" points="164.0,67.0 170.0,71.0 176.0,67.0 170.0,63.0 164.0,67.0"/><rect height="18.0" style="fill:white;stroke:black;stroke-width:0" width="24.0" y="60.0" x="212.0"/><text fill="black" class="diagram-class-linkage" y="70.0" x="224.0"><a xlink:href="provenance-definitions.html#Provenance.entity"><title>An entity used in this activity</title>entity</a></text><text fill="black" class="diagram-class-linkage" y="63.0" x="264.0">0..*</text></svg>
+ </div>
+</div>
+
+  </div>
+  <div id="tabs-xml">
+
+<div id="xml">
+<p><b>XML Template</b></p>
+ <div id="xml-inner">
+  <pre class="spec">
+&lt;<a title="Provenance information that describes the activity that led to the creation of a set of resources. This information can be used to help determine their reliability or trace where the information in them came from. The focus of the provenance resource is record keeping, audit and traceability, and not explicit statements of clinical significance." class="dict" href="provenance-definitions.html#Provenance"><b>Provenance</b></a> xmlns=&quot;http://hl7.org/fhir&quot;&gt; <span style="float: right"><a title="Documentation for this format" href="xml.html"><img alt="doco" src="help.png"/></a></span>
+ &lt;!-- from <a href="resource.html">Resource</a>: <a href="resource.html#id">id</a>, <a href="resource.html#meta">meta</a>, <a href="resource.html#implicitRules">implicitRules</a>, and <a href="resource.html#language">language</a> --&gt;
+ &lt;!-- from <a href="domainresource.html">DomainResource</a>: <a href="narrative.html#Narrative">text</a>, <a href="references.html#contained">contained</a>, <a href="extensibility.html">extension</a>, and <a href="extensibility.html#modifierExtension">modifierExtension</a> --&gt;
+ &lt;<a title="The Reference(s) that were generated by  the activity described in this resource. A provenance can point to more than one target if multiple resources were created/updated by the same activity." class="dict" href="provenance-definitions.html#Provenance.target"><b>target</b></a>&gt;<span style="color: Gray">&lt;!--</span> <span style="color: brown"><b>1..*</b></span> <span style="color: darkgreen"><a href="references.html#Reference">Reference</a>(<a href="resourcelist.html">Any</a>)</span> <span style="color: navy">Target Reference(s) (usually version specific)</span><span style="color: Gray"> --&gt;</span>&lt;/target&gt;
+ &lt;<a title="The period during which the activity occurred." class="dict" href="provenance-definitions.html#Provenance.period"><b>period</b></a>&gt;<span style="color: Gray">&lt;!--</span> <span style="color: brown"><b>0..1</b></span> <span style="color: darkgreen"><a href="datatypes.html#Period">Period</a></span> <span style="color: navy">When the activity occurred</span><span style="color: Gray"> --&gt;</span>&lt;/period&gt;
+ &lt;<a title="The instant of time at which the activity was recorded." class="dict" href="provenance-definitions.html#Provenance.recorded"><b>recorded</b></a> value=&quot;[<span style="color: darkgreen"><a href="datatypes.html#instant">instant</a></span>]&quot;/&gt;<span style="color: Gray">&lt;!--</span> <span style="color: brown"><b>1..1</b></span> <span style="color: navy">When the activity was recorded / updated</span><span style="color: Gray"> --&gt;</span>
+ &lt;<a title="The reason that the activity was taking place." class="dict" href="provenance-definitions.html#Provenance.reason"><b>reason</b></a>&gt;<span style="color: Gray">&lt;!--</span> <span style="color: brown"><b>0..1</b></span> <span style="color: darkgreen"><a href="datatypes.html#CodeableConcept">CodeableConcept</a></span> <span style="color: navy">Reason the activity is occurring</span><span style="color: Gray"> --&gt;</span>&lt;/reason&gt;
+ &lt;<a title="Where the activity occurred, if relevant." class="dict" href="provenance-definitions.html#Provenance.location"><b>location</b></a>&gt;<span style="color: Gray">&lt;!--</span> <span style="color: brown"><b>0..1</b></span> <span style="color: darkgreen"><a href="references.html#Reference">Reference</a>(<a href="location.html#Location">Location</a>)</span> <span style="color: navy">Where the activity occurred, if relevant</span><span style="color: Gray"> --&gt;</span>&lt;/location&gt;
+ &lt;<a title="Policy or plan the activity was defined by. Typically, a single activity may have multiple applicable policy documents, such as patient consent, guarantor funding, etc." class="dict" href="provenance-definitions.html#Provenance.policy"><b>policy</b></a> value=&quot;[<span style="color: darkgreen"><a href="datatypes.html#uri">uri</a></span>]&quot;/&gt;<span style="color: Gray">&lt;!--</span> <span style="color: brown"><b>0..*</b></span> <span style="color: navy">Policy or plan the activity was defined by</span><span style="color: Gray"> --&gt;</span>
+ &lt;<a title="An agent takes a role in an activity such that the agent can be assigned some degree of responsibility for the activity taking place. An agent can be a person, a piece of software, an inanimate object, an organization, or other entities that may be ascribed responsibility." class="dict" href="provenance-definitions.html#Provenance.agent"><b>agent</b></a>&gt;  <span style="color: Gray">&lt;!-- <span style="color: brown"><b>0..*</b></span> Person, organization, records, etc. involved in creating resource --&gt;</span>
+  &lt;<a title="The role that the participant played." class="dict" href="provenance-definitions.html#Provenance.agent.role"><b>role</b></a>&gt;<span style="color: Gray">&lt;!--</span> <span style="color: brown"><b>1..1</b></span> <span style="color: darkgreen"><a href="datatypes.html#Coding">Coding</a></span> <span style="color: navy"><a style="color: navy" href="valueset-provenance-agent-role.html">e.g. author | overseer | enterer | attester | source | cc: +</a></span><span style="color: Gray"> --&gt;</span>&lt;/role&gt;
+  &lt;<a title="The type of the participant." class="dict" href="provenance-definitions.html#Provenance.agent.type"><b>type</b></a>&gt;<span style="color: Gray">&lt;!--</span> <span style="color: brown"><b>1..1</b></span> <span style="color: darkgreen"><a href="datatypes.html#Coding">Coding</a></span> <span style="color: navy"><a style="color: navy" href="valueset-provenance-agent-type.html">e.g. Resource | Person | Application | Record | Document +</a></span><span style="color: Gray"> --&gt;</span>&lt;/type&gt;
+  &lt;<a title="Identity of participant. May be a logical or physical uri and maybe absolute or relative." class="dict" href="provenance-definitions.html#Provenance.agent.reference"><b>reference</b></a> value=&quot;[<span style="color: darkgreen"><a href="datatypes.html#uri">uri</a></span>]&quot;/&gt;<span style="color: Gray">&lt;!--</span> <span style="color: brown"><b>1..1</b></span> <span style="color: navy">Identity of agent (urn or url)</span><span style="color: Gray"> --&gt;</span>
+  &lt;<a title="Human-readable description of the participant." class="dict" href="provenance-definitions.html#Provenance.agent.display"><b>display</b></a> value=&quot;[<span style="color: darkgreen"><a href="datatypes.html#string">string</a></span>]&quot;/&gt;<span style="color: Gray">&lt;!--</span> <span style="color: brown"><b>0..1</b></span> <span style="color: navy">Human description of participant</span><span style="color: Gray"> --&gt;</span>
+ &lt;/agent&gt;
+ &lt;<a title="An entity used in this activity." class="dict" href="provenance-definitions.html#Provenance.entity"><b>entity</b></a>&gt;  <span style="color: Gray">&lt;!-- <span style="color: brown"><b>0..*</b></span> An entity used in this activity --&gt;</span>
+  &lt;<a title="How the entity was used during the activity." class="dict" href="provenance-definitions.html#Provenance.entity.role"><b>role</b></a> value=&quot;[<span style="color: darkgreen"><a href="datatypes.html#code">code</a></span>]&quot;/&gt;<span style="color: Gray">&lt;!--</span> <span style="color: brown"><b>1..1</b></span> <span style="color: navy"><a style="color: navy" href="provenance-entity-role.html">derivation | revision | quotation | source</a></span><span style="color: Gray"> --&gt;</span>
+  &lt;<a title="The type of the entity. If the entity is a resource, then this is a resource type." class="dict" href="provenance-definitions.html#Provenance.entity.type"><b>type</b></a>&gt;<span style="color: Gray">&lt;!--</span> <span style="color: brown"><b>1..1</b></span> <span style="color: darkgreen"><a href="datatypes.html#Coding">Coding</a></span> <a style="color: navy" href="resource-types.html">Resource Type, or something else</a><span style="color: Gray"> --&gt;</span>&lt;/type&gt;
+  &lt;<a title="Identity of participant. May be a logical or physical uri and maybe absolute or relative." class="dict" href="provenance-definitions.html#Provenance.entity.reference"><b>reference</b></a> value=&quot;[<span style="color: darkgreen"><a href="datatypes.html#uri">uri</a></span>]&quot;/&gt;<span style="color: Gray">&lt;!--</span> <span style="color: brown"><b>1..1</b></span> <span style="color: navy">Identity of participant (urn or url)</span><span style="color: Gray"> --&gt;</span>
+  &lt;<a title="Human-readable description of the entity." class="dict" href="provenance-definitions.html#Provenance.entity.display"><b>display</b></a> value=&quot;[<span style="color: darkgreen"><a href="datatypes.html#string">string</a></span>]&quot;/&gt;<span style="color: Gray">&lt;!--</span> <span style="color: brown"><b>0..1</b></span> <span style="color: navy">Human description of participant</span><span style="color: Gray"> --&gt;</span>
+  &lt;<a title="The entity is attributed to an agent to express the agent's responsibility for that entity, possibly along with other agents. This description can be understood as shorthand for saying that the agent was responsible for the activity which generated the entity." class="dict" href="provenance-definitions.html#Provenance.entity.agent"><b>agent</b></a>&gt;<span style="color: Gray">&lt;!--</span> <span style="color: brown"><b>0..1</b></span> <span style="color: darkgreen">Content as for Provenance.agent</span> <span style="color: navy">Entity is attributed to this agent</span><span style="color: Gray"> --&gt;</span>&lt;/agent&gt;
+ &lt;/entity&gt;
+ &lt;<a title="A digital signature on the target Reference(s). The signature should match a Provenance.agent.reference in the provenance resource. The signature is only added to support checking cryptographic integrity of the resource, and not to represent workflow and clinical aspects of the signing process, or to support non-repudiation." class="dict" href="provenance-definitions.html#Provenance.integritySignature"><b>integritySignature</b></a> value=&quot;[<span style="color: darkgreen"><a href="datatypes.html#string">string</a></span>]&quot;/&gt;<span style="color: Gray">&lt;!--</span> <span style="color: brown"><b>0..1</b></span> <span style="color: navy">Base64 signature (DigSig) - integrity check</span><span style="color: Gray"> --&gt;</span>
+&lt;/Provenance&gt;
+</pre>
+
+ </div>
+</div>
+
+  </div>
+  <div id="tabs-json">
+
+<div id="json">
+<p><b>JSON Template</b></p>
+ <div id="json-inner">
+  <pre class="spec">
+{<span style="float: right"><a title="Documentation for this format" href="json.html"><img alt="doco" src="help.png"/></a></span>
+  &quot;resourceType&quot; : &quot;<a title="Provenance information that describes the activity that led to the creation of a set of resources. This information can be used to help determine their reliability or trace where the information in them came from. The focus of the provenance resource is record keeping, audit and traceability, and not explicit statements of clinical significance." class="dict" href="provenance-definitions.html#Provenance"><b>Provenance</b></a>&quot;,
+  // from <a href="resource.html">Resource</a>: <a href="resource.html#id">id</a>, <a href="resource.html#meta">meta</a>, <a href="resource.html#implicitRules">implicitRules</a>, and <a href="resource.html#language">language</a>
+  // from <a href="domainresource.html">DomainResource</a>: <a href="narrative.html#Narrative">text</a>, <a href="references.html#contained">contained</a>, <a href="extensibility.html">extension</a>, and <a href="extensibility.html#modifierExtension">modifierExtension</a>
+  &quot;<a title="The Reference(s) that were generated by  the activity described in this resource. A provenance can point to more than one target if multiple resources were created/updated by the same activity." class="dict" href="provenance-definitions.html#Provenance.target">target</a>&quot; : [{ <span style="color: darkgreen"><a href="references.html#Reference">Reference</a>(<a href="resourcelist.html">Any</a>)</span> }], <span style="color: Gray">//</span> <span title="This element is required" style="color: brown"><b>R!</b></span> <span style="color: navy; opacity: 0.8">Target Reference(s) (usually version specific)</span>
+  &quot;<a title="The period during which the activity occurred." class="dict" href="provenance-definitions.html#Provenance.period">period</a>&quot; : { <span style="color: darkgreen"><a href="datatypes.html#Period">Period</a></span> }, <span style="color: Gray">//</span> <span style="color: navy; opacity: 0.8">When the activity occurred</span>
+  &quot;<a title="The instant of time at which the activity was recorded." class="dict" href="provenance-definitions.html#Provenance.recorded">recorded</a>&quot; : &quot;&lt;<span style="color: darkgreen"><a href="datatypes.html#instant">instant</a></span>&gt;&quot;, <span style="color: Gray">//</span> <span title="This element is required" style="color: brown"><b>R!</b></span> <span style="color: navy; opacity: 0.8">When the activity was recorded / updated</span>
+  &quot;<a title="The reason that the activity was taking place." class="dict" href="provenance-definitions.html#Provenance.reason">reason</a>&quot; : { <span style="color: darkgreen"><a href="datatypes.html#CodeableConcept">CodeableConcept</a></span> }, <span style="color: Gray">//</span> <span style="color: navy; opacity: 0.8">Reason the activity is occurring</span>
+  &quot;<a title="Where the activity occurred, if relevant." class="dict" href="provenance-definitions.html#Provenance.location">location</a>&quot; : { <span style="color: darkgreen"><a href="references.html#Reference">Reference</a>(<a href="location.html#Location">Location</a>)</span> }, <span style="color: Gray">//</span> <span style="color: navy; opacity: 0.8">Where the activity occurred, if relevant</span>
+  &quot;<a title="Policy or plan the activity was defined by. Typically, a single activity may have multiple applicable policy documents, such as patient consent, guarantor funding, etc." class="dict" href="provenance-definitions.html#Provenance.policy">policy</a>&quot; : [&quot;&lt;<span style="color: darkgreen"><a href="datatypes.html#uri">uri</a></span>&gt;&quot;], <span style="color: Gray">//</span> <span style="color: navy; opacity: 0.8">Policy or plan the activity was defined by</span>
+  &quot;<a title="An agent takes a role in an activity such that the agent can be assigned some degree of responsibility for the activity taking place. An agent can be a person, a piece of software, an inanimate object, an organization, or other entities that may be ascribed responsibility." class="dict" href="provenance-definitions.html#Provenance.agent">agent</a>&quot; : [{ <span style="color: Gray">//</span> <span style="color: navy; opacity: 0.8">Person, organization, records, etc. involved in creating resource</span>
+    &quot;<a title="The role that the participant played." class="dict" href="provenance-definitions.html#Provenance.agent.role">role</a>&quot; : { <span style="color: darkgreen"><a href="datatypes.html#Coding">Coding</a></span> }, <span style="color: Gray">//</span> <span title="This element is required" style="color: brown"><b>R!</b></span> <span style="color: navy; opacity: 0.8"><a style="color: navy; opacity: 0.8" href="valueset-provenance-agent-role.html">e.g. author | overseer | enterer | attester | source | cc: +</a></span>
+    &quot;<a title="The type of the participant." class="dict" href="provenance-definitions.html#Provenance.agent.type">type</a>&quot; : { <span style="color: darkgreen"><a href="datatypes.html#Coding">Coding</a></span> }, <span style="color: Gray">//</span> <span title="This element is required" style="color: brown"><b>R!</b></span> <span style="color: navy; opacity: 0.8"><a style="color: navy; opacity: 0.8" href="valueset-provenance-agent-type.html">e.g. Resource | Person | Application | Record | Document +</a></span>
+    &quot;<a title="Identity of participant. May be a logical or physical uri and maybe absolute or relative." class="dict" href="provenance-definitions.html#Provenance.agent.reference">reference</a>&quot; : &quot;&lt;<span style="color: darkgreen"><a href="datatypes.html#uri">uri</a></span>&gt;&quot;, <span style="color: Gray">//</span> <span title="This element is required" style="color: brown"><b>R!</b></span> <span style="color: navy; opacity: 0.8">Identity of agent (urn or url)</span>
+    &quot;<a title="Human-readable description of the participant." class="dict" href="provenance-definitions.html#Provenance.agent.display">display</a>&quot; : &quot;&lt;<span style="color: darkgreen"><a href="datatypes.html#string">string</a></span>&gt;&quot; <span style="color: Gray">//</span> <span style="color: navy; opacity: 0.8">Human description of participant</span>
+  }],
+  &quot;<a title="An entity used in this activity." class="dict" href="provenance-definitions.html#Provenance.entity">entity</a>&quot; : [{ <span style="color: Gray">//</span> <span style="color: navy; opacity: 0.8">An entity used in this activity</span>
+    &quot;<a title="How the entity was used during the activity." class="dict" href="provenance-definitions.html#Provenance.entity.role">role</a>&quot; : &quot;&lt;<span style="color: darkgreen"><a href="datatypes.html#code">code</a></span>&gt;&quot;, <span style="color: Gray">//</span> <span title="This element is required" style="color: brown"><b>R!</b></span> <span style="color: navy; opacity: 0.8"><a style="color: navy; opacity: 0.8" href="provenance-entity-role.html">derivation | revision | quotation | source</a></span>
+    &quot;<a title="The type of the entity. If the entity is a resource, then this is a resource type." class="dict" href="provenance-definitions.html#Provenance.entity.type">type</a>&quot; : { <span style="color: darkgreen"><a href="datatypes.html#Coding">Coding</a></span> }, <span style="color: Gray">//</span> <span title="This element is required" style="color: brown"><b>R!</b></span> <a style="color: navy; opacity: 0.8" href="resource-types.html">Resource Type, or something else</a>
+    &quot;<a title="Identity of participant. May be a logical or physical uri and maybe absolute or relative." class="dict" href="provenance-definitions.html#Provenance.entity.reference">reference</a>&quot; : &quot;&lt;<span style="color: darkgreen"><a href="datatypes.html#uri">uri</a></span>&gt;&quot;, <span style="color: Gray">//</span> <span title="This element is required" style="color: brown"><b>R!</b></span> <span style="color: navy; opacity: 0.8">Identity of participant (urn or url)</span>
+    &quot;<a title="Human-readable description of the entity." class="dict" href="provenance-definitions.html#Provenance.entity.display">display</a>&quot; : &quot;&lt;<span style="color: darkgreen"><a href="datatypes.html#string">string</a></span>&gt;&quot;, <span style="color: Gray">//</span> <span style="color: navy; opacity: 0.8">Human description of participant</span>
+    &quot;<a title="The entity is attributed to an agent to express the agent's responsibility for that entity, possibly along with other agents. This description can be understood as shorthand for saying that the agent was responsible for the activity which generated the entity." class="dict" href="provenance-definitions.html#Provenance.entity.agent">agent</a>&quot; : { <span style="color: darkgreen">Content as for Provenance.agent</span> } <span style="color: Gray">//</span> <span style="color: navy; opacity: 0.8">Entity is attributed to this agent</span>
+  }],
+  &quot;<a title="A digital signature on the target Reference(s). The signature should match a Provenance.agent.reference in the provenance resource. The signature is only added to support checking cryptographic integrity of the resource, and not to represent workflow and clinical aspects of the signing process, or to support non-repudiation." class="dict" href="provenance-definitions.html#Provenance.integritySignature">integritySignature</a>&quot; : &quot;&lt;<span style="color: darkgreen"><a href="datatypes.html#string">string</a></span>&gt;&quot; <span style="color: Gray">//</span> <span style="color: navy; opacity: 0.8">Base64 signature (DigSig) - integrity check</span>
+}
+</pre>
+
+ </div>
+</div>
+
+  </div>
+  <div id="tabs-all">
+
+<div id="tbl">
+<a name="tbl"> </a>
+<p><b>Structure</b></p>
+ <div id="tbl-inner">
+  <table style="border: 0px; font-size: 11px; font-family: verdana; vertical-align: top;" cellpadding="0" border="0" cellspacing="0"><tr style="border: 1px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;"><th style="vertical-align: top; text-align : left; padding:0px 4px 0px 4px" class="heirarchy">Name</th><th style="vertical-align: top; text-align : left; padding:0px 4px 0px 4px" class="heirarchy">Flags</th><th style="vertical-align: top; text-align : left; padding:0px 4px 0px 4px" class="heirarchy">Card.</th><th style="width: 100px" class="heirarchy">Type</th><th style="vertical-align: top; text-align : left; padding:0px 4px 0px 4px" class="heirarchy">Description &amp; Constraints<span style="float: right"><a title="Legend for this format" href="formats.html#table"><img alt="doco" src="help16.png"/></a></span></th></tr><tr style="border: 0px; padding:0px; vertical-align: top; background-color: white;"><td style="vertical-align: top; text-align : left; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1.png)" class="heirarchy"><img alt="." class="heirarchy" src="tbl_spacer.png"/><img title="Resource" style="background-color: white;" alt="." class="heirarchy" src="icon_resource.png"/> <a title="Provenance information that describes the activity that led to the creation of a set of resources. This information can be used to help determine their reliability or trace where the information in them came from. The focus of the provenance resource is record keeping, audit and traceability, and not explicit statements of clinical significance." href="provenance-definitions.html#Provenance">Provenance</a><a name="Provenance"> </a></td><td style="vertical-align: top; text-align : left; padding:0px 4px 0px 4px" class="heirarchy"/><td style="vertical-align: top; text-align : left; padding:0px 4px 0px 4px" class="heirarchy"/><td style="vertical-align: top; text-align : left; padding:0px 4px 0px 4px" class="heirarchy"><a href="domainresource.html">DomainResource</a></td><td style="vertical-align: top; text-align : left; padding:0px 4px 0px 4px" class="heirarchy">Who, What, When for a set of resources</td></tr>
+<tr style="border: 0px; padding:0px; vertical-align: top; background-color: white;"><td style="vertical-align: top; text-align : left; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="heirarchy"><img alt="." class="heirarchy" src="tbl_spacer.png"/><img alt="." class="heirarchy" src="tbl_vjoin.png"/><img title="Reference to another Resource" style="background-color: white;" alt="." class="heirarchy" src="icon_reference.png"/> <a title="The Reference(s) that were generated by  the activity described in this resource. A provenance can point to more than one target if multiple resources were created/updated by the same activity." href="provenance-definitions.html#Provenance.target">target</a><a name="Provenance.target"> </a></td><td style="vertical-align: top; text-align : left; padding:0px 4px 0px 4px" class="heirarchy"/><td style="vertical-align: top; text-align : left; padding:0px 4px 0px 4px" class="heirarchy">1..*</td><td style="vertical-align: top; text-align : left; padding:0px 4px 0px 4px" class="heirarchy"><a href="resourcelist.html">Any</a></td><td style="vertical-align: top; text-align : left; padding:0px 4px 0px 4px" class="heirarchy">Target Reference(s) (usually version specific)</td></tr>
+<tr style="border: 0px; padding:0px; vertical-align: top; background-color: white;"><td style="vertical-align: top; text-align : left; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="heirarchy"><img alt="." class="heirarchy" src="tbl_spacer.png"/><img alt="." class="heirarchy" src="tbl_vjoin.png"/><img title="Data Type" style="background-color: white;" alt="." class="heirarchy" src="icon_datatype.gif"/> <a title="The period during which the activity occurred." href="provenance-definitions.html#Provenance.period">period</a><a name="Provenance.period"> </a></td><td style="vertical-align: top; text-align : left; padding:0px 4px 0px 4px" class="heirarchy"/><td style="vertical-align: top; text-align : left; padding:0px 4px 0px 4px" class="heirarchy">0..1</td><td style="vertical-align: top; text-align : left; padding:0px 4px 0px 4px" class="heirarchy"><a href="datatypes.html#Period">Period</a></td><td style="vertical-align: top; text-align : left; padding:0px 4px 0px 4px" class="heirarchy">When the activity occurred</td></tr>
+<tr style="border: 0px; padding:0px; vertical-align: top; background-color: white;"><td style="vertical-align: top; text-align : left; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="heirarchy"><img alt="." class="heirarchy" src="tbl_spacer.png"/><img alt="." class="heirarchy" src="tbl_vjoin.png"/><img title="Primitive Data Type" style="background-color: white;" alt="." class="heirarchy" src="icon_primitive.png"/> <a title="The instant of time at which the activity was recorded." href="provenance-definitions.html#Provenance.recorded">recorded</a><a name="Provenance.recorded"> </a></td><td style="vertical-align: top; text-align : left; padding:0px 4px 0px 4px" class="heirarchy"/><td style="vertical-align: top; text-align : left; padding:0px 4px 0px 4px" class="heirarchy">1..1</td><td style="vertical-align: top; text-align : left; padding:0px 4px 0px 4px" class="heirarchy"><a href="datatypes.html#instant">instant</a></td><td style="vertical-align: top; text-align : left; padding:0px 4px 0px 4px" class="heirarchy">When the activity was recorded / updated</td></tr>
+<tr style="border: 0px; padding:0px; vertical-align: top; background-color: white;"><td style="vertical-align: top; text-align : left; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="heirarchy"><img alt="." class="heirarchy" src="tbl_spacer.png"/><img alt="." class="heirarchy" src="tbl_vjoin.png"/><img title="Data Type" style="background-color: white;" alt="." class="heirarchy" src="icon_datatype.gif"/> <a title="The reason that the activity was taking place." href="provenance-definitions.html#Provenance.reason">reason</a><a name="Provenance.reason"> </a></td><td style="vertical-align: top; text-align : left; padding:0px 4px 0px 4px" class="heirarchy"/><td style="vertical-align: top; text-align : left; padding:0px 4px 0px 4px" class="heirarchy">0..1</td><td style="vertical-align: top; text-align : left; padding:0px 4px 0px 4px" class="heirarchy"><a href="datatypes.html#CodeableConcept">CodeableConcept</a></td><td style="vertical-align: top; text-align : left; padding:0px 4px 0px 4px" class="heirarchy">Reason the activity is occurring</td></tr>
+<tr style="border: 0px; padding:0px; vertical-align: top; background-color: white;"><td style="vertical-align: top; text-align : left; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="heirarchy"><img alt="." class="heirarchy" src="tbl_spacer.png"/><img alt="." class="heirarchy" src="tbl_vjoin.png"/><img title="Reference to another Resource" style="background-color: white;" alt="." class="heirarchy" src="icon_reference.png"/> <a title="Where the activity occurred, if relevant." href="provenance-definitions.html#Provenance.location">location</a><a name="Provenance.location"> </a></td><td style="vertical-align: top; text-align : left; padding:0px 4px 0px 4px" class="heirarchy"/><td style="vertical-align: top; text-align : left; padding:0px 4px 0px 4px" class="heirarchy">0..1</td><td style="vertical-align: top; text-align : left; padding:0px 4px 0px 4px" class="heirarchy"><a href="location.html">Location</a></td><td style="vertical-align: top; text-align : left; padding:0px 4px 0px 4px" class="heirarchy">Where the activity occurred, if relevant</td></tr>
+<tr style="border: 0px; padding:0px; vertical-align: top; background-color: white;"><td style="vertical-align: top; text-align : left; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="heirarchy"><img alt="." class="heirarchy" src="tbl_spacer.png"/><img alt="." class="heirarchy" src="tbl_vjoin.png"/><img title="Primitive Data Type" style="background-color: white;" alt="." class="heirarchy" src="icon_primitive.png"/> <a title="Policy or plan the activity was defined by. Typically, a single activity may have multiple applicable policy documents, such as patient consent, guarantor funding, etc." href="provenance-definitions.html#Provenance.policy">policy</a><a name="Provenance.policy"> </a></td><td style="vertical-align: top; text-align : left; padding:0px 4px 0px 4px" class="heirarchy"/><td style="vertical-align: top; text-align : left; padding:0px 4px 0px 4px" class="heirarchy">0..*</td><td style="vertical-align: top; text-align : left; padding:0px 4px 0px 4px" class="heirarchy"><a href="datatypes.html#uri">uri</a></td><td style="vertical-align: top; text-align : left; padding:0px 4px 0px 4px" class="heirarchy">Policy or plan the activity was defined by</td></tr>
+<tr style="border: 0px; padding:0px; vertical-align: top; background-color: white;"><td style="vertical-align: top; text-align : left; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck11.png)" class="heirarchy"><img alt="." class="heirarchy" src="tbl_spacer.png"/><img alt="." class="heirarchy" src="tbl_vjoin.png"/><img title="Element" style="background-color: white;" alt="." class="heirarchy" src="icon_element.gif"/> <a title="An agent takes a role in an activity such that the agent can be assigned some degree of responsibility for the activity taking place. An agent can be a person, a piece of software, an inanimate object, an organization, or other entities that may be ascribed responsibility." href="provenance-definitions.html#Provenance.agent">agent</a><a name="Provenance.agent"> </a></td><td style="vertical-align: top; text-align : left; padding:0px 4px 0px 4px" class="heirarchy"/><td style="vertical-align: top; text-align : left; padding:0px 4px 0px 4px" class="heirarchy">0..*</td><td style="vertical-align: top; text-align : left; padding:0px 4px 0px 4px" class="heirarchy"><a href="element.html">Element</a></td><td style="vertical-align: top; text-align : left; padding:0px 4px 0px 4px" class="heirarchy">Person, organization, records, etc. involved in creating resource</td></tr>
+<tr style="border: 0px; padding:0px; vertical-align: top; background-color: white;"><td style="vertical-align: top; text-align : left; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)" class="heirarchy"><img alt="." class="heirarchy" src="tbl_spacer.png"/><img alt="." class="heirarchy" src="tbl_vline.png"/><img alt="." class="heirarchy" src="tbl_vjoin.png"/><img title="Data Type" style="background-color: white;" alt="." class="heirarchy" src="icon_datatype.gif"/> <a title="The role that the participant played." href="provenance-definitions.html#Provenance.agent.role">role</a><a name="Provenance.agent.role"> </a></td><td style="vertical-align: top; text-align : left; padding:0px 4px 0px 4px" class="heirarchy"/><td style="vertical-align: top; text-align : left; padding:0px 4px 0px 4px" class="heirarchy">1..1</td><td style="vertical-align: top; text-align : left; padding:0px 4px 0px 4px" class="heirarchy"><a href="datatypes.html#Coding">Coding</a></td><td style="vertical-align: top; text-align : left; padding:0px 4px 0px 4px" class="heirarchy">e.g. author | overseer | enterer | attester | source | cc: +<br/><a title="The role that a provenance agent played" href="valueset-provenance-agent-role.html">ProvenanceAgentRole</a> (<a title="If one of the defined codes is appropriate, it must be used, or some other code may be used" href="terminologies.html#incomplete">Incomplete</a>)</td></tr>
+<tr style="border: 0px; padding:0px; vertical-align: top; background-color: white;"><td style="vertical-align: top; text-align : left; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)" class="heirarchy"><img alt="." class="heirarchy" src="tbl_spacer.png"/><img alt="." class="heirarchy" src="tbl_vline.png"/><img alt="." class="heirarchy" src="tbl_vjoin.png"/><img title="Data Type" style="background-color: white;" alt="." class="heirarchy" src="icon_datatype.gif"/> <a title="The type of the participant." href="provenance-definitions.html#Provenance.agent.type">type</a><a name="Provenance.agent.type"> </a></td><td style="vertical-align: top; text-align : left; padding:0px 4px 0px 4px" class="heirarchy"/><td style="vertical-align: top; text-align : left; padding:0px 4px 0px 4px" class="heirarchy">1..1</td><td style="vertical-align: top; text-align : left; padding:0px 4px 0px 4px" class="heirarchy"><a href="datatypes.html#Coding">Coding</a></td><td style="vertical-align: top; text-align : left; padding:0px 4px 0px 4px" class="heirarchy">e.g. Resource | Person | Application | Record | Document +<br/><a title="The type of a provenance agent" href="valueset-provenance-agent-type.html">ProvenanceAgentType</a> (<a title="If one of the defined codes is appropriate, it must be used, or some other code may be used" href="terminologies.html#incomplete">Incomplete</a>)</td></tr>
+<tr style="border: 0px; padding:0px; vertical-align: top; background-color: white;"><td style="vertical-align: top; text-align : left; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)" class="heirarchy"><img alt="." class="heirarchy" src="tbl_spacer.png"/><img alt="." class="heirarchy" src="tbl_vline.png"/><img alt="." class="heirarchy" src="tbl_vjoin.png"/><img title="Primitive Data Type" style="background-color: white;" alt="." class="heirarchy" src="icon_primitive.png"/> <a title="Identity of participant. May be a logical or physical uri and maybe absolute or relative." href="provenance-definitions.html#Provenance.agent.reference">reference</a><a name="Provenance.agent.reference"> </a></td><td style="vertical-align: top; text-align : left; padding:0px 4px 0px 4px" class="heirarchy"/><td style="vertical-align: top; text-align : left; padding:0px 4px 0px 4px" class="heirarchy">1..1</td><td style="vertical-align: top; text-align : left; padding:0px 4px 0px 4px" class="heirarchy"><a href="datatypes.html#uri">uri</a></td><td style="vertical-align: top; text-align : left; padding:0px 4px 0px 4px" class="heirarchy">Identity of agent (urn or url)</td></tr>
+<tr style="border: 0px; padding:0px; vertical-align: top; background-color: white;"><td style="vertical-align: top; text-align : left; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck100.png)" class="heirarchy"><img alt="." class="heirarchy" src="tbl_spacer.png"/><img alt="." class="heirarchy" src="tbl_vline.png"/><img alt="." class="heirarchy" src="tbl_vjoin_end.png"/><img title="Primitive Data Type" style="background-color: white;" alt="." class="heirarchy" src="icon_primitive.png"/> <a title="Human-readable description of the participant." href="provenance-definitions.html#Provenance.agent.display">display</a><a name="Provenance.agent.display"> </a></td><td style="vertical-align: top; text-align : left; padding:0px 4px 0px 4px" class="heirarchy"/><td style="vertical-align: top; text-align : left; padding:0px 4px 0px 4px" class="heirarchy">0..1</td><td style="vertical-align: top; text-align : left; padding:0px 4px 0px 4px" class="heirarchy"><a href="datatypes.html#string">string</a></td><td style="vertical-align: top; text-align : left; padding:0px 4px 0px 4px" class="heirarchy">Human description of participant</td></tr>
+<tr style="border: 0px; padding:0px; vertical-align: top; background-color: white;"><td style="vertical-align: top; text-align : left; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck11.png)" class="heirarchy"><img alt="." class="heirarchy" src="tbl_spacer.png"/><img alt="." class="heirarchy" src="tbl_vjoin.png"/><img title="Element" style="background-color: white;" alt="." class="heirarchy" src="icon_element.gif"/> <a title="An entity used in this activity." href="provenance-definitions.html#Provenance.entity">entity</a><a name="Provenance.entity"> </a></td><td style="vertical-align: top; text-align : left; padding:0px 4px 0px 4px" class="heirarchy"/><td style="vertical-align: top; text-align : left; padding:0px 4px 0px 4px" class="heirarchy">0..*</td><td style="vertical-align: top; text-align : left; padding:0px 4px 0px 4px" class="heirarchy"><a href="element.html">Element</a></td><td style="vertical-align: top; text-align : left; padding:0px 4px 0px 4px" class="heirarchy">An entity used in this activity</td></tr>
+<tr style="border: 0px; padding:0px; vertical-align: top; background-color: white;"><td style="vertical-align: top; text-align : left; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)" class="heirarchy"><img alt="." class="heirarchy" src="tbl_spacer.png"/><img alt="." class="heirarchy" src="tbl_vline.png"/><img alt="." class="heirarchy" src="tbl_vjoin.png"/><img title="Primitive Data Type" style="background-color: white;" alt="." class="heirarchy" src="icon_primitive.png"/> <a title="How the entity was used during the activity." href="provenance-definitions.html#Provenance.entity.role">role</a><a name="Provenance.entity.role"> </a></td><td style="vertical-align: top; text-align : left; padding:0px 4px 0px 4px" class="heirarchy"/><td style="vertical-align: top; text-align : left; padding:0px 4px 0px 4px" class="heirarchy">1..1</td><td style="vertical-align: top; text-align : left; padding:0px 4px 0px 4px" class="heirarchy"><a href="datatypes.html#code">code</a></td><td style="vertical-align: top; text-align : left; padding:0px 4px 0px 4px" class="heirarchy">derivation | revision | quotation | source<br/><a title="How an entity was used in an activity" href="provenance-entity-role.html">ProvenanceEntityRole</a> (<a title="One of the the defined codes must be used" href="terminologies.html#code">Required</a>)</td></tr>
+<tr style="border: 0px; padding:0px; vertical-align: top; background-color: white;"><td style="vertical-align: top; text-align : left; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)" class="heirarchy"><img alt="." class="heirarchy" src="tbl_spacer.png"/><img alt="." class="heirarchy" src="tbl_vline.png"/><img alt="." class="heirarchy" src="tbl_vjoin.png"/><img title="Data Type" style="background-color: white;" alt="." class="heirarchy" src="icon_datatype.gif"/> <a title="The type of the entity. If the entity is a resource, then this is a resource type." href="provenance-definitions.html#Provenance.entity.type">type</a><a name="Provenance.entity.type"> </a></td><td style="vertical-align: top; text-align : left; padding:0px 4px 0px 4px" class="heirarchy"/><td style="vertical-align: top; text-align : left; padding:0px 4px 0px 4px" class="heirarchy">1..1</td><td style="vertical-align: top; text-align : left; padding:0px 4px 0px 4px" class="heirarchy"><a href="datatypes.html#Coding">Coding</a></td><td style="vertical-align: top; text-align : left; padding:0px 4px 0px 4px" class="heirarchy">Resource Type, or something else<br/><a title="The type of an entity used in an activity" href="resource-types.html">ProvenanceEntityType</a> (<a title="If one of the defined codes is appropriate, it must be used, or some other code may be used" href="terminologies.html#incomplete">Incomplete</a>)</td></tr>
+<tr style="border: 0px; padding:0px; vertical-align: top; background-color: white;"><td style="vertical-align: top; text-align : left; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)" class="heirarchy"><img alt="." class="heirarchy" src="tbl_spacer.png"/><img alt="." class="heirarchy" src="tbl_vline.png"/><img alt="." class="heirarchy" src="tbl_vjoin.png"/><img title="Primitive Data Type" style="background-color: white;" alt="." class="heirarchy" src="icon_primitive.png"/> <a title="Identity of participant. May be a logical or physical uri and maybe absolute or relative." href="provenance-definitions.html#Provenance.entity.reference">reference</a><a name="Provenance.entity.reference"> </a></td><td style="vertical-align: top; text-align : left; padding:0px 4px 0px 4px" class="heirarchy"/><td style="vertical-align: top; text-align : left; padding:0px 4px 0px 4px" class="heirarchy">1..1</td><td style="vertical-align: top; text-align : left; padding:0px 4px 0px 4px" class="heirarchy"><a href="datatypes.html#uri">uri</a></td><td style="vertical-align: top; text-align : left; padding:0px 4px 0px 4px" class="heirarchy">Identity of participant (urn or url)</td></tr>
+<tr style="border: 0px; padding:0px; vertical-align: top; background-color: white;"><td style="vertical-align: top; text-align : left; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)" class="heirarchy"><img alt="." class="heirarchy" src="tbl_spacer.png"/><img alt="." class="heirarchy" src="tbl_vline.png"/><img alt="." class="heirarchy" src="tbl_vjoin.png"/><img title="Primitive Data Type" style="background-color: white;" alt="." class="heirarchy" src="icon_primitive.png"/> <a title="Human-readable description of the entity." href="provenance-definitions.html#Provenance.entity.display">display</a><a name="Provenance.entity.display"> </a></td><td style="vertical-align: top; text-align : left; padding:0px 4px 0px 4px" class="heirarchy"/><td style="vertical-align: top; text-align : left; padding:0px 4px 0px 4px" class="heirarchy">0..1</td><td style="vertical-align: top; text-align : left; padding:0px 4px 0px 4px" class="heirarchy"><a href="datatypes.html#string">string</a></td><td style="vertical-align: top; text-align : left; padding:0px 4px 0px 4px" class="heirarchy">Human description of participant</td></tr>
+<tr style="border: 0px; padding:0px; vertical-align: top; background-color: white;"><td style="vertical-align: top; text-align : left; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck100.png)" class="heirarchy"><img alt="." class="heirarchy" src="tbl_spacer.png"/><img alt="." class="heirarchy" src="tbl_vline.png"/><img alt="." class="heirarchy" src="tbl_vjoin_end.png"/><img title="Reference to another Element" style="background-color: white;" alt="." class="heirarchy" src="icon_reuse.png"/> <a title="The entity is attributed to an agent to express the agent's responsibility for that entity, possibly along with other agents. This description can be understood as shorthand for saying that the agent was responsible for the activity which generated the entity." href="provenance-definitions.html#Provenance.entity.agent">agent</a><a name="Provenance.entity.agent"> </a></td><td style="vertical-align: top; text-align : left; padding:0px 4px 0px 4px" class="heirarchy"/><td style="vertical-align: top; text-align : left; padding:0px 4px 0px 4px" class="heirarchy">0..1</td><td style="vertical-align: top; text-align : left; padding:0px 4px 0px 4px" class="heirarchy">see <a title="Provenance.agent" href="#Provenance.agent">agent</a></td><td style="vertical-align: top; text-align : left; padding:0px 4px 0px 4px" class="heirarchy">Entity is attributed to this agent</td></tr>
+<tr style="border: 0px; padding:0px; vertical-align: top; background-color: white;"><td style="vertical-align: top; text-align : left; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck00.png)" class="heirarchy"><img alt="." class="heirarchy" src="tbl_spacer.png"/><img alt="." class="heirarchy" src="tbl_vjoin_end.png"/><img title="Primitive Data Type" style="background-color: white;" alt="." class="heirarchy" src="icon_primitive.png"/> <a title="A digital signature on the target Reference(s). The signature should match a Provenance.agent.reference in the provenance resource. The signature is only added to support checking cryptographic integrity of the resource, and not to represent workflow and clinical aspects of the signing process, or to support non-repudiation." href="provenance-definitions.html#Provenance.integritySignature">integritySignature</a><a name="Provenance.integritySignature"> </a></td><td style="vertical-align: top; text-align : left; padding:0px 4px 0px 4px" class="heirarchy"/><td style="vertical-align: top; text-align : left; padding:0px 4px 0px 4px" class="heirarchy">0..1</td><td style="vertical-align: top; text-align : left; padding:0px 4px 0px 4px" class="heirarchy"><a href="datatypes.html#string">string</a></td><td style="vertical-align: top; text-align : left; padding:0px 4px 0px 4px" class="heirarchy">Base64 signature (DigSig) - integrity check</td></tr>
+</table>
+ </div>
+</div>
+
+ 
+<div id="uml">
+<a name="uml"> </a>
+<p><b>UML Diagram</b></p>
+ <div id="uml-inner">
+ <svg height="326.0" width="668.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" version="1.1">  <defs>
+    <filter id="shadow" height="200%" width="200%" y="0" x="0">
+      <feOffset result="offOut" dx="3" dy="3" in="SourceGraphic"/>
+      <feColorMatrix result="matrixOut" values="0.2 0 0 0 0 0 0.2 0 0 0 0 0 0.2 0 0 0 0 0 1 0" type="matrix" in="offOut"/>
+      <feGaussianBlur result="blurOut" stdDeviation="2" in="matrixOut"/>
+      <feBlend in2="blurOut" in="SourceGraphic" mode="normal"/>
+    </filter>
+  </defs><rect height="134.0" style="fill:#f0f8ff;stroke:black;stroke-width:1" width="148.0" filter="url(#shadow)" rx="4" y="0.0" ry="4" x="16.0"/><line style="stroke:dimgrey;stroke-width:1" y1="28.0" y2="28.0" x2="164.0" x1="16.0"/><text fill="black" class="diagram-class-title  diagram-class-resource" y="20.0" x="90.0">Provenance<tspan class="diagram-class-title-link"> (<a class="diagram-class-reference" xlink:href="domainresource.html">DomainResource</a>)</tspan></text><text fill="black" class="diagram-class-detail" y="42.0" x="22.0"><a xlink:href="provenance-definitions.html#Provenance.target"><title>The Reference(s) that were generated by  the activity described in this resource. A provenance can point to more than one target if multiple resources were created/updated by the same activity</title>target</a> : <a xlink:href="references.html#Reference">Reference</a>(<a xlink:href="resourcelist.html#Any">Any</a>) 1..*</text><text fill="black" class="diagram-class-detail" y="56.0" x="22.0"><a xlink:href="provenance-definitions.html#Provenance.period"><title>The period during which the activity occurred</title>period</a> : <a xlink:href="datatypes.html#Period">Period</a> 0..1</text><text fill="black" class="diagram-class-detail" y="70.0" x="22.0"><a xlink:href="provenance-definitions.html#Provenance.recorded"><title>The instant of time at which the activity was recorded</title>recorded</a> : <a xlink:href="datatypes.html#instant">instant</a> 1..1</text><text fill="black" class="diagram-class-detail" y="84.0" x="22.0"><a xlink:href="provenance-definitions.html#Provenance.reason"><title>The reason that the activity was taking place</title>reason</a> : <a xlink:href="datatypes.html#CodeableConcept">CodeableConcept</a> 0..1</text><text fill="black" class="diagram-class-detail" y="98.0" x="22.0"><a xlink:href="provenance-definitions.html#Provenance.location"><title>Where the activity occurred, if relevant</title>location</a> : <a xlink:href="references.html#Reference">Reference</a>(<a xlink:href="location.html#Location">Location</a>) 0..1</text><text fill="black" class="diagram-class-detail" y="112.0" x="22.0"><a xlink:href="provenance-definitions.html#Provenance.policy"><title>Policy or plan the activity was defined by. Typically, a single activity may have multiple applicable policy documents, such as patient consent, guarantor funding, etc</title>policy</a> : <a xlink:href="datatypes.html#uri">uri</a> 0..*</text><text fill="black" class="diagram-class-detail" y="126.0" x="22.0"><a xlink:href="provenance-definitions.html#Provenance.integritySignature"><title>A digital signature on the target Reference(s). The signature should match a Provenance.agent.reference in the provenance resource. The signature is only added to support checking cryptographic integrity of the resource, and not to represent workflow and clinical aspects of the signing process, or to support non-repudiation</title>integritySignature</a> : <a xlink:href="datatypes.html#string">string</a> 0..1</text><rect height="92.0" style="fill:#f0f8ff;stroke:black;stroke-width:1" width="180.0" filter="url(#shadow)" rx="4" y="214.0" ry="4" x="0.0"/><line style="stroke:dimgrey;stroke-width:1" y1="242.0" y2="242.0" x2="180.0" x1="0.0"/><text fill="black" class="diagram-class-title" y="234.0" x="90.0">Agent</text><text fill="black" class="diagram-class-detail" y="256.0" x="6.0"><a xlink:href="provenance-definitions.html#Provenance.agent.role"><title>The role that the participant played</title>role</a> : <a xlink:href="datatypes.html#Coding">Coding</a> 1..1 « <a xlink:href="valueset-provenance-agent-role.html"><title>The role that a provenance agent played</title>ProvenanceAgentRole</a>+ »</text><text fill="black" class="diagram-class-detail" y="270.0" x="6.0"><a xlink:href="provenance-definitions.html#Provenance.agent.type"><title>The type of the participant</title>type</a> : <a xlink:href="datatypes.html#Coding">Coding</a> 1..1 « <a xlink:href="valueset-provenance-agent-type.html"><title>The type of a provenance agent</title>ProvenanceAgentType</a>+ »</text><text fill="black" class="diagram-class-detail" y="284.0" x="6.0"><a xlink:href="provenance-definitions.html#Provenance.agent.reference"><title>Identity of participant. May be a logical or physical uri and maybe absolute or relative</title>reference</a> : <a xlink:href="datatypes.html#uri">uri</a> 1..1</text><text fill="black" class="diagram-class-detail" y="298.0" x="6.0"><a xlink:href="provenance-definitions.html#Provenance.agent.display"><title>Human-readable description of the participant</title>display</a> : <a xlink:href="datatypes.html#string">string</a> 0..1</text><rect height="92.0" style="fill:#f0f8ff;stroke:black;stroke-width:1" width="184.0" filter="url(#shadow)" rx="4" y="21.0" ry="4" x="284.0"/><line style="stroke:dimgrey;stroke-width:1" y1="49.0" y2="49.0" x2="468.0" x1="284.0"/><text fill="black" class="diagram-class-title" y="41.0" x="376.0">Entity</text><text fill="black" class="diagram-class-detail" y="63.0" x="290.0"><a xlink:href="provenance-definitions.html#Provenance.entity.role"><title>How the entity was used during the activity</title>role</a> : <a xlink:href="datatypes.html#code">code</a> 1..1 « <a xlink:href="provenance-entity-role.html"><title>How an entity was used in an activity</title>ProvenanceEntityRole</a> »</text><text fill="black" class="diagram-class-detail" y="77.0" x="290.0"><a xlink:href="provenance-definitions.html#Provenance.entity.type"><title>The type of the entity. If the entity is a resource, then this is a resource type</title>type</a> : <a xlink:href="datatypes.html#Coding">Coding</a> 1..1 « <a xlink:href="resource-types.html"><title>The type of an entity used in an activity</title>ProvenanceEntityType</a>+ »</text><text fill="black" class="diagram-class-detail" y="91.0" x="290.0"><a xlink:href="provenance-definitions.html#Provenance.entity.reference"><title>Identity of participant. May be a logical or physical uri and maybe absolute or relative</title>reference</a> : <a xlink:href="datatypes.html#uri">uri</a> 1..1</text><text fill="black" class="diagram-class-detail" y="105.0" x="290.0"><a xlink:href="provenance-definitions.html#Provenance.entity.display"><title>Human-readable description of the entity</title>display</a> : <a xlink:href="datatypes.html#string">string</a> 0..1</text><line style="stroke:navy;stroke-width:1" y1="134.0" y2="214.0" x2="90.0" x1="90.0"/><polygon transform="rotate(90.0 90.0 134.0)" style="fill:navy;stroke:navy;stroke-width:1" points="90.0,134.0 96.0,138.0 102.0,134.0 96.0,130.0 90.0,134.0"/><rect height="18.0" style="fill:white;stroke:black;stroke-width:0" width="20.0" y="167.0" x="80.0"/><text fill="black" class="diagram-class-linkage" y="177.0" x="90.0"><a xlink:href="provenance-definitions.html#Provenance.agent"><title>An agent takes a role in an activity such that the agent can be assigned some degree of responsibility for the activity taking place. An agent can be a person, a piece of software, an inanimate object, an organization, or other entities that may be ascribed responsibility</title>agent</a></text><text fill="black" class="diagram-class-linkage" y="210.0" x="90.0">0..*</text><line style="stroke:navy;stroke-width:1" y1="113.0" y2="214.0" x2="158.16580310880835" x1="307.83419689119177"/><polygon transform="rotate(145.98753197272686 307.83419689119177 113.0)" style="fill:navy;stroke:navy;stroke-width:1" points="307.83419689119177,113.0 313.83419689119177,117.0 319.83419689119177,113.0 313.83419689119177,109.0 307.83419689119177,113.0"/><rect height="18.0" style="fill:white;stroke:black;stroke-width:0" width="20.0" y="156.0" x="223.0"/><text fill="black" class="diagram-class-linkage" y="166.0" x="233.0"><a xlink:href="provenance-definitions.html#Provenance.entity.agent"><title>The entity is attributed to an agent to express the agent's responsibility for that entity, possibly along with other agents. This description can be understood as shorthand for saying that the agent was responsible for the activity which generated the entity</title>agent</a></text><text fill="black" class="diagram-class-linkage" y="210.0" x="158.16580310880835">0..1</text><line style="stroke:navy;stroke-width:1" y1="67.0" y2="67.0" x2="284.0" x1="164.0"/><polygon transform="rotate(0.0 164.0 67.0)" style="fill:navy;stroke:navy;stroke-width:1" points="164.0,67.0 170.0,71.0 176.0,67.0 170.0,63.0 164.0,67.0"/><rect height="18.0" style="fill:white;stroke:black;stroke-width:0" width="24.0" y="60.0" x="212.0"/><text fill="black" class="diagram-class-linkage" y="70.0" x="224.0"><a xlink:href="provenance-definitions.html#Provenance.entity"><title>An entity used in this activity</title>entity</a></text><text fill="black" class="diagram-class-linkage" y="63.0" x="264.0">0..*</text></svg>
+ </div>
+</div>
+
+<div id="xml">
+<a name="xml"> </a>
+<p><b>XML Template</b></p>
+ <div id="xml-inner">
+  <pre class="spec">
+&lt;<a title="Provenance information that describes the activity that led to the creation of a set of resources. This information can be used to help determine their reliability or trace where the information in them came from. The focus of the provenance resource is record keeping, audit and traceability, and not explicit statements of clinical significance." class="dict" href="provenance-definitions.html#Provenance"><b>Provenance</b></a> xmlns=&quot;http://hl7.org/fhir&quot;&gt; <span style="float: right"><a title="Documentation for this format" href="xml.html"><img alt="doco" src="help.png"/></a></span>
+ &lt;!-- from <a href="resource.html">Resource</a>: <a href="resource.html#id">id</a>, <a href="resource.html#meta">meta</a>, <a href="resource.html#implicitRules">implicitRules</a>, and <a href="resource.html#language">language</a> --&gt;
+ &lt;!-- from <a href="domainresource.html">DomainResource</a>: <a href="narrative.html#Narrative">text</a>, <a href="references.html#contained">contained</a>, <a href="extensibility.html">extension</a>, and <a href="extensibility.html#modifierExtension">modifierExtension</a> --&gt;
+ &lt;<a title="The Reference(s) that were generated by  the activity described in this resource. A provenance can point to more than one target if multiple resources were created/updated by the same activity." class="dict" href="provenance-definitions.html#Provenance.target"><b>target</b></a>&gt;<span style="color: Gray">&lt;!--</span> <span style="color: brown"><b>1..*</b></span> <span style="color: darkgreen"><a href="references.html#Reference">Reference</a>(<a href="resourcelist.html">Any</a>)</span> <span style="color: navy">Target Reference(s) (usually version specific)</span><span style="color: Gray"> --&gt;</span>&lt;/target&gt;
+ &lt;<a title="The period during which the activity occurred." class="dict" href="provenance-definitions.html#Provenance.period"><b>period</b></a>&gt;<span style="color: Gray">&lt;!--</span> <span style="color: brown"><b>0..1</b></span> <span style="color: darkgreen"><a href="datatypes.html#Period">Period</a></span> <span style="color: navy">When the activity occurred</span><span style="color: Gray"> --&gt;</span>&lt;/period&gt;
+ &lt;<a title="The instant of time at which the activity was recorded." class="dict" href="provenance-definitions.html#Provenance.recorded"><b>recorded</b></a> value=&quot;[<span style="color: darkgreen"><a href="datatypes.html#instant">instant</a></span>]&quot;/&gt;<span style="color: Gray">&lt;!--</span> <span style="color: brown"><b>1..1</b></span> <span style="color: navy">When the activity was recorded / updated</span><span style="color: Gray"> --&gt;</span>
+ &lt;<a title="The reason that the activity was taking place." class="dict" href="provenance-definitions.html#Provenance.reason"><b>reason</b></a>&gt;<span style="color: Gray">&lt;!--</span> <span style="color: brown"><b>0..1</b></span> <span style="color: darkgreen"><a href="datatypes.html#CodeableConcept">CodeableConcept</a></span> <span style="color: navy">Reason the activity is occurring</span><span style="color: Gray"> --&gt;</span>&lt;/reason&gt;
+ &lt;<a title="Where the activity occurred, if relevant." class="dict" href="provenance-definitions.html#Provenance.location"><b>location</b></a>&gt;<span style="color: Gray">&lt;!--</span> <span style="color: brown"><b>0..1</b></span> <span style="color: darkgreen"><a href="references.html#Reference">Reference</a>(<a href="location.html#Location">Location</a>)</span> <span style="color: navy">Where the activity occurred, if relevant</span><span style="color: Gray"> --&gt;</span>&lt;/location&gt;
+ &lt;<a title="Policy or plan the activity was defined by. Typically, a single activity may have multiple applicable policy documents, such as patient consent, guarantor funding, etc." class="dict" href="provenance-definitions.html#Provenance.policy"><b>policy</b></a> value=&quot;[<span style="color: darkgreen"><a href="datatypes.html#uri">uri</a></span>]&quot;/&gt;<span style="color: Gray">&lt;!--</span> <span style="color: brown"><b>0..*</b></span> <span style="color: navy">Policy or plan the activity was defined by</span><span style="color: Gray"> --&gt;</span>
+ &lt;<a title="An agent takes a role in an activity such that the agent can be assigned some degree of responsibility for the activity taking place. An agent can be a person, a piece of software, an inanimate object, an organization, or other entities that may be ascribed responsibility." class="dict" href="provenance-definitions.html#Provenance.agent"><b>agent</b></a>&gt;  <span style="color: Gray">&lt;!-- <span style="color: brown"><b>0..*</b></span> Person, organization, records, etc. involved in creating resource --&gt;</span>
+  &lt;<a title="The role that the participant played." class="dict" href="provenance-definitions.html#Provenance.agent.role"><b>role</b></a>&gt;<span style="color: Gray">&lt;!--</span> <span style="color: brown"><b>1..1</b></span> <span style="color: darkgreen"><a href="datatypes.html#Coding">Coding</a></span> <span style="color: navy"><a style="color: navy" href="valueset-provenance-agent-role.html">e.g. author | overseer | enterer | attester | source | cc: +</a></span><span style="color: Gray"> --&gt;</span>&lt;/role&gt;
+  &lt;<a title="The type of the participant." class="dict" href="provenance-definitions.html#Provenance.agent.type"><b>type</b></a>&gt;<span style="color: Gray">&lt;!--</span> <span style="color: brown"><b>1..1</b></span> <span style="color: darkgreen"><a href="datatypes.html#Coding">Coding</a></span> <span style="color: navy"><a style="color: navy" href="valueset-provenance-agent-type.html">e.g. Resource | Person | Application | Record | Document +</a></span><span style="color: Gray"> --&gt;</span>&lt;/type&gt;
+  &lt;<a title="Identity of participant. May be a logical or physical uri and maybe absolute or relative." class="dict" href="provenance-definitions.html#Provenance.agent.reference"><b>reference</b></a> value=&quot;[<span style="color: darkgreen"><a href="datatypes.html#uri">uri</a></span>]&quot;/&gt;<span style="color: Gray">&lt;!--</span> <span style="color: brown"><b>1..1</b></span> <span style="color: navy">Identity of agent (urn or url)</span><span style="color: Gray"> --&gt;</span>
+  &lt;<a title="Human-readable description of the participant." class="dict" href="provenance-definitions.html#Provenance.agent.display"><b>display</b></a> value=&quot;[<span style="color: darkgreen"><a href="datatypes.html#string">string</a></span>]&quot;/&gt;<span style="color: Gray">&lt;!--</span> <span style="color: brown"><b>0..1</b></span> <span style="color: navy">Human description of participant</span><span style="color: Gray"> --&gt;</span>
+ &lt;/agent&gt;
+ &lt;<a title="An entity used in this activity." class="dict" href="provenance-definitions.html#Provenance.entity"><b>entity</b></a>&gt;  <span style="color: Gray">&lt;!-- <span style="color: brown"><b>0..*</b></span> An entity used in this activity --&gt;</span>
+  &lt;<a title="How the entity was used during the activity." class="dict" href="provenance-definitions.html#Provenance.entity.role"><b>role</b></a> value=&quot;[<span style="color: darkgreen"><a href="datatypes.html#code">code</a></span>]&quot;/&gt;<span style="color: Gray">&lt;!--</span> <span style="color: brown"><b>1..1</b></span> <span style="color: navy"><a style="color: navy" href="provenance-entity-role.html">derivation | revision | quotation | source</a></span><span style="color: Gray"> --&gt;</span>
+  &lt;<a title="The type of the entity. If the entity is a resource, then this is a resource type." class="dict" href="provenance-definitions.html#Provenance.entity.type"><b>type</b></a>&gt;<span style="color: Gray">&lt;!--</span> <span style="color: brown"><b>1..1</b></span> <span style="color: darkgreen"><a href="datatypes.html#Coding">Coding</a></span> <a style="color: navy" href="resource-types.html">Resource Type, or something else</a><span style="color: Gray"> --&gt;</span>&lt;/type&gt;
+  &lt;<a title="Identity of participant. May be a logical or physical uri and maybe absolute or relative." class="dict" href="provenance-definitions.html#Provenance.entity.reference"><b>reference</b></a> value=&quot;[<span style="color: darkgreen"><a href="datatypes.html#uri">uri</a></span>]&quot;/&gt;<span style="color: Gray">&lt;!--</span> <span style="color: brown"><b>1..1</b></span> <span style="color: navy">Identity of participant (urn or url)</span><span style="color: Gray"> --&gt;</span>
+  &lt;<a title="Human-readable description of the entity." class="dict" href="provenance-definitions.html#Provenance.entity.display"><b>display</b></a> value=&quot;[<span style="color: darkgreen"><a href="datatypes.html#string">string</a></span>]&quot;/&gt;<span style="color: Gray">&lt;!--</span> <span style="color: brown"><b>0..1</b></span> <span style="color: navy">Human description of participant</span><span style="color: Gray"> --&gt;</span>
+  &lt;<a title="The entity is attributed to an agent to express the agent's responsibility for that entity, possibly along with other agents. This description can be understood as shorthand for saying that the agent was responsible for the activity which generated the entity." class="dict" href="provenance-definitions.html#Provenance.entity.agent"><b>agent</b></a>&gt;<span style="color: Gray">&lt;!--</span> <span style="color: brown"><b>0..1</b></span> <span style="color: darkgreen">Content as for Provenance.agent</span> <span style="color: navy">Entity is attributed to this agent</span><span style="color: Gray"> --&gt;</span>&lt;/agent&gt;
+ &lt;/entity&gt;
+ &lt;<a title="A digital signature on the target Reference(s). The signature should match a Provenance.agent.reference in the provenance resource. The signature is only added to support checking cryptographic integrity of the resource, and not to represent workflow and clinical aspects of the signing process, or to support non-repudiation." class="dict" href="provenance-definitions.html#Provenance.integritySignature"><b>integritySignature</b></a> value=&quot;[<span style="color: darkgreen"><a href="datatypes.html#string">string</a></span>]&quot;/&gt;<span style="color: Gray">&lt;!--</span> <span style="color: brown"><b>0..1</b></span> <span style="color: navy">Base64 signature (DigSig) - integrity check</span><span style="color: Gray"> --&gt;</span>
+&lt;/Provenance&gt;
+</pre>
+
+ </div>
+</div>
+
+<div id="json">
+<a name="json"> </a>
+<p><b>JSON Template</b></p>
+ <div id="json-inner">
+  <pre class="spec">
+{<span style="float: right"><a title="Documentation for this format" href="json.html"><img alt="doco" src="help.png"/></a></span>
+  &quot;resourceType&quot; : &quot;<a title="Provenance information that describes the activity that led to the creation of a set of resources. This information can be used to help determine their reliability or trace where the information in them came from. The focus of the provenance resource is record keeping, audit and traceability, and not explicit statements of clinical significance." class="dict" href="provenance-definitions.html#Provenance"><b>Provenance</b></a>&quot;,
+  // from <a href="resource.html">Resource</a>: <a href="resource.html#id">id</a>, <a href="resource.html#meta">meta</a>, <a href="resource.html#implicitRules">implicitRules</a>, and <a href="resource.html#language">language</a>
+  // from <a href="domainresource.html">DomainResource</a>: <a href="narrative.html#Narrative">text</a>, <a href="references.html#contained">contained</a>, <a href="extensibility.html">extension</a>, and <a href="extensibility.html#modifierExtension">modifierExtension</a>
+  &quot;<a title="The Reference(s) that were generated by  the activity described in this resource. A provenance can point to more than one target if multiple resources were created/updated by the same activity." class="dict" href="provenance-definitions.html#Provenance.target">target</a>&quot; : [{ <span style="color: darkgreen"><a href="references.html#Reference">Reference</a>(<a href="resourcelist.html">Any</a>)</span> }], <span style="color: Gray">//</span> <span title="This element is required" style="color: brown"><b>R!</b></span> <span style="color: navy; opacity: 0.8">Target Reference(s) (usually version specific)</span>
+  &quot;<a title="The period during which the activity occurred." class="dict" href="provenance-definitions.html#Provenance.period">period</a>&quot; : { <span style="color: darkgreen"><a href="datatypes.html#Period">Period</a></span> }, <span style="color: Gray">//</span> <span style="color: navy; opacity: 0.8">When the activity occurred</span>
+  &quot;<a title="The instant of time at which the activity was recorded." class="dict" href="provenance-definitions.html#Provenance.recorded">recorded</a>&quot; : &quot;&lt;<span style="color: darkgreen"><a href="datatypes.html#instant">instant</a></span>&gt;&quot;, <span style="color: Gray">//</span> <span title="This element is required" style="color: brown"><b>R!</b></span> <span style="color: navy; opacity: 0.8">When the activity was recorded / updated</span>
+  &quot;<a title="The reason that the activity was taking place." class="dict" href="provenance-definitions.html#Provenance.reason">reason</a>&quot; : { <span style="color: darkgreen"><a href="datatypes.html#CodeableConcept">CodeableConcept</a></span> }, <span style="color: Gray">//</span> <span style="color: navy; opacity: 0.8">Reason the activity is occurring</span>
+  &quot;<a title="Where the activity occurred, if relevant." class="dict" href="provenance-definitions.html#Provenance.location">location</a>&quot; : { <span style="color: darkgreen"><a href="references.html#Reference">Reference</a>(<a href="location.html#Location">Location</a>)</span> }, <span style="color: Gray">//</span> <span style="color: navy; opacity: 0.8">Where the activity occurred, if relevant</span>
+  &quot;<a title="Policy or plan the activity was defined by. Typically, a single activity may have multiple applicable policy documents, such as patient consent, guarantor funding, etc." class="dict" href="provenance-definitions.html#Provenance.policy">policy</a>&quot; : [&quot;&lt;<span style="color: darkgreen"><a href="datatypes.html#uri">uri</a></span>&gt;&quot;], <span style="color: Gray">//</span> <span style="color: navy; opacity: 0.8">Policy or plan the activity was defined by</span>
+  &quot;<a title="An agent takes a role in an activity such that the agent can be assigned some degree of responsibility for the activity taking place. An agent can be a person, a piece of software, an inanimate object, an organization, or other entities that may be ascribed responsibility." class="dict" href="provenance-definitions.html#Provenance.agent">agent</a>&quot; : [{ <span style="color: Gray">//</span> <span style="color: navy; opacity: 0.8">Person, organization, records, etc. involved in creating resource</span>
+    &quot;<a title="The role that the participant played." class="dict" href="provenance-definitions.html#Provenance.agent.role">role</a>&quot; : { <span style="color: darkgreen"><a href="datatypes.html#Coding">Coding</a></span> }, <span style="color: Gray">//</span> <span title="This element is required" style="color: brown"><b>R!</b></span> <span style="color: navy; opacity: 0.8"><a style="color: navy; opacity: 0.8" href="valueset-provenance-agent-role.html">e.g. author | overseer | enterer | attester | source | cc: +</a></span>
+    &quot;<a title="The type of the participant." class="dict" href="provenance-definitions.html#Provenance.agent.type">type</a>&quot; : { <span style="color: darkgreen"><a href="datatypes.html#Coding">Coding</a></span> }, <span style="color: Gray">//</span> <span title="This element is required" style="color: brown"><b>R!</b></span> <span style="color: navy; opacity: 0.8"><a style="color: navy; opacity: 0.8" href="valueset-provenance-agent-type.html">e.g. Resource | Person | Application | Record | Document +</a></span>
+    &quot;<a title="Identity of participant. May be a logical or physical uri and maybe absolute or relative." class="dict" href="provenance-definitions.html#Provenance.agent.reference">reference</a>&quot; : &quot;&lt;<span style="color: darkgreen"><a href="datatypes.html#uri">uri</a></span>&gt;&quot;, <span style="color: Gray">//</span> <span title="This element is required" style="color: brown"><b>R!</b></span> <span style="color: navy; opacity: 0.8">Identity of agent (urn or url)</span>
+    &quot;<a title="Human-readable description of the participant." class="dict" href="provenance-definitions.html#Provenance.agent.display">display</a>&quot; : &quot;&lt;<span style="color: darkgreen"><a href="datatypes.html#string">string</a></span>&gt;&quot; <span style="color: Gray">//</span> <span style="color: navy; opacity: 0.8">Human description of participant</span>
+  }],
+  &quot;<a title="An entity used in this activity." class="dict" href="provenance-definitions.html#Provenance.entity">entity</a>&quot; : [{ <span style="color: Gray">//</span> <span style="color: navy; opacity: 0.8">An entity used in this activity</span>
+    &quot;<a title="How the entity was used during the activity." class="dict" href="provenance-definitions.html#Provenance.entity.role">role</a>&quot; : &quot;&lt;<span style="color: darkgreen"><a href="datatypes.html#code">code</a></span>&gt;&quot;, <span style="color: Gray">//</span> <span title="This element is required" style="color: brown"><b>R!</b></span> <span style="color: navy; opacity: 0.8"><a style="color: navy; opacity: 0.8" href="provenance-entity-role.html">derivation | revision | quotation | source</a></span>
+    &quot;<a title="The type of the entity. If the entity is a resource, then this is a resource type." class="dict" href="provenance-definitions.html#Provenance.entity.type">type</a>&quot; : { <span style="color: darkgreen"><a href="datatypes.html#Coding">Coding</a></span> }, <span style="color: Gray">//</span> <span title="This element is required" style="color: brown"><b>R!</b></span> <a style="color: navy; opacity: 0.8" href="resource-types.html">Resource Type, or something else</a>
+    &quot;<a title="Identity of participant. May be a logical or physical uri and maybe absolute or relative." class="dict" href="provenance-definitions.html#Provenance.entity.reference">reference</a>&quot; : &quot;&lt;<span style="color: darkgreen"><a href="datatypes.html#uri">uri</a></span>&gt;&quot;, <span style="color: Gray">//</span> <span title="This element is required" style="color: brown"><b>R!</b></span> <span style="color: navy; opacity: 0.8">Identity of participant (urn or url)</span>
+    &quot;<a title="Human-readable description of the entity." class="dict" href="provenance-definitions.html#Provenance.entity.display">display</a>&quot; : &quot;&lt;<span style="color: darkgreen"><a href="datatypes.html#string">string</a></span>&gt;&quot;, <span style="color: Gray">//</span> <span style="color: navy; opacity: 0.8">Human description of participant</span>
+    &quot;<a title="The entity is attributed to an agent to express the agent's responsibility for that entity, possibly along with other agents. This description can be understood as shorthand for saying that the agent was responsible for the activity which generated the entity." class="dict" href="provenance-definitions.html#Provenance.entity.agent">agent</a>&quot; : { <span style="color: darkgreen">Content as for Provenance.agent</span> } <span style="color: Gray">//</span> <span style="color: navy; opacity: 0.8">Entity is attributed to this agent</span>
+  }],
+  &quot;<a title="A digital signature on the target Reference(s). The signature should match a Provenance.agent.reference in the provenance resource. The signature is only added to support checking cryptographic integrity of the resource, and not to represent workflow and clinical aspects of the signing process, or to support non-repudiation." class="dict" href="provenance-definitions.html#Provenance.integritySignature">integritySignature</a>&quot; : &quot;&lt;<span style="color: darkgreen"><a href="datatypes.html#string">string</a></span>&gt;&quot; <span style="color: Gray">//</span> <span style="color: navy; opacity: 0.8">Base64 signature (DigSig) - integrity check</span>
+}
+</pre>
+
+ </div>
+</div>
+  
+  </div>
+</div>
+  
+<p> </p>  
+<p>Alternate definitions: <a href="provenance.xsd">Schema</a>/<a href="provenance.sch">Schematron</a>, 
+Resource Profile (<a href="provenance.profile.xml.html">XML</a>, <a href="provenance.profile.json.html">JSON</a>), 
+<a href="provenance.questionnaire.html">Questionnaire</a></p>
+
+
+<a name="tx"> </a>
+<h3><span class="sectioncount">6.5.4.1<a name="6.5.4.1"> </a></span> 
+Terminology Bindings
+</h3>
+<table class="grid">
+ <tr><th>Path</th><th>Definition</th><th>Type</th><th>Reference</th></tr>
+ <tr><td title="ProvenanceAgentRole" valign="top">Provenance.agent.role </td><td valign="top">The role that a provenance agent played</td><td><a href="terminologies.html#incomplete">Incomplete</a></td><td valign="top"><a href="valueset-provenance-agent-role.html">http://hl7.org/fhir/vs/provenance-agent-role</a>  <!-- a --></td> </tr>
+ <tr><td title="ProvenanceAgentType" valign="top">Provenance.agent.type </td><td valign="top">The type of a provenance agent</td><td><a href="terminologies.html#incomplete">Incomplete</a></td><td valign="top"><a href="valueset-provenance-agent-type.html">http://hl7.org/fhir/vs/provenance-agent-type</a>  <!-- a --></td> </tr>
+ <tr><td title="ProvenanceEntityRole" valign="top">Provenance.entity.role </td><td valign="top">How an entity was used in an activity</td><td><a href="terminologies.html#code">Fixed</a></td><td valign="top"><a href="provenance-entity-role.html">http://hl7.org/fhir/provenance-entity-role</a>  <!-- f --></td> </tr>
+ <tr><td title="ProvenanceEntityType" valign="top">Provenance.entity.type </td><td valign="top">The type of an entity used in an activity</td><td><a href="terminologies.html#incomplete">Incomplete</a></td><td valign="top"><a href="resource-types.html">http://hl7.org/fhir/vs/resource-types</a>  <!-- d --></td> </tr>
+</table>
+<p> </p>
+
+
+
+
+
+<h3><span class="sectioncount">6.5.4.2<a name="6.5.4.2"> </a></span> Using the Provenance Resource</h3>
+
+<p>
+The provenance resource identifies information about another resource (the <i>reference</i> element). 
+The provenance resource may be used in several different ways:
+</p>
+<ul>
+ <li>As part of a <a href="documents.html">document bundle</a> where it identifies the provenance of part or all of the document</li>
+ <li>On a <a href="http.html">RESTful system</a> where it keeps track of provenance information relating to resources</li>
+</ul>
+<p>
+When used in a document bundle, the <i>references</i> are often not explicitly versioned, but they always implicitly pertain to the version of the 
+resource found in the document. On a RESTful system, the target resource reference should be version specific, but this
+requires special care: For new resources that need to have a corresponding Provenance resource, the version-specific
+reference is often not knowable until after the target resource has been updated. This can create an 
+integrity problem for the system - what if the provenance resource cannot be created after the target 
+resource has been updated? To avoid any such integrity problems, the target resource and the provenance resources should be submitted 
+as a pair using a <a href="http.html#transaction">transaction</a>. 
+</p>
+
+<h3><span class="sectioncount">6.5.4.3<a name="6.5.4.3"> </a></span> Digital Signatures</h3>
+
+<p>
+The provenance resource includes an integritySignature element which contains 
+an <a href="http://www.w3.org/TR/xmldsig-core/">XML digital signature</a>. 
+</p>
+<p>
+The purpose of the signature is limited to checking cryptographic integrity of the target Reference(s); 
+e.g. detecting whether changes have occurred between the original construction of the resource and the application
+processing it. In order to make proper use of the signature element, 
+implementation profiles are required to further clarify the obligations 
+around creating and checking the signature.
+</p>
+<p>
+The following rules apply to digital signature:
+</p>
+<ul>
+ <li>The Certificate identifier SHOULD match the identity of an agent (Provenance.agent.reference)</li>
+ <li>If the signature has an IHE purposeOfSignature property, the value SHALL be &quot;source&quot;, 
+   OID &quot;1.2.840.10065.1.12&quot;, which means &quot;the signature of an automated data source&quot;. If 
+   the signature does not have a purposeOfSignature property, the signature is still to used 
+   for this use</li>
+ <li>Whether the representation of the Provenance resource is xml or json, the signature is a base64 of the 
+   <a href="http://www.w3.org/TR/2002/REC-xmldsig-core-20020212/#sec-Signature">XML signature</a></li>
+ <li>The signature is always a signature of the target resource XML representation using a stated canonicalization</li> 
+</ul>
+The signature is only added to support , and not to represent workflow and clinical aspects of the signing process, or to support non-repudiation.			
+ 
+<h3><span class="sectioncount">6.5.4.4<a name="6.5.4.4"> </a></span> Party References</h3>
+
+<p>
+Because the Provenance resource often refers to parties that are not represented 
+as FHIR resources, Agent and Entity references are allowed to be either references 
+to other resources, or they can refer to other entities that are not FHIR resources.
+</p>
+<p>
+The code in the <i>.type</i> element is used to differentiate between the two: if the 
+code is in the system &quot;http://hl7.org/fhir/resource-types&quot;, then the reference is to 
+a resource, and the element <i>reference</i> functions exactly the same as in 
+a <a href="references.html#references">Resource Reference</a>. 
+</p>
+
+
+
+<div class="example">
+<p>
+A version specific reference to a FHIR resource on the same server:
+</p>
+<pre class="xml">
+  &lt;agent&gt;
+    &lt;type&gt;
+      &lt;system value=&quot;http://hl7.org/fhir/resource-types&quot;/&gt;
+      &lt;code value=&quot;Patient&quot;/&gt;
+    &lt;/type&gt;
+    &lt;reference value=&quot;Patient/34/_history/3&quot;/&gt;
+  &lt;/agent&gt;
+</pre>
+</div>
+<p>
+In effect, this is the same pattern as a standard resource reference, 
+but the type becomes extensible to allow referencing other kinds of 
+resources. 
+</p>
+
+<div class="example">
+<p>
+A reference to a user (a person) not represented by a FHIR resource:
+</p>
+<pre class="xml">
+  &lt;agent&gt;
+    &lt;type&gt;
+      &lt;system value=&quot;http://hl7.org/fhir/provenance-participant-type&quot;/&gt;  
+      &lt;code value=&quot;person&quot;/&gt;
+    &lt;/type&gt;  
+    &lt;reference value=&quot;http://acme.com/users/34&quot;/&gt;
+  &lt;/agent&gt;
+</pre>
+</div>
+
+<p>
+One subtle issue with the use of the Provenance resource is to differentiate
+between whether the reference is to the Resource itself, or whether the 
+the reference is to the real world thing that the resource represents,
+e.g. was it the person involved in the activity, or the record of the person. 
+For Agents, it should be understood that the reference is to the real 
+world thing that the resource represents. 
+</p>
+
+
+
+<a name="search"> </a>
+<h2><span class="sectioncount">6.5.5<a name="6.5.5"> </a></span> Search Parameters</h2>
+<p>Search parameters for this resource. The <a href="search.html#all">common parameters</a> also apply. See <a href="search.html">Searching</a> for more information about searching in REST, messaging, and services.</p>
+<table class="list">
+<tr><td><b>Name</b></td><td><b>Type</b></td><td><b>Description</b></td><td><b>Paths</b></td></tr>
+<tr><td>end</td><td><a href="search.html#date">date</a></td><td>End time with inclusive boundary, if not ongoing</td><td>Provenance.period.end</td></tr>
+<tr><td>location</td><td><a href="search.html#reference">reference</a></td><td>Where the activity occurred, if relevant</td><td>Provenance.location<br/>(<a href="location.html">Location</a>)</td></tr>
+<tr><td>party</td><td><a href="search.html#token">token</a></td><td>Identity of agent (urn or url)</td><td>Provenance.agent.reference</td></tr>
+<tr><td>partytype</td><td><a href="search.html#token">token</a></td><td>e.g. Resource | Person | Application | Record | Document +</td><td>Provenance.agent.type</td></tr>
+<tr><td>patient</td><td><a href="search.html#reference">reference</a></td><td>A patient that the target resource(s) refer to</td><td><br/>(<a href="patient.html">Patient</a>)</td></tr>
+<tr><td>start</td><td><a href="search.html#date">date</a></td><td>Starting time with inclusive boundary</td><td>Provenance.period.start</td></tr>
+<tr><td>target</td><td><a href="search.html#reference">reference</a></td><td>Target Reference(s) (usually version specific)</td><td>Provenance.target<br/>(Any)</td></tr>
+</table>
+
+
+
+</div>
+
+
+				</div>  <!-- /inner-wrapper -->
+            </div>  <!-- /row -->
+        </div>  <!-- /container -->
+        
+    </div>  <!-- /segment-content -->
+
+
+	<div id="segment-footer" class="segment">  <!-- segment-footer -->
+		<div class="container">  <!-- container -->
+			<div class="inner-wrapper">
+				<p>
+        © HL7.org 2011+. FHIR DSTU (v0.4.0-3920) generated on Tue, Dec 30, 2014 11:05+0000.   <!-- <a href="qa.html">QA Report</a> -->   <!-- achive note -->
+        <br/>
+        <span style="color: #FFFF77">
+        Links: <a style="color: #81BEF7" href="timelines.html">What's a DSTU?</a> | 
+               <a style="color: #81BEF7" href="history.html">Version History</a> | 
+               <a style="color: #81BEF7" href="http://services.w3.org/htmldiff?doc1=http%3A%2F%2Fhl7.org%2Fimplement%2Fstandards%2Ffhir%2Fprovenance.html&amp;doc2=http%3A%2F%2Fhl7-fhir.github.io%2F%2Fprovenance.html">Compare to DSTU</a> | 
+               <a style="color: #81BEF7" rel="license" href="license.html"><img style="border-style: none;" alt="CC0" src="cc0.png"/></a> | 
+               <a style="color: #81BEF7" target="_blank" href="http://gforge.hl7.org/gf/project/fhir/tracker/?action=TrackerItemAdd&amp;tracker_id=677">Propose a change</a>   
+        </span>
+        </p>
+			</div>  <!-- /inner-wrapper -->
+		</div>  <!-- /container -->
+	</div>  <!-- /segment-footer -->
+  <!-- disqus thread -->
+  <!-- disqus -->
+  <!-- end disqus -->        
+	
+	<div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+		<div class="container">  <!-- container -->
+		</div>  <!-- /container -->
+	</div>  <!-- /segment-post-footer -->
+    
+      <!-- JS and analytics only. -->
+      <!-- Bootstrap core JavaScript
+================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+<script src="./assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+<script src="./dist/js/bootstrap.min.js"> </script>
+<script src="./assets/js/respond.min.js"> </script>
+
+<script src="./assets/js/fhir.js"> </script>
+
+  <!-- Analytics Below
+================================================== -->
+
+
+
+
+<script src="external/jquery/jquery.js"> </script>
+<script src="jquery-ui.min.js"> </script>
+<script>
+try {
+  var currentTabIndex = sessionStorage.getItem('fhir-resource-tab-index');
+}
+catch(exception){ 
+  if (navigator.userAgent.toLowerCase().indexof('msie') == -1)
+    alert(exception);
+}
+
+if (!currentTabIndex)
+  currentTabIndex = '0';
+
+$( '#tabs' ).tabs({
+         active: currentTabIndex,
+         activate: function( event, ui ) {
+             var active = $('.selector').tabs('option', 'active');
+             currentTabIndex = ui.newTab.index();
+             try {
+               sessionStorage.setItem('fhir-resource-tab-index', currentTabIndex);
+             }
+             catch(exception){ 
+              if (navigator.userAgent.toLowerCase().indexof('msie') == -1)
+                alert(exception);
+             }
+         }
+     });
+</script>
+    
+</body>
+</html>

@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="measurement-principle"/>
+  <meta>
+    <lastUpdated value="2014-12-30T10:55:31"/>
+  </meta>
+  <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      <p>This value set contains 11 concepts</p>
+      <h2>Measmnt-Principle</h2>
+      <p>Different measurement principle supported by the device</p>
+      <p>This value set defines its own terms in the system http://hl7.org/fhir/measurement-principle</p>
+      <table class="codes">
+        <tr>
+          <td>
+            <b>Code</b>
+          </td>
+          <td>
+            <b>Display</b>
+          </td>
+          <td>
+            <b>Definition</b>
+          </td>
+        </tr>
+        <tr>
+          <td>other
+            <a name="other"> </a>
+          </td>
+          <td>msp-other</td>
+          <td>Measurement principle isn&#39;t in the list.</td>
+        </tr>
+        <tr>
+          <td>chemical
+            <a name="chemical"> </a>
+          </td>
+          <td>msp-chemical</td>
+          <td>Measurement is done using chemical.</td>
+        </tr>
+        <tr>
+          <td>electrical
+            <a name="electrical"> </a>
+          </td>
+          <td>msp-electrical</td>
+          <td>Measurement is done using electrical.</td>
+        </tr>
+        <tr>
+          <td>impedance
+            <a name="impedance"> </a>
+          </td>
+          <td>msp-impedance</td>
+          <td>Measurement is done using impedance.</td>
+        </tr>
+        <tr>
+          <td>nuclear
+            <a name="nuclear"> </a>
+          </td>
+          <td>msp-nuclear</td>
+          <td>Measurement is done using nuclear.</td>
+        </tr>
+        <tr>
+          <td>optical
+            <a name="optical"> </a>
+          </td>
+          <td>msp-optical</td>
+          <td>Measurement is done using optical.</td>
+        </tr>
+        <tr>
+          <td>thermal
+            <a name="thermal"> </a>
+          </td>
+          <td>msp-thermal</td>
+          <td>Measurement is done using thermal.</td>
+        </tr>
+        <tr>
+          <td>biological
+            <a name="biological"> </a>
+          </td>
+          <td>msp-biological</td>
+          <td>Measurement is done using biological.</td>
+        </tr>
+        <tr>
+          <td>mechanical
+            <a name="mechanical"> </a>
+          </td>
+          <td>msp-mechanical</td>
+          <td>Measurement is done using mechanical.</td>
+        </tr>
+        <tr>
+          <td>acoustical
+            <a name="acoustical"> </a>
+          </td>
+          <td>msp-acoustical</td>
+          <td>Measurement is done using acoustical.</td>
+        </tr>
+        <tr>
+          <td>manual
+            <a name="manual"> </a>
+          </td>
+          <td>msp-manual</td>
+          <td>Measurement is done using manual.</td>
+        </tr>
+      </table>
+    </div>
+  </text>
+  <extension url="http://hl7.org/fhir/ExtensionDefinition/valueset-oid">
+    <valueUri value="urn:oid:2.16.840.1.113883.4.642.2.512"/>
+  </extension>
+  <identifier value="http://hl7.org/fhir/vs/measurement-principle"/>
+  <name value="Measmnt-Principle"/>
+  <publisher value="HL7 (FHIR Project)"/>
+  <telecom>
+    <system value="url"/>
+    <value value="http://hl7.org/fhir"/>
+  </telecom>
+  <telecom>
+    <system value="email"/>
+    <value value="fhir@lists.hl7.org"/>
+  </telecom>
+  <description value="Different measurement principle supported by the device"/>
+  <status value="draft"/>
+  <date value="2014-12-30T10:55:31"/>
+  <define>
+    <extension url="http://hl7.org/fhir/ExtensionDefinition/valueset-oid">
+      <valueUri value="urn:oid:2.16.840.1.113883.4.642.1.512"/>
+    </extension>
+    <system value="http://hl7.org/fhir/measurement-principle"/>
+    <caseSensitive value="true"/>
+    <concept>
+      <code value="other"/>
+      <display value="msp-other"/>
+      <definition value="Measurement principle isn&#39;t in the list."/>
+    </concept>
+    <concept>
+      <code value="chemical"/>
+      <display value="msp-chemical"/>
+      <definition value="Measurement is done using chemical."/>
+    </concept>
+    <concept>
+      <code value="electrical"/>
+      <display value="msp-electrical"/>
+      <definition value="Measurement is done using electrical."/>
+    </concept>
+    <concept>
+      <code value="impedance"/>
+      <display value="msp-impedance"/>
+      <definition value="Measurement is done using impedance."/>
+    </concept>
+    <concept>
+      <code value="nuclear"/>
+      <display value="msp-nuclear"/>
+      <definition value="Measurement is done using nuclear."/>
+    </concept>
+    <concept>
+      <code value="optical"/>
+      <display value="msp-optical"/>
+      <definition value="Measurement is done using optical."/>
+    </concept>
+    <concept>
+      <code value="thermal"/>
+      <display value="msp-thermal"/>
+      <definition value="Measurement is done using thermal."/>
+    </concept>
+    <concept>
+      <code value="biological"/>
+      <display value="msp-biological"/>
+      <definition value="Measurement is done using biological."/>
+    </concept>
+    <concept>
+      <code value="mechanical"/>
+      <display value="msp-mechanical"/>
+      <definition value="Measurement is done using mechanical."/>
+    </concept>
+    <concept>
+      <code value="acoustical"/>
+      <display value="msp-acoustical"/>
+      <definition value="Measurement is done using acoustical."/>
+    </concept>
+    <concept>
+      <code value="manual"/>
+      <display value="msp-manual"/>
+      <definition value="Measurement is done using manual."/>
+    </concept>
+  </define>
+</ValueSet>

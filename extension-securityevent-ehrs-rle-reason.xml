@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ExtensionDefinition xmlns="http://hl7.org/fhir">
+  <id value="securityevent-ehrs-rle-reason"/>
+  <url value="http://hl7.org/fhir/ExtensionDefinition/securityevent-ehrs-rle-reason"/>
+  <name value="Reason activity is occurring"/>
+  <publisher value="Health Level Seven, Inc. - EHR WG"/>
+  <telecom>
+    <system value="url"/>
+    <value value="http://hl7.org/special/committees/ehr.html"/>
+  </telecom>
+  <description value="The reason that the activity was taking place."/>
+  <status value="draft"/>
+  <date value="2014-12-04"/>
+  <mapping>
+    <identity value="v2"/>
+    <uri value="http://hl7.org/v2"/>
+    <name value="HL7 v2"/>
+  </mapping>
+  <mapping>
+    <identity value="rim"/>
+    <uri value="http://hl7.org/v3"/>
+    <name value="RIM"/>
+  </mapping>
+  <contextType value="resource"/>
+  <context value="SecurityEvent.event"/>
+  <element>
+    <path value="Extension"/>
+    <short value="Reason activity is occurring"/>
+    <formal value="The reason that the activity was taking place."/>
+    <min value="0"/>
+    <max value="1"/>
+    <type>
+      <code value="CodeableConcept"/>
+    </type>
+    <isSummary value="false"/>
+    <binding>
+      <name value="EventPurposeOfUse"/>
+      <isExtensible value="true"/>
+      <conformance value="required"/>
+      <description value="Indicates the why the event occurred"/>
+      <referenceReference>
+        <reference value="http://hl7.org/fhir/v3/vs/PurposeOfUse"/>
+      </referenceReference>
+    </binding>
+    <mapping>
+      <identity value="v2"/>
+      <map value="N/A"/>
+    </mapping>
+    <mapping>
+      <identity value="rim"/>
+      <map value="Act.reasonCode"/>
+    </mapping>
+  </element>
+</ExtensionDefinition>

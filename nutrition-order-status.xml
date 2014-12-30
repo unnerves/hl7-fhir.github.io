@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="nutrition-order-status"/>
+  <meta>
+    <lastUpdated value="2014-12-30T10:55:31"/>
+  </meta>
+  <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      <p>This value set contains 5 concepts</p>
+      <h2>NutritionOrderStatus</h2>
+      <p>TODO</p>
+      <p>This value set defines its own terms in the system http://hl7.org/fhir/nutrition-order-status</p>
+      <table class="codes">
+        <tr>
+          <td>
+            <b>Code</b>
+          </td>
+          <td>
+            <b>Display</b>
+          </td>
+          <td>
+            <b>Definition</b>
+          </td>
+        </tr>
+        <tr>
+          <td>requested
+            <a name="requested"> </a>
+          </td>
+          <td>Requested</td>
+          <td>TODO.</td>
+        </tr>
+        <tr>
+          <td>active
+            <a name="active"> </a>
+          </td>
+          <td>Active</td>
+          <td>TODO.</td>
+        </tr>
+        <tr>
+          <td>inactive
+            <a name="inactive"> </a>
+          </td>
+          <td>Inactive</td>
+          <td>TODO.</td>
+        </tr>
+        <tr>
+          <td>held
+            <a name="held"> </a>
+          </td>
+          <td>Held</td>
+          <td>TODO.</td>
+        </tr>
+        <tr>
+          <td>cancelled
+            <a name="cancelled"> </a>
+          </td>
+          <td>Cancelled</td>
+          <td>TODO.</td>
+        </tr>
+      </table>
+    </div>
+  </text>
+  <extension url="http://hl7.org/fhir/ExtensionDefinition/valueset-oid">
+    <valueUri value="urn:oid:2.16.840.1.113883.4.642.2.415"/>
+  </extension>
+  <identifier value="http://hl7.org/fhir/vs/nutrition-order-status"/>
+  <name value="NutritionOrderStatus"/>
+  <publisher value="HL7 (FHIR Project)"/>
+  <telecom>
+    <system value="url"/>
+    <value value="http://hl7.org/fhir"/>
+  </telecom>
+  <telecom>
+    <system value="email"/>
+    <value value="fhir@lists.hl7.org"/>
+  </telecom>
+  <description value="TODO"/>
+  <status value="draft"/>
+  <date value="2014-12-30T10:55:31"/>
+  <define>
+    <extension url="http://hl7.org/fhir/ExtensionDefinition/valueset-oid">
+      <valueUri value="urn:oid:2.16.840.1.113883.4.642.1.415"/>
+    </extension>
+    <system value="http://hl7.org/fhir/nutrition-order-status"/>
+    <caseSensitive value="true"/>
+    <concept>
+      <code value="requested"/>
+      <display value="Requested"/>
+      <definition value="TODO."/>
+    </concept>
+    <concept>
+      <code value="active"/>
+      <display value="Active"/>
+      <definition value="TODO."/>
+    </concept>
+    <concept>
+      <code value="inactive"/>
+      <display value="Inactive"/>
+      <definition value="TODO."/>
+    </concept>
+    <concept>
+      <code value="held"/>
+      <display value="Held"/>
+      <definition value="TODO."/>
+    </concept>
+    <concept>
+      <code value="cancelled"/>
+      <display value="Cancelled"/>
+      <definition value="TODO."/>
+    </concept>
+  </define>
+</ValueSet>

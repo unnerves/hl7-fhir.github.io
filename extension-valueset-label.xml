@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ExtensionDefinition xmlns="http://hl7.org/fhir">
+  <id value="valueset-label"/>
+  <url value="http://hl7.org/fhir/ExtensionDefinition/valueset-label"/>
+  <name value="E.g. &quot;(a)&quot;, &quot;1.&quot;, etc."/>
+  <publisher value="HL7"/>
+  <description value="The label to list in front of a code when presenting a list of possible values in a questionnaire-like fashion."/>
+  <status value="draft"/>
+  <date value="2014-12-30T10:55:31"/>
+  <contextType value="resource"/>
+  <context value="ValueSet.compose.include.concept"/>
+  <context value="ValueSet.define.concept"/>
+  <context value="ValueSet.expansion.contains"/>
+  <element>
+    <path value="Extension"/>
+    <short value="E.g. &quot;(a)&quot;, &quot;1.&quot;, etc."/>
+    <formal value="The label to list in front of a code when presenting a list of possible values in a questionnaire-like fashion."/>
+    <min value="0"/>
+    <max value="1"/>
+    <type>
+      <code value="string"/>
+    </type>
+    <isSummary value="false"/>
+  </element>
+</ExtensionDefinition>

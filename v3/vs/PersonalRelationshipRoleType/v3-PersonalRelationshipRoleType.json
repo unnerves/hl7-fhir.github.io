@@ -1,0 +1,42 @@
+{
+  "resourceType": "ValueSet",
+  "id": "v3-vs-PersonalRelationshipRoleType",
+  "meta": {
+    "lastUpdated": "2014-12-30T10:55:31"
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div><p>This value set does not contain a fixed number of concepts</p><h2>PersonalRelationshipRoleType</h2><p> Types of personal relationships between two living subjects.  Example:<br/>Parent, sibling, unrelated friend, neighbor (OID = 2.16.840.1.113883.1.11.19563)</p><p>This value set includes codes defined in other code systems, using the following rules:</p><ul><li>Include codes from <a href=\"../../../v3/RoleCode/index.html\">http://hl7.org/fhir/v3/RoleCode</a> where concept  is-a  <a href=\"../../../v3/RoleCode/index.html#_PersonalRelationshipRoleType\">_PersonalRelationshipRoleType</a></li></ul></div>"
+  },
+  "http://hl7.org/fhir/ExtensionDefinition/valueset-oid": [
+    {
+      "valueUri": "urn:oid:2.16.840.1.113883.1.11.19563"
+    }
+  ],
+  "identifier": "http://hl7.org/fhir/v3/vs/PersonalRelationshipRoleType",
+  "version": "2014-03-26",
+  "name": "PersonalRelationshipRoleType",
+  "publisher": "HL7 v3",
+  "telecom": [
+    {
+      "system": "url",
+      "value": "http://www.hl7.org"
+    }
+  ],
+  "description": " Types of personal relationships between two living subjects.  Example:\r\nParent, sibling, unrelated friend, neighbor (OID = 2.16.840.1.113883.1.11.19563)",
+  "status": "active",
+  "compose": {
+    "include": [
+      {
+        "system": "http://hl7.org/fhir/v3/RoleCode",
+        "filter": [
+          {
+            "property": "concept",
+            "op": "is-a",
+            "value": "_PersonalRelationshipRoleType"
+          }
+        ]
+      }
+    ]
+  }
+}

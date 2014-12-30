@@ -1,0 +1,50 @@
+{
+  "resourceType": "ValueSet",
+  "id": "valueset-cqf-observation-reliability",
+  "meta": {
+    "lastUpdated": "2014-12-30T10:55:31.814"
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div>\n\t\t<p>This value set contains 3 concepts</p>\n\t\t<h2>ObservationReliability</h2>\n\t\t<p>Codes that provide an estimate of the degree to which quality issues have impacted on the value of a CQF observation</p>\n\t\t<p>This value set defines its own terms in the system http://hl7.org/fhir/observation-reliability</p>\n\t\t<table class=\"codes\">\n\t\t  <tr>\n\t\t\t<td>\n\t\t\t  <b>Code</b>\n\t\t\t</td>\n\t\t\t<td>\n\t\t\t  <b>Definition</b>\n\t\t\t</td>\n\t\t  </tr>\n\t\t  <tr>\n\t\t\t<td>ok\n\t\t\t  <a name=\"ok\"> </a>\n\t\t\t</td>\n\t\t\t<td>The result has no reliability concerns.</td>\n\t\t  </tr>\n\t\t  <tr>\n\t\t\t<td>ongoing\n\t\t\t  <a name=\"ongoing\"> </a>\n\t\t\t</td>\n\t\t\t<td>An early estimate of value; measurement is still occurring.</td>\n\t\t  </tr>\n\t\t  <tr>\n\t\t\t<td>early\n\t\t\t  <a name=\"early\"> </a>\n\t\t\t</td>\n\t\t\t<td>An early estimate of value; processing is still occurring.</td>\n\t\t  </tr>\n\t\t</table>\n\t  </div>"
+  },
+  "http://hl7.org/fhir/ExtensionDefinition/valueset-oid": [
+    {
+      "valueUri": "urn:oid:2.16.840.1.113883.4.642.2.0"
+    }
+  ],
+  "identifier": "http://hl7.org/fhir/vs/cqf-observation-reliability",
+  "name": "CQFObservationReliability",
+  "publisher": "Health Level Seven, Inc. - CQI WG",
+  "telecom": [
+    {
+      "system": "url",
+      "value": "http://www.hl7.org/Special/committees/cqi/"
+    },
+    {
+      "system": "url",
+      "value": "http://www.hl7.org"
+    }
+  ],
+  "description": "Codes that provide an estimate of the degree to which quality issues have impacted on the value of a CQF observation",
+  "status": "draft",
+  "date": "2014-12-23T15:47:22.903-05:00",
+  "compose": {
+    "include": [
+      {
+        "system": "http://hl7.org/fhir/observation-reliability",
+        "concept": [
+          {
+            "code": "ok"
+          },
+          {
+            "code": "ongoing"
+          },
+          {
+            "code": "early"
+          }
+        ]
+      }
+    ]
+  }
+}

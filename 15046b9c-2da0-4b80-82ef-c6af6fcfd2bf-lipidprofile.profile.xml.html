@@ -1,0 +1,1512 @@
+﻿<!DOCTYPE HTML>
+
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <title>Profile: LipidProfile - FHIR v0.4.0</title>
+
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="author" content="http://hl7.org/fhir"/>
+
+  <link href="fhir.css" rel="stylesheet"/>
+  <link rel="Prev" href="http://hl7.org/implement/standards/fhir/15046b9c-2da0-4b80-82ef-c6af6fcfd2bf-lipidprofile.profile.xml.html"/>
+
+  <!-- Bootstrap core CSS -->
+  <link href="./dist/css/bootstrap.css" rel="stylesheet"/>
+  <link href="./assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+  <!-- Project extras -->
+  <link href="./assets/css/project.css" rel="stylesheet"/>
+  <link href="./assets/css/pygments-manni.css" rel="stylesheet"/>
+	<link href="jquery-ui.css" rel="stylesheet"/>
+
+  <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!--[if lt IE 9]>
+  <script src="./assets/js/html5shiv.js"></script>
+  <script src="./assets/js/respond.min.js"></script>
+  <![endif]-->
+
+  <!-- Favicons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="./assets/ico/apple-touch-icon-144-precomposed.png"/>
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="./assets/ico/apple-touch-icon-114-precomposed.png"/>
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="./assets/ico/apple-touch-icon-72-precomposed.png"/>
+  <link rel="apple-touch-icon-precomposed" href="./assets/ico/apple-touch-icon-57-precomposed.png"/>
+  <link rel="shortcut icon" href="./assets/ico/favicon.png"/>
+
+</head>
+<body>
+	<div id="segment-header" class="segment"><!-- segment-header -->	
+		<div class="container"><!-- container -->
+			<a id="logo" href="http://hl7.org/fhir"><img src="./assets/images/fhir-logo-www.png" alt="logo fhir"/> </a>
+			<div id="hl7-status">
+				<b>Continuous Integration Build</b>
+			</div>       	
+			
+			<div id="hl7-nav">
+				 <a id="hl7-logo" href="http://www.hl7.org">
+					<img src="./assets/images/hl7-logo.png" width="42" height="50" alt="visit the hl7 website"/>
+				</a> 
+			</div>       	
+			<!--hl7-search-->
+		</div>
+		<div class="container"><!-- container -->
+	</div></div><!-- /segment-header -->	
+
+
+	<div id="segment-navbar" class="segment"><!-- segment-navbar -->
+		<div id="stripe"> </div>
+		<div class="container"><!-- container -->
+ <!-- HEADER CONTENT -->
+ 	      		
+ 	      		      		
+			<nav class="navbar navbar-inverse">
+				<div class="container">
+					<button data-target=".navbar-inverse-collapse" data-toggle="collapse" class="navbar-toggle" type="button">
+						<span class="icon-bar"> </span>
+						<span class="icon-bar"> </span>
+						<span class="icon-bar"> </span>
+					</button>
+					<a href="index.html" class="navbar-brand hidden">FHIR</a>
+					<div class="nav-collapse collapse navbar-inverse-collapse">
+						<ul class="nav navbar-nav">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="documentation.html">Documentation</a></li>
+              <li><a href="implementation.html">Implementation</a></li>
+              <li><a href="resourcelist.html">Resources</a></li>
+              <li><a href="clinical.html">Clinical</a></li>
+              <li><a href="administration.html">Administrative</a></li>
+              <li><a href="infrastructure.html">Infrastructure</a></li>
+              <li><a href="financial.html">Financial</a></li>
+
+						</ul>
+					</div><!-- /.nav-collapse -->
+				</div><!-- /.container -->
+			</nav><!-- /.navbar -->
+      		
+				
+<!-- /HEADER CONTENT -->				
+		</div><!-- /container -->
+	</div><!-- /segment-navbar -->
+	
+
+	<div id="segment-breadcrumb" class="segment"><!-- segment-breadcrumb -->
+		<div class="container"><!-- container -->	
+			<ul class="breadcrumb">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="clinical.html">Clinical</a></li>        <li><a href="diagnosticreport.html">DiagnosticReport</a></li>        <li><a href="15046b9c-2da0-4b80-82ef-c6af6fcfd2bf.html">Package</a></li>        <li><b>15046b9c-2da0-4b80-82ef-c6af6fcfd2bf-lipidprofile</b></li>        <!-- 15046b9c-2da0-4b80-82ef-c6af6fcfd2bf-lipidprofile.profile.xml.html.html / profile:DiagnosticReport/15046b9c-2da0-4b80-82ef-c6af6fcfd2bf/15046b9c-2da0-4b80-82ef-c6af6fcfd2bf-lipidprofile -->
+
+			</ul>	
+		</div><!-- /container -->
+	</div><!-- /segment-breadcrumb -->
+	
+
+	<div id="segment-content" class="segment"><!-- segment-content -->
+	<div class="container"><!-- container -->
+            <div class="row">
+            	<div class="inner-wrapper">
+<!-- CONTENT CONTENT -->
+
+
+<div class="col-9">
+
+<ul class="nav nav-tabs"><li><a href="15046b9c-2da0-4b80-82ef-c6af6fcfd2bf-lipidprofile.html">Content</a></li><li><a href="15046b9c-2da0-4b80-82ef-c6af6fcfd2bf-lipidprofile-definitions.html">Detailed Descriptions</a></li><li><a href="15046b9c-2da0-4b80-82ef-c6af6fcfd2bf-lipidprofile-mappings.html">Mappings</a></li><li class="active"><a href="#">XML</a></li><li><a href="15046b9c-2da0-4b80-82ef-c6af6fcfd2bf-lipidprofile.profile.json.html">JSON</a></li></ul>
+
+<h1>Profile: LipidProfile</h1>
+
+<div class="example">
+<p>LipidProfile</p>
+<p><a href="15046b9c-2da0-4b80-82ef-c6af6fcfd2bf-lipidprofile.profile.xml">Raw XML</a></p>
+<pre class="xml">
+<span class="xmltag">&lt;Profile</span><span class="xmlattr"> xmlns="<span class="xmlattrvalue">http://hl7.org/fhir</span>"</span><span class="xmltag">&gt;</span><b>
+  </b><span class="xmltag">&lt;id</span><span class="xmlattr"> value="<span class="xmlattrvalue">15046b9c-2da0-4b80-82ef-c6af6fcfd2bf-lipidprofile</span>"</span><span class="xmltag">/&gt;</span><b>
+  </b><span class="xmltag">&lt;text</span><span class="xmltag">&gt;</span><b>
+    </b><span class="xmltag">&lt;status</span><span class="xmlattr"> value="<span class="xmlattrvalue">generated</span>"</span><span class="xmltag">/&gt;</span><b>
+    </b><span class="xmltag">&lt;div</span><span class="xmlattr"> xmlns="<span class="xmlattrvalue">http://www.w3.org/1999/xhtml</span>"</span><span class="xmltag">&gt;</span><span class="xmlcomment">&lt;!-- Snipped for brevity --&gt;</span><span class="xmltag">&lt;/div&gt;</span><b>
+  </b><span class="xmltag">&lt;/text&gt;</span><b>
+  </b><span class="xmltag">&lt;url</span><span class="xmlattr"> value="<span class="xmlattrvalue">http://hl7.org/fhir/Profile/15046b9c-2da0-4b80-82ef-c6af6fcfd2bf-lipidprofile</span>"</span><span class="xmltag">/&gt;</span><b>
+  </b><span class="xmltag">&lt;name</span><span class="xmlattr"> value="<span class="xmlattrvalue">Example Lipid Profile</span>"</span><span class="xmltag">/&gt;</span><b>
+  </b><span class="xmltag">&lt;publisher</span><span class="xmlattr"> value="<span class="xmlattrvalue">Grahame Grieve</span>"</span><span class="xmltag">/&gt;</span><b>
+  </b><span class="xmltag">&lt;telecom</span><span class="xmltag">&gt;</span><b>
+    </b><span class="xmltag">&lt;system</span><span class="xmlattr"> value="<span class="xmlattrvalue">url</span>"</span><span class="xmltag">/&gt;</span><b>
+    </b><span class="xmltag">&lt;value</span><span class="xmlattr"> value="<span class="xmlattrvalue">grahame@healthintersections.com.au</span>"</span><span class="xmltag">/&gt;</span><b>
+  </b><span class="xmltag">&lt;/telecom&gt;</span><b>
+  </b><span class="xmltag">&lt;description</span><span class="xmlattr"> value="<span class="xmlattrvalue">Lipid Lab Report</span>"</span><span class="xmltag">/&gt;</span><b>
+  </b><span class="xmltag">&lt;status</span><span class="xmlattr"> value="<span class="xmlattrvalue">draft</span>"</span><span class="xmltag">/&gt;</span><b>
+  </b><span class="xmltag">&lt;date</span><span class="xmlattr"> value="<span class="xmlattrvalue">2012-05-12</span>"</span><span class="xmltag">/&gt;</span><b>
+  </b><span class="xmltag">&lt;type</span><span class="xmlattr"> value="<span class="xmlattrvalue">DiagnosticReport</span>"</span><span class="xmltag">/&gt;</span><b>
+  </b><span class="xmltag">&lt;base</span><span class="xmlattr"> value="<span class="xmlattrvalue">http://hl7.org/fhir/Profile/DiagnosticReport</span>"</span><span class="xmltag">/&gt;</span><b>
+  </b><span class="xmltag">&lt;snapshot</span><span class="xmltag">&gt;</span><b>
+    </b><span class="xmltag">&lt;element</span><span class="xmltag">&gt;</span><b>
+      </b><span class="xmltag">&lt;path</span><span class="xmlattr"> value="<span class="xmlattrvalue">DiagnosticReport</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;name</span><span class="xmlattr"> value="<span class="xmlattrvalue">LipidProfile</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;short</span><span class="xmlattr"> value="<span class="xmlattrvalue">Lipid Lab Report</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;formal</span><span class="xmlattr"> value="<span class="xmlattrvalue">The findings and interpretation of a general lipd lab profile.</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;comments</span><span class="xmlattr"> value="<span class="xmlattrvalue">In this profile, mustSupport means that authoring systems must include the ability to
+       report these elements, and processing systems must cater for them by either displaying
+       them to the user or considering them appropriately in decision support systems.</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;requirements</span><span class="xmlattr"> value="<span class="xmlattrvalue">To support reporting for any diagnostic report into a clinical data repository.</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;synonym</span><span class="xmlattr"> value="<span class="xmlattrvalue">Report</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;synonym</span><span class="xmlattr"> value="<span class="xmlattrvalue">Test</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;synonym</span><span class="xmlattr"> value="<span class="xmlattrvalue">Result</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;synonym</span><span class="xmlattr"> value="<span class="xmlattrvalue">Results</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;synonym</span><span class="xmlattr"> value="<span class="xmlattrvalue">Labs</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;synonym</span><span class="xmlattr"> value="<span class="xmlattrvalue">Laboratory</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;min</span><span class="xmlattr"> value="<span class="xmlattrvalue">1</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;max</span><span class="xmlattr"> value="<span class="xmlattrvalue">1</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;isSummary</span><span class="xmlattr"> value="<span class="xmlattrvalue">false</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;mapping</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;identity</span><span class="xmlattr"> value="<span class="xmlattrvalue">rim</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;map</span><span class="xmlattr"> value="<span class="xmlattrvalue">Observation[classCode=OBS, moodCode=EVN]</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/mapping&gt;</span><b>
+      </b><span class="xmltag">&lt;mapping</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;identity</span><span class="xmlattr"> value="<span class="xmlattrvalue">rim</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;map</span><span class="xmlattr"> value="<span class="xmlattrvalue">Observation[classCode=OBS, moodCode=EVN]</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/mapping&gt;</span><b>
+    </b><span class="xmltag">&lt;/element&gt;</span><b>
+    </b><span class="xmltag">&lt;element</span><span class="xmltag">&gt;</span><b>
+      </b><span class="xmltag">&lt;path</span><span class="xmlattr"> value="<span class="xmlattrvalue">DiagnosticReport.id</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;short</span><span class="xmlattr"> value="<span class="xmlattrvalue">Logical id of this artefact</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;formal</span><span class="xmlattr"> value="<span class="xmlattrvalue">The logical id of the resource, as used in the url for the resoure. Once assigned, this
+       value never changes.</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;comments</span><span class="xmlattr"> value="<span class="xmlattrvalue">The only time that a resource does not have an id is when it is being submitted to the
+       server using a create operation. Bundles always have an id, though it is usually a generated
+       UUID.</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;min</span><span class="xmlattr"> value="<span class="xmlattrvalue">0</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;max</span><span class="xmlattr"> value="<span class="xmlattrvalue">1</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;type</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;code</span><span class="xmlattr"> value="<span class="xmlattrvalue">id</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/type&gt;</span><b>
+      </b><span class="xmltag">&lt;isSummary</span><span class="xmlattr"> value="<span class="xmlattrvalue">false</span>"</span><span class="xmltag">/&gt;</span><b>
+    </b><span class="xmltag">&lt;/element&gt;</span><b>
+    </b><span class="xmltag">&lt;element</span><span class="xmltag">&gt;</span><b>
+      </b><span class="xmltag">&lt;path</span><span class="xmlattr"> value="<span class="xmlattrvalue">DiagnosticReport.meta</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;short</span><span class="xmlattr"> value="<span class="xmlattrvalue">Metadata about the resource</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;formal</span><span class="xmlattr"> value="<span class="xmlattrvalue">The metadata about the resource. This is content that is maintained by the infrastructure.
+       Changes to the content may not always be associated with version changes to the resource.</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;min</span><span class="xmlattr"> value="<span class="xmlattrvalue">0</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;max</span><span class="xmlattr"> value="<span class="xmlattrvalue">1</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;isSummary</span><span class="xmlattr"> value="<span class="xmlattrvalue">false</span>"</span><span class="xmltag">/&gt;</span><b>
+    </b><span class="xmltag">&lt;/element&gt;</span><b>
+    </b><span class="xmltag">&lt;element</span><span class="xmltag">&gt;</span><b>
+      </b><span class="xmltag">&lt;path</span><span class="xmlattr"> value="<span class="xmlattrvalue">DiagnosticReport.meta.id</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;representation</span><span class="xmlattr"> value="<span class="xmlattrvalue">xmlAttr</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;short</span><span class="xmlattr"> value="<span class="xmlattrvalue">xml:id (or equivalent in JSON)</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;formal</span><span class="xmlattr"> value="<span class="xmlattrvalue">unique id for the element within a resource (for internal references).</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;min</span><span class="xmlattr"> value="<span class="xmlattrvalue">0</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;max</span><span class="xmlattr"> value="<span class="xmlattrvalue">1</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;type</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;code</span><span class="xmlattr"> value="<span class="xmlattrvalue">id</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/type&gt;</span><b>
+      </b><span class="xmltag">&lt;isSummary</span><span class="xmlattr"> value="<span class="xmlattrvalue">false</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;mapping</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;identity</span><span class="xmlattr"> value="<span class="xmlattrvalue">rim</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;map</span><span class="xmlattr"> value="<span class="xmlattrvalue">n/a</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/mapping&gt;</span><b>
+      </b><span class="xmltag">&lt;mapping</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;identity</span><span class="xmlattr"> value="<span class="xmlattrvalue">rim</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;map</span><span class="xmlattr"> value="<span class="xmlattrvalue">n/a</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/mapping&gt;</span><b>
+    </b><span class="xmltag">&lt;/element&gt;</span><b>
+    </b><span class="xmltag">&lt;element</span><span class="xmltag">&gt;</span><b>
+      </b><span class="xmltag">&lt;path</span><span class="xmlattr"> value="<span class="xmlattrvalue">DiagnosticReport.meta.extension</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;short</span><span class="xmlattr"> value="<span class="xmlattrvalue">Additional Content defined by implementations</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;formal</span><span class="xmlattr"> value="<span class="xmlattrvalue">May be used to represent additional information that is not part of the basic definition
+       of the element. In order to make the use of extensions safe and manageable, there is a
+       strict set of governance  applied to the definition and use of extensions. Though any
+       implementer is allowed to define an extension, there is a set of requirements that SHALL
+       be met as part of the definition of the extension.</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;comments</span><span class="xmlattr"> value="<span class="xmlattrvalue">There can be no stigma associated with the use of extensions by any application, project,
+       or standard - regardless of the institution or jurisdiction that uses or defines the extensions.
+        The use of extensions is what allows the FHIR specification to retain a core level of
+       simplicity for everyone.</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;synonym</span><span class="xmlattr"> value="<span class="xmlattrvalue">extensions</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;synonym</span><span class="xmlattr"> value="<span class="xmlattrvalue">user content</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;min</span><span class="xmlattr"> value="<span class="xmlattrvalue">0</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;max</span><span class="xmlattr"> value="<span class="xmlattrvalue">*</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;type</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;code</span><span class="xmlattr"> value="<span class="xmlattrvalue">Extension</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/type&gt;</span><b>
+      </b><span class="xmltag">&lt;isSummary</span><span class="xmlattr"> value="<span class="xmlattrvalue">false</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;mapping</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;identity</span><span class="xmlattr"> value="<span class="xmlattrvalue">rim</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;map</span><span class="xmlattr"> value="<span class="xmlattrvalue">n/a</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/mapping&gt;</span><b>
+      </b><span class="xmltag">&lt;mapping</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;identity</span><span class="xmlattr"> value="<span class="xmlattrvalue">rim</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;map</span><span class="xmlattr"> value="<span class="xmlattrvalue">n/a</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/mapping&gt;</span><b>
+    </b><span class="xmltag">&lt;/element&gt;</span><b>
+    </b><span class="xmltag">&lt;element</span><span class="xmltag">&gt;</span><b>
+      </b><span class="xmltag">&lt;path</span><span class="xmlattr"> value="<span class="xmlattrvalue">DiagnosticReport.meta.modifierExtension</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;short</span><span class="xmlattr"> value="<span class="xmlattrvalue">Extensions that cannot be ignored</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;formal</span><span class="xmlattr"> value="<span class="xmlattrvalue">May be used to represent additional information that is not part of the basic definition
+       of the element, and that modifies the understanding of the element that contains it. Usually
+       modifier elements provide negation or qualification. In order to make the use of extensions
+       safe and manageable, there is a strict set of governance applied to the definition and
+       use of extensions. Though any implementer is allowed to define an extension, there is
+       a set of requirements that SHALL be met as part of the definition of the extension. Applications
+       processing a resource are required to check for modifier extensions.</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;comments</span><span class="xmlattr"> value="<span class="xmlattrvalue">There can be no stigma associated with the use of extensions by any application, project,
+       or standard - regardless of the institution or jurisdiction that uses or defines the extensions.
+        The use of extensions is what allows the FHIR specification to retain a core level of
+       simplicity for everyone.</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;synonym</span><span class="xmlattr"> value="<span class="xmlattrvalue">extensions</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;synonym</span><span class="xmlattr"> value="<span class="xmlattrvalue">user content</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;synonym</span><span class="xmlattr"> value="<span class="xmlattrvalue">modifiers</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;min</span><span class="xmlattr"> value="<span class="xmlattrvalue">0</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;max</span><span class="xmlattr"> value="<span class="xmlattrvalue">*</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;type</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;code</span><span class="xmlattr"> value="<span class="xmlattrvalue">Extension</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/type&gt;</span><b>
+      </b><span class="xmltag">&lt;isSummary</span><span class="xmlattr"> value="<span class="xmlattrvalue">false</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;mapping</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;identity</span><span class="xmlattr"> value="<span class="xmlattrvalue">rim</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;map</span><span class="xmlattr"> value="<span class="xmlattrvalue">N/A</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/mapping&gt;</span><b>
+      </b><span class="xmltag">&lt;mapping</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;identity</span><span class="xmlattr"> value="<span class="xmlattrvalue">rim</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;map</span><span class="xmlattr"> value="<span class="xmlattrvalue">N/A</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/mapping&gt;</span><b>
+    </b><span class="xmltag">&lt;/element&gt;</span><b>
+    </b><span class="xmltag">&lt;element</span><span class="xmltag">&gt;</span><b>
+      </b><span class="xmltag">&lt;path</span><span class="xmlattr"> value="<span class="xmlattrvalue">DiagnosticReport.meta.versionId</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;short</span><span class="xmlattr"> value="<span class="xmlattrvalue">Version specific identifier</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;formal</span><span class="xmlattr"> value="<span class="xmlattrvalue">The version specific identifier, as it appears in the version portion of the url. This
+       values changes when the resource is created, updated, or deleted.</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;comments</span><span class="xmlattr"> value="<span class="xmlattrvalue">The server assigns this value, and ignores what the client specifies, except in the case
+       that the server is imposing version integrity on updates/deletes.</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;min</span><span class="xmlattr"> value="<span class="xmlattrvalue">0</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;max</span><span class="xmlattr"> value="<span class="xmlattrvalue">1</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;type</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;code</span><span class="xmlattr"> value="<span class="xmlattrvalue">id</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/type&gt;</span><b>
+      </b><span class="xmltag">&lt;isSummary</span><span class="xmlattr"> value="<span class="xmlattrvalue">false</span>"</span><span class="xmltag">/&gt;</span><b>
+    </b><span class="xmltag">&lt;/element&gt;</span><b>
+    </b><span class="xmltag">&lt;element</span><span class="xmltag">&gt;</span><b>
+      </b><span class="xmltag">&lt;path</span><span class="xmlattr"> value="<span class="xmlattrvalue">DiagnosticReport.meta.lastUpdated</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;short</span><span class="xmlattr"> value="<span class="xmlattrvalue">When the resource version last changed</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;formal</span><span class="xmlattr"> value="<span class="xmlattrvalue">When the resource last changed - e.g. when the version changed.</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;comments</span><span class="xmlattr"> value="<span class="xmlattrvalue">This value is always populated except when the resource is first being created. The server
+       / resource manager sets this value; what a client provides is irrelevant.</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;min</span><span class="xmlattr"> value="<span class="xmlattrvalue">0</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;max</span><span class="xmlattr"> value="<span class="xmlattrvalue">1</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;type</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;code</span><span class="xmlattr"> value="<span class="xmlattrvalue">instant</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/type&gt;</span><b>
+      </b><span class="xmltag">&lt;isSummary</span><span class="xmlattr"> value="<span class="xmlattrvalue">false</span>"</span><span class="xmltag">/&gt;</span><b>
+    </b><span class="xmltag">&lt;/element&gt;</span><b>
+    </b><span class="xmltag">&lt;element</span><span class="xmltag">&gt;</span><b>
+      </b><span class="xmltag">&lt;path</span><span class="xmlattr"> value="<span class="xmlattrvalue">DiagnosticReport.meta.profile</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;short</span><span class="xmlattr"> value="<span class="xmlattrvalue">Profiles this resource claims to conform to</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;formal</span><span class="xmlattr"> value="<span class="xmlattrvalue">A list of profiles that this resource claims to conform to. The URL is a reference to
+       Profile.url.</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;comments</span><span class="xmlattr"> value="<span class="xmlattrvalue">It is up to the server and/or other infrastruture of policy to determine whether/how these
+       claims are verified and/or updated over tiem.</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;min</span><span class="xmlattr"> value="<span class="xmlattrvalue">0</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;max</span><span class="xmlattr"> value="<span class="xmlattrvalue">*</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;type</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;code</span><span class="xmlattr"> value="<span class="xmlattrvalue">uri</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/type&gt;</span><b>
+      </b><span class="xmltag">&lt;isSummary</span><span class="xmlattr"> value="<span class="xmlattrvalue">false</span>"</span><span class="xmltag">/&gt;</span><b>
+    </b><span class="xmltag">&lt;/element&gt;</span><b>
+    </b><span class="xmltag">&lt;element</span><span class="xmltag">&gt;</span><b>
+      </b><span class="xmltag">&lt;path</span><span class="xmlattr"> value="<span class="xmlattrvalue">DiagnosticReport.meta.security</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;short</span><span class="xmlattr"> value="<span class="xmlattrvalue">Security Labels applied to this resource</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;formal</span><span class="xmlattr"> value="<span class="xmlattrvalue">Security labels applied to this resource. These tags connect specific resources to the
+       overall security policy and infrastructure.</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;comments</span><span class="xmlattr"> value="<span class="xmlattrvalue">The security labels can be updated without changing the stated version of the resource.</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;min</span><span class="xmlattr"> value="<span class="xmlattrvalue">0</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;max</span><span class="xmlattr"> value="<span class="xmlattrvalue">*</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;type</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;code</span><span class="xmlattr"> value="<span class="xmlattrvalue">Coding</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/type&gt;</span><b>
+      </b><span class="xmltag">&lt;isSummary</span><span class="xmlattr"> value="<span class="xmlattrvalue">false</span>"</span><span class="xmltag">/&gt;</span><b>
+    </b><span class="xmltag">&lt;/element&gt;</span><b>
+    </b><span class="xmltag">&lt;element</span><span class="xmltag">&gt;</span><b>
+      </b><span class="xmltag">&lt;path</span><span class="xmlattr"> value="<span class="xmlattrvalue">DiagnosticReport.meta.tag</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;short</span><span class="xmlattr"> value="<span class="xmlattrvalue">Tags applied</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;formal</span><span class="xmlattr"> value="<span class="xmlattrvalue">Tags applied to this resource. Tags are intended to to be used to identify and relate
+       resources to process and workflow, and applications are not required to consider the tags
+       when interpreting the meaning of a resource.</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;comments</span><span class="xmlattr"> value="<span class="xmlattrvalue">The tags can be updated without changing the stated version of the resource.</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;min</span><span class="xmlattr"> value="<span class="xmlattrvalue">0</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;max</span><span class="xmlattr"> value="<span class="xmlattrvalue">*</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;type</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;code</span><span class="xmlattr"> value="<span class="xmlattrvalue">Coding</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/type&gt;</span><b>
+      </b><span class="xmltag">&lt;isSummary</span><span class="xmlattr"> value="<span class="xmlattrvalue">false</span>"</span><span class="xmltag">/&gt;</span><b>
+    </b><span class="xmltag">&lt;/element&gt;</span><b>
+    </b><span class="xmltag">&lt;element</span><span class="xmltag">&gt;</span><b>
+      </b><span class="xmltag">&lt;path</span><span class="xmlattr"> value="<span class="xmlattrvalue">DiagnosticReport.implicitRules</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;short</span><span class="xmlattr"> value="<span class="xmlattrvalue">A set of rules under which this content was created</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;formal</span><span class="xmlattr"> value="<span class="xmlattrvalue">A reference to a set of rules that were followed when the resource was constructed, and
+       which must be understood when processing the content.</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;comments</span><span class="xmlattr"> value="<span class="xmlattrvalue">Asserting this rule set restricts the content to be only understood by a limited set of
+       trading partners. This inherently limits the usefulness of the data in the long term.
+       However the existing health eco-system is highly fractured, and not yet ready to define,
+       collect, and exchange data in a generally computable sense. Wherever possible, implementers
+       and/or specification writers should avoid using this element as much as possible.</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;min</span><span class="xmlattr"> value="<span class="xmlattrvalue">0</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;max</span><span class="xmlattr"> value="<span class="xmlattrvalue">1</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;type</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;code</span><span class="xmlattr"> value="<span class="xmlattrvalue">uri</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/type&gt;</span><b>
+      </b><span class="xmltag">&lt;isModifier</span><span class="xmlattr"> value="<span class="xmlattrvalue">true</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;isSummary</span><span class="xmlattr"> value="<span class="xmlattrvalue">false</span>"</span><span class="xmltag">/&gt;</span><b>
+    </b><span class="xmltag">&lt;/element&gt;</span><b>
+    </b><span class="xmltag">&lt;element</span><span class="xmltag">&gt;</span><b>
+      </b><span class="xmltag">&lt;path</span><span class="xmlattr"> value="<span class="xmlattrvalue">DiagnosticReport.language</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;short</span><span class="xmlattr"> value="<span class="xmlattrvalue">Language of the resource content</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;formal</span><span class="xmlattr"> value="<span class="xmlattrvalue">The base language in which the resource is written.</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;comments</span><span class="xmlattr"> value="<span class="xmlattrvalue">Language is provided to support indexing and accessibility (typically, services such as
+       text to speech use the language tag). The html language tag in the narrative applies 
+       to the narrative. The language tag on the resource may be used to specify the language
+       of other presentations generated from the data in the resource  Not all the content has
+       to be in the base language. The Resource.language should not be assumed to apply to the
+       narrative automatically. If a language is specified, it should it also be specified on
+       the div element in the html (see rules in HTML5 for information about the relationship
+       between xml:lang and the html lang attribute).</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;min</span><span class="xmlattr"> value="<span class="xmlattrvalue">0</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;max</span><span class="xmlattr"> value="<span class="xmlattrvalue">1</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;type</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;code</span><span class="xmlattr"> value="<span class="xmlattrvalue">code</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/type&gt;</span><b>
+      </b><span class="xmltag">&lt;isSummary</span><span class="xmlattr"> value="<span class="xmlattrvalue">false</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;binding</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;name</span><span class="xmlattr"> value="<span class="xmlattrvalue">Language</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;isExtensible</span><span class="xmlattr"> value="<span class="xmlattrvalue">false</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;conformance</span><span class="xmlattr"> value="<span class="xmlattrvalue">required</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;description</span><span class="xmlattr"> value="<span class="xmlattrvalue">A human language</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;referenceUri</span><span class="xmlattr"> value="<span class="xmlattrvalue">http://tools.ietf.org/html/bcp47</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/binding&gt;</span><b>
+    </b><span class="xmltag">&lt;/element&gt;</span><b>
+    </b><span class="xmltag">&lt;element</span><span class="xmltag">&gt;</span><b>
+      </b><span class="xmltag">&lt;path</span><span class="xmlattr"> value="<span class="xmlattrvalue">DiagnosticReport.text</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;short</span><span class="xmlattr"> value="<span class="xmlattrvalue">Text summary of the resource, for human interpretation</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;formal</span><span class="xmlattr"> value="<span class="xmlattrvalue">A human-readable narrative that contains a summary of the resource, and may be used to
+       represent the content of the resource to a human. The narrative need not encode all the
+       structured data, but is required to contain sufficient detail to make it &amp;quot;clinically
+       safe&amp;quot; for a human to just read the narrative. Resource definitions may define what
+       content should be represented in the narrative to ensure clinical safety.</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;comments</span><span class="xmlattr"> value="<span class="xmlattrvalue">Contained resources do not have narrative. Resources that are not contained SHOULD have
+       a narrative.</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;synonym</span><span class="xmlattr"> value="<span class="xmlattrvalue">narrative</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;synonym</span><span class="xmlattr"> value="<span class="xmlattrvalue">html</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;synonym</span><span class="xmlattr"> value="<span class="xmlattrvalue">xhtml</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;synonym</span><span class="xmlattr"> value="<span class="xmlattrvalue">display</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;min</span><span class="xmlattr"> value="<span class="xmlattrvalue">0</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;max</span><span class="xmlattr"> value="<span class="xmlattrvalue">1</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;type</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;code</span><span class="xmlattr"> value="<span class="xmlattrvalue">Narrative</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/type&gt;</span><b>
+      </b><span class="xmltag">&lt;condition</span><span class="xmlattr"> value="<span class="xmlattrvalue">1</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;isSummary</span><span class="xmlattr"> value="<span class="xmlattrvalue">false</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;mapping</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;identity</span><span class="xmlattr"> value="<span class="xmlattrvalue">rim</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;map</span><span class="xmlattr"> value="<span class="xmlattrvalue">Act.text?</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/mapping&gt;</span><b>
+      </b><span class="xmltag">&lt;mapping</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;identity</span><span class="xmlattr"> value="<span class="xmlattrvalue">rim</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;map</span><span class="xmlattr"> value="<span class="xmlattrvalue">Act.text?</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/mapping&gt;</span><b>
+    </b><span class="xmltag">&lt;/element&gt;</span><b>
+    </b><span class="xmltag">&lt;element</span><span class="xmltag">&gt;</span><b>
+      </b><span class="xmltag">&lt;path</span><span class="xmlattr"> value="<span class="xmlattrvalue">DiagnosticReport.contained</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;short</span><span class="xmlattr"> value="<span class="xmlattrvalue">Contained, inline Resources</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;formal</span><span class="xmlattr"> value="<span class="xmlattrvalue">These resources do not have an independent existence apart from the resource that contains
+       them - they cannot be identified independently, and nor can they have their own independent
+       transaction scope.</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;comments</span><span class="xmlattr"> value="<span class="xmlattrvalue">This should never be done when the content can be identified properly, as once identification
+       is lost, it is extremely difficult (and context dependent) to restore it again.</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;synonym</span><span class="xmlattr"> value="<span class="xmlattrvalue">inline resources</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;synonym</span><span class="xmlattr"> value="<span class="xmlattrvalue">anonymous resources</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;synonym</span><span class="xmlattr"> value="<span class="xmlattrvalue">contained resources</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;min</span><span class="xmlattr"> value="<span class="xmlattrvalue">0</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;max</span><span class="xmlattr"> value="<span class="xmlattrvalue">*</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;type</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;code</span><span class="xmlattr"> value="<span class="xmlattrvalue">Resource</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/type&gt;</span><b>
+      </b><span class="xmltag">&lt;isSummary</span><span class="xmlattr"> value="<span class="xmlattrvalue">false</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;mapping</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;identity</span><span class="xmlattr"> value="<span class="xmlattrvalue">rim</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;map</span><span class="xmlattr"> value="<span class="xmlattrvalue">N/A</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/mapping&gt;</span><b>
+      </b><span class="xmltag">&lt;mapping</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;identity</span><span class="xmlattr"> value="<span class="xmlattrvalue">rim</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;map</span><span class="xmlattr"> value="<span class="xmlattrvalue">N/A</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/mapping&gt;</span><b>
+    </b><span class="xmltag">&lt;/element&gt;</span><b>
+    </b><span class="xmltag">&lt;element</span><span class="xmltag">&gt;</span><b>
+      </b><span class="xmltag">&lt;path</span><span class="xmlattr"> value="<span class="xmlattrvalue">DiagnosticReport.extension</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;short</span><span class="xmlattr"> value="<span class="xmlattrvalue">Additional Content defined by implementations</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;formal</span><span class="xmlattr"> value="<span class="xmlattrvalue">May be used to represent additional information that is not part of the basic definition
+       of the resource. In order to make the use of extensions safe and manageable, there is
+       a strict set of governance  applied to the definition and use of extensions. Though any
+       implementer is allowed to define an extension, there is a set of requirements that SHALL
+       be met as part of the definition of the extension.</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;comments</span><span class="xmlattr"> value="<span class="xmlattrvalue">There can be no stigma associated with the use of extensions by any application, project,
+       or standard - regardless of the institution or jurisdiction that uses or defines the extensions.
+        The use of extensions is what allows the FHIR specification to retain a core level of
+       simplicity for everyone.</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;synonym</span><span class="xmlattr"> value="<span class="xmlattrvalue">extensions</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;synonym</span><span class="xmlattr"> value="<span class="xmlattrvalue">user content</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;min</span><span class="xmlattr"> value="<span class="xmlattrvalue">0</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;max</span><span class="xmlattr"> value="<span class="xmlattrvalue">*</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;type</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;code</span><span class="xmlattr"> value="<span class="xmlattrvalue">Extension</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/type&gt;</span><b>
+      </b><span class="xmltag">&lt;isSummary</span><span class="xmlattr"> value="<span class="xmlattrvalue">false</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;mapping</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;identity</span><span class="xmlattr"> value="<span class="xmlattrvalue">rim</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;map</span><span class="xmlattr"> value="<span class="xmlattrvalue">N/A</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/mapping&gt;</span><b>
+      </b><span class="xmltag">&lt;mapping</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;identity</span><span class="xmlattr"> value="<span class="xmlattrvalue">rim</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;map</span><span class="xmlattr"> value="<span class="xmlattrvalue">N/A</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/mapping&gt;</span><b>
+    </b><span class="xmltag">&lt;/element&gt;</span><b>
+    </b><span class="xmltag">&lt;element</span><span class="xmltag">&gt;</span><b>
+      </b><span class="xmltag">&lt;path</span><span class="xmlattr"> value="<span class="xmlattrvalue">DiagnosticReport.modifierExtension</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;short</span><span class="xmlattr"> value="<span class="xmlattrvalue">Extensions that cannot be ignored</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;formal</span><span class="xmlattr"> value="<span class="xmlattrvalue">May be used to represent additional information that is not part of the basic definition
+       of the resource, and that modifies the understanding of the element that contains it.
+       Usually modifier elements provide negation or qualification. In order to make the use
+       of extensions safe and manageable, there is a strict set of governance applied to the
+       definition and use of extensions. Though any implementer is allowed to define an extension,
+       there is a set of requirements that SHALL be met as part of the definition of the extension.
+       Applications processing a resource are required to check for modifier extensions.</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;comments</span><span class="xmlattr"> value="<span class="xmlattrvalue">There can be no stigma associated with the use of extensions by any application, project,
+       or standard - regardless of the institution or jurisdiction that uses or defines the extensions.
+        The use of extensions is what allows the FHIR specification to retain a core level of
+       simplicity for everyone.</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;synonym</span><span class="xmlattr"> value="<span class="xmlattrvalue">extensions</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;synonym</span><span class="xmlattr"> value="<span class="xmlattrvalue">user content</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;min</span><span class="xmlattr"> value="<span class="xmlattrvalue">0</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;max</span><span class="xmlattr"> value="<span class="xmlattrvalue">*</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;type</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;code</span><span class="xmlattr"> value="<span class="xmlattrvalue">Extension</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/type&gt;</span><b>
+      </b><span class="xmltag">&lt;isSummary</span><span class="xmlattr"> value="<span class="xmlattrvalue">false</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;mapping</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;identity</span><span class="xmlattr"> value="<span class="xmlattrvalue">rim</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;map</span><span class="xmlattr"> value="<span class="xmlattrvalue">N/A</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/mapping&gt;</span><b>
+      </b><span class="xmltag">&lt;mapping</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;identity</span><span class="xmlattr"> value="<span class="xmlattrvalue">rim</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;map</span><span class="xmlattr"> value="<span class="xmlattrvalue">N/A</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/mapping&gt;</span><b>
+    </b><span class="xmltag">&lt;/element&gt;</span><b>
+    </b><span class="xmltag">&lt;element</span><span class="xmltag">&gt;</span><b>
+      </b><span class="xmltag">&lt;path</span><span class="xmlattr"> value="<span class="xmlattrvalue">DiagnosticReport.name</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;short</span><span class="xmlattr"> value="<span class="xmlattrvalue">LOINC Code for Lipid Panel with LDL</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;formal</span><span class="xmlattr"> value="<span class="xmlattrvalue">LOINC Code for Lipid Panel with LDL.</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;comments</span><span class="xmlattr"> value="<span class="xmlattrvalue">LOINC code includes &amp;quot;direct&amp;quot; LDL - does this mean LDL derived by measuring VLDL
+       by ultracentrifugation? This panel includes both measured and calculated LDL.</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;min</span><span class="xmlattr"> value="<span class="xmlattrvalue">1</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;max</span><span class="xmlattr"> value="<span class="xmlattrvalue">1</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;type</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;code</span><span class="xmlattr"> value="<span class="xmlattrvalue">CodeableConcept</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/type&gt;</span><b>
+      </b><span class="xmltag">&lt;fixedCodeableConcept</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;coding</span><span class="xmltag">&gt;</span><b>
+          </b><span class="xmltag">&lt;system</span><span class="xmlattr"> value="<span class="xmlattrvalue">http://loinc.org</span>"</span><span class="xmltag">/&gt;</span><b>
+          </b><span class="xmltag">&lt;code</span><span class="xmlattr"> value="<span class="xmlattrvalue">57698-3</span>"</span><span class="xmltag">/&gt;</span><b>
+          </b><span class="xmltag">&lt;display</span><span class="xmlattr"> value="<span class="xmlattrvalue">Lipid panel with direct LDL - Serum or Plasma</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;/coding&gt;</span><b>
+      </b><span class="xmltag">&lt;/fixedCodeableConcept&gt;</span><b>
+      </b><span class="xmltag">&lt;isSummary</span><span class="xmlattr"> value="<span class="xmlattrvalue">false</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;binding</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;name</span><span class="xmlattr"> value="<span class="xmlattrvalue">DiagnosticReportNames</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;isExtensible</span><span class="xmlattr"> value="<span class="xmlattrvalue">true</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;conformance</span><span class="xmlattr"> value="<span class="xmlattrvalue">preferred</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;description</span><span class="xmlattr"> value="<span class="xmlattrvalue">Codes that describe Diagnostic Reports</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;referenceReference</span><span class="xmltag">&gt;</span><b>
+          </b><span class="xmltag">&lt;reference</span><span class="xmlattr"> value="<span class="xmlattrvalue">http://hl7.org/fhir/vs/report-names</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;/referenceReference&gt;</span><b>
+      </b><span class="xmltag">&lt;/binding&gt;</span><b>
+      </b><span class="xmltag">&lt;mapping</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;identity</span><span class="xmlattr"> value="<span class="xmlattrvalue">v2</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;map</span><span class="xmlattr"> value="<span class="xmlattrvalue">OBR-4-Universal Service ID (V2 doesn&apos;t provide an easy way to indicate both the ordered
+         test and the performed panel)</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/mapping&gt;</span><b>
+      </b><span class="xmltag">&lt;mapping</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;identity</span><span class="xmlattr"> value="<span class="xmlattrvalue">rim</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;map</span><span class="xmlattr"> value="<span class="xmlattrvalue">code</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/mapping&gt;</span><b>
+      </b><span class="xmltag">&lt;mapping</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;identity</span><span class="xmlattr"> value="<span class="xmlattrvalue">v2</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;map</span><span class="xmlattr"> value="<span class="xmlattrvalue">OBR-4-Universal Service ID (V2 doesn&apos;t provide an easy way to indicate both the ordered
+         test and the performed panel)</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/mapping&gt;</span><b>
+      </b><span class="xmltag">&lt;mapping</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;identity</span><span class="xmlattr"> value="<span class="xmlattrvalue">rim</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;map</span><span class="xmlattr"> value="<span class="xmlattrvalue">code</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/mapping&gt;</span><b>
+    </b><span class="xmltag">&lt;/element&gt;</span><b>
+    </b><span class="xmltag">&lt;element</span><span class="xmltag">&gt;</span><b>
+      </b><span class="xmltag">&lt;path</span><span class="xmlattr"> value="<span class="xmlattrvalue">DiagnosticReport.status</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;short</span><span class="xmlattr"> value="<span class="xmlattrvalue">registered | partial | final | corrected +</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;formal</span><span class="xmlattr"> value="<span class="xmlattrvalue">The status of the diagnostic report as a whole.</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;comments</span><span class="xmlattr"> value="<span class="xmlattrvalue">This is labeled as &amp;quot;Is Modifier&amp;quot; because applications need to take appropriate
+       action if a report is withdrawn.</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;requirements</span><span class="xmlattr"> value="<span class="xmlattrvalue">Diagnostic services routinely issue provisional/incomplete reports, and sometimes withdraw
+       previously released reports.</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;min</span><span class="xmlattr"> value="<span class="xmlattrvalue">1</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;max</span><span class="xmlattr"> value="<span class="xmlattrvalue">1</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;type</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;code</span><span class="xmlattr"> value="<span class="xmlattrvalue">code</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/type&gt;</span><b>
+      </b><span class="xmltag">&lt;isModifier</span><span class="xmlattr"> value="<span class="xmlattrvalue">true</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;isSummary</span><span class="xmlattr"> value="<span class="xmlattrvalue">true</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;binding</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;name</span><span class="xmlattr"> value="<span class="xmlattrvalue">DiagnosticReportStatus</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;isExtensible</span><span class="xmlattr"> value="<span class="xmlattrvalue">false</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;conformance</span><span class="xmlattr"> value="<span class="xmlattrvalue">required</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;description</span><span class="xmlattr"> value="<span class="xmlattrvalue">The status of the diagnostic report as a whole</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;referenceReference</span><span class="xmltag">&gt;</span><b>
+          </b><span class="xmltag">&lt;reference</span><span class="xmlattr"> value="<span class="xmlattrvalue">http://hl7.org/fhir/vs/diagnostic-report-status</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;/referenceReference&gt;</span><b>
+      </b><span class="xmltag">&lt;/binding&gt;</span><b>
+      </b><span class="xmltag">&lt;mapping</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;identity</span><span class="xmlattr"> value="<span class="xmlattrvalue">v2</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;map</span><span class="xmlattr"> value="<span class="xmlattrvalue">OBR-25-Result Status (not 1:1 mapping)</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/mapping&gt;</span><b>
+      </b><span class="xmltag">&lt;mapping</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;identity</span><span class="xmlattr"> value="<span class="xmlattrvalue">rim</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;map</span><span class="xmlattr"> value="<span class="xmlattrvalue">statusCode  Note: final and amended are distinguished by whether observation is the subject
+         of a ControlAct event of type &amp;quot;revise&amp;quot;</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/mapping&gt;</span><b>
+      </b><span class="xmltag">&lt;mapping</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;identity</span><span class="xmlattr"> value="<span class="xmlattrvalue">v2</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;map</span><span class="xmlattr"> value="<span class="xmlattrvalue">OBR-25-Result Status (not 1:1 mapping)</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/mapping&gt;</span><b>
+      </b><span class="xmltag">&lt;mapping</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;identity</span><span class="xmlattr"> value="<span class="xmlattrvalue">rim</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;map</span><span class="xmlattr"> value="<span class="xmlattrvalue">statusCode  Note: final and amended are distinguished by whether observation is the subject
+         of a ControlAct event of type &amp;quot;revise&amp;quot;</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/mapping&gt;</span><b>
+    </b><span class="xmltag">&lt;/element&gt;</span><b>
+    </b><span class="xmltag">&lt;element</span><span class="xmltag">&gt;</span><b>
+      </b><span class="xmltag">&lt;path</span><span class="xmlattr"> value="<span class="xmlattrvalue">DiagnosticReport.issued</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;short</span><span class="xmlattr"> value="<span class="xmlattrvalue">Date this version was released</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;formal</span><span class="xmlattr"> value="<span class="xmlattrvalue">The date and/or time that this version of the report was released from the source diagnostic
+       service.</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;comments</span><span class="xmlattr"> value="<span class="xmlattrvalue">May be different from the update time of the resource itself, because that is the status
+       of the record (potentially a secondary copy), not the actual release time of the report
+       .</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;requirements</span><span class="xmlattr"> value="<span class="xmlattrvalue">Clinicians need to be able to check the date that the report was released.</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;synonym</span><span class="xmlattr"> value="<span class="xmlattrvalue">Date Created</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;synonym</span><span class="xmlattr"> value="<span class="xmlattrvalue">Date published</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;synonym</span><span class="xmlattr"> value="<span class="xmlattrvalue">Date Issued</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;min</span><span class="xmlattr"> value="<span class="xmlattrvalue">1</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;max</span><span class="xmlattr"> value="<span class="xmlattrvalue">1</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;type</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;code</span><span class="xmlattr"> value="<span class="xmlattrvalue">dateTime</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/type&gt;</span><b>
+      </b><span class="xmltag">&lt;isSummary</span><span class="xmlattr"> value="<span class="xmlattrvalue">true</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;mapping</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;identity</span><span class="xmlattr"> value="<span class="xmlattrvalue">v2</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;map</span><span class="xmlattr"> value="<span class="xmlattrvalue">OBR-22-Results Rpt/Status Chng - Date/Time</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/mapping&gt;</span><b>
+      </b><span class="xmltag">&lt;mapping</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;identity</span><span class="xmlattr"> value="<span class="xmlattrvalue">rim</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;map</span><span class="xmlattr"> value="<span class="xmlattrvalue">participation[typeCode=VRF or AUT].time</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/mapping&gt;</span><b>
+      </b><span class="xmltag">&lt;mapping</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;identity</span><span class="xmlattr"> value="<span class="xmlattrvalue">v2</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;map</span><span class="xmlattr"> value="<span class="xmlattrvalue">OBR-22-Results Rpt/Status Chng - Date/Time</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/mapping&gt;</span><b>
+      </b><span class="xmltag">&lt;mapping</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;identity</span><span class="xmlattr"> value="<span class="xmlattrvalue">rim</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;map</span><span class="xmlattr"> value="<span class="xmlattrvalue">participation[typeCode=VRF or AUT].time</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/mapping&gt;</span><b>
+    </b><span class="xmltag">&lt;/element&gt;</span><b>
+    </b><span class="xmltag">&lt;element</span><span class="xmltag">&gt;</span><b>
+      </b><span class="xmltag">&lt;path</span><span class="xmlattr"> value="<span class="xmlattrvalue">DiagnosticReport.subject</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;short</span><span class="xmlattr"> value="<span class="xmlattrvalue">The subject of the report, usually, but not always, the patient</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;formal</span><span class="xmlattr"> value="<span class="xmlattrvalue">The subject of the report. Usually, but not always, this is a patient. However diagnostic
+       services also perform analyses on specimens collected from a variety of other sources.</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;requirements</span><span class="xmlattr"> value="<span class="xmlattrvalue">SHALL know the subject context.</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;synonym</span><span class="xmlattr"> value="<span class="xmlattrvalue">Patient</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;min</span><span class="xmlattr"> value="<span class="xmlattrvalue">1</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;max</span><span class="xmlattr"> value="<span class="xmlattrvalue">1</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;type</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;code</span><span class="xmlattr"> value="<span class="xmlattrvalue">Reference</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;profile</span><span class="xmlattr"> value="<span class="xmlattrvalue">http://hl7.org/fhir/Profile/Patient</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/type&gt;</span><b>
+      </b><span class="xmltag">&lt;type</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;code</span><span class="xmlattr"> value="<span class="xmlattrvalue">Reference</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;profile</span><span class="xmlattr"> value="<span class="xmlattrvalue">http://hl7.org/fhir/Profile/Group</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/type&gt;</span><b>
+      </b><span class="xmltag">&lt;type</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;code</span><span class="xmlattr"> value="<span class="xmlattrvalue">Reference</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;profile</span><span class="xmlattr"> value="<span class="xmlattrvalue">http://hl7.org/fhir/Profile/Device</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/type&gt;</span><b>
+      </b><span class="xmltag">&lt;type</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;code</span><span class="xmlattr"> value="<span class="xmlattrvalue">Reference</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;profile</span><span class="xmlattr"> value="<span class="xmlattrvalue">http://hl7.org/fhir/Profile/Location</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/type&gt;</span><b>
+      </b><span class="xmltag">&lt;isSummary</span><span class="xmlattr"> value="<span class="xmlattrvalue">true</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;mapping</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;identity</span><span class="xmlattr"> value="<span class="xmlattrvalue">v2</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;map</span><span class="xmlattr"> value="<span class="xmlattrvalue">PID-3-Patient ID List (no V2 mapping for Group or Device)</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/mapping&gt;</span><b>
+      </b><span class="xmltag">&lt;mapping</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;identity</span><span class="xmlattr"> value="<span class="xmlattrvalue">rim</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;map</span><span class="xmlattr"> value="<span class="xmlattrvalue">participation[typeCode=SBJ]</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/mapping&gt;</span><b>
+      </b><span class="xmltag">&lt;mapping</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;identity</span><span class="xmlattr"> value="<span class="xmlattrvalue">v2</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;map</span><span class="xmlattr"> value="<span class="xmlattrvalue">PID-3-Patient ID List (no V2 mapping for Group or Device)</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/mapping&gt;</span><b>
+      </b><span class="xmltag">&lt;mapping</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;identity</span><span class="xmlattr"> value="<span class="xmlattrvalue">rim</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;map</span><span class="xmlattr"> value="<span class="xmlattrvalue">participation[typeCode=SBJ]</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/mapping&gt;</span><b>
+    </b><span class="xmltag">&lt;/element&gt;</span><b>
+    </b><span class="xmltag">&lt;element</span><span class="xmltag">&gt;</span><b>
+      </b><span class="xmltag">&lt;path</span><span class="xmlattr"> value="<span class="xmlattrvalue">DiagnosticReport.performer</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;short</span><span class="xmlattr"> value="<span class="xmlattrvalue">Responsible Diagnostic Service</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;formal</span><span class="xmlattr"> value="<span class="xmlattrvalue">The diagnostic service that is responsible for issuing the report.</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;comments</span><span class="xmlattr"> value="<span class="xmlattrvalue">This is not necessarily the source of the atomic data items - it is the entity that takes
+       responsibility for the clinical report.</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;requirements</span><span class="xmlattr"> value="<span class="xmlattrvalue">Need to know whom to contact if there are queries about the results. Also may need to
+       track the source of reports for secondary data analysis.</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;synonym</span><span class="xmlattr"> value="<span class="xmlattrvalue">Laboratory</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;synonym</span><span class="xmlattr"> value="<span class="xmlattrvalue">Service</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;synonym</span><span class="xmlattr"> value="<span class="xmlattrvalue">Practitioner</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;synonym</span><span class="xmlattr"> value="<span class="xmlattrvalue">Department</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;synonym</span><span class="xmlattr"> value="<span class="xmlattrvalue">Company</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;min</span><span class="xmlattr"> value="<span class="xmlattrvalue">1</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;max</span><span class="xmlattr"> value="<span class="xmlattrvalue">1</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;type</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;code</span><span class="xmlattr"> value="<span class="xmlattrvalue">Reference</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;profile</span><span class="xmlattr"> value="<span class="xmlattrvalue">http://hl7.org/fhir/Profile/Practitioner</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/type&gt;</span><b>
+      </b><span class="xmltag">&lt;type</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;code</span><span class="xmlattr"> value="<span class="xmlattrvalue">Reference</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;profile</span><span class="xmlattr"> value="<span class="xmlattrvalue">http://hl7.org/fhir/Profile/Organization</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/type&gt;</span><b>
+      </b><span class="xmltag">&lt;isSummary</span><span class="xmlattr"> value="<span class="xmlattrvalue">true</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;mapping</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;identity</span><span class="xmlattr"> value="<span class="xmlattrvalue">v2</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;map</span><span class="xmlattr"> value="<span class="xmlattrvalue">PRT-8-Participation Organization (where this PRT-4-Participation = &amp;quot;PO&amp;quot;)</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/mapping&gt;</span><b>
+      </b><span class="xmltag">&lt;mapping</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;identity</span><span class="xmlattr"> value="<span class="xmlattrvalue">rim</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;map</span><span class="xmlattr"> value="<span class="xmlattrvalue">participation[typeCode=AUT].role[classCode=ASSIGN].scoper</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/mapping&gt;</span><b>
+      </b><span class="xmltag">&lt;mapping</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;identity</span><span class="xmlattr"> value="<span class="xmlattrvalue">v2</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;map</span><span class="xmlattr"> value="<span class="xmlattrvalue">PRT-8-Participation Organization (where this PRT-4-Participation = &amp;quot;PO&amp;quot;)</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/mapping&gt;</span><b>
+      </b><span class="xmltag">&lt;mapping</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;identity</span><span class="xmlattr"> value="<span class="xmlattrvalue">rim</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;map</span><span class="xmlattr"> value="<span class="xmlattrvalue">participation[typeCode=AUT].role[classCode=ASSIGN].scoper</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/mapping&gt;</span><b>
+    </b><span class="xmltag">&lt;/element&gt;</span><b>
+    </b><span class="xmltag">&lt;element</span><span class="xmltag">&gt;</span><b>
+      </b><span class="xmltag">&lt;path</span><span class="xmlattr"> value="<span class="xmlattrvalue">DiagnosticReport.identifier</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;short</span><span class="xmlattr"> value="<span class="xmlattrvalue">Id for external references to this report</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;formal</span><span class="xmlattr"> value="<span class="xmlattrvalue">The local ID assigned to the report by the order filler, usually by the Information System
+       of the diagnostic service provider.</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;requirements</span><span class="xmlattr"> value="<span class="xmlattrvalue">Need to know what identifier to use when making queries about this report from the source
+       laboratory, and for linking to the report outside FHIR context.</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;synonym</span><span class="xmlattr"> value="<span class="xmlattrvalue">ReportID</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;min</span><span class="xmlattr"> value="<span class="xmlattrvalue">0</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;max</span><span class="xmlattr"> value="<span class="xmlattrvalue">1</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;type</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;code</span><span class="xmlattr"> value="<span class="xmlattrvalue">Identifier</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/type&gt;</span><b>
+      </b><span class="xmltag">&lt;isSummary</span><span class="xmlattr"> value="<span class="xmlattrvalue">true</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;mapping</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;identity</span><span class="xmlattr"> value="<span class="xmlattrvalue">v2</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;map</span><span class="xmlattr"> value="<span class="xmlattrvalue">OBR-51-Observation Group ID (todo: check semantic intent of OBR-51 with OOWG)</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/mapping&gt;</span><b>
+      </b><span class="xmltag">&lt;mapping</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;identity</span><span class="xmlattr"> value="<span class="xmlattrvalue">rim</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;map</span><span class="xmlattr"> value="<span class="xmlattrvalue">id</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/mapping&gt;</span><b>
+      </b><span class="xmltag">&lt;mapping</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;identity</span><span class="xmlattr"> value="<span class="xmlattrvalue">v2</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;map</span><span class="xmlattr"> value="<span class="xmlattrvalue">OBR-51-Observation Group ID (todo: check semantic intent of OBR-51 with OOWG)</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/mapping&gt;</span><b>
+      </b><span class="xmltag">&lt;mapping</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;identity</span><span class="xmlattr"> value="<span class="xmlattrvalue">rim</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;map</span><span class="xmlattr"> value="<span class="xmlattrvalue">id</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/mapping&gt;</span><b>
+    </b><span class="xmltag">&lt;/element&gt;</span><b>
+    </b><span class="xmltag">&lt;element</span><span class="xmltag">&gt;</span><b>
+      </b><span class="xmltag">&lt;path</span><span class="xmlattr"> value="<span class="xmlattrvalue">DiagnosticReport.requestDetail</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;short</span><span class="xmlattr"> value="<span class="xmlattrvalue">What was requested</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;formal</span><span class="xmlattr"> value="<span class="xmlattrvalue">Details concerning a test requested.</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;comments</span><span class="xmlattr"> value="<span class="xmlattrvalue">Note: Usually there is one test request for each result, however in some circumstances
+       multiple test requests may be represented using a single test result resource. Note that
+       there are also cases where one request leads to multiple reports.</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;requirements</span><span class="xmlattr"> value="<span class="xmlattrvalue">Need to be able to track completion of requests based on reports issued and also to report
+       what diagnostic tests were requested (not always the same as what is delivered).</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;min</span><span class="xmlattr"> value="<span class="xmlattrvalue">0</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;max</span><span class="xmlattr"> value="<span class="xmlattrvalue">*</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;type</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;code</span><span class="xmlattr"> value="<span class="xmlattrvalue">Reference</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;profile</span><span class="xmlattr"> value="<span class="xmlattrvalue">http://hl7.org/fhir/Profile/DiagnosticOrder</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/type&gt;</span><b>
+      </b><span class="xmltag">&lt;isSummary</span><span class="xmlattr"> value="<span class="xmlattrvalue">false</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;mapping</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;identity</span><span class="xmlattr"> value="<span class="xmlattrvalue">rim</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;map</span><span class="xmlattr"> value="<span class="xmlattrvalue">outboundRelationship[typeCode=FLFS].target</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/mapping&gt;</span><b>
+      </b><span class="xmltag">&lt;mapping</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;identity</span><span class="xmlattr"> value="<span class="xmlattrvalue">rim</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;map</span><span class="xmlattr"> value="<span class="xmlattrvalue">outboundRelationship[typeCode=FLFS].target</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/mapping&gt;</span><b>
+    </b><span class="xmltag">&lt;/element&gt;</span><b>
+    </b><span class="xmltag">&lt;element</span><span class="xmltag">&gt;</span><b>
+      </b><span class="xmltag">&lt;path</span><span class="xmlattr"> value="<span class="xmlattrvalue">DiagnosticReport.serviceCategory</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;short</span><span class="xmlattr"> value="<span class="xmlattrvalue">Biochemistry, Hematology etc.</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;formal</span><span class="xmlattr"> value="<span class="xmlattrvalue">The section of the diagnostic service that performs the examination e.g. biochemistry,
+       hematology, MRI.</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;requirements</span><span class="xmlattr"> value="<span class="xmlattrvalue">Help clinicians filter/find the reports they are looking for.</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;synonym</span><span class="xmlattr"> value="<span class="xmlattrvalue">Department</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;synonym</span><span class="xmlattr"> value="<span class="xmlattrvalue">Sub-department</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;synonym</span><span class="xmlattr"> value="<span class="xmlattrvalue">service</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;synonym</span><span class="xmlattr"> value="<span class="xmlattrvalue">discipline</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;min</span><span class="xmlattr"> value="<span class="xmlattrvalue">0</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;max</span><span class="xmlattr"> value="<span class="xmlattrvalue">1</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;type</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;code</span><span class="xmlattr"> value="<span class="xmlattrvalue">CodeableConcept</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/type&gt;</span><b>
+      </b><span class="xmltag">&lt;isSummary</span><span class="xmlattr"> value="<span class="xmlattrvalue">true</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;binding</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;name</span><span class="xmlattr"> value="<span class="xmlattrvalue">DiagnosticServiceSection</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;isExtensible</span><span class="xmlattr"> value="<span class="xmlattrvalue">true</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;conformance</span><span class="xmlattr"> value="<span class="xmlattrvalue">example</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;description</span><span class="xmlattr"> value="<span class="xmlattrvalue">Codes for diagnostic service sections</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;referenceReference</span><span class="xmltag">&gt;</span><b>
+          </b><span class="xmltag">&lt;reference</span><span class="xmlattr"> value="<span class="xmlattrvalue">http://hl7.org/fhir/vs/diagnostic-service-sections</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;/referenceReference&gt;</span><b>
+      </b><span class="xmltag">&lt;/binding&gt;</span><b>
+      </b><span class="xmltag">&lt;mapping</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;identity</span><span class="xmlattr"> value="<span class="xmlattrvalue">v2</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;map</span><span class="xmlattr"> value="<span class="xmlattrvalue">OBR-24-Diagnostic Service Section ID</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/mapping&gt;</span><b>
+      </b><span class="xmltag">&lt;mapping</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;identity</span><span class="xmlattr"> value="<span class="xmlattrvalue">rim</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;map</span><span class="xmlattr"> value="<span class="xmlattrvalue">inboundRelationship[typeCode=COMP].source[classCode=LIST, moodCode=EVN, code &amp;lt; LabService].code</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/mapping&gt;</span><b>
+      </b><span class="xmltag">&lt;mapping</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;identity</span><span class="xmlattr"> value="<span class="xmlattrvalue">v2</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;map</span><span class="xmlattr"> value="<span class="xmlattrvalue">OBR-24-Diagnostic Service Section ID</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/mapping&gt;</span><b>
+      </b><span class="xmltag">&lt;mapping</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;identity</span><span class="xmlattr"> value="<span class="xmlattrvalue">rim</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;map</span><span class="xmlattr"> value="<span class="xmlattrvalue">inboundRelationship[typeCode=COMP].source[classCode=LIST, moodCode=EVN, code &amp;lt; LabService].code</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/mapping&gt;</span><b>
+    </b><span class="xmltag">&lt;/element&gt;</span><b>
+    </b><span class="xmltag">&lt;element</span><span class="xmltag">&gt;</span><b>
+      </b><span class="xmltag">&lt;path</span><span class="xmlattr"> value="<span class="xmlattrvalue">DiagnosticReport.diagnostic[x]</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;short</span><span class="xmlattr"> value="<span class="xmlattrvalue">Physiologically Relevant time/time-period for report</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;formal</span><span class="xmlattr"> value="<span class="xmlattrvalue">The time or time-period the observed values are related to. This is usually either the
+       time of the procedure or of specimen collection(s), but very often the source of the date/time
+       is not known, only the date/time itself.</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;comments</span><span class="xmlattr"> value="<span class="xmlattrvalue">If the diagnostic procedure was performed on the patient, this is the time it was performed.
+       If there are specimens, the diagnostically relevant time can be derived from the specimen
+       collection times, but the specimen information is not always available, and the exact
+       relationship between the specimens and the diagnostically relevant time is not always
+       automatic.</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;requirements</span><span class="xmlattr"> value="<span class="xmlattrvalue">Need to know where in the patient history to file/present this report.</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;synonym</span><span class="xmlattr"> value="<span class="xmlattrvalue">Observation time</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;synonym</span><span class="xmlattr"> value="<span class="xmlattrvalue">Effective Time</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;min</span><span class="xmlattr"> value="<span class="xmlattrvalue">1</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;max</span><span class="xmlattr"> value="<span class="xmlattrvalue">1</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;type</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;code</span><span class="xmlattr"> value="<span class="xmlattrvalue">dateTime</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/type&gt;</span><b>
+      </b><span class="xmltag">&lt;type</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;code</span><span class="xmlattr"> value="<span class="xmlattrvalue">Period</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/type&gt;</span><b>
+      </b><span class="xmltag">&lt;isSummary</span><span class="xmlattr"> value="<span class="xmlattrvalue">true</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;mapping</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;identity</span><span class="xmlattr"> value="<span class="xmlattrvalue">v2</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;map</span><span class="xmlattr"> value="<span class="xmlattrvalue">OBR-7-Observation Date/Time</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/mapping&gt;</span><b>
+      </b><span class="xmltag">&lt;mapping</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;identity</span><span class="xmlattr"> value="<span class="xmlattrvalue">rim</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;map</span><span class="xmlattr"> value="<span class="xmlattrvalue">effectiveTime</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/mapping&gt;</span><b>
+      </b><span class="xmltag">&lt;mapping</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;identity</span><span class="xmlattr"> value="<span class="xmlattrvalue">v2</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;map</span><span class="xmlattr"> value="<span class="xmlattrvalue">OBR-7-Observation Date/Time</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/mapping&gt;</span><b>
+      </b><span class="xmltag">&lt;mapping</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;identity</span><span class="xmlattr"> value="<span class="xmlattrvalue">rim</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;map</span><span class="xmlattr"> value="<span class="xmlattrvalue">effectiveTime</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/mapping&gt;</span><b>
+    </b><span class="xmltag">&lt;/element&gt;</span><b>
+    </b><span class="xmltag">&lt;element</span><span class="xmltag">&gt;</span><b>
+      </b><span class="xmltag">&lt;path</span><span class="xmlattr"> value="<span class="xmlattrvalue">DiagnosticReport.specimen</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;short</span><span class="xmlattr"> value="<span class="xmlattrvalue">Specimens this report is based on</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;formal</span><span class="xmlattr"> value="<span class="xmlattrvalue">Details about the specimens on which this diagnostic report is based.</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;comments</span><span class="xmlattr"> value="<span class="xmlattrvalue">If the specimen is sufficiently specified with a code in the Test result name, then this
+       additional data may be redundant. If there are multiple specimens, these may be represented
+       per Observation or group.</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;requirements</span><span class="xmlattr"> value="<span class="xmlattrvalue">Need to be able to report information about the collected specimens on which the report
+       is based.</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;min</span><span class="xmlattr"> value="<span class="xmlattrvalue">0</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;max</span><span class="xmlattr"> value="<span class="xmlattrvalue">*</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;type</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;code</span><span class="xmlattr"> value="<span class="xmlattrvalue">Reference</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;profile</span><span class="xmlattr"> value="<span class="xmlattrvalue">http://hl7.org/fhir/Profile/Specimen</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/type&gt;</span><b>
+      </b><span class="xmltag">&lt;isSummary</span><span class="xmlattr"> value="<span class="xmlattrvalue">false</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;mapping</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;identity</span><span class="xmlattr"> value="<span class="xmlattrvalue">v2</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;map</span><span class="xmlattr"> value="<span class="xmlattrvalue">SPM</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/mapping&gt;</span><b>
+      </b><span class="xmltag">&lt;mapping</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;identity</span><span class="xmlattr"> value="<span class="xmlattrvalue">rim</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;map</span><span class="xmlattr"> value="<span class="xmlattrvalue">participation[typeCode=SBJ]</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/mapping&gt;</span><b>
+      </b><span class="xmltag">&lt;mapping</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;identity</span><span class="xmlattr"> value="<span class="xmlattrvalue">v2</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;map</span><span class="xmlattr"> value="<span class="xmlattrvalue">SPM</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/mapping&gt;</span><b>
+      </b><span class="xmltag">&lt;mapping</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;identity</span><span class="xmlattr"> value="<span class="xmlattrvalue">rim</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;map</span><span class="xmlattr"> value="<span class="xmlattrvalue">participation[typeCode=SBJ]</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/mapping&gt;</span><b>
+    </b><span class="xmltag">&lt;/element&gt;</span><b>
+    </b><span class="xmltag">&lt;element</span><span class="xmltag">&gt;</span><b>
+      </b><span class="xmltag">&lt;path</span><span class="xmlattr"> value="<span class="xmlattrvalue">DiagnosticReport.result</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;slicing</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;discriminator</span><span class="xmlattr"> value="<span class="xmlattrvalue">reference.name</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;ordered</span><span class="xmlattr"> value="<span class="xmlattrvalue">true</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;rules</span><span class="xmlattr"> value="<span class="xmlattrvalue">closed</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/slicing&gt;</span><b>
+      </b><span class="xmltag">&lt;short</span><span class="xmlattr"> value="<span class="xmlattrvalue">Observations - simple, or complex nested groups</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;formal</span><span class="xmlattr"> value="<span class="xmlattrvalue">Observations that are part of this diagnostic report. Observations can be simple name/value
+       pairs (e.g. &amp;quot;atomic&amp;quot; results), or they can be grouping observations that include
+       references to other members of the group (e.g. &amp;quot;panels&amp;quot;).</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;requirements</span><span class="xmlattr"> value="<span class="xmlattrvalue">Need to be able to individual results, or report groups of results, where the result grouping
+       is arbitrary, but meaningful. This structure is recursive - observations can contain observations.</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;synonym</span><span class="xmlattr"> value="<span class="xmlattrvalue">Data</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;synonym</span><span class="xmlattr"> value="<span class="xmlattrvalue">Atomic Value</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;synonym</span><span class="xmlattr"> value="<span class="xmlattrvalue">Result</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;synonym</span><span class="xmlattr"> value="<span class="xmlattrvalue">Atomic result</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;synonym</span><span class="xmlattr"> value="<span class="xmlattrvalue">Data</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;synonym</span><span class="xmlattr"> value="<span class="xmlattrvalue">Test</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;synonym</span><span class="xmlattr"> value="<span class="xmlattrvalue">Analyte</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;synonym</span><span class="xmlattr"> value="<span class="xmlattrvalue">Battery</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;synonym</span><span class="xmlattr"> value="<span class="xmlattrvalue">Organiser</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;min</span><span class="xmlattr"> value="<span class="xmlattrvalue">0</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;max</span><span class="xmlattr"> value="<span class="xmlattrvalue">*</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;isSummary</span><span class="xmlattr"> value="<span class="xmlattrvalue">false</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;mapping</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;identity</span><span class="xmlattr"> value="<span class="xmlattrvalue">rim</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;map</span><span class="xmlattr"> value="<span class="xmlattrvalue">outboundRelationship[typeCode=COMP].target</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/mapping&gt;</span><b>
+      </b><span class="xmltag">&lt;mapping</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;identity</span><span class="xmlattr"> value="<span class="xmlattrvalue">rim</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;map</span><span class="xmlattr"> value="<span class="xmlattrvalue">outboundRelationship[typeCode=COMP].target</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/mapping&gt;</span><b>
+    </b><span class="xmltag">&lt;/element&gt;</span><b>
+    </b><span class="xmltag">&lt;element</span><span class="xmltag">&gt;</span><b>
+      </b><span class="xmltag">&lt;path</span><span class="xmlattr"> value="<span class="xmlattrvalue">DiagnosticReport.result</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;name</span><span class="xmlattr"> value="<span class="xmlattrvalue">Cholesterol</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;short</span><span class="xmlattr"> value="<span class="xmlattrvalue">Cholesterol Result</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;formal</span><span class="xmlattr"> value="<span class="xmlattrvalue">Reference to Cholesterol Result.</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;requirements</span><span class="xmlattr"> value="<span class="xmlattrvalue">Need to be able to individual results, or report groups of results, where the result grouping
+       is arbitrary, but meaningful. This structure is recursive - observations can contain observations.</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;synonym</span><span class="xmlattr"> value="<span class="xmlattrvalue">Data</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;synonym</span><span class="xmlattr"> value="<span class="xmlattrvalue">Atomic Value</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;synonym</span><span class="xmlattr"> value="<span class="xmlattrvalue">Result</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;synonym</span><span class="xmlattr"> value="<span class="xmlattrvalue">Atomic result</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;synonym</span><span class="xmlattr"> value="<span class="xmlattrvalue">Data</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;synonym</span><span class="xmlattr"> value="<span class="xmlattrvalue">Test</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;synonym</span><span class="xmlattr"> value="<span class="xmlattrvalue">Analyte</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;synonym</span><span class="xmlattr"> value="<span class="xmlattrvalue">Battery</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;synonym</span><span class="xmlattr"> value="<span class="xmlattrvalue">Organiser</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;min</span><span class="xmlattr"> value="<span class="xmlattrvalue">1</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;max</span><span class="xmlattr"> value="<span class="xmlattrvalue">1</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;type</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;code</span><span class="xmlattr"> value="<span class="xmlattrvalue">Reference</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;profile</span><span class="xmlattr"> value="<span class="xmlattrvalue">http://hl7.org/fhir/Profile/Observation</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/type&gt;</span><b>
+      </b><span class="xmltag">&lt;mustSupport</span><span class="xmlattr"> value="<span class="xmlattrvalue">true</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;isSummary</span><span class="xmlattr"> value="<span class="xmlattrvalue">false</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;mapping</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;identity</span><span class="xmlattr"> value="<span class="xmlattrvalue">rim</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;map</span><span class="xmlattr"> value="<span class="xmlattrvalue">outboundRelationship[typeCode=COMP].target</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/mapping&gt;</span><b>
+      </b><span class="xmltag">&lt;mapping</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;identity</span><span class="xmlattr"> value="<span class="xmlattrvalue">rim</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;map</span><span class="xmlattr"> value="<span class="xmlattrvalue">outboundRelationship[typeCode=COMP].target</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/mapping&gt;</span><b>
+    </b><span class="xmltag">&lt;/element&gt;</span><b>
+    </b><span class="xmltag">&lt;element</span><span class="xmltag">&gt;</span><b>
+      </b><span class="xmltag">&lt;path</span><span class="xmlattr"> value="<span class="xmlattrvalue">DiagnosticReport.result</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;name</span><span class="xmlattr"> value="<span class="xmlattrvalue">Triglyceride</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;short</span><span class="xmlattr"> value="<span class="xmlattrvalue">Triglyceride Result</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;formal</span><span class="xmlattr"> value="<span class="xmlattrvalue">Group of elements for Triglyceride result.</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;requirements</span><span class="xmlattr"> value="<span class="xmlattrvalue">Need to be able to individual results, or report groups of results, where the result grouping
+       is arbitrary, but meaningful. This structure is recursive - observations can contain observations.</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;synonym</span><span class="xmlattr"> value="<span class="xmlattrvalue">Data</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;synonym</span><span class="xmlattr"> value="<span class="xmlattrvalue">Atomic Value</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;synonym</span><span class="xmlattr"> value="<span class="xmlattrvalue">Result</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;synonym</span><span class="xmlattr"> value="<span class="xmlattrvalue">Atomic result</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;synonym</span><span class="xmlattr"> value="<span class="xmlattrvalue">Data</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;synonym</span><span class="xmlattr"> value="<span class="xmlattrvalue">Test</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;synonym</span><span class="xmlattr"> value="<span class="xmlattrvalue">Analyte</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;synonym</span><span class="xmlattr"> value="<span class="xmlattrvalue">Battery</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;synonym</span><span class="xmlattr"> value="<span class="xmlattrvalue">Organiser</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;min</span><span class="xmlattr"> value="<span class="xmlattrvalue">1</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;max</span><span class="xmlattr"> value="<span class="xmlattrvalue">1</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;type</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;code</span><span class="xmlattr"> value="<span class="xmlattrvalue">Reference</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;profile</span><span class="xmlattr"> value="<span class="xmlattrvalue">http://hl7.org/fhir/Profile/Observation</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/type&gt;</span><b>
+      </b><span class="xmltag">&lt;mustSupport</span><span class="xmlattr"> value="<span class="xmlattrvalue">true</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;isSummary</span><span class="xmlattr"> value="<span class="xmlattrvalue">false</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;mapping</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;identity</span><span class="xmlattr"> value="<span class="xmlattrvalue">rim</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;map</span><span class="xmlattr"> value="<span class="xmlattrvalue">outboundRelationship[typeCode=COMP].target</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/mapping&gt;</span><b>
+      </b><span class="xmltag">&lt;mapping</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;identity</span><span class="xmlattr"> value="<span class="xmlattrvalue">rim</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;map</span><span class="xmlattr"> value="<span class="xmlattrvalue">outboundRelationship[typeCode=COMP].target</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/mapping&gt;</span><b>
+    </b><span class="xmltag">&lt;/element&gt;</span><b>
+    </b><span class="xmltag">&lt;element</span><span class="xmltag">&gt;</span><b>
+      </b><span class="xmltag">&lt;path</span><span class="xmlattr"> value="<span class="xmlattrvalue">DiagnosticReport.result</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;name</span><span class="xmlattr"> value="<span class="xmlattrvalue">HDL Cholesterol</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;short</span><span class="xmlattr"> value="<span class="xmlattrvalue">HDL Cholesterol Result</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;formal</span><span class="xmlattr"> value="<span class="xmlattrvalue">Group of elements for HDL Cholesterol result.</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;requirements</span><span class="xmlattr"> value="<span class="xmlattrvalue">Need to be able to individual results, or report groups of results, where the result grouping
+       is arbitrary, but meaningful. This structure is recursive - observations can contain observations.</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;synonym</span><span class="xmlattr"> value="<span class="xmlattrvalue">Data</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;synonym</span><span class="xmlattr"> value="<span class="xmlattrvalue">Atomic Value</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;synonym</span><span class="xmlattr"> value="<span class="xmlattrvalue">Result</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;synonym</span><span class="xmlattr"> value="<span class="xmlattrvalue">Atomic result</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;synonym</span><span class="xmlattr"> value="<span class="xmlattrvalue">Data</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;synonym</span><span class="xmlattr"> value="<span class="xmlattrvalue">Test</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;synonym</span><span class="xmlattr"> value="<span class="xmlattrvalue">Analyte</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;synonym</span><span class="xmlattr"> value="<span class="xmlattrvalue">Battery</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;synonym</span><span class="xmlattr"> value="<span class="xmlattrvalue">Organiser</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;min</span><span class="xmlattr"> value="<span class="xmlattrvalue">1</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;max</span><span class="xmlattr"> value="<span class="xmlattrvalue">1</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;type</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;code</span><span class="xmlattr"> value="<span class="xmlattrvalue">Reference</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;profile</span><span class="xmlattr"> value="<span class="xmlattrvalue">http://hl7.org/fhir/Profile/Observation</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/type&gt;</span><b>
+      </b><span class="xmltag">&lt;mustSupport</span><span class="xmlattr"> value="<span class="xmlattrvalue">true</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;isSummary</span><span class="xmlattr"> value="<span class="xmlattrvalue">false</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;mapping</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;identity</span><span class="xmlattr"> value="<span class="xmlattrvalue">rim</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;map</span><span class="xmlattr"> value="<span class="xmlattrvalue">outboundRelationship[typeCode=COMP].target</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/mapping&gt;</span><b>
+      </b><span class="xmltag">&lt;mapping</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;identity</span><span class="xmlattr"> value="<span class="xmlattrvalue">rim</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;map</span><span class="xmlattr"> value="<span class="xmlattrvalue">outboundRelationship[typeCode=COMP].target</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/mapping&gt;</span><b>
+    </b><span class="xmltag">&lt;/element&gt;</span><b>
+    </b><span class="xmltag">&lt;element</span><span class="xmltag">&gt;</span><b>
+      </b><span class="xmltag">&lt;path</span><span class="xmlattr"> value="<span class="xmlattrvalue">DiagnosticReport.result</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;name</span><span class="xmlattr"> value="<span class="xmlattrvalue">LDL Cholesterol</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;short</span><span class="xmlattr"> value="<span class="xmlattrvalue">LDL Cholesterol result, if reported</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;formal</span><span class="xmlattr"> value="<span class="xmlattrvalue">LDL Cholesterol result, if reported.</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;requirements</span><span class="xmlattr"> value="<span class="xmlattrvalue">Need to be able to individual results, or report groups of results, where the result grouping
+       is arbitrary, but meaningful. This structure is recursive - observations can contain observations.</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;synonym</span><span class="xmlattr"> value="<span class="xmlattrvalue">Data</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;synonym</span><span class="xmlattr"> value="<span class="xmlattrvalue">Atomic Value</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;synonym</span><span class="xmlattr"> value="<span class="xmlattrvalue">Result</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;synonym</span><span class="xmlattr"> value="<span class="xmlattrvalue">Atomic result</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;synonym</span><span class="xmlattr"> value="<span class="xmlattrvalue">Data</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;synonym</span><span class="xmlattr"> value="<span class="xmlattrvalue">Test</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;synonym</span><span class="xmlattr"> value="<span class="xmlattrvalue">Analyte</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;synonym</span><span class="xmlattr"> value="<span class="xmlattrvalue">Battery</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;synonym</span><span class="xmlattr"> value="<span class="xmlattrvalue">Organiser</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;min</span><span class="xmlattr"> value="<span class="xmlattrvalue">0</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;max</span><span class="xmlattr"> value="<span class="xmlattrvalue">1</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;type</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;code</span><span class="xmlattr"> value="<span class="xmlattrvalue">Reference</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;profile</span><span class="xmlattr"> value="<span class="xmlattrvalue">http://hl7.org/fhir/Profile/Observation</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/type&gt;</span><b>
+      </b><span class="xmltag">&lt;mustSupport</span><span class="xmlattr"> value="<span class="xmlattrvalue">true</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;isSummary</span><span class="xmlattr"> value="<span class="xmlattrvalue">false</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;mapping</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;identity</span><span class="xmlattr"> value="<span class="xmlattrvalue">rim</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;map</span><span class="xmlattr"> value="<span class="xmlattrvalue">outboundRelationship[typeCode=COMP].target</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/mapping&gt;</span><b>
+      </b><span class="xmltag">&lt;mapping</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;identity</span><span class="xmlattr"> value="<span class="xmlattrvalue">rim</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;map</span><span class="xmlattr"> value="<span class="xmlattrvalue">outboundRelationship[typeCode=COMP].target</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/mapping&gt;</span><b>
+    </b><span class="xmltag">&lt;/element&gt;</span><b>
+    </b><span class="xmltag">&lt;element</span><span class="xmltag">&gt;</span><b>
+      </b><span class="xmltag">&lt;path</span><span class="xmlattr"> value="<span class="xmlattrvalue">DiagnosticReport.imagingStudy</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;short</span><span class="xmlattr"> value="<span class="xmlattrvalue">Reference to full details of imaging associated with the diagnostic report</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;formal</span><span class="xmlattr"> value="<span class="xmlattrvalue">One or more links to full details of any imaging performed during the diagnostic investigation.
+       Typically, this is imaging performed by DICOM enabled modalities, but this is not required.
+       A fully enabled PACS viewer can use this information to provide views of the source images.</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;comments</span><span class="xmlattr"> value="<span class="xmlattrvalue">ImagingStudy and image are somewhat overlapping - typically, an image in the image list
+       will also be found in the imaging study resource. However the imaging study and image
+       lists cater to different types of displays for different types of purposes. Neither, either,
+       or both may be provided.</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;min</span><span class="xmlattr"> value="<span class="xmlattrvalue">0</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;max</span><span class="xmlattr"> value="<span class="xmlattrvalue">*</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;type</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;code</span><span class="xmlattr"> value="<span class="xmlattrvalue">Reference</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;profile</span><span class="xmlattr"> value="<span class="xmlattrvalue">http://hl7.org/fhir/Profile/ImagingStudy</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/type&gt;</span><b>
+      </b><span class="xmltag">&lt;isSummary</span><span class="xmlattr"> value="<span class="xmlattrvalue">false</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;mapping</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;identity</span><span class="xmlattr"> value="<span class="xmlattrvalue">rim</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;map</span><span class="xmlattr"> value="<span class="xmlattrvalue">outboundRelationship[typeCode=COMP].target[classsCode=DGIMG, moodCode=EVN]</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/mapping&gt;</span><b>
+      </b><span class="xmltag">&lt;mapping</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;identity</span><span class="xmlattr"> value="<span class="xmlattrvalue">rim</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;map</span><span class="xmlattr"> value="<span class="xmlattrvalue">outboundRelationship[typeCode=COMP].target[classsCode=DGIMG, moodCode=EVN]</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/mapping&gt;</span><b>
+    </b><span class="xmltag">&lt;/element&gt;</span><b>
+    </b><span class="xmltag">&lt;element</span><span class="xmltag">&gt;</span><b>
+      </b><span class="xmltag">&lt;path</span><span class="xmlattr"> value="<span class="xmlattrvalue">DiagnosticReport.image</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;short</span><span class="xmlattr"> value="<span class="xmlattrvalue">Key images associated with this report</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;formal</span><span class="xmlattr"> value="<span class="xmlattrvalue">A list of key images associated with this report. The images are generally created during
+       the diagnostic process, and may be directly of the patient, or of treated specimens (i.e.
+       slides of interest).</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;requirements</span><span class="xmlattr"> value="<span class="xmlattrvalue">Many diagnostic services include images in the report as part of their service.</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;synonym</span><span class="xmlattr"> value="<span class="xmlattrvalue">DICOM</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;synonym</span><span class="xmlattr"> value="<span class="xmlattrvalue">Slides</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;synonym</span><span class="xmlattr"> value="<span class="xmlattrvalue">Scans</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;min</span><span class="xmlattr"> value="<span class="xmlattrvalue">0</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;max</span><span class="xmlattr"> value="<span class="xmlattrvalue">*</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;isSummary</span><span class="xmlattr"> value="<span class="xmlattrvalue">true</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;mapping</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;identity</span><span class="xmlattr"> value="<span class="xmlattrvalue">v2</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;map</span><span class="xmlattr"> value="<span class="xmlattrvalue">OBX?</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/mapping&gt;</span><b>
+      </b><span class="xmltag">&lt;mapping</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;identity</span><span class="xmlattr"> value="<span class="xmlattrvalue">rim</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;map</span><span class="xmlattr"> value="<span class="xmlattrvalue">outboundRelationship[typeCode=COMP].target</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/mapping&gt;</span><b>
+      </b><span class="xmltag">&lt;mapping</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;identity</span><span class="xmlattr"> value="<span class="xmlattrvalue">v2</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;map</span><span class="xmlattr"> value="<span class="xmlattrvalue">OBX?</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/mapping&gt;</span><b>
+      </b><span class="xmltag">&lt;mapping</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;identity</span><span class="xmlattr"> value="<span class="xmlattrvalue">rim</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;map</span><span class="xmlattr"> value="<span class="xmlattrvalue">outboundRelationship[typeCode=COMP].target</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/mapping&gt;</span><b>
+    </b><span class="xmltag">&lt;/element&gt;</span><b>
+    </b><span class="xmltag">&lt;element</span><span class="xmltag">&gt;</span><b>
+      </b><span class="xmltag">&lt;path</span><span class="xmlattr"> value="<span class="xmlattrvalue">DiagnosticReport.image.id</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;representation</span><span class="xmlattr"> value="<span class="xmlattrvalue">xmlAttr</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;short</span><span class="xmlattr"> value="<span class="xmlattrvalue">xml:id (or equivalent in JSON)</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;formal</span><span class="xmlattr"> value="<span class="xmlattrvalue">unique id for the element within a resource (for internal references).</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;min</span><span class="xmlattr"> value="<span class="xmlattrvalue">0</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;max</span><span class="xmlattr"> value="<span class="xmlattrvalue">1</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;type</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;code</span><span class="xmlattr"> value="<span class="xmlattrvalue">id</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/type&gt;</span><b>
+      </b><span class="xmltag">&lt;isSummary</span><span class="xmlattr"> value="<span class="xmlattrvalue">false</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;mapping</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;identity</span><span class="xmlattr"> value="<span class="xmlattrvalue">rim</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;map</span><span class="xmlattr"> value="<span class="xmlattrvalue">n/a</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/mapping&gt;</span><b>
+      </b><span class="xmltag">&lt;mapping</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;identity</span><span class="xmlattr"> value="<span class="xmlattrvalue">rim</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;map</span><span class="xmlattr"> value="<span class="xmlattrvalue">n/a</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/mapping&gt;</span><b>
+    </b><span class="xmltag">&lt;/element&gt;</span><b>
+    </b><span class="xmltag">&lt;element</span><span class="xmltag">&gt;</span><b>
+      </b><span class="xmltag">&lt;path</span><span class="xmlattr"> value="<span class="xmlattrvalue">DiagnosticReport.image.extension</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;short</span><span class="xmlattr"> value="<span class="xmlattrvalue">Additional Content defined by implementations</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;formal</span><span class="xmlattr"> value="<span class="xmlattrvalue">May be used to represent additional information that is not part of the basic definition
+       of the element. In order to make the use of extensions safe and manageable, there is a
+       strict set of governance  applied to the definition and use of extensions. Though any
+       implementer is allowed to define an extension, there is a set of requirements that SHALL
+       be met as part of the definition of the extension.</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;comments</span><span class="xmlattr"> value="<span class="xmlattrvalue">There can be no stigma associated with the use of extensions by any application, project,
+       or standard - regardless of the institution or jurisdiction that uses or defines the extensions.
+        The use of extensions is what allows the FHIR specification to retain a core level of
+       simplicity for everyone.</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;synonym</span><span class="xmlattr"> value="<span class="xmlattrvalue">extensions</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;synonym</span><span class="xmlattr"> value="<span class="xmlattrvalue">user content</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;min</span><span class="xmlattr"> value="<span class="xmlattrvalue">0</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;max</span><span class="xmlattr"> value="<span class="xmlattrvalue">*</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;type</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;code</span><span class="xmlattr"> value="<span class="xmlattrvalue">Extension</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/type&gt;</span><b>
+      </b><span class="xmltag">&lt;isSummary</span><span class="xmlattr"> value="<span class="xmlattrvalue">false</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;mapping</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;identity</span><span class="xmlattr"> value="<span class="xmlattrvalue">rim</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;map</span><span class="xmlattr"> value="<span class="xmlattrvalue">n/a</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/mapping&gt;</span><b>
+      </b><span class="xmltag">&lt;mapping</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;identity</span><span class="xmlattr"> value="<span class="xmlattrvalue">rim</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;map</span><span class="xmlattr"> value="<span class="xmlattrvalue">n/a</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/mapping&gt;</span><b>
+    </b><span class="xmltag">&lt;/element&gt;</span><b>
+    </b><span class="xmltag">&lt;element</span><span class="xmltag">&gt;</span><b>
+      </b><span class="xmltag">&lt;path</span><span class="xmlattr"> value="<span class="xmlattrvalue">DiagnosticReport.image.modifierExtension</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;short</span><span class="xmlattr"> value="<span class="xmlattrvalue">Extensions that cannot be ignored</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;formal</span><span class="xmlattr"> value="<span class="xmlattrvalue">May be used to represent additional information that is not part of the basic definition
+       of the element, and that modifies the understanding of the element that contains it. Usually
+       modifier elements provide negation or qualification. In order to make the use of extensions
+       safe and manageable, there is a strict set of governance applied to the definition and
+       use of extensions. Though any implementer is allowed to define an extension, there is
+       a set of requirements that SHALL be met as part of the definition of the extension. Applications
+       processing a resource are required to check for modifier extensions.</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;comments</span><span class="xmlattr"> value="<span class="xmlattrvalue">There can be no stigma associated with the use of extensions by any application, project,
+       or standard - regardless of the institution or jurisdiction that uses or defines the extensions.
+        The use of extensions is what allows the FHIR specification to retain a core level of
+       simplicity for everyone.</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;synonym</span><span class="xmlattr"> value="<span class="xmlattrvalue">extensions</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;synonym</span><span class="xmlattr"> value="<span class="xmlattrvalue">user content</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;synonym</span><span class="xmlattr"> value="<span class="xmlattrvalue">modifiers</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;min</span><span class="xmlattr"> value="<span class="xmlattrvalue">0</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;max</span><span class="xmlattr"> value="<span class="xmlattrvalue">*</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;type</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;code</span><span class="xmlattr"> value="<span class="xmlattrvalue">Extension</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/type&gt;</span><b>
+      </b><span class="xmltag">&lt;isSummary</span><span class="xmlattr"> value="<span class="xmlattrvalue">false</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;mapping</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;identity</span><span class="xmlattr"> value="<span class="xmlattrvalue">rim</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;map</span><span class="xmlattr"> value="<span class="xmlattrvalue">N/A</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/mapping&gt;</span><b>
+      </b><span class="xmltag">&lt;mapping</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;identity</span><span class="xmlattr"> value="<span class="xmlattrvalue">rim</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;map</span><span class="xmlattr"> value="<span class="xmlattrvalue">N/A</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/mapping&gt;</span><b>
+    </b><span class="xmltag">&lt;/element&gt;</span><b>
+    </b><span class="xmltag">&lt;element</span><span class="xmltag">&gt;</span><b>
+      </b><span class="xmltag">&lt;path</span><span class="xmlattr"> value="<span class="xmlattrvalue">DiagnosticReport.image.comment</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;short</span><span class="xmlattr"> value="<span class="xmlattrvalue">Comment about the image (e.g. explanation)</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;formal</span><span class="xmlattr"> value="<span class="xmlattrvalue">A comment about the image. Typically, this is used to provide an explanation for why the
+       image is included, or to draw the viewer&apos;s attention to important features.</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;comments</span><span class="xmlattr"> value="<span class="xmlattrvalue">The comment should be displayed with the image. It would be common for the report to include
+       additional discussion of the image contents in other sections such as the conclusion.</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;requirements</span><span class="xmlattr"> value="<span class="xmlattrvalue">The provider of the report should make a comment about each image included in the report.</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;min</span><span class="xmlattr"> value="<span class="xmlattrvalue">0</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;max</span><span class="xmlattr"> value="<span class="xmlattrvalue">1</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;type</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;code</span><span class="xmlattr"> value="<span class="xmlattrvalue">string</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/type&gt;</span><b>
+      </b><span class="xmltag">&lt;isSummary</span><span class="xmlattr"> value="<span class="xmlattrvalue">false</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;mapping</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;identity</span><span class="xmlattr"> value="<span class="xmlattrvalue">rim</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;map</span><span class="xmlattr"> value="<span class="xmlattrvalue">.inboundRelationship[typeCode=COMP].source[classCode=OBS, moodCode=EVN, code=&amp;quot;annotation&amp;quot;]
+        .value</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/mapping&gt;</span><b>
+      </b><span class="xmltag">&lt;mapping</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;identity</span><span class="xmlattr"> value="<span class="xmlattrvalue">rim</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;map</span><span class="xmlattr"> value="<span class="xmlattrvalue">.inboundRelationship[typeCode=COMP].source[classCode=OBS, moodCode=EVN, code=&amp;quot;annotation&amp;quot;]
+        .value</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/mapping&gt;</span><b>
+    </b><span class="xmltag">&lt;/element&gt;</span><b>
+    </b><span class="xmltag">&lt;element</span><span class="xmltag">&gt;</span><b>
+      </b><span class="xmltag">&lt;path</span><span class="xmlattr"> value="<span class="xmlattrvalue">DiagnosticReport.image.link</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;short</span><span class="xmlattr"> value="<span class="xmlattrvalue">Reference to the image source</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;formal</span><span class="xmlattr"> value="<span class="xmlattrvalue">Reference to the image source.</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;min</span><span class="xmlattr"> value="<span class="xmlattrvalue">1</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;max</span><span class="xmlattr"> value="<span class="xmlattrvalue">1</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;type</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;code</span><span class="xmlattr"> value="<span class="xmlattrvalue">Reference</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;profile</span><span class="xmlattr"> value="<span class="xmlattrvalue">http://hl7.org/fhir/Profile/Media</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/type&gt;</span><b>
+      </b><span class="xmltag">&lt;isSummary</span><span class="xmlattr"> value="<span class="xmlattrvalue">true</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;mapping</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;identity</span><span class="xmlattr"> value="<span class="xmlattrvalue">rim</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;map</span><span class="xmlattr"> value="<span class="xmlattrvalue">.value.reference</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/mapping&gt;</span><b>
+      </b><span class="xmltag">&lt;mapping</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;identity</span><span class="xmlattr"> value="<span class="xmlattrvalue">rim</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;map</span><span class="xmlattr"> value="<span class="xmlattrvalue">.value.reference</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/mapping&gt;</span><b>
+    </b><span class="xmltag">&lt;/element&gt;</span><b>
+    </b><span class="xmltag">&lt;element</span><span class="xmltag">&gt;</span><b>
+      </b><span class="xmltag">&lt;path</span><span class="xmlattr"> value="<span class="xmlattrvalue">DiagnosticReport.conclusion</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;short</span><span class="xmlattr"> value="<span class="xmlattrvalue">Clinical Interpretation of Lipid Panel</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;formal</span><span class="xmlattr"> value="<span class="xmlattrvalue">May include diagnosis or suggestions for follow up testing.</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;comments</span><span class="xmlattr"> value="<span class="xmlattrvalue">It&apos;s not unusual for the lab to make some kind of interpretative comment on the set of
+       results.</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;requirements</span><span class="xmlattr"> value="<span class="xmlattrvalue">Need to be able to provide a conclusion that is not lost amongst the basic result data.</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;synonym</span><span class="xmlattr"> value="<span class="xmlattrvalue">Report</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;min</span><span class="xmlattr"> value="<span class="xmlattrvalue">0</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;max</span><span class="xmlattr"> value="<span class="xmlattrvalue">1</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;type</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;code</span><span class="xmlattr"> value="<span class="xmlattrvalue">string</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/type&gt;</span><b>
+      </b><span class="xmltag">&lt;mustSupport</span><span class="xmlattr"> value="<span class="xmlattrvalue">true</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;isSummary</span><span class="xmlattr"> value="<span class="xmlattrvalue">false</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;mapping</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;identity</span><span class="xmlattr"> value="<span class="xmlattrvalue">v2</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;map</span><span class="xmlattr"> value="<span class="xmlattrvalue">OBX</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/mapping&gt;</span><b>
+      </b><span class="xmltag">&lt;mapping</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;identity</span><span class="xmlattr"> value="<span class="xmlattrvalue">rim</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;map</span><span class="xmlattr"> value="<span class="xmlattrvalue">inboundRelationship[typeCode=&amp;quot;SPRT&amp;quot;].source[classCode=OBS, moodCode=EVN, code=LOINC:48767-
+        8].value (type=ST)</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/mapping&gt;</span><b>
+      </b><span class="xmltag">&lt;mapping</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;identity</span><span class="xmlattr"> value="<span class="xmlattrvalue">v2</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;map</span><span class="xmlattr"> value="<span class="xmlattrvalue">OBX</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/mapping&gt;</span><b>
+      </b><span class="xmltag">&lt;mapping</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;identity</span><span class="xmlattr"> value="<span class="xmlattrvalue">rim</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;map</span><span class="xmlattr"> value="<span class="xmlattrvalue">inboundRelationship[typeCode=&amp;quot;SPRT&amp;quot;].source[classCode=OBS, moodCode=EVN, code=LOINC:48767-
+        8].value (type=ST)</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/mapping&gt;</span><b>
+    </b><span class="xmltag">&lt;/element&gt;</span><b>
+    </b><span class="xmltag">&lt;element</span><span class="xmltag">&gt;</span><b>
+      </b><span class="xmltag">&lt;path</span><span class="xmlattr"> value="<span class="xmlattrvalue">DiagnosticReport.codedDiagnosis</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;short</span><span class="xmlattr"> value="<span class="xmlattrvalue">No codes for a lipid panel</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;formal</span><span class="xmlattr"> value="<span class="xmlattrvalue">No codes for a lipid panel.</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;comments</span><span class="xmlattr"> value="<span class="xmlattrvalue">Not used in this context.</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;min</span><span class="xmlattr"> value="<span class="xmlattrvalue">0</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;max</span><span class="xmlattr"> value="<span class="xmlattrvalue">0</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;type</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;code</span><span class="xmlattr"> value="<span class="xmlattrvalue">CodeableConcept</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/type&gt;</span><b>
+      </b><span class="xmltag">&lt;isSummary</span><span class="xmlattr"> value="<span class="xmlattrvalue">false</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;binding</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;name</span><span class="xmlattr"> value="<span class="xmlattrvalue">AdjunctDiagnosis</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;isExtensible</span><span class="xmlattr"> value="<span class="xmlattrvalue">true</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;conformance</span><span class="xmlattr"> value="<span class="xmlattrvalue">example</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;description</span><span class="xmlattr"> value="<span class="xmlattrvalue">Diagnoses codes provided as adjuncts to the report</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;referenceReference</span><span class="xmltag">&gt;</span><b>
+          </b><span class="xmltag">&lt;reference</span><span class="xmlattr"> value="<span class="xmlattrvalue">http://hl7.org/fhir/vs/clinical-findings</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;/referenceReference&gt;</span><b>
+      </b><span class="xmltag">&lt;/binding&gt;</span><b>
+      </b><span class="xmltag">&lt;mapping</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;identity</span><span class="xmlattr"> value="<span class="xmlattrvalue">v2</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;map</span><span class="xmlattr"> value="<span class="xmlattrvalue">OBX</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/mapping&gt;</span><b>
+      </b><span class="xmltag">&lt;mapping</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;identity</span><span class="xmlattr"> value="<span class="xmlattrvalue">rim</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;map</span><span class="xmlattr"> value="<span class="xmlattrvalue">inboundRelationship[typeCode=SPRT].source[classCode=OBS, moodCode=EVN, code=LOINC:54531-9].value
+         (type=CD)</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/mapping&gt;</span><b>
+      </b><span class="xmltag">&lt;mapping</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;identity</span><span class="xmlattr"> value="<span class="xmlattrvalue">v2</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;map</span><span class="xmlattr"> value="<span class="xmlattrvalue">OBX</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/mapping&gt;</span><b>
+      </b><span class="xmltag">&lt;mapping</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;identity</span><span class="xmlattr"> value="<span class="xmlattrvalue">rim</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;map</span><span class="xmlattr"> value="<span class="xmlattrvalue">inboundRelationship[typeCode=SPRT].source[classCode=OBS, moodCode=EVN, code=LOINC:54531-9].value
+         (type=CD)</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/mapping&gt;</span><b>
+    </b><span class="xmltag">&lt;/element&gt;</span><b>
+    </b><span class="xmltag">&lt;element</span><span class="xmltag">&gt;</span><b>
+      </b><span class="xmltag">&lt;path</span><span class="xmlattr"> value="<span class="xmlattrvalue">DiagnosticReport.presentedForm</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;short</span><span class="xmlattr"> value="<span class="xmlattrvalue">Entire Report as issued</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;formal</span><span class="xmlattr"> value="<span class="xmlattrvalue">Rich text representation of the entire result as issued by the diagnostic service. Multiple
+       formats are allowed but they SHALL be semantically equivalent.</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;comments</span><span class="xmlattr"> value="<span class="xmlattrvalue">Application/pdf is recommended as the most reliable and interoperable in this context.</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;requirements</span><span class="xmlattr"> value="<span class="xmlattrvalue">Gives Laboratory the ability to provide its own fully formatted report for clinical fidelity.</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;min</span><span class="xmlattr"> value="<span class="xmlattrvalue">0</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;max</span><span class="xmlattr"> value="<span class="xmlattrvalue">*</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;type</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;code</span><span class="xmlattr"> value="<span class="xmlattrvalue">Attachment</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/type&gt;</span><b>
+      </b><span class="xmltag">&lt;isSummary</span><span class="xmlattr"> value="<span class="xmlattrvalue">false</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;mapping</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;identity</span><span class="xmlattr"> value="<span class="xmlattrvalue">v2</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;map</span><span class="xmlattr"> value="<span class="xmlattrvalue">OBX</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/mapping&gt;</span><b>
+      </b><span class="xmltag">&lt;mapping</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;identity</span><span class="xmlattr"> value="<span class="xmlattrvalue">rim</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;map</span><span class="xmlattr"> value="<span class="xmlattrvalue">text (type=ED)</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/mapping&gt;</span><b>
+      </b><span class="xmltag">&lt;mapping</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;identity</span><span class="xmlattr"> value="<span class="xmlattrvalue">v2</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;map</span><span class="xmlattr"> value="<span class="xmlattrvalue">OBX</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/mapping&gt;</span><b>
+      </b><span class="xmltag">&lt;mapping</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;identity</span><span class="xmlattr"> value="<span class="xmlattrvalue">rim</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;map</span><span class="xmlattr"> value="<span class="xmlattrvalue">text (type=ED)</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/mapping&gt;</span><b>
+    </b><span class="xmltag">&lt;/element&gt;</span><b>
+  </b><span class="xmltag">&lt;/snapshot&gt;</span><b>
+  </b><span class="xmltag">&lt;differential</span><span class="xmltag">&gt;</span><b>
+    </b><span class="xmltag">&lt;element</span><span class="xmltag">&gt;</span><b>
+      </b><span class="xmltag">&lt;path</span><span class="xmlattr"> value="<span class="xmlattrvalue">DiagnosticReport</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;name</span><span class="xmlattr"> value="<span class="xmlattrvalue">LipidProfile</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;short</span><span class="xmlattr"> value="<span class="xmlattrvalue">Lipid Lab Report</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;formal</span><span class="xmlattr"> value="<span class="xmlattrvalue">The findings and interpretation of a general lipd lab profile.</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;comments</span><span class="xmlattr"> value="<span class="xmlattrvalue">In this profile, mustSupport means that authoring systems must include the ability to
+       report these elements, and processing systems must cater for them by either displaying
+       them to the user or considering them appropriately in decision support systems.</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;min</span><span class="xmlattr"> value="<span class="xmlattrvalue">1</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;max</span><span class="xmlattr"> value="<span class="xmlattrvalue">1</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;isSummary</span><span class="xmlattr"> value="<span class="xmlattrvalue">false</span>"</span><span class="xmltag">/&gt;</span><b>
+    </b><span class="xmltag">&lt;/element&gt;</span><b>
+    </b><span class="xmltag">&lt;element</span><span class="xmltag">&gt;</span><b>
+      </b><span class="xmltag">&lt;path</span><span class="xmlattr"> value="<span class="xmlattrvalue">DiagnosticReport.name</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;short</span><span class="xmlattr"> value="<span class="xmlattrvalue">LOINC Code for Lipid Panel with LDL</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;formal</span><span class="xmlattr"> value="<span class="xmlattrvalue">LOINC Code for Lipid Panel with LDL.</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;comments</span><span class="xmlattr"> value="<span class="xmlattrvalue">LOINC code includes &amp;quot;direct&amp;quot; LDL - does this mean LDL derived by measuring VLDL
+       by ultracentrifugation? This panel includes both measured and calculated LDL.</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;min</span><span class="xmlattr"> value="<span class="xmlattrvalue">1</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;max</span><span class="xmlattr"> value="<span class="xmlattrvalue">1</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;type</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;code</span><span class="xmlattr"> value="<span class="xmlattrvalue">CodeableConcept</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/type&gt;</span><b>
+      </b><span class="xmltag">&lt;fixedCodeableConcept</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;coding</span><span class="xmltag">&gt;</span><b>
+          </b><span class="xmltag">&lt;system</span><span class="xmlattr"> value="<span class="xmlattrvalue">http://loinc.org</span>"</span><span class="xmltag">/&gt;</span><b>
+          </b><span class="xmltag">&lt;code</span><span class="xmlattr"> value="<span class="xmlattrvalue">57698-3</span>"</span><span class="xmltag">/&gt;</span><b>
+          </b><span class="xmltag">&lt;display</span><span class="xmlattr"> value="<span class="xmlattrvalue">Lipid panel with direct LDL - Serum or Plasma</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;/coding&gt;</span><b>
+      </b><span class="xmltag">&lt;/fixedCodeableConcept&gt;</span><b>
+      </b><span class="xmltag">&lt;isSummary</span><span class="xmlattr"> value="<span class="xmlattrvalue">false</span>"</span><span class="xmltag">/&gt;</span><b>
+    </b><span class="xmltag">&lt;/element&gt;</span><b>
+    </b><span class="xmltag">&lt;element</span><span class="xmltag">&gt;</span><b>
+      </b><span class="xmltag">&lt;path</span><span class="xmlattr"> value="<span class="xmlattrvalue">DiagnosticReport.result</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;slicing</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;discriminator</span><span class="xmlattr"> value="<span class="xmlattrvalue">reference.name</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;ordered</span><span class="xmlattr"> value="<span class="xmlattrvalue">true</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;rules</span><span class="xmlattr"> value="<span class="xmlattrvalue">closed</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/slicing&gt;</span><b>
+    </b><span class="xmltag">&lt;/element&gt;</span><b>
+    </b><span class="xmltag">&lt;element</span><span class="xmltag">&gt;</span><b>
+      </b><span class="xmltag">&lt;path</span><span class="xmlattr"> value="<span class="xmlattrvalue">DiagnosticReport.result</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;name</span><span class="xmlattr"> value="<span class="xmlattrvalue">Cholesterol</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;short</span><span class="xmlattr"> value="<span class="xmlattrvalue">Cholesterol Result</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;formal</span><span class="xmlattr"> value="<span class="xmlattrvalue">Reference to Cholesterol Result.</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;min</span><span class="xmlattr"> value="<span class="xmlattrvalue">1</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;max</span><span class="xmlattr"> value="<span class="xmlattrvalue">1</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;type</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;code</span><span class="xmlattr"> value="<span class="xmlattrvalue">Reference</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;profile</span><span class="xmlattr"> value="<span class="xmlattrvalue">http://hl7.org/fhir/ExtensionDefinition/Cholesterol</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/type&gt;</span><b>
+      </b><span class="xmltag">&lt;mustSupport</span><span class="xmlattr"> value="<span class="xmlattrvalue">true</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;isSummary</span><span class="xmlattr"> value="<span class="xmlattrvalue">false</span>"</span><span class="xmltag">/&gt;</span><b>
+    </b><span class="xmltag">&lt;/element&gt;</span><b>
+    </b><span class="xmltag">&lt;element</span><span class="xmltag">&gt;</span><b>
+      </b><span class="xmltag">&lt;path</span><span class="xmlattr"> value="<span class="xmlattrvalue">DiagnosticReport.result</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;name</span><span class="xmlattr"> value="<span class="xmlattrvalue">Triglyceride</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;short</span><span class="xmlattr"> value="<span class="xmlattrvalue">Triglyceride Result</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;formal</span><span class="xmlattr"> value="<span class="xmlattrvalue">Group of elements for Triglyceride result.</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;min</span><span class="xmlattr"> value="<span class="xmlattrvalue">1</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;max</span><span class="xmlattr"> value="<span class="xmlattrvalue">1</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;type</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;code</span><span class="xmlattr"> value="<span class="xmlattrvalue">Reference</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;profile</span><span class="xmlattr"> value="<span class="xmlattrvalue">http://hl7.org/fhir/ExtensionDefinition/Triglyceride</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/type&gt;</span><b>
+      </b><span class="xmltag">&lt;mustSupport</span><span class="xmlattr"> value="<span class="xmlattrvalue">true</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;isSummary</span><span class="xmlattr"> value="<span class="xmlattrvalue">false</span>"</span><span class="xmltag">/&gt;</span><b>
+    </b><span class="xmltag">&lt;/element&gt;</span><b>
+    </b><span class="xmltag">&lt;element</span><span class="xmltag">&gt;</span><b>
+      </b><span class="xmltag">&lt;path</span><span class="xmlattr"> value="<span class="xmlattrvalue">DiagnosticReport.result</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;name</span><span class="xmlattr"> value="<span class="xmlattrvalue">HDL Cholesterol</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;short</span><span class="xmlattr"> value="<span class="xmlattrvalue">HDL Cholesterol Result</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;formal</span><span class="xmlattr"> value="<span class="xmlattrvalue">Group of elements for HDL Cholesterol result.</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;min</span><span class="xmlattr"> value="<span class="xmlattrvalue">1</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;max</span><span class="xmlattr"> value="<span class="xmlattrvalue">1</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;type</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;code</span><span class="xmlattr"> value="<span class="xmlattrvalue">Reference</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;profile</span><span class="xmlattr"> value="<span class="xmlattrvalue">http://hl7.org/fhir/ExtensionDefinition/HDLCholesterol</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/type&gt;</span><b>
+      </b><span class="xmltag">&lt;mustSupport</span><span class="xmlattr"> value="<span class="xmlattrvalue">true</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;isSummary</span><span class="xmlattr"> value="<span class="xmlattrvalue">false</span>"</span><span class="xmltag">/&gt;</span><b>
+    </b><span class="xmltag">&lt;/element&gt;</span><b>
+    </b><span class="xmltag">&lt;element</span><span class="xmltag">&gt;</span><b>
+      </b><span class="xmltag">&lt;path</span><span class="xmlattr"> value="<span class="xmlattrvalue">DiagnosticReport.result</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;name</span><span class="xmlattr"> value="<span class="xmlattrvalue">LDL Cholesterol</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;short</span><span class="xmlattr"> value="<span class="xmlattrvalue">LDL Cholesterol result, if reported</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;formal</span><span class="xmlattr"> value="<span class="xmlattrvalue">LDL Cholesterol result, if reported.</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;min</span><span class="xmlattr"> value="<span class="xmlattrvalue">0</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;max</span><span class="xmlattr"> value="<span class="xmlattrvalue">1</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;type</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;code</span><span class="xmlattr"> value="<span class="xmlattrvalue">Reference</span>"</span><span class="xmltag">/&gt;</span><b>
+        </b><span class="xmltag">&lt;profile</span><span class="xmlattr"> value="<span class="xmlattrvalue">http://hl7.org/fhir/ExtensionDefinition/LDLCholesterol</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/type&gt;</span><b>
+      </b><span class="xmltag">&lt;mustSupport</span><span class="xmlattr"> value="<span class="xmlattrvalue">true</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;isSummary</span><span class="xmlattr"> value="<span class="xmlattrvalue">false</span>"</span><span class="xmltag">/&gt;</span><b>
+    </b><span class="xmltag">&lt;/element&gt;</span><b>
+    </b><span class="xmltag">&lt;element</span><span class="xmltag">&gt;</span><b>
+      </b><span class="xmltag">&lt;path</span><span class="xmlattr"> value="<span class="xmlattrvalue">DiagnosticReport.conclusion</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;short</span><span class="xmlattr"> value="<span class="xmlattrvalue">Clinical Interpretation of Lipid Panel</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;formal</span><span class="xmlattr"> value="<span class="xmlattrvalue">May include diagnosis or suggestions for follow up testing.</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;comments</span><span class="xmlattr"> value="<span class="xmlattrvalue">It&apos;s not unusual for the lab to make some kind of interpretative comment on the set of
+       results.</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;min</span><span class="xmlattr"> value="<span class="xmlattrvalue">0</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;max</span><span class="xmlattr"> value="<span class="xmlattrvalue">1</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;type</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;code</span><span class="xmlattr"> value="<span class="xmlattrvalue">string</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/type&gt;</span><b>
+      </b><span class="xmltag">&lt;mustSupport</span><span class="xmlattr"> value="<span class="xmlattrvalue">true</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;isSummary</span><span class="xmlattr"> value="<span class="xmlattrvalue">false</span>"</span><span class="xmltag">/&gt;</span><b>
+    </b><span class="xmltag">&lt;/element&gt;</span><b>
+    </b><span class="xmltag">&lt;element</span><span class="xmltag">&gt;</span><b>
+      </b><span class="xmltag">&lt;path</span><span class="xmlattr"> value="<span class="xmlattrvalue">DiagnosticReport.codedDiagnosis</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;short</span><span class="xmlattr"> value="<span class="xmlattrvalue">No codes for a lipid panel</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;formal</span><span class="xmlattr"> value="<span class="xmlattrvalue">No codes for a lipid panel.</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;comments</span><span class="xmlattr"> value="<span class="xmlattrvalue">Not used in this context.</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;min</span><span class="xmlattr"> value="<span class="xmlattrvalue">0</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;max</span><span class="xmlattr"> value="<span class="xmlattrvalue">0</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;type</span><span class="xmltag">&gt;</span><b>
+        </b><span class="xmltag">&lt;code</span><span class="xmlattr"> value="<span class="xmlattrvalue">CodeableConcept</span>"</span><span class="xmltag">/&gt;</span><b>
+      </b><span class="xmltag">&lt;/type&gt;</span><b>
+      </b><span class="xmltag">&lt;isSummary</span><span class="xmlattr"> value="<span class="xmlattrvalue">false</span>"</span><span class="xmltag">/&gt;</span><b>
+    </b><span class="xmltag">&lt;/element&gt;</span><b>
+  </b><span class="xmltag">&lt;/differential&gt;</span><b>
+</b><span class="xmltag">&lt;/Profile&gt;</span></pre>
+</div>
+
+
+
+</div>
+
+
+				</div><!-- /inner-wrapper -->
+            </div><!-- /row -->
+        </div><!-- /container -->
+        
+    </div><!-- /segment-content -->
+
+
+	<div id="segment-footer" class="segment"><!-- segment-footer -->
+		<div class="container"><!-- container -->
+			<div class="inner-wrapper">
+				<p>
+        © HL7.org 2011+. FHIR DSTU (v0.4.0-3920) generated on Tue, Dec 30, 2014 11:00+0000. <!-- <a href="qa.html">QA Report</a> --> <!-- achive note -->
+        <br/>
+        <span style="color: #FFFF77">
+        Links: <a style="color: #81BEF7" href="timelines.html">What's a DSTU?</a> | 
+               <a style="color: #81BEF7" href="history.html">Version History</a> | 
+               <a style="color: #81BEF7" href="http://services.w3.org/htmldiff?doc1=http%3A%2F%2Fhl7.org%2Fimplement%2Fstandards%2Ffhir%2F15046b9c-2da0-4b80-82ef-c6af6fcfd2bf-lipidprofile.profile.xml.html&amp;doc2=http%3A%2F%2Fhl7-fhir.github.io%2F%2F15046b9c-2da0-4b80-82ef-c6af6fcfd2bf-lipidprofile.profile.xml.html">Compare to DSTU</a> | 
+               <a style="color: #81BEF7" rel="license" href="license.html"><img src="cc0.png" style="border-style: none;" alt="CC0"/></a> | 
+               <a style="color: #81BEF7" target="_blank" href="http://gforge.hl7.org/gf/project/fhir/tracker/?action=TrackerItemAdd&amp;tracker_id=677">Propose a change</a>   
+        </span>
+        </p>
+			</div><!-- /inner-wrapper -->
+		</div><!-- /container -->
+	</div><!-- /segment-footer -->
+<!-- disqus thread -->
+<!--disqus-->
+<!-- end disqus -->        
+	
+	<div id="segment-post-footer" class="segment hidden"><!-- segment-post-footer -->
+		<div class="container"><!-- container -->
+		</div><!-- /container -->
+	</div><!-- /segment-post-footer -->
+    
+    <!-- JS and analytics only. -->
+    <!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="./assets/js/jquery.js"> </script>   <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+<script src="./dist/js/bootstrap.min.js"> </script>
+<script src="./assets/js/respond.min.js"> </script>
+
+<script src="./assets/js/fhir.js"> </script>
+
+<!-- Analytics Below
+================================================== -->
+
+    
+</body>
+</html>

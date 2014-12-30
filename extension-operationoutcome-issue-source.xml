@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ExtensionDefinition xmlns="http://hl7.org/fhir">
+  <id value="operationoutcome-issue-source"/>
+  <url value="http://hl7.org/fhir/ExtensionDefinition/operationoutcome-issue-source"/>
+  <name value="Source of a validation message"/>
+  <display value="Source of Issue"/>
+  <publisher value="Health Level Seven, Inc. - [WG Name] WG"/>
+  <telecom>
+    <system value="url"/>
+    <value value="http://hl7.org/special/committees/FHIR"/>
+  </telecom>
+  <description value="Helps a user track down the source of the problem."/>
+  <status value="draft"/>
+  <date value="2014-01-31"/>
+  <contextType value="resource"/>
+  <context value="OperationOutcome.issue"/>
+  <element>
+    <path value="Extension"/>
+    <short value="Source of a validation message"/>
+    <formal value="Helps a user track down the source of the problem."/>
+    <min value="0"/>
+    <max value="1"/>
+    <type>
+      <code value="string"/>
+    </type>
+    <isSummary value="false"/>
+  </element>
+</ExtensionDefinition>

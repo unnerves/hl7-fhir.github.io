@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="valueset-adjudication"/>
+  <meta>
+    <lastUpdated value="2014-12-30T10:55:31"/>
+  </meta>
+  <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      This value set includes a smattering of adjudication codes.
+    
+      <hr/>
+      <p>This value set contains 7 concepts</p>
+      <h2>Adjudication Codes</h2>
+      <p>This value set includes a adjudication of Adjudication codes</p>
+      <p>
+        <b>Copyright Statement:</b> This is an example set
+      </p>
+      <p>This value set defines its own terms in the system http://hl7.org/fhir/adjudication</p>
+      <table class="codes">
+        <tr>
+          <td>
+            <b>Code</b>
+          </td>
+          <td>
+            <b>Definition</b>
+          </td>
+        </tr>
+        <tr>
+          <td>total
+            <a name="total"> </a>
+          </td>
+          <td/>
+        </tr>
+        <tr>
+          <td>copay
+            <a name="copay"> </a>
+          </td>
+          <td/>
+        </tr>
+        <tr>
+          <td>eligible
+            <a name="eligible"> </a>
+          </td>
+          <td/>
+        </tr>
+        <tr>
+          <td>deductable
+            <a name="deductable"> </a>
+          </td>
+          <td/>
+        </tr>
+        <tr>
+          <td>eligpercent
+            <a name="eligpercent"> </a>
+          </td>
+          <td/>
+        </tr>
+        <tr>
+          <td>tax
+            <a name="tax"> </a>
+          </td>
+          <td/>
+        </tr>
+        <tr>
+          <td>benefit
+            <a name="benefit"> </a>
+          </td>
+          <td/>
+        </tr>
+      </table>
+    </div>
+  </text>
+  <extension url="http://hl7.org/fhir/ExtensionDefinition/valueset-oid">
+    <valueUri value="urn:oid:2.16.840.1.113883.4.642.2.468"/>
+  </extension>
+  <identifier value="http://hl7.org/fhir/vs/adjudication"/>
+  <name value="Adjudication Codes"/>
+  <publisher value="FHIR Project team"/>
+  <telecom>
+    <system value="url"/>
+    <value value="http://hl7.org/fhir"/>
+  </telecom>
+  <description value="This value set includes a adjudication of Adjudication codes"/>
+  <copyright value="This is an example set"/>
+  <status value="draft"/>
+  <define>
+    <extension url="http://hl7.org/fhir/ExtensionDefinition/valueset-oid">
+      <valueUri value="urn:oid:null"/>
+    </extension>
+    <system value="http://hl7.org/fhir/adjudication"/>
+    <concept>
+      <code value="total"/>
+    </concept>
+    <concept>
+      <code value="copay"/>
+    </concept>
+    <concept>
+      <code value="eligible"/>
+    </concept>
+    <concept>
+      <code value="deductable"/>
+    </concept>
+    <concept>
+      <code value="eligpercent"/>
+    </concept>
+    <concept>
+      <code value="tax"/>
+    </concept>
+    <concept>
+      <code value="benefit"/>
+    </concept>
+  </define>
+</ValueSet>

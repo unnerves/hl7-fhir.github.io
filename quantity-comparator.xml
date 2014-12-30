@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="quantity-comparator"/>
+  <meta>
+    <lastUpdated value="2014-12-30T10:55:31"/>
+  </meta>
+  <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      <p>This value set contains 4 concepts</p>
+      <h2>QuantityComparator</h2>
+      <p>How the Quantity should be understood and represented</p>
+      <p>This value set defines its own terms in the system http://hl7.org/fhir/quantity-comparator</p>
+      <table class="codes">
+        <tr>
+          <td>
+            <b>Code</b>
+          </td>
+          <td>
+            <b>Definition</b>
+          </td>
+        </tr>
+        <tr>
+          <td>&lt;
+            <a name=".60"> </a>
+          </td>
+          <td>The actual value is less than the given value.</td>
+        </tr>
+        <tr>
+          <td>&lt;=
+            <a name=".60.61"> </a>
+          </td>
+          <td>The actual value is less than or equal to the given value.</td>
+        </tr>
+        <tr>
+          <td>&gt;=
+            <a name=".62.61"> </a>
+          </td>
+          <td>The actual value is greater than or equal to the given value.</td>
+        </tr>
+        <tr>
+          <td>&gt;
+            <a name=".62"> </a>
+          </td>
+          <td>The actual value is greater than the given value.</td>
+        </tr>
+      </table>
+    </div>
+  </text>
+  <extension url="http://hl7.org/fhir/ExtensionDefinition/valueset-oid">
+    <valueUri value="urn:oid:2.16.840.1.113883.4.642.2.445"/>
+  </extension>
+  <identifier value="http://hl7.org/fhir/vs/quantity-comparator"/>
+  <name value="QuantityComparator"/>
+  <publisher value="HL7 (FHIR Project)"/>
+  <telecom>
+    <system value="url"/>
+    <value value="http://hl7.org/fhir"/>
+  </telecom>
+  <telecom>
+    <system value="email"/>
+    <value value="fhir@lists.hl7.org"/>
+  </telecom>
+  <description value="How the Quantity should be understood and represented"/>
+  <status value="draft"/>
+  <date value="2014-12-30T10:55:31"/>
+  <define>
+    <extension url="http://hl7.org/fhir/ExtensionDefinition/valueset-oid">
+      <valueUri value="urn:oid:2.16.840.1.113883.4.642.1.445"/>
+    </extension>
+    <system value="http://hl7.org/fhir/quantity-comparator"/>
+    <caseSensitive value="true"/>
+    <concept>
+      <code value="&lt;"/>
+      <definition value="The actual value is less than the given value."/>
+    </concept>
+    <concept>
+      <code value="&lt;="/>
+      <definition value="The actual value is less than or equal to the given value."/>
+    </concept>
+    <concept>
+      <code value="&gt;="/>
+      <definition value="The actual value is greater than or equal to the given value."/>
+    </concept>
+    <concept>
+      <code value="&gt;"/>
+      <definition value="The actual value is greater than the given value."/>
+    </concept>
+  </define>
+</ValueSet>

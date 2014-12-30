@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ExtensionDefinition xmlns="http://hl7.org/fhir">
+  <id value="questionnaire-deReference"/>
+  <url value="http://hl7.org/fhir/ExtensionDefinition/questionnaire-deReference"/>
+  <name value="Implemented CDE"/>
+  <publisher value="HL7"/>
+  <telecom>
+    <system value="url"/>
+    <value value="http://www.hl7.org"/>
+  </telecom>
+  <description value="A reference to the Data Element that corresponds to the question text and answer constraints for this question."/>
+  <status value="draft"/>
+  <date value="2013-07-04"/>
+  <mapping>
+    <identity value="rim"/>
+    <uri value="http://hl7.org/v3"/>
+    <name value="RIM"/>
+  </mapping>
+  <contextType value="resource"/>
+  <context value="Questionnaire.group.question"/>
+  <element>
+    <path value="Extension"/>
+    <short value="Implemented CDE"/>
+    <formal value="A reference to the Data Element that corresponds to the question text and answer constraints for this question."/>
+    <comments value="If a code applies to a question, that code should still be conveyed on the question, even if the same code is also referenced as a DataElement.code in the referenced data element.  This extension must not be used in place of specifying the Questionnaire.group.question.concept element."/>
+    <min value="0"/>
+    <max value="1"/>
+    <type>
+      <code value="Reference"/>
+      <profile value="http://hl7.org/fhir/Profile/DataElement"/>
+    </type>
+    <isSummary value="false"/>
+    <mapping>
+      <identity value="rim"/>
+      <map value="./outboundRelationship[typeCode=INST]/target[classCode=OBS, moodCode=DEFN]"/>
+    </mapping>
+  </element>
+</ExtensionDefinition>

@@ -1,0 +1,603 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+  <title>References - FHIR v0.4.0</title>
+
+  
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <meta content="http://hl7.org/fhir" name="author"/>
+
+  <link rel="stylesheet" href="fhir.css"/>
+  <link rel="Prev" href="http://hl7.org/implement/standards/fhir/references.html"/>
+
+    <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" href="./dist/css/bootstrap.css"/>
+  <link rel="stylesheet" href="./assets/css/bootstrap-fhir.css"/>
+
+    <!-- Project extras -->
+  <link rel="stylesheet" href="./assets/css/project.css"/>
+  <link rel="stylesheet" href="./assets/css/pygments-manni.css"/>
+	<link rel="stylesheet" href="jquery-ui.css"/>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- [if lt IE 9]>
+  <script src="./assets/js/html5shiv.js"></script>
+  <script src="./assets/js/respond.min.js"></script>
+  <![endif] -->
+
+    <!-- Favicons -->
+  <link sizes="144x144" rel="apple-touch-icon-precomposed" href="./assets/ico/apple-touch-icon-144-precomposed.png"/>
+  <link sizes="114x114" rel="apple-touch-icon-precomposed" href="./assets/ico/apple-touch-icon-114-precomposed.png"/>
+  <link sizes="72x72" rel="apple-touch-icon-precomposed" href="./assets/ico/apple-touch-icon-72-precomposed.png"/>
+  <link rel="apple-touch-icon-precomposed" href="./assets/ico/apple-touch-icon-57-precomposed.png"/>
+  <link rel="shortcut icon" href="./assets/ico/favicon.png"/>
+
+</head>
+<body>
+	<div id="segment-header" class="segment">  <!-- segment-header -->	
+		<div class="container">  <!-- container -->
+			<a id="logo" href="http://hl7.org/fhir"><img alt="logo fhir" src="./assets/images/fhir-logo-www.png"/> </a>
+			<div id="hl7-status">
+				<b>Continuous Integration Build</b>
+			</div>       	
+			
+			<div id="hl7-nav">
+				 <a id="hl7-logo" href="http://www.hl7.org">
+					<img height="50" alt="visit the hl7 website" width="42" src="./assets/images/hl7-logo.png"/>
+				</a> 
+			</div>       	
+			  <!-- hl7-search -->
+		</div>
+		<div class="container">  <!-- container -->
+	</div></div>  <!-- /segment-header -->	
+
+
+	<div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+		<div id="stripe"> </div>
+		<div class="container">  <!-- container -->
+   <!-- HEADER CONTENT -->
+ 	      		
+ 	      		      		
+			<nav class="navbar navbar-inverse">
+				<div class="container">
+					<button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+						<span class="icon-bar"> </span>
+						<span class="icon-bar"> </span>
+						<span class="icon-bar"> </span>
+					</button>
+					<a class="navbar-brand hidden" href="index.html">FHIR</a>
+					<div class="nav-collapse collapse navbar-inverse-collapse">
+						<ul class="nav navbar-nav">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="documentation.html">Documentation</a></li>
+              <li><a href="implementation.html">Implementation</a></li>
+              <li><a href="resourcelist.html">Resources</a></li>
+              <li><a href="clinical.html">Clinical</a></li>
+              <li><a href="administration.html">Administrative</a></li>
+              <li><a href="infrastructure.html">Infrastructure</a></li>
+              <li><a href="financial.html">Financial</a></li>
+
+						</ul>
+					</div>  <!-- /.nav-collapse -->
+				</div>  <!-- /.container -->
+			</nav>  <!-- /.navbar -->
+      		
+				
+  <!-- /HEADER CONTENT -->				
+		</div>  <!-- /container -->
+	</div>  <!-- /segment-navbar -->
+	
+
+	<div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+		<div class="container">  <!-- container -->	
+			<ul class="breadcrumb">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="documentation.html">Documentation</a></li>
+        <li><b>References</b></li>          <!-- references.html / page -->
+
+			</ul>	
+		</div>  <!-- /container -->
+	</div>  <!-- /segment-breadcrumb -->
+	
+
+	<div id="segment-content" class="segment">  <!-- segment-content -->
+	<div class="container">  <!-- container -->
+            <div class="row">
+            	<div class="inner-wrapper">
+  <!-- CONTENT CONTENT -->
+
+
+<div class="col-9">
+
+<ul class="nav nav-tabs"><li class="active"><a href="#">References</a></li><li><a href="references-definitions.html">Detailed Descriptions</a></li></ul>
+
+
+<a name="Reference"> </a>
+<a name="reference"> </a>
+<a name="Resource"> </a>
+<a name="references"> </a>
+<a name="Identification"> </a>
+<h2><span class="sectioncount">1.13.5.0<a name="1.13.5.0"> </a></span> Resource References</h2>
+
+<p>
+Many of the defined elements in a resource are references to other resources. Using these
+references, the resources combine to build a web of information about healthcare. 
+</p>
+<p>
+Resources contain two types of references:
+</p>
+<ul>
+ <li><b>Internal &quot;contained&quot; references</b> - references to other resources packaged inside the source resource</li>
+ <li><b>External references</b> - references from resources found elsewhere</li>
+</ul>
+<p>
+References are always defined and represented in one particular direction - from one resource (source) to another (target).
+References are provided as a URL, which may either be absolute or relative. Resolving the references is discussed below.
+</p>
+<p>
+The corresponding reverse relationship from the target to the source exists in a logical sense, but is 
+not represented explicitly in the resource. For external references, navigating these reverse relationships requires some 
+external infrastructure to track the relationship between resources (the <a href="http.html">REST API</a> provides one such 
+infrastructure by providing the ability to <a href="http.html#search">search</a> the reverse relationship by naming 
+search parameters for the references).
+</p>
+<p>
+Because resources are processed independently, relationships are not considered to be transitive. 
+For example, if a <a href="condition.html">Condition</a> resource references a particular 
+<a href="patient.html">Patient</a> as its subject, and it links to a <a href="procedure.html">Procedure</a>
+resource as its cause, there is no automatic rule or implication that the procedure 
+has the same patient for its subject. Instead, the subject of the procedure must be established 
+directly in the procedure itself. Another way to state this is that the context of the subject
+is not &quot;inherited&quot;, nor does it &quot;conduct&quot; along the relationship to procedure. 
+The only exception to this in the case of contained resources (see below). Note that in
+practice, the relationships do need to describe a logical and coherent record, and in the
+case of the Condition and Procedure described here, they would usually be required to have
+the same patient for their subjects.
+</p>
+
+<p>
+In a resource, references are represented with a reference and a text description. 
+The <i>reference</i> is the key element - resources are identified and addressed by their URL.
+The actual reference looks like this:
+</p>
+
+<div id="tabs-Reference">
+ <ul>
+  <li><a href="#tabs-Reference-struc">Structure</a></li>
+  <li><a href="#tabs-Reference-uml">UML</a></li>
+  <li><a href="#tabs-Reference-xml">XML</a></li>
+  <li><a href="#tabs-Reference-json">JSON</a></li>
+  <li><a href="#tabs-Reference-all">All</a></li>
+ </ul>
+ <div id="tabs-Reference-struc">
+  <div id="tbl">
+   <p><b>Structure</b></p>
+   <div id="tbl-inner">
+    <table style="border: 0px; font-size: 11px; font-family: verdana; vertical-align: top;" cellpadding="0" border="0" cellspacing="0"><tr style="border: 1px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;"><th style="vertical-align: top; text-align : left; padding:0px 4px 0px 4px" class="heirarchy">Name</th><th style="vertical-align: top; text-align : left; padding:0px 4px 0px 4px" class="heirarchy">Flags</th><th style="vertical-align: top; text-align : left; padding:0px 4px 0px 4px" class="heirarchy">Card.</th><th style="width: 100px" class="heirarchy">Type</th><th style="vertical-align: top; text-align : left; padding:0px 4px 0px 4px" class="heirarchy">Description &amp; Constraints<span style="float: right"><a title="Legend for this format" href="formats.html#table"><img alt="doco" src="help16.png"/></a></span></th></tr><tr style="border: 0px; padding:0px; vertical-align: top; background-color: white;"><td style="vertical-align: top; text-align : left; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1.png)" class="heirarchy"><img alt="." class="heirarchy" src="tbl_spacer.png"/><img title="Element" style="background-color: white;" alt="." class="heirarchy" src="icon_element.gif"/> <a title="A reference from one resource to another." href="references-definitions.html#Reference">Reference</a><a name="Reference"> </a></td><td style="vertical-align: top; text-align : left; padding:0px 4px 0px 4px" class="heirarchy"><span title="This element has or is affected by some invariants">I</span></td><td style="vertical-align: top; text-align : left; padding:0px 4px 0px 4px" class="heirarchy">1..1</td><td style="vertical-align: top; text-align : left; padding:0px 4px 0px 4px" class="heirarchy"><a href="element.html">Element</a></td><td style="vertical-align: top; text-align : left; padding:0px 4px 0px 4px" class="heirarchy">A reference from one resource to another<br/><span title="1" style="font-style: italic">SHALL have a local reference if the resource is provided inline</span></td></tr>
+<tr style="border: 0px; padding:0px; vertical-align: top; background-color: white;"><td style="vertical-align: top; text-align : left; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="heirarchy"><img alt="." class="heirarchy" src="tbl_spacer.png"/><img alt="." class="heirarchy" src="tbl_vjoin.png"/><img title="Primitive Data Type" style="background-color: white;" alt="." class="heirarchy" src="icon_primitive.png"/> <a title="A reference to a location at which the other resource is found. The reference may a relative reference, in which case it is relative to the service base URL, or an absolute URL that resolves to the location where the resource is found. The reference may be version specific or not. If the reference is not to a FHIR RESTful server, then it should be assumed to be version specific. Internal fragment references (start with '#') refer to contained resources." href="references-definitions.html#Reference.reference">reference</a><a name="Reference.reference"> </a></td><td style="vertical-align: top; text-align : left; padding:0px 4px 0px 4px" class="heirarchy"><span title="This element has or is affected by some invariants">I</span></td><td style="vertical-align: top; text-align : left; padding:0px 4px 0px 4px" class="heirarchy">0..1</td><td style="vertical-align: top; text-align : left; padding:0px 4px 0px 4px" class="heirarchy"><a href="datatypes.html#string">string</a></td><td style="vertical-align: top; text-align : left; padding:0px 4px 0px 4px" class="heirarchy">Relative, internal or absolute URL reference</td></tr>
+<tr style="border: 0px; padding:0px; vertical-align: top; background-color: white;"><td style="vertical-align: top; text-align : left; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck00.png)" class="heirarchy"><img alt="." class="heirarchy" src="tbl_spacer.png"/><img alt="." class="heirarchy" src="tbl_vjoin_end.png"/><img title="Primitive Data Type" style="background-color: white;" alt="." class="heirarchy" src="icon_primitive.png"/> <a title="Plain text narrative that identifies the resource in addition to the resource reference." href="references-definitions.html#Reference.display">display</a><a name="Reference.display"> </a></td><td style="vertical-align: top; text-align : left; padding:0px 4px 0px 4px" class="heirarchy"/><td style="vertical-align: top; text-align : left; padding:0px 4px 0px 4px" class="heirarchy">0..1</td><td style="vertical-align: top; text-align : left; padding:0px 4px 0px 4px" class="heirarchy"><a href="datatypes.html#string">string</a></td><td style="vertical-align: top; text-align : left; padding:0px 4px 0px 4px" class="heirarchy">Text alternative for the resource</td></tr>
+</table>
+   </div>
+  </div>
+ </div>
+
+ <div id="tabs-Reference-uml">
+  <div id="uml">
+   <p><b>UML Diagram</b></p>
+   <div id="uml-inner">
+    <p>to do</p>
+   </div>
+  </div>
+ </div>
+
+ <div id="tabs-Reference-xml">
+  <div id="xml">
+   <p><b>XML Template</b></p>
+   <div id="xml-inner">
+    <pre class="spec">
+&lt;<a title="A reference from one resource to another." class="dict" href="references-definitions.html#Reference"><b>[name]</b></a> xmlns=&quot;http://hl7.org/fhir&quot;&gt; <span style="float: right"><a title="Documentation for this format" href="xml.html"><img alt="doco" src="help.png"/></a></span>
+ &lt;!-- from Element: <a href="extensibility.html">extension</a> --&gt;
+ &lt;<a title="A reference to a location at which the other resource is found. The reference may a relative reference, in which case it is relative to the service base URL, or an absolute URL that resolves to the location where the resource is found. The reference may be version specific or not. If the reference is not to a FHIR RESTful server, then it should be assumed to be version specific. Internal fragment references (start with '#') refer to contained resources." class="dict" href="references-definitions.html#Reference.reference"><b>reference</b></a> value=&quot;[<span style="color: darkgreen"><a href="datatypes.html#string">string</a></span>]&quot;/&gt;<span style="color: Gray">&lt;!--</span> <span title="Inv-1: SHALL have a local reference if the resource is provided inline" style="color: brown"><b><img alt="??" src="lock.png"/> 0..1</b></span> <span style="color: navy">Relative, internal or absolute URL reference</span><span style="color: Gray"> --&gt;</span>
+ &lt;<a title="Plain text narrative that identifies the resource in addition to the resource reference." class="dict" href="references-definitions.html#Reference.display"><b>display</b></a> value=&quot;[<span style="color: darkgreen"><a href="datatypes.html#string">string</a></span>]&quot;/&gt;<span style="color: Gray">&lt;!--</span> <span style="color: brown"><b>0..1</b></span> <span style="color: navy">Text alternative for the resource</span><span style="color: Gray"> --&gt;</span>
+&lt;/[name]&gt;
+</pre>
+
+
+   </div>
+  </div>
+ </div>
+
+ <div id="tabs-Reference-json">
+  <div id="json">
+   <p><b>JSON Template</b></p>   <div id="json-inner">
+    <pre class="spec">
+{<span style="float: right"><a title="Documentation for this format" href="json.html"><img alt="doco" src="help.png"/></a></span>
+  // from Element: <a href="extensibility.html">extension</a>
+  &quot;<a title="A reference to a location at which the other resource is found. The reference may a relative reference, in which case it is relative to the service base URL, or an absolute URL that resolves to the location where the resource is found. The reference may be version specific or not. If the reference is not to a FHIR RESTful server, then it should be assumed to be version specific. Internal fragment references (start with '#') refer to contained resources." class="dict" href="references-definitions.html#Reference.reference">reference</a>&quot; : &quot;&lt;<span style="color: darkgreen"><a href="datatypes.html#string">string</a></span>&gt;&quot;, <span style="color: Gray">//</span> <span title="Inv-1: SHALL have a local reference if the resource is provided inline" style="color: brown"><b>C?</b></span> <span style="color: navy; opacity: 0.8">Relative, internal or absolute URL reference</span>
+  &quot;<a title="Plain text narrative that identifies the resource in addition to the resource reference." class="dict" href="references-definitions.html#Reference.display">display</a>&quot; : &quot;&lt;<span style="color: darkgreen"><a href="datatypes.html#string">string</a></span>&gt;&quot; <span style="color: Gray">//</span> <span style="color: navy; opacity: 0.8">Text alternative for the resource</span>
+}
+</pre>
+
+
+   </div>
+  </div>
+ </div>
+
+ <div id="tabs-Reference-all">
+  <div id="tbla">
+   <a name="tbl"> </a>
+   <p><b>Structure</b></p>
+   <div id="tbl-inner">
+    <table style="border: 0px; font-size: 11px; font-family: verdana; vertical-align: top;" cellpadding="0" border="0" cellspacing="0"><tr style="border: 1px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;"><th style="vertical-align: top; text-align : left; padding:0px 4px 0px 4px" class="heirarchy">Name</th><th style="vertical-align: top; text-align : left; padding:0px 4px 0px 4px" class="heirarchy">Flags</th><th style="vertical-align: top; text-align : left; padding:0px 4px 0px 4px" class="heirarchy">Card.</th><th style="width: 100px" class="heirarchy">Type</th><th style="vertical-align: top; text-align : left; padding:0px 4px 0px 4px" class="heirarchy">Description &amp; Constraints<span style="float: right"><a title="Legend for this format" href="formats.html#table"><img alt="doco" src="help16.png"/></a></span></th></tr><tr style="border: 0px; padding:0px; vertical-align: top; background-color: white;"><td style="vertical-align: top; text-align : left; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1.png)" class="heirarchy"><img alt="." class="heirarchy" src="tbl_spacer.png"/><img title="Element" style="background-color: white;" alt="." class="heirarchy" src="icon_element.gif"/> <a title="A reference from one resource to another." href="references-definitions.html#Reference">Reference</a><a name="Reference"> </a></td><td style="vertical-align: top; text-align : left; padding:0px 4px 0px 4px" class="heirarchy"><span title="This element has or is affected by some invariants">I</span></td><td style="vertical-align: top; text-align : left; padding:0px 4px 0px 4px" class="heirarchy">1..1</td><td style="vertical-align: top; text-align : left; padding:0px 4px 0px 4px" class="heirarchy"><a href="element.html">Element</a></td><td style="vertical-align: top; text-align : left; padding:0px 4px 0px 4px" class="heirarchy">A reference from one resource to another<br/><span title="1" style="font-style: italic">SHALL have a local reference if the resource is provided inline</span></td></tr>
+<tr style="border: 0px; padding:0px; vertical-align: top; background-color: white;"><td style="vertical-align: top; text-align : left; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="heirarchy"><img alt="." class="heirarchy" src="tbl_spacer.png"/><img alt="." class="heirarchy" src="tbl_vjoin.png"/><img title="Primitive Data Type" style="background-color: white;" alt="." class="heirarchy" src="icon_primitive.png"/> <a title="A reference to a location at which the other resource is found. The reference may a relative reference, in which case it is relative to the service base URL, or an absolute URL that resolves to the location where the resource is found. The reference may be version specific or not. If the reference is not to a FHIR RESTful server, then it should be assumed to be version specific. Internal fragment references (start with '#') refer to contained resources." href="references-definitions.html#Reference.reference">reference</a><a name="Reference.reference"> </a></td><td style="vertical-align: top; text-align : left; padding:0px 4px 0px 4px" class="heirarchy"><span title="This element has or is affected by some invariants">I</span></td><td style="vertical-align: top; text-align : left; padding:0px 4px 0px 4px" class="heirarchy">0..1</td><td style="vertical-align: top; text-align : left; padding:0px 4px 0px 4px" class="heirarchy"><a href="datatypes.html#string">string</a></td><td style="vertical-align: top; text-align : left; padding:0px 4px 0px 4px" class="heirarchy">Relative, internal or absolute URL reference</td></tr>
+<tr style="border: 0px; padding:0px; vertical-align: top; background-color: white;"><td style="vertical-align: top; text-align : left; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck00.png)" class="heirarchy"><img alt="." class="heirarchy" src="tbl_spacer.png"/><img alt="." class="heirarchy" src="tbl_vjoin_end.png"/><img title="Primitive Data Type" style="background-color: white;" alt="." class="heirarchy" src="icon_primitive.png"/> <a title="Plain text narrative that identifies the resource in addition to the resource reference." href="references-definitions.html#Reference.display">display</a><a name="Reference.display"> </a></td><td style="vertical-align: top; text-align : left; padding:0px 4px 0px 4px" class="heirarchy"/><td style="vertical-align: top; text-align : left; padding:0px 4px 0px 4px" class="heirarchy">0..1</td><td style="vertical-align: top; text-align : left; padding:0px 4px 0px 4px" class="heirarchy"><a href="datatypes.html#string">string</a></td><td style="vertical-align: top; text-align : left; padding:0px 4px 0px 4px" class="heirarchy">Text alternative for the resource</td></tr>
+</table>
+   </div>
+  </div>
+
+  <div id="umla">
+   <a name="uml"> </a>
+   <p><b>UML Diagram</b></p>
+   <div id="uml-inner">
+    <p>todo</p>
+   </div>
+  </div>
+
+  <div id="xmla">
+   <a name="xml"> </a>
+   <p><b>XML Template</b></p>
+   <div id="xml-inner">
+     <pre class="spec">
+&lt;<a title="A reference from one resource to another." class="dict" href="references-definitions.html#Reference"><b>[name]</b></a> xmlns=&quot;http://hl7.org/fhir&quot;&gt; <span style="float: right"><a title="Documentation for this format" href="xml.html"><img alt="doco" src="help.png"/></a></span>
+ &lt;!-- from Element: <a href="extensibility.html">extension</a> --&gt;
+ &lt;<a title="A reference to a location at which the other resource is found. The reference may a relative reference, in which case it is relative to the service base URL, or an absolute URL that resolves to the location where the resource is found. The reference may be version specific or not. If the reference is not to a FHIR RESTful server, then it should be assumed to be version specific. Internal fragment references (start with '#') refer to contained resources." class="dict" href="references-definitions.html#Reference.reference"><b>reference</b></a> value=&quot;[<span style="color: darkgreen"><a href="datatypes.html#string">string</a></span>]&quot;/&gt;<span style="color: Gray">&lt;!--</span> <span title="Inv-1: SHALL have a local reference if the resource is provided inline" style="color: brown"><b><img alt="??" src="lock.png"/> 0..1</b></span> <span style="color: navy">Relative, internal or absolute URL reference</span><span style="color: Gray"> --&gt;</span>
+ &lt;<a title="Plain text narrative that identifies the resource in addition to the resource reference." class="dict" href="references-definitions.html#Reference.display"><b>display</b></a> value=&quot;[<span style="color: darkgreen"><a href="datatypes.html#string">string</a></span>]&quot;/&gt;<span style="color: Gray">&lt;!--</span> <span style="color: brown"><b>0..1</b></span> <span style="color: navy">Text alternative for the resource</span><span style="color: Gray"> --&gt;</span>
+&lt;/[name]&gt;
+</pre>
+
+
+   </div>
+  </div>
+
+  <div id="jsona">
+   <a name="json"> </a>
+   <p><b>JSON Template</b></p>
+   <div id="json-inner">
+     <pre class="spec">
+{<span style="float: right"><a title="Documentation for this format" href="json.html"><img alt="doco" src="help.png"/></a></span>
+  // from Element: <a href="extensibility.html">extension</a>
+  &quot;<a title="A reference to a location at which the other resource is found. The reference may a relative reference, in which case it is relative to the service base URL, or an absolute URL that resolves to the location where the resource is found. The reference may be version specific or not. If the reference is not to a FHIR RESTful server, then it should be assumed to be version specific. Internal fragment references (start with '#') refer to contained resources." class="dict" href="references-definitions.html#Reference.reference">reference</a>&quot; : &quot;&lt;<span style="color: darkgreen"><a href="datatypes.html#string">string</a></span>&gt;&quot;, <span style="color: Gray">//</span> <span title="Inv-1: SHALL have a local reference if the resource is provided inline" style="color: brown"><b>C?</b></span> <span style="color: navy; opacity: 0.8">Relative, internal or absolute URL reference</span>
+  &quot;<a title="Plain text narrative that identifies the resource in addition to the resource reference." class="dict" href="references-definitions.html#Reference.display">display</a>&quot; : &quot;&lt;<span style="color: darkgreen"><a href="datatypes.html#string">string</a></span>&gt;&quot; <span style="color: Gray">//</span> <span style="color: navy; opacity: 0.8">Text alternative for the resource</span>
+}
+</pre>
+
+
+   </div>
+  </div>
+ </div>
+</div>
+
+
+<p> </p>
+
+<p>Notes:</p>
+<ul>
+ <li>The <i>reference</i> element contains a url that is either 
+   <ul>
+     <li>an absolute URL</li>
+     <li>a relative URL, which is relative to the <a href="http.html#root">Service Base URL</a>, or, in a bundle, <a href="#atom-refs">the bundle context</a></li>
+     <li>an internal fragment reference (see &quot;Contained Resources&quot; below)</li>
+   </ul>
+ </li>
+ <li>Using absolute URLs provides a stable scalable approach suitable for a cloud/web context, while using relative/logical references provides a 
+   flexible approach suitable for use when trading across closed ecosystem boundaries. (see <a href="implementation.html#identity">implementation issues for further discussion</a>)</li>
+ <li>Absolute URLs do not need to point to a <a href="http.html">FHIR RESTful server</a>, though this is the preferred approach.  
+   Whether or not the reference is to a FHIR RESTful server, the reference SHALL point to a Resource as defined by this specification</li>
+ <li>URLs are always considered to be case-sensitive</li>
+ <li>The <i>display</i>, if populated, does generally not have identical content to the Resource.text of the referenced resource.  The purpose is to 
+   identify what's being referenced, not to more fully describe it</li>
+</ul>
+
+<div class="example">
+<p>A relative reference to the <a href="patient.html">patient</a> &quot;034AB16&quot; in an element named &quot;context&quot; on a FHIR RESTful server:</p>
+<pre class="xml" fragment="Reference">
+  &lt;context&gt;
+    &lt;reference value=&quot;Patient/034AB16&quot; /&gt;
+  &lt;/context&gt;
+</pre>
+<p>An absolute reference to a <a href="profile.html">resource profile</a> in an element named &quot;profile&quot;:</p>
+<pre class="xml" fragment="Reference">
+  &lt;profile&gt;
+    &lt;reference value=&quot;http://fhir.hl7.org/svc/Profile/c8973a22-2b5b-4e76-9c66-00639c99e61b&quot; /&gt;
+  &lt;/profile&gt;
+</pre>
+<p><i>Note that HL7 has not yet actually created a profile registry, nor decided on a URL for it</i>.</p>
+<p>
+A short display text that provides a human-readable identification of the resource may be provided:
+</p>
+<pre class="xml" fragment="Reference">
+  &lt;custodian&gt;
+    &lt;reference value=&quot;Organization/123&quot; /&gt;
+    &lt;display value=&quot;HL7, Inc&quot; /&gt;
+  &lt;/custodian&gt;
+</pre>
+<p>
+This text can be used by a system that is unable to resolve the reference to an actual resource.
+</p>
+</div>
+
+<a name="contained"> </a>
+<h3><span class="sectioncount">1.13.5.0.1<a name="1.13.5.0.1"> </a></span> Contained Resources</h3>
+<p>
+In some circumstances, the content referred to in the resource reference does not have an independent 
+existence apart from the resource that contains it - it cannot be identified independently, and nor 
+can it have its own independent transaction scope. Typically, such circumstances arise where the resource
+is being assembled by a secondary user of the source data, such as a middleware engine. If the data available
+when the resource is constructed does not include record keys or absolute identification information, then
+a properly identified resource cannot be assembled, and even if an arbitrary identification was associated
+with it, the resource could never be the subject of a transaction outside the context of the resource that
+refers to it.
+</p>
+<p>
+For example, consider a situation where an interface engine is creating a <a href="condition.html">Condition</a>
+record on a patient from an HL7 v2 message, and the only information about the primary surgeon is her 
+first name and lastname (REL-7.2 &amp; RES-7.3). In the absence of a controlled practitioner directory, 
+this is not enough information to create an identified <a href="practitioner.html">Practitioner</a> 
+resource - more than one practitioner might have the same name. 
+</p>
+<p>
+In these circumstances, the resource is placed directly in line in the resource. <b>This SHOULD NOT be 
+done when the content can be identified properly, as once the identification is lost, it is extremely difficult 
+(and context dependent) to restore it again.</b>
+</p>
+<div class="example">
+<p>
+An example of a contained resource:
+</p>
+<pre class="xml">   <!-- Can't fragment test this - too incomplete -->
+ &lt;Composition xmlns=&quot;http://hl7.org/fhir&quot;&gt;
+  &lt;extension&gt;...&lt;/extension&gt;
+  &lt;text&gt;...&lt;/text&gt;
+  &lt;contained&gt;
+    &lt;Organization&gt;
+      &lt;id value=&quot;org1&quot;/&gt;
+      &lt;!-- whatever information is available --&gt;
+    &lt;/Organization&gt;
+  &lt;/contained&gt;
+  &lt;information&gt;
+    &lt;!-- other attributes --&gt;
+    &lt;custodian&gt;
+      &lt;reference value=&quot;#org1&quot; /&gt;
+    &lt;/custodian&gt;
+    &lt;!-- other attributes --&gt;
+  &lt;information&gt;
+ &lt;/Composition&gt;
+</pre>
+<p>
+The same example in JSON:
+</p>
+<pre class="json"> 
+{ &quot;resourceType&quot; : &quot;Composition&quot;,
+  &quot;extension&quot; : { ... },
+  &quot;text&quot; : { .. },
+  &quot;contained: [
+    {
+      &quot;resourceType&quot; : &quot;Organization&quot;,
+      &quot;id&quot; : &quot;org1&quot;,
+      .. whatever information is available ...
+	}  ]
+  &quot;information: {
+    ... other attributes ...
+    &quot;custodian&quot; : {
+      &quot;reference&quot; : &quot;#org1&quot;
+	}
+    ... other attributes ...
+  }
+}
+</pre>
+</div>
+<blockquote>
+<div class="design-note">
+<p>
+Design Note: Contained resources are still a reference rather than being inlined directly 
+into the element that is the reference (e.g. &quot;custodian&quot; above) to ensure that a
+single approach to resolving resource references can be used. Though direct containment
+would seem simpler, it would still be necessary to support internal references where the 
+same contained resource is referenced more than once. In the end, all that it would achieve
+is creating additional options in the syntax. For users using XPath to process the resource,
+the following XPath fragment resolves the internal reference: 
+</p>
+<pre>
+ancestor::f:*[not(parent::f:*)]/f:contained/*[@id=substring-after(<b>current()</b>/f:reference/@value, '#')]
+</pre>
+</div>
+</blockquote>
+<p>
+Some notes about use and interpretation of contained resources:
+</p>
+
+<ul>
+  <li>The &quot;contained&quot; element SHALL NOT have extensions on it (though contained resources can still contain extensions)</li>
+  <li>Contained resources share the same internal id resolution space as the parent resource (for id attributes, see below)</li>
+  <li>Contained resources SHALL NOT contain additional contained resources</li>
+  <li>Contained resources SHOULD not contain any narrative</li>
+  <li>Resources that are contained inline also &quot;inherit&quot; context from their parent resource. For instance, if 
+    the parent resource contains a &quot;subject&quot;, and the contained resource also has a subject element defined, 
+    but does not specify any subject, a processing application may infer that the subject is the same. Note,
+    however, that such inferences are specific to a particular circumstance. There is no rule, for instance, 
+	that the meaning of the &quot;subject&quot; element is the same in both parent and contained resources</li>
+  <li>A contained resources can only be included in another resource if something in the resource actually refers to it:</li>
+</ul>
+<div class="use">
+<p><b>Constraints</b></p>
+<p>
+<ul><li><b title="Formal Invariant Identifier">Inv-1</b>: SHALL have a local reference if the resource is provided inline (xpath: <span style="font-family: Courier New, monospace">not(starts-with(f:reference/@value, '#')) or exists(ancestor::a:content/f:*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')]|/f:*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')])</span>)</li></ul>
+</p>
+
+</div>
+
+<a name="bundle-refs"> </a>
+<h3><span class="sectioncount">1.13.5.0.2<a name="1.13.5.0.2"> </a></span> Resolving references to Resources in Bundles</h3>
+<p>
+When processing bundles, applications should always search the resources in the 
+bundle first when a <a href="#Resource">resource reference</a> is encountered. 
+</p>
+<div class="example">
+<pre class="xml" fragment="Reference">
+  &lt;institution&gt;
+    &lt;reference value=&quot;Organization/23&quot; /&gt;
+  &lt;/institution&gt;
+  &lt;institution&gt;
+    &lt;reference value=&quot;Organization/ex/_history/2&quot; /&gt;
+  &lt;/institution&gt;
+</pre>
+</div>
+<p>
+then the application should look for any entry in the bundle where either the 
+entry.id or the entry.link[self] matches the reference URL exactly:
+</p>
+<div class="example">
+<pre class="xml">
+   .. bundle ..
+  &lt;item&gt;
+    &lt;Organization xmlns=&quot;http://hl7.org/fhir&quot;&gt;
+       &lt;id value=&quot;23&quot;/&gt;
+       &lt;!-- Content for the resource --&gt;
+    &lt;/Organization&gt;
+  &lt;item&gt;
+
+  &lt;item&gt;
+    &lt;Organization xmlns=&quot;http://hl7.org/fhir&quot;&gt;
+      &lt;id value=&quot;ex&quot;/&gt;
+      &lt;meta&gt;
+        &lt;versionId value=&quot;2&quot;/&gt;
+      &lt;/meta&gt;
+      &lt;!-- Content for the resource --&gt;
+    &lt;/Organization&gt;
+  &lt;item&gt;
+    ... bundle ...
+</pre>
+</div>
+<p>
+In the second case, the match is based on a specific version of the 
+resource. If the resource reference cannot be resolved
+in the bundle, the application SHOULD be able to retrieve the resource by 
+following the provided URL directly. If it can't, it will have to use some 
+other implementation-specific method for resolving how to find the resource.
+</p>
+<p>
+If the resource reference is a absolute URL, the same basic principle 
+applies: attempt to resolve the reference in the bundle first, and then
+look outside. However, before this can be done, the absolute URL must 
+be compared to the stated based URL, in <a href="bundle-definitions.html#Bundle.base">Bundle.base</a>;
+if these do not match, the resource is not in the bundle. <i>todo-bundle: how to mix content?</i>
+</p>
+  <!-- <p>
+Note that the application SHOULD not assume that the base
+service root is actually resolvable. In some circumstances, it will. 
+If the bundle has just been received from a server as a result of 
+a search or a history operation, the service root URL SHOULD match
+the URL that the client used (it is allowed not to in order to 
+cater for proxies of various kinds). However in other 
+circumstances, where the bundle itself has been exchanged onwards
+from the point of origin, and/or stored as an entity in its own 
+right (e.g. a <a href="documents.html">clinical document</a>) the 
+service root URL is merely a logical construct that holds within the 
+bundle when resolving resources, and will have no meaning outside 
+the bundle. 
+</p> -->
+
+<p>
+Note that some elements have the type &quot;<a href="datatypes.html#uri">uri</a>&quot; instead of &quot;Reference&quot;. 
+URIs may point to either resources, elements inside a resource by their &quot;id&quot; property, or (most often) 
+some other content that is not a resource. The Reference type is only used to refer to resources 
+directly, by their logical id.
+</p>
+
+
+  <!-- <li>
+<a name="Ids"> </a>
+FHIR resources make use of id attributes as targets for <a href="references.html#id">internal references with resources</a>. 
+These id attributes are unique and resolved within the context of a single resource. When resources are 
+combined into a bundle, different resources may contain duplicate id attributes. Thus it is important to limit
+the scope of resolution of an id attribute to the resource in which the <i>id</i> attribute is declared.
+</li> -->
+</div>
+
+
+				</div>  <!-- /inner-wrapper -->
+            </div>  <!-- /row -->
+        </div>  <!-- /container -->
+        
+    </div>  <!-- /segment-content -->
+
+
+	<div id="segment-footer" class="segment">  <!-- segment-footer -->
+		<div class="container">  <!-- container -->
+			<div class="inner-wrapper">
+				<p>
+        © HL7.org 2011+. FHIR DSTU (v0.4.0-3920) generated on Tue, Dec 30, 2014 11:07+0000.   <!-- <a href="qa.html">QA Report</a> -->   <!-- achive note -->
+        <br/>
+        <span style="color: #FFFF77">
+        Links: <a style="color: #81BEF7" href="timelines.html">What's a DSTU?</a> | 
+               <a style="color: #81BEF7" href="history.html">Version History</a> | 
+               <a style="color: #81BEF7" href="http://services.w3.org/htmldiff?doc1=http%3A%2F%2Fhl7.org%2Fimplement%2Fstandards%2Ffhir%2Freferences.html&amp;doc2=http%3A%2F%2Fhl7-fhir.github.io%2F%2Freferences.html">Compare to DSTU</a> | 
+               <a style="color: #81BEF7" rel="license" href="license.html"><img style="border-style: none;" alt="CC0" src="cc0.png"/></a> | 
+               <a style="color: #81BEF7" target="_blank" href="http://gforge.hl7.org/gf/project/fhir/tracker/?action=TrackerItemAdd&amp;tracker_id=677">Propose a change</a>   
+        </span>
+        </p>
+			</div>  <!-- /inner-wrapper -->
+		</div>  <!-- /container -->
+	</div>  <!-- /segment-footer -->
+  <!-- disqus thread -->
+  <!-- disqus -->
+  <!-- end disqus -->        
+	
+	<div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+		<div class="container">  <!-- container -->
+		</div>  <!-- /container -->
+	</div>  <!-- /segment-post-footer -->
+    
+      <!-- JS and analytics only. -->
+      <!-- Bootstrap core JavaScript
+================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+<script src="./assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+<script src="./dist/js/bootstrap.min.js"> </script>
+<script src="./assets/js/respond.min.js"> </script>
+
+<script src="./assets/js/fhir.js"> </script>
+
+  <!-- Analytics Below
+================================================== -->
+
+
+  <script src="external/jquery/jquery.js"> </script>
+<script src="jquery-ui.min.js"> </script>
+<script>
+ try {
+   var currentTabIndex = sessionStorage.getItem('fhir-resource-tab-index');
+ } catch(exception){ 
+  if (navigator.userAgent.toLowerCase().indexof('msie') == -1)
+    alert(exception);
+ }
+ if (!currentTabIndex)
+   currentTabIndex = '0';
+
+$( '#tabs-Reference' ).tabs({ active: currentTabIndex, activate: function( event, ui ) { store(ui.newTab.index()); } });
+     
+     
+function store(currentTab) {
+  try {
+    sessionStorage.setItem('fhir-resource-tab-index', currentTab);
+  } catch(exception){ 
+  if (navigator.userAgent.toLowerCase().indexof('msie') == -1)
+    alert(exception);
+  }
+  $( '#tabs-Reference' ).tabs('option', 'active', currentTab);
+}     
+</script>
+
+
+</body>
+</html>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ExtensionDefinition xmlns="http://hl7.org/fhir">
+  <id value="valueset-expirationDate"/>
+  <url value="http://hl7.org/fhir/ExtensionDefinition/valueset-expirationDate"/>
+  <name value="When the value set version should no longer be used"/>
+  <publisher value="HL7"/>
+  <description value="The date when the value set version is no longer expected to be used to create new content. This is the first date-time when the value set version becomes Inactive, so this value MUST present on all Inactive value set versions. The start Date_time is expected to be as of 0001 UTC of the Expiration Date."/>
+  <status value="draft"/>
+  <date value="2014-12-30T10:55:31"/>
+  <contextType value="resource"/>
+  <context value="ValueSet"/>
+  <element>
+    <path value="Extension"/>
+    <short value="When the value set version should no longer be used"/>
+    <formal value="The date when the value set version is no longer expected to be used to create new content. This is the first date-time when the value set version becomes Inactive, so this value MUST present on all Inactive value set versions. The start Date_time is expected to be as of 0001 UTC of the Expiration Date."/>
+    <comments value="Upon reaching the Expiration Date, the value set Activity Status should be consdiered as inactive. An Inactive value set version may no longer be used to create new content, but it may be used to evaluate content created prior to the Expiration Date."/>
+    <min value="0"/>
+    <max value="1"/>
+    <type>
+      <code value="date"/>
+    </type>
+    <isSummary value="false"/>
+  </element>
+</ExtensionDefinition>
